@@ -1,0 +1,5311 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    166188,       5302]
+NotebookOptionsPosition[    145565,       4594]
+NotebookOutlinePosition[    147702,       4652]
+CellTagsIndexPosition[    147615,       4647]
+WindowTitle->Applier
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["MATH I OMICA PACKAGE SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Tutorials",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Tutorials", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmicaTutorial\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaTutorial"], "\<\"MathIOmica \
+Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"Tutorials"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "See Also",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"See Also", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"ApplierList\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/ApplierList"], "\<\"MeasurementApplier\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/MeasurementApplier"], "\<\"OmicsObject\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/OmicsObject"], "\<\"Returner\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/Returner"], "\<\"Query\"\>":>
+       Documentation`HelpLookup["paclet:ref/Query"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"SeeAlso"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Related Guides",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Related Guides", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica Guide\"\>":>
+       Documentation`HelpLookup["paclet:MathIOmica/guide/MathIOmicaGuide"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"MoreAbout"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica/ref/Applier\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["MathIOmica/ref/Applier"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/MathIOmica/ref/Applier.\
+html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+            False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$6146], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "MathIOmica/ref/Applier", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ CellID->1],
+
+Cell[TextData[{
+ Cell["Applier", "ObjectName"],
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8]]]],
+ Cell[BoxData[""], "ObjectNameTranslation"]
+}], "ObjectNameGrid"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"Applier", "[", 
+       RowBox[{
+        StyleBox["function", "TI"], ",", " ", 
+        StyleBox["inputData", "TI"]}], "]"}]], "InlineFormula"],
+     "\[LineSeparator]applies ",
+     Cell[BoxData[
+      StyleBox["function", "TI"]], "InlineFormula"],
+     " to OmicsObject, association or list ",
+     Cell[BoxData[
+      StyleBox["inputData", "TI"]], "InlineFormula"],
+     " components."
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    InterpretationBox[
+     StyleBox[
+      GraphicsBox[{},
+       BaselinePosition->Baseline,
+       ImageSize->{6, 0}],
+      CacheGraphics->False],
+     Spacer[6]]]],
+   "Details"
+  }], "NotesFrameText"],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->1045935949],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"Applier", "[", 
+   RowBox[{
+    StyleBox["function", "TI"], ",", " ", 
+    StyleBox["inputData", "TI"]}], "]"}]], "InlineFormula"],
+ " allows us to apply a ",
+ Cell[BoxData[
+  StyleBox["function", "TI"]], "InlineFormula"],
+ " that acts on lists across the same component index of the input data. For \
+Associations or OmicsObject this means that the function maps a list of the \
+same Key across associations. Applier takes two inputs:"
+}], "Notes",
+ CellID->554938814],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon"], 
+    StyleBox["function", "TI"], Cell["\<\
+Function to be applied across the data lists. The function takes lists as \
+inputs and returns lists of the same size as outputs.\
+\>", "TableText"]},
+   {Cell["      ", "TableRowIcon"], 
+    StyleBox["inputData", "TI"], Cell["\<\
+Data over which the function will be applied. Typically an OmicsObject.\
+\>", "TableText"]}
+  }]], "2ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {None, {None}}, 
+   "RowsIndexed" -> {}},
+ GridBoxDividers->{"Rows" -> {{True, True, True}}}},
+ CellID->29176506],
+
+Cell[TextData[{
+ "In the case of an ",
+ ButtonBox["Association",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Association"],
+ " or ",
+ ButtonBox["OmicsObject",
+  BaseStyle->"Link",
+  ButtonData->"paclet:MathIOmica/ref/OmicsObject"],
+ "  input the Applier returns an association of the new values following the \
+application of the function."
+}], "Notes",
+ CellID->1284645755],
+
+Cell["The following options can be given: ", "Notes"],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon"], 
+    ButtonBox["ListIndex",
+     BaseStyle->"Link",
+     ButtonData->"paclet:MathIOmica/ref/ListIndex"], 
+    RowBox[{
+     ButtonBox["Missing",
+      BaseStyle->"Link",
+      ButtonData->"paclet:ref/Missing"], "[", "]"}], Cell["\<\
+Selection of which list to use in the association or OmicsObject input values.\
+\>", "TableText"]},
+   {Cell["      ", "TableRowIcon"], 
+    ButtonBox["ComponentIndex",
+     BaseStyle->"Link",
+     ButtonData->"paclet:MathIOmica/ref/ComponentIndex"], 
+    RowBox[{
+     ButtonBox["Missing",
+      BaseStyle->"Link",
+      ButtonData->"paclet:ref/Missing"], "[", "]"}], Cell["\<\
+Selection of which component of a list to use in the association or \
+OmicsObject input values.\
+\>", "TableText"]},
+   {Cell["      ", "TableRowIcon"], 
+    ButtonBox["HorizontalSelection",
+     BaseStyle->"Link",
+     ButtonData->"paclet:MathIOmica/ref/HorizontalSelection"], 
+    ButtonBox["False",
+     BaseStyle->"Link",
+     ButtonData->"paclet:ref/False"], Cell["\<\
+Horizontal selection across components for a single level association with \
+multi-list values.\
+\>", "TableText"]}
+  }]], "3ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, 
+   "Rows" -> {None, None, {None}}, "RowsIndexed" -> {}},
+ GridBoxDividers->{"Rows" -> {{True, True, True, True}}}}],
+
+Cell[TextData[{
+ "Applier was implemented to be used in conjunction with ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["Returner"]],"paclet:MathIOmica/ref/Returner"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+ " to facilitate new functions/modules acting on an ",
+ ButtonBox["OmicsObject",
+  BaseStyle->"Link",
+  ButtonData->"paclet:MathIOmica/ref/OmicsObject"],
+ "."
+}], "Notes",
+ CellID->1829873214],
+
+Cell[TextData[{
+ "When working with an ",
+ ButtonBox["Association",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Association"],
+ ", or ",
+ ButtonBox["OmicsObject",
+  BaseStyle->"Link",
+  ButtonData->"paclet:MathIOmica/ref/OmicsObject"],
+ " the Applier functionality can be complemented using ",
+ ButtonBox["Query",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Query"],
+ "."
+}], "Notes",
+ CellID->176989270],
+
+Cell["", "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(21)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1891844148],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->581717954],
+
+Cell["First we need to load the MathIOmica package.", "ExampleText",
+ CellID->191603639],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2017647728],
+
+Cell["\<\
+In the examples below we see how Applier works on a wide variety of \
+structures.\
+\>", "ExampleText",
+ CellID->211488133]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Applier on an OmicsObject",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(2)", "ExampleCount"]
+}], "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->655681039],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "General Example",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsubsection",
+ WholeCellGroupOpener->True,
+ CellID->1357626468],
+
+Cell["Let' s suppose we have an OmicsObject:", "ExampleText",
+ CellID->929943212],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"omicsObjectExample", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"FirstSample", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.937", "}"}], ",", 
+           RowBox[{"{", "17", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.059", "}"}], ",", 
+           RowBox[{"{", "9", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03", "}"}], ",", 
+           RowBox[{"{", "11", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268", "}"}], ",", 
+           RowBox[{"{", "4", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+     RowBox[{"SecondSample", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.003", "}"}], ",", 
+           RowBox[{"{", "17", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779", "}"}], ",", 
+           RowBox[{"{", "11", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.917", "}"}], ",", 
+           RowBox[{"{", "4", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921", "}"}], ",", 
+           RowBox[{"{", "24", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}], 
+     ",", 
+     RowBox[{"ThirdSample", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.064", "}"}], ",", 
+           RowBox[{"{", "19", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545", "}"}], ",", 
+           RowBox[{"{", "5", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87", "}"}], ",", 
+           RowBox[{"{", "23", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}]}],
+     "\[RightAssociation]"}]}], ";"}]], "Input",
+ CellLabel->"In[238]:=",
+ CellID->15975588],
+
+Cell["\<\
+We could for example calculate the Ordering across each sample for each \
+measurement. In each inner Key we  select the first list, first component \
+(which is an intensity measure in this example), and obtain a ranking index \
+for each accession:\
+\>", "ExampleText",
+ CellID->1924457576],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"Ordering", ",", "omicsObjectExample", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]], "Input",
+ CellLabel->"In[247]:=",
+ CellID->697094556],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"FirstSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", "2"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", "4"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", "5"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"SecondSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", "4"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", "5"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", "2"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"ThirdSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", "5"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", "2"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", "4"}]}], 
+     "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{505, 69},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[247]=",
+ CellID->1805978556]
+}, Open  ]],
+
+Cell["\<\
+Intead let' s say we may want to standardize in each sample the distribution \
+using the Median and MedianDeviation\
+\>", "ExampleText",
+ CellID->547723994],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"StandardizeExtended", "[", 
+     RowBox[{"#", ",", "Median", ",", "MedianDeviation"}], "]"}], "&"}], ",", 
+   "omicsObjectExample", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]], "Input",
+ CellLabel->"In[254]:=",
+ CellID->119577787],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"FirstSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+       RowBox[{"-", "1.7622950819672136`"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", "0.23770491803278643`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+       RowBox[{"-", "0.23770491803278643`"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", "3.6639344262295124`"}], ",", 
+      
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"SecondSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", "1.953488372093023`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+       RowBox[{"-", "3.255813953488378`"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+       RowBox[{"-", "0.04651162790697686`"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", "0.04651162790697686`"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"ThirdSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", "1.`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+       RowBox[{"-", "1.6752577319587623`"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", "0.`"}]}], 
+     "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{487, 83},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[254]=",
+ CellID->1681313229]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Functionality Example",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsubsection",
+ WholeCellGroupOpener->True,
+ CellID->2011525358],
+
+Cell["\<\
+To see further how this works, we evaluate a generic function f:\
+\>", "ExampleText",
+ CellID->683983740],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "omicsObjectExample", ",", 
+    RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+    RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]}]], "Input",
+ CellLabel->"In[245]:=",
+ CellID->1167704269],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"FirstSample", "\[Rule]", 
+    RowBox[{"AssociationThread", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", "A0AVT1", "}"}], ",", 
+        RowBox[{"{", "A0MZ66", "}"}], ",", 
+        RowBox[{"{", "A1A4S6", "}"}], ",", 
+        RowBox[{"{", "A1L0T0", "}"}], ",", 
+        RowBox[{"{", "A0FGR8", "}"}]}], "}"}], "\[Rule]", 
+      RowBox[{"f", "[", 
+       RowBox[{"{", 
+        RowBox[{"0.937`", ",", "1.059`", ",", "1.03`", ",", "1.268`", ",", 
+         RowBox[{"Missing", "[", "]"}]}], "}"}], "]"}]}], "]"}]}], ",", 
+   RowBox[{"SecondSample", "\[Rule]", 
+    RowBox[{"AssociationThread", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", "A0AVT1", "}"}], ",", 
+        RowBox[{"{", "A0MZ66", "}"}], ",", 
+        RowBox[{"{", "A1A4S6", "}"}], ",", 
+        RowBox[{"{", "A1L0T0", "}"}], ",", 
+        RowBox[{"{", "A0FGR8", "}"}]}], "}"}], "\[Rule]", 
+      RowBox[{"f", "[", 
+       RowBox[{"{", 
+        RowBox[{"1.003`", ",", 
+         RowBox[{"Missing", "[", "]"}], ",", "0.779`", ",", "0.917`", ",", 
+         "0.921`"}], "}"}], "]"}]}], "]"}]}], ",", 
+   RowBox[{"ThirdSample", "\[Rule]", 
+    RowBox[{"AssociationThread", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", "A0AVT1", "}"}], ",", 
+        RowBox[{"{", "A0MZ66", "}"}], ",", 
+        RowBox[{"{", "A1A4S6", "}"}], ",", 
+        RowBox[{"{", "A1L0T0", "}"}], ",", 
+        RowBox[{"{", "A0FGR8", "}"}]}], "}"}], "\[Rule]", 
+      RowBox[{"f", "[", 
+       RowBox[{"{", 
+        RowBox[{"1.064`", ",", 
+         RowBox[{"Missing", "[", "]"}], ",", "0.545`", ",", 
+         RowBox[{"Missing", "[", "]"}], ",", "0.87`"}], "}"}], "]"}]}], 
+     "]"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{505, 95},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[245]=",
+ CellID->1839153721]
+}, Open  ]],
+
+Cell["\<\
+We see that essentially Applier allows f to act across the same list \
+component across Keys for each outer association, and creates a new inner \
+association of the existing Keys and new calculated values. We notice that f \
+takes a list as input and should return a new list as output.\
+\>", "ExampleText",
+ CellID->1170913016],
+
+Cell["We further illustrate with indexing all the components:", "ExampleText",
+ CellID->2081550437],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"nestedAssociationsLists", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"c1", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"b11", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a1111", ",", "a1112", ",", "a1113"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"a1121", ",", "a1122", ",", "a1123"}], "}"}]}], "}"}]}], 
+        ",", 
+        RowBox[{"b12", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a1211", ",", "a1212", ",", "a1213"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"a1221", ",", "a1222", ",", "a1223"}], "}"}]}], "}"}]}], 
+        ",", 
+        RowBox[{"b13", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a1311", ",", "a1312", ",", "a1313"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"a1321", ",", "a1322", ",", "a1323"}], "}"}]}], "}"}]}]}],
+        "\[RightAssociation]"}]}], ",", 
+     RowBox[{"c2", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"b21", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a2111", ",", "a2112", ",", "a2113"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"a2121", ",", "a2122", ",", "a2123"}], "}"}]}], "}"}]}], 
+        ",", 
+        RowBox[{"b22", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a2211", ",", "a2212", ",", "a2213"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"a2221", ",", "a2222", ",", "a2223"}], "}"}]}], "}"}]}], 
+        ",", 
+        RowBox[{"b23", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a2311", ",", "a2312", ",", "a2313"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"a2321", ",", "a2322", ",", "a2323"}], "}"}]}], "}"}]}]}],
+        "\[RightAssociation]"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"c3", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"b31", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a3111", ",", "a3112", ",", "a3113"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"a3121", ",", "a3122", ",", "a3123"}], "}"}]}], "}"}]}], 
+        ",", 
+        RowBox[{"b32", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a3211", ",", "a3212", ",", "a3213"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"a3221", ",", "a3222", ",", "a3223"}], "}"}]}], "}"}]}], 
+        ",", 
+        RowBox[{"b33", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a3311", ",", "a3312", ",", "a3313"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"a3321", ",", "a3322", ",", "a3323"}], "}"}]}], "}"}]}]}],
+        "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]}], 
+  ";"}]], "Input",
+ CellLabel->"In[235]:=",
+ CellID->840570433],
+
+Cell[TextData[{
+ "The structure of the ",
+ ButtonBox["OmicsObject ",
+  BaseStyle->"Link",
+  ButtonData->"paclet:MathIOmica/ref/OmicsObject"],
+ "is essentially "
+}], "ExampleText",
+ CellID->681587576],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Transpose", "@", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Ordering", "[", "#", "]"}], ",", "#"}], "}"}]}], "&"}], ",", 
+   "nestedAssociationsLists", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]], "Input",
+ CellLabel->"In[236]:=",
+ CellID->1018824421],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"c1", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"b11", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "a1111"}], "}"}]}], ",", 
+      RowBox[{"b12", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"2", ",", "a1211"}], "}"}]}], ",", 
+      RowBox[{"b13", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"3", ",", "a1311"}], "}"}]}]}], "\[RightAssociation]"}]}], 
+   ",", 
+   RowBox[{"c2", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"b21", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "a2111"}], "}"}]}], ",", 
+      RowBox[{"b22", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"2", ",", "a2211"}], "}"}]}], ",", 
+      RowBox[{"b23", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"3", ",", "a2311"}], "}"}]}]}], "\[RightAssociation]"}]}], 
+   ",", 
+   RowBox[{"c3", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"b31", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "a3111"}], "}"}]}], ",", 
+      RowBox[{"b32", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"2", ",", "a3211"}], "}"}]}], ",", 
+      RowBox[{"b33", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"3", ",", "a3311"}], "}"}]}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{422, 40},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[236]=",
+ CellID->170193668]
+}, Open  ]],
+
+Cell["We can generalize to an arbitrary function f:", "ExampleText",
+ CellID->250146275],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "nestedAssociationsLists", ",", 
+    RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+    RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]}]], "Input",
+ CellLabel->"In[237]:=",
+ CellID->1446876338],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"c1", "\[Rule]", 
+    RowBox[{"AssociationThread", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"b11", ",", "b12", ",", "b13"}], "}"}], "\[Rule]", 
+      RowBox[{"f", "[", 
+       RowBox[{"{", 
+        RowBox[{"a1111", ",", "a1211", ",", "a1311"}], "}"}], "]"}]}], 
+     "]"}]}], ",", 
+   RowBox[{"c2", "\[Rule]", 
+    RowBox[{"AssociationThread", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"b21", ",", "b22", ",", "b23"}], "}"}], "\[Rule]", 
+      RowBox[{"f", "[", 
+       RowBox[{"{", 
+        RowBox[{"a2111", ",", "a2211", ",", "a2311"}], "}"}], "]"}]}], 
+     "]"}]}], ",", 
+   RowBox[{"c3", "\[Rule]", 
+    RowBox[{"AssociationThread", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"b31", ",", "b32", ",", "b33"}], "}"}], "\[Rule]", 
+      RowBox[{"f", "[", 
+       RowBox[{"{", 
+        RowBox[{"a3111", ",", "a3211", ",", "a3311"}], "}"}], "]"}]}], 
+     "]"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{475, 40},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[237]=",
+ CellID->740225837]
+}, Open  ]],
+
+Cell["\<\
+We see that if f produces a component list the same size as the keys we will \
+reproduce the structur of the original association. We can also do this with \
+other components by different choices of ListIndex and ComponentIndex. For \
+example, select the second component from the first list and apply f:\
+\>", "ExampleText",
+ CellID->1558540986],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "nestedAssociationsLists", ",", 
+    RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+    RowBox[{"ComponentIndex", "\[Rule]", " ", "2"}]}], "]"}]}]], "Input",
+ CellLabel->"In[255]:=",
+ CellID->930890644],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"c1", "\[Rule]", 
+    RowBox[{"AssociationThread", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"b11", ",", "b12", ",", "b13"}], "}"}], "\[Rule]", 
+      RowBox[{"f", "[", 
+       RowBox[{"{", 
+        RowBox[{"a1112", ",", "a1212", ",", "a1312"}], "}"}], "]"}]}], 
+     "]"}]}], ",", 
+   RowBox[{"c2", "\[Rule]", 
+    RowBox[{"AssociationThread", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"b21", ",", "b22", ",", "b23"}], "}"}], "\[Rule]", 
+      RowBox[{"f", "[", 
+       RowBox[{"{", 
+        RowBox[{"a2112", ",", "a2212", ",", "a2312"}], "}"}], "]"}]}], 
+     "]"}]}], ",", 
+   RowBox[{"c3", "\[Rule]", 
+    RowBox[{"AssociationThread", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"b31", ",", "b32", ",", "b33"}], "}"}], "\[Rule]", 
+      RowBox[{"f", "[", 
+       RowBox[{"{", 
+        RowBox[{"a3112", ",", "a3212", ",", "a3312"}], "}"}], "]"}]}], 
+     "]"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{475, 40},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[255]=",
+ CellID->641360488]
+}, Open  ]],
+
+Cell["\<\
+Or instead select the first component from the second list and apply f :\
+\>", "ExampleText",
+ CellID->1479728735],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "nestedAssociationsLists", ",", 
+    RowBox[{"ListIndex", "\[Rule]", " ", "2"}], ",", 
+    RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]}]], "Input",
+ CellLabel->"In[256]:=",
+ CellID->2121632184],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"c1", "\[Rule]", 
+    RowBox[{"AssociationThread", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"b11", ",", "b12", ",", "b13"}], "}"}], "\[Rule]", 
+      RowBox[{"f", "[", 
+       RowBox[{"{", 
+        RowBox[{"a1121", ",", "a1221", ",", "a1321"}], "}"}], "]"}]}], 
+     "]"}]}], ",", 
+   RowBox[{"c2", "\[Rule]", 
+    RowBox[{"AssociationThread", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"b21", ",", "b22", ",", "b23"}], "}"}], "\[Rule]", 
+      RowBox[{"f", "[", 
+       RowBox[{"{", 
+        RowBox[{"a2121", ",", "a2221", ",", "a2321"}], "}"}], "]"}]}], 
+     "]"}]}], ",", 
+   RowBox[{"c3", "\[Rule]", 
+    RowBox[{"AssociationThread", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"b31", ",", "b32", ",", "b33"}], "}"}], "\[Rule]", 
+      RowBox[{"f", "[", 
+       RowBox[{"{", 
+        RowBox[{"a3121", ",", "a3221", ",", "a3321"}], "}"}], "]"}]}], 
+     "]"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{475, 40},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[256]=",
+ CellID->809774655]
+}, Open  ]]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Applier on General Associations",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(13)", "ExampleCount"]
+}], "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->2010174345],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Single Association, One List of Values",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True,
+ CellID->318964814],
+
+Cell["Consider a single component association:", "ExampleText",
+ CellID->1335552034],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"associationSinglet", "=", 
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{"c", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "a1", ",", "a2", ",", "a3", ",", "a4", ",", "a5", ",", "a6", ",", "a7", 
+      ",", "a8", ",", "a9", ",", "a10"}], "}"}]}], 
+   "\[RightAssociation]"}]}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1233479171],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c", "\[Rule]", 
+   RowBox[{"{", 
+    RowBox[{
+    "a1", ",", "a2", ",", "a3", ",", "a4", ",", "a5", ",", "a6", ",", "a7", 
+     ",", "a8", ",", "a9", ",", "a10"}], "}"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{313, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->1475253777]
+}, Open  ]],
+
+Cell["Let's apply function f to this association.", "ExampleText",
+ CellID->722445986],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"f", ",", "associationSinglet"}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->302216836],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c", "\[Rule]", 
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "a1", ",", "a2", ",", "a3", ",", "a4", ",", "a5", ",", "a6", ",", "a7", 
+      ",", "a8", ",", "a9", ",", "a10"}], "}"}], "]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{334, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->1667374627]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Single Association, Lists of Values",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True,
+ CellID->2074213815],
+
+Cell["\<\
+Consider a single association with multiple lists for its value:\
+\>", "ExampleText",
+ CellID->62348968],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"associationSingletList", "=", 
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{"c1", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a11", ",", "a12", ",", "a13"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a21", ",", "a22", ",", "a23"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a31", ",", "a32", ",", "a33"}], "}"}]}], "}"}]}], 
+   "\[RightAssociation]"}]}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->819816877],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a11", ",", "a12", ",", "a13"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"a21", ",", "a22", ",", "a23"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"a31", ",", "a32", ",", "a33"}], "}"}]}], "}"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{401, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->1659186197]
+}, Open  ]],
+
+Cell["Let' s apply function f to the entire association.", "ExampleText",
+ CellID->1482825450],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"f", ",", "associationSingletList"}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->175265241],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a11", ",", "a12", ",", "a13"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a21", ",", "a22", ",", "a23"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a31", ",", "a32", ",", "a33"}], "}"}]}], "}"}], "]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{422, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->1134071448]
+}, Open  ]],
+
+Cell["Or we can apply to the first component list", "ExampleText",
+ CellID->562529164],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"f", ",", "associationSingletList", ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->447369562],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{"a11", ",", "a21", ",", "a31"}], "}"}], "]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{182, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->1565273497]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Single Association, Nested Lists of Values",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True,
+ CellID->409813859],
+
+Cell["Consider a single association with multilevel lists:", "ExampleText",
+ CellID->1421459411],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"associationLists", "=", 
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{"c1", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"a111", ",", "a112", ",", "a113"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a121", ",", "a122", ",", "a123"}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"a211", ",", "a212", ",", "a213"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a221", ",", "a222", ",", "a223"}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"a311", ",", "a312", ",", "a313"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a321", ",", "a322", ",", "a323"}], "}"}]}], "}"}]}], 
+     "}"}]}], "\[RightAssociation]"}]}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->761472284],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a111", ",", "a112", ",", "a113"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"a121", ",", "a122", ",", "a123"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a211", ",", "a212", ",", "a213"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"a221", ",", "a222", ",", "a223"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a311", ",", "a312", ",", "a313"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"a321", ",", "a322", ",", "a323"}], "}"}]}], "}"}]}], "}"}]}],
+   "\[RightAssociation]"}]], "Output",
+ ImageSize->{473, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->1322533700]
+}, Open  ]],
+
+Cell["Let' s apply function f to the entire association.", "ExampleText",
+ CellID->2082382503],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"f", ",", "associationLists"}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1061732762],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"a111", ",", "a112", ",", "a113"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a121", ",", "a122", ",", "a123"}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"a211", ",", "a212", ",", "a213"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a221", ",", "a222", ",", "a223"}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"a311", ",", "a312", ",", "a313"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a321", ",", "a322", ",", "a323"}], "}"}]}], "}"}]}], "}"}], 
+    "]"}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{487, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->1575167625]
+}, Open  ]],
+
+Cell["Or we can apply to the first component list:", "ExampleText",
+ CellID->241838325],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"f", ",", "associationLists", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1537668151],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a111", ",", "a112", ",", "a113"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a211", ",", "a212", ",", "a213"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a311", ",", "a312", ",", "a313"}], "}"}]}], "}"}], "]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{485, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->16742417]
+}, Open  ]],
+
+Cell["\<\
+We may for example apply to the 2nd list in each member, to the third \
+component:\
+\>", "ExampleText",
+ CellID->1488459130],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"f", ",", "associationLists", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "2"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "3"}]}], "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->69444762],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{"a123", ",", "a223", ",", "a323"}], "}"}], "]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{203, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->2042288525]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Single Level of Associations, Single Component Values",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(2)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True,
+ CellID->1026739558],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "General Example",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsubsection",
+ WholeCellGroupOpener->True,
+ CellID->614298301],
+
+Cell["Consider now a multiple component association:", "ExampleText",
+ CellID->1380647661],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"associationsSinglets", "=", 
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{
+    RowBox[{"b11", "\[Rule]", "a1"}], ",", 
+    RowBox[{"b12", "\[Rule]", "a2"}], ",", 
+    RowBox[{"b13", "\[Rule]", "a3"}], ",", 
+    RowBox[{"b14", "\[Rule]", "a4"}], ",", 
+    RowBox[{"b15", "\[Rule]", "a5"}], ",", 
+    RowBox[{"b16", "\[Rule]", "a6"}], ",", 
+    RowBox[{"b17", "\[Rule]", "a7"}], ",", 
+    RowBox[{"b18", "\[Rule]", "a8"}], ",", 
+    RowBox[{"b19", "\[Rule]", "a9"}]}], "\[RightAssociation]"}]}]], "Input",
+ CellLabel->"In[185]:=",
+ CellID->984432592],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"b11", "\[Rule]", "a1"}], ",", 
+   RowBox[{"b12", "\[Rule]", "a2"}], ",", 
+   RowBox[{"b13", "\[Rule]", "a3"}], ",", 
+   RowBox[{"b14", "\[Rule]", "a4"}], ",", 
+   RowBox[{"b15", "\[Rule]", "a5"}], ",", 
+   RowBox[{"b16", "\[Rule]", "a6"}], ",", 
+   RowBox[{"b17", "\[Rule]", "a7"}], ",", 
+   RowBox[{"b18", "\[Rule]", "a8"}], ",", 
+   RowBox[{"b19", "\[Rule]", "a9"}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{333, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[185]=",
+ CellID->1922703961]
+}, Open  ]],
+
+Cell["\<\
+Let's apply for example a function that produces the ordering across this \
+association.\
+\>", "ExampleText",
+ CellID->1562775413],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"Ordering", ",", "associationsSinglets"}], "]"}]], "Input",
+ CellLabel->"In[186]:=",
+ CellID->1841363481],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"b11", "\[Rule]", "1"}], ",", 
+   RowBox[{"b12", "\[Rule]", "2"}], ",", 
+   RowBox[{"b13", "\[Rule]", "3"}], ",", 
+   RowBox[{"b14", "\[Rule]", "4"}], ",", 
+   RowBox[{"b15", "\[Rule]", "5"}], ",", 
+   RowBox[{"b16", "\[Rule]", "6"}], ",", 
+   RowBox[{"b17", "\[Rule]", "7"}], ",", 
+   RowBox[{"b18", "\[Rule]", "8"}], ",", 
+   RowBox[{"b19", "\[Rule]", "9"}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{530, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[186]=",
+ CellID->609981067]
+}, Open  ]],
+
+Cell["Instead we can add the ordering and the entire list:", "ExampleText",
+ CellID->2078324167],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Transpose", "@", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Ordering", "[", "#", "]"}], ",", "#"}], "}"}]}], "&"}], ",", 
+   "associationsSinglets"}], "]"}]], "Input",
+ CellLabel->"In[187]:=",
+ CellID->1312498665],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"b11", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "a1"}], "}"}]}], ",", 
+   RowBox[{"b12", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"2", ",", "a2"}], "}"}]}], ",", 
+   RowBox[{"b13", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"3", ",", "a3"}], "}"}]}], ",", 
+   RowBox[{"b14", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"4", ",", "a4"}], "}"}]}], ",", 
+   RowBox[{"b15", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"5", ",", "a5"}], "}"}]}], ",", 
+   RowBox[{"b16", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"6", ",", "a6"}], "}"}]}], ",", 
+   RowBox[{"b17", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"7", ",", "a7"}], "}"}]}], ",", 
+   RowBox[{"b18", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"8", ",", "a8"}], "}"}]}], ",", 
+   RowBox[{"b19", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"9", ",", "a9"}], "}"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{493, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[187]=",
+ CellID->2017168541]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Functionality Example",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsubsection",
+ WholeCellGroupOpener->True,
+ CellID->956847928],
+
+Cell["For a generic function f we have:", "ExampleText",
+ CellID->1993058002],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "associationsSinglets"}], "]"}]}]], "Input",
+ CellLabel->"In[269]:=",
+ CellID->481290171],
+
+Cell[BoxData[
+ RowBox[{"AssociationThread", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "b11", ",", "b12", ",", "b13", ",", "b14", ",", "b15", ",", "b16", ",", 
+     "b17", ",", "b18", ",", "b19"}], "}"}], ",", 
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "a1", ",", "a2", ",", "a3", ",", "a4", ",", "a5", ",", "a6", ",", "a7", 
+      ",", "a8", ",", "a9"}], "}"}], "]"}]}], "]"}]], "Output",
+ ImageSize->{440, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[269]=",
+ CellID->493636624]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Single Level of Associations, Multi-Component Values",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(2)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True,
+ CellID->1926553933],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "General Example",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsubsection",
+ WholeCellGroupOpener->True,
+ CellID->1557653778],
+
+Cell["\<\
+Let's consider one level of associations with two lists with multiple \
+components:\
+\>", "ExampleText",
+ CellID->1982791175],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"associationsMultiList", "=", 
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{
+    RowBox[{"b11", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a111", ",", "a112", ",", "a113"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"a121", ",", "a122", ",", "a123"}], "}"}]}], "}"}]}], ",", 
+    RowBox[{"b12", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a211", ",", "a212", ",", "a213"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"a221", ",", "a222", ",", "a223"}], "}"}]}], "}"}]}], ",", 
+    RowBox[{"b13", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a311", ",", "a312", ",", "a313"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"a321", ",", "a322", ",", "a323"}], "}"}]}], "}"}]}]}], 
+   "\[RightAssociation]"}]}]], "Input",
+ CellLabel->"In[190]:=",
+ CellID->397363698],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"b11", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a111", ",", "a112", ",", "a113"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a121", ",", "a122", ",", "a123"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"b12", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a211", ",", "a212", ",", "a213"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a221", ",", "a222", ",", "a223"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"b13", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a311", ",", "a312", ",", "a313"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a321", ",", "a322", ",", "a323"}], "}"}]}], "}"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{334, 40},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[190]=",
+ CellID->403778634]
+}, Open  ]],
+
+Cell["\<\
+We need to set HorizontalSelection to True to be able to select across the \
+Keys.\
+\>", "ExampleText",
+ CellID->717475578],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Transpose", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Ordering", "[", "#", "]"}], ",", "#"}], "}"}], "]"}], "&"}], 
+   ",", "associationsMultiList", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"HorizontalSelection", "\[Rule]", " ", "True"}]}], "]"}]], "Input",\
+
+ CellLabel->"In[191]:=",
+ CellID->873309300],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"b11", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "a111"}], "}"}]}], ",", 
+   RowBox[{"b12", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"2", ",", "a211"}], "}"}]}], ",", 
+   RowBox[{"b13", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"3", ",", "a311"}], "}"}]}]}], "\[RightAssociation]"}]], "Output",\
+
+ ImageSize->{350, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[191]=",
+ CellID->1614843591]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Transpose", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Ordering", "[", "#", "]"}], ",", "#"}], "}"}], "]"}], "&"}], 
+   ",", "associationsMultiList", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"HorizontalSelection", "\[Rule]", " ", "True"}]}], "]"}]], "Input",\
+
+ CellLabel->"In[192]:=",
+ CellID->1211708225],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"b11", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "a111"}], "}"}]}], ",", 
+   RowBox[{"b12", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"2", ",", "a211"}], "}"}]}], ",", 
+   RowBox[{"b13", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"3", ",", "a311"}], "}"}]}]}], "\[RightAssociation]"}]], "Output",\
+
+ ImageSize->{350, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[192]=",
+ CellID->1872905226]
+}, Open  ]],
+
+Cell["\<\
+If HorizontalSelection is set to False we can run the Applier across the \
+inner list of the association\
+\>", "ExampleText",
+ CellID->882499587],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Transpose", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Ordering", "[", "#", "]"}], ",", "#"}], "}"}], "]"}], "&"}], 
+   ",", "associationsMultiList", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"HorizontalSelection", "\[Rule]", " ", "False"}]}], "]"}]], "Input",\
+
+ CellLabel->"In[193]:=",
+ CellID->1644453299],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"b11", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "a111"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "a121"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"b12", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "a211"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "a221"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"b13", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "a311"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "a321"}], "}"}]}], "}"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{407, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[193]=",
+ CellID->1782018204]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Functionality Example",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsubsection",
+ WholeCellGroupOpener->True,
+ CellID->1143689544],
+
+Cell["\<\
+We can see explicitely the difference by using a generic function f:\
+\>", "ExampleText",
+ CellID->1869905115],
+
+Cell["First with HorizontalSelection of Lists:", "ExampleText",
+ CellID->1692475280],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "associationsMultiList", ",", 
+    RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+    RowBox[{"HorizontalSelection", "\[Rule]", " ", "True"}]}], 
+   "]"}]}]], "Input",
+ CellLabel->"In[261]:=",
+ CellID->998786888],
+
+Cell[BoxData[
+ RowBox[{"AssociationThread", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"b11", ",", "b12", ",", "b13"}], "}"}], ",", 
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a111", ",", "a112", ",", "a113"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a211", ",", "a212", ",", "a213"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a311", ",", "a312", ",", "a313"}], "}"}]}], "}"}], "]"}]}], 
+  "]"}]], "Output",
+ ImageSize->{445, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[261]=",
+ CellID->1515319388]
+}, Open  ]],
+
+Cell["HorizontalSelection of Lists and Components specified :", "ExampleText",
+ CellID->406318690],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "associationsMultiList", ",", 
+    RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+    RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}], ",", 
+    RowBox[{"HorizontalSelection", "\[Rule]", " ", "True"}]}], 
+   "]"}]}]], "Input",
+ CellLabel->"In[262]:=",
+ CellID->964384343],
+
+Cell[BoxData[
+ RowBox[{"AssociationThread", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"b11", ",", "b12", ",", "b13"}], "}"}], ",", 
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{"a111", ",", "a211", ",", "a311"}], "}"}], "]"}]}], 
+  "]"}]], "Output",
+ ImageSize->{397, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[262]=",
+ CellID->480305836]
+}, Open  ]],
+
+Cell["Without HorizontalSelection :", "ExampleText",
+ CellID->1591802095],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "associationsMultiList", ",", 
+    RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+    RowBox[{"HorizontalSelection", "\[Rule]", " ", "False"}]}], 
+   "]"}]}]], "Input",
+ CellLabel->"In[260]:=",
+ CellID->1773866457],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"b11", "\[Rule]", 
+    RowBox[{"f", "[", 
+     RowBox[{"{", 
+      RowBox[{"a111", ",", "a121"}], "}"}], "]"}]}], ",", 
+   RowBox[{"b12", "\[Rule]", 
+    RowBox[{"f", "[", 
+     RowBox[{"{", 
+      RowBox[{"a211", ",", "a221"}], "}"}], "]"}]}], ",", 
+   RowBox[{"b13", "\[Rule]", 
+    RowBox[{"f", "[", 
+     RowBox[{"{", 
+      RowBox[{"a311", ",", "a321"}], "}"}], "]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{479, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[260]=",
+ CellID->170536972]
+}, Open  ]],
+
+Cell["", "Input",
+ CellID->1058021264]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Two Level Associations, Single Component Values",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(2)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True,
+ CellID->1294952944],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "General Example",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsubsection",
+ WholeCellGroupOpener->True,
+ CellID->466949143],
+
+Cell["\<\
+We can use Applier on nested associations. For the simplest case we have:\
+\>", "ExampleText",
+ CellID->1509349955],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"nestedAssociationSinglets", "=", 
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{"c1", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"b11", "\[Rule]", "a1"}], ",", 
+      RowBox[{"b12", "\[Rule]", "a2"}], ",", 
+      RowBox[{"b13", "\[Rule]", "a3"}], ",", 
+      RowBox[{"b14", "\[Rule]", "a4"}], ",", 
+      RowBox[{"b15", "\[Rule]", "a5"}], ",", 
+      RowBox[{"b16", "\[Rule]", "a6"}], ",", 
+      RowBox[{"b17", "\[Rule]", "a7"}], ",", 
+      RowBox[{"b18", "\[Rule]", "a8"}], ",", 
+      RowBox[{"b19", "\[Rule]", "a9"}]}], "\[RightAssociation]"}]}], 
+   "\[RightAssociation]"}]}]], "Input",
+ CellLabel->"In[204]:=",
+ CellID->862699779],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"b11", "\[Rule]", "a1"}], ",", 
+     RowBox[{"b12", "\[Rule]", "a2"}], ",", 
+     RowBox[{"b13", "\[Rule]", "a3"}], ",", 
+     RowBox[{"b14", "\[Rule]", "a4"}], ",", 
+     RowBox[{"b15", "\[Rule]", "a5"}], ",", 
+     RowBox[{"b16", "\[Rule]", "a6"}], ",", 
+     RowBox[{"b17", "\[Rule]", "a7"}], ",", 
+     RowBox[{"b18", "\[Rule]", "a8"}], ",", 
+     RowBox[{"b19", "\[Rule]", "a9"}]}], "\[RightAssociation]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{425, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[204]=",
+ CellID->2035479859]
+}, Open  ]],
+
+Cell["\<\
+Let's apply Ordering to the inner association. Each Key now gets the order in \
+the list as its value.\
+\>", "ExampleText",
+ CellID->368055101],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"Ordering", ",", "nestedAssociationSinglets"}], "]"}]], "Input",
+ CellLabel->"In[205]:=",
+ CellID->1407167361],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"b11", "\[Rule]", "1"}], ",", 
+     RowBox[{"b12", "\[Rule]", "2"}], ",", 
+     RowBox[{"b13", "\[Rule]", "3"}], ",", 
+     RowBox[{"b14", "\[Rule]", "4"}], ",", 
+     RowBox[{"b15", "\[Rule]", "5"}], ",", 
+     RowBox[{"b16", "\[Rule]", "6"}], ",", 
+     RowBox[{"b17", "\[Rule]", "7"}], ",", 
+     RowBox[{"b18", "\[Rule]", "8"}], ",", 
+     RowBox[{"b19", "\[Rule]", "9"}]}], "\[RightAssociation]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{558, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[205]=",
+ CellID->993906745]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"Standardize", ",", "nestedAssociationSinglets"}], "]"}]], "Input",
+ CellLabel->"In[206]:=",
+ CellID->839422694],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"b11", "\[Rule]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"6", " ", 
+         SqrtBox["2"], " ", 
+         RowBox[{"(", 
+          RowBox[{"a1", "+", 
+           RowBox[{
+            FractionBox["1", "9"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}]}]}], 
+          ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{"\[Sqrt]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"8", " ", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", 
+              "a5", "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            
+            RowBox[{"Conjugate", "[", "a1", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "+", 
+              RowBox[{"8", " ", "a2"}], "-", "a3", "-", "a4", "-", "a5", "-", 
+              "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a2", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "+", 
+              RowBox[{"8", " ", "a3"}], "-", "a4", "-", "a5", "-", "a6", "-", 
+              "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a3", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "+", 
+              RowBox[{"8", " ", "a4"}], "-", "a5", "-", "a6", "-", "a7", "-", 
+              "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a4", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "+", 
+              RowBox[{"8", " ", "a5"}], "-", "a6", "-", "a7", "-", "a8", "-", 
+              "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a5", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "+", 
+              RowBox[{"8", " ", "a6"}], "-", "a7", "-", "a8", "-", "a9"}], 
+             ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a6", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "+", 
+              RowBox[{"8", " ", "a7"}], "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a7", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "+", 
+              RowBox[{"8", " ", "a8"}], "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a8", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "+", 
+              RowBox[{"8", " ", "a9"}]}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a9", "]"}]}]}], ")"}]}], ")"}]}]}], 
+     ",", 
+     RowBox[{"b12", "\[Rule]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"6", " ", 
+         SqrtBox["2"], " ", 
+         RowBox[{"(", 
+          RowBox[{"a2", "+", 
+           RowBox[{
+            FractionBox["1", "9"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}]}]}], 
+          ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{"\[Sqrt]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"8", " ", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", 
+              "a5", "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            
+            RowBox[{"Conjugate", "[", "a1", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "+", 
+              RowBox[{"8", " ", "a2"}], "-", "a3", "-", "a4", "-", "a5", "-", 
+              "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a2", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "+", 
+              RowBox[{"8", " ", "a3"}], "-", "a4", "-", "a5", "-", "a6", "-", 
+              "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a3", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "+", 
+              RowBox[{"8", " ", "a4"}], "-", "a5", "-", "a6", "-", "a7", "-", 
+              "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a4", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "+", 
+              RowBox[{"8", " ", "a5"}], "-", "a6", "-", "a7", "-", "a8", "-", 
+              "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a5", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "+", 
+              RowBox[{"8", " ", "a6"}], "-", "a7", "-", "a8", "-", "a9"}], 
+             ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a6", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "+", 
+              RowBox[{"8", " ", "a7"}], "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a7", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "+", 
+              RowBox[{"8", " ", "a8"}], "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a8", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "+", 
+              RowBox[{"8", " ", "a9"}]}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a9", "]"}]}]}], ")"}]}], ")"}]}]}], 
+     ",", 
+     RowBox[{"b13", "\[Rule]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"6", " ", 
+         SqrtBox["2"], " ", 
+         RowBox[{"(", 
+          RowBox[{"a3", "+", 
+           RowBox[{
+            FractionBox["1", "9"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}]}]}], 
+          ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{"\[Sqrt]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"8", " ", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", 
+              "a5", "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            
+            RowBox[{"Conjugate", "[", "a1", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "+", 
+              RowBox[{"8", " ", "a2"}], "-", "a3", "-", "a4", "-", "a5", "-", 
+              "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a2", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "+", 
+              RowBox[{"8", " ", "a3"}], "-", "a4", "-", "a5", "-", "a6", "-", 
+              "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a3", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "+", 
+              RowBox[{"8", " ", "a4"}], "-", "a5", "-", "a6", "-", "a7", "-", 
+              "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a4", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "+", 
+              RowBox[{"8", " ", "a5"}], "-", "a6", "-", "a7", "-", "a8", "-", 
+              "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a5", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "+", 
+              RowBox[{"8", " ", "a6"}], "-", "a7", "-", "a8", "-", "a9"}], 
+             ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a6", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "+", 
+              RowBox[{"8", " ", "a7"}], "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a7", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "+", 
+              RowBox[{"8", " ", "a8"}], "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a8", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "+", 
+              RowBox[{"8", " ", "a9"}]}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a9", "]"}]}]}], ")"}]}], ")"}]}]}], 
+     ",", 
+     RowBox[{"b14", "\[Rule]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"6", " ", 
+         SqrtBox["2"], " ", 
+         RowBox[{"(", 
+          RowBox[{"a4", "+", 
+           RowBox[{
+            FractionBox["1", "9"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}]}]}], 
+          ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{"\[Sqrt]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"8", " ", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", 
+              "a5", "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            
+            RowBox[{"Conjugate", "[", "a1", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "+", 
+              RowBox[{"8", " ", "a2"}], "-", "a3", "-", "a4", "-", "a5", "-", 
+              "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a2", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "+", 
+              RowBox[{"8", " ", "a3"}], "-", "a4", "-", "a5", "-", "a6", "-", 
+              "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a3", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "+", 
+              RowBox[{"8", " ", "a4"}], "-", "a5", "-", "a6", "-", "a7", "-", 
+              "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a4", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "+", 
+              RowBox[{"8", " ", "a5"}], "-", "a6", "-", "a7", "-", "a8", "-", 
+              "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a5", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "+", 
+              RowBox[{"8", " ", "a6"}], "-", "a7", "-", "a8", "-", "a9"}], 
+             ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a6", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "+", 
+              RowBox[{"8", " ", "a7"}], "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a7", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "+", 
+              RowBox[{"8", " ", "a8"}], "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a8", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "+", 
+              RowBox[{"8", " ", "a9"}]}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a9", "]"}]}]}], ")"}]}], ")"}]}]}], 
+     ",", 
+     RowBox[{"b15", "\[Rule]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"6", " ", 
+         SqrtBox["2"], " ", 
+         RowBox[{"(", 
+          RowBox[{"a5", "+", 
+           RowBox[{
+            FractionBox["1", "9"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}]}]}], 
+          ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{"\[Sqrt]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"8", " ", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", 
+              "a5", "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            
+            RowBox[{"Conjugate", "[", "a1", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "+", 
+              RowBox[{"8", " ", "a2"}], "-", "a3", "-", "a4", "-", "a5", "-", 
+              "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a2", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "+", 
+              RowBox[{"8", " ", "a3"}], "-", "a4", "-", "a5", "-", "a6", "-", 
+              "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a3", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "+", 
+              RowBox[{"8", " ", "a4"}], "-", "a5", "-", "a6", "-", "a7", "-", 
+              "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a4", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "+", 
+              RowBox[{"8", " ", "a5"}], "-", "a6", "-", "a7", "-", "a8", "-", 
+              "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a5", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "+", 
+              RowBox[{"8", " ", "a6"}], "-", "a7", "-", "a8", "-", "a9"}], 
+             ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a6", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "+", 
+              RowBox[{"8", " ", "a7"}], "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a7", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "+", 
+              RowBox[{"8", " ", "a8"}], "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a8", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "+", 
+              RowBox[{"8", " ", "a9"}]}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a9", "]"}]}]}], ")"}]}], ")"}]}]}], 
+     ",", 
+     RowBox[{"b16", "\[Rule]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"6", " ", 
+         SqrtBox["2"], " ", 
+         RowBox[{"(", 
+          RowBox[{"a6", "+", 
+           RowBox[{
+            FractionBox["1", "9"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}]}]}], 
+          ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{"\[Sqrt]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"8", " ", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", 
+              "a5", "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            
+            RowBox[{"Conjugate", "[", "a1", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "+", 
+              RowBox[{"8", " ", "a2"}], "-", "a3", "-", "a4", "-", "a5", "-", 
+              "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a2", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "+", 
+              RowBox[{"8", " ", "a3"}], "-", "a4", "-", "a5", "-", "a6", "-", 
+              "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a3", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "+", 
+              RowBox[{"8", " ", "a4"}], "-", "a5", "-", "a6", "-", "a7", "-", 
+              "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a4", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "+", 
+              RowBox[{"8", " ", "a5"}], "-", "a6", "-", "a7", "-", "a8", "-", 
+              "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a5", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "+", 
+              RowBox[{"8", " ", "a6"}], "-", "a7", "-", "a8", "-", "a9"}], 
+             ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a6", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "+", 
+              RowBox[{"8", " ", "a7"}], "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a7", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "+", 
+              RowBox[{"8", " ", "a8"}], "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a8", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "+", 
+              RowBox[{"8", " ", "a9"}]}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a9", "]"}]}]}], ")"}]}], ")"}]}]}], 
+     ",", 
+     RowBox[{"b17", "\[Rule]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"6", " ", 
+         SqrtBox["2"], " ", 
+         RowBox[{"(", 
+          RowBox[{"a7", "+", 
+           RowBox[{
+            FractionBox["1", "9"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}]}]}], 
+          ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{"\[Sqrt]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"8", " ", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", 
+              "a5", "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            
+            RowBox[{"Conjugate", "[", "a1", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "+", 
+              RowBox[{"8", " ", "a2"}], "-", "a3", "-", "a4", "-", "a5", "-", 
+              "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a2", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "+", 
+              RowBox[{"8", " ", "a3"}], "-", "a4", "-", "a5", "-", "a6", "-", 
+              "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a3", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "+", 
+              RowBox[{"8", " ", "a4"}], "-", "a5", "-", "a6", "-", "a7", "-", 
+              "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a4", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "+", 
+              RowBox[{"8", " ", "a5"}], "-", "a6", "-", "a7", "-", "a8", "-", 
+              "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a5", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "+", 
+              RowBox[{"8", " ", "a6"}], "-", "a7", "-", "a8", "-", "a9"}], 
+             ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a6", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "+", 
+              RowBox[{"8", " ", "a7"}], "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a7", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "+", 
+              RowBox[{"8", " ", "a8"}], "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a8", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "+", 
+              RowBox[{"8", " ", "a9"}]}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a9", "]"}]}]}], ")"}]}], ")"}]}]}], 
+     ",", 
+     RowBox[{"b18", "\[Rule]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"6", " ", 
+         SqrtBox["2"], " ", 
+         RowBox[{"(", 
+          RowBox[{"a8", "+", 
+           RowBox[{
+            FractionBox["1", "9"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}]}]}], 
+          ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{"\[Sqrt]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"8", " ", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", 
+              "a5", "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            
+            RowBox[{"Conjugate", "[", "a1", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "+", 
+              RowBox[{"8", " ", "a2"}], "-", "a3", "-", "a4", "-", "a5", "-", 
+              "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a2", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "+", 
+              RowBox[{"8", " ", "a3"}], "-", "a4", "-", "a5", "-", "a6", "-", 
+              "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a3", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "+", 
+              RowBox[{"8", " ", "a4"}], "-", "a5", "-", "a6", "-", "a7", "-", 
+              "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a4", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "+", 
+              RowBox[{"8", " ", "a5"}], "-", "a6", "-", "a7", "-", "a8", "-", 
+              "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a5", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "+", 
+              RowBox[{"8", " ", "a6"}], "-", "a7", "-", "a8", "-", "a9"}], 
+             ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a6", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "+", 
+              RowBox[{"8", " ", "a7"}], "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a7", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "+", 
+              RowBox[{"8", " ", "a8"}], "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a8", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "+", 
+              RowBox[{"8", " ", "a9"}]}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a9", "]"}]}]}], ")"}]}], ")"}]}]}], 
+     ",", 
+     RowBox[{"b19", "\[Rule]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"6", " ", 
+         SqrtBox["2"], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "9"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}]}], "+", 
+           "a9"}], ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{"\[Sqrt]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"8", " ", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", 
+              "a5", "-", "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            
+            RowBox[{"Conjugate", "[", "a1", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "+", 
+              RowBox[{"8", " ", "a2"}], "-", "a3", "-", "a4", "-", "a5", "-", 
+              "a6", "-", "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a2", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "+", 
+              RowBox[{"8", " ", "a3"}], "-", "a4", "-", "a5", "-", "a6", "-", 
+              "a7", "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a3", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "+", 
+              RowBox[{"8", " ", "a4"}], "-", "a5", "-", "a6", "-", "a7", "-", 
+              "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a4", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "+", 
+              RowBox[{"8", " ", "a5"}], "-", "a6", "-", "a7", "-", "a8", "-", 
+              "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a5", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "+", 
+              RowBox[{"8", " ", "a6"}], "-", "a7", "-", "a8", "-", "a9"}], 
+             ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a6", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "+", 
+              RowBox[{"8", " ", "a7"}], "-", "a8", "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a7", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "+", 
+              RowBox[{"8", " ", "a8"}], "-", "a9"}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a8", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "a1"}], "-", "a2", "-", "a3", "-", "a4", "-", "a5",
+               "-", "a6", "-", "a7", "-", "a8", "+", 
+              RowBox[{"8", " ", "a9"}]}], ")"}], " ", 
+            RowBox[{"Conjugate", "[", "a9", "]"}]}]}], ")"}]}], ")"}]}]}]}], 
+    "\[RightAssociation]"}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{474, 1424},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[206]=",
+ CellID->617491163]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[TextData[{
+ "Functionality Example",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsubsection"]], "ExampleSubsubsection",
+ WholeCellGroupOpener->True,
+ CellID->504808032],
+
+Cell["For a generic function f we have", "ExampleText",
+ CellID->1853716237],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "nestedAssociationSinglets"}], "]"}]}]], "Input",
+ CellLabel->"In[264]:=",
+ CellID->1863528230],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"AssociationThread", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "b11", ",", "b12", ",", "b13", ",", "b14", ",", "b15", ",", "b16", ",", 
+       "b17", ",", "b18", ",", "b19"}], "}"}], "\[Rule]", 
+     RowBox[{"f", "[", 
+      RowBox[{"{", 
+       RowBox[{
+       "a1", ",", "a2", ",", "a3", ",", "a4", ",", "a5", ",", "a6", ",", "a7",
+         ",", "a8", ",", "a9"}], "}"}], "]"}]}], "]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{489, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[264]=",
+ CellID->1393051134]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Two Level Associations, Multi-Component Values",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(2)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True,
+ CellID->124446310],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "General Example",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsubsection",
+ WholeCellGroupOpener->True,
+ CellID->1661389916],
+
+Cell["Suppose we have a multi - component list for values:", "ExampleText",
+ CellID->1755902208],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"nestedAssociationList", "=", 
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{"c1", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"b11", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"a11", ",", "a12", ",", "a13"}], "}"}]}], ",", 
+      RowBox[{"b12", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"a21", ",", "a22", ",", "a23"}], "}"}]}], ",", 
+      RowBox[{"b13", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"a31", ",", "a32", ",", "a33"}], "}"}]}]}], 
+     "\[RightAssociation]"}]}], "\[RightAssociation]"}]}]], "Input",
+ CellLabel->"In[207]:=",
+ CellID->1921936458],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"b11", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"a11", ",", "a12", ",", "a13"}], "}"}]}], ",", 
+     RowBox[{"b12", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"a21", ",", "a22", ",", "a23"}], "}"}]}], ",", 
+     RowBox[{"b13", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"a31", ",", "a32", ",", "a33"}], "}"}]}]}], 
+    "\[RightAssociation]"}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{528, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[207]=",
+ CellID->367650876]
+}, Open  ]],
+
+Cell["\<\
+For example let's get the ordering across the first component:\
+\>", "ExampleText",
+ CellID->856995821],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"Ordering", ",", "nestedAssociationList", ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]], "Input",
+ CellLabel->"In[208]:=",
+ CellID->21876094],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"b11", "\[Rule]", "1"}], ",", 
+     RowBox[{"b12", "\[Rule]", "2"}], ",", 
+     RowBox[{"b13", "\[Rule]", "3"}]}], "\[RightAssociation]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{243, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[208]=",
+ CellID->81470123]
+}, Open  ]],
+
+Cell["For another example, let' s normalize the second component :", \
+"ExampleText",
+ CellID->1588444554],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"Normalize", ",", "nestedAssociationList", ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "2"}]}], "]"}]], "Input",
+ CellLabel->"In[209]:=",
+ CellID->360704091],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"b11", "\[Rule]", 
+      FractionBox["a12", 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a12", "]"}], "2"], "+", 
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a22", "]"}], "2"], "+", 
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a32", "]"}], "2"]}]]]}], ",", 
+     RowBox[{"b12", "\[Rule]", 
+      FractionBox["a22", 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a12", "]"}], "2"], "+", 
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a22", "]"}], "2"], "+", 
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a32", "]"}], "2"]}]]]}], ",", 
+     RowBox[{"b13", "\[Rule]", 
+      FractionBox["a32", 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a12", "]"}], "2"], "+", 
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a22", "]"}], "2"], "+", 
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a32", "]"}], "2"]}]]]}]}], 
+    "\[RightAssociation]"}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{348, 125},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[209]=",
+ CellID->778118426]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[TextData[{
+ "Functionality Example",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsubsection"]], "ExampleSubsubsection",
+ WholeCellGroupOpener->True,
+ CellID->1430225491],
+
+Cell["For a generic function f we have:", "ExampleText",
+ CellID->273653908],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "nestedAssociationList", ",", 
+    RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]}]], "Input",
+ CellLabel->"In[266]:=",
+ CellID->1662858870],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"AssociationThread", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b11", ",", "b12", ",", "b13"}], "}"}], "\[Rule]", 
+     RowBox[{"f", "[", 
+      RowBox[{"{", 
+       RowBox[{"a11", ",", "a21", ",", "a31"}], "}"}], "]"}]}], "]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{437, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[266]=",
+ CellID->329956065]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "nestedAssociationList", ",", 
+    RowBox[{"ComponentIndex", "\[Rule]", " ", "2"}]}], "]"}]}]], "Input",
+ CellLabel->"In[267]:=",
+ CellID->768807901],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"AssociationThread", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b11", ",", "b12", ",", "b13"}], "}"}], "\[Rule]", 
+     RowBox[{"f", "[", 
+      RowBox[{"{", 
+       RowBox[{"a12", ",", "a22", ",", "a32"}], "}"}], "]"}]}], "]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{437, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[267]=",
+ CellID->1727715719]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Two Level Associations, Multi-List Values",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(2)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True,
+ CellID->1808459199],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "General Example",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsubsection",
+ WholeCellGroupOpener->True,
+ CellID->1397939918],
+
+Cell["Suppose we have a multi - component list for values:", "ExampleText",
+ CellID->1437701602],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"nestedAssociationLists", "=", 
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{"c1", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"b11", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"a111", ",", "a112", ",", "a113"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"a121", ",", "a122", ",", "a123"}], "}"}]}], "}"}]}], ",", 
+      RowBox[{"b12", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"a211", ",", "a212", ",", "a213"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"a221", ",", "a222", ",", "a223"}], "}"}]}], "}"}]}], ",", 
+      RowBox[{"b13", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"a311", ",", "a312", ",", "a313"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"a321", ",", "a322", ",", "a323"}], "}"}]}], "}"}]}]}], 
+     "\[RightAssociation]"}]}], "\[RightAssociation]"}]}]], "Input",
+ CellLabel->"In[210]:=",
+ CellID->2112312417],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"b11", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"a111", ",", "a112", ",", "a113"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a121", ",", "a122", ",", "a123"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"b12", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"a211", ",", "a212", ",", "a213"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a221", ",", "a222", ",", "a223"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"b13", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"a311", ",", "a312", ",", "a313"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a321", ",", "a322", ",", "a323"}], "}"}]}], "}"}]}]}], 
+    "\[RightAssociation]"}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{376, 40},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[210]=",
+ CellID->1679061784]
+}, Open  ]],
+
+Cell["\<\
+For example let's get the ordering across the first list, first component, \
+and keep track of the component that generated it:\
+\>", "ExampleText",
+ CellID->428477592],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Transpose", "@", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Ordering", "[", "#", "]"}], ",", "#"}], "}"}]}], "&"}], ",", 
+   "nestedAssociationLists", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]], "Input",
+ CellLabel->"In[220]:=",
+ CellID->910220353],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"b11", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "a111"}], "}"}]}], ",", 
+     RowBox[{"b12", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "a211"}], "}"}]}], ",", 
+     RowBox[{"b13", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "a311"}], "}"}]}]}], "\[RightAssociation]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{405, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[220]=",
+ CellID->2022406421]
+}, Open  ]],
+
+Cell["\<\
+Let's pick a different list for each value, say the second one:\
+\>", "ExampleText",
+ CellID->1723112364],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Transpose", "@", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Ordering", "[", "#", "]"}], ",", "#"}], "}"}]}], "&"}], ",", 
+   "nestedAssociationLists", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "2"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]], "Input",
+ CellLabel->"In[222]:=",
+ CellID->1336226549],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"b11", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "a121"}], "}"}]}], ",", 
+     RowBox[{"b12", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "a221"}], "}"}]}], ",", 
+     RowBox[{"b13", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "a321"}], "}"}]}]}], "\[RightAssociation]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{405, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[222]=",
+ CellID->429391272]
+}, Open  ]],
+
+Cell["For another example, let' s normalize the second component :", \
+"ExampleText",
+ CellID->2054093860],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"Normalize", ",", "nestedAssociationLists", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "2"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "3"}]}], "]"}]], "Input",
+ CellLabel->"In[223]:=",
+ CellID->208395848],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"b11", "\[Rule]", 
+      FractionBox["a123", 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a123", "]"}], "2"], "+", 
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a223", "]"}], "2"], "+", 
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a323", "]"}], "2"]}]]]}], ",", 
+     RowBox[{"b12", "\[Rule]", 
+      FractionBox["a223", 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a123", "]"}], "2"], "+", 
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a223", "]"}], "2"], "+", 
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a323", "]"}], "2"]}]]]}], ",", 
+     RowBox[{"b13", "\[Rule]", 
+      FractionBox["a323", 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a123", "]"}], "2"], "+", 
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a223", "]"}], "2"], "+", 
+         SuperscriptBox[
+          RowBox[{"Abs", "[", "a323", "]"}], "2"]}]]]}]}], 
+    "\[RightAssociation]"}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{369, 125},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[223]=",
+ CellID->1615632113]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Functionality Example",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsubsection",
+ WholeCellGroupOpener->True,
+ CellID->1433273133],
+
+Cell["For a generic function f we have:", "ExampleText",
+ CellID->974849580],
+
+Cell["Apply f to the second list, first components :", "ExampleText",
+ CellID->367712791],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "nestedAssociationLists", ",", 
+    RowBox[{"ListIndex", "\[Rule]", " ", "2"}], ",", 
+    RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]}]], "Input",
+ CellLabel->"In[271]:=",
+ CellID->1144148097],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"AssociationThread", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b11", ",", "b12", ",", "b13"}], "}"}], "\[Rule]", 
+     RowBox[{"f", "[", 
+      RowBox[{"{", 
+       RowBox[{"a121", ",", "a221", ",", "a321"}], "}"}], "]"}]}], "]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{458, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[271]=",
+ CellID->248892592]
+}, Open  ]],
+
+Cell["Apply f to the first lists :", "ExampleText",
+ CellID->1973086316],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "nestedAssociationLists", ",", 
+    RowBox[{"ListIndex", "\[Rule]", " ", "1"}]}], "]"}]}]], "Input",
+ CellLabel->"In[272]:=",
+ CellID->1987133035],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"c1", "\[Rule]", 
+   RowBox[{"AssociationThread", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b11", ",", "b12", ",", "b13"}], "}"}], "\[Rule]", 
+     RowBox[{"f", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"a111", ",", "a112", ",", "a113"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a211", ",", "a212", ",", "a213"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a311", ",", "a312", ",", "a313"}], "}"}]}], "}"}], "]"}]}], 
+    "]"}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{480, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[272]=",
+ CellID->917854631]
+}, Open  ]]
+}, Closed]]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Applier on Lists of Lists",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->1474477911],
+
+Cell["\<\
+Though Applier is designed towards application on associations, it also works \
+on lists.\
+\>", "ExampleText",
+ CellID->1071350528],
+
+Cell["We consider a simple list:", "ExampleText",
+ CellID->22794524],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"list1", "=", 
+   RowBox[{"{", 
+    RowBox[{"a1", ",", "a2", ",", "a3", ",", "a4", ",", "a5", ",", "a6"}], 
+    "}"}]}], ";"}]], "Input",
+ CellLabel->"In[8]:=",
+ CellID->1394044803],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"f", ",", "list1"}], "]"}]], "Input",
+ CellLabel->"In[9]:=",
+ CellID->138387854],
+
+Cell[BoxData[
+ RowBox[{"f", "[", 
+  RowBox[{"{", 
+   RowBox[{"a1", ",", "a2", ",", "a3", ",", "a4", ",", "a5", ",", "a6"}], 
+   "}"}], "]"}]], "Output",
+ ImageSize->{178, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[9]=",
+ CellID->1432325662]
+}, Open  ]],
+
+Cell["We can also apply the function f to a list of lists", "ExampleText",
+ CellID->1895037085],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"list2", "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"a11", ",", "a12", ",", "a13"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a21", ",", "a22", ",", "a23"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a31", ",", "a32", ",", "a33"}], "}"}]}], "}"}]}]], "Input",
+ CellLabel->"In[10]:=",
+ CellID->1953202011],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a11", ",", "a12", ",", "a13"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a21", ",", "a22", ",", "a23"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a31", ",", "a32", ",", "a33"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{346, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[10]=",
+ CellID->1879656065]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"f", ",", "list2"}], "]"}]], "Input",
+ CellLabel->"In[11]:=",
+ CellID->392906976],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{"a11", ",", "a12", ",", "a13"}], "}"}], "]"}], ",", 
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{"a21", ",", "a22", ",", "a23"}], "}"}], "]"}], ",", 
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{"a31", ",", "a32", ",", "a33"}], "}"}], "]"}]}], "}"}]], "Output",\
+
+ ImageSize->{409, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[11]=",
+ CellID->351090972]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Options",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(3)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "ListIndex",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True],
+
+Cell["\<\
+ListIndex is an option that allows the selection of which list to choose from \
+the inner values in the object considered. For example, let's look at an \
+OmicsObject\
+\>", "ExampleText",
+ CellID->1040482081],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2143396708],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"omicsObjectExample", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"FirstSample", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.937", "}"}], ",", 
+           RowBox[{"{", "17", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.059", "}"}], ",", 
+           RowBox[{"{", "9", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03", "}"}], ",", 
+           RowBox[{"{", "11", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268", "}"}], ",", 
+           RowBox[{"{", "4", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+     RowBox[{"SecondSample", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.003", "}"}], ",", 
+           RowBox[{"{", "17", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779", "}"}], ",", 
+           RowBox[{"{", "11", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.917", "}"}], ",", 
+           RowBox[{"{", "4", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921", "}"}], ",", 
+           RowBox[{"{", "24", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}], 
+     ",", 
+     RowBox[{"ThirdSample", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.064", "}"}], ",", 
+           RowBox[{"{", "19", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545", "}"}], ",", 
+           RowBox[{"{", "5", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87", "}"}], ",", 
+           RowBox[{"{", "23", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}]}],
+     "\[RightAssociation]"}]}], ";"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1855859694],
+
+Cell["\<\
+We can calculate an ordering within each sample based on the first list, \
+first component value.\
+\>", "ExampleText",
+ CellID->1381388030],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"Ordering", ",", "omicsObjectExample", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->542912493],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"FirstSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", "2"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", "4"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", "5"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"SecondSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", "4"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", "5"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", "2"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"ThirdSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", "5"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", "2"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", "4"}]}], 
+     "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{505, 69},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->585726217]
+}, Open  ]],
+
+Cell["\<\
+We could instead select the second list for each of the values:\
+\>", "ExampleText",
+ CellID->235491271],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"Ordering", ",", "omicsObjectExample", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "2"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->183669593],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"FirstSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", "4"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", "2"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", "5"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"SecondSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", "4"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", "5"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", "2"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"ThirdSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", "5"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", "2"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", "4"}]}], 
+     "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{505, 69},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->26576333]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "ComponentIndex",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->300891564],
+
+Cell["Let's consider a multi component OmicsObject:", "ExampleText",
+ CellID->1415680263],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"omicsObjectMultiComponent", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\"\<FirstSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement1\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.8", ",", "2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"17", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement2\>\"", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement3\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.5", ",", "4"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "\"\<False\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement4\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.2", ",", "3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"5", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement5\>\"", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<SecondSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement1\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.7", ",", "1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"15", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement2\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.7", ",", "1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"12", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement3\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.3", ",", "2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"11", ",", "\"\<False\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement4\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.3", ",", "3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"6", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement5\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.6", ",", "3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"10", ",", "\"\<True\>\""}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<ThirdSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement1\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.9", ",", "2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"16", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement2\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.3", ",", "5"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"11", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement3\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.4", ",", "6"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"8", ",", "\"\<False\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement4\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.3", ",", "2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"7", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement5\>\"", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}]}], 
+    "\[RightAssociation]"}]}], ";"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->2139313802],
+
+Cell["\<\
+In this example we can obtain the rank within each sample for the first \
+component of each measurement:\
+\>", "ExampleText",
+ CellID->1610059719],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"Ordering", ",", "omicsObjectMultiComponent", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->829730521],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", "4"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "2"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "5"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", "4"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "5"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "2"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", "2"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", "4"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "5"}]}], 
+     "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{446, 82},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->1204913384]
+}, Open  ]],
+
+Cell["\<\
+Or we can obtain the rank within each sample for the second component of each \
+measurement:\
+\>", "ExampleText",
+ CellID->1125242108],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"Ordering", ",", "omicsObjectMultiComponent", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "2"}]}], "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->1407155374],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", "4"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "2"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "5"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", "2"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "4"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "5"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", "4"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "2"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "5"}]}], 
+     "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{446, 82},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->119680069]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "HorizontalSelection",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1716908766],
+
+Cell["\<\
+HorizontalSelection an option used typically when dealing with single-level \
+associations. Depending on the choice we can select to act on components \
+across Keys, or within the lists of the Keys:\
+\>", "ExampleText",
+ CellID->208453678],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"associationExampleLists", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement1\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "3", ",", "2"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0.1", ",", "0.2", ",", "\"\<a\>\""}], "}"}]}], "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement2\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"2", ",", "3", ",", "4"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0.2", ",", "0.1", ",", "\"\<c\>\""}], "}"}]}], "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement3\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"4", ",", "2", ",", "1"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0.1", ",", "0.3", ",", "\"\<b\>\""}], "}"}]}], "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement4\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"3", ",", "1", ",", "5"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0.3", ",", "0.2", ",", "\"\<d\>\""}], "}"}]}], "}"}]}]}], 
+    "\[RightAssociation]"}]}], ";"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1729024120],
+
+Cell["We obtain ranks based on first Lists, first components:", "ExampleText",
+ CellID->1862050917],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"Ordering", ",", "associationExampleLists", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"HorizontalSelection", "\[Rule]", " ", "True"}]}], "]"}]], "Input",\
+
+ CellLabel->"In[3]:=",
+ CellID->1485704502],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", "1"}], ",", 
+   RowBox[{
+    RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", "2"}], ",", 
+   RowBox[{
+    RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "4"}], ",", 
+   RowBox[{
+    RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "3"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{557, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->546085904]
+}, Open  ]],
+
+Cell["\<\
+We standardize the values of the first list, second components :\
+\>", "ExampleText",
+ CellID->7845],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"Standardize", ",", "associationExampleLists", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"ComponentIndex", "\[Rule]", " ", "2"}], ",", 
+   RowBox[{"HorizontalSelection", "\[Rule]", " ", "True"}]}], "]"}]], "Input",\
+
+ CellLabel->"In[4]:=",
+ CellID->1868164897],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", 
+    "0.7833494518006403`"}], ",", 
+   RowBox[{
+    RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", 
+    "0.7833494518006403`"}], ",", 
+   RowBox[{
+    RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", 
+    RowBox[{"-", "0.26111648393354675`"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", 
+    RowBox[{"-", "1.3055824196677337`"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{393, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->468596153]
+}, Open  ]],
+
+Cell["To illustrate the functionality, we consider:", "ExampleText",
+ CellID->384949414],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"associationsMultiList", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"b11", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"a111", ",", "a112", ",", "a113"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a121", ",", "a122", ",", "a123"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"b12", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"a211", ",", "a212", ",", "a213"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a221", ",", "a222", ",", "a223"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"b13", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"a311", ",", "a312", ",", "a313"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"a321", ",", "a322", ",", "a323"}], "}"}]}], "}"}]}]}], 
+    "\[RightAssociation]"}]}], ";"}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->381113110],
+
+Cell["For a generic function f:", "ExampleText",
+ CellID->952669557],
+
+Cell["\<\
+HorizontalSelection set to False has function f working on components of the \
+lists for each value:\
+\>", "ExampleText",
+ CellID->374442775],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Applier", "[", 
+  RowBox[{"f", ",", "associationsMultiList", ",", 
+   RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+   RowBox[{"HorizontalSelection", "\[Rule]", " ", "False"}]}], "]"}]], "Input",\
+
+ CellLabel->"In[6]:=",
+ CellID->1881122821],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"b11", "\[Rule]", 
+    RowBox[{"f", "[", 
+     RowBox[{"{", 
+      RowBox[{"a111", ",", "a121"}], "}"}], "]"}]}], ",", 
+   RowBox[{"b12", "\[Rule]", 
+    RowBox[{"f", "[", 
+     RowBox[{"{", 
+      RowBox[{"a211", ",", "a221"}], "}"}], "]"}]}], ",", 
+   RowBox[{"b13", "\[Rule]", 
+    RowBox[{"f", "[", 
+     RowBox[{"{", 
+      RowBox[{"a311", ",", "a321"}], "}"}], "]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{479, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[6]=",
+ CellID->1478090477]
+}, Open  ]],
+
+Cell["\<\
+HorizontalSelection set to True has function f working on components of the \
+values across the Keys :\
+\>", "ExampleText",
+ CellID->530629660],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "associationsMultiList", ",", 
+    RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+    RowBox[{"HorizontalSelection", "\[Rule]", " ", "True"}]}], 
+   "]"}]}]], "Input",
+ CellLabel->"In[7]:=",
+ CellID->175818443],
+
+Cell[BoxData[
+ RowBox[{"AssociationThread", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"b11", ",", "b12", ",", "b13"}], "}"}], ",", 
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a111", ",", "a112", ",", "a113"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a211", ",", "a212", ",", "a213"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a311", ",", "a312", ",", "a313"}], "}"}]}], "}"}], "]"}]}], 
+  "]"}]], "Output",
+ ImageSize->{445, 27},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[7]=",
+ CellID->474060735]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quiet", "@", 
+  RowBox[{"Applier", "[", 
+   RowBox[{"f", ",", "associationsMultiList", ",", 
+    RowBox[{"ListIndex", "\[Rule]", " ", "1"}], ",", 
+    RowBox[{"ComponentIndex", "\[Rule]", " ", "1"}], ",", 
+    RowBox[{"HorizontalSelection", "\[Rule]", " ", "True"}]}], 
+   "]"}]}]], "Input",
+ CellLabel->"In[8]:=",
+ CellID->58893250],
+
+Cell[BoxData[
+ RowBox[{"AssociationThread", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"b11", ",", "b12", ",", "b13"}], "}"}], ",", 
+   RowBox[{"f", "[", 
+    RowBox[{"{", 
+     RowBox[{"a111", ",", "a211", ",", "a311"}], "}"}], "]"}]}], 
+  "]"}]], "Output",
+ ImageSize->{397, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[8]=",
+ CellID->1604300615]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Properties & Relations",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->2123667759],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["Returner"]],"paclet:MathIOmica/ref/Returner"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+ " acts as a complementary function that can replace the values of an input \
+data with the output of Applier at the appropriate specified positions."
+}], "ExampleText",
+ CellID->138352886],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["ApplierList"]],"paclet:MathIOmica/ref/ApplierList"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+ " rather than act across the inner associations of an ",
+ ButtonBox["OmicsObject",
+  BaseStyle->"Link",
+  ButtonData->"paclet:MathIOmica/ref/OmicsObject"],
+ " in the same way  applies a function across inner and outer associations",
+ ". ",
+ "The functions to be used with ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["ApplierList"]],"paclet:MathIOmica/ref/ApplierList"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+ " should utilize matrix values as inputs and outputs (list of lists)."
+}], "ExampleText",
+ CellID->810603736]
+}, Closed]],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "See Also"
+}], "SeeAlsoSection",
+ WholeCellGroupOpener->True,
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["ApplierList"]],"paclet:MathIOmica/ref/ApplierList"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["MeasurementApplier"]],
+    "paclet:MathIOmica/ref/MeasurementApplier"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["OmicsObject"]],"paclet:MathIOmica/ref/OmicsObject"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["Returner"]],"paclet:MathIOmica/ref/Returner"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["Query"]],"paclet:ref/Query"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Tutorials"
+}], "TutorialsSection",
+ WholeCellGroupOpener->True,
+ CellID->250839057],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaTutorial"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaTutorial"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->341631938],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Dynamic Transcriptome"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->1023267351],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Guides"
+}], "MoreAboutSection",
+ WholeCellGroupOpener->True,
+ CellID->38303248],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Guide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"MoreAbout", "CodeFont"}]], "MoreAbout",
+ CellID->1588091734],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Links"
+}], "RelatedLinksSection",
+ WholeCellGroupOpener->True,
+ CellID->1584193535],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaGuide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1038487239],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaOverview"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaOverview"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1784361302]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"Applier",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "Mathematica", ButtonData -> "paclet:MathIOmica/guide/MathIOmica", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
+  None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2016, 9, 7, 18, 14, 32.548062}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "MathIOmica`DataProcessing`", "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Math I Omica Package Symbol", "language" -> "en", "paclet" -> 
+    "MathIOmica Package", "status" -> "None", "summary" -> 
+    "Applier[function, inputData] applies function to OmicsObject, \
+association or list inputData components.", "synonyms" -> {}, 
+    "tabletags" -> {}, "title" -> "Applier", "titlemodifier" -> "", 
+    "windowtitle" -> "Applier", "type" -> "Symbol", "uri" -> 
+    "MathIOmica/ref/Applier"}, "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+2016)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> 
+  "10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, 2016)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[11083, 334, 389, 15, 70, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1891844148]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 147470, 4640}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[579, 21, 4807, 119, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[5389, 142, 284, 11, 70, "ObjectNameGrid"],
+Cell[CellGroupData[{
+Cell[5698, 157, 630, 19, 70, "Usage"],
+Cell[CellGroupData[{
+Cell[6353, 180, 739, 24, 70, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->1045935949],
+Cell[7095, 206, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[7129, 208, 511, 13, 70, "Notes",
+ CellID->554938814],
+Cell[7643, 223, 664, 16, 70, "2ColumnTableMod",
+ CellID->29176506],
+Cell[8310, 241, 377, 12, 70, "Notes",
+ CellID->1284645755],
+Cell[8690, 255, 53, 0, 70, "Notes"],
+Cell[8746, 257, 1393, 37, 70, "3ColumnTableMod"],
+Cell[10142, 296, 445, 13, 70, "Notes",
+ CellID->1829873214],
+Cell[10590, 311, 410, 15, 70, "Notes",
+ CellID->176989270],
+Cell[11003, 328, 31, 0, 70, "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11083, 334, 389, 15, 70, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1891844148],
+Cell[CellGroupData[{
+Cell[11497, 353, 195, 6, 70, "ExampleSection",
+ CellID->581717954],
+Cell[11695, 361, 88, 1, 70, "ExampleText",
+ CellID->191603639],
+Cell[11786, 364, 120, 3, 70, "Input",
+ CellID->2017647728],
+Cell[11909, 369, 132, 4, 70, "ExampleText",
+ CellID->211488133]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12078, 378, 188, 6, 70, "ExampleSection",
+ CellID->655681039],
+Cell[CellGroupData[{
+Cell[12291, 388, 185, 6, 70, "ExampleSubsubsection",
+ CellID->1357626468],
+Cell[12479, 396, 81, 1, 70, "ExampleText",
+ CellID->929943212],
+Cell[12563, 399, 3338, 95, 70, "Input",
+ CellID->15975588],
+Cell[15904, 496, 299, 6, 70, "ExampleText",
+ CellID->1924457576],
+Cell[CellGroupData[{
+Cell[16228, 506, 263, 6, 70, "Input",
+ CellID->697094556],
+Cell[16494, 514, 1729, 49, 70, "Output",
+ CellID->1805978556]
+}, Open  ]],
+Cell[18238, 566, 166, 4, 70, "ExampleText",
+ CellID->547723994],
+Cell[CellGroupData[{
+Cell[18429, 574, 382, 10, 70, "Input",
+ CellID->119577787],
+Cell[18814, 586, 2149, 58, 70, "Output",
+ CellID->1681313229]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[21012, 650, 191, 6, 70, "ExampleSubsubsection",
+ CellID->2011525358],
+Cell[21206, 658, 115, 3, 70, "ExampleText",
+ CellID->683983740],
+Cell[CellGroupData[{
+Cell[21346, 665, 287, 7, 70, "Input",
+ CellID->1167704269],
+Cell[21636, 674, 1942, 52, 70, "Output",
+ CellID->1839153721]
+}, Open  ]],
+Cell[23593, 729, 339, 6, 70, "ExampleText",
+ CellID->1170913016],
+Cell[23935, 737, 99, 1, 70, "ExampleText",
+ CellID->2081550437],
+Cell[24037, 740, 3179, 88, 70, "Input",
+ CellID->840570433],
+Cell[27219, 830, 199, 7, 70, "ExampleText",
+ CellID->681587576],
+Cell[CellGroupData[{
+Cell[27443, 841, 411, 12, 70, "Input",
+ CellID->1018824421],
+Cell[27857, 855, 1507, 46, 70, "Output",
+ CellID->170193668]
+}, Open  ]],
+Cell[29379, 904, 88, 1, 70, "ExampleText",
+ CellID->250146275],
+Cell[CellGroupData[{
+Cell[29492, 909, 292, 7, 70, "Input",
+ CellID->1446876338],
+Cell[29787, 918, 1142, 34, 70, "Output",
+ CellID->740225837]
+}, Open  ]],
+Cell[30944, 955, 356, 6, 70, "ExampleText",
+ CellID->1558540986],
+Cell[CellGroupData[{
+Cell[31325, 965, 291, 7, 70, "Input",
+ CellID->930890644],
+Cell[31619, 974, 1142, 34, 70, "Output",
+ CellID->641360488]
+}, Open  ]],
+Cell[32776, 1011, 124, 3, 70, "ExampleText",
+ CellID->1479728735],
+Cell[CellGroupData[{
+Cell[32925, 1018, 292, 7, 70, "Input",
+ CellID->2121632184],
+Cell[33220, 1027, 1142, 34, 70, "Output",
+ CellID->809774655]
+}, Open  ]]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34423, 1068, 196, 6, 70, "ExampleSection",
+ CellID->2010174345],
+Cell[CellGroupData[{
+Cell[34644, 1078, 225, 6, 70, "ExampleSubsection",
+ CellID->318964814],
+Cell[34872, 1086, 84, 1, 70, "ExampleText",
+ CellID->1335552034],
+Cell[CellGroupData[{
+Cell[34981, 1091, 357, 10, 70, "Input",
+ CellID->1233479171],
+Cell[35341, 1103, 400, 12, 70, "Output",
+ CellID->1475253777]
+}, Open  ]],
+Cell[35756, 1118, 86, 1, 70, "ExampleText",
+ CellID->722445986],
+Cell[CellGroupData[{
+Cell[35867, 1123, 143, 4, 70, "Input",
+ CellID->302216836],
+Cell[36013, 1129, 433, 13, 70, "Output",
+ CellID->1667374627]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[36495, 1148, 223, 6, 70, "ExampleSubsection",
+ CellID->2074213815],
+Cell[36721, 1156, 114, 3, 70, "ExampleText",
+ CellID->62348968],
+Cell[CellGroupData[{
+Cell[36860, 1163, 480, 14, 70, "Input",
+ CellID->819816877],
+Cell[37343, 1179, 516, 16, 70, "Output",
+ CellID->1659186197]
+}, Open  ]],
+Cell[37874, 1198, 94, 1, 70, "ExampleText",
+ CellID->1482825450],
+Cell[CellGroupData[{
+Cell[37993, 1203, 147, 4, 70, "Input",
+ CellID->175265241],
+Cell[38143, 1209, 553, 17, 70, "Output",
+ CellID->1134071448]
+}, Open  ]],
+Cell[38711, 1229, 86, 1, 70, "ExampleText",
+ CellID->562529164],
+Cell[CellGroupData[{
+Cell[38822, 1234, 205, 5, 70, "Input",
+ CellID->447369562],
+Cell[39030, 1241, 346, 11, 70, "Output",
+ CellID->1565273497]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[39425, 1258, 229, 6, 70, "ExampleSubsection",
+ CellID->409813859],
+Cell[39657, 1266, 96, 1, 70, "ExampleText",
+ CellID->1421459411],
+Cell[CellGroupData[{
+Cell[39778, 1271, 896, 26, 70, "Input",
+ CellID->761472284],
+Cell[40677, 1299, 924, 28, 70, "Output",
+ CellID->1322533700]
+}, Open  ]],
+Cell[41616, 1330, 94, 1, 70, "ExampleText",
+ CellID->2082382503],
+Cell[CellGroupData[{
+Cell[41735, 1335, 142, 4, 70, "Input",
+ CellID->1061732762],
+Cell[41880, 1341, 975, 29, 70, "Output",
+ CellID->1575167625]
+}, Open  ]],
+Cell[42870, 1373, 87, 1, 70, "ExampleText",
+ CellID->241838325],
+Cell[CellGroupData[{
+Cell[42982, 1378, 195, 5, 70, "Input",
+ CellID->1537668151],
+Cell[43180, 1385, 560, 17, 70, "Output",
+ CellID->16742417]
+}, Open  ]],
+Cell[43755, 1405, 134, 4, 70, "ExampleText",
+ CellID->1488459130],
+Cell[CellGroupData[{
+Cell[43914, 1413, 251, 6, 70, "Input",
+ CellID->69444762],
+Cell[44168, 1421, 349, 11, 70, "Output",
+ CellID->2042288525]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[44566, 1438, 241, 6, 70, "ExampleSubsection",
+ CellID->1026739558],
+Cell[CellGroupData[{
+Cell[44832, 1448, 184, 6, 70, "ExampleSubsubsection",
+ CellID->614298301],
+Cell[45019, 1456, 90, 1, 70, "ExampleText",
+ CellID->1380647661],
+Cell[CellGroupData[{
+Cell[45134, 1461, 571, 14, 70, "Input",
+ CellID->984432592],
+Cell[45708, 1477, 609, 16, 70, "Output",
+ CellID->1922703961]
+}, Open  ]],
+Cell[46332, 1496, 140, 4, 70, "ExampleText",
+ CellID->1562775413],
+Cell[CellGroupData[{
+Cell[46497, 1504, 155, 4, 70, "Input",
+ CellID->1841363481],
+Cell[46655, 1510, 599, 16, 70, "Output",
+ CellID->609981067]
+}, Open  ]],
+Cell[47269, 1529, 96, 1, 70, "ExampleText",
+ CellID->2078324167],
+Cell[CellGroupData[{
+Cell[47390, 1534, 297, 10, 70, "Input",
+ CellID->1312498665],
+Cell[47690, 1546, 1068, 34, 70, "Output",
+ CellID->2017168541]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[48807, 1586, 190, 6, 70, "ExampleSubsubsection",
+ CellID->956847928],
+Cell[49000, 1594, 77, 1, 70, "ExampleText",
+ CellID->1993058002],
+Cell[CellGroupData[{
+Cell[49102, 1599, 175, 5, 70, "Input",
+ CellID->481290171],
+Cell[49280, 1606, 547, 16, 70, "Output",
+ CellID->493636624]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[49888, 1629, 240, 6, 70, "ExampleSubsection",
+ CellID->1926553933],
+Cell[CellGroupData[{
+Cell[50153, 1639, 185, 6, 70, "ExampleSubsubsection",
+ CellID->1557653778],
+Cell[50341, 1647, 135, 4, 70, "ExampleText",
+ CellID->1982791175],
+Cell[CellGroupData[{
+Cell[50501, 1655, 924, 27, 70, "Input",
+ CellID->397363698],
+Cell[51428, 1684, 947, 29, 70, "Output",
+ CellID->403778634]
+}, Open  ]],
+Cell[52390, 1716, 133, 4, 70, "ExampleText",
+ CellID->717475578],
+Cell[CellGroupData[{
+Cell[52548, 1724, 481, 14, 70, "Input",
+ CellID->873309300],
+Cell[53032, 1740, 512, 17, 70, "Output",
+ CellID->1614843591]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[53581, 1762, 482, 14, 70, "Input",
+ CellID->1211708225],
+Cell[54066, 1778, 512, 17, 70, "Output",
+ CellID->1872905226]
+}, Open  ]],
+Cell[54593, 1798, 155, 4, 70, "ExampleText",
+ CellID->882499587],
+Cell[CellGroupData[{
+Cell[54773, 1806, 425, 13, 70, "Input",
+ CellID->1644453299],
+Cell[55201, 1821, 852, 29, 70, "Output",
+ CellID->1782018204]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[56102, 1856, 191, 6, 70, "ExampleSubsubsection",
+ CellID->1143689544],
+Cell[56296, 1864, 120, 3, 70, "ExampleText",
+ CellID->1869905115],
+Cell[56419, 1869, 84, 1, 70, "ExampleText",
+ CellID->1692475280],
+Cell[CellGroupData[{
+Cell[56528, 1874, 301, 8, 70, "Input",
+ CellID->998786888],
+Cell[56832, 1884, 608, 19, 70, "Output",
+ CellID->1515319388]
+}, Open  ]],
+Cell[57455, 1906, 98, 1, 70, "ExampleText",
+ CellID->406318690],
+Cell[CellGroupData[{
+Cell[57578, 1911, 360, 9, 70, "Input",
+ CellID->964384343],
+Cell[57941, 1922, 394, 13, 70, "Output",
+ CellID->480305836]
+}, Open  ]],
+Cell[58350, 1938, 73, 1, 70, "ExampleText",
+ CellID->1591802095],
+Cell[CellGroupData[{
+Cell[58448, 1943, 303, 8, 70, "Input",
+ CellID->1773866457],
+Cell[58754, 1953, 617, 20, 70, "Output",
+ CellID->170536972]
+}, Open  ]],
+Cell[59386, 1976, 38, 1, 70, "Input",
+ CellID->1058021264]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[59473, 1983, 235, 6, 70, "ExampleSubsection",
+ CellID->1294952944],
+Cell[CellGroupData[{
+Cell[59733, 1993, 184, 6, 70, "ExampleSubsubsection",
+ CellID->466949143],
+Cell[59920, 2001, 125, 3, 70, "ExampleText",
+ CellID->1509349955],
+Cell[CellGroupData[{
+Cell[60070, 2008, 691, 17, 70, "Input",
+ CellID->862699779],
+Cell[60764, 2027, 721, 19, 70, "Output",
+ CellID->2035479859]
+}, Open  ]],
+Cell[61500, 2049, 153, 4, 70, "ExampleText",
+ CellID->368055101],
+Cell[CellGroupData[{
+Cell[61678, 2057, 160, 4, 70, "Input",
+ CellID->1407167361],
+Cell[61841, 2063, 711, 19, 70, "Output",
+ CellID->993906745]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[62589, 2087, 162, 4, 70, "Input",
+ CellID->839422694],
+Cell[62754, 2093, 31103, 756, 70, "Output",
+ CellID->617491163]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[93906, 2855, 230, 6, 70, "ExampleSubsubsection",
+ CellID->504808032],
+Cell[94139, 2863, 76, 1, 70, "ExampleText",
+ CellID->1853716237],
+Cell[CellGroupData[{
+Cell[94240, 2868, 181, 5, 70, "Input",
+ CellID->1863528230],
+Cell[94424, 2875, 666, 19, 70, "Output",
+ CellID->1393051134]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[95151, 2901, 233, 6, 70, "ExampleSubsection",
+ CellID->124446310],
+Cell[CellGroupData[{
+Cell[95409, 2911, 185, 6, 70, "ExampleSubsubsection",
+ CellID->1661389916],
+Cell[95597, 2919, 96, 1, 70, "ExampleText",
+ CellID->1755902208],
+Cell[CellGroupData[{
+Cell[95718, 2924, 630, 17, 70, "Input",
+ CellID->1921936458],
+Cell[96351, 2943, 662, 19, 70, "Output",
+ CellID->367650876]
+}, Open  ]],
+Cell[97028, 2965, 113, 3, 70, "ExampleText",
+ CellID->856995821],
+Cell[CellGroupData[{
+Cell[97166, 2972, 212, 5, 70, "Input",
+ CellID->21876094],
+Cell[97381, 2979, 446, 13, 70, "Output",
+ CellID->81470123]
+}, Open  ]],
+Cell[97842, 2995, 106, 2, 70, "ExampleText",
+ CellID->1588444554],
+Cell[CellGroupData[{
+Cell[97973, 3001, 214, 5, 70, "Input",
+ CellID->360704091],
+Cell[98190, 3008, 1338, 40, 70, "Output",
+ CellID->778118426]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[99577, 3054, 231, 6, 70, "ExampleSubsubsection",
+ CellID->1430225491],
+Cell[99811, 3062, 76, 1, 70, "ExampleText",
+ CellID->273653908],
+Cell[CellGroupData[{
+Cell[99912, 3067, 236, 6, 70, "Input",
+ CellID->1662858870],
+Cell[100151, 3075, 498, 15, 70, "Output",
+ CellID->329956065]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[100686, 3095, 235, 6, 70, "Input",
+ CellID->768807901],
+Cell[100924, 3103, 499, 15, 70, "Output",
+ CellID->1727715719]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[101484, 3125, 229, 6, 70, "ExampleSubsection",
+ CellID->1808459199],
+Cell[CellGroupData[{
+Cell[101738, 3135, 185, 6, 70, "ExampleSubsubsection",
+ CellID->1397939918],
+Cell[101926, 3143, 96, 1, 70, "ExampleText",
+ CellID->1437701602],
+Cell[CellGroupData[{
+Cell[102047, 3148, 1063, 29, 70, "Input",
+ CellID->2112312417],
+Cell[103113, 3179, 1083, 31, 70, "Output",
+ CellID->1679061784]
+}, Open  ]],
+Cell[104211, 3213, 178, 4, 70, "ExampleText",
+ CellID->428477592],
+Cell[CellGroupData[{
+Cell[104414, 3221, 409, 12, 70, "Input",
+ CellID->910220353],
+Cell[104826, 3235, 622, 19, 70, "Output",
+ CellID->2022406421]
+}, Open  ]],
+Cell[105463, 3257, 115, 3, 70, "ExampleText",
+ CellID->1723112364],
+Cell[CellGroupData[{
+Cell[105603, 3264, 410, 12, 70, "Input",
+ CellID->1336226549],
+Cell[106016, 3278, 621, 19, 70, "Output",
+ CellID->429391272]
+}, Open  ]],
+Cell[106652, 3300, 106, 2, 70, "ExampleText",
+ CellID->2054093860],
+Cell[CellGroupData[{
+Cell[106783, 3306, 268, 6, 70, "Input",
+ CellID->208395848],
+Cell[107054, 3314, 1351, 40, 70, "Output",
+ CellID->1615632113]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[108454, 3360, 191, 6, 70, "ExampleSubsubsection",
+ CellID->1433273133],
+Cell[108648, 3368, 76, 1, 70, "ExampleText",
+ CellID->974849580],
+Cell[108727, 3371, 89, 1, 70, "ExampleText",
+ CellID->367712791],
+Cell[CellGroupData[{
+Cell[108841, 3376, 291, 7, 70, "Input",
+ CellID->1144148097],
+Cell[109135, 3385, 501, 15, 70, "Output",
+ CellID->248892592]
+}, Open  ]],
+Cell[109651, 3403, 72, 1, 70, "ExampleText",
+ CellID->1973086316],
+Cell[CellGroupData[{
+Cell[109748, 3408, 232, 6, 70, "Input",
+ CellID->1987133035],
+Cell[109983, 3416, 728, 21, 70, "Output",
+ CellID->917854631]
+}, Open  ]]
+}, Closed]]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[110784, 3445, 189, 6, 70, "ExampleSection",
+ CellID->1474477911],
+Cell[110976, 3453, 141, 4, 70, "ExampleText",
+ CellID->1071350528],
+Cell[111120, 3459, 68, 1, 70, "ExampleText",
+ CellID->22794524],
+Cell[111191, 3462, 215, 7, 70, "Input",
+ CellID->1394044803],
+Cell[CellGroupData[{
+Cell[111431, 3473, 130, 4, 70, "Input",
+ CellID->138387854],
+Cell[111564, 3479, 284, 9, 70, "Output",
+ CellID->1432325662]
+}, Open  ]],
+Cell[111863, 3491, 95, 1, 70, "ExampleText",
+ CellID->1895037085],
+Cell[CellGroupData[{
+Cell[111983, 3496, 356, 11, 70, "Input",
+ CellID->1953202011],
+Cell[112342, 3509, 411, 13, 70, "Output",
+ CellID->1879656065]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[112790, 3527, 131, 4, 70, "Input",
+ CellID->392906976],
+Cell[112924, 3533, 505, 17, 70, "Output",
+ CellID->351090972]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[113478, 3556, 168, 5, 70, "ExampleSection"],
+Cell[CellGroupData[{
+Cell[113671, 3565, 176, 5, 70, "ExampleSubsection"],
+Cell[113850, 3572, 218, 5, 70, "ExampleText",
+ CellID->1040482081],
+Cell[114071, 3579, 120, 3, 70, "Input",
+ CellID->2143396708],
+Cell[114194, 3584, 3338, 95, 70, "Input",
+ CellID->1855859694],
+Cell[117535, 3681, 149, 4, 70, "ExampleText",
+ CellID->1381388030],
+Cell[CellGroupData[{
+Cell[117709, 3689, 261, 6, 70, "Input",
+ CellID->542912493],
+Cell[117973, 3697, 1726, 49, 70, "Output",
+ CellID->585726217]
+}, Open  ]],
+Cell[119714, 3749, 114, 3, 70, "ExampleText",
+ CellID->235491271],
+Cell[CellGroupData[{
+Cell[119853, 3756, 261, 6, 70, "Input",
+ CellID->183669593],
+Cell[120117, 3764, 1725, 49, 70, "Output",
+ CellID->26576333]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[121891, 3819, 181, 5, 70, "ExampleSubsection"],
+Cell[122075, 3826, 119, 3, 70, "Input",
+ CellID->300891564],
+Cell[122197, 3831, 89, 1, 70, "ExampleText",
+ CellID->1415680263],
+Cell[122289, 3834, 4579, 122, 70, "Input",
+ CellID->2139313802],
+Cell[126871, 3958, 156, 4, 70, "ExampleText",
+ CellID->1610059719],
+Cell[CellGroupData[{
+Cell[127052, 3966, 268, 6, 70, "Input",
+ CellID->829730521],
+Cell[127323, 3974, 1961, 49, 70, "Output",
+ CellID->1204913384]
+}, Open  ]],
+Cell[129299, 4026, 144, 4, 70, "ExampleText",
+ CellID->1125242108],
+Cell[CellGroupData[{
+Cell[129468, 4034, 269, 6, 70, "Input",
+ CellID->1407155374],
+Cell[129740, 4042, 1960, 49, 70, "Output",
+ CellID->119680069]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[131749, 4097, 186, 5, 70, "ExampleSubsection"],
+Cell[131938, 4104, 120, 3, 70, "Input",
+ CellID->1716908766],
+Cell[132061, 4109, 249, 5, 70, "ExampleText",
+ CellID->208453678],
+Cell[132313, 4116, 1374, 39, 70, "Input",
+ CellID->1729024120],
+Cell[133690, 4157, 99, 1, 70, "ExampleText",
+ CellID->1862050917],
+Cell[CellGroupData[{
+Cell[133814, 4162, 335, 8, 70, "Input",
+ CellID->1485704502],
+Cell[134152, 4172, 558, 16, 70, "Output",
+ CellID->546085904]
+}, Open  ]],
+Cell[134725, 4191, 110, 3, 70, "ExampleText",
+ CellID->7845],
+Cell[CellGroupData[{
+Cell[134860, 4198, 338, 8, 70, "Input",
+ CellID->1868164897],
+Cell[135201, 4208, 681, 20, 70, "Output",
+ CellID->468596153]
+}, Open  ]],
+Cell[135897, 4231, 88, 1, 70, "ExampleText",
+ CellID->384949414],
+Cell[135988, 4234, 964, 28, 70, "Input",
+ CellID->381113110],
+Cell[136955, 4264, 68, 1, 70, "ExampleText",
+ CellID->952669557],
+Cell[137026, 4267, 151, 4, 70, "ExampleText",
+ CellID->374442775],
+Cell[CellGroupData[{
+Cell[137202, 4275, 269, 7, 70, "Input",
+ CellID->1881122821],
+Cell[137474, 4284, 616, 20, 70, "Output",
+ CellID->1478090477]
+}, Open  ]],
+Cell[138105, 4307, 153, 4, 70, "ExampleText",
+ CellID->530629660],
+Cell[CellGroupData[{
+Cell[138283, 4315, 299, 8, 70, "Input",
+ CellID->175818443],
+Cell[138585, 4325, 605, 19, 70, "Output",
+ CellID->474060735]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[139227, 4349, 357, 9, 70, "Input",
+ CellID->58893250],
+Cell[139587, 4360, 393, 13, 70, "Output",
+ CellID->1604300615]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[140041, 4380, 204, 6, 70, "ExampleSection",
+ CellID->2123667759],
+Cell[140248, 4388, 382, 9, 70, "ExampleText",
+ CellID->138352886],
+Cell[140633, 4399, 768, 20, 70, "ExampleText",
+ CellID->810603736]
+}, Closed]],
+Cell[141416, 4422, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[141484, 4427, 270, 12, 70, "SeeAlsoSection",
+ CellID->1255426704],
+Cell[141757, 4441, 1570, 49, 70, "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[143364, 4495, 272, 12, 70, "TutorialsSection",
+ CellID->250839057],
+Cell[143639, 4509, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[143673, 4511, 211, 6, 70, "Tutorials",
+ CellID->341631938],
+Cell[143887, 4519, 238, 6, 70, "Tutorials",
+ CellID->1023267351],
+Cell[144128, 4527, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[144196, 4532, 276, 12, 70, "MoreAboutSection",
+ CellID->38303248],
+Cell[144475, 4546, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[144509, 4548, 200, 5, 70, "MoreAbout",
+ CellID->1588091734],
+Cell[144712, 4555, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[144780, 4560, 280, 12, 70, "RelatedLinksSection",
+ CellID->1584193535],
+Cell[145063, 4574, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[145097, 4576, 205, 5, 70, "RelatedLinks",
+ CellID->1038487239],
+Cell[145305, 4583, 218, 6, 70, "RelatedLinks",
+ CellID->1784361302]
+}, Open  ]],
+Cell[145538, 4592, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
