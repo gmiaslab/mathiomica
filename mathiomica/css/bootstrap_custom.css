@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 60px;
+	overflow: visible;
+    height: 60px;
+    padding-top: 0;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-top: 60px;
+}
+
+.carousel-caption {
+	position: absolute;
+	right: 15%;
+	bottom: 30px;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #060606;
+	text-align: center;
+	text-shadow: 0 0px 0;
+	font-weight: bold;
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
