@@ -1,0 +1,3178 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    117084,       3169]
+NotebookOptionsPosition[    109794,       2941]
+NotebookOutlinePosition[    112036,       3000]
+CellTagsIndexPosition[    111949,       2995]
+WindowTitle->GeneTranslation
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["MATH I OMICA PACKAGE SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Tutorials",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Tutorials", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica Tutorial\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaTutorial"], "\<\"MathIOmica \
+Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"Tutorials"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "See Also",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"See Also", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"GetGeneDictionary\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/GetGeneDictionary"], "\<\"GOAnalysis\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/GOAnalysis"], "\<\"GOAnalysisAssigner\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/GOAnalysisAssigner"], "\<\"KEGGAnalysis\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/KEGGAnalysis"], "\<\"KEGGAnalysisAssigner\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/KEGGAnalysisAssigner"], \
+"\<\"KEGGPathwayVisual\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/KEGGPathwayVisual"], "\<\"OBOGODictionary\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/OBOGODictionary"], "\<\"TimeSeriesClusters\"\>":>
+       Documentation`HelpLookup["paclet:MathIOmica/ref/TimeSeriesClusters"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"SeeAlso"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Related Guides",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Related Guides", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica Guide\"\>":>
+       Documentation`HelpLookup["paclet:MathIOmica/guide/MathIOmicaGuide"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"MoreAbout"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica/ref/GeneTranslation\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["MathIOmica/ref/GeneTranslation"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/MathIOmica/ref/\
+GeneTranslation.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$22155], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "MathIOmica/ref/GeneTranslation", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ CellID->1],
+
+Cell[TextData[{
+ Cell["GeneTranslation", "ObjectName"],
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8]]]],
+ Cell[BoxData[""], "ObjectNameTranslation"]
+}], "ObjectNameGrid"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"GeneTranslation", "[", 
+       RowBox[{
+        StyleBox["inputIDList", "TI"], ",", 
+        StyleBox["targetIDList", "TI"], ",", 
+        StyleBox["geneDictionary", "TI"]}], "]"}]], "InlineFormula"],
+     "\[LineSeparator]uses ",
+     Cell[BoxData[
+      StyleBox["geneDictionary", "TI"]], "InlineFormula"],
+     " to convert ",
+     Cell[BoxData[
+      StyleBox["inputIDList", "TI"]], "InlineFormula"],
+     " IDs to different annotations as indicated by ",
+     Cell[BoxData[
+      StyleBox["targetIDList", "TI"]], "InlineFormula"],
+     "."
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    InterpretationBox[
+     StyleBox[
+      GraphicsBox[{},
+       BaselinePosition->Baseline,
+       ImageSize->{6, 0}],
+      CacheGraphics->False],
+     Spacer[6]]]],
+   "Details"
+  }], "NotesFrameText"],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->1958725080],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"GeneTranslation", "[", 
+   RowBox[{"inputIDList", ",", "targetIDList", ",", "geneDictionary"}], 
+   "]"}]], "InlineFormula"],
+ "\[LineSeparator]uses geneDictionary to convert inputList IDs to different \
+annotations as indicated by targetIDList. It takes the following inputs:"
+}], "Notes",
+ CellID->981473630],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon"], "inputIDList", Cell[TextData[{
+     "List of ",
+     Cell[BoxData["n"], "InlineFormula"],
+     " IDs (strings) to be converted in the form ",
+     Cell[BoxData[
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["inputID", 
+          RowBox[{"1", ","}]], 
+         SubscriptBox["inputID", "2"]}], ",", "...", ",", 
+        SubscriptBox["inputID", "n"]}], "}"}]], "InlineFormula"]
+    }], "TableText"]},
+   {Cell["      ", "TableRowIcon"], "targetIDList", Cell[TextData[{
+     "List of target identifier strings, as used in the gene geneDictionary,",
+     
+     Cell[BoxData[
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"target", " ", 
+         SubscriptBox["ID", "1"]}], ",", 
+        SubscriptBox["targetID", "2"], ",", 
+        RowBox[{"...", "target", " ", 
+         SubscriptBox["ID", "k"]}]}], "}"}]], "InlineFormula"],
+     ", e.g. {\"UniProt ID\",\"Gene Symbol\"}. Can also be provided as a \
+single string for only one kind of IDs."
+    }], "TableText"]},
+   {Cell["      ", "TableRowIcon"], "geneDictionary", Cell[TextData[{
+     "Gene dictionary to base translation on in the form generated by ",
+     Cell[BoxData[
+      TemplateBox[{Cell[
+         TextData["GetGeneDictionary"]],
+        "paclet:MathIOmica/ref/GetGeneDictionary"},
+       "RefLink",
+       BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+     ". For ",
+     Cell[BoxData["i"], "InlineFormula"],
+     " species, each having ",
+     Cell[BoxData[
+      SubscriptBox["m", "i"]], "InlineFormula"],
+     " possible annotations (kinds of IDs) for ",
+     Cell[BoxData[
+      SubscriptBox["n", "i"]], "InlineFormula"],
+     " entities each (e.g. corresponding to ",
+     Cell[BoxData[
+      SubscriptBox["n", "i"]], "InlineFormula"],
+     " genes)  the format is schematically:\n",
+     Cell[BoxData[
+      RowBox[{" ", 
+       RowBox[{"geneDictionary", "=", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"<|", 
+          RowBox[{
+           RowBox[{
+            SubscriptBox["Species", "1"], "\[Rule]", 
+            RowBox[{"<|", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Kind", " ", "of", " ", 
+                SubscriptBox["ID", "11"]}], "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"accessions", " ", 
+                 SubscriptBox["list", "11"], " ", "of", " ", "length", " ", 
+                 SubscriptBox["n", "1"]}], "}"}]}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"Kind", " ", "of", " ", 
+                SubscriptBox["ID", "12"]}], "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"accessions", " ", 
+                 SubscriptBox["list", "12"], " ", "of", " ", "length", " ", 
+                 SubscriptBox["n", "1"]}], "}"}]}], ",", "...", ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Kind", " ", "of", " ", 
+               SubscriptBox["ID", 
+                RowBox[{
+                 RowBox[{"1", 
+                  SubscriptBox["m", "1"]}], "\[Rule]", " "}]], " ", 
+               RowBox[{"{", 
+                RowBox[{"accessions", " ", 
+                 SubscriptBox["list", 
+                  RowBox[{"1", 
+                   SubscriptBox["m", "1"]}]], " ", "of", " ", "length", " ", 
+                 SubscriptBox["n", "1"]}], "}"}]}]}], "|>"}]}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{
+            SubscriptBox["Species", "2"], "\[Rule]", 
+            RowBox[{"<|", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Kind", " ", "of", " ", 
+                SubscriptBox["ID", "21"]}], "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"accessions", " ", 
+                 SubscriptBox["list", "21"], " ", "of", " ", "length", " ", 
+                 SubscriptBox["n", "2"]}], "}"}]}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"Kind", " ", "of", " ", 
+                SubscriptBox["ID", "22"]}], "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"accessions", " ", 
+                 SubscriptBox["list", "22"], " ", "of", " ", "length", " ", 
+                 SubscriptBox["n", "2"]}], "}"}]}], ",", "...", ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Kind", " ", "of", " ", 
+               SubscriptBox["ID", 
+                RowBox[{
+                 RowBox[{"2", 
+                  SubscriptBox["m", "2"]}], "\[Rule]", " "}]], " ", 
+               RowBox[{"{", 
+                RowBox[{"accessions", " ", 
+                 SubscriptBox["list", 
+                  RowBox[{"2", 
+                   SubscriptBox["m", "2"]}]], " ", "of", " ", "length", " ", 
+                 SubscriptBox["n", "2"]}], "}"}]}]}], "|>"}]}], ",", 
+           "\[IndentingNewLine]", "...", ",", "\[IndentingNewLine]", 
+           RowBox[{
+            SubscriptBox["Species", "i"], "\[Rule]", 
+            RowBox[{"<|", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Kind", " ", "of", " ", 
+                SubscriptBox["ID", "i1"]}], "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"accessions", " ", 
+                 SubscriptBox["list", "i2"], " ", "of", " ", "length", " ", 
+                 SubscriptBox["n", "i"]}], "}"}]}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"Kind", " ", "of", " ", 
+                SubscriptBox["ID", "i2"]}], "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"accessions", " ", 
+                 SubscriptBox["list", "12"], " ", "of", " ", "length", " ", 
+                 SubscriptBox["n", "i"]}], "}"}]}], ",", "...", ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Kind", " ", "of", " ", 
+               SubscriptBox["ID", 
+                RowBox[{
+                 SubscriptBox["im", "i"], "\[Rule]", " "}]], " ", 
+               RowBox[{"{", 
+                RowBox[{"accessions", " ", 
+                 SubscriptBox["list", "12"], " ", "of", " ", "length", " ", 
+                 SubscriptBox["n", "i"]}], "}"}]}]}], "|>"}]}]}], 
+          "\[IndentingNewLine]", "|>"}], "."}]}]}]]]
+    }], "TableText"]}
+  }]], "2ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, 
+   "Rows" -> {None, None, {None}}, "RowsIndexed" -> {}},
+ GridBoxDividers->{"Rows" -> {{True, True, True, True}}}},
+ CellID->606477167],
+
+Cell["The following options can be given: ", "Notes"],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon"], "InputID", 
+    ButtonBox["None",
+     BaseStyle->"Link",
+     ButtonData->"paclet:ref/None"], Cell["\<\
+InputID is a string or string list to indicate the kind of ID to use from the \
+input gene dictionary inner association keys.\
+\>", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "Species", "\"\<human\>\"", Cell["\<\
+Species indicates which of the species (i.e. key) to use from the input gene \
+dictionary. \
+\>", "TableText"]}
+  }]], "3ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {None, {None}}, 
+   "RowsIndexed" -> {}},
+ GridBoxDividers->{"Rows" -> {{True, True, True}}}}],
+
+Cell["\<\
+The output has different possible forms depending on the form of the InputID \
+options.\
+\>", "Notes",
+ CellID->877657037],
+
+Cell[TextData[{
+ "For InputID set to ",
+ ButtonBox["None",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/None"],
+ ", the output includes all ",
+ Cell[BoxData["m"], "InlineFormula"],
+ " possible kinds of IDs in the input gene dictionary, reported for each of \
+",
+ Cell[BoxData["k"], "InlineFormula"],
+ " target IDs."
+}], "Notes",
+ CellID->994945971],
+
+Cell[TextData[Cell[BoxData[
+ RowBox[{"output", "=", 
+  RowBox[{"<|", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"target", " ", 
+      SubscriptBox["ID", "1"]}], "\[Rule]", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Kind", " ", "of", " ", 
+         SubscriptBox["ID", "1"]}], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"list", " ", "of", " ", "target", " ", 
+           SubscriptBox["ID", "1"], " ", "translations", " ", "for", "  ", 
+           "inputIDlist", " ", 
+           SubscriptBox["ID", "1"], " ", "type", " ", "inputs"}], ",", " ", 
+          RowBox[{
+          "corresponding", " ", "to", " ", "and", " ", "listed", " ", "in", 
+           " ", "same", " ", "order", " ", "as", " ", "inputIDlist"}]}], 
+         "}"}]}], ",", 
+       RowBox[{
+        RowBox[{"Kind", " ", "of", " ", 
+         SubscriptBox["ID", "2"]}], "\[Rule]", "   ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"list", " ", "of", " ", "target", " ", 
+           SubscriptBox["ID", "1"], " ", "translations", " ", "for", "  ", 
+           "inputIDlist", " ", 
+           SubscriptBox["ID", "2"], " ", "type", " ", "inputs"}], ",", " ", 
+          RowBox[{
+          "corresponding", " ", "to", " ", "and", " ", "listed", " ", "in", 
+           " ", "same", " ", "order", " ", "as", " ", "inputIDlist"}]}], 
+         "}"}]}], ",", "...", ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Kind", " ", "of", " ", 
+         SubscriptBox["ID", "m"]}], "\[Rule]", "   ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"list", " ", "of", " ", "target", " ", 
+           SubscriptBox["ID", "1"], " ", "translations", " ", "for", "  ", 
+           "inputIDlist", " ", 
+           SubscriptBox["ID", "m"], " ", "type", " ", "inputs"}], ",", " ", 
+          RowBox[{
+          "corresponding", " ", "to", " ", "and", " ", "listed", " ", "in", 
+           " ", "same", " ", "order", " ", "as", " ", "inputIDlist"}]}], 
+         "}"}]}]}], "|>"}]}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     SubscriptBox["targetID", 
+      RowBox[{"2", "\[Rule]", " "}]], 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Kind", " ", "of", " ", 
+         SubscriptBox["ID", "1"]}], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"list", " ", "of", " ", "target", " ", 
+           SubscriptBox["ID", "2"], " ", "translations", " ", "for", "  ", 
+           "inputIDlist", " ", 
+           SubscriptBox["ID", "1"], " ", "type", " ", "inputs"}], ",", " ", 
+          RowBox[{
+          "corresponding", " ", "to", " ", "and", " ", "listed", " ", "in", 
+           " ", "same", " ", "order", " ", "as", " ", "inputIDlist"}]}], 
+         "}"}]}], ",", 
+       RowBox[{
+        RowBox[{"Kind", " ", "of", " ", 
+         SubscriptBox["ID", "2"]}], "\[Rule]", "   ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"list", " ", "of", " ", "target", " ", 
+           SubscriptBox["ID", "2"], " ", "translations", " ", "for", "  ", 
+           "inputIDlist", " ", 
+           SubscriptBox["ID", "2"], " ", "type", " ", "inputs"}], ",", " ", 
+          RowBox[{
+          "corresponding", " ", "to", " ", "and", " ", "listed", " ", "in", 
+           " ", "same", " ", "order", " ", "as", " ", "inputIDlist"}]}], 
+         "}"}]}], ",", "...", ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Kind", " ", "of", " ", 
+         SubscriptBox["ID", "m"]}], "\[Rule]", "   ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"list", " ", "of", " ", "target", " ", 
+           SubscriptBox["ID", "2"], " ", "translations", " ", "for", "  ", 
+           "inputIDlist", " ", 
+           SubscriptBox["ID", "m"], " ", "type", " ", "inputs"}], ",", " ", 
+          RowBox[{
+          "corresponding", " ", "to", " ", "and", " ", "listed", " ", "in", 
+           " ", "same", " ", "order", " ", "as", " ", "inputIDlist"}]}], 
+         "}"}]}]}], "|>"}]}], ",", "...", ",", "\[IndentingNewLine]", 
+    RowBox[{
+     SubscriptBox["targetID", 
+      RowBox[{"k", "\[Rule]", " "}]], 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Kind", " ", "of", " ", 
+         SubscriptBox["ID", "1"]}], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"list", " ", "of", " ", "target", " ", 
+           SubscriptBox["ID", "k"], " ", "translations", " ", "for", "  ", 
+           "inputIDlist", " ", 
+           SubscriptBox["ID", "1"], " ", "type", " ", "inputs"}], ",", " ", 
+          RowBox[{
+          "corresponding", " ", "to", " ", "and", " ", "listed", " ", "in", 
+           " ", "same", " ", "order", " ", "as", " ", "inputIDlist"}]}], 
+         "}"}]}], ",", 
+       RowBox[{
+        RowBox[{"Kind", " ", "of", " ", 
+         SubscriptBox["ID", "2"]}], "\[Rule]", "   ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"list", " ", "of", " ", "target", " ", 
+           SubscriptBox["ID", "k"], " ", "translations", " ", "for", "  ", 
+           "inputIDlist", " ", 
+           SubscriptBox["ID", "2"], " ", "type", " ", "inputs"}], ",", " ", 
+          RowBox[{
+          "corresponding", " ", "to", " ", "and", " ", "listed", " ", "in", 
+           " ", "same", " ", "order", " ", "as", " ", "inputIDlist"}]}], 
+         "}"}]}], ",", "...", ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Kind", " ", "of", " ", 
+         SubscriptBox["ID", "m"]}], "\[Rule]", "   ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"list", " ", "of", " ", "target", " ", 
+           SubscriptBox["ID", "k"], " ", "translations", " ", "for", "  ", 
+           "inputIDlist", " ", 
+           SubscriptBox["ID", "m"], " ", "type", " ", "inputs"}], ",", " ", 
+          RowBox[{
+          "corresponding", " ", "to", " ", "and", " ", "listed", " ", "in", 
+           " ", "same", " ", "order", " ", "as", " ", "inputIDlist"}]}], 
+         "}"}]}]}], "|>"}]}]}], "\[IndentingNewLine]", 
+   "|>"}]}]], "InlineFormula"]], "Notes",
+ CellID->844193614],
+
+Cell["\<\
+The translation list will contain {} if there was no match, and Missing[] if \
+the database (e.g. UCSC) did not contain a corresponding identifier.\
+\>", "Notes",
+ CellID->939566402],
+
+Cell["\<\
+For InputID set to a list of strings the output has the form:\
+\>", "Notes",
+ CellID->1039693986],
+
+Cell[TextData[Cell[BoxData[
+ RowBox[{"output", "=", 
+  RowBox[{"<|", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"target", " ", 
+      SubscriptBox["ID", "1"]}], "\[Rule]", 
+     RowBox[{"<|", " ", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["inputID", "1"], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"list", " ", "of", " ", "target", " ", 
+          SubscriptBox["ID", "1"], " ", "translations", " ", "for", "  ", 
+          SubscriptBox["inputID", "1"]}], "}"}]}], ",", 
+       RowBox[{
+        SubscriptBox["inputID", "2"], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"list", " ", "of", " ", "target", " ", 
+          SubscriptBox["ID", "1"], " ", "translations", " ", "for", "  ", 
+          SubscriptBox["inputID", "2"]}], "}"}]}], ",", "...", ",", 
+       RowBox[{
+        SubscriptBox["inputID", "n"], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"list", " ", "of", " ", "target", " ", 
+          SubscriptBox["ID", "1"], " ", "translations", " ", "for", "  ", 
+          SubscriptBox["inputID", "n"]}], "}"}]}]}], "|>"}]}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"target", " ", 
+      SubscriptBox["ID", "2"]}], "\[Rule]", 
+     RowBox[{"<|", " ", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["inputID", "1"], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"list", " ", "of", " ", "target", " ", 
+          SubscriptBox["ID", "2"], " ", "translations", " ", "for", "  ", 
+          SubscriptBox["inputID", "1"]}], "}"}]}], ",", 
+       RowBox[{
+        SubscriptBox["inputID", "2"], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"list", " ", "of", " ", "target", " ", 
+          SubscriptBox["ID", "2"], " ", "translations", " ", "for", "  ", 
+          SubscriptBox["inputID", "2"]}], "}"}]}], ",", "...", ",", 
+       RowBox[{
+        SubscriptBox["inputID", "n"], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"list", " ", "of", " ", "target", " ", 
+          SubscriptBox["ID", "2"], " ", "translations", " ", "for", "  ", 
+          SubscriptBox["inputID", "n"]}], "}"}]}]}], "|>"}]}], ",", "...", 
+    ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"target", " ", 
+      SubscriptBox["ID", "k"]}], "\[Rule]", 
+     RowBox[{"<|", " ", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["inputID", "1"], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"list", " ", "of", " ", "target", " ", 
+          SubscriptBox["ID", "k"], " ", "translations", " ", "for", "  ", 
+          SubscriptBox["inputID", "1"]}], "}"}]}], ",", 
+       RowBox[{
+        SubscriptBox["inputID", "2"], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"list", " ", "of", " ", "target", " ", 
+          SubscriptBox["ID", "k"], " ", "translations", " ", "for", "  ", 
+          SubscriptBox["inputID", "2"]}], "}"}]}], ",", "...", ",", 
+       RowBox[{
+        SubscriptBox["inputID", "n"], "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"list", " ", "of", " ", "target", " ", 
+          SubscriptBox["ID", "k"], " ", "translations", " ", "for", "  ", 
+          SubscriptBox["inputID", "1"]}], "}"}]}]}], "|>"}]}]}], 
+   "\[IndentingNewLine]", "|>"}]}]], "InlineFormula"]], "Notes",
+ CellID->997987583],
+
+Cell["\<\
+If the input targetIDList is a single string no outer key is displayed, as \
+only one kind or target ID is considered for all output.\
+\>", "Notes",
+ CellID->553291550],
+
+Cell["", "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(3)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1515594697],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->1296535412],
+
+Cell["First we need to load the MathIOmica package:", "ExampleText",
+ CellID->158760191],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->10541973],
+
+Cell[TextData[{
+ "Let's consider the following example of UniProt IDs that we would like to \
+translate to official Gene Symbols and RefSeq IDs.  We use ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["GetGeneDictionary"]],"paclet:MathIOmica/ref/GetGeneDictionary"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+ " to get the default MathIOmica gene dictionary. The inputs we consider \
+are:"
+}], "ExampleText",
+ CellID->974231829],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"uniProtExampleIDs", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<Q6ZRT9\>\"", ",", "\"\<Q6NZ36\>\"", ",", "\"\<H7C361\>\"", ",", 
+     "\"\<Q6ZRT9\>\"", ",", "\"\<A8MQT6\>\"", ",", "\"\<Q9BUW7\>\"", ",", 
+     "\"\<Q6NZ67\>\"", ",", "\"\<Q6P582\>\"", ",", "\"\<P39019\>\"", ",", 
+     "\"\<E9PM41\>\"", ",", "\"\<A8MTZ0\>\"", ",", "\"\<A8MTZ0\>\"", ",", 
+     "\"\<E9PRI7\>\"", ",", "\"\<A8MTZ0\>\"", ",", "\"\<Q9H6L5\>\"", ",", 
+     "\"\<Q5H9J7\>\"", ",", "\"\<Q5H9J7\>\"", ",", "\"\<Q5H9J7\>\"", ",", 
+     "\"\<P06454\>\"", ",", "\"\<Q53S24\>\"", ",", "\"\<B8ZZW7\>\"", ",", 
+     "\"\<A0PJW6\>\""}], "}"}]}], ";", 
+  RowBox[{"targetIDs", "=", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Gene Symbol\>\"", ",", "\"\<RefSeq ID\>\""}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"geneDictionaryExample", "=", 
+  RowBox[{"GetGeneDictionary", "[", "]"}]}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->771602892],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"\[LeftAssociation]", 
+          RowBox[{"\<\"human\"\>", "\[Rule]", 
+           RowBox[{"\[LeftAssociation]", 
+            RowBox[{
+             RowBox[{"\<\"UCSC ID\"\>", "\[Rule]", 
+              RowBox[{"{", 
+               
+               RowBox[{"\<\"uc001aaa.3\"\>", ",", "\<\"uc010nxr.1\"\>", 
+                ",", "\<\"uc010nxq.1\"\>", ",", "\<\"uc001aal.1\"\>", 
+                ",", "\<\"uc001aaq.2\"\>", ",", "\<\"uc001aar.2\"\>", 
+                ",", "\<\"uc001aau.3\"\>", ",", 
+                TemplateBox[{"121569"},
+                 "OutputSizeLimit`Skeleton",
+                 DisplayFunction->(FrameBox[
+                   
+                   RowBox[{
+                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                   Background -> GrayLevel[0.75], 
+                   BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                   Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                   FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], 
+                ",", "\<\"uc031tkn.1\"\>", ",", "\<\"uc022cgh.1\"\>", 
+                ",", "\<\"uc022cha.1\"\>", ",", "\<\"uc022chb.1\"\>", 
+                ",", "\<\"uc022chc.1\"\>", ",", "\<\"uc022che.1\"\>", 
+                ",", "\<\"uc022cpe.1\"\>"}], "}"}]}], ",", 
+             TemplateBox[{"6"},
+              "OutputSizeLimit`Skeleton",
+              DisplayFunction->(FrameBox[
+                
+                RowBox[{
+                 "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                Background -> GrayLevel[0.75], 
+                BaseStyle -> {
+                 "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                  ShowStringCharacters -> False}, BaselinePosition -> 
+                Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], ",", 
+             
+             RowBox[{
+              RowBox[{"\<\"HGU13\"\>", "\[Ellipsis]", "\<\"ix ID\"\>"}], 
+              "\[Rule]", 
+              TemplateBox[{"1"},
+               "OutputSizeLimit`Skeleton",
+               DisplayFunction->(FrameBox[
+                 
+                 RowBox[{
+                  "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                 Background -> GrayLevel[0.75], 
+                 BaseStyle -> {
+                  "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                   ShowStringCharacters -> False}, BaselinePosition -> 
+                 Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                 FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )]}]}], 
+            "\[RightAssociation]"}]}], "\[RightAssociation]"}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{58., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarCategory",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{49., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 37, 32683556189100156239, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{54., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 37, 32683556189100156239, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{40., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 37, 32683556189100156239, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{72., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    Background->RGBColor[0.9657, 0.9753, 0.9802],
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Out[37]]], "Output",
+ ImageSize->{545, 134},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->984735860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"translatedIDs", "=", 
+  RowBox[{"GeneTranslation", "[", 
+   RowBox[{
+   "uniProtExampleIDs", ",", "targetIDs", ",", "geneDictionaryExample", ",", 
+    RowBox[{"InputID", "\[Rule]", 
+     RowBox[{"{", "\"\<UniProt ID\>\"", "}"}]}]}], "]"}]}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->814776341],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Gene Symbol\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"Q6ZRT9\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Q6NZ36\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"H7C361\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"A8MQT6\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Q9BUW7\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"C9orf16\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Q6NZ67\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"MZT2B\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Q6P582\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"MZT2A\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"P39019\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"RPS19\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"E9PM41\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"BBIP1\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"A8MTZ0\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"BBIP1\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"E9PRI7\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"BBIP1\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Q9H6L5\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"FAM134B\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Q5H9J7\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"BEX5\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"P06454\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"PTMA\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Q53S24\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"PTMA\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"B8ZZW7\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"PTMA\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"A0PJW6\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"TMEM223\"\>", "}"}]}]}], "\[RightAssociation]"}]}], 
+   ",", 
+   RowBox[{"\<\"RefSeq ID\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"Q6ZRT9\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\<\"NM_001146310\"\>", ",", "\<\"NM_001256945\"\>"}], 
+        "}"}]}], ",", 
+      RowBox[{"\<\"Q6NZ36\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_182533\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"H7C361\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_001256946\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"A8MQT6\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_001256947\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Q9BUW7\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_024112\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Q6NZ67\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_025029\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Q6P582\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_001085365\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"P39019\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_001022\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"E9PM41\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_001195304\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"A8MTZ0\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\<\"NM_001195305\"\>", ",", "\<\"NM_001195306\"\>", 
+         ",", "\<\"NM_001243783\"\>"}], "}"}]}], ",", 
+      RowBox[{"\<\"E9PRI7\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_001195307\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Q9H6L5\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_001034850\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Q5H9J7\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\<\"NM_001012978\"\>", ",", "\<\"NM_001159560\"\>"}], 
+        "}"}]}], ",", 
+      RowBox[{"\<\"P06454\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_001099285\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Q53S24\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_002823\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"B8ZZW7\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_002823\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"A0PJW6\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"NM_001080501\"\>", "}"}]}]}], 
+     "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{564, 159},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->1996426668]
+}, Open  ]],
+
+Cell["If we do not specify an input ID we get:", "ExampleText",
+ CellID->1501517606],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"translatedIDsNoInput", "=", 
+  RowBox[{"GeneTranslation", "[", 
+   RowBox[{
+   "uniProtExampleIDs", ",", "targetIDs", ",", "geneDictionaryExample"}], 
+   "]"}]}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->994596220],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Gene Symbol\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"UCSC ID\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"UniProt ID\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"C1orf86\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"C1orf86\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"C1orf86\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"C1orf86\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"C1orf86\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"C9orf16\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"MZT2B\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"MZT2A\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"RPS19\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"BBIP1\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"BBIP1\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"BBIP1\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"BBIP1\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"BBIP1\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"BBIP1\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"BBIP1\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"BBIP1\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"BBIP1\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"BBIP1\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"BBIP1\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"FAM134B\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"BEX5\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"BEX5\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"BEX5\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"BEX5\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"BEX5\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"BEX5\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"BEX5\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"BEX5\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"BEX5\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"PTMA\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"PTMA\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"PTMA\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"TMEM223\"\>", "}"}], "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"Gene Symbol\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"RefSeq ID\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"NCBI Protein Accession\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"Ensembl ID\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"KEGG Gene ID\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"HGU133Plus2 Affymetrix ID\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"RefSeq ID\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"UCSC ID\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"UniProt ID\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"NM_001146310\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001256945\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_182533\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_001256946\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"NM_001146310\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001256945\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_001256947\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_024112\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_025029\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_001085365\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_001022\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_001195304\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"NM_001195305\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001195306\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001243783\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"NM_001195305\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001195306\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001243783\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_001195307\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"NM_001195305\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001195306\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001243783\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_001034850\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"NM_001159560\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001012978\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001159560\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"NM_001159560\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001012978\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001159560\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "\<\"NM_001159560\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001012978\"\>", "}"}], ",", 
+           RowBox[{"{", "\<\"NM_001159560\"\>", "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_001099285\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_002823\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_002823\"\>", "}"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"{", "\<\"NM_001080501\"\>", "}"}], "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"Gene Symbol\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"RefSeq ID\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"NCBI Protein Accession\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"Ensembl ID\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"KEGG Gene ID\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}], ",", 
+      RowBox[{"\<\"HGU133Plus2 Affymetrix ID\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{"{", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{536, 529},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->212066776]
+}, Open  ]],
+
+Cell["\<\
+If the targetID is provided as a string, no outer association is generated \
+(i.e. it is assumed a single target ID was requested). For the above example \
+we translate to \"Gene Symbol\" only:\
+\>", "ExampleText",
+ CellID->1390676731],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"translatedIDsGeneSymbol", "=", 
+  RowBox[{"GeneTranslation", "[", 
+   RowBox[{
+   "uniProtExampleIDs", ",", "\"\<Gene Symbol\>\"", ",", 
+    "geneDictionaryExample", ",", 
+    RowBox[{"InputID", "\[Rule]", 
+     RowBox[{"{", "\"\<UniProt ID\>\"", "}"}]}]}], "]"}]}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->987059322],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Q6ZRT9\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"Q6NZ36\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"H7C361\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"A8MQT6\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"Q9BUW7\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"C9orf16\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"Q6NZ67\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"MZT2B\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"Q6P582\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"MZT2A\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"P39019\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"RPS19\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"E9PM41\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"BBIP1\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"A8MTZ0\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"BBIP1\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"E9PRI7\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"BBIP1\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"Q9H6L5\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"FAM134B\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"Q5H9J7\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"BEX5\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"P06454\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"PTMA\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"Q53S24\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"PTMA\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"B8ZZW7\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"PTMA\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"A0PJW6\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"TMEM223\"\>", "}"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{492, 66},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[5]=",
+ CellID->347387407]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Options",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(2)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "InputID",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1530933859],
+
+Cell[TextData[{
+ Cell[BoxData["InputID"], "InlineFormula"],
+ " option takes as values a a string or string list to indicate the kind of \
+ID to use from the input gene dictionary inner association keys."
+}], "ExampleText",
+ CellID->1517332495],
+
+Cell[TextData[{
+ "Let's consider the following example of mixed set of Gene Symbol and \
+UniProt IDs that we would like to translate to RefSeq IDs.  We use ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["GetGeneDictionary"]],"paclet:MathIOmica/ref/GetGeneDictionary"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+ " to get the default MathIOmica gene dictionary. The inputs we need are:"
+}], "ExampleText",
+ CellID->190617944],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"mixedExampleIDs", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<CD46\>\"", ",", "\"\<DHX58\>\"", ",", "\"\<HMGB3\>\"", ",", 
+     "\"\<MAP3K5\>\"", ",", "\"\<NFKB2\>\"", ",", "\"\<NOS2\>\"", ",", 
+     "\"\<PYCARD\>\"", ",", "\"\<PYDC1\>\"", ",", "\"\<SSC5D\>\"", ",", 
+     "\"\<A8MTZ0\>\"", ",", "\"\<Q9H6L5\>\"", ",", "\"\<Q5H9J7\>\"", ",", 
+     "\"\<Q5H9J7\>\"", ",", "\"\<Q5H9J7\>\"", ",", "\"\<P06454\>\"", ",", 
+     "\"\<Q53S24\>\""}], "}"}]}], ";", 
+  RowBox[{"targetIDs", "=", 
+   RowBox[{"{", "\"\<RefSeq ID\>\"", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"geneDictionaryExample", "=", 
+  RowBox[{"GetGeneDictionary", "[", "]"}]}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1403793506],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"\[LeftAssociation]", 
+          RowBox[{"\<\"human\"\>", "\[Rule]", 
+           RowBox[{"\[LeftAssociation]", 
+            RowBox[{
+             RowBox[{"\<\"UCSC ID\"\>", "\[Rule]", 
+              RowBox[{"{", 
+               
+               RowBox[{"\<\"uc001aaa.3\"\>", ",", "\<\"uc010nxr.1\"\>", 
+                ",", "\<\"uc010nxq.1\"\>", ",", "\<\"uc001aal.1\"\>", 
+                ",", "\<\"uc001aaq.2\"\>", ",", "\<\"uc001aar.2\"\>", 
+                ",", "\<\"uc001aau.3\"\>", ",", 
+                TemplateBox[{"121569"},
+                 "OutputSizeLimit`Skeleton",
+                 DisplayFunction->(FrameBox[
+                   
+                   RowBox[{
+                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                   Background -> GrayLevel[0.75], 
+                   BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                   Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                   FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], 
+                ",", "\<\"uc031tkn.1\"\>", ",", "\<\"uc022cgh.1\"\>", 
+                ",", "\<\"uc022cha.1\"\>", ",", "\<\"uc022chb.1\"\>", 
+                ",", "\<\"uc022chc.1\"\>", ",", "\<\"uc022che.1\"\>", 
+                ",", "\<\"uc022cpe.1\"\>"}], "}"}]}], ",", 
+             TemplateBox[{"6"},
+              "OutputSizeLimit`Skeleton",
+              DisplayFunction->(FrameBox[
+                
+                RowBox[{
+                 "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                Background -> GrayLevel[0.75], 
+                BaseStyle -> {
+                 "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                  ShowStringCharacters -> False}, BaselinePosition -> 
+                Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], ",", 
+             
+             RowBox[{
+              RowBox[{"\<\"H\"\>", "\[Ellipsis]", "\<\"ID\"\>"}], "\[Rule]", 
+              TemplateBox[{"1"},
+               "OutputSizeLimit`Skeleton",
+               DisplayFunction->(FrameBox[
+                 
+                 RowBox[{
+                  "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                 Background -> GrayLevel[0.75], 
+                 BaseStyle -> {
+                  "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                   ShowStringCharacters -> False}, BaselinePosition -> 
+                 Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                 FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )]}]}], 
+            "\[RightAssociation]"}]}], "\[RightAssociation]"}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{58., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarCategory",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{49., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 43, 32683556189100156239, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 43, 32683556189100156239, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 43, 32683556189100156239, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{72., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    Background->RGBColor[0.9657, 0.9753, 0.9802],
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Out[43]]], "Output",
+ ImageSize->{545, 134},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->214713286]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"translatedMixedIDs", "=", 
+  RowBox[{"GeneTranslation", "[", 
+   RowBox[{
+   "mixedExampleIDs", ",", "targetIDs", ",", "geneDictionaryExample", ",", 
+    RowBox[{"InputID", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<UniProt ID\>\"", ",", "\"\<Gene Symbol\>\""}], "}"}]}]}], 
+   "]"}]}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->530781964],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"\<\"RefSeq ID\"\>", "\[Rule]", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\<\"CD46\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\<\"NM_002389\"\>", ",", "\<\"NM_153826\"\>", 
+        ",", "\<\"NM_172350\"\>", ",", "\<\"NM_172351\"\>", 
+        ",", "\<\"NM_172352\"\>", ",", "\<\"NM_172353\"\>", 
+        ",", "\<\"NM_172359\"\>", ",", "\<\"NM_172361\"\>"}], "}"}]}], ",", 
+     RowBox[{"\<\"DHX58\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"NM_024119\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"HMGB3\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"NM_005342\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"MAP3K5\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"NM_005923\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"NFKB2\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\<\"NM_001077494\"\>", ",", "\<\"NM_001261403\"\>", 
+        ",", "\<\"NM_002502\"\>"}], "}"}]}], ",", 
+     RowBox[{"\<\"NOS2\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"NM_000625\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"PYCARD\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\<\"NM_013258\"\>", ",", "\<\"NM_145182\"\>"}], "}"}]}], ",", 
+     
+     RowBox[{"\<\"PYDC1\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"NM_152901\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"SSC5D\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\<\"NM_001144950\"\>", ",", "\<\"NM_001195267\"\>"}], "}"}]}],
+      ",", 
+     RowBox[{"\<\"A8MTZ0\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\<\"NM_001195305\"\>", ",", "\<\"NM_001195306\"\>", 
+        ",", "\<\"NM_001243783\"\>"}], "}"}]}], ",", 
+     RowBox[{"\<\"Q9H6L5\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"NM_001034850\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"Q5H9J7\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\<\"NM_001012978\"\>", ",", "\<\"NM_001159560\"\>"}], "}"}]}],
+      ",", 
+     RowBox[{"\<\"P06454\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"NM_001099285\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"Q53S24\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"NM_002823\"\>", "}"}]}]}], "\[RightAssociation]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{537, 119},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->604876012]
+}, Open  ]],
+
+Cell["\<\
+If no InputID is specified, the different possibilities are displayed for all \
+possible target IDs.\
+\>", "ExampleText",
+ CellID->1679596903],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"translatedMixedIDsAll", "=", 
+  RowBox[{"GeneTranslation", "[", 
+   RowBox[{
+   "mixedExampleIDs", ",", "targetIDs", ",", "geneDictionaryExample", ",", 
+    RowBox[{"InputID", "\[Rule]", "None"}]}], "]"}]}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->524502021],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"\<\"RefSeq ID\"\>", "\[Rule]", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\<\"UCSC ID\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}]}], "}"}]}], ",", 
+     RowBox[{"\<\"UniProt ID\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "\<\"NM_001195305\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_001195306\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_001243783\"\>", "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"{", "\<\"NM_001034850\"\>", "}"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "\<\"NM_001159560\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_001012978\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_001159560\"\>", "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "\<\"NM_001159560\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_001012978\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_001159560\"\>", "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "\<\"NM_001159560\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_001012978\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_001159560\"\>", "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"{", "\<\"NM_001099285\"\>", "}"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"{", "\<\"NM_002823\"\>", "}"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"\<\"Gene Symbol\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "\<\"NM_002389\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_172351\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_172359\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_153826\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_172352\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_172353\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_172350\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_172361\"\>", "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "\<\"NM_024119\"\>", "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"Missing", "[", "]"}], "}"}], ",", 
+          RowBox[{"{", "\<\"NM_024119\"\>", "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "\<\"NM_005342\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_005342\"\>", "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"Missing", "[", "]"}], "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "\<\"NM_005923\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_005923\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_005923\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_005923\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_005923\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_005923\"\>", "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"Missing", "[", "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"Missing", "[", "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"Missing", "[", "]"}], "}"}], ",", 
+          RowBox[{"{", "\<\"NM_005923\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_005923\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_005923\"\>", "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "\<\"NM_001077494\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_001077494\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_002502\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_002502\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_002502\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_002502\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_001261403\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_001261403\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_002502\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_002502\"\>", "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_000625\"\>", "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "\<\"NM_013258\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_013258\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_145182\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_145182\"\>", "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "\<\"NM_152901\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_152901\"\>", "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", "\<\"NM_001144950\"\>", "}"}], ",", 
+          RowBox[{"{", "\<\"NM_001195267\"\>", "}"}]}], "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}]}], "}"}]}], ",", 
+     RowBox[{"\<\"RefSeq ID\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}]}], "}"}]}], ",", 
+     RowBox[{"\<\"NCBI Protein Accession\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}]}], "}"}]}], ",", 
+     RowBox[{"\<\"Ensembl ID\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}]}], "}"}]}], ",", 
+     RowBox[{"\<\"KEGG Gene ID\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}]}], "}"}]}], ",", 
+     RowBox[{"\<\"HGU133Plus2 Affymetrix ID\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}], ",", 
+        RowBox[{"{", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{548, 386},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->1544769344]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Species",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2008556025],
+
+Cell["\<\
+Species option indicates which of the species (i.e. key) to use from the \
+input gene dictionary. The default value is set to \"human\". \
+\>", "ExampleText",
+ CellID->1511769539],
+
+Cell[TextData[{
+ "Let's consider the following example of UniProt IDs that we would like to \
+translate to official \"Gene Symbol\".  We use ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["GetGeneDictionary"]],"paclet:MathIOmica/ref/GetGeneDictionary"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+ " to get the default MathIOmica gene dictionary. The inputs we consider \
+are:"
+}], "ExampleText",
+ CellID->1505664982],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"uniProtExampleIDs", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<Q6ZRT9\>\"", ",", "\"\<Q6NZ36\>\"", ",", "\"\<H7C361\>\"", ",", 
+     "\"\<Q6ZRT9\>\"", ",", "\"\<A8MQT6\>\"", ",", "\"\<Q9BUW7\>\"", ",", 
+     "\"\<Q6NZ67\>\"", ",", "\"\<Q6P582\>\"", ",", "\"\<P39019\>\"", ",", 
+     "\"\<E9PM41\>\"", ",", "\"\<A8MTZ0\>\"", ",", "\"\<A8MTZ0\>\"", ",", 
+     "\"\<E9PRI7\>\"", ",", "\"\<A8MTZ0\>\"", ",", "\"\<Q9H6L5\>\"", ",", 
+     "\"\<Q5H9J7\>\"", ",", "\"\<Q5H9J7\>\"", ",", "\"\<Q5H9J7\>\"", ",", 
+     "\"\<P06454\>\"", ",", "\"\<Q53S24\>\"", ",", "\"\<B8ZZW7\>\"", ",", 
+     "\"\<A0PJW6\>\""}], "}"}]}], ";", 
+  RowBox[{"targetIDs", "=", 
+   RowBox[{"{", "\"\<Gene Symbol\>\"", "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"geneDictionaryExample", "=", 
+  RowBox[{"GetGeneDictionary", "[", "]"}]}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1911539873],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"\[LeftAssociation]", 
+          RowBox[{"\<\"human\"\>", "\[Rule]", 
+           RowBox[{"\[LeftAssociation]", 
+            RowBox[{
+             RowBox[{"\<\"UCSC ID\"\>", "\[Rule]", 
+              RowBox[{"{", 
+               
+               RowBox[{"\<\"uc001aaa.3\"\>", ",", "\<\"uc010nxr.1\"\>", 
+                ",", "\<\"uc010nxq.1\"\>", ",", "\<\"uc001aal.1\"\>", 
+                ",", "\<\"uc001aaq.2\"\>", ",", "\<\"uc001aar.2\"\>", 
+                ",", "\<\"uc001aau.3\"\>", ",", 
+                TemplateBox[{"121569"},
+                 "OutputSizeLimit`Skeleton",
+                 DisplayFunction->(FrameBox[
+                   
+                   RowBox[{
+                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                   Background -> GrayLevel[0.75], 
+                   BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                   Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                   FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], 
+                ",", "\<\"uc031tkn.1\"\>", ",", "\<\"uc022cgh.1\"\>", 
+                ",", "\<\"uc022cha.1\"\>", ",", "\<\"uc022chb.1\"\>", 
+                ",", "\<\"uc022chc.1\"\>", ",", "\<\"uc022che.1\"\>", 
+                ",", "\<\"uc022cpe.1\"\>"}], "}"}]}], ",", 
+             TemplateBox[{"6"},
+              "OutputSizeLimit`Skeleton",
+              DisplayFunction->(FrameBox[
+                
+                RowBox[{
+                 "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                Background -> GrayLevel[0.75], 
+                BaseStyle -> {
+                 "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                  ShowStringCharacters -> False}, BaselinePosition -> 
+                Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], ",", 
+             
+             RowBox[{
+              RowBox[{"\<\"H\"\>", "\[Ellipsis]", "\<\"ID\"\>"}], "\[Rule]", 
+              TemplateBox[{"1"},
+               "OutputSizeLimit`Skeleton",
+               DisplayFunction->(FrameBox[
+                 
+                 RowBox[{
+                  "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                 Background -> GrayLevel[0.75], 
+                 BaseStyle -> {
+                  "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                   ShowStringCharacters -> False}, BaselinePosition -> 
+                 Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                 FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )]}]}], 
+            "\[RightAssociation]"}]}], "\[RightAssociation]"}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{58., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarCategory",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 53, 32683556189100156239, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 53, 32683556189100156239, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 53, 32683556189100156239, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{72., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    Background->RGBColor[0.9657, 0.9753, 0.9802],
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Out[53]]], "Output",
+ ImageSize->{545, 134},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->380700762]
+}, Open  ]],
+
+Cell["\<\
+We see that the gene dictionary has species \"human\" identifiers:\
+\>", "ExampleText",
+ CellID->1083922521],
+
+Cell[CellGroupData[{
+
+Cell["Keys[geneDictionaryExample]", "Input",
+ CellID->1547605099],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"human\"\>", "}"}]], "Output",
+ ImageSize->{54, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->1764700688]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"translatedIDsHuman", "=", 
+  RowBox[{"GeneTranslation", "[", 
+   RowBox[{
+   "uniProtExampleIDs", ",", "targetIDs", ",", "geneDictionaryExample", ",", 
+    RowBox[{"InputID", "\[Rule]", 
+     RowBox[{"{", "\"\<UniProt ID\>\"", "}"}]}], ",", 
+    RowBox[{"Species", "\[Rule]", " ", "\"\<human\>\""}]}], "]"}]}]], "Input",\
+
+ CellLabel->"In[4]:=",
+ CellID->1807942655],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"\<\"Gene Symbol\"\>", "\[Rule]", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\<\"Q6ZRT9\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"Q6NZ36\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"H7C361\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"A8MQT6\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"C1orf86\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"Q9BUW7\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"C9orf16\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"Q6NZ67\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"MZT2B\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"Q6P582\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"MZT2A\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"P39019\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"RPS19\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"E9PM41\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"BBIP1\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"A8MTZ0\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"BBIP1\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"E9PRI7\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"BBIP1\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"Q9H6L5\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"FAM134B\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"Q5H9J7\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"BEX5\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"P06454\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"PTMA\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"Q53S24\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"PTMA\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"B8ZZW7\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"PTMA\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"A0PJW6\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"TMEM223\"\>", "}"}]}]}], "\[RightAssociation]"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{518, 67},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->1580111426]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "See Also"
+}], "SeeAlsoSection",
+ WholeCellGroupOpener->True,
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["GetGeneDictionary"]],"paclet:MathIOmica/ref/GetGeneDictionary"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["GOAnalysis"]],"paclet:MathIOmica/ref/GOAnalysis"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["GOAnalysisAssigner"]],
+    "paclet:MathIOmica/ref/GOAnalysisAssigner"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["KEGGAnalysis"]],"paclet:MathIOmica/ref/KEGGAnalysis"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["KEGGAnalysisAssigner"]],
+    "paclet:MathIOmica/ref/KEGGAnalysisAssigner"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["KEGGPathwayVisual"]],"paclet:MathIOmica/ref/KEGGPathwayVisual"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["OBOGODictionary"]],"paclet:MathIOmica/ref/OBOGODictionary"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["TimeSeriesClusters"]],
+    "paclet:MathIOmica/ref/TimeSeriesClusters"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"]
+}], "SeeAlso",
+ CellID->2127600851]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Tutorials"
+}], "TutorialsSection",
+ WholeCellGroupOpener->True,
+ CellID->250839057],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Tutorial"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaTutorial"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->341631938],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Dynamic Transcriptome"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->1023267351],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Guides"
+}], "MoreAboutSection",
+ WholeCellGroupOpener->True,
+ CellID->38303248],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Guide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"MoreAbout", "CodeFont"}]], "MoreAbout",
+ CellID->354103375],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Links"
+}], "RelatedLinksSection",
+ WholeCellGroupOpener->True,
+ CellID->1584193535],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaGuide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1038487239],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaOverview"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaOverview"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1970164909]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"GeneTranslation",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "Mathematica", ButtonData -> "paclet:MathIOmica/guide/MathIOmica", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
+  None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2016, 12, 14, 16, 43, 50.986991}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "MathIOmica`AnnotationsAndEnumerations`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "Math I Omica Package Symbol", "language" -> "en", "paclet" -> 
+    "MathIOmica Package", "status" -> "None", "summary" -> 
+    "GeneTranslation[inputIDList, targetIDList, geneDictionary] uses \
+geneDictionary to convert inputIDList IDs to different annotations as \
+indicated by targetIDList.", "synonyms" -> {}, "tabletags" -> {}, "title" -> 
+    "GeneTranslation", "titlemodifier" -> "", "windowtitle" -> 
+    "GeneTranslation", "type" -> "Symbol", "uri" -> 
+    "MathIOmica/ref/GeneTranslation"}, "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+2016)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> 
+  "10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, 2016)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[25676, 665, 388, 15, 70, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1515594697]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 111804, 2988}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[587, 21, 5236, 125, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[5826, 148, 292, 11, 70, "ObjectNameGrid"],
+Cell[CellGroupData[{
+Cell[6143, 163, 787, 23, 70, "Usage"],
+Cell[CellGroupData[{
+Cell[6955, 190, 739, 24, 70, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->1958725080],
+Cell[7697, 216, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[7731, 218, 352, 8, 70, "Notes",
+ CellID->981473630],
+Cell[8086, 228, 6514, 154, 70, "2ColumnTableMod",
+ CellID->606477167],
+Cell[14603, 384, 53, 0, 70, "Notes"],
+Cell[14659, 386, 717, 17, 70, "3ColumnTableMod"],
+Cell[15379, 405, 132, 4, 70, "Notes",
+ CellID->877657037],
+Cell[15514, 411, 350, 12, 70, "Notes",
+ CellID->994945971],
+Cell[15867, 425, 6015, 137, 70, "Notes",
+ CellID->844193614],
+Cell[21885, 564, 192, 4, 70, "Notes",
+ CellID->939566402],
+Cell[22080, 570, 107, 3, 70, "Notes",
+ CellID->1039693986],
+Cell[22190, 575, 3222, 76, 70, "Notes",
+ CellID->997987583],
+Cell[25415, 653, 178, 4, 70, "Notes",
+ CellID->553291550],
+Cell[25596, 659, 31, 0, 70, "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25676, 665, 388, 15, 70, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1515594697],
+Cell[CellGroupData[{
+Cell[26089, 684, 196, 6, 70, "ExampleSection",
+ CellID->1296535412],
+Cell[26288, 692, 88, 1, 70, "ExampleText",
+ CellID->158760191],
+Cell[26379, 695, 118, 3, 70, "Input",
+ CellID->10541973],
+Cell[26500, 700, 470, 11, 70, "ExampleText",
+ CellID->974231829],
+Cell[CellGroupData[{
+Cell[26995, 715, 946, 20, 70, "Input",
+ CellID->771602892],
+Cell[27944, 737, 10213, 252, 70, "Output",
+ CellID->984735860]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38194, 994, 318, 8, 70, "Input",
+ CellID->814776341],
+Cell[38515, 1004, 4053, 89, 70, "Output",
+ CellID->1996426668]
+}, Open  ]],
+Cell[42583, 1096, 84, 1, 70, "ExampleText",
+ CellID->1501517606],
+Cell[CellGroupData[{
+Cell[42692, 1101, 239, 7, 70, "Input",
+ CellID->994596220],
+Cell[42934, 1110, 18611, 502, 70, "Output",
+ CellID->212066776]
+}, Open  ]],
+Cell[61560, 1615, 245, 5, 70, "ExampleText",
+ CellID->1390676731],
+Cell[CellGroupData[{
+Cell[61830, 1624, 343, 9, 70, "Input",
+ CellID->987059322],
+Cell[62176, 1635, 1762, 42, 70, "Output",
+ CellID->347387407]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[63987, 1683, 168, 5, 70, "ExampleSection"],
+Cell[CellGroupData[{
+Cell[64180, 1692, 174, 5, 70, "ExampleSubsection"],
+Cell[64357, 1699, 120, 3, 70, "Input",
+ CellID->1530933859],
+Cell[64480, 1704, 243, 5, 70, "ExampleText",
+ CellID->1517332495],
+Cell[64726, 1711, 467, 10, 70, "ExampleText",
+ CellID->190617944],
+Cell[CellGroupData[{
+Cell[65218, 1725, 740, 16, 70, "Input",
+ CellID->1403793506],
+Cell[65961, 1743, 10095, 249, 70, "Output",
+ CellID->214713286]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76093, 1997, 370, 10, 70, "Input",
+ CellID->530781964],
+Cell[76466, 2009, 2260, 52, 70, "Output",
+ CellID->604876012]
+}, Open  ]],
+Cell[78741, 2064, 152, 4, 70, "ExampleText",
+ CellID->1679596903],
+Cell[CellGroupData[{
+Cell[78918, 2072, 284, 7, 70, "Input",
+ CellID->524502021],
+Cell[79205, 2081, 10538, 263, 70, "Output",
+ CellID->1544769344]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[89792, 2350, 174, 5, 70, "ExampleSubsection"],
+Cell[89969, 2357, 120, 3, 70, "Input",
+ CellID->2008556025],
+Cell[90092, 2362, 189, 4, 70, "ExampleText",
+ CellID->1511769539],
+Cell[90284, 2368, 459, 11, 70, "ExampleText",
+ CellID->1505664982],
+Cell[CellGroupData[{
+Cell[90768, 2383, 906, 19, 70, "Input",
+ CellID->1911539873],
+Cell[91677, 2404, 10047, 248, 70, "Output",
+ CellID->380700762]
+}, Open  ]],
+Cell[101739, 2655, 118, 3, 70, "ExampleText",
+ CellID->1083922521],
+Cell[CellGroupData[{
+Cell[101882, 2662, 65, 1, 70, "Input",
+ CellID->1547605099],
+Cell[101950, 2665, 193, 6, 70, "Output",
+ CellID->1764700688]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[102180, 2676, 390, 10, 70, "Input",
+ CellID->1807942655],
+Cell[102573, 2688, 1939, 44, 70, "Output",
+ CellID->1580111426]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+Cell[104551, 2737, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[104619, 2742, 270, 12, 70, "SeeAlsoSection",
+ CellID->1255426704],
+Cell[104892, 2756, 2664, 81, 70, "SeeAlso",
+ CellID->2127600851]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[107593, 2842, 272, 12, 70, "TutorialsSection",
+ CellID->250839057],
+Cell[107868, 2856, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[107902, 2858, 212, 6, 70, "Tutorials",
+ CellID->341631938],
+Cell[108117, 2866, 238, 6, 70, "Tutorials",
+ CellID->1023267351],
+Cell[108358, 2874, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[108426, 2879, 276, 12, 70, "MoreAboutSection",
+ CellID->38303248],
+Cell[108705, 2893, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[108739, 2895, 199, 5, 70, "MoreAbout",
+ CellID->354103375],
+Cell[108941, 2902, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[109009, 2907, 280, 12, 70, "RelatedLinksSection",
+ CellID->1584193535],
+Cell[109292, 2921, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[109326, 2923, 205, 5, 70, "RelatedLinks",
+ CellID->1038487239],
+Cell[109534, 2930, 218, 6, 70, "RelatedLinks",
+ CellID->1970164909]
+}, Open  ]],
+Cell[109767, 2939, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)

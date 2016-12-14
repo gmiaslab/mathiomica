@@ -1,3 +1,4 @@
-# mathiomica
-MathIOmica is a Mathematica package for omics data analyses.
-******Please go to MathIOmica.org. github is having issues with large files >25MB******
+#MathIOmica
+This repository contains MathIOmica, a Mathematica package written in the Wolfram Language that provides bioinformatics utilities for analyzing (dynamic) omics datasets.
+
+To install MathIOmica, download the MathIOmica.zip file, unzip it and follow the instructions in the README.txt file therein.

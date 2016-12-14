@@ -1,0 +1,1345 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     42135,       1336]
+NotebookOptionsPosition[     35928,       1140]
+NotebookOutlinePosition[     38121,       1198]
+CellTagsIndexPosition[     38035,       1193]
+WindowTitle->ApplierList
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["MATH I OMICA PACKAGE SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Tutorials",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Tutorials", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmicaTutorial\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaTutorial"], "\<\"MathIOmica \
+Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"Tutorials"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "See Also",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"See Also", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"Applier\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/Applier"], "\<\"MeasurementApplier\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/MeasurementApplier"], "\<\"OmicsObject\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/OmicsObject"], "\<\"Query\"\>":>
+       Documentation`HelpLookup["paclet:ref/Query"], "\<\"Returner\"\>":>
+       Documentation`HelpLookup["paclet:MathIOmica/ref/Returner"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"SeeAlso"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Related Guides",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Related Guides", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica Guide\"\>":>
+       Documentation`HelpLookup["paclet:MathIOmica/guide/MathIOmicaGuide"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"MoreAbout"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica/ref/ApplierList\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["MathIOmica/ref/ApplierList"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/MathIOmica/ref/\
+ApplierList.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$6042], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "MathIOmica/ref/ApplierList", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ CellID->1],
+
+Cell[TextData[{
+ Cell["ApplierList", "ObjectName"],
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8]]]],
+ Cell[BoxData[""], "ObjectNameTranslation"]
+}], "ObjectNameGrid"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"ApplierList", "[", 
+       RowBox[{
+        StyleBox["function", "TI"], ",", " ", 
+        StyleBox["inputData", "TI"]}], "]"}]], "InlineFormula"],
+     "\[LineSeparator]applies ",
+     Cell[BoxData[
+      StyleBox["function", "TI"]], "InlineFormula"],
+     " to list of lists from an association, nested association or components \
+or a matrix ",
+     Cell[BoxData[
+      StyleBox["inputData", "TI"]], "InlineFormula"],
+     "."
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    InterpretationBox[
+     StyleBox[
+      GraphicsBox[{},
+       BaselinePosition->Baseline,
+       ImageSize->{6, 0}],
+      CacheGraphics->False],
+     Spacer[6]]]],
+   "Details"
+  }], "NotesFrameText"],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->414581135],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"ApplierList", "[", 
+   RowBox[{
+    StyleBox["function", "TI"], ",", " ", 
+    StyleBox["inputData", "TI"]}], "]"}]], "InlineFormula"],
+ " utilizes a function that acts across datasets (matrices). ",
+ Cell[BoxData["ApplierList"], "InlineFormula"],
+ " takes two inputs:"
+}], "Notes",
+ CellID->1067943069],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon"], 
+    StyleBox["function", "TI"], Cell["\<\
+Function to be applied across the data sets. The function takes matrices \
+(lists of lists) as inputs and returns matrices of the same size as outputs.\
+\>", "TableText"]},
+   {Cell["      ", "TableRowIcon"], 
+    StyleBox["inputData", "TI"], Cell["\<\
+Data over which the function will be applied, typically an association.\
+\>", "TableText"]}
+  }]], "2ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {None, {None}}, 
+   "RowsIndexed" -> {}},
+ GridBoxDividers->{"Rows" -> {{True, True, True}}}},
+ CellID->29176506],
+
+Cell["", "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1428185077],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->1081866620],
+
+Cell["First we load the MathIOmica package.", "ExampleText",
+ CellID->191603639],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2017647728],
+
+Cell["We define an example OmicsObject:", "ExampleText",
+ CellID->1468723362],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"omicsObjectMultiComponent", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\"\<FirstSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement1\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.8", ",", "2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"17", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement2\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.9", ",", "1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"13", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement3\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.5", ",", "4"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "\"\<False\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement4\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.2", ",", "3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"5", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement5\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.3", ",", "2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"11", ",", "\"\<True\>\""}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<SecondSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement1\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.7", ",", "1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"15", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement2\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.7", ",", "1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"12", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement3\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.3", ",", "2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"11", ",", "\"\<False\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement4\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.3", ",", "3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"6", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement5\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.6", ",", "3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"10", ",", "\"\<True\>\""}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<ThirdSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement1\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.9", ",", "2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"16", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement2\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.3", ",", "5"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"11", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement3\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.4", ",", "6"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"8", ",", "\"\<False\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement4\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.3", ",", "2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"7", ",", "\"\<True\>\""}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "\"\<Measurement5\>\"", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.1", ",", "2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"12", ",", "\"\<False\>\""}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]}], ";"}]], "Input",\
+
+ CellLabel->"In[2]:=",
+ CellID->611125080],
+
+Cell["Let us extract all the first components:", "ExampleText",
+ CellID->1256043660],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"testApplierListExample", "=", 
+  RowBox[{
+   RowBox[{"Query", "[", 
+    RowBox[{"All", ",", "All", ",", "1", ",", "1"}], "]"}], "@", 
+   "omicsObjectMultiComponent"}]}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->318696374],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", "0.8`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", "0.9`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "0.5`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "0.2`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "0.3`"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", "0.7`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", "0.7`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "0.3`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "0.3`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "0.6`"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", "0.9`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", "0.3`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "0.4`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "0.3`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "0.1`"}]}], 
+     "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{491, 82},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->2134266589]
+}, Open  ]],
+
+Cell[TextData[{
+ "We can perform ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["QuantileNormalization"]],
+    "paclet:MathIOmica/ref/QuantileNormalization"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+ " on the data:"
+}], "ExampleText",
+ CellID->1204262165],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ApplierList", "[", 
+  RowBox[{"QuantileNormalization", ",", "testApplierListExample"}], 
+  "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->723113261],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", 
+       "0.6333333333333333`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", 
+       "0.8333333333333334`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", 
+       "0.46666666666666673`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", 
+       "0.19999999999999998`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "0.3`"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", 
+       "0.7333333333333334`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", 
+       "0.7333333333333334`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "0.25`"}], ",", 
+      
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "0.25`"}], ",", 
+      
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", 
+       "0.46666666666666673`"}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", 
+       "0.8333333333333334`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", 
+       "0.38333333333333336`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", 
+       "0.6333333333333333`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", 
+       "0.38333333333333336`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", 
+       "0.19999999999999998`"}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{563, 82},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->1243189872]
+}, Open  ]],
+
+Cell[TextData[{
+ "We note that we are using ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["QuantileNormalization"]],
+    "paclet:MathIOmica/ref/QuantileNormalization"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+ " as an illustrative example, but ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["QuantileNormalization"]],
+    "paclet:MathIOmica/ref/QuantileNormalization"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+ " works directly on a 2-level ",
+ ButtonBox["Association",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Association"],
+ " as well:"
+}], "ExampleText",
+ CellID->312895886],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"QuantileNormalization", "[", "testApplierListExample", 
+  "]"}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->280207850],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", 
+       "0.6333333333333333`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", 
+       "0.8333333333333334`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", 
+       "0.46666666666666673`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", 
+       "0.19999999999999998`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "0.3`"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", 
+       "0.7333333333333334`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", 
+       "0.7333333333333334`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "0.25`"}], ",", 
+      
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "0.25`"}], ",", 
+      
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", 
+       "0.46666666666666673`"}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", 
+       "0.8333333333333334`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", 
+       "0.38333333333333336`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", 
+       "0.6333333333333333`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", 
+       "0.38333333333333336`"}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", 
+       "0.19999999999999998`"}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{563, 82},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[5]=",
+ CellID->10449566]
+}, Open  ]],
+
+Cell["For associations of lists :", "ExampleText",
+ CellID->795485682],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"testAssociationsLists", "=", 
+  RowBox[{
+   RowBox[{"Query", "[", 
+    RowBox[{"All", ",", "Values"}], "]"}], "@", 
+   "testApplierListExample"}]}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->365230707],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0.8`", ",", "0.9`", ",", "0.5`", ",", "0.2`", ",", "0.3`"}], 
+     "}"}]}], ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0.7`", ",", "0.7`", ",", "0.3`", ",", "0.3`", ",", "0.6`"}], 
+     "}"}]}], ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0.9`", ",", "0.3`", ",", "0.4`", ",", "0.3`", ",", "0.1`"}], 
+     "}"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{570, 28},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[6]=",
+ CellID->1469369009]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ApplierList", "[", 
+  RowBox[{"QuantileNormalization", ",", "testAssociationsLists"}], 
+  "]"}]], "Input",
+ CellLabel->"In[7]:=",
+ CellID->946096322],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "0.6333333333333333`", ",", "0.8333333333333334`", ",", 
+      "0.46666666666666673`", ",", "0.19999999999999998`", ",", "0.3`"}], 
+     "}"}]}], ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "0.7333333333333334`", ",", "0.7333333333333334`", ",", "0.25`", ",", 
+      "0.25`", ",", "0.46666666666666673`"}], "}"}]}], ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "0.8333333333333334`", ",", "0.38333333333333336`", ",", 
+      "0.6333333333333333`", ",", "0.38333333333333336`", ",", 
+      "0.19999999999999998`"}], "}"}]}]}], "\[RightAssociation]"}]], "Output",\
+
+ ImageSize->{432, 42},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[7]=",
+ CellID->1006829836]
+}, Open  ]],
+
+Cell[TextData[{
+ Cell[BoxData["ApplierList"], "InlineFormula"],
+ " also works on lists of associations:"
+}], "ExampleText",
+ CellID->412560098],
+
+Cell[CellGroupData[{
+
+Cell["testListAssociations=Query[Values]@testApplierListExample", "Input",
+ CellID->1455894699],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", "0.8`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", "0.9`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "0.5`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "0.2`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "0.3`"}]}], 
+    "\[RightAssociation]"}], ",", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", "0.7`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", "0.7`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "0.3`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "0.3`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "0.6`"}]}], 
+    "\[RightAssociation]"}], ",", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", "0.9`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", "0.3`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "0.4`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "0.3`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "0.1`"}]}], 
+    "\[RightAssociation]"}]}], "}"}]], "Output",
+ ImageSize->{478, 79},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[8]=",
+ CellID->579535830]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ApplierList", "[", 
+  RowBox[{"QuantileNormalization", ",", "testListAssociations"}], 
+  "]"}]], "Input",
+ CellLabel->"In[9]:=",
+ CellID->1150918756],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", 
+      "0.6333333333333333`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", 
+      "0.8333333333333334`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", 
+      "0.46666666666666673`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", 
+      "0.19999999999999998`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", "0.3`"}]}], 
+    "\[RightAssociation]"}], ",", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", 
+      "0.7333333333333334`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", 
+      "0.7333333333333334`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", "0.25`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", "0.25`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", 
+      "0.46666666666666673`"}]}], "\[RightAssociation]"}], ",", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", 
+      "0.8333333333333334`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", 
+      "0.38333333333333336`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", 
+      "0.6333333333333333`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", 
+      "0.38333333333333336`"}], ",", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", 
+      "0.19999999999999998`"}]}], "\[RightAssociation]"}]}], "}"}]], "Output",\
+
+ ImageSize->{550, 79},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[9]=",
+ CellID->280179059]
+}, Open  ]],
+
+Cell["\<\
+The application on lists is the same as a default application:\
+\>", "ExampleText",
+ CellID->1950640166],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"testList", "=", 
+  RowBox[{"Values", "@", "testListAssociations"}]}]], "Input",
+ CellLabel->"In[10]:=",
+ CellID->123552467],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0.8`", ",", "0.9`", ",", "0.5`", ",", "0.2`", ",", "0.3`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0.7`", ",", "0.7`", ",", "0.3`", ",", "0.3`", ",", "0.6`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0.9`", ",", "0.3`", ",", "0.4`", ",", "0.3`", ",", "0.1`"}], 
+    "}"}]}], "}"}]], "Output",
+ ImageSize->{544, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[10]=",
+ CellID->524353589]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ApplierList", "[", 
+  RowBox[{"QuantileNormalization", ",", "testList"}], "]"}]], "Input",
+ CellLabel->"In[11]:=",
+ CellID->961400149],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "0.6333333333333333`", ",", "0.8333333333333334`", ",", 
+     "0.46666666666666673`", ",", "0.19999999999999998`", ",", "0.3`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.7333333333333334`", ",", "0.7333333333333334`", ",", "0.25`", ",", 
+     "0.25`", ",", "0.46666666666666673`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.8333333333333334`", ",", "0.38333333333333336`", ",", 
+     "0.6333333333333333`", ",", "0.38333333333333336`", ",", 
+     "0.19999999999999998`"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{331, 40},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[11]=",
+ CellID->1203593783]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"QuantileNormalization", "[", "testList", "]"}]], "Input",
+ CellLabel->"In[12]:=",
+ CellID->842603782],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "0.6333333333333333`", ",", "0.8333333333333334`", ",", 
+     "0.46666666666666673`", ",", "0.19999999999999998`", ",", "0.3`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.7333333333333334`", ",", "0.7333333333333334`", ",", "0.25`", ",", 
+     "0.25`", ",", "0.46666666666666673`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.8333333333333334`", ",", "0.38333333333333336`", ",", 
+     "0.6333333333333333`", ",", "0.38333333333333336`", ",", 
+     "0.19999999999999998`"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{331, 40},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[12]=",
+ CellID->420163563]
+}, Open  ]]
+}, Open  ]],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "See Also"
+}], "SeeAlsoSection",
+ WholeCellGroupOpener->True,
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["Applier"]],"paclet:MathIOmica/ref/Applier"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["MeasurementApplier"]],
+    "paclet:MathIOmica/ref/MeasurementApplier"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["OmicsObject"]],"paclet:MathIOmica/ref/OmicsObject"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["Query"]],"paclet:ref/Query"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["Returner"]],"paclet:MathIOmica/ref/Returner"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Tutorials"
+}], "TutorialsSection",
+ WholeCellGroupOpener->True,
+ CellID->250839057],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaTutorial"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaTutorial"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->341631938],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Dynamic Transcriptome"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->1023267351],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Guides"
+}], "MoreAboutSection",
+ WholeCellGroupOpener->True,
+ CellID->38303248],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Guide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"MoreAbout", "CodeFont"}]], "MoreAbout",
+ CellID->188243191],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Links"
+}], "RelatedLinksSection",
+ WholeCellGroupOpener->True,
+ CellID->1584193535],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaGuide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1038487239],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaOverview"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaOverview"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1784361302]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"ApplierList",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "Mathematica", ButtonData -> "paclet:MathIOmica/guide/MathIOmica", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
+  None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2016, 12, 14, 16, 42, 19.772232}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "MathIOmica`DataProcessing`", "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Math I Omica Package Symbol", "language" -> "en", "paclet" -> 
+    "MathIOmica Package", "status" -> "None", "summary" -> 
+    "ApplierList[function, inputData] applies function to list of lists from \
+an association, nested association or components or a matrix inputData.", 
+    "synonyms" -> {}, "tabletags" -> {}, "title" -> "ApplierList", 
+    "titlemodifier" -> "", "windowtitle" -> "ApplierList", "type" -> "Symbol",
+     "uri" -> "MathIOmica/ref/ApplierList"}, "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+2016)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> 
+  "10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, 2016)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[8289, 243, 388, 15, 70, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1428185077]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 37891, 1186}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[583, 21, 4801, 117, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[5387, 140, 288, 11, 70, "ObjectNameGrid"],
+Cell[CellGroupData[{
+Cell[5700, 155, 672, 20, 70, "Usage"],
+Cell[CellGroupData[{
+Cell[6397, 179, 738, 24, 70, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->414581135],
+Cell[7138, 205, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[7172, 207, 345, 10, 70, "Notes",
+ CellID->1067943069],
+Cell[7520, 219, 686, 16, 70, "2ColumnTableMod",
+ CellID->29176506],
+Cell[8209, 237, 31, 0, 70, "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8289, 243, 388, 15, 70, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1428185077],
+Cell[CellGroupData[{
+Cell[8702, 262, 196, 6, 70, "ExampleSection",
+ CellID->1081866620],
+Cell[8901, 270, 80, 1, 70, "ExampleText",
+ CellID->191603639],
+Cell[8984, 273, 120, 3, 70, "Input",
+ CellID->2017647728],
+Cell[9107, 278, 77, 1, 70, "ExampleText",
+ CellID->1468723362],
+Cell[9187, 281, 5099, 139, 70, "Input",
+ CellID->611125080],
+Cell[14289, 422, 84, 1, 70, "ExampleText",
+ CellID->1256043660],
+Cell[CellGroupData[{
+Cell[14398, 427, 246, 7, 70, "Input",
+ CellID->318696374],
+Cell[14647, 436, 2006, 49, 70, "Output",
+ CellID->2134266589]
+}, Open  ]],
+Cell[16668, 488, 300, 10, 70, "ExampleText",
+ CellID->1204262165],
+Cell[CellGroupData[{
+Cell[16993, 502, 174, 5, 70, "Input",
+ CellID->723113261],
+Cell[17170, 509, 2295, 62, 70, "Output",
+ CellID->1243189872]
+}, Open  ]],
+Cell[19480, 574, 674, 21, 70, "ExampleText",
+ CellID->312895886],
+Cell[CellGroupData[{
+Cell[20179, 599, 141, 4, 70, "Input",
+ CellID->280207850],
+Cell[20323, 605, 2293, 62, 70, "Output",
+ CellID->10449566]
+}, Open  ]],
+Cell[22631, 670, 70, 1, 70, "ExampleText",
+ CellID->795485682],
+Cell[CellGroupData[{
+Cell[22726, 675, 225, 7, 70, "Input",
+ CellID->365230707],
+Cell[22954, 684, 701, 19, 70, "Output",
+ CellID->1469369009]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23692, 708, 173, 5, 70, "Input",
+ CellID->946096322],
+Cell[23868, 715, 925, 25, 70, "Output",
+ CellID->1006829836]
+}, Open  ]],
+Cell[24808, 743, 143, 4, 70, "ExampleText",
+ CellID->412560098],
+Cell[CellGroupData[{
+Cell[24976, 751, 95, 1, 70, "Input",
+ CellID->1455894699],
+Cell[25074, 754, 1786, 46, 70, "Output",
+ CellID->579535830]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26897, 805, 173, 5, 70, "Input",
+ CellID->1150918756],
+Cell[27073, 812, 2050, 57, 70, "Output",
+ CellID->280179059]
+}, Open  ]],
+Cell[29138, 872, 114, 3, 70, "ExampleText",
+ CellID->1950640166],
+Cell[CellGroupData[{
+Cell[29277, 879, 147, 4, 70, "Input",
+ CellID->123552467],
+Cell[29427, 885, 512, 16, 70, "Output",
+ CellID->524353589]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29976, 906, 158, 4, 70, "Input",
+ CellID->961400149],
+Cell[30137, 912, 730, 21, 70, "Output",
+ CellID->1203593783]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30904, 938, 125, 3, 70, "Input",
+ CellID->842603782],
+Cell[31032, 943, 729, 21, 70, "Output",
+ CellID->420163563]
+}, Open  ]]
+}, Open  ]],
+Cell[31788, 968, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31856, 973, 270, 12, 70, "SeeAlsoSection",
+ CellID->1255426704],
+Cell[32129, 987, 1562, 49, 70, "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33728, 1041, 272, 12, 70, "TutorialsSection",
+ CellID->250839057],
+Cell[34003, 1055, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[34037, 1057, 211, 6, 70, "Tutorials",
+ CellID->341631938],
+Cell[34251, 1065, 238, 6, 70, "Tutorials",
+ CellID->1023267351],
+Cell[34492, 1073, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34560, 1078, 276, 12, 70, "MoreAboutSection",
+ CellID->38303248],
+Cell[34839, 1092, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[34873, 1094, 199, 5, 70, "MoreAbout",
+ CellID->188243191],
+Cell[35075, 1101, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35143, 1106, 280, 12, 70, "RelatedLinksSection",
+ CellID->1584193535],
+Cell[35426, 1120, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[35460, 1122, 205, 5, 70, "RelatedLinks",
+ CellID->1038487239],
+Cell[35668, 1129, 218, 6, 70, "RelatedLinks",
+ CellID->1784361302]
+}, Open  ]],
+Cell[35901, 1138, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
