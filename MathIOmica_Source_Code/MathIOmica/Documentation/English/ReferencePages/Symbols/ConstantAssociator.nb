@@ -1,0 +1,1403 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     45482,       1394]
+NotebookOptionsPosition[     39866,       1225]
+NotebookOutlinePosition[     42232,       1286]
+CellTagsIndexPosition[     42146,       1281]
+WindowTitle->ConstantAssociator
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["MATH I OMICA PACKAGE SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Tutorials",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Tutorials", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmicaTutorial\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaTutorial"], "\<\"MathIOmica \
+Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"Tutorials"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "See Also",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"See Also", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"Applier\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/Applier"], "\<\"ApplierList\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/ApplierList"], \
+"\<\"EnlargeInnerAssociation\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/EnlargeInnerAssociation"], \
+"\<\"EnlargeOuterAssociation\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/EnlargeOuterAssociation"], \
+"\<\"FilteringFunction\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/FilteringFunction"], "\<\"ListIndex\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/ListIndex"], "\<\"OmicsObject\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/OmicsObject"], "\<\"OmicsObjectCreator\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/OmicsObjectCreator"], "\<\"Returner\"\>":>
+       Documentation`HelpLookup["paclet:MathIOmica/ref/Returner"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"SeeAlso"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Related Guides",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Related Guides", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica Guide\"\>":>
+       Documentation`HelpLookup["paclet:MathIOmica/guide/MathIOmicaGuide"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"MoreAbout"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica/ref/ConstantAssociator\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["MathIOmica/ref/ConstantAssociator"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/MathIOmica/ref/\
+ConstantAssociator.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$11470], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "MathIOmica/ref/ConstantAssociator", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ CellID->1],
+
+Cell[TextData[{
+ Cell["ConstantAssociator", "ObjectName"],
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8]]]],
+ Cell[BoxData[""], "ObjectNameTranslation"]
+}], "ObjectNameGrid"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"ConstantAssociator", "[", 
+       RowBox[{
+        StyleBox["inputAssociation", "TI"], ",", " ", 
+        StyleBox["associationAddition", "TI"]}], "]"}]], "InlineFormula"],
+     "\[LineSeparator]adds multi-key constant to an OmicsObject (or an \
+association of associations) ",
+     Cell[BoxData[
+      StyleBox["inputAssociation", "TI"]], "InlineFormula"],
+     ", with each addition specified in a single association ",
+     Cell[BoxData[
+      StyleBox["associationAddition", "TI"]], "InlineFormula"],
+     ", of form <|addition1\[Rule] Value1,addition2\[Rule] Value2,...|>."
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    InterpretationBox[
+     StyleBox[
+      GraphicsBox[{},
+       BaselinePosition->Baseline,
+       ImageSize->{6, 0}],
+      CacheGraphics->False],
+     Spacer[6]]]],
+   "Details"
+  }], "NotesFrameText"],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->1065515601],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"ConstantAssociator", "[", 
+   RowBox[{
+    StyleBox["inputAssociation", "TI"], ",", " ", 
+    StyleBox["associationAddition", "TI"]}], "]"}]], "InlineFormula"],
+ " adds constants to OmicsObject (and also associations of associations)",
+ ". ",
+ "ConstantAssociator takes as inputs:"
+}], "Notes",
+ CellID->1067943069],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon"], 
+    StyleBox["inputAssociation", "TI"], Cell[
+    "OmicsObject (or association of associations) to be modified.", 
+     "TableText"]},
+   {Cell["      ", "TableRowIcon"], 
+    StyleBox["associationAddition", "TI"], Cell[
+    "Association of modifications and values.", "TableText"]}
+  }]], "2ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {None, {None}}, 
+   "RowsIndexed" -> {}},
+ GridBoxDividers->{"Rows" -> {{True, True, True}}}},
+ CellID->1283119729],
+
+Cell["\<\
+ConstantAssociator returns the same kind of object as its input. \
+\>", "Notes",
+ CellID->362502129],
+
+Cell["", "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CellTags->"PrimaryExamplesSection",
+ CellID->254573674],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->832314094],
+
+Cell["We first load MathIOmica:", "ExampleText",
+ CellID->1588548353],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2017647728],
+
+Cell["Let' s consider the OmicsObject:", "ExampleText",
+ CellID->929943212],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"omicsObjectExample", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"FirstSample", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.937", "}"}], ",", 
+           RowBox[{"{", "17", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.059", "}"}], ",", 
+           RowBox[{"{", "9", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03", "}"}], ",", 
+           RowBox[{"{", "11", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268", "}"}], ",", 
+           RowBox[{"{", "4", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+     RowBox[{"SecondSample", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.003", "}"}], ",", 
+           RowBox[{"{", "17", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779", "}"}], ",", 
+           RowBox[{"{", "11", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.917", "}"}], ",", 
+           RowBox[{"{", "4", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921", "}"}], ",", 
+           RowBox[{"{", "24", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}], 
+     ",", 
+     RowBox[{"ThirdSample", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.064", "}"}], ",", 
+           RowBox[{"{", "19", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545", "}"}], ",", 
+           RowBox[{"{", "5", "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87", "}"}], ",", 
+           RowBox[{"{", "23", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}]}],
+     "\[RightAssociation]"}]}], ";"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->15975588],
+
+Cell["\<\
+We add a new sample, FourthSample, where all protein data is Missing:\
+\>", "ExampleText",
+ CellID->926012675],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ConstantAssociator", "[", 
+  RowBox[{"omicsObjectExample", ",", 
+   RowBox[{"<|", 
+    RowBox[{"FourthSample", "\[Rule]", " ", 
+     RowBox[{"Missing", "[", "]"}]}], "|>"}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1299311423],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"FirstSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.937`", "}"}], ",", 
+         RowBox[{"{", "17", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1.059`", "}"}], ",", 
+         RowBox[{"{", "9", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1.03`", "}"}], ",", 
+         RowBox[{"{", "11", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1.268`", "}"}], ",", 
+         RowBox[{"{", "4", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"SecondSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1.003`", "}"}], ",", 
+         RowBox[{"{", "17", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.779`", "}"}], ",", 
+         RowBox[{"{", "11", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.917`", "}"}], ",", 
+         RowBox[{"{", "4", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.921`", "}"}], ",", 
+         RowBox[{"{", "24", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}], 
+   ",", 
+   RowBox[{"ThirdSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1.064`", "}"}], ",", 
+         RowBox[{"{", "19", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.545`", "}"}], ",", 
+         RowBox[{"{", "5", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.87`", "}"}], ",", 
+         RowBox[{"{", "23", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}], 
+   ",", 
+   RowBox[{"FourthSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{547, 111},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->1771968046]
+}, Open  ]],
+
+Cell["We can add multiple constant samples with different values:", \
+"ExampleText",
+ CellID->359807027],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ConstantAssociator", "[", 
+  RowBox[{"omicsObjectExample", ",", 
+   RowBox[{"<|", 
+    RowBox[{
+     RowBox[{"FourthSample", "\[Rule]", " ", 
+      RowBox[{"Missing", "[", "]"}]}], ",", 
+     RowBox[{"FifthSample", "\[Rule]", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", "1", "}"}], ",", 
+        RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
+     RowBox[{"\"\<TestKey\>\"", "\[Rule]", " ", "\"\<TestConstant\>\""}]}], 
+    "|>"}]}], "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->842685456],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"FirstSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.937`", "}"}], ",", 
+         RowBox[{"{", "17", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1.059`", "}"}], ",", 
+         RowBox[{"{", "9", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1.03`", "}"}], ",", 
+         RowBox[{"{", "11", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1.268`", "}"}], ",", 
+         RowBox[{"{", "4", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"SecondSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1.003`", "}"}], ",", 
+         RowBox[{"{", "17", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.779`", "}"}], ",", 
+         RowBox[{"{", "11", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.917`", "}"}], ",", 
+         RowBox[{"{", "4", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.921`", "}"}], ",", 
+         RowBox[{"{", "24", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}], 
+   ",", 
+   RowBox[{"ThirdSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1.064`", "}"}], ",", 
+         RowBox[{"{", "19", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.545`", "}"}], ",", 
+         RowBox[{"{", "5", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.87`", "}"}], ",", 
+         RowBox[{"{", "23", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}], 
+   ",", 
+   RowBox[{"FourthSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"FifthSample", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1", "}"}], ",", 
+         RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1", "}"}], ",", 
+         RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1", "}"}], ",", 
+         RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1", "}"}], ",", 
+         RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1", "}"}], ",", 
+         RowBox[{"{", "2", "}"}]}], "}"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"TestKey\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "A0AVT1", "}"}], "\[Rule]", "\<\"TestConstant\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0MZ66", "}"}], "\[Rule]", "\<\"TestConstant\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1A4S6", "}"}], "\[Rule]", "\<\"TestConstant\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A1L0T0", "}"}], "\[Rule]", "\<\"TestConstant\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", "A0FGR8", "}"}], "\[Rule]", "\<\"TestConstant\"\>"}]}], 
+     "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{554, 166},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->1383959432]
+}, Open  ]],
+
+Cell["\<\
+We can also perform constant addition to associations of associations:\
+\>", "ExampleText",
+ CellID->810792967],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"associations", "=", 
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{
+    RowBox[{"1", "\[Rule]", 
+     RowBox[{"\[LeftAssociation]", 
+      RowBox[{
+       RowBox[{"1", "\[Rule]", "a11"}], ",", 
+       RowBox[{"2", "\[Rule]", "a12"}], ",", 
+       RowBox[{"3", "\[Rule]", "a13"}], ",", 
+       RowBox[{"4", "\[Rule]", "a14"}], ",", 
+       RowBox[{"5", "\[Rule]", 
+        RowBox[{"Missing", "[", 
+         RowBox[{"\"\<KeyAbsent\>\"", ",", "5"}], "]"}]}]}], 
+      "\[RightAssociation]"}]}], ",", 
+    RowBox[{"2", "\[Rule]", 
+     RowBox[{"\[LeftAssociation]", 
+      RowBox[{
+       RowBox[{"1", "\[Rule]", "a21"}], ",", 
+       RowBox[{"2", "\[Rule]", "a22"}], ",", 
+       RowBox[{"3", "\[Rule]", 
+        RowBox[{"Missing", "[", 
+         RowBox[{"\"\<KeyAbsent\>\"", ",", "3"}], "]"}]}], ",", 
+       RowBox[{"4", "\[Rule]", "a24"}], ",", 
+       RowBox[{"5", "\[Rule]", "a25"}]}], "\[RightAssociation]"}]}], ",", 
+    RowBox[{"3", "\[Rule]", 
+     RowBox[{"\[LeftAssociation]", 
+      RowBox[{
+       RowBox[{"1", "\[Rule]", "a31"}], ",", 
+       RowBox[{"2", "\[Rule]", "a32"}], ",", 
+       RowBox[{"3", "\[Rule]", 
+        RowBox[{"Missing", "[", 
+         RowBox[{"\"\<KeyAbsent\>\"", ",", "3"}], "]"}]}], ",", 
+       RowBox[{"4", "\[Rule]", "a34"}], ",", 
+       RowBox[{"5", "\[Rule]", "a35"}]}], "\[RightAssociation]"}]}], ",", 
+    RowBox[{"5", "\[Rule]", 
+     RowBox[{"\[LeftAssociation]", 
+      RowBox[{
+       RowBox[{"1", "\[Rule]", "a31m"}], ",", 
+       RowBox[{"2", "\[Rule]", 
+        RowBox[{"Missing", "[", 
+         RowBox[{"\"\<KeyAbsent\>\"", ",", 
+          RowBox[{"2", " ", "m"}]}], "]"}]}], ",", 
+       RowBox[{"3", "\[Rule]", "a33m"}], ",", 
+       RowBox[{"4", "\[Rule]", "a34m"}], ",", 
+       RowBox[{"5", "\[Rule]", "a35m"}]}], "\[RightAssociation]"}]}]}], 
+   "\[RightAssociation]"}]}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->896258328],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"1", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "a11"}], ",", 
+      RowBox[{"2", "\[Rule]", "a12"}], ",", 
+      RowBox[{"3", "\[Rule]", "a13"}], ",", 
+      RowBox[{"4", "\[Rule]", "a14"}], ",", 
+      RowBox[{"5", "\[Rule]", 
+       RowBox[{"Missing", "[", 
+        RowBox[{"\<\"KeyAbsent\"\>", ",", "5"}], "]"}]}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"2", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "a21"}], ",", 
+      RowBox[{"2", "\[Rule]", "a22"}], ",", 
+      RowBox[{"3", "\[Rule]", 
+       RowBox[{"Missing", "[", 
+        RowBox[{"\<\"KeyAbsent\"\>", ",", "3"}], "]"}]}], ",", 
+      RowBox[{"4", "\[Rule]", "a24"}], ",", 
+      RowBox[{"5", "\[Rule]", "a25"}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"3", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "a31"}], ",", 
+      RowBox[{"2", "\[Rule]", "a32"}], ",", 
+      RowBox[{"3", "\[Rule]", 
+       RowBox[{"Missing", "[", 
+        RowBox[{"\<\"KeyAbsent\"\>", ",", "3"}], "]"}]}], ",", 
+      RowBox[{"4", "\[Rule]", "a34"}], ",", 
+      RowBox[{"5", "\[Rule]", "a35"}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"5", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "a31m"}], ",", 
+      RowBox[{"2", "\[Rule]", 
+       RowBox[{"Missing", "[", 
+        RowBox[{"\<\"KeyAbsent\"\>", ",", 
+         RowBox[{"2", " ", "m"}]}], "]"}]}], ",", 
+      RowBox[{"3", "\[Rule]", "a33m"}], ",", 
+      RowBox[{"4", "\[Rule]", "a34m"}], ",", 
+      RowBox[{"5", "\[Rule]", "a35m"}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{509, 56},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[5]=",
+ CellID->1368274291]
+}, Open  ]],
+
+Cell["Let's add 0s to a new key 6:", "ExampleText",
+ CellID->902991413],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ConstantAssociator", "[", 
+  RowBox[{"associations", ",", 
+   RowBox[{"<|", 
+    RowBox[{"6", "\[Rule]", " ", "0"}], "|>"}]}], "]"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->1331116761],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"1", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "a11"}], ",", 
+      RowBox[{"2", "\[Rule]", "a12"}], ",", 
+      RowBox[{"3", "\[Rule]", "a13"}], ",", 
+      RowBox[{"4", "\[Rule]", "a14"}], ",", 
+      RowBox[{"5", "\[Rule]", 
+       RowBox[{"Missing", "[", 
+        RowBox[{"\<\"KeyAbsent\"\>", ",", "5"}], "]"}]}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"2", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "a21"}], ",", 
+      RowBox[{"2", "\[Rule]", "a22"}], ",", 
+      RowBox[{"3", "\[Rule]", 
+       RowBox[{"Missing", "[", 
+        RowBox[{"\<\"KeyAbsent\"\>", ",", "3"}], "]"}]}], ",", 
+      RowBox[{"4", "\[Rule]", "a24"}], ",", 
+      RowBox[{"5", "\[Rule]", "a25"}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"3", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "a31"}], ",", 
+      RowBox[{"2", "\[Rule]", "a32"}], ",", 
+      RowBox[{"3", "\[Rule]", 
+       RowBox[{"Missing", "[", 
+        RowBox[{"\<\"KeyAbsent\"\>", ",", "3"}], "]"}]}], ",", 
+      RowBox[{"4", "\[Rule]", "a34"}], ",", 
+      RowBox[{"5", "\[Rule]", "a35"}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"5", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "a31m"}], ",", 
+      RowBox[{"2", "\[Rule]", 
+       RowBox[{"Missing", "[", 
+        RowBox[{"\<\"KeyAbsent\"\>", ",", 
+         RowBox[{"2", " ", "m"}]}], "]"}]}], ",", 
+      RowBox[{"3", "\[Rule]", "a33m"}], ",", 
+      RowBox[{"4", "\[Rule]", "a34m"}], ",", 
+      RowBox[{"5", "\[Rule]", "a35m"}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"6", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "0"}], ",", 
+      RowBox[{"2", "\[Rule]", "0"}], ",", 
+      RowBox[{"3", "\[Rule]", "0"}], ",", 
+      RowBox[{"4", "\[Rule]", "0"}], ",", 
+      RowBox[{"5", "\[Rule]", "0"}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{504, 70},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[6]=",
+ CellID->1078542851]
+}, Open  ]],
+
+Cell["\<\
+We can also make general additions of associations, lists, etc.:\
+\>", "ExampleText",
+ CellID->1499355644],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ConstantAssociator", "[", 
+  RowBox[{"associations", ",", 
+   RowBox[{"<|", 
+    RowBox[{
+     RowBox[{"6", "\[Rule]", " ", 
+      RowBox[{"<|", 
+       RowBox[{"10", "\[Rule]", "\"\<testValue1\>\""}], "|>"}]}], ",", 
+     RowBox[{"7", "\[Rule]", " ", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "1"}], "}"}]}]}], "|>"}]}], "]"}]], "Input",
+ CellLabel->"In[7]:=",
+ CellID->160232430],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"1", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "a11"}], ",", 
+      RowBox[{"2", "\[Rule]", "a12"}], ",", 
+      RowBox[{"3", "\[Rule]", "a13"}], ",", 
+      RowBox[{"4", "\[Rule]", "a14"}], ",", 
+      RowBox[{"5", "\[Rule]", 
+       RowBox[{"Missing", "[", 
+        RowBox[{"\<\"KeyAbsent\"\>", ",", "5"}], "]"}]}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"2", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "a21"}], ",", 
+      RowBox[{"2", "\[Rule]", "a22"}], ",", 
+      RowBox[{"3", "\[Rule]", 
+       RowBox[{"Missing", "[", 
+        RowBox[{"\<\"KeyAbsent\"\>", ",", "3"}], "]"}]}], ",", 
+      RowBox[{"4", "\[Rule]", "a24"}], ",", 
+      RowBox[{"5", "\[Rule]", "a25"}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"3", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "a31"}], ",", 
+      RowBox[{"2", "\[Rule]", "a32"}], ",", 
+      RowBox[{"3", "\[Rule]", 
+       RowBox[{"Missing", "[", 
+        RowBox[{"\<\"KeyAbsent\"\>", ",", "3"}], "]"}]}], ",", 
+      RowBox[{"4", "\[Rule]", "a34"}], ",", 
+      RowBox[{"5", "\[Rule]", "a35"}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"5", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "a31m"}], ",", 
+      RowBox[{"2", "\[Rule]", 
+       RowBox[{"Missing", "[", 
+        RowBox[{"\<\"KeyAbsent\"\>", ",", 
+         RowBox[{"2", " ", "m"}]}], "]"}]}], ",", 
+      RowBox[{"3", "\[Rule]", "a33m"}], ",", 
+      RowBox[{"4", "\[Rule]", "a34m"}], ",", 
+      RowBox[{"5", "\[Rule]", "a35m"}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"6", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", 
+       RowBox[{"\[LeftAssociation]", 
+        RowBox[{"10", "\[Rule]", "\<\"testValue1\"\>"}], 
+        "\[RightAssociation]"}]}], ",", 
+      RowBox[{"2", "\[Rule]", 
+       RowBox[{"\[LeftAssociation]", 
+        RowBox[{"10", "\[Rule]", "\<\"testValue1\"\>"}], 
+        "\[RightAssociation]"}]}], ",", 
+      RowBox[{"3", "\[Rule]", 
+       RowBox[{"\[LeftAssociation]", 
+        RowBox[{"10", "\[Rule]", "\<\"testValue1\"\>"}], 
+        "\[RightAssociation]"}]}], ",", 
+      RowBox[{"4", "\[Rule]", 
+       RowBox[{"\[LeftAssociation]", 
+        RowBox[{"10", "\[Rule]", "\<\"testValue1\"\>"}], 
+        "\[RightAssociation]"}]}], ",", 
+      RowBox[{"5", "\[Rule]", 
+       RowBox[{"\[LeftAssociation]", 
+        RowBox[{"10", "\[Rule]", "\<\"testValue1\"\>"}], 
+        "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"7", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}], ",", 
+      RowBox[{"2", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}], ",", 
+      RowBox[{"3", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}], ",", 
+      RowBox[{"4", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}], ",", 
+      RowBox[{"5", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{522, 96},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[7]=",
+ CellID->2009152600]
+}, Open  ]]
+}, Open  ]],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "See Also"
+}], "SeeAlsoSection",
+ WholeCellGroupOpener->True,
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["Applier"]],"paclet:MathIOmica/ref/Applier"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["ApplierList"]],"paclet:MathIOmica/ref/ApplierList"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["EnlargeInnerAssociation"]],
+    "paclet:MathIOmica/ref/EnlargeInnerAssociation"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["EnlargeOuterAssociation"]],
+    "paclet:MathIOmica/ref/EnlargeOuterAssociation"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["FilteringFunction"]],"paclet:MathIOmica/ref/FilteringFunction"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["ListIndex"]],"paclet:MathIOmica/ref/ListIndex"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["OmicsObject"]],"paclet:MathIOmica/ref/OmicsObject"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["OmicsObjectCreator"]],
+    "paclet:MathIOmica/ref/OmicsObjectCreator"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["Returner"]],"paclet:MathIOmica/ref/Returner"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Tutorials"
+}], "TutorialsSection",
+ WholeCellGroupOpener->True,
+ CellID->250839057],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaTutorial"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaTutorial"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->341631938],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Dynamic Transcriptome"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->1023267351],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Guides"
+}], "MoreAboutSection",
+ WholeCellGroupOpener->True,
+ CellID->38303248],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Guide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"MoreAbout", "CodeFont"}]], "MoreAbout",
+ CellID->2141984947],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Links"
+}], "RelatedLinksSection",
+ WholeCellGroupOpener->True,
+ CellID->1584193535],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaGuide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1038487239],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaOverview"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaOverview"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1318279791]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"ConstantAssociator",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "Mathematica", ButtonData -> "paclet:MathIOmica/guide/MathIOmica", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
+  None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2016, 12, 14, 16, 42, 39.328514}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "MathIOmica`DataProcessing`", "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Math I Omica Package Symbol", "language" -> "en", "paclet" -> 
+    "MathIOmica Package", "status" -> "None", "summary" -> 
+    "ConstantAssociator[inputAssociation, associationAddition] adds multi-key \
+constant to an OmicsObject (or an association of associations) \
+inputAssociation, with each addition specified in a single association \
+associationAddition, of form <|addition1-> Value1,addition2-> Value2,...|>.", 
+    "synonyms" -> {}, "tabletags" -> {}, "title" -> "ConstantAssociator", 
+    "titlemodifier" -> "", "windowtitle" -> "ConstantAssociator", "type" -> 
+    "Symbol", "uri" -> "MathIOmica/ref/ConstantAssociator"}, 
+  "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+2016)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> 
+  "10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, 2016)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[8982, 255, 387, 15, 70, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->254573674]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 42003, 1274}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[590, 21, 5307, 126, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[5900, 149, 295, 11, 70, "ObjectNameGrid"],
+Cell[CellGroupData[{
+Cell[6220, 164, 821, 20, 70, "Usage"],
+Cell[CellGroupData[{
+Cell[7066, 188, 739, 24, 70, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->1065515601],
+Cell[7808, 214, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[7842, 216, 357, 10, 70, "Notes",
+ CellID->1067943069],
+Cell[8202, 228, 584, 14, 70, "2ColumnTableMod",
+ CellID->1283119729],
+Cell[8789, 244, 110, 3, 70, "Notes",
+ CellID->362502129],
+Cell[8902, 249, 31, 0, 70, "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8982, 255, 387, 15, 70, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->254573674],
+Cell[CellGroupData[{
+Cell[9394, 274, 195, 6, 70, "ExampleSection",
+ CellID->832314094],
+Cell[9592, 282, 69, 1, 70, "ExampleText",
+ CellID->1588548353],
+Cell[9664, 285, 120, 3, 70, "Input",
+ CellID->2017647728],
+Cell[9787, 290, 75, 1, 70, "ExampleText",
+ CellID->929943212],
+Cell[9865, 293, 3336, 95, 70, "Input",
+ CellID->15975588],
+Cell[13204, 390, 120, 3, 70, "ExampleText",
+ CellID->926012675],
+Cell[CellGroupData[{
+Cell[13349, 397, 260, 7, 70, "Input",
+ CellID->1299311423],
+Cell[13612, 406, 3871, 115, 70, "Output",
+ CellID->1771968046]
+}, Open  ]],
+Cell[17498, 524, 104, 2, 70, "ExampleText",
+ CellID->359807027],
+Cell[CellGroupData[{
+Cell[17627, 530, 531, 15, 70, "Input",
+ CellID->842685456],
+Cell[18161, 547, 5550, 161, 70, "Output",
+ CellID->1383959432]
+}, Open  ]],
+Cell[23726, 711, 121, 3, 70, "ExampleText",
+ CellID->810792967],
+Cell[CellGroupData[{
+Cell[23872, 718, 1903, 48, 70, "Input",
+ CellID->896258328],
+Cell[25778, 768, 1915, 50, 70, "Output",
+ CellID->1368274291]
+}, Open  ]],
+Cell[27708, 821, 71, 1, 70, "ExampleText",
+ CellID->902991413],
+Cell[CellGroupData[{
+Cell[27804, 826, 211, 6, 70, "Input",
+ CellID->1331116761],
+Cell[28018, 834, 2236, 58, 70, "Output",
+ CellID->1078542851]
+}, Open  ]],
+Cell[30269, 895, 116, 3, 70, "ExampleText",
+ CellID->1499355644],
+Cell[CellGroupData[{
+Cell[30410, 902, 409, 12, 70, "Input",
+ CellID->160232430],
+Cell[30822, 916, 3467, 91, 70, "Output",
+ CellID->2009152600]
+}, Open  ]]
+}, Open  ]],
+Cell[34316, 1011, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34384, 1016, 270, 12, 70, "SeeAlsoSection",
+ CellID->1255426704],
+Cell[34657, 1030, 2971, 91, 70, "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37665, 1126, 272, 12, 70, "TutorialsSection",
+ CellID->250839057],
+Cell[37940, 1140, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[37974, 1142, 211, 6, 70, "Tutorials",
+ CellID->341631938],
+Cell[38188, 1150, 238, 6, 70, "Tutorials",
+ CellID->1023267351],
+Cell[38429, 1158, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38497, 1163, 276, 12, 70, "MoreAboutSection",
+ CellID->38303248],
+Cell[38776, 1177, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[38810, 1179, 200, 5, 70, "MoreAbout",
+ CellID->2141984947],
+Cell[39013, 1186, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39081, 1191, 280, 12, 70, "RelatedLinksSection",
+ CellID->1584193535],
+Cell[39364, 1205, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[39398, 1207, 205, 5, 70, "RelatedLinks",
+ CellID->1038487239],
+Cell[39606, 1214, 218, 6, 70, "RelatedLinks",
+ CellID->1318279791]
+}, Open  ]],
+Cell[39839, 1223, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)

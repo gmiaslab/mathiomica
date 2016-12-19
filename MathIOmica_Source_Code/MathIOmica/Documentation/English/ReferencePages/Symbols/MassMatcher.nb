@@ -1,0 +1,1431 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     47455,       1422]
+NotebookOptionsPosition[     41132,       1226]
+NotebookOutlinePosition[     43379,       1285]
+CellTagsIndexPosition[     43293,       1280]
+WindowTitle->MassMatcher
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["MATH I OMICA PACKAGE SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Tutorials",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Tutorials", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica Tutorial\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaTutorial"], "\<\"MathIOmica \
+Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"Tutorials"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "See Also",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"See Also", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"GeneTranslation\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/GeneTranslation"], "\<\"GOAnalysis\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/GOAnalysis"], "\<\"GOAnalysisAssigner\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/GOAnalysisAssigner"], "\<\"KEGGAnalysis\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/KEGGAnalysis"], "\<\"KEGGDictionary\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/KEGGDictionary"], "\<\"KEGGPathwayVisual\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/KEGGPathwayVisual"], "\<\"MassDictionary\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/MassDictionary"], \
+"\<\"OmicsObjectUniqueMassConverter\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/OmicsObjectUniqueMassConverter"], \
+"\<\"OBOGODictionary\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/OBOGODictionary"], "\<\"TimeSeriesClusters\"\>":>
+       Documentation`HelpLookup["paclet:MathIOmica/ref/TimeSeriesClusters"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"SeeAlso"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Related Guides",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Related Guides", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica Guide\"\>":>
+       Documentation`HelpLookup["paclet:MathIOmica/guide/MathIOmicaGuide"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"MoreAbout"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica/ref/MassMatcher\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["MathIOmica/ref/MassMatcher"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/MathIOmica/ref/\
+MassMatcher.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$35097], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "MathIOmica/ref/MassMatcher", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ CellID->1],
+
+Cell[TextData[{
+ Cell["MassMatcher", "ObjectName"],
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8]]]],
+ Cell[BoxData[""], "ObjectNameTranslation"]
+}], "ObjectNameGrid"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"MassMatcher", "[", 
+       RowBox[{
+        StyleBox["data", "TI"], ",", " ", 
+        StyleBox["accuracy", "TI"]}], "]"}]], "InlineFormula"],
+     "\[LineSeparator]assigns putative mass identification to input data \
+based on monoisotopic mass (using MathIOmica's mass dictionary), using the \
+accuracy in parts per million."
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    InterpretationBox[
+     StyleBox[
+      GraphicsBox[{},
+       BaselinePosition->Baseline,
+       ImageSize->{6, 0}],
+      CacheGraphics->False],
+     Spacer[6]]]],
+   "Details"
+  }], "NotesFrameText"],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->935957863],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[TextData[{
+ "MassMatcher[data, accuracy] assigns a putative mass identification to input \
+data based on monoisotopic mass in grams (using MathIOmica's mass \
+dictionary), using the accuracy in parts per million ",
+ Cell[BoxData[
+  RowBox[{"(", 
+   SuperscriptBox["10", 
+    RowBox[{"-", "6"}]], ")"}]], "InlineFormula"],
+ ". It returns a list of matched accessions for the input mass."
+}], "Notes",
+ CellID->1046275395],
+
+Cell["The following options can be given: ", "Notes"],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon"], "MassDictionaryVariable", 
+    ButtonBox["None",
+     BaseStyle->"Link",
+     ButtonData->"paclet:ref/None"], Cell[TextData[{
+     "MassDictionaryVariable can provide a mass dictionary variable. If set \
+to ",
+     ButtonBox["None",
+      BaseStyle->"Link",
+      ButtonData->"paclet:ref/None"],
+     ", MathIOmica's inbuilt mass dictionary (",
+     Cell[BoxData[
+      TemplateBox[{Cell[
+         TextData["MassDictionary"]],"paclet:MathIOmica/ref/MassDictionary"},
+       "RefLink",
+       BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+     ") will be loaded and used. For ",
+     Cell[BoxData["i"], "InlineFormula"],
+     " species, each having ",
+     Cell[BoxData[
+      SubscriptBox["m", "i"]], "InlineFormula"],
+     " possible annotations (kinds of IDs) for ",
+     Cell[BoxData[
+      SubscriptBox["n", "i"]], "InlineFormula"],
+     " entities each (e.g. corresponding to ",
+     Cell[BoxData[
+      SubscriptBox["n", "i"]], "InlineFormula"],
+     " genes)  the format for the variable is schematically:\n",
+     Cell[BoxData[
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["Species", "1"], "\[Rule]", 
+         RowBox[{"<|", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Kind", " ", "of", " ", 
+             SubscriptBox["ID", "11"]}], "\[Rule]", " ", 
+            RowBox[{"{", 
+             RowBox[{"accessions", " ", 
+              SubscriptBox["list", "11"], " ", "of", " ", "length", " ", 
+              SubscriptBox["n", "1"]}], "}"}]}], ",", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"Kind", " ", "of", " ", 
+             SubscriptBox["ID", "12"]}], "\[Rule]", " ", 
+            RowBox[{"{", 
+             RowBox[{"accessions", " ", 
+              SubscriptBox["list", "12"], " ", "of", " ", "length", " ", 
+              SubscriptBox["n", "1"]}], "}"}]}], ",", "...", ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Kind", " ", "of", " ", 
+            SubscriptBox["ID", 
+             RowBox[{
+              RowBox[{"1", 
+               SubscriptBox["m", "1"]}], "\[Rule]", " "}]], " ", 
+            RowBox[{"{", 
+             RowBox[{"accessions", " ", 
+              SubscriptBox["list", 
+               RowBox[{"1", 
+                SubscriptBox["m", "1"]}]], " ", "of", " ", "length", " ", 
+              SubscriptBox["n", "1"]}], "}"}]}]}], "|>"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         SubscriptBox["Species", "2"], "\[Rule]", 
+         RowBox[{"<|", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Kind", " ", "of", " ", 
+             SubscriptBox["ID", "21"]}], "\[Rule]", " ", 
+            RowBox[{"{", 
+             RowBox[{"accessions", " ", 
+              SubscriptBox["list", "21"], " ", "of", " ", "length", " ", 
+              SubscriptBox["n", "2"]}], "}"}]}], ",", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"Kind", " ", "of", " ", 
+             SubscriptBox["ID", "22"]}], "\[Rule]", " ", 
+            RowBox[{"{", 
+             RowBox[{"accessions", " ", 
+              SubscriptBox["list", "22"], " ", "of", " ", "length", " ", 
+              SubscriptBox["n", "2"]}], "}"}]}], ",", "...", ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Kind", " ", "of", " ", 
+            SubscriptBox["ID", 
+             RowBox[{
+              RowBox[{"2", 
+               SubscriptBox["m", "2"]}], "\[Rule]", " "}]], " ", 
+            RowBox[{"{", 
+             RowBox[{"accessions", " ", 
+              SubscriptBox["list", 
+               RowBox[{"2", 
+                SubscriptBox["m", "2"]}]], " ", "of", " ", "length", " ", 
+              SubscriptBox["n", "2"]}], "}"}]}]}], "|>"}]}], ",", 
+        "\[IndentingNewLine]", "...", ",", "\[IndentingNewLine]", 
+        RowBox[{
+         SubscriptBox["Species", "i"], "\[Rule]", 
+         RowBox[{"<|", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Kind", " ", "of", " ", 
+             SubscriptBox["ID", "i1"]}], "\[Rule]", " ", 
+            RowBox[{"{", 
+             RowBox[{"accessions", " ", 
+              SubscriptBox["list", "i2"], " ", "of", " ", "length", " ", 
+              SubscriptBox["n", "i"]}], "}"}]}], ",", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"Kind", " ", "of", " ", 
+             SubscriptBox["ID", "i2"]}], "\[Rule]", " ", 
+            RowBox[{"{", 
+             RowBox[{"accessions", " ", 
+              SubscriptBox["list", "12"], " ", "of", " ", "length", " ", 
+              SubscriptBox["n", "i"]}], "}"}]}], ",", "...", ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Kind", " ", "of", " ", 
+            SubscriptBox["ID", 
+             RowBox[{
+              SubscriptBox["im", "i"], "\[Rule]", " "}]], " ", 
+            RowBox[{"{", 
+             RowBox[{"accessions", " ", 
+              SubscriptBox["list", "12"], " ", "of", " ", "length", " ", 
+              SubscriptBox["n", "i"]}], "}"}]}]}], "|>"}]}]}], 
+       "\[IndentingNewLine]", "|>"}]]]
+    }], "TableText"]},
+   {Cell["      ", "TableRowIcon"], "MolecularSpecies", "\"\<cpd\>\"", 
+    Cell["\<\
+MolecularSpecies specifies the kind of molecular input. The default is using \
+KEGG compounds, returning KEGG \"cpd\" identifiers using MathIOmica's mass \
+dictionary.\
+\>", "TableText"]}
+  }]], "3ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {None, {None}}, 
+   "RowsIndexed" -> {}},
+ GridBoxDividers->{"Rows" -> {{True, True, True}}}}],
+
+Cell["", "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(3)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CellTags->"PrimaryExamplesSection",
+ CellID->326089166],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->202345818],
+
+Cell["First we need to load the MathIOmica package:", "ExampleText",
+ CellID->158760191],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->10541973],
+
+Cell[TextData[{
+ "Let us match mass 18.010565 grams using accuracy ",
+ Cell[BoxData[
+  RowBox[{"2", 
+   SuperscriptBox["x10", 
+    RowBox[{"-", "6"}]]}]], "InlineFormula"],
+ ":"
+}], "ExampleText",
+ CellID->896609160],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"massMatch1", "=", 
+  RowBox[{"MassMatcher", "[", 
+   RowBox[{"18.010565", ",", "2"}], "]"}]}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1143375028],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"cpd:C00001\"\>", "}"}]], "Output",
+ ImageSize->{90, 14},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->517013629]
+}, Open  ]],
+
+Cell["\<\
+If we had a different (in this case more inaccurate mass), we also need to \
+change the accuracy to get any matches:\
+\>", "ExampleText",
+ CellID->1250012540],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"massMatch2", "=", 
+  RowBox[{"MassMatcher", "[", 
+   RowBox[{"54.1", ",", "10000"}], "]"}]}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->492408880],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"cpd:C05985\"\>", ",", "\<\"cpd:C16450\"\>"}], "}"}]], "Output",\
+
+ ImageSize->{173, 14},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->1488787597]
+}, Open  ]],
+
+Cell[TextData[{
+ "We can actually obtain an annotation using ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["KEGGDictionary"]],"paclet:MathIOmica/ref/KEGGDictionary"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"]
+}], "ExampleText",
+ CellID->1170252499],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dictionaryCpd", "=", 
+  RowBox[{"KEGGDictionary", "[", 
+   RowBox[{
+    RowBox[{"KEGGQuery1", "\[Rule]", " ", "\"\<cpd\>\""}], ",", 
+    RowBox[{"KEGGQuery2", "\[Rule]", " ", "\"\<\>\""}]}], "]"}]}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->1168339669],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"\[LeftAssociation]", 
+          RowBox[{
+           RowBox[{"\<\"cpd:C00001\"\>", "\[Rule]", "\<\"H2O; Water\"\>"}], 
+           ",", 
+           
+           RowBox[{"\<\"cpd:C00002\"\>", 
+            "\[Rule]", "\<\"ATP; Adenosine 5'-triphosphate\"\>"}], ",", 
+           
+           RowBox[{"\<\"cpd:C00003\"\>", 
+            "\[Rule]", "\<\"NAD+; NAD; Nicotinamide adenine dinucleotide; \
+DPN; Diphosphopyridine nucleotide; Nadide; beta-NAD+\"\>"}], ",", 
+           TemplateBox[{"17740"},
+            "OutputSizeLimit`Skeleton",
+            DisplayFunction->(FrameBox[
+              RowBox[{"\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}],
+               Background -> GrayLevel[0.75], 
+              BaseStyle -> {
+               "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                ShowStringCharacters -> False}, BaselinePosition -> Baseline, 
+              ContentPadding -> False, FrameMargins -> 1, FrameStyle -> 
+              GrayLevel[0.75], RoundingRadius -> 7]& )], ",", 
+           
+           RowBox[{"\<\"cpd:C21270\"\>", 
+            "\[Rule]", "\<\"Gentamicin C2a\"\>"}], ",", 
+           RowBox[{"\<\"cpd:C21273\"\>", "\[Rule]", "\<\"Benfluralin\"\>"}]}],
+           "\[RightAssociation]"}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{58., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarCategory",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 64, 32685053805054532869, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 64, 32685053805054532869, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 64, 32685053805054532869, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    Background->RGBColor[0.9657, 0.9753, 0.9802],
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Out[64]]], "Output",
+ ImageSize->{527, 118},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->1063148551]
+}, Open  ]],
+
+Cell["We can directly query our results in both cases:", "ExampleText",
+ CellID->1545690814],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Query", "[", "massMatch1", "]"}], "@", "dictionaryCpd"}]], "Input",\
+
+ CellLabel->"In[5]:=",
+ CellID->37270879],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"\<\"cpd:C00001\"\>", "\[Rule]", "\<\"H2O; Water\"\>"}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{189, 14},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[5]=",
+ CellID->1653659157]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Query", "[", "massMatch2", "]"}], "@", "dictionaryCpd"}]], "Input",\
+
+ CellLabel->"In[6]:=",
+ CellID->1444600245],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"cpd:C05985\"\>", 
+    "\[Rule]", "\<\"2-Propynal; 2-Propyn-1-al; Propiolaldehyde\"\>"}], ",", 
+   RowBox[{"\<\"cpd:C16450\"\>", "\[Rule]", "\<\"1,3-Butadiene\"\>"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{412, 28},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[6]=",
+ CellID->270050441]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Options",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(2)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "MassDictionaryVariable",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->226667638],
+
+Cell[TextData[{
+ "MassDictionaryVariable can provide a mass dictionary variable. If set to ",
+ ButtonBox["None",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/None"],
+ ", MathIOmica's inbuilt mass dictionary (",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["MassDictionary"]],"paclet:MathIOmica/ref/MassDictionary"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+ ") will be loaded and used. We consider the following dictionary (note that \
+the key for the MolecularSpecies is still the default \"cpd\" for compound):"
+}], "ExampleText",
+ CellID->1728865758],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dictionaryNamedCpd", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{"\"\<cpd\>\"", "\[Rule]", 
+     RowBox[{"\[LeftAssociation]", 
+      RowBox[{
+       RowBox[{
+       "\"\<2-Oxohept-3-enedioate; 2-Oxohept-3-ene-1,7-dioate\>\"", "\[Rule]",
+         "172.037173`"}], ",", 
+       RowBox[{
+       "\"\<2-Succinylbenzoate; o-Succinylbenzoate; Succinylbenzoate\>\"", 
+        "\[Rule]", "222.052823`"}], ",", 
+       RowBox[{
+       "\"\<3'-O-(4-Benzoyl)benzoyl ATP; BzATP\>\"", "\[Rule]", 
+        "715.048175`"}], ",", 
+       RowBox[{"\"\<(4S,6S)-cis-Carveol\>\"", "\[Rule]", "152.120115`"}], ",", 
+       RowBox[{
+       "\"\<5-Fluorodeoxyuridine monophosphate\>\"", "\[Rule]", 
+        "326.03153`"}], ",", 
+       RowBox[{
+       "\"\<6beta-Hydroxy-D-homo-17a-oxaandrost-4-ene-3,17-dione\>\"", 
+        "\[Rule]", "318.183109`"}], ",", 
+       RowBox[{
+       "\"\<7-Hydroxy-2-acetamidofluorene; \
+N-(7-Hydroxy-9H-fluoren-2-yl)acetamide\>\"", "\[Rule]", "239.094629`"}], ",", 
+       
+       RowBox[{"\"\<Aerophobin 2\>\"", "\[Rule]", "502.980378`"}], ",", 
+       RowBox[{
+       "\"\<Arg-vasopressin; Argipressin; 8-L-Arginine vasopressin; AVP; \
+ADH\>\"", "\[Rule]", "1083.437855`"}], ",", 
+       RowBox[{"\"\<Atractyloside C\>\"", "\[Rule]", "400.246103`"}], ",", 
+       RowBox[{"\"\<Bentazone-sodium\>\"", "\[Rule]", "262.038808`"}], ",", 
+       RowBox[{
+       "\"\<Chlorodibromomethane; Dibromochloromethane\>\"", "\[Rule]", 
+        "205.813352`"}], ",", 
+       RowBox[{"\"\<Conocurvone\>\"", "\[Rule]", "952.382263`"}], ",", 
+       RowBox[{"\"\<Cromakalim\>\"", "\[Rule]", "286.131742`"}], ",", 
+       RowBox[{
+       "\"\<Halomon; \
+6-Bromo-3-(bromomethyl)-7-methyl-2,3,7-trichloro-1-octene\>\"", "\[Rule]", 
+        "397.860608`"}], ",", 
+       RowBox[{"\"\<Integerrimine\>\"", "\[Rule]", "335.173273`"}], ",", 
+       RowBox[{"\"\<Nornitrogen mustard\>\"", "\[Rule]", "141.011205`"}], ",", 
+       RowBox[{
+       "\"\<Orchinol; 9,10-Dihydro-5,7-dimethoxyphenanthren-2-ol\>\"", 
+        "\[Rule]", "256.109944`"}], ",", 
+       RowBox[{"\"\<Oxygen; O2\>\"", "\[Rule]", "31.989829`"}], ",", 
+       RowBox[{
+       "\"\<Precorrin 2; Dihydrosirohydrochlorin\>\"", "\[Rule]", 
+        "864.306531`"}], ",", 
+       RowBox[{
+       "\"\<Propanoylagmatine; Propionylagmatine\>\"", "\[Rule]", 
+        "186.148061`"}], ",", 
+       RowBox[{"\"\<Sarisan\>\"", "\[Rule]", "192.078644`"}], ",", 
+       RowBox[{"\"\<Sempervirine\>\"", "\[Rule]", "272.131349`"}], ",", 
+       RowBox[{
+       "\"\<UDP-2-acetamido-2-deoxy-alpha-D-ribo-hex-3-uluronate; \
+UDP-3-keto-GlcNAcA\>\"", "\[Rule]", "619.045184`"}], ",", 
+       RowBox[{
+       "\"\<Uncarine B; Formosamine\>\"", "\[Rule]", "368.173607`"}]}], 
+      "\[RightAssociation]"}]}], "\[RightAssociation]"}]}], ";"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1355156084],
+
+Cell[TextData[{
+ "Let us search for mass 31.9898grams with accuracy ",
+ Cell[BoxData[
+  RowBox[{"3", "x", " ", 
+   SuperscriptBox["10", 
+    RowBox[{"-", "6"}]]}]], "InlineFormula"],
+ ":"
+}], "ExampleText",
+ CellID->1605583682],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MassMatcher", "[", 
+  RowBox[{"31.9898", ",", "3", ",", 
+   RowBox[{"MassDictionaryVariable", "\[Rule]", " ", "dictionaryNamedCpd"}]}],
+   "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->156163750],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"Oxygen; O2\"\>", "}"}]], "Output",
+ ImageSize->{89, 14},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->622397522]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "MolecularSpecies",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1758538464],
+
+Cell["\<\
+MolecularSpecies specifies the kind of molecular input. The default is using \
+KEGG compounds, returning KEGG \"cpd\" identifiers using MathIOmica's mass \
+dictionary. We consider the following limited mass dictionary in which the \
+dictionary has the MolecularSpecies association as \"NamedCompound\":\
+\>", "ExampleText",
+ CellID->748010207],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dictionaryNamed", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{"\"\<NamedCompound\>\"", "\[Rule]", 
+     RowBox[{"\[LeftAssociation]", 
+      RowBox[{
+       RowBox[{
+       "\"\<2-Oxohept-3-enedioate; 2-Oxohept-3-ene-1,7-dioate\>\"", "\[Rule]",
+         "172.037173`"}], ",", 
+       RowBox[{
+       "\"\<2-Succinylbenzoate; o-Succinylbenzoate; Succinylbenzoate\>\"", 
+        "\[Rule]", "222.052823`"}], ",", 
+       RowBox[{
+       "\"\<3'-O-(4-Benzoyl)benzoyl ATP; BzATP\>\"", "\[Rule]", 
+        "715.048175`"}], ",", 
+       RowBox[{"\"\<(4S,6S)-cis-Carveol\>\"", "\[Rule]", "152.120115`"}], ",", 
+       RowBox[{
+       "\"\<5-Fluorodeoxyuridine monophosphate\>\"", "\[Rule]", 
+        "326.03153`"}], ",", 
+       RowBox[{
+       "\"\<6beta-Hydroxy-D-homo-17a-oxaandrost-4-ene-3,17-dione\>\"", 
+        "\[Rule]", "318.183109`"}], ",", 
+       RowBox[{
+       "\"\<7-Hydroxy-2-acetamidofluorene; \
+N-(7-Hydroxy-9H-fluoren-2-yl)acetamide\>\"", "\[Rule]", "239.094629`"}], ",", 
+       
+       RowBox[{"\"\<Aerophobin 2\>\"", "\[Rule]", "502.980378`"}], ",", 
+       RowBox[{
+       "\"\<Arg-vasopressin; Argipressin; 8-L-Arginine vasopressin; AVP; \
+ADH\>\"", "\[Rule]", "1083.437855`"}], ",", 
+       RowBox[{"\"\<Atractyloside C\>\"", "\[Rule]", "400.246103`"}], ",", 
+       RowBox[{"\"\<Bentazone-sodium\>\"", "\[Rule]", "262.038808`"}], ",", 
+       RowBox[{
+       "\"\<Chlorodibromomethane; Dibromochloromethane\>\"", "\[Rule]", 
+        "205.813352`"}], ",", 
+       RowBox[{"\"\<Conocurvone\>\"", "\[Rule]", "952.382263`"}], ",", 
+       RowBox[{"\"\<Cromakalim\>\"", "\[Rule]", "286.131742`"}], ",", 
+       RowBox[{
+       "\"\<Halomon; \
+6-Bromo-3-(bromomethyl)-7-methyl-2,3,7-trichloro-1-octene\>\"", "\[Rule]", 
+        "397.860608`"}], ",", 
+       RowBox[{"\"\<Integerrimine\>\"", "\[Rule]", "335.173273`"}], ",", 
+       RowBox[{"\"\<Nornitrogen mustard\>\"", "\[Rule]", "141.011205`"}], ",", 
+       RowBox[{
+       "\"\<Orchinol; 9,10-Dihydro-5,7-dimethoxyphenanthren-2-ol\>\"", 
+        "\[Rule]", "256.109944`"}], ",", 
+       RowBox[{"\"\<Oxygen; O2\>\"", "\[Rule]", "31.989829`"}], ",", 
+       RowBox[{
+       "\"\<Precorrin 2; Dihydrosirohydrochlorin\>\"", "\[Rule]", 
+        "864.306531`"}], ",", 
+       RowBox[{
+       "\"\<Propanoylagmatine; Propionylagmatine\>\"", "\[Rule]", 
+        "186.148061`"}], ",", 
+       RowBox[{"\"\<Sarisan\>\"", "\[Rule]", "192.078644`"}], ",", 
+       RowBox[{"\"\<Sempervirine\>\"", "\[Rule]", "272.131349`"}], ",", 
+       RowBox[{
+       "\"\<UDP-2-acetamido-2-deoxy-alpha-D-ribo-hex-3-uluronate; \
+UDP-3-keto-GlcNAcA\>\"", "\[Rule]", "619.045184`"}], ",", 
+       RowBox[{
+       "\"\<Uncarine B; Formosamine\>\"", "\[Rule]", "368.173607`"}]}], 
+      "\[RightAssociation]"}]}], "\[RightAssociation]"}]}], ";"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->2086014434],
+
+Cell[TextData[{
+ "Let us search for mass ",
+ "502.98",
+ " with accuracy ",
+ Cell[BoxData[
+  RowBox[{"2", "x", " ", 
+   SuperscriptBox["10", 
+    RowBox[{"-", "6"}]]}]], "InlineFormula"],
+ ":"
+}], "ExampleText",
+ CellID->1974054963],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MassMatcher", "[", 
+  RowBox[{"502.98", ",", "2", ",", 
+   RowBox[{"MassDictionaryVariable", "\[Rule]", " ", "dictionaryNamed"}], ",", 
+   RowBox[{"MolecularSpecies", "\[Rule]", " ", "\"\<NamedCompound\>\""}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1466900638],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"Aerophobin 2\"\>", "}"}]], "Output",
+ ImageSize->{104, 14},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->1553959089]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "See Also"
+}], "SeeAlsoSection",
+ WholeCellGroupOpener->True,
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["GeneTranslation"]],"paclet:MathIOmica/ref/GeneTranslation"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["GOAnalysis"]],"paclet:MathIOmica/ref/GOAnalysis"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["GOAnalysisAssigner"]],
+    "paclet:MathIOmica/ref/GOAnalysisAssigner"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["KEGGAnalysis"]],"paclet:MathIOmica/ref/KEGGAnalysis"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["KEGGDictionary"]],"paclet:MathIOmica/ref/KEGGDictionary"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["KEGGPathwayVisual"]],"paclet:MathIOmica/ref/KEGGPathwayVisual"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["MassDictionary"]],"paclet:MathIOmica/ref/MassDictionary"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["OmicsObjectUniqueMassConverter"]],
+    "paclet:MathIOmica/ref/OmicsObjectUniqueMassConverter"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["OBOGODictionary"]],"paclet:MathIOmica/ref/OBOGODictionary"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["TimeSeriesClusters"]],
+    "paclet:MathIOmica/ref/TimeSeriesClusters"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"]
+}], "SeeAlso",
+ CellID->1791113879]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Tutorials"
+}], "TutorialsSection",
+ WholeCellGroupOpener->True,
+ CellID->250839057],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Tutorial"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaTutorial"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->341631938],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Dynamic Transcriptome"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->446304022],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Guides"
+}], "MoreAboutSection",
+ WholeCellGroupOpener->True,
+ CellID->38303248],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Guide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"MoreAbout", "CodeFont"}]], "MoreAbout",
+ CellID->1359549925],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Links"
+}], "RelatedLinksSection",
+ WholeCellGroupOpener->True,
+ CellID->1584193535],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaGuide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1038487239],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaOverview"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaOverview"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1970164909]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"MassMatcher",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "Mathematica", ButtonData -> "paclet:MathIOmica/guide/MathIOmica", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
+  None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2016, 12, 14, 16, 45, 2.155434}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "MathIOmica`AnnotationsAndEnumerations`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "Math I Omica Package Symbol", "language" -> "en", "paclet" -> 
+    "MathIOmica Package", "status" -> "None", "summary" -> 
+    "MassMatcher[data, accuracy] assigns putative mass identification to \
+input data based on monoisotopic mass (using MathIOmica's mass dictionary), \
+using the accuracy in parts per million.", "synonyms" -> {}, 
+    "tabletags" -> {}, "title" -> "MassMatcher", "titlemodifier" -> "", 
+    "windowtitle" -> "MassMatcher", "type" -> "Symbol", "uri" -> 
+    "MathIOmica/ref/MassMatcher"}, "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+2016)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> 
+  "10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, 2016)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[13840, 369, 387, 15, 70, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->326089166]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 43149, 1273}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[583, 21, 5446, 129, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[6032, 152, 288, 11, 70, "ObjectNameGrid"],
+Cell[CellGroupData[{
+Cell[6345, 167, 569, 15, 70, "Usage"],
+Cell[CellGroupData[{
+Cell[6939, 186, 738, 24, 70, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->935957863],
+Cell[7680, 212, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[7714, 214, 425, 10, 70, "Notes",
+ CellID->1046275395],
+Cell[8142, 226, 53, 0, 70, "Notes"],
+Cell[8198, 228, 5559, 133, 70, "3ColumnTableMod"],
+Cell[13760, 363, 31, 0, 70, "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13840, 369, 387, 15, 70, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->326089166],
+Cell[CellGroupData[{
+Cell[14252, 388, 195, 6, 70, "ExampleSection",
+ CellID->202345818],
+Cell[14450, 396, 88, 1, 70, "ExampleText",
+ CellID->158760191],
+Cell[14541, 399, 118, 3, 70, "Input",
+ CellID->10541973],
+Cell[14662, 404, 216, 8, 70, "ExampleText",
+ CellID->896609160],
+Cell[CellGroupData[{
+Cell[14903, 416, 172, 5, 70, "Input",
+ CellID->1143375028],
+Cell[15078, 423, 197, 6, 70, "Output",
+ CellID->517013629]
+}, Open  ]],
+Cell[15290, 432, 168, 4, 70, "ExampleText",
+ CellID->1250012540],
+Cell[CellGroupData[{
+Cell[15483, 440, 170, 5, 70, "Input",
+ CellID->492408880],
+Cell[15656, 447, 241, 8, 70, "Output",
+ CellID->1488787597]
+}, Open  ]],
+Cell[15912, 458, 291, 8, 70, "ExampleText",
+ CellID->1170252499],
+Cell[CellGroupData[{
+Cell[16228, 470, 277, 7, 70, "Input",
+ CellID->1168339669],
+Cell[16508, 479, 8427, 218, 70, "Output",
+ CellID->1063148551]
+}, Open  ]],
+Cell[24950, 700, 92, 1, 70, "ExampleText",
+ CellID->1545690814],
+Cell[CellGroupData[{
+Cell[25067, 705, 146, 5, 70, "Input",
+ CellID->37270879],
+Cell[25216, 712, 283, 8, 70, "Output",
+ CellID->1653659157]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25536, 725, 148, 5, 70, "Input",
+ CellID->1444600245],
+Cell[25687, 732, 410, 11, 70, "Output",
+ CellID->270050441]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26146, 749, 168, 5, 70, "ExampleSection"],
+Cell[CellGroupData[{
+Cell[26339, 758, 189, 5, 70, "ExampleSubsection"],
+Cell[26531, 765, 119, 3, 70, "Input",
+ CellID->226667638],
+Cell[26653, 770, 598, 14, 70, "ExampleText",
+ CellID->1728865758],
+Cell[27254, 786, 2874, 63, 70, "Input",
+ CellID->1355156084],
+Cell[30131, 851, 227, 8, 70, "ExampleText",
+ CellID->1605583682],
+Cell[CellGroupData[{
+Cell[30383, 863, 222, 6, 70, "Input",
+ CellID->156163750],
+Cell[30608, 871, 197, 6, 70, "Output",
+ CellID->622397522]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[30854, 883, 183, 5, 70, "ExampleSubsection"],
+Cell[31040, 890, 120, 3, 70, "Input",
+ CellID->1758538464],
+Cell[31163, 895, 353, 6, 70, "ExampleText",
+ CellID->748010207],
+Cell[31519, 903, 2881, 63, 70, "Input",
+ CellID->2086014434],
+Cell[34403, 968, 231, 10, 70, "ExampleText",
+ CellID->1974054963],
+Cell[CellGroupData[{
+Cell[34659, 982, 299, 7, 70, "Input",
+ CellID->1466900638],
+Cell[34961, 991, 201, 6, 70, "Output",
+ CellID->1553959089]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+Cell[35201, 1002, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35269, 1007, 270, 12, 70, "SeeAlsoSection",
+ CellID->1255426704],
+Cell[35542, 1021, 3352, 101, 70, "SeeAlso",
+ CellID->1791113879]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38931, 1127, 272, 12, 70, "TutorialsSection",
+ CellID->250839057],
+Cell[39206, 1141, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[39240, 1143, 212, 6, 70, "Tutorials",
+ CellID->341631938],
+Cell[39455, 1151, 237, 6, 70, "Tutorials",
+ CellID->446304022],
+Cell[39695, 1159, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39763, 1164, 276, 12, 70, "MoreAboutSection",
+ CellID->38303248],
+Cell[40042, 1178, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[40076, 1180, 200, 5, 70, "MoreAbout",
+ CellID->1359549925],
+Cell[40279, 1187, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40347, 1192, 280, 12, 70, "RelatedLinksSection",
+ CellID->1584193535],
+Cell[40630, 1206, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[40664, 1208, 205, 5, 70, "RelatedLinks",
+ CellID->1038487239],
+Cell[40872, 1215, 218, 6, 70, "RelatedLinks",
+ CellID->1970164909]
+}, Open  ]],
+Cell[41105, 1224, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
