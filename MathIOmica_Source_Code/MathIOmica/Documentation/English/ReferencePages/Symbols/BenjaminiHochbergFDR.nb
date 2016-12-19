@@ -1,0 +1,1120 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     35637,       1111]
+NotebookOptionsPosition[     30051,        943]
+NotebookOutlinePosition[     32263,       1001]
+CellTagsIndexPosition[     32178,        996]
+WindowTitle->BenjaminiHochbergFDR
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["MATH I OMICA PACKAGE SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Tutorials",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Tutorials", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica Tutorial\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaTutorial"], "\<\"MathIOmica \
+Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"Tutorials"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "See Also",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"See Also", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"GOAnalysis\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/GOAnalysis"], "\<\"KEGGAnalysis\"\>":>
+       Documentation`HelpLookup["paclet:MathIOmica/ref/KEGGAnalysis"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"SeeAlso"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Related Guides",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Related Guides", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica Guide\"\>":>
+       Documentation`HelpLookup["paclet:MathIOmica/guide/MathIOmicaGuide"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"MoreAbout"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica/ref/BenjaminiHochbergFDR\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["MathIOmica/ref/BenjaminiHochbergFDR"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/MathIOmica/ref/\
+BenjaminiHochbergFDR.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$9305], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "MathIOmica/ref/BenjaminiHochbergFDR", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ CellID->1],
+
+Cell[TextData[{
+ Cell["BenjaminiHochbergFDR", "ObjectName"],
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8]]]],
+ Cell[BoxData[""], "ObjectNameTranslation"]
+}], "ObjectNameGrid"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"BenjaminiHochbergFDR", "[", 
+       StyleBox["pValues", "TI"], "]"}]], "InlineFormula"],
+     "\[LineSeparator]calculates for a list of ",
+     Cell[BoxData[
+      StyleBox["pValues", "TI"]], "InlineFormula"],
+     " the Benjamini Hochberg approach false discovery rates (FDR)."
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    InterpretationBox[
+     StyleBox[
+      GraphicsBox[{},
+       BaselinePosition->Baseline,
+       ImageSize->{6, 0}],
+      CacheGraphics->False],
+     Spacer[6]]]],
+   "Details"
+  }], "NotesFrameText"],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->870362314],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"BenjaminiHochbergFDR", "[", 
+   StyleBox["pValues", "TI"], "]"}]], "InlineFormula"],
+ " calculates for a list of p-Values, ",
+ Cell[BoxData[
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["p", 
+      RowBox[{"1", ","}]], 
+     SubscriptBox["p", "2"]}], ",", 
+    RowBox[{"...", 
+     SubscriptBox["p", "N"]}]}], "}"}]], "InlineFormula"],
+ ", the Benjamini Hochberg approach false discovery rates (FDR). The \
+procedure is outlined below. The output for the function is a list of length ",
+ Cell[BoxData[
+  RowBox[{" ", "N"}]], "InlineFormula"],
+ " comprised of results for each of ",
+ Cell[BoxData["N"], "InlineFormula"],
+ " input p-Values is an association of the results and the associated cutoff \
+values: "
+}], "Notes",
+ CellID->229655795],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"output", "=", 
+   RowBox[{"<|", 
+    RowBox[{
+     RowBox[{"\"\<Results\>\"", "\[Rule]", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"original", " ", "p"}], "-", 
+           SubscriptBox["value", "1"]}], ",", " ", 
+          RowBox[{
+           RowBox[{"adjusted", " ", "p"}], "-", 
+           SubscriptBox["value", "1"]}], ",", " ", 
+          RowBox[{
+          "True", " ", "or", " ", "False", " ", "based", " ", "on", " ", 
+           "whether", " ", "this", " ", "value", " ", "is", " ", "considered",
+            " ", "statistically", " ", "significant", " ", "or", " ", "not", 
+           " ", "respectively"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"original", " ", "p"}], "-", 
+           SubscriptBox["value", "2"]}], ",", " ", 
+          RowBox[{
+           RowBox[{"adjusted", " ", "p"}], "-", 
+           SubscriptBox["value", "2"]}], ",", " ", 
+          RowBox[{
+           RowBox[{
+           "True", " ", "or", " ", "False", " ", "based", " ", "on", " ", 
+            "whether", "  ", "p"}], "-", 
+           RowBox[{
+            SubscriptBox["value", "2"], " ", "value", " ", "is", " ", 
+            "considered", " ", "statistically", " ", "significant", " ", "or",
+             " ", "not", " ", "respectively"}]}]}], "}"}], ",", "...", ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"original", " ", "p"}], "-", 
+           SubscriptBox["value", "N"]}], ",", " ", 
+          RowBox[{
+           RowBox[{"adjusted", " ", "p"}], "-", 
+           SubscriptBox["value", "N"]}], ",", " ", 
+          RowBox[{
+           RowBox[{
+           "True", " ", "or", " ", "False", " ", "based", " ", "on", " ", 
+            "whether", "  ", "p"}], "-", 
+           RowBox[{
+            SubscriptBox["value", "2"], " ", "value", " ", "is", " ", 
+            "considered", " ", "statistically", " ", "significant", " ", "or",
+             " ", "not", " ", "respectively"}]}]}], "}"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<p-Value Cutoff\>\"", "\[Rule]", " ", 
+      RowBox[{
+       RowBox[{"actual", " ", "p"}], "-", 
+       RowBox[{"Value", " ", "surviving", " ", "cutoff"}]}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<q-Value Cutoff\>\"", " ", "\[Rule]", " ", 
+      RowBox[{
+       RowBox[{"adjusted", " ", "p"}], "-", 
+       RowBox[{"Value", " ", "surviving", " ", "cutoff"}]}]}]}], 
+    "\[IndentingNewLine]", "|>"}]}]], "InlineFormula"],
+ "."
+}], "Notes",
+ CellID->536535258],
+
+Cell[TextData[{
+ "With a large number of hypotheses tested, the chance of getting \
+false-discoveries just by chance alone increases. The Benjamini-Hochberg \
+procedure corrects for this by, first, calculating a set of adjusted p-values \
+(q-values) from input p-Values set. These adjusted p-Values are then used to \
+test for significance (with a significance cutoff set by default to ",
+ Cell[BoxData[
+  RowBox[{"\[Alpha]", "=", "0.05"}]], "InlineFormula"],
+ ")."
+}], "Notes",
+ CellID->1683219795],
+
+Cell[TextData[{
+ "To get the adjusted p-value (q-values), the input p-values are first ranked \
+in ascending order, ",
+ Cell[BoxData[
+  RowBox[{"{", 
+   RowBox[{
+    SubsuperscriptBox["p", "1", "ranked"], ",", 
+    SubsuperscriptBox["p", "2", "ranked"], ",", 
+    RowBox[{"...", 
+     SubsuperscriptBox["p", "j", "ranked"]}], ",", "...", ",", 
+    RowBox[{"p", 
+     RowBox[{
+      SubsuperscriptBox["\[AliasDelimiter]", "N", "ranked"], "}", 
+      " "}]}]}]}]], "InlineFormula"],
+ " such that, ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"Min", "[", 
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          SubscriptBox["p", 
+           RowBox[{"1", ","}]], 
+          SubscriptBox["p", "2"]}], ",", 
+         RowBox[{"...", 
+          SubscriptBox["p", "N"]}]}], "}"}]}]}], "]"}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          SubsuperscriptBox["p", "1", "ranked"], "<"}], "..."}], "<", 
+        SubsuperscriptBox["p", "j", "ranked"], "<", " ", 
+        SubsuperscriptBox["p", 
+         RowBox[{"j", "+", "1"}], "ranked"], "<"}], "..."}], "<", 
+      SubsuperscriptBox["p", "N", "ranked"]}], "=", 
+     RowBox[{"Max", "[", 
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          SubscriptBox["p", 
+           RowBox[{"1", ","}]], 
+          SubscriptBox["p", "2"]}], ",", 
+         RowBox[{"...", 
+          SubscriptBox["p", "N"]}]}], "}"}]}]}]}]}], "]"}]], 
+  "InlineFormula"],
+ "."
+}], "Notes",
+ CellID->182440530],
+
+Cell[TextData[{
+ "Then, the ranked ",
+ Cell[BoxData["p"], "InlineFormula"],
+ "-values are weighted by the formula ",
+ Cell[BoxData[
+  RowBox[{
+   SubsuperscriptBox["p", "i", "weighted"], "=", 
+   RowBox[{
+    FractionBox["N", "i"], "\[Times]", 
+    SubsuperscriptBox["p", "i", "ranked"]}]}]], "InlineFormula"],
+ ". To get ",
+ Cell[BoxData["q"], "InlineFormula"],
+ " values,  any local maxima in the ",
+ Cell[BoxData[
+  SubsuperscriptBox["p", "i", "weighted"]], "InlineFormula"],
+ " are smoothed out, so as to preserve the original ordering,  via the \
+following iterative procedure:"
+}], "Notes",
+ CellID->467516023],
+
+Cell[TextData[{
+ "First, set ",
+ Cell[BoxData[
+  RowBox[{
+   SubscriptBox["q", "N"], "=", 
+   SubsuperscriptBox["p", "N", "weighted"]}]], "InlineFormula"],
+ "; then, for ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{"m", "=", "1"}], ",", "2", ",", "...", ",", 
+   RowBox[{"N", "-", "1", " "}]}]], "InlineFormula"],
+ ", set:"
+}], "Notes",
+ CellID->692948821],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{
+   SubsuperscriptBox["q", 
+    RowBox[{"N", "-", "m"}], "weighted"], "=", 
+   RowBox[{"Min", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      SubsuperscriptBox["p", 
+       RowBox[{"N", "-", "m"}], "weighted"], ",", 
+      SubscriptBox["q", 
+       RowBox[{"N", "-", "m", "+", "1"}]]}], "}"}], "]"}]}]], "InlineFormula"],
+ "."
+}], "Notes",
+ CellID->1332546261],
+
+Cell[TextData[{
+ "Finally, these ",
+ Cell[BoxData["q"], "InlineFormula"],
+ "-values are compared against the cutoff used to assess statistical \
+significance, meaning if we are testing for significance level ",
+ Cell[BoxData["S"], "InlineFormula"],
+ " (default option SignificanceLevel = 0.05), we reject any hypotheses with \
+adjusted values less than ",
+ Cell[BoxData["S"], "InlineFormula"],
+ "."
+}], "Notes",
+ CellID->1048297388],
+
+Cell["The following options can be given: ", "Notes"],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon"], 
+    ButtonBox["SignificanceLevel",
+     BaseStyle->"Link",
+     ButtonData->"paclet:ref/SignificanceLevel"], "0.05", Cell[TextData[{
+     "SignificanceLevel is an option to that controls cutoffs for diagnostic \
+tests as well as test conclusions. Adjuste p-values less than the cutoff will \
+be marked as ",
+     ButtonBox["True",
+      BaseStyle->"Link",
+      ButtonData->"paclet:ref/True"],
+     " for significance, and values higher will be marked as ",
+     ButtonBox["False",
+      BaseStyle->"Link",
+      ButtonData->"paclet:ref/False"],
+     " for significance."
+    }], "TableText"]}
+  }]], "3ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}},
+ GridBoxDividers->{"Rows" -> {{True, True}}}}],
+
+Cell["", "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(2)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1668291681],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->1431787335],
+
+Cell["We first load the MathIOmica package:", "ExampleText",
+ CellID->1955035864],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2015788480],
+
+Cell["\<\
+Let us consider the following example for a list of p-Values:\
+\>", "ExampleText",
+ CellID->478974785],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"pValueExamples", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.03", ",", "0.02", ",", "0.04", ",", "0.01", ",", "0.001", ",", 
+     "0.0001", ",", "0.05", ",", "0.01", ",", "0.03", ",", "0.04", ",", 
+     "0.03", ",", "0.63", ",", "0.70", ",", "0.80", ",", "0.30", ",", "0.11", 
+     ",", "0.01", ",", "0.30", ",", "0.25", ",", "0.45", ",", "0.1", ",", 
+     "0.01", ",", "0.77", ",", "0.9", ",", "0.33", ",", "0.41", ",", 
+     "0.000001", ",", "0.02", ",", "0.33", ",", "0.21", ",", "0.41", ",", 
+     "0.55", ",", "0.66"}], "}"}]}], ";"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->451691045],
+
+Cell["We can calculate the Benjamini-Hochberg adjusted valued:", "ExampleText",
+ CellID->419343457],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BenjaminiHochbergFDR", "[", "pValueExamples", "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->466364563],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Results\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0.03`", ",", "0.08249999999999999`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.02`", ",", "0.07333333333333333`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.04`", ",", "0.09428571428571428`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.01`", ",", "0.04714285714285714`", ",", "True"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.001`", ",", "0.011`", ",", "True"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.0001`", ",", "0.00165`", ",", "True"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.05`", ",", "0.11`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.01`", ",", "0.04714285714285714`", ",", "True"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.03`", ",", "0.08249999999999999`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.04`", ",", "0.09428571428571428`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.03`", ",", "0.08249999999999999`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.63`", ",", "0.7424999999999999`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.7`", ",", "0.7699999999999999`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.8`", ",", "0.8250000000000001`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.3`", ",", "0.4714285714285714`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.11`", ",", "0.21352941176470588`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.01`", ",", "0.04714285714285714`", ",", "True"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.3`", ",", "0.4714285714285714`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.25`", ",", "0.43421052631578944`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.45`", ",", "0.5711538461538461`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.1`", ",", "0.20625000000000002`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.01`", ",", "0.04714285714285714`", ",", "True"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.77`", ",", "0.8196774193548387`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.9`", ",", "0.9`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.33`", ",", "0.47347826086956524`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.41`", ",", "0.5412`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1.`*^-6", ",", "0.000032999999999999996`", ",", "True"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.02`", ",", "0.07333333333333333`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.33`", ",", "0.47347826086956524`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.21`", ",", "0.38499999999999995`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.41`", ",", "0.5412`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.55`", ",", "0.6722222222222223`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.66`", ",", "0.7510344827586207`", ",", "False"}], "}"}]}], 
+     "}"}]}], ",", 
+   RowBox[{"\<\"p-Value Cutoff\"\>", "\[Rule]", "0.01`"}], ",", 
+   RowBox[{"\<\"q-Value Cutoff\"\>", "\[Rule]", "0.04714285714285714`"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{533, 190},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->1894878445]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Options",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "SignificanceLevel",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2021254329],
+
+Cell[TextData[{
+ "SignificanceLevel is an option to that controls cutoffs for diagnostic \
+tests as well as test conclusions. Adjuste p-values less than the cutoff will \
+be marked as ",
+ ButtonBox["True",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/True"],
+ " for significance, and values higher will be marked as ",
+ ButtonBox["False",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/False"],
+ " for significance."
+}], "ExampleText",
+ CellID->1460312035],
+
+Cell["We consider the following data:", "ExampleText",
+ CellID->139168717],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"pValueExamples", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.03", ",", "0.02", ",", "0.04", ",", "0.01", ",", "0.001", ",", 
+     "0.0001", ",", "0.05", ",", "0.01", ",", "0.03", ",", "0.04", ",", 
+     "0.03", ",", "0.63", ",", "0.70", ",", "0.80", ",", "0.30", ",", "0.11", 
+     ",", "0.01", ",", "0.30", ",", "0.25", ",", "0.45", ",", "0.1", ",", 
+     "0.01", ",", "0.77", ",", "0.9", ",", "0.33", ",", "0.41", ",", 
+     "0.000001", ",", "0.02", ",", "0.33", ",", "0.21", ",", "0.41", ",", 
+     "0.55", ",", "0.66"}], "}"}]}], ";"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->39540105],
+
+Cell["\<\
+We can calculate the Benjamini-Hochberg adjusted valued, setting the \
+SignificanceLevel to 0.01:\
+\>", "ExampleText",
+ CellID->978097812],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BenjaminiHochbergFDR", "[", 
+  RowBox[{"pValueExamples", ",", 
+   RowBox[{"SignificanceLevel", "\[Rule]", " ", "0.01"}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->2050092146],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Results\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0.03`", ",", "0.08249999999999999`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.02`", ",", "0.07333333333333333`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.04`", ",", "0.09428571428571428`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.01`", ",", "0.04714285714285714`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.001`", ",", "0.011`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.0001`", ",", "0.00165`", ",", "True"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.05`", ",", "0.11`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.01`", ",", "0.04714285714285714`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.03`", ",", "0.08249999999999999`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.04`", ",", "0.09428571428571428`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.03`", ",", "0.08249999999999999`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.63`", ",", "0.7424999999999999`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.7`", ",", "0.7699999999999999`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.8`", ",", "0.8250000000000001`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.3`", ",", "0.4714285714285714`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.11`", ",", "0.21352941176470588`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.01`", ",", "0.04714285714285714`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.3`", ",", "0.4714285714285714`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.25`", ",", "0.43421052631578944`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.45`", ",", "0.5711538461538461`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.1`", ",", "0.20625000000000002`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.01`", ",", "0.04714285714285714`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.77`", ",", "0.8196774193548387`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.9`", ",", "0.9`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.33`", ",", "0.47347826086956524`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.41`", ",", "0.5412`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1.`*^-6", ",", "0.000032999999999999996`", ",", "True"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.02`", ",", "0.07333333333333333`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.33`", ",", "0.47347826086956524`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.21`", ",", "0.38499999999999995`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.41`", ",", "0.5412`", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.55`", ",", "0.6722222222222223`", ",", "False"}], "}"}], 
+      ",", 
+      RowBox[{"{", 
+       RowBox[{"0.66`", ",", "0.7510344827586207`", ",", "False"}], "}"}]}], 
+     "}"}]}], ",", 
+   RowBox[{"\<\"p-Value Cutoff\"\>", "\[Rule]", "0.0001`"}], ",", 
+   RowBox[{"\<\"q-Value Cutoff\"\>", "\[Rule]", "0.00165`"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{534, 190},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->1566271772]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "See Also"
+}], "SeeAlsoSection",
+ WholeCellGroupOpener->True,
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["GOAnalysis"]],"paclet:MathIOmica/ref/GOAnalysis"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["KEGGAnalysis"]],"paclet:MathIOmica/ref/KEGGAnalysis"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"]
+}], "SeeAlso",
+ CellID->1648690486]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Tutorials"
+}], "TutorialsSection",
+ WholeCellGroupOpener->True,
+ CellID->250839057],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Tutorial"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaTutorial"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->341631938],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Dynamic Transcriptome"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->1023267351],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Guides"
+}], "MoreAboutSection",
+ WholeCellGroupOpener->True,
+ CellID->38303248],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Guide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"MoreAbout", "CodeFont"}]], "MoreAbout",
+ CellID->1495474710],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Links"
+}], "RelatedLinksSection",
+ WholeCellGroupOpener->True,
+ CellID->1584193535],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaGuide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1038487239],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaOverview"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaOverview"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1970164909]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"BenjaminiHochbergFDR",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "Mathematica", ButtonData -> "paclet:MathIOmica/guide/MathIOmica", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
+  None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2016, 12, 14, 16, 42, 33.256229}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "MathIOmica`HypothesisTesting`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "Math I Omica Package Symbol", "language" -> "en", "paclet" -> 
+    "MathIOmica Package", "status" -> "None", "summary" -> 
+    "BenjaminiHochbergFDR[pValues] calculates for a list of pValues the \
+Benjamini Hochberg approach false discovery rates (FDR).", "synonyms" -> {}, 
+    "tabletags" -> {}, "title" -> "BenjaminiHochbergFDR", "titlemodifier" -> 
+    "", "windowtitle" -> "BenjaminiHochbergFDR", "type" -> "Symbol", "uri" -> 
+    "MathIOmica/ref/BenjaminiHochbergFDR"}, "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+2016)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> 
+  "10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, 2016)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[15154, 453, 388, 15, 70, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1668291681]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 32033, 989}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[592, 21, 4563, 112, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[5158, 135, 297, 11, 70, "ObjectNameGrid"],
+Cell[CellGroupData[{
+Cell[5480, 150, 521, 14, 70, "Usage"],
+Cell[CellGroupData[{
+Cell[6026, 168, 738, 24, 70, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->870362314],
+Cell[6767, 194, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[6801, 196, 797, 23, 70, "Notes",
+ CellID->229655795],
+Cell[7601, 221, 2670, 67, 70, "Notes",
+ CellID->536535258],
+Cell[10274, 290, 499, 10, 70, "Notes",
+ CellID->1683219795],
+Cell[10776, 302, 1566, 53, 70, "Notes",
+ CellID->182440530],
+Cell[12345, 357, 616, 18, 70, "Notes",
+ CellID->467516023],
+Cell[12964, 377, 351, 13, 70, "Notes",
+ CellID->692948821],
+Cell[13318, 392, 397, 14, 70, "Notes",
+ CellID->1332546261],
+Cell[13718, 408, 432, 11, 70, "Notes",
+ CellID->1048297388],
+Cell[14153, 421, 53, 0, 70, "Notes"],
+Cell[14209, 423, 862, 22, 70, "3ColumnTableMod"],
+Cell[15074, 447, 31, 0, 70, "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15154, 453, 388, 15, 70, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1668291681],
+Cell[CellGroupData[{
+Cell[15567, 472, 196, 6, 70, "ExampleSection",
+ CellID->1431787335],
+Cell[15766, 480, 81, 1, 70, "ExampleText",
+ CellID->1955035864],
+Cell[15850, 483, 120, 3, 70, "Input",
+ CellID->2015788480],
+Cell[15973, 488, 112, 3, 70, "ExampleText",
+ CellID->478974785],
+Cell[16088, 493, 627, 13, 70, "Input",
+ CellID->451691045],
+Cell[16718, 508, 99, 1, 70, "ExampleText",
+ CellID->419343457],
+Cell[CellGroupData[{
+Cell[16842, 513, 129, 3, 70, "Input",
+ CellID->466364563],
+Cell[16974, 518, 3885, 102, 70, "Output",
+ CellID->1894878445]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20908, 626, 168, 5, 70, "ExampleSection"],
+Cell[CellGroupData[{
+Cell[21101, 635, 184, 5, 70, "ExampleSubsection"],
+Cell[21288, 642, 120, 3, 70, "Input",
+ CellID->2021254329],
+Cell[21411, 647, 458, 13, 70, "ExampleText",
+ CellID->1460312035],
+Cell[21872, 662, 74, 1, 70, "ExampleText",
+ CellID->139168717],
+Cell[21949, 665, 626, 13, 70, "Input",
+ CellID->39540105],
+Cell[22578, 680, 148, 4, 70, "ExampleText",
+ CellID->978097812],
+Cell[CellGroupData[{
+Cell[22751, 688, 207, 5, 70, "Input",
+ CellID->2050092146],
+Cell[22961, 695, 3880, 102, 70, "Output",
+ CellID->1566271772]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+Cell[26880, 802, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26948, 807, 270, 12, 70, "SeeAlsoSection",
+ CellID->1255426704],
+Cell[27221, 821, 591, 18, 70, "SeeAlso",
+ CellID->1648690486]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27849, 844, 272, 12, 70, "TutorialsSection",
+ CellID->250839057],
+Cell[28124, 858, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[28158, 860, 212, 6, 70, "Tutorials",
+ CellID->341631938],
+Cell[28373, 868, 238, 6, 70, "Tutorials",
+ CellID->1023267351],
+Cell[28614, 876, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28682, 881, 276, 12, 70, "MoreAboutSection",
+ CellID->38303248],
+Cell[28961, 895, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[28995, 897, 200, 5, 70, "MoreAbout",
+ CellID->1495474710],
+Cell[29198, 904, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29266, 909, 280, 12, 70, "RelatedLinksSection",
+ CellID->1584193535],
+Cell[29549, 923, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[29583, 925, 205, 5, 70, "RelatedLinks",
+ CellID->1038487239],
+Cell[29791, 932, 218, 6, 70, "RelatedLinks",
+ CellID->1970164909]
+}, Open  ]],
+Cell[30024, 941, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)

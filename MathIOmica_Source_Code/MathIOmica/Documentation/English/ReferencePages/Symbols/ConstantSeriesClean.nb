@@ -1,0 +1,1009 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     30896,       1000]
+NotebookOptionsPosition[     25058,        820]
+NotebookOutlinePosition[     27239,        878]
+CellTagsIndexPosition[     27154,        873]
+WindowTitle->ConstantSeriesClean
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["MATH I OMICA PACKAGE SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Tutorials",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Tutorials", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica Tutorial\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaTutorial"], "\<\"MathIOmica \
+Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"Tutorials"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "See Also",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"See Also", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"CreateTimeSeries\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/CreateTimeSeries"], "\<\"OmicsObject\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/OmicsObject"], "\<\"OmicsObjectCreator\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/OmicsObjectCreator"], "\<\"SeriesCompare\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/SeriesCompare"], "\<\"SeriesApplier\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/SeriesApplier"], \
+"\<\"SeriesInternalCompare\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/SeriesInternalCompare"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"SeeAlso"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Related Guides",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Related Guides", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica Guide\"\>":>
+       Documentation`HelpLookup["paclet:MathIOmica/guide/MathIOmicaGuide"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"MoreAbout"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica/ref/ConstantSeriesClean\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["MathIOmica/ref/ConstantSeriesClean"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/MathIOmica/ref/\
+ConstantSeriesClean.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$14045], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "MathIOmica/ref/ConstantSeriesClean", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ CellID->1],
+
+Cell[TextData[{
+ Cell["ConstantSeriesClean", "ObjectName"],
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8]]]],
+ Cell[BoxData[""], "ObjectNameTranslation"]
+}], "ObjectNameGrid"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"ConstantSeriesClean", "[", 
+       StyleBox["associationOfLists", "TI"], "]"}]], "InlineFormula"],
+     "\[LineSeparator]removes constant list series from ",
+     Cell[BoxData[
+      StyleBox["associationOfLists", "TI"]], "InlineFormula"],
+     " values."
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    InterpretationBox[
+     StyleBox[
+      GraphicsBox[{},
+       BaselinePosition->Baseline,
+       ImageSize->{6, 0}],
+      CacheGraphics->False],
+     Spacer[6]]]],
+   "Details"
+  }], "NotesFrameText"],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->1115816460],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"ConstantSeriesClean", "[", 
+   StyleBox["associationOfLists", "TI"], "]"}]], "InlineFormula"],
+ " takes as input an association of series (lists), ",
+ Cell[BoxData[
+  StyleBox["associationOfLists", "TI"]], "InlineFormula"],
+ ", and returns a filtered association where constant series have been \
+removed."
+}], "Notes",
+ CellID->1644943064],
+
+Cell["The following options can be given: ", "Notes"],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon"], "InverseSelection", 
+    ButtonBox["False",
+     BaseStyle->"Link",
+     ButtonData->"paclet:ref/False"], Cell[TextData[Cell[TextData[{
+     Cell[BoxData["InverseSelection"], "InlineFormula"],
+     " can be set to ",
+     ButtonBox["True",
+      BaseStyle->"Link",
+      ButtonData->"paclet:ref/True"],
+     " to invert the selection/filtering process and return the constant \
+series instead of the non-constant ones.  "
+    }], "TableText"]], "TableText"]},
+   {Cell["      ", "TableRowIcon"], "ReturnDropped", 
+    ButtonBox["False",
+     BaseStyle->"Link",
+     ButtonData->"paclet:ref/False"], Cell[TextData[{
+     Cell[BoxData["ReturnDropped"], "InlineFormula"],
+     " can be set to True to return the keys of the constant series in \
+addition to the filtered list. The data is returned in an association:\n ",
+     Cell[BoxData[
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{"\"\<Data\>\"", "\[Rule]", 
+         RowBox[{"non", "-", 
+          RowBox[{"constant", " ", "data"}]}]}], ",", 
+        RowBox[{"\"\<Dropped keys\>\"", "\[Rule]", 
+         RowBox[{"keys", " ", "of", " ", "dropped", " ", "values"}]}]}], 
+       "|>"}]], "InlineFormula"]
+    }], "TableText"]}
+  }]], "3ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {None, {None}}, 
+   "RowsIndexed" -> {}},
+ GridBoxDividers->{"Rows" -> {{True, True, True}}}},
+ CellID->874096839],
+
+Cell["", "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(3)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1700037616],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->262288777],
+
+Cell["First we load the MathIOmica package.", "ExampleText",
+ CellID->191603639],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2017647728],
+
+Cell["We consider the following set of series measurements:", "ExampleText",
+ CellID->1448246258],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dataSeriesConstants", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement1\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"0.8", ",", "2", ",", "0.7", ",", "1", ",", "0.9", ",", "2"}], 
+       "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement2\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Missing", "[", "]"}], ",", "0.7", ",", "1", ",", "0.3", ",", 
+        "5"}], "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement3\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1"}], 
+       "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement4\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"0.2", ",", "3", ",", 
+        RowBox[{"Missing", "[", "]"}], ",", "3", ",", "0.3", ",", "2"}], 
+       "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement5\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "3", ",", "3", ",", "3", ",", "3"}], "}"}]}]}], 
+    "\[RightAssociation]"}]}], ";"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->139997789],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ConstantSeriesClean", "[", "dataSeriesConstants", "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1189518311],
+
+Cell[BoxData["\<\"Removed series and returning filtered list. If you would \
+like a list of removed keys run the command \
+ConstantSeriesClean[data,ReturnDropped \[Rule] True]\"\>"], "Print",
+ CellLabel->"During evaluation of In[191]:=",
+ CellID->1796910596],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0.8`", ",", "2", ",", "0.7`", ",", "1", ",", "0.9`", ",", "2"}],
+      "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Missing", "[", "]"}], ",", "0.7`", ",", "1", ",", "0.3`", ",", 
+      "5"}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0.2`", ",", "3", ",", 
+      RowBox[{"Missing", "[", "]"}], ",", "3", ",", "0.3`", ",", "2"}], 
+     "}"}]}]}], "\[RightAssociation]"}]], "Output",
+ ImageSize->{339, 41},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->613859211]
+}, Open  ]],
+
+Cell["\<\
+If data are provided in list form, a list is returned instead:\
+\>", "ExampleText",
+ CellID->1351930178],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ConstantSeriesClean", "[", 
+  RowBox[{"Values", "@", "dataSeriesConstants"}], "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->231014462],
+
+Cell[BoxData["\<\"Removed series and returning filtered list. If you would \
+like a list of removed keys run the command \
+ConstantSeriesClean[data,ReturnDropped \[Rule] True]\"\>"], "Print",
+ CellLabel->"During evaluation of In[192]:=",
+ CellID->2128633594],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0.8`", ",", "2", ",", "0.7`", ",", "1", ",", "0.9`", ",", "2"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Missing", "[", "]"}], ",", "0.7`", ",", "1", ",", "0.3`", ",", 
+     "5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0.2`", ",", "3", ",", 
+     RowBox[{"Missing", "[", "]"}], ",", "3", ",", "0.3`", ",", "2"}], 
+    "}"}]}], "}"}]], "Output",
+ ImageSize->{574, 14},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->1014738985]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Options",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(2)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "ReturnDropped",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1199869472],
+
+Cell[TextData[{
+ Cell[BoxData["ReturnDropped"], "InlineFormula"],
+ " can return the constant series that were removed:"
+}], "ExampleText",
+ CellID->987085668],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dataSeriesConstants", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement1\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"0.8", ",", "2", ",", "0.7", ",", "1", ",", "0.9", ",", "2"}], 
+       "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement2\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Missing", "[", "]"}], ",", "0.7", ",", "1", ",", "0.3", ",", 
+        "5"}], "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement3\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1"}], 
+       "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement4\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"0.2", ",", "3", ",", 
+        RowBox[{"Missing", "[", "]"}], ",", "3", ",", "0.3", ",", "2"}], 
+       "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement5\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "3", ",", "3", ",", "3", ",", "3"}], "}"}]}]}], 
+    "\[RightAssociation]"}]}], ";"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->131238683],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ConstantSeriesClean", "[", 
+  RowBox[{"dataSeriesConstants", ",", 
+   RowBox[{"ReturnDropped", " ", "\[Rule]", " ", "True"}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->905979690],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Data\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement1\"\>", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+        "0.8`", ",", "2", ",", "0.7`", ",", "1", ",", "0.9`", ",", "2"}], 
+        "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement2\"\>", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Missing", "[", "]"}], ",", "0.7`", ",", "1", ",", "0.3`", 
+         ",", "5"}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", "\<\"Measurement4\"\>", "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"0.2`", ",", "3", ",", 
+         RowBox[{"Missing", "[", "]"}], ",", "3", ",", "0.3`", ",", "2"}], 
+        "}"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"Dropped Keys\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", "\<\"Measurement3\"\>", "}"}], ",", 
+      RowBox[{"{", "\<\"Measurement5\"\>", "}"}]}], "}"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{362, 55},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->234115584]
+}, Open  ]],
+
+Cell[TextData[{
+ "The data is returned in an association: ",
+ Cell[BoxData[
+  RowBox[{"<|", 
+   RowBox[{
+    RowBox[{"\"\<Data\>\"", " ", "->", " ", 
+     RowBox[{"non", " ", "-", " ", 
+      RowBox[{"constant", " ", "data"}]}]}], ",", " ", 
+    RowBox[{"\"\<Dropped Keys\>\"", " ", "->", " ", 
+     RowBox[{"keys", " ", "of", " ", "dropped", " ", "values"}]}]}], " ", 
+   "|>"}]], "InlineFormula"]
+}], "ExampleText",
+ CellID->1532622539]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "InverseSelection",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1723728363],
+
+Cell[TextData[{
+ Cell[BoxData["InverseSelection"], "InlineFormula"],
+ " can inverse the selection/filtering to return the constant series instead \
+of the non-constant ones.  "
+}], "ExampleText",
+ CellID->1137411649],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dataSeriesConstants", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement1\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"0.8", ",", "2", ",", "0.7", ",", "1", ",", "0.9", ",", "2"}], 
+       "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement2\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Missing", "[", "]"}], ",", "0.7", ",", "1", ",", "0.3", ",", 
+        "5"}], "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement3\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1"}], 
+       "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement4\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"0.2", ",", "3", ",", 
+        RowBox[{"Missing", "[", "]"}], ",", "3", ",", "0.3", ",", "2"}], 
+       "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"{", "\"\<Measurement5\>\"", "}"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "3", ",", "3", ",", "3", ",", "3"}], "}"}]}]}], 
+    "\[RightAssociation]"}]}], ";"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->757346250],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ConstantSeriesClean", "[", 
+  RowBox[{"dataSeriesConstants", ",", 
+   RowBox[{"InverseSelection", " ", "\[Rule]", " ", "True"}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->582847981],
+
+Cell[BoxData["\<\"Removed series and returning filtered list. If you would \
+like a list of removed keys run the command \
+ConstantSeriesClean[data,ReturnDropped \[Rule] True]\"\>"], "Print",
+ CellLabel->"During evaluation of In[6]:=",
+ CellID->582312345],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", "\<\"Measurement3\"\>", "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1"}], "}"}]}],
+    ",", 
+   RowBox[{
+    RowBox[{"{", "\<\"Measurement5\"\>", "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"3", ",", "3", ",", "3", ",", "3", ",", "3"}], "}"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{477, 13},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->840603036]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "See Also"
+}], "SeeAlsoSection",
+ WholeCellGroupOpener->True,
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["CreateTimeSeries"]],"paclet:MathIOmica/ref/CreateTimeSeries"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["OmicsObject"]],"paclet:MathIOmica/ref/OmicsObject"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["OmicsObjectCreator"]],
+    "paclet:MathIOmica/ref/OmicsObjectCreator"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["SeriesCompare"]],"paclet:MathIOmica/ref/SeriesCompare"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["SeriesApplier"]],"paclet:MathIOmica/ref/SeriesApplier"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["SeriesInternalCompare"]],
+    "paclet:MathIOmica/ref/SeriesInternalCompare"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
+  "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Tutorials"
+}], "TutorialsSection",
+ WholeCellGroupOpener->True,
+ CellID->250839057],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Tutorial"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaTutorial"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->341631938],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Dynamic Transcriptome"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"},
+  "RefLink",
+  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
+ CellID->1023267351],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Guides"
+}], "MoreAboutSection",
+ WholeCellGroupOpener->True,
+ CellID->38303248],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Guide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"MoreAbout", "CodeFont"}]], "MoreAbout",
+ CellID->1651031395],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Related Links"
+}], "RelatedLinksSection",
+ WholeCellGroupOpener->True,
+ CellID->1584193535],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaGuide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1038487239],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaOverview"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaOverview"},
+  "RefLink",
+  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
+ CellID->1970164909]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"ConstantSeriesClean",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "Mathematica", ButtonData -> "paclet:MathIOmica/guide/MathIOmica", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
+  None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2016, 12, 14, 16, 42, 45.030205}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "MathIOmica`DataProcessing`", "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Math I Omica Package Symbol", "language" -> "en", "paclet" -> 
+    "MathIOmica Package", "status" -> "None", "summary" -> 
+    "ConstantSeriesClean[associationOfLists] removes constant list series \
+from associationOfLists values.", "synonyms" -> {}, "tabletags" -> {}, 
+    "title" -> "ConstantSeriesClean", "titlemodifier" -> "", "windowtitle" -> 
+    "ConstantSeriesClean", "type" -> "Symbol", "uri" -> 
+    "MathIOmica/ref/ConstantSeriesClean"}, "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+2016)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> 
+  "10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, 2016)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[9251, 264, 388, 15, 70, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1700037616]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 27010, 866}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[591, 21, 5030, 122, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[5624, 145, 296, 11, 70, "ObjectNameGrid"],
+Cell[CellGroupData[{
+Cell[5945, 160, 498, 14, 70, "Usage"],
+Cell[CellGroupData[{
+Cell[6468, 178, 739, 24, 70, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->1115816460],
+Cell[7210, 204, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[7244, 206, 382, 10, 70, "Notes",
+ CellID->1644943064],
+Cell[7629, 218, 53, 0, 70, "Notes"],
+Cell[7685, 220, 1483, 36, 70, "3ColumnTableMod",
+ CellID->874096839],
+Cell[9171, 258, 31, 0, 70, "SectionFooterSpacer"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9251, 264, 388, 15, 70, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1700037616],
+Cell[CellGroupData[{
+Cell[9664, 283, 195, 6, 70, "ExampleSection",
+ CellID->262288777],
+Cell[9862, 291, 80, 1, 70, "ExampleText",
+ CellID->191603639],
+Cell[9945, 294, 120, 3, 70, "Input",
+ CellID->2017647728],
+Cell[10068, 299, 97, 1, 70, "ExampleText",
+ CellID->1448246258],
+Cell[10168, 302, 1209, 33, 70, "Input",
+ CellID->139997789],
+Cell[CellGroupData[{
+Cell[11402, 339, 134, 3, 70, "Input",
+ CellID->1189518311],
+Cell[11539, 344, 258, 4, 70, "Print",
+ CellID->1796910596],
+Cell[11800, 350, 840, 24, 70, "Output",
+ CellID->613859211]
+}, Open  ]],
+Cell[12655, 377, 114, 3, 70, "ExampleText",
+ CellID->1351930178],
+Cell[CellGroupData[{
+Cell[12794, 384, 161, 4, 70, "Input",
+ CellID->231014462],
+Cell[12958, 390, 258, 4, 70, "Print",
+ CellID->2128633594],
+Cell[13219, 396, 573, 18, 70, "Output",
+ CellID->1014738985]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13841, 420, 168, 5, 70, "ExampleSection"],
+Cell[CellGroupData[{
+Cell[14034, 429, 180, 5, 70, "ExampleSubsection"],
+Cell[14217, 436, 120, 3, 70, "Input",
+ CellID->1199869472],
+Cell[14340, 441, 158, 4, 70, "ExampleText",
+ CellID->987085668],
+Cell[14501, 447, 1209, 33, 70, "Input",
+ CellID->131238683],
+Cell[CellGroupData[{
+Cell[15735, 484, 211, 5, 70, "Input",
+ CellID->905979690],
+Cell[15949, 491, 1222, 34, 70, "Output",
+ CellID->234115584]
+}, Open  ]],
+Cell[17186, 528, 438, 12, 70, "ExampleText",
+ CellID->1532622539]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[17661, 545, 183, 5, 70, "ExampleSubsection"],
+Cell[17847, 552, 120, 3, 70, "Input",
+ CellID->1723728363],
+Cell[17970, 557, 216, 5, 70, "ExampleText",
+ CellID->1137411649],
+Cell[18189, 564, 1209, 33, 70, "Input",
+ CellID->757346250],
+Cell[CellGroupData[{
+Cell[19423, 601, 217, 6, 70, "Input",
+ CellID->582847981],
+Cell[19643, 609, 255, 4, 70, "Print",
+ CellID->582312345],
+Cell[19901, 615, 566, 17, 70, "Output",
+ CellID->840603036]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+Cell[20506, 637, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20574, 642, 270, 12, 70, "SeeAlsoSection",
+ CellID->1255426704],
+Cell[20847, 656, 1972, 60, 70, "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22856, 721, 272, 12, 70, "TutorialsSection",
+ CellID->250839057],
+Cell[23131, 735, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[23165, 737, 212, 6, 70, "Tutorials",
+ CellID->341631938],
+Cell[23380, 745, 238, 6, 70, "Tutorials",
+ CellID->1023267351],
+Cell[23621, 753, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23689, 758, 276, 12, 70, "MoreAboutSection",
+ CellID->38303248],
+Cell[23968, 772, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[24002, 774, 200, 5, 70, "MoreAbout",
+ CellID->1651031395],
+Cell[24205, 781, 31, 0, 70, "SectionFooterSpacer"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24273, 786, 280, 12, 70, "RelatedLinksSection",
+ CellID->1584193535],
+Cell[24556, 800, 31, 0, 70, "SectionHeaderSpacer"],
+Cell[24590, 802, 205, 5, 70, "RelatedLinks",
+ CellID->1038487239],
+Cell[24798, 809, 218, 6, 70, "RelatedLinks",
+ CellID->1970164909]
+}, Open  ]],
+Cell[25031, 818, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
