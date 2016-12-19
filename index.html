@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>MathIOmica by G. Mias Lab</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Customizations -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap_custom.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar2"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
+      </button>
+      <a href="#" target="_top" class="navbar-brand"><span class="icon-bar"><img src="img/MathiomicaLogoSite.png" width="automatic" height="55" alt=""></span></a>
+            <a href="http://www.georgemias.org" target="_blank" class="navbar-brand"><span class="text-center">by G. Mias Lab </span></a>
+
+      </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="myNavbar2">
+      <ul class="nav navbar-nav navbar-right">
+      
+        <li><a href="#about">About</a></li>
+<li><a href="#download">Download</a></li>
+        <li><a href="#aboutus">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+  <div class="container" id="research">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-xs">
+        <div id="carousel-299058" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-299058" data-slide-to="0" class=""> </li>
+            <li data-target="#carousel-299058" data-slide-to="1" class="active"> </li>
+            <li data-target="#carousel-299058" data-slide-to="2" class=""> </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item"> <img src="img/mathiomicaPanel1.png" alt="thumb" class="img-responsive">
+              <div class="carousel-caption"> Time Series Evaluation and Classification</div>
+            </div>
+            <div class="item active"> <img class="img-responsive" src="img/MathIOmica1.png" alt="thumb">
+              <div class="carousel-caption"> Data Integration with MathIOmica.</div>
+            </div>
+            <div class="item"> <img class="img-responsive" src="img/mathiomicaPanel3.png" alt="thumb">
+              <div class="carousel-caption"> Extensible Framework</div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-299058" data-slide="prev"><span class="icon-prev"></span></a> <a class="right carousel-control" href="#carousel-299058" data-slide="next"><span class="icon-next"></span></a></div>
+      </div>
+    </div>
+    <hr>
+  </div>
+<section><hr></section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="media-object-default">
+          <div class="media">
+            <div class="media-left"> <a href="#"> <img class="media-object img-circle" src="img/mathiomicaRound21.png" height="100" alt="placeholder image"></a> <br></div>
+            <div class="media-body">
+              <h4 class="media-heading">A Generalized Open Source Extensile Framework for Omics Analysis</h4>
+              <p>MathIOmica is based on the Wolfram Language. &nbsp;This provides a framework for graphical, numerical and symbolic work for omics analyses. The code cross-platform, open source &nbsp;and includes full integrated documentation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="media">
+          <div class="media-left"> <a href="#"> <img class="media-object img-circle" src="img/mathiomicaRound1.png" width="100" height="100" alt="placeholder image"></a><br></div>
+          <div class="media-body">
+            <h4 class="media-heading">Multi-Omics Integration</h4>
+            <p>Omics analyses and integration requires extensive processing. MathIOmica provides a user-friendly framework for handling downstream analysis and visualization that is generalizable to multi-modal omics.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="media">
+          <div class="media-left"> <a href="#"> <img class="media-object img-circle" src="img/CommunityResources.png" height="100" alt="placeholder image"></a><br></div>
+          <div class="media-body">
+            <h4 class="media-heading">Scientific Community Resources</h4>
+            <p>Designing MathIOmica required the creation of robust multi-omics datasets for time series analyses and network inference. Such sets are being made availabe to the scientific community on completion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<section>
+  <div class="container">
+  <div class="row">
+ <div class="col-lg-6" id="about">
+   <h3>About</h3>
+   <hr>
+        <ul id="dataTab" class="nav nav-tabs">
+          <li class="active"> <a href="#mathiomica" data-toggle="tab" id="mathiomicaTab"> MathIOmica </a> </li>
+          <li><a href="#data" data-toggle="tab">Datasets</a></li>
+          <li> <a href="#tools" data-toggle="tab">Extra Tools</a> </li>
+          <li> <a href="#educational" data-toggle="tab">Educational</a> </li>
+        </ul>
+        <div id="dataTabContent" class="tab-content">
+          <div class="tab-pane fade in active" id="mathiomica">
+          <br>
+            <p class="text-center"><img src="img/MathiomicaLogo.png" alt=""></p>
+            <p>MathIOmica: a unique platform for omics &nbsp;analysis and integration. &nbsp;MathIOmica's current version: 1.0.</p>
+            <p>See also <a href="https://github.com/gmiaslab/mathiomica"> MathIOmica's github page</a>. </p>
+          </div>
+          <div class="tab-pane fade" id="data">
+          <div class="panel-group" id="dataSources">
+          <div class="panel panel-default">
+          	<div class="panel-heading">
+            <h4 class="panel-title text-center">
+            <a data-toggle="collapse" data-parent="#dataSources" href="#iPOPdata">iPOP Pilot Study</a>
+            </h4>
+            </div>
+            <div id="iPOPdata" class="panel-collapse collapse">
+            <div class="panel-body">
+            <p class="text-center"><img src="img/testnetwork_med.png" alt=""></p>
+            <p>"Personalized medicine is expected to benefit from combining genomic information with regular monitoring of physiological states by multiple high- throughput methods. Here, we present an integrative personal omics profile (iPOP), an analysis that combines genomic, transcriptomic, proteomic, metabolomic, and autoantibody profiles from a single individual over a 14 month period. Our iPOP analysis revealed various medical risks, including type II diabetes. It also uncovered extensive, dynamic changes in diverse molecular components and biological pathways across healthy and diseased conditions. Extremely high-coverage genomic and transcriptomic data, which provide the basis of our iPOP, discovered extensive heteroallelic changes during healthy and diseased states and an unexpected RNA editing mechanism. This study demonstrates that longitudinal iPOP can be used to interpret healthy and disease states by connecting genomic information with additional dynamic omics activity."</p>
+            <p>From Personal Omics Profiling Reveals Dynamic Molecular and Medical Phenotypes <hr> <a href="http://www.cell.com/abstract/S0092-8674(12)00166-3" target="" name="">Cell, Volume 148, Issue 6, 1293-1307, 16 March 2012</a>
+            </p>
+            <p>Curated mapped subsets of the pilot iPOP data are utilized in MathIOmica for examples and documentation. The original raw data for the pilot iPOP study have been made publically available as follows:</p>
+            <h4>iPOP DATA SITE</h4>
+<p><a href="http://snyderome.stanford.edu" target="_blank" >snyderome</a> contains local repository of iPOP data</p>
+<h4>MASS SPECTROMETRY DATA</h4>
+<p>PEPTIDE ATLAS<br> <a href="http://www.peptideatlas.org/PASS/PASS00062" > http://www.peptideatlas.org/PASS/PASS00062 </a><hr>
+</p>            </div>
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="tab-pane fade" id="tools">
+            <p class="text-center">Coming soon!</p>
+            <p>Stand-alone helper tools to aid in visualization</p>
+          </div>
+          <div class="tab-pane fade" id="educational">
+                   <h4>MathIOmica Manuals</h4>
+                   <p> MathIOmica utilizes in-built Mathematica Documentation. A printout of various documentation is provided below in pdf form.</p> 
+<ol reversed style="list-style-type:circle; ">
+<li> <a href="/MathIOmicaFiles/MathIOmicaGuide.pdf">MathIOmica Guide</a></li>
+<li> <a href="/MathIOmicaFiles/MathIOmicaTutorial.pdf">MathIOmica Multi-Omics Example Tutorial</a></li>
+<li> <a href="/MathIOmicaFiles/MathIOmicaDynamicTranscriptome.pdf">MathIOmica Dynamic Transcriptome Example</a></li>
+<li> <a href="/MathIOmicaFiles/MathIOmicaFunctionManual.pdf">MathIOmica Function Manual</a></li>
+</ol>
+         <h4>Notes and Primers</h4>
+<ol reversed style="list-style-type:circle; ">
+<li>
+<b> George I. Mias</b>, M. Snyder, <i> Personal Genomes, Quantitative Dynamic Omics and Personalized Medicine</i>, Quantitative Biology 1(1) (2013),<br> <a href="http://dx.doi.org/10.1007/s40484-013-0005-3" title="DOI" >doi:10.1007/s40484-013-0005-3</a> &nbsp; Offers examples of computational tools as an introduction to integrative dynamic omics.</li>
+</ol>
+<h4>Mathematica Resources</h4>
+<ol reversed style="list-style-type:circle; " >
+<li><a href="http://www.wolfram.com/mathematica/" > Mathematica</a></li>
+<li><a href="https://www.wolfram.com/language/">The Wolfram Language</a></li>
+<li><a href="https://www.wolfram.com/language/elementary-introduction/"> An Elementary Introduction to the Wolfram Language</a></li>
+<li><a href="http://stackoverflow.com" >Stack Overflow</a> has answers to a lot of programming questions.</li>
+</ol>
+<h4>Omics Resources</h4>
+<ol reversed style="list-style-type:circle; " >
+<li><a href="http://ms-utils.org" > ms-utils.org</a>  variety of Mass Spectrometry Utilities</li>
+<li>The <i> Tuxedo Suite </i> offers great tools for sequence analysis, such as <a href="https://github.com/BenLangmead/bowtie" >Bowtie</a>, <a href="http://tophat.cbcb.umd.edu" > TopHat</a> and <a href="http://cufflinks.cbcb.umd.edu" > Cufflinks</a>.</li>
+<li><a href="http://www.ncbi.nlm.nih.gov/guide/all/#tools_" >NCBI tools</a></li>
+</ol>           
+          </div>
+          
+          
+        </div>
+      </div> 
+ <div class="col-lg-6" id="download">
+        <h3 >Download</h3>
+        <hr>
+        <ul id="myTab1" class="nav nav-tabs">
+          <li class="active"> <a href="#home1" data-toggle="tab"> MathIOmica </a> </li>
+          <li><a href="#pane2" data-toggle="tab">Annotations</a></li>
+          <li> <a href="#pane3" data-toggle="tab">Datasets</a> </li>
+          <li> <a href="#pane4" data-toggle="tab">Extra Tools</a> </li>
+
+
+        </ul>
+        <div id="myTabContent1" class="tab-content">
+          <div class="tab-pane fade in active" id="home1">
+
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title text-center">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#fullPackage">Wolfram Language Package</a>
+                </h4>
+            </div>
+            <div id="fullPackage" class="panel-collapse collapse">
+                <div class="panel-body" >
+                <p>
+                <h4><a class="btn btn-primary" href="MathIOmicaFiles/MathIOmica.zip" download="MathIOmica.zip">Download MathIOmica Full Package</a></h4>
+                <h5> Contents</h5>
+                <ul>
+                  <li> MathIOmica full modules, source code and documentation</li>
+                  <li> Gene Ontology dictionary</li>
+                  <li> KEGG pathway dictionary</li>
+                  <li>integrative Personal Omics Profiling example data </li>
+                </ul>
+                <h5> Alternative Download</h5>
+                <p> You can also download the package from <a href="https://github.com/gmiaslab/mathiomica"> MathIOmica's github page</a>.</p>
+</p> 
+            </div>
+        </div>
+    </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title text-center">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#publications">Publications</a>
+                </h4>
+            </div>
+            <div id="publications" class="panel-collapse collapse">
+                <div class="panel-body">
+                <ol style="list-style-type:disc; padding-right:15px; padding-top:15px; padding-bottom:15px; " >
+                  <h4>Relevant Publications with MathIOmica</h4>
+                  <small><b>*</b>corresponding author(s)</small>
+<ol style="list-style-type:circle; " >
+<h5> MathIOmica Publications: </h5>
+<li> G.I. Mias*, T. Yusufaly, R. Roushangar, L.R.K. Brooks, V.V. Singh, C. Christou, <em>MathIOmica: An Integrative Platform for Dynamic Omics </em> (in review, 2016, bioarxiv preprint at: <a href="http://biorxiv.org/content/early/2016/09/10/074260"> bioRxiv 074260</a>).</li>
+</ol>
+<ol style="list-style-type:circle; " >
+<h5> Publications using MathIOmica functionality: </h5>
+<li> A. Marcobal, T. Yusufaly, S. Higginbottom, M. Snyder, J.L. Sonnenburg*, G. I. Mias*, <i> Metabolome progression during early gut microbial colonization of gnotobiotic mice </i> Scientific Reports <b>5</b>, 11589; (2015)<br>
+<a href="http://dx.doi.org/10.1038/srep11589"> doi: 10.1038/srep11589</a></li>
+</ol>
+<br>
+</ol>
+                </div>
+            </div>
+        </div> 
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title text-center">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#python">Python (in development)</a>
+                </h4>
+            </div>
+            <div id="python" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p> A Python version is now in development</p>
+                </div>
+            </div>
+        </div> 
+        
+	</div>
+          </div>
+          <div class="tab-pane fade" id="pane2">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+     
+          <div class="thumbnail"> 
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapsePD1" style="font-size:small">Gene Ontology</a>
+                </h4>
+            </div>
+            <div id="collapsePD1" class="panel-collapse collapse">
+                <div class="panel-body">
+              <h4><a class="btn btn-primary btn-responsive btn-sm" href="MathIOmicaFiles/humanGeneOntAssoc" download="humanGeneOntAssoc">Human GO [8/2016]</a></h4>
+                </div>
+            </div>
+        </div>
+          </div>
+          </div>
+        </div>
+          </div>
+          <div class="tab-pane fade" id="pane3">
+                      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="thumbnail">
+<div class="panel panel-default">
+  <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapseG1" style="font-size:small">integrative Personal Omics Pilot</a>
+                </h4>
+            </div>
+            <div id="collapseG1" class="panel-collapse collapse">
+                <div class="panel-body">
+                <p><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Mapped RNA-Sequencing Data <h4><a class="btn btn-primary btn-responsive btn-sm" href="MathIOmicaFiles/iPOPTranscriptomics.zip" download="iPOPTransriptomics.zip">Transcriptomics</a></h4></p>
+                <p><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Mapped Proteomics Mass Spectrometry Data <h4><a class="btn btn-primary btn-responsive btn-sm" href="MathIOmicaFiles/iPOPProteomics.zip" download="iPOPProteomics.zip">Proteomics</a></h4></p>
+                <p><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Aligned Metabolomics Mass Spectrometry Data<h4><a class="btn btn-primary btn-responsive btn-sm" href="MathIOmicaFiles/iPOPMetabolomics.zip" download="iPOPMetabolomics.zip">Metabolomics</a></h4></p>
+                </div>
+            </div>
+      </div>
+          </div>
+        </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="thumbnail"> 
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapseG2" style="font-size:small">Longitudinal Treatments</a>
+                </h4>
+            </div>
+            <div id="collapseG2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Data from multi-omics analysis (Raw and mapped) will be made available (Mias, Im et al. in preparation).</p>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+          </div>
+          </div>
+          <div class="tab-pane fade" id="pane4">
+          
+          <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="thumbnail">
+<div class="panel panel-default">
+  <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapseUG1" style="font-size:small">Proteomics</a>
+                </h4>
+            </div>
+            <div id="collapseUG1" class="panel-collapse collapse">
+                <div class="panel-body">
+                <p><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Mass Spectrometry Spectral Viewer, MathIOmica-MSViewer <h4><a class="btn btn-primary btn-responsive btn-sm" href="MathIOmicaFiles/MathIOmicaExtras/MathIOmica-MSViewer/MathIOmica-MSViewer.zip" download="MathIOmica-MSViewer.zip">MathIOmica<br>-MSViewer</a></h4></p>
+                   <!-- <a class="btn btn-primary" href="" target="_blank">MathIOmica<br>MS-Viewer</a> -->
+                </div>
+            </div>
+      </div>
+          </div>
+        </div>
+</div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    </div>
+</section>
+<hr>
+
+<div class="container well">
+  <div class="row">
+
+<div class="col-xs-6 col-sm-6 col-lg-4 col-md-4"> <span class="text-right">
+      </span>
+  <h3 id="aboutus">How To Cite</h3>
+  <hr>
+  <p>MathIOmica is released under an MIT License.  If you use the package please cite the relevant publications:</p>
+  <ol style="list-style-type:circle; " >
+<li>G.I. Mias*, T. Yusufaly, R. Roushangar, L.R.K. Brooks, V.V. Singh, C. Christou, <em>MathIOmica: An Integrative Platform for Dynamic Omics </em> Scientific Reports 6, 37237 (2016), <a href="http://dx.doi.org/10.1038/srep37237">doi:10.1038/srep37237</a>.</li>
+</ol>
+</div>
+<div class="col-xs-6 col-sm-6 col-lg-4 col-md-4"> <span class="text-right"> </span>
+  <h3 id="labtwitter">Latest News</h3>
+  <hr>
+  <a class="twitter-timeline" href="https://twitter.com/mathiomica" data-widget-id="696502736364269568">Tweets by @mathiomica</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+<div class="col-xs-6 col-sm-6 col-lg-4 col-md-4"> <span class="text-right"> </span>
+  <h3  id="contacts">Contact Us</h3>
+  <hr>
+
+    <address>
+      <strong>G. Mias Lab</strong><br>
+      <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 603 Wilson Rd, Biochemistry Rm 120<br>
+     East Lansing, MI, 48824<br>
+     <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  <a href="mailto:#">gmiaslab@gmail.com</a>
+      </address>
+      <address>
+      <strong>MathIOmica Support</strong><br>
+      <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> mathiomica.org<br>
+     <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  <a href="mailto:#">mathiomica@gmail.com</a>
+      </address>
+      <h3> Share </h3>
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_sharing_toolbox"></div>
+</div>
+  </div>
+</div>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © George I. Mias 2015-16. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.2.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+<!-- Analytics --> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-34216228-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56bf7e610740ad41" async="async"></script>
+</body>
+</html>
