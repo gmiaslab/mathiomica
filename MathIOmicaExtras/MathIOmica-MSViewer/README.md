@@ -1,0 +1,2 @@
+# MathIOmica-MSViewer
+MathIOmica-MSViewer is a standalone mass spectrometry data viewer for Mathematica, with a simple graphical user interface released as an add-on utility for the MathIOmica package. It is provided as a notebook - that may be copied and redistributed, that allows the user to open and view mzML and .mzXML spectra. The notebook is platform independent (can work on Windows, Linux and Mac OS), and has been tested on Mathematica 10.3+.
