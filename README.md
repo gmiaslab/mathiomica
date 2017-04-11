@@ -5,4 +5,4 @@ To install MathIOmica, download the MathIOmica.zip file, unzip it and follow the
 
 **Mathematica Versions**
 * 10.4: MathIOmica has been extensively tested and developed under 10.4.
-* 11.0.1: MathIOmica functionality currently under testing for the new Mathematica version
+* 11.1.0: MathIOmica functionality currently under testing for the new Mathematica version
