@@ -4,8 +4,7 @@ This repository contains MathIOmica, a Mathematica package written in the Wolfra
 To install MathIOmica, download the MathIOmica.zip file, unzip it and follow the instructions in the README.txt file therein.
 
 **Mathematica Versions**
-* 10.4: MathIOmica has been extensively tested and developed under 10.4.
-* 11.1.1: MathIOmica functionality currently under testing for the new Mathematica version
+* 11.1.1: MathIOmica functionality updated for Mathematica 11.1.1
 
 # MathIOmica Installation Instructions
 
@@ -13,11 +12,11 @@ To install MathIOmica, download the MathIOmica.zip file, unzip it and follow the
   
   ### Pre-Installation Requirements
      To install MathIOmica on any platform you need:
-     1. Mathematica version 10.3 or higher
+     1. Mathematica version 11.1 or higher
      2. Recommended: 16GB of RAM or higher
   
   ### Installation Instructions
-     1. Open Mathematica (version 10.4 and higher)
+     1. Open Mathematica (version 11.1 and higher)
      2. In the File menu select Install...
      3. In the popup menu choose the following for each item:
         -- "Type of Item to Install:" Application

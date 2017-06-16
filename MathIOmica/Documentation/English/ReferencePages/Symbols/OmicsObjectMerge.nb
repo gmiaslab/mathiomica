@@ -1,0 +1,3379 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    122452,       3370]
+NotebookOptionsPosition[    111803,       3100]
+NotebookOutlinePosition[    114130,       3161]
+CellTagsIndexPosition[    114043,       3156]
+WindowTitle->OmicsObjectMerge
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["MATH I OMICA PACKAGE SYMBOL", "PacletNameCell",ExpressionUUID->
+     "a6b521c6-d95d-451e-8e7a-37168f7407c5"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Tutorials",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }],ExpressionUUID->"ec9f8318-5a1f-43af-af14-d87bd653056f"],
+         TextCell[
+          Row[{"Tutorials", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica Tutorial\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaTutorial"], "\<\"MathIOmica \
+Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"Tutorials"]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "645b3b0c-4f82-47ec-bd73-6acc247ad877"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "See Also",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }],ExpressionUUID->"4f2723ca-6b6b-453a-aefe-78c9e86aa2e9"],
+         TextCell[
+          Row[{"See Also", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"ConstantAssociator\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/ConstantAssociator"], "\<\"DataImporter\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/DataImporter"], "\<\"DataImporterDirect\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/DataImporterDirect"], \
+"\<\"DataImporterDirectLabeled\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/DataImporterDirectLabeled"], \
+"\<\"EnlargeInnerAssociation\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/EnlargeInnerAssociation"], \
+"\<\"EnlargeOuterAssociation\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/EnlargeOuterAssociation"], \
+"\<\"JoinNestedAssociations\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/JoinNestedAssociations"], "\<\"OmicsObject\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/OmicsObject"], "\<\"OmicsObjectCreator\"\>":>
+       Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/OmicsObjectCreator"], \
+"\<\"OmicsObjectPairedMerge\"\>":>Documentation`HelpLookup[
+       "paclet:MathIOmica/ref/OmicsObjectPairedMerge"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"SeeAlso"]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "9f9a2693-5a8c-49e1-ab28-e4cf40bb0e25"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Related Guides",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }],ExpressionUUID->"8331a3ed-3272-408a-bd32-57d865a1d0c3"],
+         TextCell[
+          Row[{"Related Guides", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica Guide\"\>":>
+       Documentation`HelpLookup["paclet:MathIOmica/guide/MathIOmicaGuide"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"MoreAbout"]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "df1a6b93-b492-4d35-a1e5-4f28b2c12dd8"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }],ExpressionUUID->"93910f76-3aaf-48f8-a613-a1d0657053ac"],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"MathIOmica/ref/OmicsObjectMerge\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["MathIOmica/ref/OmicsObjectMerge"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/MathIOmica/ref/\
+OmicsObjectMerge.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$48027], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "MathIOmica/ref/OmicsObjectMerge", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "bb3ca9bd-d412-4f29-81d2-c1b2e22563ab"]
+    }], "AnchorBar",ExpressionUUID->"fc6d0f8e-7354-4025-bb01-ee1ecf6f78eb"]}
+  }]], "AnchorBarGrid",
+ CellID->1,ExpressionUUID->"93661fd0-cfae-4b6e-8153-29a898b3abef"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell["OmicsObjectMerge", "ObjectName",ExpressionUUID->
+  "1621cce4-092e-4b28-8d77-4c233661fbd4"],
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{8, 0}],
+    CacheGraphics->False],
+   Spacer[8],
+   Selectable->False]],ExpressionUUID->"fd0629f9-7ebd-4373-8502-96336130d778"],
+ Cell[BoxData[
+ ""], "ObjectNameTranslation",ExpressionUUID->
+  "05b8ad0e-29dd-486e-b117-f061915b9084"]
+}], "ObjectNameGrid",ExpressionUUID->"b40ad018-9866-41e7-b5f4-03ce773c1f21"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"OmicsObjectMerge", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          SubscriptBox[
+           StyleBox["omicsObject", "TI"], 
+           StyleBox["1", "TR"]], ",", 
+          SubscriptBox[
+           StyleBox["omicsObject", "TI"], 
+           StyleBox["2", "TR"]], ",", " ", 
+          StyleBox["\[Ellipsis]", "TR"]}], "}"}], ",", 
+        StyleBox["f", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+      "fc8c9e3b-97e0-4072-8792-5a1d09390b80"],
+     "\[LineSeparator]merges a list of OmicsObject components \
+{omicsObject1,omicsObject2,...}, using the function f to combine values with \
+the same inner and outer keys."
+    }],ExpressionUUID->"77874729-bbc3-49e0-a339-6364c7336a9d"]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> \
+{}}},ExpressionUUID->"700b71b6-f043-4286-b898-a8650b959ea3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    InterpretationBox[
+     StyleBox[
+      GraphicsBox[{},
+       BaselinePosition->Baseline,
+       ImageSize->{6, 0}],
+      CacheGraphics->False],
+     Spacer[6],
+     Selectable->False]],ExpressionUUID->
+    "991b434f-febe-4019-aada-83fd330112ce"],
+   "Details"
+  }], "NotesFrameText",ExpressionUUID->"358ae28c-9fb7-4b97-a21b-a78158df7d0f"],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->
+   "Preemptive"]],ExpressionUUID->"0c14829a-4411-4328-9c5d-47cc0d9dc575"]], \
+"NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->597666227,ExpressionUUID->"23f6b476-8628-434f-9de3-9f62c4c704e4"],
+
+Cell["", "SectionHeaderSpacer",ExpressionUUID->"53f62a82-0c66-4a44-a994-f713d56b4221"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"OmicsObjectMerge", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      SubscriptBox[
+       StyleBox["omicsObject", "TI"], 
+       StyleBox["1", "TR"]], ",", 
+      SubscriptBox[
+       StyleBox["omicsObject", "TI"], 
+       StyleBox["2", "TR"]], ",", " ", 
+      StyleBox["\[Ellipsis]", "TR"]}], "}"}], ",", 
+    StyleBox["f", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "05b770a2-029e-47ed-b726-fcf4f6881feb"],
+ " can merge a list of multiple omics objects, where the function ",
+ Cell[BoxData[
+  StyleBox["f", "TI"]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "9ea185d1-9990-49c6-b850-372a4279484f"],
+ " is applied to lists of values that share the same inner and outer key. \
+Non-matching keys, or missing Keys are replaced by ",
+ ButtonBox["Missing",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Missing"],
+ "[]."
+}], "Notes",
+ CellID->99457532,ExpressionUUID->"aeec221d-f251-461f-9da4-3712af505c48"],
+
+Cell["The following options can be given: ", "Notes",ExpressionUUID->"9fd4f880-aaf7-4b34-af6d-ba04544fd864"],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "3aacfa94-b695-46c4-98c2-a69d4b292fa0"], 
+    ButtonBox["MissingTest",
+     BaseStyle->"Link",
+     ButtonData->"paclet:MathIOmica/ref/MissingTest"], 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"MemberQ", "[", 
+        RowBox[{"#1", ",", " ", 
+         RowBox[{"__Missing", "|", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "__Missing", "}"}], ",", "__"}], "}"}], "|", 
+          RowBox[{"{", 
+           RowBox[{"__Missing", ",", "__"}], "}"}]}]}], "]"}], " ", "||", " ", 
+       RowBox[{
+        RowBox[{"Length", "[", "#1", "]"}], " ", "<", " ", "#2"}]}], " ", 
+      "&"}], " "}], Cell[TextData[{
+     Cell[BoxData[
+      TemplateBox[{Cell[
+         TextData["MissingTest"]],"paclet:MathIOmica/ref/MissingTest"},
+       "RefLink",
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+      "5430a56b-eb3d-4dec-92c1-59306057bc55"],
+     " is an option for functions that merge ",
+     ButtonBox["OmicsObject",
+      BaseStyle->"Link",
+      ButtonData->"paclet:MathIOmica/ref/OmicsObject"],
+     " components that specifies the test function used to assign a ",
+     ButtonBox["Missing",
+      BaseStyle->"Link",
+      ButtonData->"paclet:ref/Missing"],
+     "[] value. The first input is the list of values with matched keys. The \
+second input is the length of the input OmicsObject lists."
+    }], "TableText",ExpressionUUID->"0a7651dc-a618-4dff-a603-37207dd06d3d"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "97455ec9-7dfc-4987-8cc2-f2684fc1d66c"], 
+    ButtonBox["MissingReplacement",
+     BaseStyle->"Link",
+     ButtonData->"paclet:MathIOmica/ref/MissingReplacement"], 
+    RowBox[{"Missing", "[", "]"}], Cell[TextData[{
+     Cell[BoxData[
+      TemplateBox[{Cell[
+         TextData["MissingReplacement"]],
+        "paclet:MathIOmica/ref/MissingReplacement"},
+       "RefLink",
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+      "0e78c36c-c448-48ca-a9b1-e792de7523ac"],
+     " is an option for functions that handle missing data that indicates \
+what value missing data should be globally assigned."
+    }], "TableText",ExpressionUUID->"d6569a6c-7429-4581-b3a8-25029178788c"]}
+  }]], "3ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {None, {None}}, 
+   "RowsIndexed" -> {}},
+ GridBoxDividers->{
+  "Rows" -> {{
+     True, True, 
+      True}}}},ExpressionUUID->"84892ea7-26da-4610-a30d-f579a4e5208e"],
+
+Cell["", "SectionFooterSpacer",ExpressionUUID->"5bf8d8c8-bddc-4ee0-af78-2cfcffc730ae"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6],
+   Selectable->False]],ExpressionUUID->"e73a73cf-eb25-4d0a-a0c3-af65a06f5c5c"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(3)", "ExampleCount",ExpressionUUID->
+  "582b5bc3-fa85-49be-bf49-628f1969bb29"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1195260170,ExpressionUUID->"ea84ec7b-e0f8-4d45-8885-31a17610359a"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "fa4ba7be-299f-4d86-a9ff-bebf48ddc29d"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->1175643152,ExpressionUUID->"ed2a90a4-58b5-4388-a44c-3be3f5a576cb"],
+
+Cell["We first load MathIOmica:", "ExampleText",
+ CellID->75500331,ExpressionUUID->"3fae10dd-f3fa-4c17-8ca0-f9fb6a220878"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->872533336,ExpressionUUID->"6eee3cec-f561-4c0f-a186-8e77096286c1"],
+
+Cell[TextData[{
+ "Let's consider the following two ",
+ ButtonBox["OmicsObject",
+  BaseStyle->"Link",
+  ButtonData->"paclet:MathIOmica/ref/OmicsObject"],
+ " variables:"
+}], "ExampleText",
+ CellID->957971292,ExpressionUUID->"1a3769a3-8c80-4e03-8e49-110a15cc763b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"object1", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\"\<FirstSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.937", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol2\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.059", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<SecondSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.003", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol2\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.917", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<ThirdSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.064", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol2\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]}], ";", 
+  RowBox[{"object2", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\"\<FirstSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<ThirdSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.003", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.917", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<FourthSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.064", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "4"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]}], ";", 
+  RowBox[{"object3", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\"\<FirstSample\>\"", "\[Rule]", 
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}]}], "|>"}]}], ",", 
+     RowBox[{"\"\<ThirdSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.917", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<FourthSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "4"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]}], ";"}]], "Input",\
+
+ CellLabel->"In[2]:=",
+ CellID->987665595,ExpressionUUID->"20bb16a3-4fd1-4ca5-b440-7cbbdc67122a"],
+
+Cell["\<\
+We now want to calculate the return the matched samples and matched symbols. \
+We use Identity as the merging function to obtain a full list of the \
+corresponding values:\
+\>", "ExampleText",
+ CellID->2069825288,ExpressionUUID->"943b3231-5ddb-4320-8ef9-00519d5dbc01"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OmicsObjectMerge", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"object1", ",", "object2", ",", "object3"}], "}"}], ",", 
+   "Identity"}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1880528834,ExpressionUUID->"cb34814b-b967-4f49-89c0-610b8049c67f"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"FourthSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{533, 245},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->592286917,ExpressionUUID->"9777a669-08b3-4d56-95c7-5b00834cee54"]
+}, Open  ]],
+
+Cell[TextData[{
+ "We can also use any function ",
+ Cell[BoxData[
+ "f"], "InlineFormula",ExpressionUUID->"ad682ad2-d5ae-4a72-a07f-08d9300eadd9"],
+ " that will act on the list of matched values:"
+}], "ExampleText",
+ CellID->1614237479,ExpressionUUID->"e1cce7c7-f0e7-45e0-8695-adf5313fa98c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OmicsObjectMerge", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"object1", ",", "object2", ",", "object3"}], "}"}], ",", "f"}], 
+  "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->245429176,ExpressionUUID->"516fe19b-3860-4c12-b5c1-c7892281357b"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"f", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "1.03`", "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "1.03`", "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"2", ",", "1"}], "}"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "1.03`", "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], "}"}], "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"f", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "1.268`", "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "1.268`", "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"2", ",", "1"}], "}"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "1.268`", "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], "}"}], "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"f", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "0.545`", "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "3"}], "}"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "0.779`", "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"2", ",", "3"}], "}"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "0.779`", "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], "}"}], "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"f", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "0.87`", "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "3"}], "}"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "0.921`", "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"2", ",", "3"}], "}"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", "0.921`", "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], "}"}], "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"FourthSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{548, 245},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->1456280988,ExpressionUUID->"bba0d516-0ae3-4201-9f98-25fc6c2931c3"]
+}, Open  ]],
+
+Cell["\<\
+For a specific example, let's calculate get all values from the first \
+Measurement value in the first input OmicsObject:\
+\>", "ExampleText",
+ CellID->843440457,ExpressionUUID->"ecf8d78f-6f3a-42eb-97e2-1f0b6325614c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OmicsObjectMerge", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"object1", ",", "object2", ",", "object3"}], "}"}], ",", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"#", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "1"}], "]"}], "]"}], "&"}], ")"}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->864071856,ExpressionUUID->"2c58d3e5-09c5-4a70-aff2-68a62d3c59c4"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1.03`", "}"}], ",", 
+         RowBox[{"{", "1.03`", "}"}], ",", 
+         RowBox[{"{", "1.03`", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "1.268`", "}"}], ",", 
+         RowBox[{"{", "1.268`", "}"}], ",", 
+         RowBox[{"{", "1.268`", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.545`", "}"}], ",", 
+         RowBox[{"{", "0.779`", "}"}], ",", 
+         RowBox[{"{", "0.779`", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", "0.87`", "}"}], ",", 
+         RowBox[{"{", "0.921`", "}"}], ",", 
+         RowBox[{"{", "0.921`", "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"FourthSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{531, 229},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[5]=",
+ CellID->1233054266,ExpressionUUID->"475c55ae-f9bb-4549-a8de-998bb3d70a61"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Options",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(2)", "ExampleCount",ExpressionUUID->
+  "0785cd72-e2dc-45ee-a83d-82ce32aef4fc"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"2a7eba22-81a9-4d95-bf96-5eec820e208f"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "MissingTest",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "a9f01c6d-dd04-4e14-8160-c765c2c8fad7"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"fd03d27f-c55d-4be7-be6a-4e4c8dfcc9a8"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1365617878,ExpressionUUID->"d123b7c3-2311-4ba8-8650-ca999547ae9e"],
+
+Cell[TextData[{
+ Cell[BoxData[
+ "MissingTest"], "InlineFormula",ExpressionUUID->
+  "0c957296-f786-4378-bb71-a7d792564f6b"],
+ " is an option for functions that merge ",
+ ButtonBox["OmicsObject",
+  BaseStyle->"Link",
+  ButtonData->"paclet:MathIOmica/ref/OmicsObject"],
+ " components that specifies the test function used to assign a ",
+ ButtonBox["Missing",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Missing"],
+ "[] value. The first input is the list of values with matched keys. The \
+second input is the length of the input OmicsObject lists. The function is \
+applied to lists of inner values that share the same inner and outer keys. We \
+consider here the following objects:"
+}], "ExampleText",
+ CellID->580450749,ExpressionUUID->"99ef00b5-e273-45c0-a4ed-bad2f67b6aca"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"object1", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\"\<FirstSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.937", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol2\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.059", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<SecondSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.003", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol2\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.917", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<ThirdSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.064", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol2\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Missing", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]}], ";", 
+  RowBox[{"object2", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\"\<FirstSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<ThirdSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.003", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.917", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<FourthSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.064", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "4"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]}], ";", 
+  RowBox[{"object3", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\"\<FirstSample\>\"", "\[Rule]", 
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}]}], "|>"}]}], ",", 
+     RowBox[{"\"\<ThirdSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.917", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<FourthSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "4"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]}], ";"}]], "Input",\
+
+ CellLabel->"In[2]:=",
+ CellID->1870098434,ExpressionUUID->"5f0569ff-b446-4fff-a12a-8eec183b9ba4"],
+
+Cell[TextData[{
+ "The default ",
+ Cell[BoxData[
+ "MissingTest"], "InlineFormula",ExpressionUUID->
+  "d5ff37b9-c1f0-4f9c-af35-2f538a920273"],
+ " option value is a function that tests whether any of the matched entities \
+have a Missing[] value, or if any one of them does not have a values list:"
+}], "ExampleText",
+ CellID->1327915749,ExpressionUUID->"a4f47eb8-781f-44f5-9db6-2b8489fb7bb2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OmicsObjectMerge", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"object1", ",", "object2", ",", "object3"}], "}"}], ",", " ", 
+   "Identity", ",", 
+   RowBox[{"MissingTest", "\[Rule]", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"MemberQ", "[", 
+         RowBox[{"#1", ",", " ", 
+          RowBox[{"__Missing", "|", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", "__Missing", "}"}], ",", "__"}], "}"}], "|", 
+           RowBox[{"{", 
+            RowBox[{"__Missing", ",", "__"}], "}"}]}]}], "]"}], " ", "||", 
+        " ", 
+        RowBox[{
+         RowBox[{"Length", "[", "#1", "]"}], " ", "<", " ", "#2"}]}], ")"}], 
+      "&"}], ")"}]}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1304189427,ExpressionUUID->"b02f39b1-0ec4-4f73-8769-e9f3a500af7e"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"FourthSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{533, 245},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->117373110,ExpressionUUID->"cab64ebe-97f3-41d1-b2d6-a24665481dc9"]
+}, Open  ]],
+
+Cell[TextData[{
+ "For another example, let's set the ",
+ Cell[BoxData[
+ "MissingTest"], "InlineFormula",ExpressionUUID->
+  "537c1a8a-c603-488c-b5e8-73f6f3fe25eb"],
+ " to a function that also tests for any Measurement values across the \
+OmicsObject inputs being merged having a value less than a constant, say \
+0.6:"
+}], "ExampleText",
+ CellID->898503813,ExpressionUUID->"25b8e9c0-a2fd-4d61-a980-85b029420b2c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"valuesSmall", "=", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"MemberQ", "[", 
+       RowBox[{"#1", ",", " ", 
+        RowBox[{"__Missing", "|", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "__Missing", "}"}], ",", "__"}], "}"}], "|", 
+         RowBox[{"{", 
+          RowBox[{"__Missing", ",", "__"}], "}"}]}]}], "]"}], "||", " ", 
+      RowBox[{
+       RowBox[{"Length", "[", "#1", "]"}], " ", "<", " ", "#2"}], " ", "||", 
+      RowBox[{
+       RowBox[{"Count", "[", 
+        RowBox[{
+         RowBox[{"#1", "[", 
+          RowBox[{"[", 
+           RowBox[{"All", ",", "1", ",", "1"}], "]"}], "]"}], ",", 
+         RowBox[{"x_", "/;", 
+          RowBox[{"x", "\[LessEqual]", " ", "0.6"}]}]}], "]"}], 
+       "\[GreaterEqual]", " ", "1"}]}], "&"}], ")"}]}], ";"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->786348830,ExpressionUUID->"070d73a8-b1ae-4217-990f-f9cb7737a606"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OmicsObjectMerge", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"object1", ",", "object2", ",", "object3"}], "}"}], ",", " ", 
+   "Identity", ",", 
+   RowBox[{"MissingTest", "\[Rule]", "valuesSmall"}]}], "]"}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->1522975887,ExpressionUUID->"34b404b4-a062-4bfc-80b8-8d6fdaa6726b"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"FourthSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{533, 228},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[5]=",
+ CellID->1962479356,ExpressionUUID->"e92108d4-1377-4115-8467-89cfd85f320c"]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "MissingReplacement",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "24410ea3-2f2c-4097-861f-b129661721d4"]
+}], "ExampleSubsection", "ExampleSubsection",
+ WholeCellGroupOpener->True,
+ CellID->75373207,ExpressionUUID->"61685675-0f01-457d-84ca-b8857b2353a8"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->682029941,ExpressionUUID->"3321edc7-dc56-47fb-bf40-fe9ba94c3fe6"],
+
+Cell[TextData[{
+ Cell[BoxData[
+ "MissingReplacement"], "InlineFormula",ExpressionUUID->
+  "196974a5-7c59-4e11-8da7-43847144fa50"],
+ " is an option for functions that handle missing data that indicates what \
+value missing data should be globally assigned. We consider here the \
+following two objects:"
+}], "ExampleText",
+ CellID->1756994348,ExpressionUUID->"c059fe45-e941-4a0c-844d-87796fdcc30d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"object1", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\"\<FirstSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.937", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol2\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.059", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<SecondSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.003", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol2\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.917", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "2"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<ThirdSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.064", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol2\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]}], ";", 
+  RowBox[{"object2", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\"\<FirstSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<ThirdSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.003", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.917", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<FourthSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol1\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.064", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "4"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]}], ";", 
+  RowBox[{"object3", "=", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\"\<FirstSample\>\"", "\[Rule]", 
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}]}], "|>"}]}], ",", 
+     RowBox[{"\"\<ThirdSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.917", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}], ",", 
+     RowBox[{"\"\<FourthSample\>\"", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol3\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol4\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"Missing", "[", "]"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol5\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "4"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Symbol6\>\"", ",", "\"\<RNA\>\""}], "}"}], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.1", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "4"}], "}"}]}], "}"}]}]}], 
+       "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]}], ";"}]], "Input",\
+
+ CellLabel->"In[2]:=",
+ CellID->1903860586,ExpressionUUID->"0ddae546-2cc6-4ff4-aa29-234125eef3c3"],
+
+Cell[TextData[{
+ "The default is to replace missing values with ",
+ ButtonBox["Missing",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/Missing"],
+ "[]:"
+}], "ExampleText",
+ CellID->1082326403,ExpressionUUID->"f1117f60-3c55-4b0f-a099-c81eb3d288b1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OmicsObjectMerge", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"object1", ",", "object2", ",", "object3"}], "}"}], ",", 
+   "Identity", ",", 
+   RowBox[{"MissingReplacement", "\[Rule]", 
+    RowBox[{"Missing", "[", "]"}]}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1423432849,ExpressionUUID->"01a6e3b7-9ad4-44c7-b501-467d7e114a60"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"FourthSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"Missing", "[", "]"}]}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{533, 245},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->513302255,ExpressionUUID->"968df704-969a-4841-94fa-560ee1452610"]
+}, Open  ]],
+
+Cell["For another example, we replace the values with a string:", \
+"ExampleText",
+ CellID->1723264225,ExpressionUUID->"c8f977d6-6d5a-4eff-97e0-3b18286a30a9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OmicsObjectMerge", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"object1", ",", "object2", ",", "object3"}], "}"}], ",", 
+   "Identity", ",", 
+   RowBox[{"MissingReplacement", "\[Rule]", "\"\<Data Not Found\>\""}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->461897122,ExpressionUUID->"5f5c5cd1-4caa-4c4e-a5dd-157c9820315d"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"FirstSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.03`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "1.268`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "1"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}]}], "\[RightAssociation]"}]}], 
+   ",", 
+   RowBox[{"\<\"SecondSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}]}], "\[RightAssociation]"}]}], 
+   ",", 
+   RowBox[{"\<\"ThirdSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol2\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.545`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.779`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.87`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", "0.921`", "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3", ",", "3"}], "}"}]}], "}"}]}], "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}]}], "\[RightAssociation]"}]}], 
+   ",", 
+   RowBox[{"\<\"FourthSample\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol1\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol3\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol4\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol5\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\<\"Symbol6\"\>", ",", "\<\"RNA\"\>"}], "}"}], 
+       "\[Rule]", "\<\"Data Not Found\"\>"}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ ImageSize->{570, 281},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->1995717093,ExpressionUUID->"ce0ede62-275d-4a77-a4d2-aae5d24231a2"]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+
+Cell["", "SectionFooterSpacer",ExpressionUUID->"ff8b32f8-a5f8-4295-b514-b7ef95f665b2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6],
+   Selectable->False]],ExpressionUUID->"aac439c9-8e0e-401f-8ab3-adacce96dcd3"],
+ "See Also"
+}], "SeeAlsoSection",
+ WholeCellGroupOpener->True,
+ CellID->1255426704,ExpressionUUID->"50c73714-1f8b-479d-859d-3f1e59213624"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["ConstantAssociator"]],
+    "paclet:MathIOmica/ref/ConstantAssociator"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"9e263279-a575-4dba-b255-f49bbd04da79"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["DataImporter"]],"paclet:MathIOmica/ref/DataImporter"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"4c0d722d-0bb1-4019-9987-ac562df1321e"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["DataImporterDirect"]],
+    "paclet:MathIOmica/ref/DataImporterDirect"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"85f62f8f-eb00-4426-9d48-8871b2b6bf64"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["DataImporterDirectLabeled"]],
+    "paclet:MathIOmica/ref/DataImporterDirectLabeled"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"1458f6f0-78c9-4215-8881-db7ba47e2442"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["EnlargeInnerAssociation"]],
+    "paclet:MathIOmica/ref/EnlargeInnerAssociation"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"37971906-f965-4937-bb3d-23001dc96379"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["EnlargeOuterAssociation"]],
+    "paclet:MathIOmica/ref/EnlargeOuterAssociation"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"a23a1743-9c35-4156-89e0-4663d1c9a0ff"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["JoinNestedAssociations"]],
+    "paclet:MathIOmica/ref/JoinNestedAssociations"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"59521624-d475-49e1-b1e6-fc49d93df74f"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["OmicsObject"]],"paclet:MathIOmica/ref/OmicsObject"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"67578392-e622-4784-aabd-3d934a226633"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["OmicsObjectCreator"]],
+    "paclet:MathIOmica/ref/OmicsObjectCreator"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"e9638f09-9008-41b3-87d7-e4320c991ba2"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["OmicsObjectPairedMerge"]],
+    "paclet:MathIOmica/ref/OmicsObjectPairedMerge"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"a5c91773-f4a0-4320-900e-81a1a6defea7"]
+}], "SeeAlso",
+ CellID->929782353,ExpressionUUID->"6b32b7a8-0c98-45f8-956a-0b12d3f1865d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6],
+   Selectable->False]],ExpressionUUID->"799ffc11-6749-4e30-9304-ae0e056ec93e"],
+ "Tutorials"
+}], "TutorialsSection",
+ WholeCellGroupOpener->True,
+ CellID->250839057,ExpressionUUID->"d4979036-1c4d-4648-a509-ed5c33d27c00"],
+
+Cell["", "SectionHeaderSpacer",ExpressionUUID->"f000f15c-1bf1-4923-b080-edc733d2d90f"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Tutorial"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaTutorial"},
+  "RefLink",
+  BaseStyle->"Tutorials"]], "Tutorials",
+ CellID->341631938,ExpressionUUID->"ea6e79be-7f5a-448c-8c99-1ffa7ff5d5db"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Dynamic Transcriptome"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"},
+  "RefLink",
+  BaseStyle->"Tutorials"]], "Tutorials",
+ CellID->1023267351,ExpressionUUID->"52580b29-4efc-481a-a1d0-1320656de9a7"],
+
+Cell["", "SectionFooterSpacer",ExpressionUUID->"9bf9bb4f-7d13-4927-8298-1032a9a52976"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6],
+   Selectable->False]],ExpressionUUID->"11511d19-5a96-4385-9a8d-dc40c5215322"],
+ "Related Guides"
+}], "MoreAboutSection",
+ WholeCellGroupOpener->True,
+ CellID->38303248,ExpressionUUID->"a91f09d9-0415-4ebd-8836-1736896de2e9"],
+
+Cell["", "SectionHeaderSpacer",ExpressionUUID->"82c191d7-c3c3-4b63-9f00-9073cb9c4c90"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmica Guide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->"MoreAbout"]], "MoreAbout",
+ CellID->37419617,ExpressionUUID->"88d0f72f-1e5e-4bed-9e28-c7eb6377daf8"],
+
+Cell["", "SectionFooterSpacer",ExpressionUUID->"b5b5790c-2abd-457f-a75f-9e28cddf3d09"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6],
+   Selectable->False]],ExpressionUUID->"429b0081-aa8e-4c55-8557-3ffcb36441c1"],
+ "Related Links"
+}], "RelatedLinksSection",
+ WholeCellGroupOpener->True,
+ CellID->1584193535,ExpressionUUID->"09a635b2-ab94-47fd-b390-4f3025266c79"],
+
+Cell["", "SectionHeaderSpacer",ExpressionUUID->"02af183b-d585-4d99-af4b-e2359a7acbca"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaGuide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
+  "RefLink",
+  BaseStyle->"RelatedLinks"]], "RelatedLinks",
+ CellID->1038487239,ExpressionUUID->"43107865-d6fa-4153-ae6c-7e7e2f351ecf"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["MathIOmicaOverview"]],
+   "paclet:MathIOmica/tutorial/MathIOmicaOverview"},
+  "RefLink",
+  BaseStyle->"RelatedLinks"]], "RelatedLinks",
+ CellID->2010084489,ExpressionUUID->"43432966-0f9a-4d31-84b4-a9a87f54ccb2"]
+}, Open  ]],
+
+Cell[" ", "FooterCell",ExpressionUUID->"3e416b0d-78d6-4f08-9d19-aac6503259a8"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"OmicsObjectMerge",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "Mathematica", ButtonData -> "paclet:MathIOmica/guide/MathIOmica", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
+  None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2017, 6, 16, 15, 47, 36.950777}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "MathIOmica`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Math I Omica Package Symbol", "language" -> "en", "paclet" -> 
+    "MathIOmica Package", "status" -> "None", "summary" -> 
+    "OmicsObjectMerge[{omicsObject1, omicsObject2, ...}, f] merges a list of \
+OmicsObject components {omicsObject1,omicsObject2,...}, using the function f \
+to combine values with the same inner and outer keys.", "synonyms" -> {}, 
+    "tabletags" -> {}, "title" -> "OmicsObjectMerge", "titlemodifier" -> "", 
+    "windowtitle" -> "OmicsObjectMerge", "type" -> "Symbol", "uri" -> 
+    "MathIOmica/ref/OmicsObjectMerge"}, "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 18, \
+2017)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> 
+  "11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 18, 2017)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[13220, 338, 578, 17, 
+  70, "PrimaryExamplesSection", "ExpressionUUID" -> "ea84ec7b-
+   e0f8-4d45-8885-31a17610359a",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1195260170]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 113831, 3147}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[588, 21, 6153, 135, 70, "AnchorBarGrid", "ExpressionUUID" -> \
+"93661fd0-cfae-4b6e-8153-29a898b3abef",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[6766, 160, 543, 15, 70, "ObjectNameGrid", "ExpressionUUID" -> \
+"b40ad018-9866-41e7-b5f4-03ce773c1f21"],
+Cell[7312, 177, 1002, 25, 70, "Usage", "ExpressionUUID" -> \
+"700b71b6-f043-4286-b898-a8650b959ea3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8351, 207, 993, 28, 70, "NotesSection", "ExpressionUUID" -> \
+"23f6b476-8628-434f-9de3-9f62c4c704e4",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->597666227],
+Cell[9347, 237, 86, 0, 70, "SectionHeaderSpacer", "ExpressionUUID" -> \
+"53f62a82-0c66-4a44-a994-f713d56b4221"],
+Cell[9436, 239, 987, 27, 70, "Notes", "ExpressionUUID" -> \
+"aeec221d-f251-461f-9da4-3712af505c48",
+ CellID->99457532],
+Cell[10426, 268, 108, 0, 70, "Notes", "ExpressionUUID" -> \
+"9fd4f880-aaf7-4b34-af6d-ba04544fd864"],
+Cell[10537, 270, 2557, 61, 70, "3ColumnTableMod", "ExpressionUUID" -> \
+"84892ea7-26da-4610-a30d-f579a4e5208e"],
+Cell[13097, 333, 86, 0, 70, "SectionFooterSpacer", "ExpressionUUID" -> \
+"5bf8d8c8-bddc-4ee0-af78-2cfcffc730ae"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[13220, 338, 578, 17, 70, "PrimaryExamplesSection", "ExpressionUUID" -> \
+"ea84ec7b-e0f8-4d45-8885-31a17610359a",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1195260170],
+Cell[CellGroupData[{
+Cell[13823, 359, 309, 7, 70, "ExampleSection", "ExpressionUUID" -> \
+"ed2a90a4-58b5-4388-a44c-3be3f5a576cb",
+ CellID->1175643152],
+Cell[14135, 368, 122, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"3fae10dd-f3fa-4c17-8ca0-f9fb6a220878",
+ CellID->75500331],
+Cell[14260, 371, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"6eee3cec-f561-4c0f-a186-8e77096286c1",
+ CellID->872533336],
+Cell[14437, 376, 261, 7, 70, "ExampleText", "ExpressionUUID" -> \
+"1a3769a3-8c80-4e03-8e49-110a15cc763b",
+ CellID->957971292],
+Cell[14701, 385, 12751, 347, 70, "Input", "ExpressionUUID" -> \
+"20bb16a3-4fd1-4ca5-b440-7cbbdc67122a",
+ CellID->987665595],
+Cell[27455, 734, 278, 5, 70, "ExampleText", "ExpressionUUID" -> \
+"943b3231-5ddb-4320-8ef9-00519d5dbc01",
+ CellID->2069825288],
+Cell[CellGroupData[{
+Cell[27758, 743, 279, 7, 70, "Input", "ExpressionUUID" -> \
+"cb34814b-b967-4f49-89c0-610b8049c67f",
+ CellID->1880528834],
+Cell[28040, 752, 6336, 172, 70, "Output", "ExpressionUUID" -> \
+"9777a669-08b3-4d56-95c7-5b00834cee54",
+ CellID->592286917]
+}, Open  ]],
+Cell[34391, 927, 288, 6, 70, "ExampleText", "ExpressionUUID" -> \
+"e1cce7c7-f0e7-45e0-8695-adf5313fa98c",
+ CellID->1614237479],
+Cell[CellGroupData[{
+Cell[34704, 937, 270, 7, 70, "Input", "ExpressionUUID" -> \
+"516fe19b-3860-4c12-b5c1-c7892281357b",
+ CellID->245429176],
+Cell[34977, 946, 6537, 176, 70, "Output", "ExpressionUUID" -> \
+"bba0d516-0ae3-4201-9f98-25fc6c2931c3",
+ CellID->1456280988]
+}, Open  ]],
+Cell[41529, 1125, 227, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"ecf8d78f-6f3a-42eb-97e2-1f0b6325614c",
+ CellID->843440457],
+Cell[CellGroupData[{
+Cell[41781, 1133, 402, 12, 70, "Input", "ExpressionUUID" -> \
+"2c58d3e5-09c5-4a70-aff2-68a62d3c59c4",
+ CellID->864071856],
+Cell[42186, 1147, 4801, 124, 70, "Output", "ExpressionUUID" -> \
+"475c55ae-f9bb-4549-a8de-998bb3d70a61",
+ CellID->1233054266]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[47036, 1277, 284, 7, 70, "ExampleSection", "ExpressionUUID" -> \
+"2a7eba22-81a9-4d95-bf96-5eec820e208f"],
+Cell[CellGroupData[{
+Cell[47345, 1288, 294, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"fd03d27f-c55d-4be7-be6a-4e4c8dfcc9a8"],
+Cell[47642, 1297, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"d123b7c3-2311-4ba8-8650-ca999547ae9e",
+ CellID->1365617878],
+Cell[47820, 1302, 777, 17, 70, "ExampleText", "ExpressionUUID" -> \
+"99ef00b5-e273-45c0-a4ed-bad2f67b6aca",
+ CellID->580450749],
+Cell[48600, 1321, 12880, 351, 70, "Input", "ExpressionUUID" -> \
+"5f0569ff-b446-4fff-a12a-8eec183b9ba4",
+ CellID->1870098434],
+Cell[61483, 1674, 390, 8, 70, "ExampleText", "ExpressionUUID" -> \
+"a4f47eb8-781f-44f5-9db6-2b8489fb7bb2",
+ CellID->1327915749],
+Cell[CellGroupData[{
+Cell[61898, 1686, 850, 24, 70, "Input", "ExpressionUUID" -> \
+"b02f39b1-0ec4-4f73-8769-e9f3a500af7e",
+ CellID->1304189427],
+Cell[62751, 1712, 6336, 172, 70, "Output", "ExpressionUUID" -> \
+"cab64ebe-97f3-41d1-b2d6-a24665481dc9",
+ CellID->117373110]
+}, Open  ]],
+Cell[69102, 1887, 411, 9, 70, "ExampleText", "ExpressionUUID" -> \
+"25b8e9c0-a2fd-4d61-a980-85b029420b2c",
+ CellID->898503813],
+Cell[69516, 1898, 947, 26, 70, "Input", "ExpressionUUID" -> \
+"070d73a8-b1ae-4217-990f-f9cb7737a606",
+ CellID->786348830],
+Cell[CellGroupData[{
+Cell[70488, 1928, 344, 8, 70, "Input", "ExpressionUUID" -> \
+"34b404b4-a062-4bfc-80b8-8d6fdaa6726b",
+ CellID->1522975887],
+Cell[70835, 1938, 5815, 156, 70, "Output", "ExpressionUUID" -> \
+"e92108d4-1377-4115-8467-89cfd85f320c",
+ CellID->1962479356]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[76699, 2100, 317, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"61685675-0f01-457d-84ca-b8857b2353a8",
+ CellID->75373207],
+Cell[77019, 2109, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"3321edc7-dc56-47fb-bf40-fe9ba94c3fe6",
+ CellID->682029941],
+Cell[77196, 2114, 397, 8, 70, "ExampleText", "ExpressionUUID" -> \
+"c059fe45-e941-4a0c-844d-87796fdcc30d",
+ CellID->1756994348],
+Cell[77596, 2124, 12752, 347, 70, "Input", "ExpressionUUID" -> \
+"0ddae546-2cc6-4ff4-aa29-234125eef3c3",
+ CellID->1903860586],
+Cell[90351, 2473, 248, 7, 70, "ExampleText", "ExpressionUUID" -> \
+"f1117f60-3c55-4b0f-a099-c81eb3d288b1",
+ CellID->1082326403],
+Cell[CellGroupData[{
+Cell[90624, 2484, 367, 9, 70, "Input", "ExpressionUUID" -> \
+"01a6e3b7-9ad4-44c7-b501-467d7e114a60",
+ CellID->1423432849],
+Cell[90994, 2495, 6336, 172, 70, "Output", "ExpressionUUID" -> \
+"968df704-969a-4841-94fa-560ee1452610",
+ CellID->513302255]
+}, Open  ]],
+Cell[97345, 2670, 158, 2, 70, "ExampleText", "ExpressionUUID" -> \
+"c8f977d6-6d5a-4eff-97e0-3b18286a30a9",
+ CellID->1723264225],
+Cell[CellGroupData[{
+Cell[97528, 2676, 359, 9, 70, "Input", "ExpressionUUID" -> \
+"5f5c5cd1-4caa-4c4e-a5dd-157c9820315d",
+ CellID->461897122],
+Cell[97890, 2687, 6259, 175, 70, "Output", "ExpressionUUID" -> \
+"ce0ede62-275d-4a77-a4d2-aae5d24231a2",
+ CellID->1995717093]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+Cell[104188, 2867, 86, 0, 70, "SectionFooterSpacer", "ExpressionUUID" -> \
+"ff8b32f8-a5f8-4295-b514-b7ef95f665b2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[104311, 2872, 402, 13, 70, "SeeAlsoSection", "ExpressionUUID" -> \
+"50c73714-1f8b-479d-859d-3f1e59213624",
+ CellID->1255426704],
+Cell[104716, 2887, 3919, 106, 70, "SeeAlso", "ExpressionUUID" -> \
+"6b32b7a8-0c98-45f8-956a-0b12d3f1865d",
+ CellID->929782353]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[108672, 2998, 404, 13, 70, "TutorialsSection", "ExpressionUUID" -> \
+"d4979036-1c4d-4648-a509-ed5c33d27c00",
+ CellID->250839057],
+Cell[109079, 3013, 86, 0, 70, "SectionHeaderSpacer", "ExpressionUUID" -> \
+"f000f15c-1bf1-4923-b080-edc733d2d90f"],
+Cell[109168, 3015, 253, 6, 70, "Tutorials", "ExpressionUUID" -> \
+"ea6e79be-7f5a-448c-8c99-1ffa7ff5d5db",
+ CellID->341631938],
+Cell[109424, 3023, 279, 6, 70, "Tutorials", "ExpressionUUID" -> \
+"52580b29-4efc-481a-a1d0-1320656de9a7",
+ CellID->1023267351],
+Cell[109706, 3031, 86, 0, 70, "SectionFooterSpacer", "ExpressionUUID" -> \
+"9bf9bb4f-7d13-4927-8298-1032a9a52976"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[109829, 3036, 408, 13, 70, "MoreAboutSection", "ExpressionUUID" -> \
+"a91f09d9-0415-4ebd-8836-1736896de2e9",
+ CellID->38303248],
+Cell[110240, 3051, 86, 0, 70, "SectionHeaderSpacer", "ExpressionUUID" -> \
+"82c191d7-c3c3-4b63-9f00-9073cb9c4c90"],
+Cell[110329, 3053, 239, 5, 70, "MoreAbout", "ExpressionUUID" -> \
+"88d0f72f-1e5e-4bed-9e28-c7eb6377daf8",
+ CellID->37419617],
+Cell[110571, 3060, 86, 0, 70, "SectionFooterSpacer", "ExpressionUUID" -> \
+"b5b5790c-2abd-457f-a75f-9e28cddf3d09"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[110694, 3065, 412, 13, 70, "RelatedLinksSection", "ExpressionUUID" -> \
+"09a635b2-ab94-47fd-b390-4f3025266c79",
+ CellID->1584193535],
+Cell[111109, 3080, 86, 0, 70, "SectionHeaderSpacer", "ExpressionUUID" -> \
+"02af183b-d585-4d99-af4b-e2359a7acbca"],
+Cell[111198, 3082, 246, 5, 70, "RelatedLinks", "ExpressionUUID" -> \
+"43107865-d6fa-4153-ae6c-7e7e2f351ecf",
+ CellID->1038487239],
+Cell[111447, 3089, 259, 6, 70, "RelatedLinks", "ExpressionUUID" -> \
+"43432966-0f9a-4d31-84b4-a9a87f54ccb2",
+ CellID->2010084489]
+}, Open  ]],
+Cell[111721, 3098, 78, 0, 70, "FooterCell", "ExpressionUUID" -> \
+"3e416b0d-78d6-4f08-9d19-aac6503259a8"]
+}
+]
+*)
+
+(* End of internal cache information *)

@@ -3,32 +3,32 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 10.4' *)
+(* CreatedBy='Mathematica 11.1' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     41198,       1306]
-NotebookOptionsPosition[     32026,       1067]
-NotebookOutlinePosition[     34375,       1129]
-CellTagsIndexPosition[     34332,       1126]
+NotebookDataLength[     56765,       1600]
+NotebookOptionsPosition[     38737,       1218]
+NotebookOutlinePosition[     41085,       1280]
+CellTagsIndexPosition[     41042,       1277]
 WindowTitle->MathIOmica Overview
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[GridBox[{
-   {Cell["MATH I OMICA PACKAGE OVERVIEW", "PacletNameCell"], Cell[TextData[
-    Cell[BoxData[
+   {Cell["MATH I OMICA PACKAGE OVERVIEW", "PacletNameCell",ExpressionUUID->
+     "74911849-6b99-4dde-ae46-74dcd1787df6"], Cell[TextData[Cell[BoxData[
      ActionMenuBox[
       FrameBox[
        InterpretationBox[Cell[TextData[{
          "URL",
          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
           StripOnInput->False]
-        }]],
+        }],ExpressionUUID->"b65df2ed-6bb7-447c-b6ac-f457713b4bb2"],
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -62,24 +62,26 @@ MathIOmicaOverview.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$59033], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$67022], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "MathIOmica/tutorial/MathIOmicaOverview", ".html"]], None}]}]},
       Appearance->None,
       MenuAppearance->Automatic,
       MenuStyle->"URLMenu"]],
-     LineSpacing->{1.4, 0}]], "AnchorBar"]}
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "48540e81-47d6-4ced-89d1-2f166e9d4c65"]], "AnchorBar",ExpressionUUID->
+     "b0970b10-2d41-4819-8602-71256d6bd884"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1],
+ CellID->1,ExpressionUUID->"5c576cd5-126b-453d-8b63-d5f300574d62"],
 
 Cell[CellGroupData[{
 
-Cell["MathIOmica Overview", "TOCDocumentTitle"],
+Cell["MathIOmica Overview", "TOCDocumentTitle",ExpressionUUID->"38091579-c35a-4948-a039-a694a6e3bf8f"],
 
 Cell[CellGroupData[{
 
@@ -87,15 +89,15 @@ Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Guides"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
   "RefLink",
-  BaseStyle->{"TOCChapter", "CodeFont"}]], "TOCChapter",
- CellID->2029319270],
+  BaseStyle->"TOCChapter"]], "TOCChapter",
+ CellID->1567380678,ExpressionUUID->"4a6258cb-2809-4d02-a8b3-90791c868b2f"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MathIOmicaGuide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection",
- CellID->433689236]
+  BaseStyle->"TOCSection"]], "TOCSection",
+ CellID->1932641044,ExpressionUUID->"798e207a-c131-419d-aa6b-5a4601a69020"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -105,14 +107,16 @@ Cell[BoxData[
     TextData["MathIOmica: Omics Analysis Tutorial"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#509267359"},
   "RefLink",
-  BaseStyle->{"TOCChapter", "CodeFont"}]], "TOCChapter"],
+  BaseStyle->"TOCChapter"]], "TOCChapter",ExpressionUUID->"50e8fa7a-97b4-4668-\
+bcdf-8105c1b4dba4"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Loading the MathIOmica Package"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#2133290847"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"16f75937-e956-46e5-\
+9909-c9aaf0f7e692"],
 
 Cell[CellGroupData[{
 
@@ -121,7 +125,8 @@ Cell[BoxData[
     TextData["Data in MathIOmica"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#671613477"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"95082d71-c03a-40e3-\
+8714-863d6cc20134"],
 
 Cell[CellGroupData[{
 
@@ -130,28 +135,32 @@ Cell[BoxData[
     TextData["Data Format: OmicsObject"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#501197291"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"5e1cb006-\
+c2a2-46d0-a5f9-eeb2b45867b9"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["OmicsObject Structure"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#929984066"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"07e3c68a-db16-46bb-9b3d-2e198fc4f936"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Methods to Import Data as an OmicsObject"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1010514183"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"b9eafd88-cad6-4a40-8856-bab9a3c0d4d5"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Working with OmicsObject Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1310432575"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"]
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"3e618105-24a9-493b-a125-0eeb8505de3b"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -159,8 +168,9 @@ Cell[BoxData[
     TextData["Example Data "]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#490101258"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"]
-}, Closed]],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"4685bb05-\
+7bb2-41b2-a6f6-ed710455b45b"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -169,14 +179,16 @@ Cell[BoxData[
     TextData["Transcriptome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#540567276"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"b13c42d5-77cb-4175-\
+95f7-e40320c7c393"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Importing OmicsObject Transcriptome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#257268298"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"9688f5a6-\
+0046-4749-b73f-32b944245444"],
 
 Cell[CellGroupData[{
 
@@ -185,21 +197,24 @@ Cell[BoxData[
     TextData["Processing Transcriptome Mapped Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#964105434"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"199f61af-\
+5c31-4b40-9401-0728caf812f3"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Labeling, Normalization and Filtering"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#433330108"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"90cd7f4d-9440-4bd0-9a8e-43f5d15c1a7d"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Create Transcriptome Time Series"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#267016150"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"7204c493-1fb8-4e68-a964-340fddd6620f"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
@@ -207,14 +222,16 @@ Cell[BoxData[
     "Take Log Ratios Compared to Reference in Transcriptome Time Series"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1837977213"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"ec3f34fb-73f6-4c2b-aa8e-5ff5344800b5"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Take the Norm and Remove Constant Transcriptome Time Series"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#384896847"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"]
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"e43365a9-f7b6-4150-ac6d-1fce03f070d0"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -224,14 +241,16 @@ Cell[BoxData[
     TextData["Resampling Transcriptome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1956292219"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"9d17fe25-\
+f187-4f0e-a310-6f70fb77366b"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Resampling the Transcriptome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#576856357"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"5fc5e53e-535c-4203-aa31-8bb92f538718"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
@@ -239,7 +258,8 @@ Cell[BoxData[
     "Processing the Bootstrap Transcriptome and Creating Bootstrap Time \
 Series"]],"paclet:MathIOmica/tutorial/MathIOmicaTutorial#1483609541"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"]
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"2a99f802-cf15-4cba-89aa-6bbe3f223118"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -247,8 +267,9 @@ Cell[BoxData[
     TextData["Classification of Transcriptome Time Series"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#834625544"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"]
-}, Closed]],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"4e149659-\
+b3ff-4874-b520-fc05824fd554"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -257,14 +278,16 @@ Cell[BoxData[
     TextData["Proteomic Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1387790784"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"234b9358-1d04-4a5d-\
+9f67-9364d7c55a25"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Importing OmicsObject Proteome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1225055698"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"2e30a4c3-\
+3979-4954-a92d-9fd035a893c5"],
 
 Cell[CellGroupData[{
 
@@ -273,28 +296,32 @@ Cell[BoxData[
     TextData["Processing of Proteome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1281067914"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"decfd068-\
+b866-4a10-99e4-9e2e6b84efef"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Power Transformation, Labeling and Filtering"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1973203023"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"e67dc44a-d492-4dee-aae2-3ee18c6bce45"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Create Proteome Time Series"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1796762249"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"cceecd54-c89b-4002-b9d9-c56218084590"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Take the Norm and Remove Constant Proteome Time Series"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1908271188"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"]
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"346b3882-f0e9-4b0d-9ca2-1678ed4f6c1b"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -304,14 +331,16 @@ Cell[BoxData[
     TextData["Resampling Proteome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1059869896"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"5325966d-\
+6e89-4f4f-a080-9cf07e401157"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Resampling the Proteome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#444582009"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"8497b293-2fbf-4d47-90dd-5fe4ea759dad"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
@@ -319,7 +348,8 @@ Cell[BoxData[
     "Processing the Bootstrap Proteome and Creating Bootstrap Time Series"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1807183132"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"]
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"3136b63f-b302-4cbf-bbdb-34fb6dfe135b"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -327,8 +357,9 @@ Cell[BoxData[
     TextData["Classification of Proteome Time Series"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#2003973854"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"]
-}, Closed]],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"f799d90a-\
+3529-4c4b-bfef-635d019d00a8"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -337,14 +368,16 @@ Cell[BoxData[
     TextData["Metabolomic Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#779816621"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"156ef1cf-bac2-405d-\
+bccd-3797210bf58d"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Importing OmicsObject Metabolome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1971981026"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"627df7d5-\
+1a0f-449d-a276-8c94f859fbc6"],
 
 Cell[CellGroupData[{
 
@@ -353,7 +386,8 @@ Cell[BoxData[
     TextData["Processing of Metabolome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1357359281"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"bb548c1d-\
+2ff3-4870-80ae-fe2d3dcdb8fb"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
@@ -362,14 +396,16 @@ Cell[BoxData[
 Filtering, Matching Mass"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#524759768"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"153799ec-b9f8-4c1b-bb5b-cc2f560d8444"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Create Metabolome Time Series"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1109625018"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"38561038-bb16-40a0-a83e-8943f089b2cc"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
@@ -377,14 +413,16 @@ Cell[BoxData[
     "Take Difference Compared to Reference in Metabolome Time Series."]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1009763177"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"7628aa8c-52a9-45cc-9028-bd02c6029bf2"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Take the Norm and Remove Constant Metabolome Time Series"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1412731195"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"]
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"feaa3d90-33da-44eb-85ea-9858800f8f27"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -394,14 +432,16 @@ Cell[BoxData[
     TextData["Resampling Metabolome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#453326653"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"2ea4a421-\
+5e7a-4851-994a-97e96119c212"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Resampling the Proteome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#633718938"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"b0efcc89-c809-46d2-b854-beba23a65283"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
@@ -409,7 +449,8 @@ Cell[BoxData[
     "Processing the Bootstrap Metabolome and Creating Bootstrap Time \
 Series"]],"paclet:MathIOmica/tutorial/MathIOmicaTutorial#360522749"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"]
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"3ce1ca68-b28d-48a9-8df5-0719b8c3ed9a"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -417,8 +458,9 @@ Cell[BoxData[
     TextData["Classification of Metabolome Time Series"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#298821825"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"]
-}, Closed]],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"a75a7584-\
+484a-4424-9a48-43934d90a8e0"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -427,29 +469,33 @@ Cell[BoxData[
     TextData["Combined Data Clustering"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1340833355"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"6fbf83fa-13ab-484e-\
+986d-3120e014d5fa"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Combining Multi-omics Classifed Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1502510612"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"60cc385e-\
+960d-424d-ba9e-85490cbbe550"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Clustering of Classified Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1764557057"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"]
-}, Closed]],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"f027fd10-\
+259c-4cf5-8b2d-857673740b45"]
+}, Open  ]],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Visualization"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#1200455778"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"ce8d4d74-99b2-4780-\
+97c0-9014ed021dd8"],
 
 Cell[CellGroupData[{
 
@@ -458,14 +504,16 @@ Cell[BoxData[
     TextData["Annotation and Enrichment"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#2035743524"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"d2f20cb4-772f-4314-\
+bcf0-fca9d9db3454"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Gene Ontology Analysis"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#2013711891"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"d1b2161f-\
+290c-4d12-995c-4a1bbaf4b5f1"],
 
 Cell[CellGroupData[{
 
@@ -474,7 +522,8 @@ Cell[BoxData[
     TextData["Pathway Analysis"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#113475317"},
   "RefLink",
-  BaseStyle->{"TOCSubsection", "CodeFont"}]], "TOCSubsection"],
+  BaseStyle->"TOCSubsection"]], "TOCSubsection",ExpressionUUID->"6ed2d2a7-\
+28f8-46cb-8b84-3f508fff07f9"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
@@ -482,16 +531,18 @@ Cell[BoxData[
     "Enrichment of Genomic KEGG Pathways (KEGG: Kyoto Encyclopedia of Genes \
 and Genomes)"]],"paclet:MathIOmica/tutorial/MathIOmicaTutorial#794541302"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"],
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"91eb76c2-4e48-42e6-b066-e60411918675"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Visualization of Pathways from KEGG"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial#36506248"},
   "RefLink",
-  BaseStyle->{"TOCSubsubsection", "CodeFont"}]], "TOCSubsubsection"]
+  BaseStyle->"TOCSubsubsection"]], "TOCSubsubsection",ExpressionUUID->\
+"24b320f0-612b-417d-9776-6f444d8c3580"]
 }, Open  ]]
-}, Closed]]
+}, Open  ]]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -501,35 +552,40 @@ Cell[BoxData[
     TextData["MathIOmica: Dynamic Transcriptome"]],
    "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome#509267359"},
   "RefLink",
-  BaseStyle->{"TOCChapter", "CodeFont"}]], "TOCChapter"],
+  BaseStyle->"TOCChapter"]], "TOCChapter",ExpressionUUID->"a92dfd22-d2b3-436e-\
+9f42-107cc76b0b03"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Loading the MathIOmica Package"]],
    "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome#2133290847"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"cf7da754-377b-4f19-\
+9926-86e9bbc3ce1b"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Importing OmicsObject Transcriptome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome#257268298"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"2bf20fff-316d-4322-\
+8c1e-9412b72d348b"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Processing OmicsObject Transcriptome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome#208227830"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"99d663ad-b21d-4329-\
+9ed0-58fdc4b42334"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Resampling Transcriptome Data"]],
    "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome#1956292219"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"367d8dc7-7fb8-4d70-\
+ba69-ffde4e4cfcf3"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
@@ -538,21 +594,24 @@ Cell[BoxData[
 Series"]],
    "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome#834625544"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"7a3eb03d-73c6-4988-\
+b2c1-7cc3b6e3f0cb"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Annotation and Enrichment"]],
    "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome#2035743524"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"0ccdbd5e-c9b8-4905-\
+a073-1994569e38ce"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Appendix: All Commands Up to Enrichment Analysis in One Step"]],
    "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome#981111770"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"]
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"66e0ff19-f023-4c2b-\
+a6c3-eed505f34e14"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -561,509 +620,601 @@ Cell[BoxData[
  TemplateBox[{Cell[
     TextData["ReferencePages/Symbols"]],"paclet:MathIOmica/ref/Applier"},
   "RefLink",
-  BaseStyle->{"TOCChapter", "CodeFont"}]], "TOCChapter"],
+  BaseStyle->"TOCChapter"]], "TOCChapter",ExpressionUUID->"3041fbb2-08a1-457b-\
+9466-c2ab82209a53"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Applier"]],"paclet:MathIOmica/ref/Applier"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"93eafe4f-324b-45e8-\
+b56d-1d2036ff1ea2"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["ApplierList"]],"paclet:MathIOmica/ref/ApplierList"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"609f6541-ceab-410e-\
+bbcc-eba3e083977d"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["ApplyBoxCoxTransform"]],
    "paclet:MathIOmica/ref/ApplyBoxCoxTransform"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"117342d2-9d6b-4438-\
+afe3-4a4b217dc2a7"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["AssociationLabels"]],"paclet:MathIOmica/ref/AssociationLabels"},
   
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"3205b0b9-024c-42ee-\
+b7b2-b9fd0a7e6fbe"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Autocorrelation"]],"paclet:MathIOmica/ref/Autocorrelation"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"4df5272f-e33d-4af7-\
+b435-8bf84b8b22a3"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["BenjaminiHochbergFDR"]],
    "paclet:MathIOmica/ref/BenjaminiHochbergFDR"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"c868dab8-d21b-471c-\
+b561-664c4f617bf9"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["BootstrapGeneral"]],"paclet:MathIOmica/ref/BootstrapGeneral"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"9e352256-2297-455c-\
+870f-252176050556"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["BoxCoxTransform"]],"paclet:MathIOmica/ref/BoxCoxTransform"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"ec8bfc5f-ca9a-48db-\
+b4f6-36ef07d66c56"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["ComponentIndex"]],"paclet:MathIOmica/ref/ComponentIndex"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"74a48d0a-c05b-4627-\
+82c6-b4a02793b7e6"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["ConstantAssociator"]],
    "paclet:MathIOmica/ref/ConstantAssociator"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"d0352ddc-90b0-4c4f-\
+9691-91944ee44235"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["ConstantGeneDictionary"]],
    "paclet:MathIOmica/ref/ConstantGeneDictionary"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"891c904a-fc41-4353-\
+90f5-044ecbb0c501"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["ConstantMathIOmicaDataDirectory"]],
    "paclet:MathIOmica/ref/ConstantMathIOmicaDataDirectory"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"5bd1d71c-641b-431c-\
+8934-9d4be94566f0"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["ConstantMathIOmicaExampleVideosDirectory"]],
    "paclet:MathIOmica/ref/ConstantMathIOmicaExampleVideosDirectory"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"dfb5b4bf-13c6-438d-\
+a2f6-c588f2df4bf9"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["ConstantMathIOmicaExamplesDirectory"]],
    "paclet:MathIOmica/ref/ConstantMathIOmicaExamplesDirectory"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"5b349e56-55ed-4f8b-\
+9f9c-cd8355c37f0e"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["ConstantSeriesClean"]],
    "paclet:MathIOmica/ref/ConstantSeriesClean"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"571ad5b4-f59c-40d3-\
+887d-aedaf15ec69d"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["CreateTimeSeries"]],"paclet:MathIOmica/ref/CreateTimeSeries"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"d4f5d070-7328-48b0-\
+ab2a-0a88d38649e8"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["DataImporter"]],"paclet:MathIOmica/ref/DataImporter"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"41c39e87-2590-4ad7-\
+b613-67079ec0971d"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["DataImporterDirect"]],
    "paclet:MathIOmica/ref/DataImporterDirect"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"d1d2cbeb-a102-49b7-\
+b40d-00a28b4b2498"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["DataImporterDirectLabeled"]],
    "paclet:MathIOmica/ref/DataImporterDirectLabeled"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"6e7202ac-3826-4b73-\
+8b73-b80e57f428ad"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["DelimiterList"]],"paclet:MathIOmica/ref/DelimiterList"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"d24befe5-63f3-46cd-\
+8ca9-63c7daf77cb8"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["EnlargeInnerAssociation"]],
    "paclet:MathIOmica/ref/EnlargeInnerAssociation"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"12ce93cd-9c0b-4f5a-\
+9838-55e7d82c6c76"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["EnlargeOuterAssociation"]],
    "paclet:MathIOmica/ref/EnlargeOuterAssociation"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"46eca35d-ecea-4694-\
+a89e-de0244123b7f"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["EnrichmentReportExport"]],
    "paclet:MathIOmica/ref/EnrichmentReportExport"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"72bf1091-3831-4c26-\
+af64-cf716f4ffc09"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["FileSelector"]],"paclet:MathIOmica/ref/FileSelector"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"e4184227-4239-4259-\
+853a-4f3403d3fbbb"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["FilterMissing"]],"paclet:MathIOmica/ref/FilterMissing"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"ea5c64fb-669d-48ec-\
+94d5-8e123b25843f"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["FilteringFunction"]],"paclet:MathIOmica/ref/FilteringFunction"},
   
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"84cba2af-5d8d-416e-\
+8f46-338734f21366"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["GOAnalysis"]],"paclet:MathIOmica/ref/GOAnalysis"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"ea9ae488-ec41-4ebe-\
+a852-f59d0556c2a6"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["GOAnalysisAssigner"]],
    "paclet:MathIOmica/ref/GOAnalysisAssigner"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"9d092ff1-5cd1-4473-\
+be46-80c42361046d"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["GeneTranslation"]],"paclet:MathIOmica/ref/GeneTranslation"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"f3a571c5-ad6d-48eb-\
+b540-aab28e8b3ae2"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["GetGeneDictionary"]],"paclet:MathIOmica/ref/GetGeneDictionary"},
   
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"7b60e679-e03f-459a-\
+ad2d-1b8a36d11baf"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Heatmapper"]],"paclet:MathIOmica/ref/Heatmapper"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"876ad5c3-9d53-4147-\
+96f6-8a4eff3e9740"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["HorizontalSelection"]],
    "paclet:MathIOmica/ref/HorizontalSelection"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"c618d4ee-d9fd-4e5a-\
+ae84-a8c118d8481d"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["InverseAutocovariance"]],
    "paclet:MathIOmica/ref/InverseAutocovariance"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"2129370e-e562-49cc-\
+b697-fb256942b310"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["JoinNestedAssociations"]],
    "paclet:MathIOmica/ref/JoinNestedAssociations"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"0fdf926d-b00a-4fa9-\
+b287-f8b05d511f43"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["KEGGAnalysis"]],"paclet:MathIOmica/ref/KEGGAnalysis"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"29ba58f4-f86f-4fe4-\
+98d8-f88aadcf9530"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["KEGGAnalysisAssigner"]],
    "paclet:MathIOmica/ref/KEGGAnalysisAssigner"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"02ab0b1a-4495-4444-\
+941a-f1a2997f6bf7"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["KEGGDictionary"]],"paclet:MathIOmica/ref/KEGGDictionary"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"5242b005-eda0-4caf-\
+a8c2-6651d49fff06"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["KEGGPathwayVisual"]],"paclet:MathIOmica/ref/KEGGPathwayVisual"},
   
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"32013645-baf4-485d-\
+842e-ab90232b5c4a"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["LabelFunction"]],"paclet:MathIOmica/ref/LabelFunction"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"e6b84766-c418-471d-\
+ac1f-a6c1ff4f5551"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["ListIndex"]],"paclet:MathIOmica/ref/ListIndex"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"99384555-5b6d-46fb-\
+86b4-8c4964c8c6ab"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["LombScargle"]],"paclet:MathIOmica/ref/LombScargle"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"e1838b10-ab17-48e5-\
+a747-5d96941d30e0"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["LowValueTag"]],"paclet:MathIOmica/ref/LowValueTag"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"8167f4f7-f63b-4ab4-\
+9e92-9627fd1a4648"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MSViewer"]],"paclet:MathIOmica/ref/MSViewer"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"2b4385b1-8998-4bc1-\
+a4c0-85e255220d6d"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MassDictionary"]],"paclet:MathIOmica/ref/MassDictionary"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"e4f0aa02-b051-4eae-\
+9d9c-7a7239d72f16"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MassMatcher"]],"paclet:MathIOmica/ref/MassMatcher"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"45b1518d-4ebc-4ce2-\
+8406-5a35b28500cf"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MatrixClusters"]],"paclet:MathIOmica/ref/MatrixClusters"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"68a9c442-8183-45ac-\
+b2a1-87bba1cbec5e"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MatrixDendrogramHeatmap"]],
    "paclet:MathIOmica/ref/MatrixDendrogramHeatmap"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"f9e93578-264a-478f-\
+8300-b3de94ccb2b8"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MatrixDendrogramsHeatmaps"]],
    "paclet:MathIOmica/ref/MatrixDendrogramsHeatmaps"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"737ec1a7-b9f8-4160-\
+9a33-7ac6420b891c"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MeasurementApplier"]],
    "paclet:MathIOmica/ref/MeasurementApplier"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"fabca321-3241-4aae-\
+ae71-c515bf374fb5"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MissingDataCreator"]],
    "paclet:MathIOmica/ref/MissingDataCreator"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"adcd1b7d-5322-4ed3-\
+a628-1169f5fe4856"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MissingReplacement"]],
    "paclet:MathIOmica/ref/MissingReplacement"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"d2840c25-b3e9-4335-\
+911c-df35f6b81ca0"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["OBOGODictionary"]],"paclet:MathIOmica/ref/OBOGODictionary"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"3086d7ba-dcd5-48e7-\
+95d9-53632329031d"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["OmicsObject"]],"paclet:MathIOmica/ref/OmicsObject"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"30ef543d-e8ea-4806-\
+a29d-81a392014dbe"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["OmicsObjectCreator"]],
    "paclet:MathIOmica/ref/OmicsObjectCreator"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"d8971920-9a3c-4717-\
+b888-fbcbd70ce924"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["OmicsObjectMerge"]],"paclet:MathIOmica/ref/OmicsObjectMerge"},
+  "RefLink",
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"e912f12f-00a4-416c-\
+b589-d0d30ecabed7"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["OmicsObjectPairedMerge"]],
+   "paclet:MathIOmica/ref/OmicsObjectPairedMerge"},
+  "RefLink",
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"cd2ab180-e14c-4bea-\
+b8fa-2a579ffb69f1"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["OmicsObjectUniqueMassConverter"]],
    "paclet:MathIOmica/ref/OmicsObjectUniqueMassConverter"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"a369eb0b-4df1-4ca7-\
+a070-a3e35180a6b9"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["OversamplingRate"]],"paclet:MathIOmica/ref/OversamplingRate"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"1db505c0-27bb-43ac-\
+86b4-070e6b9c67f1"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["QuantileEstimator"]],"paclet:MathIOmica/ref/QuantileEstimator"},
   
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"06740df6-da1a-49ab-\
+b978-c61bd4df3fbe"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["QuantileNormalization"]],
    "paclet:MathIOmica/ref/QuantileNormalization"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"73d227f2-2fe4-4d19-\
+b38b-83d5f9ff58cd"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["Returner"]],"paclet:MathIOmica/ref/Returner"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"8b25d761-5623-4266-\
+b064-81f8c8d99639"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["SampleKind"]],"paclet:MathIOmica/ref/SampleKind"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"eb4efeb7-f76e-4388-\
+b3a5-d0fdd095b95f"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["SamplingFunction"]],"paclet:MathIOmica/ref/SamplingFunction"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"2c360c68-083c-4bdc-\
+9ca8-89e52beb0b31"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["SelectionFunction"]],"paclet:MathIOmica/ref/SelectionFunction"},
   
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"d89966e8-7ae2-4717-\
+a747-4de1609fb5f9"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["SeriesApplier"]],"paclet:MathIOmica/ref/SeriesApplier"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"ee1f3459-2b0d-459f-\
+8ef3-51ca0b1bb382"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["SeriesCompare"]],"paclet:MathIOmica/ref/SeriesCompare"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"fef44b2d-096e-4ba7-\
+9179-c35dc4f38136"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["SeriesInternalCompare"]],
    "paclet:MathIOmica/ref/SeriesInternalCompare"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"99d855eb-4ee4-4144-\
+8c05-ffabaa9c8be6"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["StandardizeExtended"]],
    "paclet:MathIOmica/ref/StandardizeExtended"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"f1ab77e5-936f-4ceb-\
+a742-6d130eb3c862"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["TimeExtractor"]],"paclet:MathIOmica/ref/TimeExtractor"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"f9125c04-ad89-4153-\
+9ad8-897649968608"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["TimeSeriesClassification"]],
    "paclet:MathIOmica/ref/TimeSeriesClassification"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"425b4008-ed1b-4eff-\
+ab2a-edfe8d036e8f"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["TimeSeriesClusters"]],
    "paclet:MathIOmica/ref/TimeSeriesClusters"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"2c215e3b-7cd1-49f3-\
+beba-be32ccf9b755"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["TimeSeriesDendrogramHeatmap"]],
    "paclet:MathIOmica/ref/TimeSeriesDendrogramHeatmap"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"ea7ab0c2-b9df-4254-\
+8f8f-ce9cd7d8f3f2"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["TimeSeriesDendrogramsHeatmaps"]],
    "paclet:MathIOmica/ref/TimeSeriesDendrogramsHeatmaps"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"3c895173-6ff1-415c-\
+8123-fbcfc03d7008"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["TimeSeriesSingleClusters"]],
    "paclet:MathIOmica/ref/TimeSeriesSingleClusters"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"67865a45-7120-415e-\
+898f-c58f519001be"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["TimeSeriesSingleDendrogramHeatmap"]],
    "paclet:MathIOmica/ref/TimeSeriesSingleDendrogramHeatmap"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"d7d8349c-6f62-4c40-\
+8785-9b7169d6f2de"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["TimeSeriesSingleDendrogramsHeatmaps"]],
    "paclet:MathIOmica/ref/TimeSeriesSingleDendrogramsHeatmaps"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"4f1d0697-6ba0-4cfa-\
+a7f6-81a48fa7bed1"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["UCSCBrowserSQL"]],"paclet:MathIOmica/ref/UCSCBrowserSQL"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"],
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"ec6b17db-5243-4fd5-\
+9a7e-405e020d213c"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["UpperFrequencyFactor"]],
    "paclet:MathIOmica/ref/UpperFrequencyFactor"},
   "RefLink",
-  BaseStyle->{"TOCSection", "CodeFont"}]], "TOCSection"]
-}, Open  ]]
+  BaseStyle->"TOCSection"]], "TOCSection",ExpressionUUID->"0a30e04e-f8d7-49c9-\
+a310-87bf42105317"]
+}, Closed]]
 }, Open  ]],
 
-Cell[" ", "FooterCell"]
+Cell[" ", "FooterCell",ExpressionUUID->"d64ef82f-c966-4c72-b4c0-cb0efb7295e9"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -1079,7 +1230,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2016, 12, 14, 16, 48, 20.830886}", 
+   "built" -> "{2017, 6, 16, 15, 52, 40.227921}", 
     "history" -> {"XX", "", "", ""}, "context" -> "MathIOmica`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -1087,12 +1238,12 @@ TaggingRules->{
     "MathIOmica Package", "status" -> "None", "summary" -> 
     "Guides MathIOmica: Omics Analysis Tutorial MathIOmica: Dynamic \
 Transcriptome", "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$58864, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$66851, "title" -> 
     "MathIOmica Overview", "titlemodifier" -> "", "windowtitle" -> 
     "MathIOmica Overview", "type" -> "Overview", "uri" -> 
     "MathIOmica/tutorial/MathIOmicaOverview"}},
-FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
-2016)",
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 18, \
+2017)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -1114,7 +1265,7 @@ StyleDefinitions->Notebook[{
     StyleData["TutorialRelatedLinksSection"], 
     CellGroupingRules -> {"SectionGrouping", 30}]}, Visible -> False, 
   FrontEndVersion -> 
-  "10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, 2016)", 
+  "11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 18, 2017)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -1128,186 +1279,329 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[591, 21, 2381, 56, 70, "AnchorBarGrid",
+Cell[591, 21, 2669, 58, 70, "AnchorBarGrid", "ExpressionUUID" -> \
+"5c576cd5-126b-453d-8b63-d5f300574d62",
  CellID->1],
 Cell[CellGroupData[{
-Cell[2997, 81, 47, 0, 70, "TOCDocumentTitle"],
+Cell[3285, 83, 102, 0, 70, "TOCDocumentTitle", "ExpressionUUID" -> \
+"38091579-c35a-4948-a039-a694a6e3bf8f"],
 Cell[CellGroupData[{
-Cell[3069, 85, 192, 5, 70, "TOCChapter",
- CellID->2029319270],
-Cell[3264, 92, 200, 5, 70, "TOCSection",
- CellID->433689236]
+Cell[3412, 87, 233, 5, 70, "TOCChapter", "ExpressionUUID" -> \
+"4a6258cb-2809-4d02-a8b3-90791c868b2f",
+ CellID->1567380678],
+Cell[3648, 94, 242, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"798e207a-c131-419d-aa6b-5a4601a69020",
+ CellID->1932641044]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3501, 102, 220, 5, 70, "TOCChapter"],
-Cell[3724, 109, 216, 5, 70, "TOCSection"],
+Cell[3927, 104, 263, 6, 70, "TOCChapter", "ExpressionUUID" -> \
+"50e8fa7a-97b4-4668-bcdf-8105c1b4dba4"],
+Cell[4193, 112, 259, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"16f75937-e956-46e5-9909-c9aaf0f7e692"],
 Cell[CellGroupData[{
-Cell[3965, 118, 203, 5, 70, "TOCSection"],
+Cell[4477, 122, 246, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"95082d71-c03a-40e3-8714-863d6cc20134"],
 Cell[CellGroupData[{
-Cell[4193, 127, 215, 5, 70, "TOCSubsection"],
-Cell[4411, 134, 218, 5, 70, "TOCSubsubsection"],
-Cell[4632, 141, 238, 5, 70, "TOCSubsubsection"],
-Cell[4873, 148, 227, 5, 70, "TOCSubsubsection"]
+Cell[4748, 132, 258, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"5e1cb006-c2a2-46d0-a5f9-eeb2b45867b9"],
+Cell[5009, 140, 261, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"07e3c68a-db16-46bb-9b3d-2e198fc4f936"],
+Cell[5273, 148, 281, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"b9eafd88-cad6-4a40-8856-bab9a3c0d4d5"],
+Cell[5557, 156, 270, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"3e618105-24a9-493b-a125-0eeb8505de3b"]
 }, Open  ]],
-Cell[5115, 156, 204, 5, 70, "TOCSubsection"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[5356, 166, 203, 5, 70, "TOCSection"],
-Cell[5562, 173, 231, 5, 70, "TOCSubsection"],
-Cell[CellGroupData[{
-Cell[5818, 182, 227, 5, 70, "TOCSubsection"],
-Cell[6048, 189, 234, 5, 70, "TOCSubsubsection"],
-Cell[6285, 196, 229, 5, 70, "TOCSubsubsection"],
-Cell[6517, 203, 269, 6, 70, "TOCSubsubsection"],
-Cell[6789, 211, 256, 5, 70, "TOCSubsubsection"]
+Cell[5842, 165, 247, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"4685bb05-7bb2-41b2-a6f6-ed710455b45b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7082, 221, 221, 5, 70, "TOCSubsection"],
-Cell[7306, 228, 230, 5, 70, "TOCSubsubsection"],
-Cell[7539, 235, 274, 6, 70, "TOCSubsubsection"]
-}, Open  ]],
-Cell[7828, 244, 234, 5, 70, "TOCSubsection"]
-}, Closed]],
+Cell[6126, 176, 246, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"b13c42d5-77cb-4175-95f7-e40320c7c393"],
+Cell[6375, 184, 274, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"9688f5a6-0046-4749-b73f-32b944245444"],
 Cell[CellGroupData[{
-Cell[8099, 254, 200, 5, 70, "TOCSection"],
-Cell[8302, 261, 227, 5, 70, "TOCSubsection"],
-Cell[CellGroupData[{
-Cell[8554, 270, 219, 5, 70, "TOCSubsection"],
-Cell[8776, 277, 242, 5, 70, "TOCSubsubsection"],
-Cell[9021, 284, 225, 5, 70, "TOCSubsubsection"],
-Cell[9249, 291, 252, 5, 70, "TOCSubsubsection"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[9538, 301, 216, 5, 70, "TOCSubsection"],
-Cell[9757, 308, 225, 5, 70, "TOCSubsubsection"],
-Cell[9985, 315, 271, 6, 70, "TOCSubsubsection"]
-}, Open  ]],
-Cell[10271, 324, 230, 5, 70, "TOCSubsection"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[10538, 334, 201, 5, 70, "TOCSection"],
-Cell[10742, 341, 229, 5, 70, "TOCSubsection"],
-Cell[CellGroupData[{
-Cell[10996, 350, 221, 5, 70, "TOCSubsection"],
-Cell[11220, 357, 293, 7, 70, "TOCSubsubsection"],
-Cell[11516, 366, 227, 5, 70, "TOCSubsubsection"],
-Cell[11746, 373, 267, 6, 70, "TOCSubsubsection"],
-Cell[12016, 381, 254, 5, 70, "TOCSubsubsection"]
+Cell[6674, 194, 270, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"199f61af-5c31-4b40-9401-0728caf812f3"],
+Cell[6947, 202, 277, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"90cd7f4d-9440-4bd0-9a8e-43f5d15c1a7d"],
+Cell[7227, 210, 272, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"7204c493-1fb8-4e68-a964-340fddd6620f"],
+Cell[7502, 218, 312, 7, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"ec3f34fb-73f6-4c2b-aa8e-5ff5344800b5"],
+Cell[7817, 227, 299, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"e43365a9-f7b6-4150-ac6d-1fce03f070d0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12307, 391, 217, 5, 70, "TOCSubsection"],
-Cell[12527, 398, 225, 5, 70, "TOCSubsubsection"],
-Cell[12755, 405, 270, 6, 70, "TOCSubsubsection"]
+Cell[8153, 238, 264, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"9d17fe25-f187-4f0e-a310-6f70fb77366b"],
+Cell[8420, 246, 273, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"5fc5e53e-535c-4203-aa31-8bb92f538718"],
+Cell[8696, 254, 317, 7, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"2a99f802-cf15-4cba-89aa-6bbe3f223118"]
 }, Open  ]],
-Cell[13040, 414, 231, 5, 70, "TOCSubsection"]
-}, Closed]],
+Cell[9028, 264, 277, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"4e149659-b3ff-4874-b520-fc05824fd554"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[13308, 424, 210, 5, 70, "TOCSection"],
-Cell[13521, 431, 228, 5, 70, "TOCSubsection"],
-Cell[13752, 438, 221, 5, 70, "TOCSubsection"]
-}, Closed]],
-Cell[13988, 446, 199, 5, 70, "TOCSection"],
+Cell[9342, 275, 243, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"234b9358-1d04-4a5d-9f67-9364d7c55a25"],
+Cell[9588, 283, 270, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"2e30a4c3-3979-4954-a92d-9fd035a893c5"],
 Cell[CellGroupData[{
-Cell[14212, 455, 211, 5, 70, "TOCSection"],
-Cell[14426, 462, 214, 5, 70, "TOCSubsection"],
+Cell[9883, 293, 262, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"decfd068-b866-4a10-99e4-9e2e6b84efef"],
+Cell[10148, 301, 285, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"e67dc44a-d492-4dee-aae2-3ee18c6bce45"],
+Cell[10436, 309, 268, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"cceecd54-c89b-4002-b9d9-c56218084590"],
+Cell[10707, 317, 295, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"346b3882-f0e9-4b0d-9ca2-1678ed4f6c1b"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[14665, 471, 207, 5, 70, "TOCSubsection"],
-Cell[14875, 478, 283, 6, 70, "TOCSubsubsection"],
-Cell[15161, 486, 231, 5, 70, "TOCSubsubsection"]
+Cell[11039, 328, 259, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"5325966d-6e89-4f4f-a080-9cf07e401157"],
+Cell[11301, 336, 268, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"8497b293-2fbf-4d47-90dd-5fe4ea759dad"],
+Cell[11572, 344, 314, 7, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"3136b63f-b302-4cbf-bbdb-34fb6dfe135b"]
+}, Open  ]],
+Cell[11901, 354, 273, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"f799d90a-3529-4c4b-bfef-635d019d00a8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12211, 365, 244, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"156ef1cf-bac2-405d-bccd-3797210bf58d"],
+Cell[12458, 373, 272, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"627df7d5-1a0f-449d-a276-8c94f859fbc6"],
+Cell[CellGroupData[{
+Cell[12755, 383, 264, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"bb548c1d-2ff3-4870-80ae-fe2d3dcdb8fb"],
+Cell[13022, 391, 336, 8, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"153799ec-b9f8-4c1b-bb5b-cc2f560d8444"],
+Cell[13361, 401, 270, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"38561038-bb16-40a0-a83e-8943f089b2cc"],
+Cell[13634, 409, 310, 7, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"7628aa8c-52a9-45cc-9028-bd02c6029bf2"],
+Cell[13947, 418, 297, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"feaa3d90-33da-44eb-85ea-9858800f8f27"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14281, 429, 260, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"2ea4a421-5e7a-4851-994a-97e96119c212"],
+Cell[14544, 437, 268, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"b0efcc89-c809-46d2-b854-beba23a65283"],
+Cell[14815, 445, 313, 7, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"3ce1ca68-b28d-48a9-8df5-0719b8c3ed9a"]
+}, Open  ]],
+Cell[15143, 455, 274, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"a75a7584-484a-4424-9a48-43934d90a8e0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15454, 466, 253, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"6fbf83fa-13ab-484e-986d-3120e014d5fa"],
+Cell[15710, 474, 271, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"60cc385e-960d-424d-ba9e-85490cbbe550"],
+Cell[15984, 482, 264, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"f027fd10-259c-4cf5-8b2d-857673740b45"]
+}, Open  ]],
+Cell[16263, 491, 242, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"ce8d4d74-99b2-4780-97c0-9014ed021dd8"],
+Cell[CellGroupData[{
+Cell[16530, 501, 254, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"d2f20cb4-772f-4314-bcf0-fca9d9db3454"],
+Cell[16787, 509, 257, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"d1b2161f-290c-4d12-995c-4a1bbaf4b5f1"],
+Cell[CellGroupData[{
+Cell[17069, 519, 250, 6, 70, "TOCSubsection", "ExpressionUUID" -> \
+"6ed2d2a7-28f8-46cb-8b84-3f508fff07f9"],
+Cell[17322, 527, 326, 7, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"91eb76c2-4e48-42e6-b066-e60411918675"],
+Cell[17651, 536, 274, 6, 70, "TOCSubsubsection", "ExpressionUUID" -> \
+"24b320f0-612b-417d-9776-6f444d8c3580"]
 }, Open  ]]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[17986, 549, 273, 6, 70, "TOCChapter", "ExpressionUUID" -> \
+"a92dfd22-d2b3-436e-9f42-107cc76b0b03"],
+Cell[18262, 557, 271, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"cf7da754-377b-4f19-9926-86e9bbc3ce1b"],
+Cell[18536, 565, 280, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"2bf20fff-316d-4322-8c1e-9412b72d348b"],
+Cell[18819, 573, 281, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"99d663ad-b21d-4329-9ed0-58fdc4b42334"],
+Cell[19103, 581, 270, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"367d8dc7-7fb8-4d70-ba69-ffde4e4cfcf3"],
+Cell[19376, 589, 321, 8, 70, "TOCSection", "ExpressionUUID" -> \
+"7a3eb03d-73c6-4988-b2c1-7cc3b6e3f0cb"],
+Cell[19700, 599, 266, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"0ccdbd5e-c9b8-4905-a073-1994569e38ce"],
+Cell[19969, 607, 300, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"66e0ff19-f023-4c2b-a6c3-eed505f34e14"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[20306, 618, 220, 5, 70, "TOCChapter", "ExpressionUUID" -> \
+"3041fbb2-08a1-457b-9466-c2ab82209a53"],
+Cell[20529, 625, 205, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"93eafe4f-324b-45e8-b56d-1d2036ff1ea2"],
+Cell[20737, 632, 213, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"609f6541-ceab-410e-bbcc-eba3e083977d"],
+Cell[20953, 639, 235, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"117342d2-9d6b-4438-afe3-4a4b217dc2a7"],
+Cell[21191, 647, 228, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"3205b0b9-024c-42ee-b7b2-b9fd0a7e6fbe"],
+Cell[21422, 655, 221, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"4df5272f-e33d-4af7-b435-8bf84b8b22a3"],
+Cell[21646, 662, 235, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"c868dab8-d21b-471c-b561-664c4f617bf9"],
+Cell[21884, 670, 223, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"9e352256-2297-455c-870f-252176050556"],
+Cell[22110, 677, 221, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"ec8bfc5f-ca9a-48db-b4f6-36ef07d66c56"],
+Cell[22334, 684, 219, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"74a48d0a-c05b-4627-82c6-b4a02793b7e6"],
+Cell[22556, 691, 231, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"d0352ddc-90b0-4c4f-9691-91944ee44235"],
+Cell[22790, 699, 239, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"891c904a-fc41-4353-90f5-044ecbb0c501"],
+Cell[23032, 707, 257, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"5bd1d71c-641b-431c-8934-9d4be94566f0"],
+Cell[23292, 715, 275, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"dfb5b4bf-13c6-438d-a2f6-c588f2df4bf9"],
+Cell[23570, 723, 265, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"5b349e56-55ed-4f8b-9f9c-cd8355c37f0e"],
+Cell[23838, 731, 233, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"571ad5b4-f59c-40d3-887d-aedaf15ec69d"],
+Cell[24074, 739, 223, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"d4f5d070-7328-48b0-ab2a-0a88d38649e8"],
+Cell[24300, 746, 215, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"41c39e87-2590-4ad7-b613-67079ec0971d"],
+Cell[24518, 753, 231, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"d1d2cbeb-a102-49b7-b40d-00a28b4b2498"],
+Cell[24752, 761, 245, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"6e7202ac-3826-4b73-8b73-b80e57f428ad"],
+Cell[25000, 769, 217, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"d24befe5-63f3-46cd-8ca9-63c7daf77cb8"],
+Cell[25220, 776, 241, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"12ce93cd-9c0b-4f5a-9838-55e7d82c6c76"],
+Cell[25464, 784, 241, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"46eca35d-ecea-4694-a89e-de0244123b7f"],
+Cell[25708, 792, 239, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"72bf1091-3831-4c26-af64-cf716f4ffc09"],
+Cell[25950, 800, 215, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"e4184227-4239-4259-853a-4f3403d3fbbb"],
+Cell[26168, 807, 217, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"ea5c64fb-669d-48ec-94d5-8e123b25843f"],
+Cell[26388, 814, 228, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"84cba2af-5d8d-416e-8f46-338734f21366"],
+Cell[26619, 822, 211, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"ea9ae488-ec41-4ebe-a852-f59d0556c2a6"],
+Cell[26833, 829, 231, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"9d092ff1-5cd1-4473-be46-80c42361046d"],
+Cell[27067, 837, 221, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"f3a571c5-ad6d-48eb-b540-aab28e8b3ae2"],
+Cell[27291, 844, 228, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"7b60e679-e03f-459a-ad2d-1b8a36d11baf"],
+Cell[27522, 852, 211, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"876ad5c3-9d53-4147-96f6-8a4eff3e9740"],
+Cell[27736, 859, 233, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"c618d4ee-d9fd-4e5a-ae84-a8c118d8481d"],
+Cell[27972, 867, 237, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"2129370e-e562-49cc-b697-fb256942b310"],
+Cell[28212, 875, 239, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"0fdf926d-b00a-4fa9-b287-f8b05d511f43"],
+Cell[28454, 883, 215, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"29ba58f4-f86f-4fe4-98d8-f88aadcf9530"],
+Cell[28672, 890, 235, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"02ab0b1a-4495-4444-941a-f1a2997f6bf7"],
+Cell[28910, 898, 219, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"5242b005-eda0-4caf-a8c2-6651d49fff06"],
+Cell[29132, 905, 228, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"32013645-baf4-485d-842e-ab90232b5c4a"],
+Cell[29363, 913, 217, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"e6b84766-c418-471d-ac1f-a6c1ff4f5551"],
+Cell[29583, 920, 209, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"99384555-5b6d-46fb-86b4-8c4964c8c6ab"],
+Cell[29795, 927, 213, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"e1838b10-ab17-48e5-a747-5d96941d30e0"],
+Cell[30011, 934, 213, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"8167f4f7-f63b-4ab4-9e92-9627fd1a4648"],
+Cell[30227, 941, 207, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"2b4385b1-8998-4bc1-a4c0-85e255220d6d"],
+Cell[30437, 948, 219, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"e4f0aa02-b051-4eae-9d9c-7a7239d72f16"],
+Cell[30659, 955, 213, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"45b1518d-4ebc-4ce2-8406-5a35b28500cf"],
+Cell[30875, 962, 219, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"68a9c442-8183-45ac-b2a1-87bba1cbec5e"],
+Cell[31097, 969, 241, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"f9e93578-264a-478f-8300-b3de94ccb2b8"],
+Cell[31341, 977, 245, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"737ec1a7-b9f8-4160-9a33-7ac6420b891c"],
+Cell[31589, 985, 231, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"fabca321-3241-4aae-ae71-c515bf374fb5"],
+Cell[31823, 993, 231, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"adcd1b7d-5322-4ed3-a628-1169f5fe4856"],
+Cell[32057, 1001, 231, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"d2840c25-b3e9-4335-911c-df35f6b81ca0"],
+Cell[32291, 1009, 221, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"3086d7ba-dcd5-48e7-95d9-53632329031d"],
+Cell[32515, 1016, 213, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"30ef543d-e8ea-4806-a29d-81a392014dbe"],
+Cell[32731, 1023, 231, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"d8971920-9a3c-4717-b888-fbcbd70ce924"],
+Cell[32965, 1031, 223, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"e912f12f-00a4-416c-b589-d0d30ecabed7"],
+Cell[33191, 1038, 239, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"cd2ab180-e14c-4bea-b8fa-2a579ffb69f1"],
+Cell[33433, 1046, 255, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"a369eb0b-4df1-4ca7-a070-a3e35180a6b9"],
+Cell[33691, 1054, 223, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"1db505c0-27bb-43ac-86b4-070e6b9c67f1"],
+Cell[33917, 1061, 228, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"06740df6-da1a-49ab-b978-c61bd4df3fbe"],
+Cell[34148, 1069, 237, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"73d227f2-2fe4-4d19-b38b-83d5f9ff58cd"],
+Cell[34388, 1077, 207, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"8b25d761-5623-4266-b064-81f8c8d99639"],
+Cell[34598, 1084, 211, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"eb4efeb7-f76e-4388-b3a5-d0fdd095b95f"],
+Cell[34812, 1091, 223, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"2c360c68-083c-4bdc-9ca8-89e52beb0b31"],
+Cell[35038, 1098, 228, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"d89966e8-7ae2-4717-a747-4de1609fb5f9"],
+Cell[35269, 1106, 217, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"ee1f3459-2b0d-459f-8ef3-51ca0b1bb382"],
+Cell[35489, 1113, 217, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"fef44b2d-096e-4ba7-9179-c35dc4f38136"],
+Cell[35709, 1120, 237, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"99d855eb-4ee4-4144-8c05-ffabaa9c8be6"],
+Cell[35949, 1128, 233, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"f1ab77e5-936f-4ceb-a742-6d130eb3c862"],
+Cell[36185, 1136, 217, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"f9125c04-ad89-4153-9ad8-897649968608"],
+Cell[36405, 1143, 243, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"425b4008-ed1b-4eff-ab2a-edfe8d036e8f"],
+Cell[36651, 1151, 231, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"2c215e3b-7cd1-49f3-beba-be32ccf9b755"],
+Cell[36885, 1159, 249, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"ea7ab0c2-b9df-4254-8f8f-ce9cd7d8f3f2"],
+Cell[37137, 1167, 253, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"3c895173-6ff1-415c-8123-fbcfc03d7008"],
+Cell[37393, 1175, 243, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"67865a45-7120-415e-898f-c58f519001be"],
+Cell[37639, 1183, 261, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"d7d8349c-6f62-4c40-8785-9b7169d6f2de"],
+Cell[37903, 1191, 265, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"4f1d0697-6ba0-4cfa-a7f6-81a48fa7bed1"],
+Cell[38171, 1199, 219, 5, 70, "TOCSection", "ExpressionUUID" -> \
+"ec6b17db-5243-4fd5-9a7e-405e020d213c"],
+Cell[38393, 1206, 235, 6, 70, "TOCSection", "ExpressionUUID" -> \
+"0a30e04e-f8d7-49c9-a310-87bf42105317"]
 }, Closed]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[15453, 498, 230, 5, 70, "TOCChapter"],
-Cell[15686, 505, 228, 5, 70, "TOCSection"],
-Cell[15917, 512, 237, 5, 70, "TOCSection"],
-Cell[16157, 519, 238, 5, 70, "TOCSection"],
-Cell[16398, 526, 227, 5, 70, "TOCSection"],
-Cell[16628, 533, 278, 7, 70, "TOCSection"],
-Cell[16909, 542, 223, 5, 70, "TOCSection"],
-Cell[17135, 549, 257, 5, 70, "TOCSection"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[17429, 559, 177, 4, 70, "TOCChapter"],
-Cell[17609, 565, 162, 4, 70, "TOCSection"],
-Cell[17774, 571, 170, 4, 70, "TOCSection"],
-Cell[17947, 577, 192, 5, 70, "TOCSection"],
-Cell[18142, 584, 185, 5, 70, "TOCSection"],
-Cell[18330, 591, 178, 4, 70, "TOCSection"],
-Cell[18511, 597, 192, 5, 70, "TOCSection"],
-Cell[18706, 604, 180, 4, 70, "TOCSection"],
-Cell[18889, 610, 178, 4, 70, "TOCSection"],
-Cell[19070, 616, 176, 4, 70, "TOCSection"],
-Cell[19249, 622, 188, 5, 70, "TOCSection"],
-Cell[19440, 629, 196, 5, 70, "TOCSection"],
-Cell[19639, 636, 214, 5, 70, "TOCSection"],
-Cell[19856, 643, 232, 5, 70, "TOCSection"],
-Cell[20091, 650, 222, 5, 70, "TOCSection"],
-Cell[20316, 657, 190, 5, 70, "TOCSection"],
-Cell[20509, 664, 180, 4, 70, "TOCSection"],
-Cell[20692, 670, 172, 4, 70, "TOCSection"],
-Cell[20867, 676, 188, 5, 70, "TOCSection"],
-Cell[21058, 683, 202, 5, 70, "TOCSection"],
-Cell[21263, 690, 174, 4, 70, "TOCSection"],
-Cell[21440, 696, 198, 5, 70, "TOCSection"],
-Cell[21641, 703, 198, 5, 70, "TOCSection"],
-Cell[21842, 710, 196, 5, 70, "TOCSection"],
-Cell[22041, 717, 172, 4, 70, "TOCSection"],
-Cell[22216, 723, 174, 4, 70, "TOCSection"],
-Cell[22393, 729, 185, 5, 70, "TOCSection"],
-Cell[22581, 736, 168, 4, 70, "TOCSection"],
-Cell[22752, 742, 188, 5, 70, "TOCSection"],
-Cell[22943, 749, 178, 4, 70, "TOCSection"],
-Cell[23124, 755, 185, 5, 70, "TOCSection"],
-Cell[23312, 762, 168, 4, 70, "TOCSection"],
-Cell[23483, 768, 190, 5, 70, "TOCSection"],
-Cell[23676, 775, 194, 5, 70, "TOCSection"],
-Cell[23873, 782, 196, 5, 70, "TOCSection"],
-Cell[24072, 789, 172, 4, 70, "TOCSection"],
-Cell[24247, 795, 192, 5, 70, "TOCSection"],
-Cell[24442, 802, 176, 4, 70, "TOCSection"],
-Cell[24621, 808, 185, 5, 70, "TOCSection"],
-Cell[24809, 815, 174, 4, 70, "TOCSection"],
-Cell[24986, 821, 166, 4, 70, "TOCSection"],
-Cell[25155, 827, 170, 4, 70, "TOCSection"],
-Cell[25328, 833, 170, 4, 70, "TOCSection"],
-Cell[25501, 839, 164, 4, 70, "TOCSection"],
-Cell[25668, 845, 176, 4, 70, "TOCSection"],
-Cell[25847, 851, 170, 4, 70, "TOCSection"],
-Cell[26020, 857, 176, 4, 70, "TOCSection"],
-Cell[26199, 863, 198, 5, 70, "TOCSection"],
-Cell[26400, 870, 202, 5, 70, "TOCSection"],
-Cell[26605, 877, 188, 5, 70, "TOCSection"],
-Cell[26796, 884, 188, 5, 70, "TOCSection"],
-Cell[26987, 891, 188, 5, 70, "TOCSection"],
-Cell[27178, 898, 178, 4, 70, "TOCSection"],
-Cell[27359, 904, 170, 4, 70, "TOCSection"],
-Cell[27532, 910, 188, 5, 70, "TOCSection"],
-Cell[27723, 917, 212, 5, 70, "TOCSection"],
-Cell[27938, 924, 180, 4, 70, "TOCSection"],
-Cell[28121, 930, 185, 5, 70, "TOCSection"],
-Cell[28309, 937, 194, 5, 70, "TOCSection"],
-Cell[28506, 944, 164, 4, 70, "TOCSection"],
-Cell[28673, 950, 168, 4, 70, "TOCSection"],
-Cell[28844, 956, 180, 4, 70, "TOCSection"],
-Cell[29027, 962, 185, 5, 70, "TOCSection"],
-Cell[29215, 969, 174, 4, 70, "TOCSection"],
-Cell[29392, 975, 174, 4, 70, "TOCSection"],
-Cell[29569, 981, 194, 5, 70, "TOCSection"],
-Cell[29766, 988, 190, 5, 70, "TOCSection"],
-Cell[29959, 995, 174, 4, 70, "TOCSection"],
-Cell[30136, 1001, 200, 5, 70, "TOCSection"],
-Cell[30339, 1008, 188, 5, 70, "TOCSection"],
-Cell[30530, 1015, 206, 5, 70, "TOCSection"],
-Cell[30739, 1022, 210, 5, 70, "TOCSection"],
-Cell[30952, 1029, 200, 5, 70, "TOCSection"],
-Cell[31155, 1036, 218, 5, 70, "TOCSection"],
-Cell[31376, 1043, 222, 5, 70, "TOCSection"],
-Cell[31601, 1050, 176, 4, 70, "TOCSection"],
-Cell[31780, 1056, 192, 5, 70, "TOCSection"]
-}, Open  ]]
 }, Open  ]],
-Cell[31999, 1065, 23, 0, 70, "FooterCell"]
+Cell[38655, 1216, 78, 0, 70, "FooterCell", "ExpressionUUID" -> \
+"d64ef82f-c966-4c72-b4c0-cb0efb7295e9"]
 }
 ]
 *)

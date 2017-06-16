@@ -3,7 +3,7 @@
 (* Created by the Wolfram Workbench Nov 25, 2015 *)
 (*The MIT License (MIT)
 
-Copyright (c) 2016 George I. Mias, G. Mias Lab, Department of Biochemistry and Molecular Biology, Michigan State University, East Lansing 48824.
+Copyright (c) 2016-17 George I. Mias, G. Mias Lab, Department of Biochemistry and Molecular Biology, Michigan State University, East Lansing 48824.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,11 +22,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.*)
-(* TODO Consider Mouse annotations as example *)
-(* TODO Consider Drug enrichment analysis for KEGG *)
-(* TODO Consider KEGG analysis for ath and mouse including KEGG and GO analyses and visualization - need UCSC gene tables*)
-(* TODO Omics Tutorials, Guide, Overview at the very end *)
-(* TODO generate example multi-omics data for KEGGPathwayVisual *)
 
 BeginPackage["MathIOmica`",{"HierarchicalClustering`",
     "DatabaseLink`",
@@ -148,6 +143,10 @@ SeriesInternalCompare::usage = "SeriesInternalCompare[associationOfLists] compar
 ConstantSeriesClean::usage = "ConstantSeriesClean[associationOfLists] removes constant list series from associationOfLists values.";
 
 JoinNestedAssociations::usage = "JoinNestedAssociations[associationList] merges the nested associationList by joining the inner associations.";
+
+OmicsObjectPairedMerge::usage="OmicsObjectPairedMerge[omicsObject1,omicsObject2] merges pairwise omicsObject1 and omicsObject2 values that have the same inner and outer keys.";
+
+OmicsObjectMerge::usage="OmicsObjectMerge[{omicsObject1,omicsObject2,...},f] merges a list of OmicsObject components {omicsObject1,omicsObject2,...}, using the function f to combine values with the same inner and outer keys."; 
 
 (* ::Section:: *)
 (*#####HypothesisTesting#####*)
@@ -280,6 +279,8 @@ FrequenciesOnly::usage="FrequenciesOnly is an option for LombScargle that specif
 
 FunctionOptions::usage="FunctionOptions is an option for MatrixDendrogramsHeatmaps and TimeSeriesDendrogramsHeatmaps that specifies a list of options to be passed to the internal MatrixDendrogramHeatmap and TimeSeriesDendrogramHeatmap respectively.";
 (*MatrixDendrogramsHeatmaps,TimeSeriesDendrogramsHeatmaps,TimeSeriesSingleDendrogramsHeatmaps*)
+
+FunctionForm::usage="FunctionForm is an option for OmicsObjectPairedMerge that specifies the function used in combining paired values from the two OmicsObject inputs.";
 
 GeneDictionary::usage="GeneDictionary is an option for MathIOmica functions, that points to an existing variable to use as a gene dictionary in annotations. If set to None the default ConstantGeneDictionary will be used.";
 (*GOAnalysis, KEGGAnalysis,KEGGPathwayVisual*)
@@ -424,10 +425,13 @@ MissingMask::usage="MissingMask is an option for SeriesApplier that specifies th
 (*SeriesApplier*)
 
 MissingReplacement::usage="MissingReplacement is an option for functions that handle missing data (e.g. EnlargeInnerAssociation) that indicates what value missing data should be globally assigned.";
-(*EnlargeInnerAssociation, EnlargeOuterAssociation*)
+(*EnlargeInnerAssociation, EnlargeOuterAssociation, OmicsObjectPairedMerge, OmicsObjectMerge*)
 
 MissingSubstitution::usage="MissingSubstitution is an option for MathIOmica's clustering functions that specifies a substitution rule for Missing (or other pattern) of data.";
 (*MatrixClusters*)
+
+MissingTest::usage="MissingTest is an option for functions that merge OmicsObject components that specifies the test used to assign a Missing[] value.";
+(*OmicsObjectPairedMerge, OmicsObjectMerge*)
 
 MissingValueColor::usage="MissingValueColor is an option for KEGGPathwayVisual, that specifies a color to be used when Intensities are provided to represent values that are tagged as Missing[]. The color must be provided as RGBColor[] specification.";
 (*KEGGPathwayVisual*)
@@ -2153,7 +2157,7 @@ TimeSeriesClassification[data_, setTimes_, OptionsPattern[]] :=
                                    lsAll);
                               spikeData = 
                                KeyDrop[lsAll, 
-                                Query[All /* Values /* Keys /* (Key[#] & /@ Flatten[#, 1] &)]@
+                                Query[All /* Values /* Keys /* (Flatten[#, 1] &)]@
                                  lsClass];
                               spikeMax = 
                                Association@("SpikeMax" -> 
@@ -2166,13 +2170,13 @@ TimeSeriesClassification[data_, setTimes_, OptionsPattern[]] :=
                                       Query[All /* DeleteMissing /* 
                                          Select[(Min[#] < (spikeC[Length[#]][[2]])) &@
                                             Cases[#[[2]], _Real] &]]@spikeData);
-                                  Print[spikeMin];(*return all spikes with multi-class belonging*),
+                                 (*return all spikes with multi-class belonging*),
                                   spikeMin = 
                                   Association@("SpikeMin" -> 
                                      Query[All /* DeleteMissing /* 
                                         Select[(Min[#] < (spikeC[Length[#]][[2]])) &@
                                            Cases[#[[2]], _Real] &]]@(KeyDrop[
-                                         Key[#] & /@ Flatten[#, 1] &@Keys@Values@spikeMax]@
+                                         Flatten[#, 1] &@Keys@Values@spikeMax]@
                                         spikeData))
                               ];
                               allGroups = Join[spikeMax, spikeMin, lsClass];
@@ -3562,10 +3566,10 @@ FilterMissing[omicsObject_, percentage_, OptionsPattern[]] :=
             Return[outputData],
             testSelection = 
              Query[referencing /* Values /* (Flatten[#, 1] &) /* 
-                Union /* (Map[Key, #, 1] &), Select[MissingQ[#] &] /* Keys]@
+                Union, Select[MissingQ[#] &] /* Keys]@
               outputData;
             outputData2 = Query[All, KeyDrop[testSelection][#] &]@outputData
-        ];
+        ]; 
         Return[outputData2]
     ]
 
@@ -4103,6 +4107,33 @@ JoinNestedAssociations[data_] :=
         Return[returning]
     ];
 
+(* ::Function:: *)
+(* f:OmicsObjectPairedMerge *)
+(***Options***)
+Options[OmicsObjectPairedMerge] = {FunctionForm -> ({ #[[1, 1]] - #[[2, 1]], <|"Metadata 1" -> #[[1, 2]],
+      "Metadata 2" -> #[[2, 
+       2]]|>} &), MissingTest -> ((MemberQ[#, __Missing | {{__Missing}, __} | {__Missing, __}] || 
+     Length[#] < 2) &), MissingReplacement -> Missing[]};
+(***Function***)   
+OmicsObjectPairedMerge[object1_, object2_, OptionsPattern[]] := 
+  Module[{o1 = object1, o2 = object2, f = OptionValue[FunctionForm], 
+    mTest = OptionValue[MissingTest], 
+    mReplace = OptionValue[MissingReplacement], returning},
+   returning = 
+    Merge[{o1, o2}, Merge[#, If[mTest[#], mReplace, f[#]] &] &]];
+
+(* ::Function:: *)
+(* f:OmicsObjectMerge *)
+(***Options***)
+Options[OmicsObjectMerge] = {MissingTest -> ((MemberQ[#1, __Missing | {{__Missing}, __} | {__Missing, __}] ||
+         Length[#1] < #2) &), MissingReplacement -> Missing[]};
+(***Function***)   
+OmicsObjectMerge[object1_, function_, OptionsPattern[]] := 
+  Module[{o1 = object1, length = Length[object1], f = function, 
+    mTest = OptionValue[MissingTest], 
+    mReplace = OptionValue[MissingReplacement], returning},
+   returning = 
+    Merge[o1, Merge[#, If[mTest[#, length], mReplace, f[#]] &] &]];
 
 (* :: Section:: *)
 (*#####HypothesisTesting#####*)

@@ -3,24 +3,25 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 10.4' *)
+(* CreatedBy='Mathematica 11.1' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    866380,      23043]
-NotebookOptionsPosition[    842231,      22240]
-NotebookOutlinePosition[    844390,      22298]
-CellTagsIndexPosition[    844302,      22293]
+NotebookDataLength[    912336,      23567]
+NotebookOptionsPosition[    869604,      22464]
+NotebookOutlinePosition[    871830,      22524]
+CellTagsIndexPosition[    871742,      22519]
 WindowTitle->GOAnalysis
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[GridBox[{
-   {Cell["MATH I OMICA PACKAGE SYMBOL", "PacletNameCell"], Cell[TextData[{
+   {Cell["MATH I OMICA PACKAGE SYMBOL", "PacletNameCell",ExpressionUUID->
+     "8c58c4e8-56ab-4fa5-a9bc-d086dce9b9d0"], Cell[TextData[{
      Cell[BoxData[
       ActionMenuBox[
        FrameBox[
@@ -28,7 +29,7 @@ Cell[BoxData[GridBox[{
           "Tutorials",
           StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
            StripOnInput->False]
-         }]],
+         }],ExpressionUUID->"22fe08e4-fccd-4c26-b7a6-a0d3e36569b3"],
          TextCell[
           Row[{"Tutorials", 
             Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -40,7 +41,8 @@ Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
        Appearance->None,
        MenuAppearance->Automatic,
        MenuStyle->"Tutorials"]],
-      LineSpacing->{1.4, 0}],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "dad4835b-f4a9-492f-bb55-1e58179b5293"],
      "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
 \[ThickSpace]",
      Cell[BoxData[
@@ -50,7 +52,7 @@ Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
           "See Also",
           StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
            StripOnInput->False]
-         }]],
+         }],ExpressionUUID->"6fa57243-61fe-4fa5-a1a8-c4ea969e59ce"],
          TextCell[
           Row[{"See Also", 
             Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -79,7 +81,8 @@ Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
        Appearance->None,
        MenuAppearance->Automatic,
        MenuStyle->"SeeAlso"]],
-      LineSpacing->{1.4, 0}],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "bd423bc3-8ff5-4df5-a670-25642e544f09"],
      "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
 \[ThickSpace]",
      Cell[BoxData[
@@ -89,7 +92,7 @@ Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
           "Related Guides",
           StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
            StripOnInput->False]
-         }]],
+         }],ExpressionUUID->"c8572f7b-6222-4993-bad4-8a43e4648f0e"],
          TextCell[
           Row[{"Related Guides", 
             Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -98,7 +101,8 @@ Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
        Appearance->None,
        MenuAppearance->Automatic,
        MenuStyle->"MoreAbout"]],
-      LineSpacing->{1.4, 0}],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "f9db1ce2-48c0-4764-b1bb-f33752589181"],
      "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
 \[ThickSpace]",
      Cell[BoxData[
@@ -108,7 +112,7 @@ Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
           "URL",
           StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
            StripOnInput->False]
-         }]],
+         }],ExpressionUUID->"d48fee0b-3a96-4ee3-aad4-d2341ecb3edf"],
          TextCell[
           Row[{"URL", 
             Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -140,20 +144,24 @@ GOAnalysis.html"], StandardForm]], "Input", TextClipboardType ->
            URL[
             StringJoin[
              If[
-              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$24713], 
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$29866], 
               "http://reference.wolfram.com/system-modeler/", 
               "http://reference.wolfram.com/language/"], 
              "MathIOmica/ref/GOAnalysis", ".html"]], None}]}]},
        Appearance->None,
        MenuAppearance->Automatic,
        MenuStyle->"URLMenu"]],
-      LineSpacing->{1.4, 0}]
-    }], "AnchorBar"]}
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "25d4e7b8-b988-4f93-9ed3-f18c5a58a3d1"]
+    }], "AnchorBar",ExpressionUUID->"b6fb3691-2100-465c-b54b-146223976eb5"]}
   }]], "AnchorBarGrid",
- CellID->1],
+ CellID->1,ExpressionUUID->"0de56a04-4a3e-4680-b143-a33326e16fc7"],
+
+Cell[CellGroupData[{
 
 Cell[TextData[{
- Cell["GOAnalysis", "ObjectName"],
+ Cell["GOAnalysis", "ObjectName",ExpressionUUID->
+  "f3fd30d7-9fd2-4fb8-89d5-c9419c828c9a"],
  Cell[BoxData[
   InterpretationBox[
    StyleBox[
@@ -161,11 +169,12 @@ Cell[TextData[{
      BaselinePosition->Baseline,
      ImageSize->{8, 0}],
     CacheGraphics->False],
-   Spacer[8]]]],
- Cell[BoxData[""], "ObjectNameTranslation"]
-}], "ObjectNameGrid"],
-
-Cell[CellGroupData[{
+   Spacer[8],
+   Selectable->False]],ExpressionUUID->"51255a85-8b98-4ba6-9e8f-c07bbf00f9f2"],
+ Cell[BoxData[
+ ""], "ObjectNameTranslation",ExpressionUUID->
+  "eb95d578-c908-4044-9e02-f092a2a66d7c"]
+}], "ObjectNameGrid",ExpressionUUID->"93ec8abc-313c-4b68-9d24-f14356ac0f7f"],
 
 Cell[BoxData[GridBox[{
    {"", Cell[TextData[{
@@ -174,16 +183,19 @@ Cell[BoxData[GridBox[{
        TemplateBox[{Cell[
           TextData["GOAnalysis"]],"paclet:MathIOmica/ref/GOAnalysis"},
         "RefLink",
-        BaseStyle->{"InlineFormula", "CodeFont"}], "[", 
-       StyleBox["data", "TI"], "]"}]], "InlineFormula"],
+        BaseStyle->{"InlineFormula"}], "[", 
+       StyleBox["data", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "e04de837-eddd-437d-bc07-a1d3f8cf156c"],
      "\[LineSeparator]calculates input data over-representation analysis for \
 Gene Ontology (GO) categories."
-    }]]}
+    }],ExpressionUUID->"05edccba-fe9f-498d-b032-0fedd4d8c147"]}
   }]], "Usage",
  GridBoxOptions->{
  GridBoxBackground->{
   "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
-   "RowsIndexed" -> {}}}],
+   "RowsIndexed" -> \
+{}}},ExpressionUUID->"3e547690-7c7b-4330-98fb-bad26a20725b"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -196,9 +208,11 @@ Cell[TextData[Cell[BoxData[
        BaselinePosition->Baseline,
        ImageSize->{6, 0}],
       CacheGraphics->False],
-     Spacer[6]]]],
+     Spacer[6],
+     Selectable->False]],ExpressionUUID->
+    "e74a984d-a088-44b2-a1b0-ae08a070b47e"],
    "Details"
-  }], "NotesFrameText"],
+  }], "NotesFrameText",ExpressionUUID->"dba72056-bd2b-4dc0-bfc6-cdd44afe52fb"],
   Appearance->{Automatic, None},
   BaseStyle->None,
   ButtonFunction:>(FrontEndExecute[{
@@ -208,30 +222,34 @@ Cell[TextData[Cell[BoxData[
      FrontEnd`SelectionMove[
       FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
   Evaluator->None,
-  Method->"Preemptive"]]]], "NotesSection",
+  Method->
+   "Preemptive"]],ExpressionUUID->"2afd05de-6359-4715-b341-4d57ff09ba72"]], \
+"NotesSection",
  WholeCellGroupOpener->True,
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->2001699722],
+ CellID->546012881,ExpressionUUID->"3ef18e47-57d9-43a5-be27-9adb0bfee7bb"],
 
-Cell["", "SectionHeaderSpacer"],
+Cell["", "SectionHeaderSpacer",ExpressionUUID->"236cd9f0-c3f7-44e5-b2d1-ecf963fa4867"],
 
 Cell[TextData[{
  Cell[BoxData[
   RowBox[{"GOAnalysis", "[", 
-   StyleBox["data", "TI"], "]"}]], "InlineFormula"],
+   StyleBox["data", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+  "3fb2ba05-39bb-4c74-9824-1812bfe19859"],
  " calculates input data over-representation analysis (ORA) for Gene Ontology \
 (GO) categories. We note that the function utilizes ontologies obtained from \
 the GO Consortium, and by default uses human data annotated with UniProt \
 IDs."
 }], "Notes",
- CellID->1471732406],
+ CellID->1471732406,ExpressionUUID->"008734a4-0a6f-475a-bdd0-a8f28bd9fb4c"],
 
 Cell[TextData[{
  "The input data can be a single list of ",
- Cell[BoxData["n"], "InlineFormula"],
+ Cell[BoxData[
+ "n"], "InlineFormula",ExpressionUUID->"f6b42b5d-0fe6-42c5-baee-fcc67e1bc533"],
  " genes in the form:"
 }], "Notes",
- CellID->1147130674],
+ CellID->1147130674,ExpressionUUID->"3bbf7b03-14e8-4b1f-943e-daeb0a49e80d"],
 
 Cell[TextData[Cell[BoxData[
  RowBox[{"data", "=", 
@@ -241,8 +259,11 @@ Cell[TextData[Cell[BoxData[
     RowBox[{
      SubscriptBox["ID", 
       RowBox[{"2", ","}]], "..."}], ",", 
-    SubscriptBox["ID", "n"]}], "}"}]}]], "InlineFormula"]], "Notes",
- CellID->991601687],
+    SubscriptBox["ID", "n"]}], 
+   "}"}]}]], \
+"InlineFormula",ExpressionUUID->"33f8a2dd-be88-4b3a-9dfd-607336236c92"]], \
+"Notes",
+ CellID->991601687,ExpressionUUID->"3d588f73-5fbe-4556-adf1-9fd27680c0ef"],
 
 Cell[TextData[{
  "The IDs may be provided as ID strings, or as labeled strings in the case of \
@@ -264,10 +285,10 @@ multiple omics being considered. Labeled IDs are provided as ",
        RowBox[{
         SubscriptBox["ID", "3"], ",", 
         SubscriptBox["label", "2"]}], "}"}]}]}], "}"}], "."}]], 
-  "InlineFormula"],
+  "InlineFormula",ExpressionUUID->"5948531d-a565-4230-acf4-421828774942"],
  " The labels are typically a string, e.g. typically \"RNA\" or \"Protein\"."
 }], "Notes",
- CellID->476859959],
+ CellID->476859959,ExpressionUUID->"4da24907-4dd1-4f7e-a359-361a7330ec4c"],
 
 Cell[TextData[{
  "The default output contains each GO:term that was considered and found to \
@@ -285,10 +306,11 @@ association with keys ",
       RowBox[{
        RowBox[{"{", 
         RowBox[{"GO", " ", "term"}], "}"}], ",", 
-       RowBox[{"{", "Membership", "}"}]}], "}"}]}]}]}]], "InlineFormula"],
+       RowBox[{"{", "Membership", "}"}]}], "}"}]}]}]}]], "InlineFormula",
+  ExpressionUUID->"d1d812e3-2035-4e3b-932b-07c941da8c0c"],
  ". The output has the following structures: for a single list input:"
 }], "Notes",
- CellID->418272887],
+ CellID->418272887,ExpressionUUID->"40c66f9f-aa02-44f8-94b4-c4bf92314183"],
 
 Cell[TextData[Cell[BoxData[
  RowBox[{"listOutput", "=", 
@@ -432,15 +454,18 @@ Cell[TextData[Cell[BoxData[
             RowBox[{"input", " ", "IDs", " ", "associated", " ", "to", " ", 
              SubscriptBox["term", "n"]}], "}"}]}], "}"}]}], "}"}]}], 
       "}"}]}]}], " ", "\[IndentingNewLine]", 
-   "|>"}]}]], "InlineFormula"]], "Notes",
- CellID->943673664],
+   "|>"}]}]], \
+"InlineFormula",ExpressionUUID->"d8fe79a3-be42-465c-ba9d-2c5e91d0ac30"]], \
+"Notes",
+ CellID->943673664,ExpressionUUID->"f2420bd2-c8b5-46bc-9782-d7bd680655a7"],
 
 Cell[TextData[{
  "The input data can also be an association of multiple ",
- Cell[BoxData["L"], "InlineFormula"],
+ Cell[BoxData[
+ "L"], "InlineFormula",ExpressionUUID->"371c88c4-2286-412d-8724-2e414c0db1d6"],
  " groups to be tested:"
 }], "Notes",
- CellID->776755907],
+ CellID->776755907,ExpressionUUID->"351ba12b-4170-4512-a31a-1e6404e9faa7"],
 
 Cell[TextData[Cell[BoxData[
  RowBox[{"data", "=", 
@@ -479,15 +504,19 @@ Cell[TextData[Cell[BoxData[
         SubscriptBox["ID", 
          RowBox[{"1", 
           SubscriptBox["n", "L"]}]]}], "}"}]}]}], "|>"}], 
-   "."}]}]], "InlineFormula"]], "Notes",
- CellID->806659852],
+   "."}]}]], \
+"InlineFormula",ExpressionUUID->"92cbbcf4-5390-407b-800b-dd80abd455dc"]], \
+"Notes",
+ CellID->806659852,ExpressionUUID->"6eb0c1c2-4c33-44cb-9279-b774082031cc"],
 
 Cell[TextData[{
  "In this case the output for each group has the ",
- Cell[BoxData["listOutput"], "InlineFormula"],
+ Cell[BoxData[
+ "listOutput"], "InlineFormula",ExpressionUUID->
+  "d986d1b5-5d3f-41eb-8a88-2994e733b74d"],
  " format described above:"
 }], "Notes",
- CellID->1538391077],
+ CellID->1538391077,ExpressionUUID->"595bbdb2-7bb5-4e9c-b943-c2445cfbefc3"],
 
 Cell[TextData[Cell[BoxData[
  RowBox[{"associationOutput", "=", 
@@ -503,11 +532,15 @@ Cell[TextData[Cell[BoxData[
     RowBox[{
      SubscriptBox["Group", "L"], "\[Rule]", " ", 
      SubscriptBox["listOutput", "L"]}]}], 
-   "|>"}]}]], "InlineFormula"]], "Notes",
- CellID->1826775723],
+   "|>"}]}]], \
+"InlineFormula",ExpressionUUID->"7c55cd52-5b91-47fc-8da1-b65896c510cb"]], \
+"Notes",
+ CellID->1826775723,ExpressionUUID->"7ff39115-f997-414b-92af-6645c3a61c91"],
 
 Cell[TextData[{
- Cell[BoxData["GOAnalysis"], "InlineFormula"],
+ Cell[BoxData[
+ "GOAnalysis"], "InlineFormula",ExpressionUUID->
+  "785e6369-ec42-44f4-b4dc-04112d1e4361"],
  " can also take as input the output of clustering of time series \
 classification data, e.g. ",
  Cell[BoxData[
@@ -515,22 +548,26 @@ classification data, e.g. ",
      TextData["TimeSeriesClusters"]],
     "paclet:MathIOmica/ref/TimeSeriesClusters"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "99d19296-803a-4783-b710-29ba927780a7"],
  " or ",
  Cell[BoxData[
   TemplateBox[{Cell[
      TextData["TimeSeriesSingleClusters"]],
     "paclet:MathIOmica/ref/TimeSeriesSingleClusters"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "8ce2fcdd-c777-455a-a12e-dcfab6996012"],
  " association of associations. The groups for each class will then have keys \
 labeled ",
- Cell[BoxData["\"\<GroupAssociations\>\""], "InlineFormula"],
+ Cell[BoxData[
+ "\"\<GroupAssociations\>\""], "InlineFormula",ExpressionUUID->
+  "d6ef8b61-8d6a-4077-a87a-ab446a01af66"],
  ", that include the labels used in the clustering. The labels must \
 correspond to protein or gene accessions/IDs. For each class and group the \
 corresponding GOAnalysis enrichment is computed and returned. "
 }], "Notes",
- CellID->1798642488],
+ CellID->1798642488,ExpressionUUID->"43971177-ab87-4b8a-bb06-af0f5d1a237f"],
 
 Cell["\<\
 The enrichment analysis is an over-representation calculation, using a \
@@ -541,40 +578,50 @@ function allows us to select the background, and hence address selection \
 bias. Additionally a Benjamini-Hochberg procedure false discovery rate (FDR) \
 may be calculated for each representation.\
 \>", "Notes",
- CellID->262377117],
+ CellID->262377117,ExpressionUUID->"b06ba376-7831-435c-96df-2f05d644daf5"],
 
 Cell[TextData[{
  "We assume here we are considering a population (possible mesurements) of ",
- Cell[BoxData["N"], "InlineFormula"],
+ Cell[BoxData[
+ "N"], "InlineFormula",ExpressionUUID->"fab6669e-8e31-4614-804b-2858d3cca773"],
  " total genes, and a given pathway or GO term ",
- Cell[BoxData["T"], "InlineFormula"],
+ Cell[BoxData[
+ "T"], "InlineFormula",ExpressionUUID->"9bc4bacd-3610-4e77-a42d-3827fb0530b5"],
  " has ",
  Cell[BoxData[
-  SubscriptBox["M", "T"]], "InlineFormula"],
+  SubscriptBox["M", "T"]], "InlineFormula",ExpressionUUID->
+  "147d7600-e159-48f7-a2fc-a8a1fb6fc777"],
  " genes associated to it. For any group/cluster we are interested in (e.g. \
 as differentially expressed), that contains a subset of ",
  Cell[BoxData[
   RowBox[{
-   SubscriptBox["n", "group"], "<", "N"}]], "InlineFormula"],
+   SubscriptBox["n", "group"], "<", "N"}]], "InlineFormula",ExpressionUUID->
+  "18370a40-947e-4d2f-9345-e26c4a4e3641"],
  " genes, we can identify which ",
  Cell[BoxData[
-  SubscriptBox["x", "T"]], "InlineFormula"],
+  SubscriptBox["x", "T"]], "InlineFormula",ExpressionUUID->
+  "1e1e466e-4195-45a5-b22c-aba8719d3b06"],
  " genes are associated to term ",
- Cell[BoxData["T"], "InlineFormula"],
+ Cell[BoxData[
+ "T"], "InlineFormula",ExpressionUUID->"10ccf654-b69b-4015-b0ac-2a8a13ee0cbc"],
  ". Then we would like to calculate the probability, ",
  Cell[BoxData[
-  SubscriptBox["p", "T"]], "InlineFormula"],
+  SubscriptBox["p", "T"]], "InlineFormula",ExpressionUUID->
+  "d7f8e01f-aaaa-40e8-b81f-1f4e43810e1e"],
  ", that at least ",
  Cell[BoxData[
-  SubscriptBox["x", "T"]], "InlineFormula"],
+  SubscriptBox["x", "T"]], "InlineFormula",ExpressionUUID->
+  "251e4df1-910b-4e13-b7b9-d260aa18a672"],
  " genes could have an association to term ",
- Cell[BoxData["T"], "InlineFormula"],
+ Cell[BoxData[
+ "T"], "InlineFormula",ExpressionUUID->"7b8a0ffd-72f3-479b-8405-7e1cb73bc44f"],
  " randomly (i.e. more than ",
  Cell[BoxData[
-  SubscriptBox["x", "T"]], "InlineFormula"],
+  SubscriptBox["x", "T"]], "InlineFormula",ExpressionUUID->
+  "020479a1-6369-4df2-83f7-d37e246ac097"],
  " number of successes):"
 }], "Notes",
- CellID->2041857421],
+ CellID->2041857421,ExpressionUUID->"695b9b55-2826-4c9b-80d1-6f263d39591e"],
 
 Cell[TextData[Cell[BoxData[
  RowBox[{
@@ -606,29 +653,35 @@ Cell[TextData[Cell[BoxData[
         {"N"},
         {
          SubscriptBox["n", "group"]}
-       }], ")"}]], "."}]}]}]], "InlineFormula"]], "Notes",
- CellID->1261958801],
+       }], ")"}]], 
+    "."}]}]}]], \
+"InlineFormula",ExpressionUUID->"0c3a9039-b97d-4fbf-aa60-bcd1fcbd2d0f"]], \
+"Notes",
+ CellID->1261958801,ExpressionUUID->"eb5cd1b9-d9d1-475f-a769-7498df193dbe"],
 
 Cell[TextData[{
  "Using this hypergeometric distribution calculation, we can choose a p-value \
 cutoff, typically at 0.95, to consider any cluster/group's number of \
 successes (for a specified term) to show enrichment in be enriched in a term ",
- Cell[BoxData["T"], "InlineFormula"],
+ Cell[BoxData[
+ "T"], "InlineFormula",ExpressionUUID->"e6ce4963-12a3-4002-87ef-50021e22e0c7"],
  " of interest."
 }], "Notes",
- CellID->2051196820],
+ CellID->2051196820,ExpressionUUID->"bc8575df-a9ef-483f-9721-c6b6c1ba95f6"],
 
 Cell[TextData[{
  "In practice, typically a database (such as KEGG, or GO) has annotated only \
 a subset ",
  Cell[BoxData[
   RowBox[{
-   SubscriptBox["N", "a"], "\[Subset]", "N"}]], "InlineFormula"],
+   SubscriptBox["N", "a"], "\[Subset]", "N"}]], "InlineFormula",
+  ExpressionUUID->"7312e54a-4eae-436b-a0af-067aa3cf4e0d"],
  " of these total genes. The calculation then is modified to reduce this \
 bias, by performing the analysis on a subset of the genes of interest to the \
 ones that belong to ",
  Cell[BoxData[
-  SubscriptBox["N", "a"]], "InlineFormula"],
+  SubscriptBox["N", "a"]], "InlineFormula",ExpressionUUID->
+  "f4db8b7e-4de2-413a-a64c-58e5b7e55890"],
  ", and effectively we also have ",
  Cell[BoxData[
   RowBox[{
@@ -641,10 +694,11 @@ ones that belong to ",
      RowBox[{
       SubscriptBox["n", "group"], ":", " ", 
       RowBox[{"j", "\[Element]", 
-       SubscriptBox["N", "a"]}]}]}], "}"}], " "}]], "InlineFormula"],
+       SubscriptBox["N", "a"]}]}]}], "}"}], " "}]], "InlineFormula",
+  ExpressionUUID->"df844f4f-4459-4776-a040-29d9860de193"],
  ". "
 }], "Notes",
- CellID->1252937408],
+ CellID->1252937408,ExpressionUUID->"b632cfbf-0aea-4ce9-aceb-d4e63c057f73"],
 
 Cell[TextData[{
  "Additionally, there are cases when the overall measurements can be \
@@ -652,11 +706,13 @@ restricted to certain sets only, i.e. a different background or species, ",
  Cell[BoxData[
   RowBox[{"N", "\[Rule]", " ", 
    RowBox[{
-    SubscriptBox["N", "b"], "\[Subset]", "N"}]}]], "InlineFormula"],
+    SubscriptBox["N", "b"], "\[Subset]", "N"}]}]], "InlineFormula",
+  ExpressionUUID->"aa2568fe-7fc8-44c8-82cd-bd7a69faeab1"],
  ". Then the pathway/group terms are also restricted to the ones that belong \
 to ",
  Cell[BoxData[
-  SubscriptBox["N", "b"]], "InlineFormula"],
+  SubscriptBox["N", "b"]], "InlineFormula",ExpressionUUID->
+  "70dff3e5-daef-4c3e-b515-17d346264874"],
  ", ",
  Cell[BoxData[
   RowBox[{
@@ -668,32 +724,37 @@ to ",
       SubscriptBox["M", 
        RowBox[{"T", ",", "b"}]], ":", " ", 
       RowBox[{"k", "\[Element]", 
-       SubscriptBox["N", "b"]}]}]}], "}"}]}]], "InlineFormula"],
+       SubscriptBox["N", "b"]}]}]}], "}"}]}]], "InlineFormula",
+  ExpressionUUID->"e441cb78-fd7c-4c98-be64-8d563afd34ba"],
  ". "
 }], "Notes",
- CellID->1919413432],
+ CellID->1919413432,ExpressionUUID->"aef683e9-8c53-472c-924a-6d0c2eb41380"],
 
 Cell[TextData[{
  "In the case that labeled multi-omics data is provided there are multiple \
 choices. If no ",
- Cell[BoxData["MultipleList"], "InlineFormula"],
+ Cell[BoxData[
+ "MultipleList"], "InlineFormula",ExpressionUUID->
+  "38db4c65-ee4b-4082-af99-bea120b87161"],
  " options are invoked (see below), the identifiers are treated as equivalent \
 and are simply grouped together. If the same identifier shows with the same \
 label these identifiers are treated as equivalent (i.e. no overcounting). If \
 the MultipleList and MultipleListCorrection are set, the population N is \
 enlarged by a factor ",
  Cell[BoxData[
-  SubscriptBox["f", "P"]], "InlineFormula"],
+  SubscriptBox["f", "P"]], "InlineFormula",ExpressionUUID->
+  "9140660b-2af1-49ff-b747-ed7f9306bd47"],
  " and so is the membership of each term to accomodate the changes. In the \
 case of two omics, the assumption is that they can each contribute equally to \
 a term and the Automatic GOAnalysis function correction is a simple factor of \
 ",
  Cell[BoxData[
   RowBox[{
-   SubscriptBox["f", "P"], "=", "2"}]], "InlineFormula"],
+   SubscriptBox["f", "P"], "=", "2"}]], "InlineFormula",ExpressionUUID->
+  "a1970aac-c16a-42c1-80ed-4766586e924c"],
  "."
 }], "Notes",
- CellID->1430585844],
+ CellID->1430585844,ExpressionUUID->"38818a19-a2ca-434b-9350-4214d1adaf03"],
 
 Cell[TextData[{
  "Finally, there is the need to address false discovery rates and account for \
@@ -704,22 +765,25 @@ Benjamini-Hochberg false discovery rate (FDR) using ",
      TextData["BenjaminiHochbergFDR"]],
     "paclet:MathIOmica/ref/BenjaminiHochbergFDR"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "c312f001-c6e4-4413-877f-f82cab3e9a9d"],
  "."
 }], "Notes",
- CellID->398884720],
+ CellID->398884720,ExpressionUUID->"5f98351c-c07a-460a-a713-fc5153847fd3"],
 
-Cell["The following options can be given: ", "Notes"],
+Cell["The following options can be given: ", "Notes",ExpressionUUID->"bf9393fd-9821-42ac-b15a-45beff1a0433"],
 
 Cell[BoxData[GridBox[{
-   {Cell["      ", "TableRowIcon"], "AdditionalFilter", 
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "5980ec81-d37c-4252-80ff-5bcef8fbe075"], "AdditionalFilter", 
     ButtonBox["None",
      BaseStyle->"Link",
      ButtonData->"paclet:ref/None"], Cell["\<\
 AdditionalFilter provides additional filtering that may be applied to the \
 standard output structure to be returned. \
-\>", "TableText"]},
-   {Cell["      ", "TableRowIcon"], "AugmentDictionary", 
+\>", "TableText",ExpressionUUID->"3d593110-c61f-4230-b301-2fae47e1112e"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "f1a26d1f-7520-4a95-b36a-7fc065bd8bd4"], "AugmentDictionary", 
     ButtonBox["True",
      BaseStyle->"Link",
      ButtonData->"paclet:ref/True"], Cell[TextData[{
@@ -730,17 +794,20 @@ current ",
          TextData["ConstantGeneDictionary"]],
         "paclet:MathIOmica/ref/ConstantGeneDictionary"},
        "RefLink",
-       BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+      "def74ab4-dd11-4173-a8ca-e90f1e9cd570"],
      " variable or create a new one."
-    }], "TableText"]},
-   {Cell["      ", "TableRowIcon"], "BackgroundSet", 
+    }], "TableText",ExpressionUUID->"29fd53eb-2756-418c-b291-c0d81de90f1a"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "67394c08-a612-4411-b82d-b5a1e083ac81"], "BackgroundSet", 
     ButtonBox["All",
      BaseStyle->"Link",
      ButtonData->"paclet:ref/All"], Cell["\<\
 BackgroundSet provides a list of IDs (e.g. gene accessions) that should be \
 considered as the background for the calculation.\
-\>", "TableText"]},
-   {Cell["      ", "TableRowIcon"], "FilterSignificant", 
+\>", "TableText",ExpressionUUID->"f7bbc8a5-76f2-40ad-94eb-57e98c1e8e44"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "3b578c53-3b3b-4757-af6c-2dce9a2409d2"], "FilterSignificant", 
     ButtonBox["True",
      BaseStyle->"Link",
      ButtonData->"paclet:ref/True"], Cell[TextData[{
@@ -754,8 +821,9 @@ statistically significant, or if set to ",
       BaseStyle->"Link",
       ButtonData->"paclet:ref/False"],
      " to return all membership computations."
-    }], "TableText"]},
-   {Cell["      ", "TableRowIcon"], "GeneDictionary", 
+    }], "TableText",ExpressionUUID->"053a7916-fdae-4606-b0bf-187c767a21cf"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "f3019fa7-3152-4ee4-ba20-3fadc1e2770e"], "GeneDictionary", 
     ButtonBox["None",
      BaseStyle->"Link",
      ButtonData->"paclet:ref/None"], Cell[TextData[{
@@ -770,10 +838,12 @@ dictionary in annotations. If set to ",
          TextData["ConstantGeneDictionary"]],
         "paclet:MathIOmica/ref/ConstantGeneDictionary"},
        "RefLink",
-       BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+      "4eb2bec2-983f-4ca2-a305-1354ccb8158d"],
      " will be used."
-    }], "TableText"]},
-   {Cell["      ", "TableRowIcon"], "GetGeneDictionaryOptions", 
+    }], "TableText",ExpressionUUID->"a6b5a5b5-2243-44ed-963f-96a2f4d86c27"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "c8d98b09-8376-45ec-9b2c-b7a392e9bd12"], "GetGeneDictionaryOptions", 
     RowBox[{"{", "}"}], Cell[TextData[{
      "The GetGeneDictionaryOptions option specifies a list of options that \
 will be passed to the internal ",
@@ -782,10 +852,12 @@ will be passed to the internal ",
          TextData["GetGeneDictionary"]],
         "paclet:MathIOmica/ref/GetGeneDictionary"},
        "RefLink",
-       BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+      "8cd7c4dc-8154-4827-9ae2-e47455fada20"],
      " function."
-    }], "TableText"]},
-   {Cell["      ", "TableRowIcon"], "GOAnalysisAssignerOptions", 
+    }], "TableText",ExpressionUUID->"68b8c1b1-49e0-40a9-a905-d52d63cb555c"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "15c15724-8177-45c3-b758-0e27d142dcf1"], "GOAnalysisAssignerOptions", 
     RowBox[{"{", "}"}], Cell[TextData[{
      "The GOAnalysisAssignerOptions option specifies a list of options that \
 will be passed to the internal ",
@@ -794,10 +866,12 @@ will be passed to the internal ",
          TextData["GOAnalysisAssigner"]],
         "paclet:MathIOmica/ref/GOAnalysisAssigner"},
        "RefLink",
-       BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+      "50af3a48-1636-4f7c-8ff3-1f315a2d9977"],
      " function."
-    }], "TableText"]},
-   {Cell["      ", "TableRowIcon"], "HypothesisFunction", 
+    }], "TableText",ExpressionUUID->"b185ec8d-301d-40d7-afb5-c95935035b46"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "bac2a276-2c4c-42b3-bd44-96d7c0980aa8"], "HypothesisFunction", 
     RowBox[{
      RowBox[{"(", 
       RowBox[{
@@ -814,7 +888,8 @@ implement multiple hypothesis testing.  The default is  using the ",
          TextData["BenjaminiHochbergFDR"]],
         "paclet:MathIOmica/ref/BenjaminiHochbergFDR"},
        "RefLink",
-       BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+      "f082232c-967a-47ae-b499-38d94b9de9c6"],
      " function.\nThe user can use any function f with three inputs, of the \
 form f[#1,#2,#3] where the inputs refer to:\n#1 is the p-value list, \n#2 is \
 a significance cutoff, \n#3 is the number of GO associations overall being \
@@ -829,14 +904,16 @@ adjusted p-value, ",
       ButtonData->"paclet:ref/False"],
      " based on whether this value is considered statistically significant or \
 not respectively}."
-    }], "TableText"]},
-   {Cell["      ", "TableRowIcon"], "InputID", 
+    }], "TableText",ExpressionUUID->"d0c92aec-5943-4979-b257-e8b6a62f0756"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "1bc0ab01-e12f-4fd8-9722-7e3f259af48d"], "InputID", 
     RowBox[{"{", 
      RowBox[{"\"\<UniProt ID\>\"", ",", " ", "\"\<Gene Symbol\>\""}], "}"}], 
     Cell["\<\
 The InputID option specifies the kind of identifiers/accessions used as input.\
-\>", "TableText"]},
-   {Cell["      ", "TableRowIcon"], "MultipleList", 
+\>", "TableText",ExpressionUUID->"0acea8fb-f58e-458e-842e-dc3528095e8e"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "0040d28e-4171-47bc-8fbf-605dc7d51fe7"], "MultipleList", 
     ButtonBox["False",
      BaseStyle->"Link",
      ButtonData->"paclet:ref/False"], Cell["\<\
@@ -847,8 +924,9 @@ MultipleList is set to True and each input list ID should have the form \
 omics type are treated as different for each ID. If MultipleList is set to \
 False, and labeled IDs are provided, labels corresponding to the same ID are \
 treated as equivalent to avoid overcounting.\
-\>", "TableText"]},
-   {Cell["      ", "TableRowIcon"], "MultipleListCorrection", 
+\>", "TableText",ExpressionUUID->"5e478277-91c8-4665-adcc-455b6ef3ce54"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "cdc2e742-081d-49f5-bc66-100b18eeea49"], "MultipleListCorrection", 
     ButtonBox["None",
      BaseStyle->"Link",
      ButtonData->"paclet:ref/None"], Cell[TextData[{
@@ -865,8 +943,9 @@ multi-omics analysis. The choices are ",
 factor to account for additional IDs being considered as the result of a \
 multi-omics cluster analysis. If the value is set to Automatic the number of \
 unique ID labels is used to make the correction."
-    }], "TableText"]},
-   {Cell["      ", "TableRowIcon"], "OBOGODictionaryOptions", 
+    }], "TableText",ExpressionUUID->"abff5cea-f442-48a6-a055-b99ffe597a61"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "1f9e0d8e-f599-4b34-96c6-7f5885e1dbb1"], "OBOGODictionaryOptions", 
     RowBox[{"{", "}"}], Cell[TextData[{
      "OBOGODictionaryOptions specifies a list of options to be passed to the \
 internal ",
@@ -874,10 +953,12 @@ internal ",
       TemplateBox[{Cell[
          TextData["OBOGODictionary"]],"paclet:MathIOmica/ref/OBOGODictionary"},
        "RefLink",
-       BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+      "1e7eed09-d883-40d1-ad09-cad791b6a1c5"],
      " function that provides the GO annotations."
-    }], "TableText"]},
-   {Cell["      ", "TableRowIcon"], "OBODictionaryVariable", 
+    }], "TableText",ExpressionUUID->"7e60bdee-a061-4bbd-a95d-adff73bc76b2"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "9cc0fd96-c2ba-4215-a36b-dd19ed641921"], "OBODictionaryVariable", 
     ButtonBox["None",
      BaseStyle->"Link",
      ButtonData->"paclet:ref/None"], Cell[TextData[{
@@ -891,12 +972,14 @@ internal ",
       TemplateBox[{Cell[
          TextData["OBOGODictionary"]],"paclet:MathIOmica/ref/OBOGODictionary"},
        "RefLink",
-       BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+      "36e02f40-5499-453b-a964-2eb2b12fd2dd"],
      " will be used internally to automatically generate the default GO \
 annotation."
-    }], "TableText"]},
-   {Cell["      ", "TableRowIcon"], "OntologyLengthFilter", "2", Cell[
-    TextData[{
+    }], "TableText",ExpressionUUID->"495a45f4-cb23-4c20-acb7-07802b6ef7fa"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "e57499c2-a9dd-471a-b8cc-bdeb1b3dc2a8"], "OntologyLengthFilter", "2", 
+    Cell[TextData[{
      "OntologyLengthFilter can be used to set the value for which terms to \
 consider in the computation, by excluding GO terms that have fewer items \
 compared to the OntologyLengthFilter value. It is used by the internal ",
@@ -905,34 +988,43 @@ compared to the OntologyLengthFilter value. It is used by the internal ",
          TextData["GOAnalysisAssigner"]],
         "paclet:MathIOmica/ref/GOAnalysisAssigner"},
        "RefLink",
-       BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+      "3ea6f656-7b36-4ca6-8a09-984a86ad29cd"],
      " function."
-    }], "TableText"]},
-   {Cell["      ", "TableRowIcon"], "OutputID", "\"\<UniProt ID\>\"", Cell["\<\
+    }], "TableText",ExpressionUUID->"c6db4f88-6c0a-417f-94f6-ec871b323d49"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "d9f1fa39-7d5d-45aa-b0c7-8a9559d8f338"], "OutputID", 
+    "\"\<UniProt ID\>\"", Cell["\<\
 The OutputID option takes a string value that specifies what kind of \
 IDs/accessions to convert the input IDs to compute the GO enrichment.\
-\>", "TableText"]},
-   {Cell["      ", "TableRowIcon"], "pValueCutoff", "0.05", Cell["\<\
+\>", "TableText",ExpressionUUID->"3888af35-1544-49e4-88a3-7051c6d6feba"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "9e221acc-316c-47ed-8517-235d67ee3052"], "pValueCutoff", "0.05", Cell["\<\
 pValueCutoff provides a cutoff p-value for adjusted p-values to assess \
 statistical significance.\
-\>", "TableText"]},
-   {Cell["      ", "TableRowIcon"], "ReportFilter", "1", Cell["\<\
+\>", "TableText",ExpressionUUID->"025184d4-4c0e-411a-bd44-3eb129b0cf07"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "ad54b207-9f28-4cca-9965-d4d4ab56d920"], "ReportFilter", "1", Cell["\<\
 ReportFilter provides a cutoff for membership in ontologies in selecting \
 which terms/categories to return. It is used in conjunction with \
 ReportFilterFunction.\
-\>", "TableText"]},
-   {Cell["      ", "TableRowIcon"], "ReportFilterFunction", 
+\>", "TableText",ExpressionUUID->"f73aac5c-8ac5-411f-8753-3ed4fa70e014"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "35d80df4-f4cf-41ac-a68b-42e0f99e2423"], "ReportFilterFunction", 
     ButtonBox["GreaterEqualThan",
      BaseStyle->"Link",
      ButtonData->"paclet:ref/GreaterEqualThan"], Cell["\<\
 ReportFilterFunction specifies what operator form will be used to compare \
 against ReportFilter option value in selecting which terms/categories to \
 return. The default is to use GreaterEqualThan. \
-\>", "TableText"]},
-   {Cell["      ", "TableRowIcon"], "Species", "\"\<human\>\"", Cell["\<\
+\>", "TableText",ExpressionUUID->"c0c4ccb6-18c7-498e-af06-74320546d440"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "ee5399c8-c09d-4029-a19b-cbfd4c3a4c55"], "Species", "\"\<human\>\"", 
+    Cell["\<\
 The Species option specifies the species considered in the calculation.\
-\>", "TableText"]},
-   {Cell["      ", "TableRowIcon"], "TestFunction", 
+\>", "TableText",ExpressionUUID->"335dac72-5b00-4438-8e37-3322b096448c"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "7494bc80-f362-4530-975a-702ea6cffa95"], "TestFunction", 
     RowBox[{
      RowBox[{
       RowBox[{"N", "[", 
@@ -955,7 +1047,7 @@ distribution CDF, N[1-CDF[",
 population,\n#3 is total number of members in population,\n#4 is number of \
 successes (or more) in current group being tested for specific category.\nThe \
 output is a p-value (real positive number \[LessEqual] 1)."
-    }], "TableText"]}
+    }], "TableText",ExpressionUUID->"881be66e-3904-4273-abc5-aa84b40614d0"]}
   }]], "3ColumnTableMod",
  GridBoxOptions->{
  GridBoxBackground->{
@@ -967,7 +1059,7 @@ output is a p-value (real positive number \[LessEqual] 1)."
   "Rows" -> {{
      True, True, True, True, True, True, True, True, True, True, True, True, 
       True, True, True, True, True, True, True, True, True}}}},
- CellID->1130542972],
+ CellID->1130542972,ExpressionUUID->"026ccb46-8e19-443f-9cf8-599ea928118e"],
 
 Cell[TextData[{
  "GOAnalysis generates a global ",
@@ -976,14 +1068,14 @@ Cell[TextData[{
      TextData["ConstantGeneDictionary"]],
     "paclet:MathIOmica/ref/ConstantGeneDictionary"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "a35171e5-2c9d-4d3e-9543-bb3feeceba0d"],
  " variable if one does not exist already."
 }], "Notes",
- CellID->1857225344],
+ CellID->1857225344,ExpressionUUID->"f8e6962b-9904-4e3d-b144-ee862afb90ce"],
 
-Cell["", "SectionFooterSpacer"]
-}, Closed]]
-}, Open  ]],
+Cell["", "SectionFooterSpacer",ExpressionUUID->"89398ba5-85ad-4fe9-8ac9-7c5fd103a5bf"]
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -995,38 +1087,41 @@ Cell[TextData[{
      BaselinePosition->Baseline,
      ImageSize->{6, 0}],
     CacheGraphics->False],
-   Spacer[6]]]],
+   Spacer[6],
+   Selectable->False]],ExpressionUUID->"c865c715-1450-4da8-b4d4-666295723ea6"],
  "Examples",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(29)", "ExampleCount"]
+ Cell["(29)", "ExampleCount",ExpressionUUID->
+  "ffefd2d1-5f86-42a3-8a8a-661a3b42c5bd"]
 }], "PrimaryExamplesSection",
  WholeCellGroupOpener->True,
  CellTags->"PrimaryExamplesSection",
- CellID->88413752],
+ CellID->640867336,ExpressionUUID->"e253cdb5-d660-43bd-9a9d-98857d790d5f"],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
  "Basic Examples",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(5)", "ExampleCount"]
+ Cell["(5)", "ExampleCount",ExpressionUUID->
+  "fb4de5dd-b1de-4c4a-b31c-c360551e5f2c"]
 }], "ExampleSection", "ExampleSection",
  WholeCellGroupOpener->True,
- CellID->2058729787],
+ CellID->1426826447,ExpressionUUID->"96048415-ec35-4509-ba2f-9c5d63e96b89"],
 
 Cell["We first load the MathIOmica package:", "ExampleText",
- CellID->1955035864],
+ CellID->1955035864,ExpressionUUID->"152ee29b-4dbf-48a7-a1e3-12de82707cf0"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->2015788480],
+ CellID->2015788480,ExpressionUUID->"2464ff2b-bd86-4373-ab8e-3b2c46114b36"],
 
 Cell["\<\
 Let's do a GO analysis for a group of genes, annotated with their \"Gene \
 Symbol\":\
 \>", "ExampleText",
- CellID->1818713907],
+ CellID->1818713907,ExpressionUUID->"fe05a4cb-489c-4f14-82db-0b12d39e90ef"],
 
 Cell[CellGroupData[{
 
@@ -1044,7 +1139,7 @@ Cell[BoxData[
      "\"\<IRAK4\>\"", ",", "\"\<PIAS4\>\"", ",", "\"\<PLAU\>\""}], "}"}], 
    "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->1586527373],
+ CellID->1586527373,ExpressionUUID->"7d5a8059-0d72-4a03-a155-bdf5022bb62f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1298,15 +1393,15 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[2]]], "Output",
- ImageSize->{544, 123},
+ ImageSize->{544, 132},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->602330676]
+ CellID->602330676,ExpressionUUID->"19b76511-d527-4aa3-91a9-ec37ea46abe5"]
 }, Open  ]],
 
 Cell["We can obtain the results for any of the data:", "ExampleText",
- CellID->882375243],
+ CellID->882375243,ExpressionUUID->"fe5c5100-7c2c-4557-9dc3-3b3b8c69c037"],
 
 Cell[CellGroupData[{
 
@@ -1315,7 +1410,7 @@ Cell[BoxData[
   RowBox[{"Query", "[", 
    RowBox[{"{", "1", "}"}], "]"}], "@", "goExample1"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->689104897],
+ CellID->689104897,ExpressionUUID->"b142c218-0d15-4c5f-9458-af0eb198bcdd"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -1343,11 +1438,11 @@ activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
          RowBox[{"{", "\<\"NFKB2\"\>", "}"}], ",", 
          RowBox[{"{", "\<\"NFKBIA\"\>", "}"}]}], "}"}]}], "}"}]}], "}"}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{508, 63},
+ ImageSize->{508, 75},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->133759574]
+ CellID->133759574,ExpressionUUID->"e0688901-5262-4694-8cd5-cdf009186ad4"]
 }, Open  ]],
 
 Cell["\<\
@@ -1356,25 +1451,27 @@ Biological Process term, namely, positive regulation of NF-kappaB \
 transcription factor activity. 7 of the 21 input genes with annotation are \
 associated to this term. The term has 155 genes associated to it.\
 \>", "ExampleText",
- CellID->1096954261],
+ CellID->1096954261,ExpressionUUID->"83316a3f-b5ee-4424-ab02-63410133e072"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- InterpretationBox[Cell["\t", "ExampleDelimiter"],
+ InterpretationBox[Cell[
+  "\t", "ExampleDelimiter",ExpressionUUID->
+   "5c0d2a57-0cf0-448c-b659-68182177f9aa"],
   $Line = 0; Null]], "ExampleDelimiter",
- CellID->348287981],
+ CellID->348287981,ExpressionUUID->"b252ef70-e7ab-4b6f-9bf6-55b0f5aabc07"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1783158592],
+ CellID->1783158592,ExpressionUUID->"360539d7-63c3-48de-9f22-102a3766ce44"],
 
 Cell["\<\
 The information can be computed for multiple groups, if these are provided as \
 an association:\
 \>", "ExampleText",
- CellID->1456943078],
+ CellID->1456943078,ExpressionUUID->"3fff6751-5e33-414d-a954-7712c9dcf220"],
 
 Cell[CellGroupData[{
 
@@ -1402,7 +1499,7 @@ Cell[BoxData[
         "\"\<IRAK4\>\"", ",", "\"\<PIAS4\>\"", ",", "\"\<PLAU\>\""}], 
        "}"}]}]}], "|>"}], "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->424064361],
+ CellID->424064361,ExpressionUUID->"7472b269-cee1-4314-beae-c31e9c8e18bd"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1703,18 +1800,18 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[5]]], "Output",
- ImageSize->{550, 169},
+ ImageSize->{550, 185},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1769189707]
+ CellID->1769189707,ExpressionUUID->"277b953f-cc7e-44cc-b0ed-024a63da79cf"]
 }, Open  ]],
 
 Cell["\<\
 We can obtain the results for any of the data. Let's look at the top (lowest \
 p-value) two results in both groups:\
 \>", "ExampleText",
- CellID->1134366297],
+ CellID->1134366297,ExpressionUUID->"4f17a5fc-53e1-45ec-9add-479e79658aaa"],
 
 Cell[CellGroupData[{
 
@@ -1726,7 +1823,7 @@ Cell[BoxData[
      RowBox[{"1", ",", "2"}], "}"}]}], "]"}], "@", 
   "analysisGOAssociation"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->2082019260],
+ CellID->2082019260,ExpressionUUID->"38ac83e8-8c76-4992-85e1-2d0dd247dc58"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -1848,32 +1945,34 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
              RowBox[{"{", "\<\"PLAU\"\>", "}"}]}], "}"}]}], "}"}]}], 
         "}"}]}]}], "\[RightAssociation]"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{576, 254},
+ ImageSize->{532, 298},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->1249559385]
+ CellID->1249559385,ExpressionUUID->"8bd32a6f-3dcd-4be0-88ca-dab7359427a6"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- InterpretationBox[Cell["\t", "ExampleDelimiter"],
+ InterpretationBox[Cell[
+  "\t", "ExampleDelimiter",ExpressionUUID->
+   "bdbb1135-e80f-4c03-90a8-5fcea7fc4ada"],
   $Line = 0; Null]], "ExampleDelimiter",
- CellID->1694376521],
+ CellID->1694376521,ExpressionUUID->"88d88658-31bd-40f8-ac6b-5192b34c630e"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1753029227],
+ CellID->1753029227,ExpressionUUID->"ddd32486-c452-40c3-8015-ac65b432dac5"],
 
 Cell["\<\
 The data can be computed with or without a label. If labeled, the gene ID \
 must be the first element for each ID provided. The data is in the form \
 {ID,label}:\
 \>", "ExampleText",
- CellID->1834064996],
+ CellID->1834064996,ExpressionUUID->"430fd51f-ff2e-466b-b5ae-e275156b9b54"],
 
 Cell[BoxData[
  RowBox[{
@@ -1903,10 +2002,10 @@ Cell[BoxData[
        RowBox[{"\"\<SSC5D\>\"", ",", "\"\<Protein\>\""}], "}"}]}], "}"}], 
     "]"}]}], ";"}]], "Input",
  CellLabel->"In[2]:=",
- CellID->150118734],
+ CellID->150118734,ExpressionUUID->"a73d6695-8378-4ba0-aa62-d77ce404e15a"],
 
 Cell["We can query the first 5 results :", "ExampleText",
- CellID->848132548],
+ CellID->848132548,ExpressionUUID->"5d77a412-fd0d-4721-becc-5849816fc80f"],
 
 Cell[CellGroupData[{
 
@@ -1915,7 +2014,7 @@ Cell[BoxData[
   RowBox[{"[", 
    RowBox[{"1", ";;", "5"}], "]"}], "]"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->471746822],
+ CellID->471746822,ExpressionUUID->"dc3eb949-8cfe-45fb-831b-c653b022fdab"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -2073,30 +2172,32 @@ response\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
            RowBox[{"{", 
             RowBox[{"\<\"PYDC1\"\>", ",", "\<\"Protein\"\>"}], "}"}], "}"}]}],
           "}"}]}], "}"}]}], "}"}]}]}], "\[RightAssociation]"}]], "Output",
- ImageSize->{506, 286},
+ ImageSize->{506, 329},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->447168338]
+ CellID->447168338,ExpressionUUID->"fa03155b-6ba5-46c9-b1b0-a405852cfe81"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- InterpretationBox[Cell["\t", "ExampleDelimiter"],
+ InterpretationBox[Cell[
+  "\t", "ExampleDelimiter",ExpressionUUID->
+   "dd2145ee-4e45-4b86-b388-7b9520faab4f"],
   $Line = 0; Null]], "ExampleDelimiter",
- CellID->1177882774],
+ CellID->1177882774,ExpressionUUID->"148f126e-9dbb-47a6-b3a4-e5738dc453d1"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1171524572],
+ CellID->1171524572,ExpressionUUID->"71ea4d93-9710-4205-b21c-86bbafb70a1c"],
 
 Cell["\<\
 The data can be mixed, e.g. proteins and RNA with different labels:\
 \>", "ExampleText",
- CellID->1683405908],
+ CellID->1683405908,ExpressionUUID->"e0583b8c-eed3-4e81-b180-8ec93142d72b"],
 
 Cell[BoxData[
  RowBox[{
@@ -2130,14 +2231,14 @@ Cell[BoxData[
        RowBox[{"\"\<SSC5D\>\"", ",", "\"\<Protein\>\""}], "}"}]}], "}"}], 
     "]"}]}], ";"}]], "Input",
  CellLabel->"In[2]:=",
- CellID->2053530178],
+ CellID->2053530178,ExpressionUUID->"3856f7cf-cce8-4a32-a0e0-e5260c4c57c3"],
 
 Cell["\<\
 The data in this case treated as originating from a single population. \
 Protein and RNA labeled data for the same identifier are treated as \
 equivalent.We can query the first 5 results :\
 \>", "ExampleText",
- CellID->1020372319],
+ CellID->1020372319,ExpressionUUID->"bd4e9806-7bd1-4e8e-ab1d-82659c4725a2"],
 
 Cell[CellGroupData[{
 
@@ -2146,7 +2247,7 @@ Cell[BoxData[
   RowBox[{"[", 
    RowBox[{"1", ";;", "5"}], "]"}], "]"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->1072372723],
+ CellID->1072372723,ExpressionUUID->"37abfabb-939b-4d5c-b6d5-62bb54837e6c"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -2304,19 +2405,21 @@ response\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
            RowBox[{"{", 
             RowBox[{"\<\"PYDC1\"\>", ",", "\<\"Protein\"\>"}], "}"}], "}"}]}],
           "}"}]}], "}"}]}], "}"}]}]}], "\[RightAssociation]"}]], "Output",
- ImageSize->{534, 286},
+ ImageSize->{534, 329},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->236024602]
+ CellID->236024602,ExpressionUUID->"824272f1-dc97-45cc-9c3e-8ececb213fb7"]
 }, Open  ]],
 
 Cell[TextData[{
  "We can instead treat the data as different by setting the ",
- Cell[BoxData["MultipleList"], "InlineFormula"],
+ Cell[BoxData[
+ "MultipleList"], "InlineFormula",ExpressionUUID->
+  "6fc6bdb7-ab62-4b63-9f5d-5904f5a4fe0c"],
  " and MultipleListCorrection options:"
 }], "ExampleText",
- CellID->1611246022],
+ CellID->1611246022,ExpressionUUID->"96cd6283-67df-499d-b82a-6d4556000178"],
 
 Cell[BoxData[
  RowBox[{
@@ -2354,7 +2457,7 @@ Cell[BoxData[
      RowBox[{"MultipleListCorrection", "\[Rule]", " ", "Automatic"}]}], 
     "]"}]}], ";"}]], "Input",
  CellLabel->"In[4]:=",
- CellID->750159751],
+ CellID->750159751,ExpressionUUID->"1ee9ec5e-cfb1-49e3-a1e8-aee07da5ec53"],
 
 Cell[CellGroupData[{
 
@@ -2363,7 +2466,7 @@ Cell[BoxData[
   RowBox[{"[", 
    RowBox[{"1", ";;", "5"}], "]"}], "]"}]], "Input",
  CellLabel->"In[5]:=",
- CellID->1412159339],
+ CellID->1412159339,ExpressionUUID->"8216b7ae-c029-42b1-b924-762c48471fe7"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -2559,32 +2662,34 @@ Cell[BoxData[
            RowBox[{"{", 
             RowBox[{"\<\"SSC5D\"\>", ",", "\<\"Protein\"\>"}], "}"}], "}"}]}],
           "}"}]}], "}"}]}], "}"}]}]}], "\[RightAssociation]"}]], "Output",
- ImageSize->{562, 299},
+ ImageSize->{562, 346},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[5]=",
- CellID->1813506158]
+ CellID->1813506158,ExpressionUUID->"d58da6de-d776-4cfb-81c6-3117625410e5"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- InterpretationBox[Cell["\t", "ExampleDelimiter"],
+ InterpretationBox[Cell[
+  "\t", "ExampleDelimiter",ExpressionUUID->
+   "322857af-d9d8-4bb9-935f-6135d2d9a9b0"],
   $Line = 0; Null]], "ExampleDelimiter",
- CellID->2012641746],
+ CellID->2012641746,ExpressionUUID->"2f3d16f7-638f-40ab-8629-165fa9d8498b"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->2017647728],
+ CellID->2017647728,ExpressionUUID->"5293d0ce-14a9-4eb1-9e09-477fc530bf44"],
 
 Cell["\<\
 Let's consider an example from real protein data. We will use already \
 clustered data, from the MathIOmica proteomics examples. Let's import the \
 data, which should be located at:\
 \>", "ExampleText",
- CellID->681914774],
+ CellID->681914774,ExpressionUUID->"05d77897-cc99-4c6a-9439-f5320bce15cb"],
 
 Cell[BoxData[
  RowBox[{"proteinExampleClusterFile", "=", 
@@ -2594,10 +2699,10 @@ Cell[BoxData[
     "ConstantMathIOmicaExamplesDirectory", ",", 
      "\"\<proteinClusteringExample\>\""}], "}"}]}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->1923222966],
+ CellID->1923222966,ExpressionUUID->"eb17be2d-2622-41b5-ba8a-0b881bb3be46"],
 
 Cell["We can now get the data :", "ExampleText",
- CellID->915319762],
+ CellID->915319762,ExpressionUUID->"ecdd1dcd-9b3c-4bb3-a0d4-b51258861571"],
 
 Cell[CellGroupData[{
 
@@ -2605,7 +2710,7 @@ Cell[BoxData[
  RowBox[{"proteinExampleClusters", "=", 
   RowBox[{"Get", "[", "proteinExampleClusterFile", "]"}]}]], "Input",
  CellLabel->"In[3]:=",
- CellID->1353876473],
+ CellID->1353876473,ExpressionUUID->"73c34194-5e1d-4ea5-aafa-683cd5519136"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2975,17 +3080,17 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[25]]], "Output",
- ImageSize->{572, 226},
+ ImageSize->{543, 283},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->879367228]
+ CellID->879367228,ExpressionUUID->"577b6cdf-adb7-4161-ba92-508a63bbe8be"]
 }, Open  ]],
 
 Cell["\<\
 We can calculate the GOAnalysis for each group in each class:\
 \>", "ExampleText",
- CellID->916164270],
+ CellID->916164270,ExpressionUUID->"3e610726-3a76-43c1-8fa9-b2cdeffa4fc2"],
 
 Cell[CellGroupData[{
 
@@ -2993,7 +3098,7 @@ Cell[BoxData[
  RowBox[{"enrichmentGOprotein", "=", 
   RowBox[{"GOAnalysis", "[", "proteinExampleClusters", "]"}]}]], "Input",
  CellLabel->"In[4]:=",
- CellID->742674912],
+ CellID->742674912,ExpressionUUID->"852d48f1-6840-47e8-b78a-d726a3a26aa2"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -3348,20 +3453,20 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[15]]], "Output",
- ImageSize->{579, 196},
+ ImageSize->{525, 254},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[4]=",
- CellID->722860091]
+ CellID->722860091,ExpressionUUID->"2ebf83df-c929-4705-959a-7d17d3fe1261"]
 }, Open  ]],
 
 Cell["The data has multiple clusters:", "ExampleText",
- CellID->107326098],
+ CellID->107326098,ExpressionUUID->"acfed28e-5575-43cc-8086-eab7b21e60e9"],
 
 Cell[CellGroupData[{
 
 Cell["Query[All,Keys]@enrichmentGOprotein", "Input",
- CellID->1845173164],
+ CellID->1845173164,ExpressionUUID->"4becbb09-eea8-4eca-ae76-8b5e41b2c452"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -3391,16 +3496,16 @@ Cell[BoxData[
     RowBox[{"{", 
      RowBox[{"\<\"G1S1\"\>", ",", "\<\"G1S2\"\>", ",", "\<\"G2S1\"\>"}], 
      "}"}]}]}], "\[RightAssociation]"}]], "Output",
- ImageSize->{548, 42},
+ ImageSize->{512, 53},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[5]=",
- CellID->794558358]
+ CellID->794558358,ExpressionUUID->"6500cd31-b9a4-46cc-8dc7-b801c43080e9"]
 }, Open  ]],
 
 Cell["Let's look at the top category in each group in each class:", \
 "ExampleText",
- CellID->1885501598],
+ CellID->1885501598,ExpressionUUID->"04b140cb-57ff-4f39-a598-2c990363da12"],
 
 Cell[CellGroupData[{
 
@@ -3410,7 +3515,7 @@ Cell[BoxData[
    RowBox[{"All", ",", "All", ",", 
     RowBox[{"{", "1", "}"}]}], "]"}], "@", "enrichmentGOprotein"}]], "Input",
  CellLabel->"In[6]:=",
- CellID->1542739591],
+ CellID->1542739591,ExpressionUUID->"fe7be49d-4bed-4771-b68c-87ad0860d4a0"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -4568,11 +4673,11 @@ complex\"\>", ",", "\<\"cellular_component\"\>"}], "}"}], ",",
                 RowBox[{"\<\"P62879\"\>", ",", "\<\"Protein\"\>"}], "}"}], 
                "}"}], "}"}]}], "}"}]}], "}"}]}], "\[RightAssociation]"}]}]}], 
      "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
- ImageSize->{575, 1556},
+ ImageSize->{573, 2002},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[6]=",
- CellID->1089005860]
+ CellID->1089005860,ExpressionUUID->"8be12b62-53df-4a05-8d95-5ac349882221"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -4582,23 +4687,27 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "Options",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(24)", "ExampleCount"]
+ Cell["(24)", "ExampleCount",ExpressionUUID->
+  "94e82b1a-51a2-49b2-8e21-96bba6f7c641"]
 }], "ExampleSection", "ExampleSection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"eeb7425b-57b7-415e-8972-74bd02c7ce3d"],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
  "AdditionalFilter",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(4)", "ExampleCount"]
+ Cell["(4)", "ExampleCount",ExpressionUUID->
+  "23b4e7a3-452c-4200-b108-d937036f7fa1"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"69e059f2-4be4-45e6-a0d5-d0d78def53f4"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->550101298],
+ CellID->550101298,ExpressionUUID->"a6672a80-eb89-46a2-9d97-dd810d1670cc"],
 
 Cell[TextData[{
  "AdditionalFilter provides additional filtering that may be applied to the \
@@ -4609,13 +4718,13 @@ standard output structure to be returned.  This is typically implemented by a \
   ButtonData->"paclet:ref/Select"],
  " statement."
 }], "ExampleText",
- CellID->1966375077],
+ CellID->1966375077,ExpressionUUID->"1454c062-0325-43bb-b230-ee39236bc216"],
 
 Cell["\<\
 Let's do a GO analysis for a group of genes, annotated with their \"Gene \
 Symbol\":\
 \>", "ExampleText",
- CellID->635415151],
+ CellID->635415151,ExpressionUUID->"923e7777-b66c-4b90-b9e7-073fc9d5dbeb"],
 
 Cell[CellGroupData[{
 
@@ -4633,7 +4742,7 @@ Cell[BoxData[
      "\"\<IRAK4\>\"", ",", "\"\<PIAS4\>\"", ",", "\"\<PLAU\>\""}], "}"}], 
    "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->2133749973],
+ CellID->2133749973,ExpressionUUID->"9721d860-b765-4c4f-82da-50003c7c92e8"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -4889,15 +4998,15 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[5]]], "Output",
- ImageSize->{548, 123},
+ ImageSize->{548, 132},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->252114323]
+ CellID->252114323,ExpressionUUID->"486a99ce-7bea-43ed-ab1e-b3e7bdef0e3b"]
 }, Open  ]],
 
 Cell["We can obtain the first 5 results for the data:", "ExampleText",
- CellID->1930503380],
+ CellID->1930503380,ExpressionUUID->"58971f6c-cd5f-4fa3-92f6-14f4efb8773c"],
 
 Cell[CellGroupData[{
 
@@ -4906,7 +5015,7 @@ Cell[BoxData[
   RowBox[{"Query", "[", 
    RowBox[{"1", ";;", "10"}], "]"}], "@", "goExample1"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->1787368784],
+ CellID->1787368784,ExpressionUUID->"028b466d-d548-4427-9151-5438a12be06b"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -5164,18 +5273,18 @@ signaling\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
           RowBox[{"{", "\<\"NFKB2\"\>", "}"}], ",", 
           RowBox[{"{", "\<\"PIAS4\"\>", "}"}]}], "}"}]}], "}"}]}], "}"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{570, 518},
+ ImageSize->{570, 587},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->300191130]
+ CellID->300191130,ExpressionUUID->"17ea1b44-25c1-4358-a677-fe3af65da86d"]
 }, Open  ]],
 
 Cell["\<\
 Now let's apply a filter, to only select biological process ontologies. In \
 the output this label is in the 3rd list, 1st sublist, 2nd component:\
 \>", "ExampleText",
- CellID->160852951],
+ CellID->160852951,ExpressionUUID->"49c5ba6f-d8b0-4ab8-9888-3cb845e78f61"],
 
 Cell[BoxData[
  RowBox[{
@@ -5203,10 +5312,10 @@ Cell[BoxData[
           "\"\<biological_process\>\""}], "]"}], "&"}], "]"}]}]}], "]"}]}], 
   ";"}]], "Input",
  CellLabel->"In[4]:=",
- CellID->143336021],
+ CellID->143336021,ExpressionUUID->"aa2238ad-f76f-4cf6-891c-e93e0da044bf"],
 
 Cell["We can see that hte results are now filtered:", "ExampleText",
- CellID->863480997],
+ CellID->863480997,ExpressionUUID->"52868169-d151-46f9-9dae-16f861d65ded"],
 
 Cell[CellGroupData[{
 
@@ -5215,7 +5324,7 @@ Cell[BoxData[
   RowBox[{"Query", "[", 
    RowBox[{"1", ";;", "10"}], "]"}], "@", "goExample1FilteredBP"}]], "Input",
  CellLabel->"In[5]:=",
- CellID->451471213],
+ CellID->451471213,ExpressionUUID->"2121a2ba-cb29-48d3-bc71-b54bbbc6a4d8"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -5439,31 +5548,33 @@ signaling\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
           RowBox[{"{", "\<\"TIRAP\"\>", "}"}], ",", 
           RowBox[{"{", "\<\"TNFRSF13C\"\>", "}"}]}], "}"}]}], "}"}]}], 
      "}"}]}]}], "\[RightAssociation]"}]], "Output",
- ImageSize->{570, 490},
+ ImageSize->{570, 553},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[5]=",
- CellID->761088273]
+ CellID->761088273,ExpressionUUID->"7fcd8dcb-e7ef-48d9-9039-6727771b7eb4"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- InterpretationBox[Cell["\t", "ExampleDelimiter"],
+ InterpretationBox[Cell[
+  "\t", "ExampleDelimiter",ExpressionUUID->
+   "9a320f9c-8156-4ce4-afca-7fae4072d9af"],
   $Line = 0; Null]], "ExampleDelimiter",
- CellID->55270547],
+ CellID->55270547,ExpressionUUID->"92c370af-c162-417c-8d18-0ae0087977f6"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1219147925],
+ CellID->1219147925,ExpressionUUID->"13ad536b-eb69-4310-8103-2187838c017b"],
 
 Cell["\<\
 Now let's apply a different filter, to only select cellular component  \
 ontologies. In the output this label is also in the 3rd list, 1st sublist, \
 2nd component:\
 \>", "ExampleText",
- CellID->2034683889],
+ CellID->2034683889,ExpressionUUID->"2d6332ed-3031-4968-ac03-60930a9444f5"],
 
 Cell[BoxData[
  RowBox[{
@@ -5491,10 +5602,10 @@ Cell[BoxData[
           "\"\<cellular_component\>\""}], "]"}], "&"}], "]"}]}]}], "]"}]}], 
   ";"}]], "Input",
  CellLabel->"In[2]:=",
- CellID->402527595],
+ CellID->402527595,ExpressionUUID->"581f888f-a3dd-435f-9293-bbe8d2a1fb67"],
 
 Cell["We can see that the results are now filtered:", "ExampleText",
- CellID->707801115],
+ CellID->707801115,ExpressionUUID->"0b6205c6-8e5f-418f-a454-ece72dc9f664"],
 
 Cell[CellGroupData[{
 
@@ -5503,7 +5614,7 @@ Cell[BoxData[
   RowBox[{"Query", "[", 
    RowBox[{"1", ";;", "10"}], "]"}], "@", "goExample1FilteredCC"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->1101419072],
+ CellID->1101419072,ExpressionUUID->"f0c56b72-013f-46e3-8e1c-8185c0491c60"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -5744,32 +5855,34 @@ Cell[BoxData[
         RowBox[{"{", 
          RowBox[{"{", "\<\"MALT1\"\>", "}"}], "}"}]}], "}"}]}], "}"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{559, 468},
+ ImageSize->{559, 543},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->1238372798]
+ CellID->1238372798,ExpressionUUID->"7efc8327-dd3d-4b1b-a0dc-d6674447251e"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- InterpretationBox[Cell["\t", "ExampleDelimiter"],
+ InterpretationBox[Cell[
+  "\t", "ExampleDelimiter",ExpressionUUID->
+   "58125f63-ccb5-4167-b058-0fe4369fa8d1"],
   $Line = 0; Null]], "ExampleDelimiter",
- CellID->65186435],
+ CellID->65186435,ExpressionUUID->"a6a93eb7-754b-46b0-9db6-aa473abdb4e3"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->371753075],
+ CellID->371753075,ExpressionUUID->"ced12074-0ad0-4193-82f9-a47426169438"],
 
 Cell["\<\
 Now let's apply a different filter, to only select ontology results for which \
 \"NFKB2\" is included in the membership  ontologies. In the output this \
 membership list is the 3rd list, 2nd sublist,:\
 \>", "ExampleText",
- CellID->1024002402],
+ CellID->1024002402,ExpressionUUID->"ccb8ec7e-1843-4165-bb70-3bbe03de9ab0"],
 
 Cell[CellGroupData[{
 
@@ -5798,7 +5911,7 @@ Cell[BoxData[
          RowBox[{"{", "\"\<NFKB2\>\"", "}"}]}], "]"}], "&"}], "]"}]}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->474423356],
+ CellID->474423356,ExpressionUUID->"1590c57c-30d2-4a0a-a602-685c71bb9b7b"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -6297,32 +6410,34 @@ polymerase II promoter\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
         RowBox[{"{", 
          RowBox[{"{", "\<\"NFKB2\"\>", "}"}], "}"}]}], "}"}]}], "}"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{566, 935},
+ ImageSize->{566, 1103},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->99648262]
+ CellID->99648262,ExpressionUUID->"0a2c5b09-24c0-4225-82ca-3cecbd4c7380"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- InterpretationBox[Cell["\t", "ExampleDelimiter"],
+ InterpretationBox[Cell[
+  "\t", "ExampleDelimiter",ExpressionUUID->
+   "c5859440-c1a0-4b2a-abc4-1987022d80b6"],
   $Line = 0; Null]], "ExampleDelimiter",
- CellID->631859916],
+ CellID->631859916,ExpressionUUID->"66d53b22-4eec-46bd-88a6-4a73d6dffe45"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->810451908],
+ CellID->810451908,ExpressionUUID->"f5b64aca-48a2-4a72-987c-ba78c47e07a8"],
 
 Cell["\<\
 Now let's apply a filter, to only select results for which the pathway text \
 inlcudes the term \"NF-kappaB\"\". In the output this would mean checking for \
 this pattern in the in the 3rd list, 1st sublist, 1st component\
 \>", "ExampleText",
- CellID->555476797],
+ CellID->555476797,ExpressionUUID->"7b00baba-cbdb-450a-bec4-14e1a1cfc719"],
 
 Cell[CellGroupData[{
 
@@ -6351,7 +6466,7 @@ Cell[BoxData[
          RowBox[{"___", "~~", "\"\<NF-kappaB\>\"", "~~", "___"}]}], "]"}], 
        "&"}], "]"}]}]}], "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->787113670],
+ CellID->787113670,ExpressionUUID->"57581aa1-cc39-4efd-bd4b-df8ab6b2806f"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -6564,11 +6679,11 @@ activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
         RowBox[{"{", 
          RowBox[{"{", "\<\"NFKBIA\"\>", "}"}], "}"}]}], "}"}]}], "}"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{566, 410},
+ ImageSize->{566, 484},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->628628539]
+ CellID->628628539,ExpressionUUID->"e6df5910-4c47-4dd4-aafe-320b8b2aef7f"]
 }, Open  ]]
 }, Open  ]]
 }, Closed]],
@@ -6578,14 +6693,16 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "AugmentDictionary",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "4293ccd7-d304-4f37-bdcf-d870095d6a06"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"42ed8992-6c63-4bc7-8d56-8bb1f060de7c"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1113597142],
+ CellID->1113597142,ExpressionUUID->"cd888f71-2b72-4dd1-ba89-9f6076a6980b"],
 
 Cell[TextData[{
  "AugmentDictionary provides a choice whether or not to augment the current \
@@ -6595,12 +6712,13 @@ Cell[TextData[{
      TextData["ConstantGeneDictionary"]],
     "paclet:MathIOmica/ref/ConstantGeneDictionary"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "436cb21c-7e54-49e1-9a96-c5217bd737fd"],
  " variable or create a new one. In the example below gene dictionary already \
 exists, and set a simple dictionary as an example (please note that this will \
 reset your variable if you have one already created, so use with caution):"
 }], "ExampleText",
- CellID->525558910],
+ CellID->525558910,ExpressionUUID->"8b244419-4511-4fff-925a-c83798e41948"],
 
 Cell[CellGroupData[{
 
@@ -6642,7 +6760,7 @@ Cell[BoxData[
          ",", "\"\<SAMD11\>\""}], "}"}]}]}], "\[RightAssociation]"}]}], 
    "\[RightAssociation]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->2004519476],
+ CellID->2004519476,ExpressionUUID->"6b72043a-53b5-48c6-9518-98ee52abb12d"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -6679,19 +6797,21 @@ Cell[BoxData[
          ",", "\<\"SAMD11\"\>", ",", "\<\"SAMD11\"\>", 
         ",", "\<\"SAMD11\"\>"}], "}"}]}]}], "\[RightAssociation]"}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{529, 138},
+ ImageSize->{529, 173},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1533684535]
+ CellID->1533684535,ExpressionUUID->"c2c9d1d9-e176-4c65-96e6-08396d04d7d3"]
 }, Open  ]],
 
 Cell[TextData[{
  "If we now run a standard analysis with the ",
- Cell[BoxData["AugmentDictionary"], "InlineFormula"],
+ Cell[BoxData[
+ "AugmentDictionary"], "InlineFormula",ExpressionUUID->
+  "3ed8343f-c63a-4b1d-99e3-47d77de052fe"],
  " option set to True we have:"
 }], "ExampleText",
- CellID->420607162],
+ CellID->420607162,ExpressionUUID->"fdcd71e4-ffdf-4896-ae63-f8cf5a8030ca"],
 
 Cell[CellGroupData[{
 
@@ -6712,7 +6832,7 @@ Cell[BoxData[
     RowBox[{"AugmentDictionary", "\[Rule]", " ", "True"}]}], "]"}]}]], "Input",\
 
  CellLabel->"In[3]:=",
- CellID->2021279070],
+ CellID->2021279070,ExpressionUUID->"64632355-37f1-4670-8647-219c52cc4246"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -6967,11 +7087,11 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[23]]], "Output",
- ImageSize->{483, 121},
+ ImageSize->{483, 130},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->951937478]
+ CellID->951937478,ExpressionUUID->"0bb509c4-79c6-4831-8500-b94ccf153cfc"]
 }, Open  ]],
 
 Cell[TextData[{
@@ -6981,15 +7101,16 @@ Cell[TextData[{
      TextData["ConstantGeneDictionary"]],
     "paclet:MathIOmica/ref/ConstantGeneDictionary"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "b851332e-e29e-48d0-8639-b367f44f969c"],
  ":"
 }], "ExampleText",
- CellID->1568520984],
+ CellID->1568520984,ExpressionUUID->"3fea67ab-cb60-4bad-8b67-3fd1cb0be2d8"],
 
 Cell[CellGroupData[{
 
 Cell["ConstantGeneDictionary", "Input",
- CellID->1955297330],
+ CellID->1955297330,ExpressionUUID->"462f0a66-8b4c-4669-a6ec-fb1248ced7f8"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -7235,24 +7356,26 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[24]]], "Output",
- ImageSize->{545, 120},
+ ImageSize->{545, 130},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[4]=",
- CellID->973792320]
+ CellID->973792320,ExpressionUUID->"fcdad7eb-6cf3-4555-b43e-c0e78b043e87"]
 }, Open  ]],
 
 Cell[TextData[{
  "We see that this has augmented the previous dictionary with the \"human\" \
 annotation used in the example. We now repeat with ",
- Cell[BoxData["AugmentDictionary"], "InlineFormula"],
+ Cell[BoxData[
+ "AugmentDictionary"], "InlineFormula",ExpressionUUID->
+  "48a980a5-933d-4be2-81d9-262e5943e77c"],
  " set to ",
  ButtonBox["False",
   BaseStyle->"Link",
   ButtonData->"paclet:ref/False"],
  ":"
 }], "ExampleText",
- CellID->1020182356],
+ CellID->1020182356,ExpressionUUID->"be62b1ec-9c3e-4b60-8de3-91dab668e7bc"],
 
 Cell[CellGroupData[{
 
@@ -7273,7 +7396,7 @@ Cell[BoxData[
     RowBox[{"AugmentDictionary", "\[Rule]", " ", "False"}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[5]:=",
- CellID->1237024026],
+ CellID->1237024026,ExpressionUUID->"cf642fc6-bc30-44d9-9d15-d17046deb039"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -7526,11 +7649,11 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[26]]], "Output",
- ImageSize->{483, 121},
+ ImageSize->{483, 130},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[5]=",
- CellID->1541534855]
+ CellID->1541534855,ExpressionUUID->"2e0b80ca-60be-467d-8f2a-d9dd3549d7af"]
 }, Open  ]],
 
 Cell[TextData[{
@@ -7540,22 +7663,24 @@ Cell[TextData[{
      TextData["ConstantGeneDictionary"]],
     "paclet:MathIOmica/ref/ConstantGeneDictionary"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "757690c5-5ee1-41c5-bfa3-8b380d574fbd"],
  " to notice that the previous ",
  Cell[BoxData[
   TemplateBox[{Cell[
      TextData["ConstantGeneDictionary"]],
     "paclet:MathIOmica/ref/ConstantGeneDictionary"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "089ecbd0-0b68-4b5b-a78e-3079b0a555cb"],
  " has now been replaced with a new default one."
 }], "ExampleText",
- CellID->1183840104],
+ CellID->1183840104,ExpressionUUID->"292f3d7a-8908-42b3-af54-925987862da5"],
 
 Cell[CellGroupData[{
 
 Cell["ConstantGeneDictionary", "Input",
- CellID->364638473],
+ CellID->364638473,ExpressionUUID->"a711b59e-6bd5-48fd-9af8-94c76868802f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -7801,19 +7926,21 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[27]]], "Output",
- ImageSize->{578, 120},
+ ImageSize->{545, 147},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[6]=",
- CellID->1333590577]
+ CellID->1333590577,ExpressionUUID->"fb34c8aa-3e61-457f-a3d6-d84f269f0387"]
 }, Open  ]],
 
 Cell[TextData[{
- Cell[BoxData["AugmentDictionary"], "InlineFormula"],
+ Cell[BoxData[
+ "AugmentDictionary"], "InlineFormula",ExpressionUUID->
+  "c6a9e6cb-05be-48aa-ae11-04e3812a073c"],
  " is best used in advanced applications, especially when utilizing/analyzing \
 data from multiple species."
 }], "ExampleText",
- CellID->1269422179]
+ CellID->1269422179,ExpressionUUID->"f7630db8-28c8-43fd-a988-66229859abc6"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -7821,20 +7948,22 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "BackgroundSet",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "57b19a33-35cf-48d4-baf4-e2f610add17b"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"fadc2ef7-7f13-4cfa-9d3b-50ac93ab3574"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->736194619],
+ CellID->736194619,ExpressionUUID->"00ecc224-6b3f-4d1e-a68a-18e82014043f"],
 
 Cell["\<\
 BackgroundSet provides a list of IDs (e.g. gene accessions) that should be \
 considered as the background for the calculation.\
 \>", "ExampleText",
- CellID->1046633828],
+ CellID->1046633828,ExpressionUUID->"3dd76c93-8865-4250-b4cb-d5fffb83f42a"],
 
 Cell[TextData[{
  "By default the ",
@@ -7843,7 +7972,7 @@ Cell[TextData[{
   ButtonData->"paclet:MathIOmica/ref/BackgroundSet"],
  " is set to All:"
 }], "ExampleText",
- CellID->1888352090],
+ CellID->1888352090,ExpressionUUID->"ecd6432a-b469-4330-a966-a560b52ca0e6"],
 
 Cell[CellGroupData[{
 
@@ -7863,7 +7992,7 @@ Cell[BoxData[
     ",", 
     RowBox[{"BackgroundSet", "\[Rule]", " ", "All"}]}], "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->2020241264],
+ CellID->2020241264,ExpressionUUID->"2ecf9441-8a17-4799-aa31-321ac48182e5"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -8116,11 +8245,11 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[29]]], "Output",
- ImageSize->{483, 121},
+ ImageSize->{483, 130},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1002554889]
+ CellID->1002554889,ExpressionUUID->"00a53c0d-0b20-4785-9b97-d7772e1bcb3e"]
 }, Open  ]],
 
 Cell["\<\
@@ -8128,7 +8257,7 @@ In a rather specialized example, let's limit the background to be the \
 following list of genes (relating to KEGG \"NFKB\" pathway), e.g. from \
 conducting an experiment using an array with only these probes included.\
 \>", "ExampleText",
- CellID->99727020],
+ CellID->99727020,ExpressionUUID->"d7b715be-b2bd-4ef3-9a39-7675cd87680a"],
 
 Cell[BoxData[
  RowBox[{
@@ -8166,13 +8295,13 @@ Cell[BoxData[
      "\"\<BCL10\>\"", ",", "\"\<MAP3K14\>\"", ",", "\"\<CD14\>\"", ",", 
      "\"\<CD40\>\"", ",", "\"\<CD40LG\>\""}], "}"}]}], ";"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->1766580999],
+ CellID->1766580999,ExpressionUUID->"4286fc27-bca0-45b9-99f5-d0908eebaeb7"],
 
 Cell["\<\
 We need to first convert these to UniProt IDs, since the MathIOmica GO \
 annotation is based on UniProt IDs. We can use \
 \>", "ExampleText",
- CellID->1110891760],
+ CellID->1110891760,ExpressionUUID->"3ae7e7a1-1cbd-4431-99ac-456f9a0c1d36"],
 
 Cell[CellGroupData[{
 
@@ -8189,7 +8318,7 @@ Cell[BoxData[
       RowBox[{"{", " ", "\"\<Gene Symbol\>\"", "}"}]}]}], "]"}]}]}]], "Input",\
 
  CellLabel->"In[4]:=",
- CellID->1807125467],
+ CellID->1807125467,ExpressionUUID->"fefd14ab-7df4-40f4-9aac-be2cb9bbe68b"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -8261,18 +8390,18 @@ Cell[BoxData[
    ",", "\<\"Q9Y275\"\>", ",", "\<\"Q9Y275-2\"\>", ",", "\<\"Q9Y4K3\"\>", 
    ",", "\<\"Q9Y6K9\"\>", ",", "\<\"Q9Y6K9-2\"\>", ",", "\<\"Q9Y6K9-3\"\>", 
    ",", "\<\"Q9Y6Q6\"\>", ",", "\<\"Q9Y6Y9\"\>"}], "}"}]], "Output",
- ImageSize->{548, 300},
+ ImageSize->{548, 391},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[4]=",
- CellID->783325061]
+ CellID->783325061,ExpressionUUID->"ad3599db-4b4a-4052-aa05-caef4b6b6731"]
 }, Open  ]],
 
 Cell["\<\
 We see that by using the background, since the set is already enriched in \
 NFKB pathway genes the significant result list is shortened:\
 \>", "ExampleText",
- CellID->317126387],
+ CellID->317126387,ExpressionUUID->"cad64450-b283-45df-8373-e162d35f390e"],
 
 Cell[CellGroupData[{
 
@@ -8293,7 +8422,7 @@ Cell[BoxData[
     RowBox[{"BackgroundSet", "\[Rule]", " ", "backgroundExampleUniprot"}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[5]:=",
- CellID->1948657367],
+ CellID->1948657367,ExpressionUUID->"863a2756-8798-4bc9-b24d-0a22a37c9690"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -8325,11 +8454,11 @@ Cell[BoxData[
          RowBox[{"{", "\<\"NFKB2\"\>", "}"}], ",", 
          RowBox[{"{", "\<\"PIAS4\"\>", "}"}]}], "}"}]}], "}"}]}], "}"}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{513, 41},
+ ImageSize->{515, 53},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[5]=",
- CellID->1977941474]
+ CellID->1977941474,ExpressionUUID->"3591cf80-e381-44e2-a387-a06cdb04f8a8"]
 }, Open  ]]
 }, Closed]],
 
@@ -8338,17 +8467,21 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "FilterSignificant",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "80c090b1-b235-4f28-8d8e-d1d37d1a87d1"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"b0995abb-b069-4504-a800-cb13c0ab7779"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1509635015],
+ CellID->1509635015,ExpressionUUID->"c2606d87-47ee-45e9-a248-44b3f2db9e74"],
 
 Cell[TextData[{
- Cell[BoxData["FilterSignificant"], "InlineFormula"],
+ Cell[BoxData[
+ "FilterSignificant"], "InlineFormula",ExpressionUUID->
+  "79600a68-1c42-4af1-a878-bc97946ff842"],
  " is an option, which is by default set to ",
  ButtonBox["True, and",
   BaseStyle->"Link",
@@ -8356,7 +8489,7 @@ Cell[TextData[{
  " filters data based on whether the enrichment analysis is statistically \
 significant or not."
 }], "ExampleText",
- CellID->2063891447],
+ CellID->2063891447,ExpressionUUID->"799ac1ab-86ea-46a1-a13e-071f20e51d0b"],
 
 Cell[CellGroupData[{
 
@@ -8377,7 +8510,7 @@ Cell[BoxData[
     RowBox[{"FilterSignificant", "\[Rule]", " ", "True"}]}], "]"}]}]], "Input",\
 
  CellLabel->"In[2]:=",
- CellID->1945574698],
+ CellID->1945574698,ExpressionUUID->"ecd76683-b60e-44d5-abb9-ceafb0002b96"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -8683,18 +8816,18 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[73]]], "Output",
- ImageSize->{574, 242},
+ ImageSize->{574, 272},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1129082782]
+ CellID->1129082782,ExpressionUUID->"f3ac9558-3cb6-4c30-9d86-ac21ffdb1228"]
 }, Open  ]],
 
 Cell["\<\
 We can see for example the last 5 members of the list are all computed to \
 have statistical significance:\
 \>", "ExampleText",
- CellID->2022108999],
+ CellID->2022108999,ExpressionUUID->"d7c2b3dd-cbf1-4ad9-ac4f-dfe3d1d8d887"],
 
 Cell[CellGroupData[{
 
@@ -8704,7 +8837,7 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"-", "5"}], ";;"}], "]"}], "]"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->523506295],
+ CellID->523506295,ExpressionUUID->"349f0595-e424-4aa8-9e0f-3d4c61064be0"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -8793,22 +8926,24 @@ mitochondrion\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
         RowBox[{"{", 
          RowBox[{"{", "\<\"MALT1\"\>", "}"}], "}"}]}], "}"}]}], "}"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{552, 149},
+ ImageSize->{552, 189},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->965957696]
+ CellID->965957696,ExpressionUUID->"fd50f56f-73fb-4f1d-ab46-d946eb0445e8"]
 }, Open  ]],
 
 Cell[TextData[{
  "We now repeat the computation and setting the ",
- Cell[BoxData["FilterSignificant"], "InlineFormula"],
+ Cell[BoxData[
+ "FilterSignificant"], "InlineFormula",ExpressionUUID->
+  "579d7b15-ced9-424c-8f9d-8b6fb1442556"],
  " to ",
  ButtonBox["False",
   BaseStyle->"Link",
   ButtonData->"paclet:ref/False"]
 }], "ExampleText",
- CellID->1743761933],
+ CellID->1743761933,ExpressionUUID->"53d79ba3-bec8-4839-8af2-386302d8ac3a"],
 
 Cell[CellGroupData[{
 
@@ -8829,7 +8964,7 @@ Cell[BoxData[
     RowBox[{"FilterSignificant", "\[Rule]", " ", "False"}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[4]:=",
- CellID->495991420],
+ CellID->495991420,ExpressionUUID->"dc4ac852-678b-4da1-9253-ec8a8e8ab0a3"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -9135,18 +9270,18 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[77]]], "Output",
- ImageSize->{574, 255},
+ ImageSize->{574, 289},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[4]=",
- CellID->192840682]
+ CellID->192840682,ExpressionUUID->"f0636ed9-7f35-4d7e-8fb1-d9756c9ed8e4"]
 }, Open  ]],
 
 Cell["\<\
 We can look at again the last 5 members of the list, and see that \
 non-significant results are also included:\
 \>", "ExampleText",
- CellID->1361136516],
+ CellID->1361136516,ExpressionUUID->"5cc8bb74-451f-449f-9e52-5820d0547a87"],
 
 Cell[CellGroupData[{
 
@@ -9156,7 +9291,7 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"-", "5"}], ";;"}], "]"}], "]"}]], "Input",
  CellLabel->"In[5]:=",
- CellID->1625616568],
+ CellID->1625616568,ExpressionUUID->"ceaefbb8-23c1-4cd8-a7cc-592b74b1b9d5"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -9245,11 +9380,11 @@ Cell[BoxData[
           RowBox[{"{", "\<\"TNFSF13B\"\>", "}"}], ",", 
           RowBox[{"{", "\<\"TNFRSF13C\"\>", "}"}]}], "}"}]}], "}"}]}], 
      "}"}]}]}], "\[RightAssociation]"}]], "Output",
- ImageSize->{545, 149},
+ ImageSize->{545, 189},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[5]=",
- CellID->1662795926]
+ CellID->1662795926,ExpressionUUID->"346e7ca9-86e8-45fb-a62e-b099c873d9fd"]
 }, Open  ]]
 }, Closed]],
 
@@ -9258,17 +9393,21 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "GeneDictionary",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "f0afa9fc-094f-4ac8-b6f4-c9149bc6f9fa"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"6a7c6066-9a82-448f-bef0-c09ba0ed7dc1"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->544909434],
+ CellID->544909434,ExpressionUUID->"6c8b1643-6672-4966-8d0a-1023d171c377"],
 
 Cell[TextData[{
- Cell[BoxData["GeneDictionary"], "InlineFormula"],
+ Cell[BoxData[
+ "GeneDictionary"], "InlineFormula",ExpressionUUID->
+  "473533bc-4c1f-480a-9e4a-fce0bee03e7b"],
  " takes values that point to an existing variable to be used as a gene \
 dictionary in annotations. By defautl, it is set to ",
  ButtonBox["None",
@@ -9280,10 +9419,11 @@ dictionary in annotations. By defautl, it is set to ",
      TextData["ConstantGeneDictionary"]],
     "paclet:MathIOmica/ref/ConstantGeneDictionary"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "2c908671-dd5b-44ac-a563-7a4442673a3f"],
  " is used."
 }], "ExampleText",
- CellID->954949886],
+ CellID->954949886,ExpressionUUID->"1b136bda-05b4-4ab0-9f33-975ba9e10b73"],
 
 Cell[CellGroupData[{
 
@@ -9303,7 +9443,7 @@ Cell[BoxData[
     ",", 
     RowBox[{"GeneDictionary", "\[Rule]", " ", "None"}]}], "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->1697439971],
+ CellID->1697439971,ExpressionUUID->"b3d9ee06-e4f9-4f73-baed-bd220f2490ef"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -9551,18 +9691,18 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[79]]], "Output",
- ImageSize->{537, 151},
+ ImageSize->{537, 166},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->2110597307]
+ CellID->2110597307,ExpressionUUID->"28b99971-0475-4379-92f0-6525065c8c24"]
 }, Open  ]],
 
 Cell["\<\
 We can instead use a variable as a gene dictionary. For example suppose we \
 have a rather restricted dictionary:\
 \>", "ExampleText",
- CellID->1913273234],
+ CellID->1913273234,ExpressionUUID->"86b29630-b140-48f4-8d13-503eb7e7deae"],
 
 Cell[BoxData[
  RowBox[{
@@ -9695,7 +9835,7 @@ Cell[BoxData[
           "\"\<4790\>\""}], "}"}]}]}], "\[RightAssociation]"}]}], 
     "\[RightAssociation]"}]}], ";"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->162368068],
+ CellID->162368068,ExpressionUUID->"d181b2b2-2638-42a1-87cb-7760a004e1b5"],
 
 Cell[CellGroupData[{
 
@@ -9716,7 +9856,7 @@ Cell[BoxData[
     RowBox[{"GeneDictionary", "\[Rule]", " ", "geneDictionaryExample"}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[4]:=",
- CellID->32286649],
+ CellID->32286649,ExpressionUUID->"5bc2b723-1cb2-49c1-a31e-c3f17693510d"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -14427,11 +14567,11 @@ signaling pathway\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
         RowBox[{"{", 
          RowBox[{"{", "\<\"LYN\"\>", "}"}], "}"}]}], "}"}]}], "}"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{581, 8525},
+ ImageSize->{575, 10717},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[4]=",
- CellID->1486520147]
+ CellID->1486520147,ExpressionUUID->"74372efc-ca56-4019-abf1-bcb714adc9b5"]
 }, Open  ]]
 }, Closed]],
 
@@ -14440,14 +14580,16 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "GetGeneDictionaryOptions",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "09325e38-ef29-434e-8f69-c07dea7c55e7"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"7dd7fdf6-71ca-4171-a21b-03334b40380d"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1121559897],
+ CellID->1121559897,ExpressionUUID->"83dd1149-2e59-4da5-a4e3-4d67ba9273c7"],
 
 Cell[TextData[{
  "GetGeneDictionaryOptions values specify a list of options that will be \
@@ -14456,10 +14598,11 @@ passed to the internal ",
   TemplateBox[{Cell[
      TextData["GetGeneDictionary"]],"paclet:MathIOmica/ref/GetGeneDictionary"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "80dd9573-d623-430a-8f66-0513c7742ff6"],
  " function. For example, we can re-import the gene dictionary from online:"
 }], "ExampleText",
- CellID->1593219160],
+ CellID->1593219160,ExpressionUUID->"1fe6e49f-c935-4e48-a3af-ba414affae02"],
 
 Cell[CellGroupData[{
 
@@ -14482,7 +14625,7 @@ Cell[BoxData[
       RowBox[{"ImportDirectly", "\[Rule]", "True"}], "}"}]}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->260827677],
+ CellID->260827677,ExpressionUUID->"11b58b50-f82d-4346-b399-79af96a193f0"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -14730,11 +14873,11 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[104]]], "Output",
- ImageSize->{537, 151},
+ ImageSize->{537, 166},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1275993110]
+ CellID->1275993110,ExpressionUUID->"1a3f4211-171b-4147-8ce3-55060ca532f8"]
 }, Open  ]]
 }, Closed]],
 
@@ -14743,14 +14886,16 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "GOAnalysisAssignerOptions",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "d01364c2-0a27-4077-b0c2-d5c443b7b85d"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"4c5072df-76d1-406b-9943-4bd3805b79e7"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->368641672],
+ CellID->368641672,ExpressionUUID->"9ee2b979-0e57-4fbd-8ab1-7e9ca43919af"],
 
 Cell[TextData[{
  "The GOAnalysisAssignerOptions option values specify a list of options that \
@@ -14760,7 +14905,8 @@ will be passed to the internal ",
      TextData["GOAnalysisAssigner"]],
     "paclet:MathIOmica/ref/GOAnalysisAssigner"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "748da35a-28a9-4cd8-a9bb-b30ee67285a9"],
  " function. These options supersede any other applicable options used \
 internally by ",
  Cell[BoxData[
@@ -14768,11 +14914,12 @@ internally by ",
      TextData["GOAnalysisAssigner"]],
     "paclet:MathIOmica/ref/GOAnalysisAssigner"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "be86c49b-9dc4-4fab-b7dc-b7fd90aee57c"],
  ". For example, we can restrict the GO terms to be included, to have at \
 least 3 members each."
 }], "ExampleText",
- CellID->270259709],
+ CellID->270259709,ExpressionUUID->"5f4a5cd7-e831-49eb-b934-7eb18bf62c48"],
 
 Cell[CellGroupData[{
 
@@ -14795,7 +14942,7 @@ Cell[BoxData[
       RowBox[{"LengthFilter", "\[Rule]", " ", "3"}], "}"}]}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->327015758],
+ CellID->327015758,ExpressionUUID->"ad86cfd8-9f1c-4264-acbc-fc4dfcdbf0b8"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -15043,11 +15190,11 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[109]]], "Output",
- ImageSize->{537, 151},
+ ImageSize->{537, 166},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1580991208]
+ CellID->1580991208,ExpressionUUID->"21b41027-0b82-4413-a6a5-142f23368201"]
 }, Open  ]]
 }, Closed]],
 
@@ -15056,18 +15203,22 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "HypothesisFunction",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "5a632809-f4a2-4a4f-8539-597e1f8b2277"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"76eb5412-943b-4470-84ae-c95da2b91f0c"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->904068525],
+ CellID->904068525,ExpressionUUID->"8cacba93-b48f-48ab-8b55-5b6aa72f674a"],
 
 Cell[TextData[{
  "The ",
- Cell[BoxData["HypothesisFunction"], "InlineFormula"],
+ Cell[BoxData[
+ "HypothesisFunction"], "InlineFormula",ExpressionUUID->
+  "11b0b8af-c654-42dc-aee7-3cc36e57e145"],
  " option takes as values a function to implement multiple hypothesis \
 testing.  The default is  using the ",
  Cell[BoxData[
@@ -15075,7 +15226,8 @@ testing.  The default is  using the ",
      TextData["BenjaminiHochbergFDR"]],
     "paclet:MathIOmica/ref/BenjaminiHochbergFDR"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "47c6f231-69f9-42c1-86de-770151148b72"],
  " function. Any function f with three inputs can be used, of the form \
 f[#1,#2,#3] where the inputs refer to:\n#1 is the p-value list, \n#2 is a \
 significance cutoff,\n#3 is the number of GO associations overall being \
@@ -15091,12 +15243,12 @@ adjusted p-value, ",
  " based on whether this value is considered statistically significant or not \
 respectively}."
 }], "ExampleText",
- CellID->1232897150],
+ CellID->1232897150,ExpressionUUID->"2df2a7ad-416d-4b93-8f04-a17b068d6a24"],
 
 Cell["\<\
 We can implement a Bonferroni correction. We can define for example:\
 \>", "ExampleText",
- CellID->2084560318],
+ CellID->2084560318,ExpressionUUID->"fea42393-39cb-4c88-8350-38d6d2df07fe"],
 
 Cell[BoxData[
  RowBox[{
@@ -15112,14 +15264,16 @@ Cell[BoxData[
        RowBox[{"#", "*", "numberTested"}], "\[LessEqual]", " ", "cutoff"}]}], 
      "}"}], "&"}], "/@", "pValueList"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->2097790341],
+ CellID->2097790341,ExpressionUUID->"4cfd58ce-62d1-45e7-afee-4016195a1f57"],
 
 Cell[TextData[{
  "We set the ",
- Cell[BoxData["HypothesisFunction"], "InlineFormula"],
+ Cell[BoxData[
+ "HypothesisFunction"], "InlineFormula",ExpressionUUID->
+  "3c134e57-c62a-463e-b530-e6c247a60a34"],
  " value to our function above:"
 }], "ExampleText",
- CellID->1665470403],
+ CellID->1665470403,ExpressionUUID->"2f18308d-cb9c-4ea4-8174-c40f665dee3a"],
 
 Cell[CellGroupData[{
 
@@ -15140,7 +15294,7 @@ Cell[BoxData[
     RowBox[{"HypothesisFunction", "\[Rule]", " ", "bonferroni"}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[3]:=",
- CellID->232690147],
+ CellID->232690147,ExpressionUUID->"bb69cb33-d865-4412-a339-2f85aab554f4"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -15729,11 +15883,11 @@ pathway\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
           RowBox[{"{", "\<\"NFKB1\"\>", "}"}], ",", 
           RowBox[{"{", "\<\"NFKB2\"\>", "}"}]}], "}"}]}], "}"}]}], "}"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{579, 1211},
+ ImageSize->{573, 1395},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->552890740]
+ CellID->552890740,ExpressionUUID->"7c181486-8cd6-4d84-b802-0060bc5ef409"]
 }, Open  ]]
 }, Closed]],
 
@@ -15742,26 +15896,28 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "InputID",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "bb8b5097-0595-40b6-aeb8-5da786681012"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"0e361cbe-cdea-4aa3-987f-64ab28587b36"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->272926611],
+ CellID->272926611,ExpressionUUID->"4aed1260-71e0-4a99-9834-ec3bb2cb0f20"],
 
 Cell["\<\
 The InputID option specifies a list of the kind of identifiers/accessions to \
 be used as input. The default is set to {\"UniProt ID\", \"Gene Symbol\"}.\
 \>", "ExampleText",
- CellID->1862918616],
+ CellID->1862918616,ExpressionUUID->"ddef54f7-f540-4be7-8a49-279f6a9bbf1e"],
 
 Cell["\<\
 For example if we already know we are using official Gene Symbol as an \
 identifier we may specify this directly:\
 \>", "ExampleText",
- CellID->301871616],
+ CellID->301871616,ExpressionUUID->"7553614b-99cc-4e90-8362-148b3da060f5"],
 
 Cell[CellGroupData[{
 
@@ -15782,7 +15938,7 @@ Cell[BoxData[
     RowBox[{"InputID", "\[Rule]", " ", 
      RowBox[{"{", "\"\<Gene Symbol\>\"", "}"}]}]}], "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->1199875898],
+ CellID->1199875898,ExpressionUUID->"591d4989-4263-482c-802c-3d4ac90df3ac"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -16088,20 +16244,22 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[116]]], "Output",
- ImageSize->{574, 242},
+ ImageSize->{574, 272},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->707865255]
+ CellID->707865255,ExpressionUUID->"5a1856b2-c777-4db3-809d-8afc9192691a"]
 }, Open  ]],
 
 Cell[TextData[{
  "GO anotation by default will use input IDs converted to UniProt IDs or as \
 set by the option ",
- Cell[BoxData["OutputID"], "InlineFormula"],
+ Cell[BoxData[
+ "OutputID"], "InlineFormula",ExpressionUUID->
+  "d3fb2c8e-e839-42ab-9bb2-289fa0f1cd5f"],
  "."
 }], "ExampleText",
- CellID->631399817]
+ CellID->631399817,ExpressionUUID->"9d414f49-7d7d-48cb-8810-fd31940328c1"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -16109,17 +16267,21 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "MultipleList",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "c8883756-1430-4baf-a627-9a4df9c9c71d"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"45c32cc9-2970-491b-b454-b69525046539"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->283129420],
+ CellID->283129420,ExpressionUUID->"850704ed-9d86-4564-8659-130ea8f85507"],
 
 Cell[TextData[{
- Cell[BoxData["MultipleList"], "InlineFormula"],
+ Cell[BoxData[
+ "MultipleList"], "InlineFormula",ExpressionUUID->
+  "4f7983d8-46e0-4a6b-8a7a-38dd59dce3e9"],
  " values can be set to ",
  ButtonBox["True",
   BaseStyle->"Link",
@@ -16136,7 +16298,7 @@ MultipleList is set to False, and labeled IDs are provided, labels \
 corresponding to the same ID are treated as equivalent to avoid \
 overcounting."
 }], "ExampleText",
- CellID->1086297901],
+ CellID->1086297901,ExpressionUUID->"562ed6a5-1d0f-4869-a045-98ae0309d944"],
 
 Cell["\<\
 The data can be mixed, e.g. proteins and RNA with different labels. If \
@@ -16144,7 +16306,7 @@ MultipleList is set to False (default) then IDs with different label e.g \
 ({NFKB1,Protein},{NFKB1,RNA}) are treated as equivalent, and reported \
 together:\
 \>", "ExampleText",
- CellID->1879883835],
+ CellID->1879883835,ExpressionUUID->"53bd0001-8b6f-47a6-8522-2d0ef243b53d"],
 
 Cell[CellGroupData[{
 
@@ -16208,7 +16370,7 @@ Cell[BoxData[
     
     RowBox[{"MultipleList", "\[Rule]", " ", "False"}]}], "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->1428200181],
+ CellID->1428200181,ExpressionUUID->"0433c7ae-ca42-4704-906d-283b4e4d2981"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -16543,20 +16705,22 @@ pathway\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[127]]], "Output",
- ImageSize->{544, 242},
+ ImageSize->{544, 272},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->355612580]
+ CellID->355612580,ExpressionUUID->"01fbc50c-ce16-441d-a47c-cc2659330e03"]
 }, Open  ]],
 
 Cell[TextData[{
  "We can instead treat the data as different by setting the ",
- Cell[BoxData["MultipleList"], "InlineFormula"],
+ Cell[BoxData[
+ "MultipleList"], "InlineFormula",ExpressionUUID->
+  "13e0d943-57b3-4beb-bef6-d3b04544e46d"],
  " option to True. In this case  IDs with different label e.g \
 ({NFKB1,Protein},{NFKB1,RNA}) are treated as different and counted as such:"
 }], "ExampleText",
- CellID->920721051],
+ CellID->920721051,ExpressionUUID->"2f3220a1-a30f-4bb8-a0ed-c9bb18d3845e"],
 
 Cell[CellGroupData[{
 
@@ -16620,7 +16784,7 @@ Cell[BoxData[
     
     RowBox[{"MultipleList", "\[Rule]", " ", "True"}]}], "]"}]}]], "Input",
  CellLabel->"In[3]:=",
- CellID->1939027522],
+ CellID->1939027522,ExpressionUUID->"8d67733a-305a-4d4a-89a8-69a19112ecb7"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -16980,25 +17144,29 @@ pathway\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[128]]], "Output",
- ImageSize->{558, 282},
+ ImageSize->{558, 323},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->333642459]
+ CellID->333642459,ExpressionUUID->"14677c11-c11d-471e-9610-e61e156a3ff8"]
 }, Open  ]],
 
 Cell[TextData[{
  "We using the ",
- Cell[BoxData["MultipleList"], "InlineFormula"],
+ Cell[BoxData[
+ "MultipleList"], "InlineFormula",ExpressionUUID->
+  "21167df8-eea3-4eb2-9483-ea2a391061a7"],
  " option as ",
  ButtonBox["True",
   BaseStyle->"Link",
   ButtonData->"paclet:ref/True"],
  " we should consider also whether to add a ",
- Cell[BoxData["MultipleListCorrection"], "InlineFormula"],
+ Cell[BoxData[
+ "MultipleListCorrection"], "InlineFormula",ExpressionUUID->
+  "2ac96e18-e26c-4414-9eaa-5d6541725355"],
  " option."
 }], "ExampleText",
- CellID->79712552]
+ CellID->79712552,ExpressionUUID->"9d894735-2053-413e-870b-6c0b2def946f"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -17006,15 +17174,16 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "MultipleListCorrection",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "6c734bad-376b-410c-ab9d-9ce20d83392d"]
 }], "ExampleSubsection", "ExampleSubsection",
  WholeCellGroupOpener->True,
- CellID->1254192192],
+ CellID->1254192192,ExpressionUUID->"c583d8c9-e3ed-4eee-b36f-ce509565ee45"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->777775488],
+ CellID->777775488,ExpressionUUID->"6ab0e39a-a59b-4a83-af12-86f722f4822f"],
 
 Cell[TextData[{
  "MultipleListCorrection is an option whether or not to correct for \
@@ -17032,10 +17201,11 @@ multi-omics cluster analysis. If the value is set to Automatic the number of \
 unique ID labels is used to make the correction. This option is used in \
 conjunction to setting ",
  Cell[BoxData[
-  RowBox[{"MultipleList", "\[Rule]", " ", "True"}]], "InlineFormula"],
+  RowBox[{"MultipleList", "\[Rule]", " ", "True"}]], "InlineFormula",
+  ExpressionUUID->"2898196f-7aa8-45ff-9d31-06a0c1a851e5"],
  "."
 }], "ExampleText",
- CellID->382306094],
+ CellID->382306094,ExpressionUUID->"c7d05eca-6f04-4b65-aedb-b1958041412d"],
 
 Cell[CellGroupData[{
 
@@ -17100,7 +17270,7 @@ Cell[BoxData[
     RowBox[{"MultipleListCorrection", "\[Rule]", " ", "Automatic"}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->174168754],
+ CellID->174168754,ExpressionUUID->"bd49a950-0c99-4bbf-be06-4d0f819ca820"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -17390,11 +17560,11 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[6]]], "Output",
- ImageSize->{558, 165},
+ ImageSize->{558, 183},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->776271517]
+ CellID->776271517,ExpressionUUID->"9b101657-8c86-4e43-bcb3-bdb4c3f5af01"]
 }, Open  ]]
 }, Closed]],
 
@@ -17403,27 +17573,32 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "OBOGODictionaryOptions",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "64ed0090-1246-4235-ba2c-9a7a5e6b5251"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"46f37e79-99f9-40c9-ac27-3b99969ca3c4"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->2112677345],
+ CellID->2112677345,ExpressionUUID->"10b318aa-1430-490a-b8a3-003f97d6110a"],
 
 Cell[TextData[{
- Cell[BoxData["OBOGODictionaryOptions"], "InlineFormula"],
+ Cell[BoxData[
+ "OBOGODictionaryOptions"], "InlineFormula",ExpressionUUID->
+  "4b953b6a-beec-4765-919f-4d81768631fe"],
  " values specify a list of options to be passed to the internal ",
  Cell[BoxData[
   TemplateBox[{Cell[
      TextData["OBOGODictionary"]],"paclet:MathIOmica/ref/OBOGODictionary"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "47e1be16-9c1a-422e-b198-8594d1dfd454"],
  " function that provides the GO annotations. For example, we may want to \
 update the OBO information by reimporting the data."
 }], "ExampleText",
- CellID->1273517917],
+ CellID->1273517917,ExpressionUUID->"02859b11-5659-45db-a50c-abfc72a7cd0d"],
 
 Cell[CellGroupData[{
 
@@ -17446,7 +17621,7 @@ Cell[BoxData[
       RowBox[{"ImportDirectly", "\[Rule]", " ", "True"}], "}"}]}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->46121370],
+ CellID->46121370,ExpressionUUID->"a09e8bcb-9741-4b56-b7e1-04bdc10e9d1b"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -17749,11 +17924,11 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[130]]], "Output",
- ImageSize->{574, 242},
+ ImageSize->{574, 272},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->198121015]
+ CellID->198121015,ExpressionUUID->"ec7afac9-1cd6-420b-bb72-85b234758fd3"]
 }, Open  ]]
 }, Closed]],
 
@@ -17762,17 +17937,21 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "OBODictionaryVariable",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "3823641b-8bae-4adb-8b91-5477fe84f1e3"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"bfde1816-db44-47d6-9748-9020ef3a490f"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1431421707],
+ CellID->1431421707,ExpressionUUID->"dd56c8b7-b78b-42ba-90e4-d25e0463aaaf"],
 
 Cell[TextData[{
- Cell[BoxData["OBODictionaryVariable"], "InlineFormula"],
+ Cell[BoxData[
+ "OBODictionaryVariable"], "InlineFormula",ExpressionUUID->
+  "c05dccb8-864b-4f45-a000-92352f9704c2"],
  " values point to an alternative GO annotation variable. By defaut the value \
 is set to ",
  ButtonBox["None",
@@ -17783,13 +17962,14 @@ is set to ",
   TemplateBox[{Cell[
      TextData["OBOGODictionary"]],"paclet:MathIOmica/ref/OBOGODictionary"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "329a4feb-edf2-4a35-8f57-c537f61cf649"],
  " will be used to automatically generate the default GO annotation."
 }], "ExampleText",
- CellID->1792815855],
+ CellID->1792815855,ExpressionUUID->"a29c2d83-460b-4808-a86b-7f908454b313"],
 
 Cell["For example we create the OBO dictionary directly:", "ExampleText",
- CellID->625119487],
+ CellID->625119487,ExpressionUUID->"a0c7b49a-ff27-4271-b97b-e5e2140a5448"],
 
 Cell[CellGroupData[{
 
@@ -17797,7 +17977,7 @@ Cell[BoxData[
  RowBox[{"oboVar", "=", 
   RowBox[{"OBOGODictionary", "[", "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->1156196234],
+ CellID->1156196234,ExpressionUUID->"2d3c877c-de28-45b2-b52e-6dfd3bc2fe24"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -18019,11 +18199,11 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[132]]], "Output",
- ImageSize->{562, 104},
+ ImageSize->{562, 112},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->462015981]
+ CellID->462015981,ExpressionUUID->"dde3ed66-0c9c-4551-b183-500d1517236e"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -18045,7 +18225,7 @@ Cell[BoxData[
     RowBox[{"OBODictionaryVariable", "\[Rule]", " ", "oboVar"}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[3]:=",
- CellID->513023928],
+ CellID->513023928,ExpressionUUID->"c7f73b47-7486-4277-920a-4b4bd7f37ea1"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -18350,11 +18530,11 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[136]]], "Output",
- ImageSize->{574, 242},
+ ImageSize->{574, 272},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->1868044754]
+ CellID->1868044754,ExpressionUUID->"2ef29615-a4fa-4a50-990a-8be7634158c1"]
 }, Open  ]]
 }, Closed]],
 
@@ -18363,43 +18543,52 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "OntologyLengthFilter",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "d001cdec-050f-46bf-909f-cb2e28b4c472"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"5d8a322c-fcba-4802-b4f1-80621e301a58"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1848999248],
+ CellID->1848999248,ExpressionUUID->"bdda2ddf-1293-49bc-9d7b-5da5372217ac"],
 
 Cell[TextData[{
- Cell[BoxData["OntologyLengthFilter"], "InlineFormula"],
+ Cell[BoxData[
+ "OntologyLengthFilter"], "InlineFormula",ExpressionUUID->
+  "4fcb5274-66f4-44af-b372-de1a0d93b3ce"],
  " can be used to set the value for which terms to consider in the \
 computation, by excluding GO terms that have fewer items compared to the \
 OntologyLengthFilter value (the default is to exclude terms with single \
 memberships, i.e. ",
  Cell[BoxData[
   RowBox[{"OntologyLengthFilter", " ", "\[Rule]", " ", "2"}]], 
-  "InlineFormula"],
+  "InlineFormula",ExpressionUUID->"6e5e0269-df5a-4e73-8e43-8912ea5f3c71"],
  ". It is used by the internal ",
  Cell[BoxData[
   TemplateBox[{Cell[
      TextData["GOAnalysisAssigner"]],
     "paclet:MathIOmica/ref/GOAnalysisAssigner"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "228813ca-8aa4-43ed-a03e-688efdfea1af"],
  " function (and if no other ",
- Cell[BoxData["GOAnalysisAssignerOptions"], "InlineFormula"],
+ Cell[BoxData[
+ "GOAnalysisAssignerOptions"], "InlineFormula",ExpressionUUID->
+  "97a08672-399e-4399-a92f-9c52d67b84d3"],
  " are assigned)."
 }], "ExampleText",
- CellID->201015421],
+ CellID->201015421,ExpressionUUID->"5b2e81ee-ec8c-438f-9e08-4392ea0d8d24"],
 
 Cell[TextData[{
  "In this example we set the ",
- Cell[BoxData["OntologyLengthFilter"], "InlineFormula"],
+ Cell[BoxData[
+ "OntologyLengthFilter"], "InlineFormula",ExpressionUUID->
+  "b44e656a-25dd-4136-a87d-c2c83728f414"],
  " to 3:"
 }], "ExampleText",
- CellID->1669345242],
+ CellID->1669345242,ExpressionUUID->"f7e095ae-8d8f-4719-99b3-c3ef0be191b7"],
 
 Cell[CellGroupData[{
 
@@ -18420,7 +18609,7 @@ Cell[BoxData[
     RowBox[{"OntologyLengthFilter", "\[Rule]", " ", "3"}]}], "]"}]}]], "Input",\
 
  CellLabel->"In[2]:=",
- CellID->1515119565],
+ CellID->1515119565,ExpressionUUID->"b2a00d9f-8d78-4980-9e29-9ad4d2db7a1a"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -18723,11 +18912,11 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[138]]], "Output",
- ImageSize->{574, 242},
+ ImageSize->{574, 272},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->936637263]
+ CellID->936637263,ExpressionUUID->"c8ee9af7-7ef2-4708-b5e1-a87abf97c245"]
 }, Open  ]]
 }, Closed]],
 
@@ -18736,14 +18925,16 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "OutputID",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "d946d3ca-a0cf-4bc7-9d68-eae25b961bd5"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"a25f4192-ca9d-45cf-9d2c-b7e80a0a5b60"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1007346731],
+ CellID->1007346731,ExpressionUUID->"fb0df731-9ea1-4344-ad09-93f7013e7c95"],
 
 Cell[TextData[{
  "The OutputID option string specifies what kind of IDs/accessions to convert \
@@ -18756,18 +18947,21 @@ modifying the ",
      TextData["GOAnalysisAssigner"]],
     "paclet:MathIOmica/ref/GOAnalysisAssigner"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "8610d9f3-30ff-4e0c-b48d-19b51db45d44"],
  " with a ",
- Cell[BoxData["GOFileColumns"], "InlineFormula"],
+ Cell[BoxData[
+ "GOFileColumns"], "InlineFormula",ExpressionUUID->
+  "6d8be358-8f74-4cd6-bcc7-648231b8a809"],
  " option when importing new information."
 }], "ExampleText",
- CellID->1754883614],
+ CellID->1754883614,ExpressionUUID->"2f4a311a-d22a-4b3f-8b36-0b33dfddedbb"],
 
 Cell["\<\
 In this example we set the OutputID to \"UniProt ID\" for the purposes of \
 illustrating usage:\
 \>", "ExampleText",
- CellID->1909089499],
+ CellID->1909089499,ExpressionUUID->"0a9c74d5-aecf-47d9-a2ba-34ae503521d0"],
 
 Cell[CellGroupData[{
 
@@ -18788,7 +18982,7 @@ Cell[BoxData[
     RowBox[{"OutputID", "\[Rule]", " ", "\"\<UniProt ID\>\""}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->514039866],
+ CellID->514039866,ExpressionUUID->"a64a85fa-b56d-4167-8821-ab94cb88fce3"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -19091,15 +19285,15 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[140]]], "Output",
- ImageSize->{574, 242},
+ ImageSize->{574, 272},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->374718012]
+ CellID->374718012,ExpressionUUID->"963f228a-00d6-48b0-a236-7ad04a5f3e92"]
 }, Open  ]],
 
 Cell["", "ExampleText",
- CellID->2128262732]
+ CellID->2128262732,ExpressionUUID->"2cfdc8eb-e390-4c7f-9d75-918b17506928"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -19107,26 +19301,31 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "pValueCutoff",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "0add5a82-d08f-4e96-a2aa-3c90f97532c9"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"7ff57583-e8b3-4034-8bf0-b3cbf2c7e2a1"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1285185936],
+ CellID->1285185936,ExpressionUUID->"7137fc90-6381-42f7-8a8e-f97026c208f4"],
 
 Cell[TextData[{
- Cell[BoxData["pValueCutoff"], "InlineFormula"],
+ Cell[BoxData[
+ "pValueCutoff"], "InlineFormula",ExpressionUUID->
+  "99af16a5-13bc-4bea-97f8-6689787b0338"],
  " provides a cutoff p-value for adjusted p-values to assess statistical \
 significance. The default is 0.05. In this example we manually set the cutoff \
 to to ",
  Cell[BoxData[
   SuperscriptBox["10", 
-   RowBox[{"-", "6"}]]], "InlineFormula"],
+   RowBox[{"-", "6"}]]], "InlineFormula",ExpressionUUID->
+  "0de9af04-f25d-478a-aff2-4763bfb44188"],
  ":"
 }], "ExampleText",
- CellID->407039048],
+ CellID->407039048,ExpressionUUID->"cbc25db2-3b92-459d-842a-e75da9529483"],
 
 Cell[CellGroupData[{
 
@@ -19148,7 +19347,7 @@ Cell[BoxData[
      SuperscriptBox["10", 
       RowBox[{"-", "6"}]]}]}], "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->1369864041],
+ CellID->1369864041,ExpressionUUID->"7f23485d-754f-4248-8586-9e06fe20fdb8"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -19355,11 +19554,11 @@ signaling\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
           RowBox[{"{", "\<\"NFKB1\"\>", "}"}], ",", 
           RowBox[{"{", "\<\"NFKB2\"\>", "}"}]}], "}"}]}], "}"}]}], "}"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{570, 420},
+ ImageSize->{570, 477},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->801643363]
+ CellID->801643363,ExpressionUUID->"62f2c47c-578a-480c-8228-e78659f8cdeb"]
 }, Open  ]]
 }, Closed]],
 
@@ -19368,26 +19567,32 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "ReportFilter",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "a8aee5c8-e5b5-4f87-b4d8-a15f84f618a7"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"0f2503b8-374d-4c9b-a594-ae7473d5700c"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->108520089],
+ CellID->108520089,ExpressionUUID->"1e2bb393-dd1d-4c7e-bebd-5a1699058698"],
 
 Cell[TextData[{
- Cell[BoxData["ReportFilter"], "InlineFormula"],
+ Cell[BoxData[
+ "ReportFilter"], "InlineFormula",ExpressionUUID->
+  "7046b934-2b47-4953-abfd-94b82887caee"],
  " provides a cutoff for membership in ontologies in selecting which \
 terms/categories to return. It is used in conjunction with ",
- Cell[BoxData["ReportFilterFunction"], "InlineFormula"],
+ Cell[BoxData[
+ "ReportFilterFunction"], "InlineFormula",ExpressionUUID->
+  "e464ed0e-b5b7-4ae0-a1f0-e1ae89066d6f"],
  ". The default is 1. "
 }], "ExampleText",
- CellID->242073805],
+ CellID->242073805,ExpressionUUID->"2851616d-53c8-4556-acfb-519fb5487b1c"],
 
 Cell["We first consider the data", "ExampleText",
- CellID->540747877],
+ CellID->540747877,ExpressionUUID->"99fbc545-6904-4920-a107-de35980367fc"],
 
 Cell[CellGroupData[{
 
@@ -19407,7 +19612,7 @@ Cell[BoxData[
     ",", 
     RowBox[{"ReportFilter", "\[Rule]", " ", "1"}]}], "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->1200413217],
+ CellID->1200413217,ExpressionUUID->"cf4471d3-eb93-4fc7-9a8d-b9191e0815ca"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -19653,18 +19858,18 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[11]]], "Output",
- ImageSize->{537, 151},
+ ImageSize->{537, 166},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1256546322]
+ CellID->1256546322,ExpressionUUID->"0db82d69-c17f-4462-aff1-60645635c4a7"]
 }, Open  ]],
 
 Cell["\<\
 We now set a report filter. We may be interested in categories with at least \
 10 members in each result reported:\
 \>", "ExampleText",
- CellID->331319927],
+ CellID->331319927,ExpressionUUID->"dd9ab01f-3a6c-40e9-a7d9-6011f211c064"],
 
 Cell[CellGroupData[{
 
@@ -19684,7 +19889,7 @@ Cell[BoxData[
     ",", 
     RowBox[{"ReportFilter", "\[Rule]", " ", "10"}]}], "]"}]}]], "Input",
  CellLabel->"In[3]:=",
- CellID->1826281614],
+ CellID->1826281614,ExpressionUUID->"b5ef7442-9677-4e32-80f9-8015a0822766"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -19870,11 +20075,11 @@ Cell[BoxData[
           RowBox[{"{", "\<\"IRAK4\"\>", "}"}], ",", 
           RowBox[{"{", "\<\"PIAS4\"\>", "}"}]}], "}"}]}], "}"}]}], "}"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{577, 336},
+ ImageSize->{559, 401},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->419849256]
+ CellID->419849256,ExpressionUUID->"23fd075e-a60f-49c0-b3e8-f984ac1d46c0"]
 }, Open  ]]
 }, Closed]],
 
@@ -19883,32 +20088,38 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "ReportFilterFunction",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "4f673abd-2851-4ab0-bf87-cc043c9f2e65"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"6ddc43f7-ef68-44b4-b0f5-aa472d7b54e5"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->815741696],
+ CellID->815741696,ExpressionUUID->"860d5d29-1605-40a1-be78-a6b4359ce58c"],
 
 Cell[TextData[{
- Cell[BoxData["ReportFilterFunction"], "InlineFormula"],
+ Cell[BoxData[
+ "ReportFilterFunction"], "InlineFormula",ExpressionUUID->
+  "cd422178-a144-4a5d-87ce-8e0d1e38e192"],
  " specifies what function will be used to compare against ",
- Cell[BoxData["ReportFilter"], "InlineFormula"],
+ Cell[BoxData[
+ "ReportFilter"], "InlineFormula",ExpressionUUID->
+  "a7a0e19f-5be1-4af7-be5a-f8209765b79a"],
  " option value in selecting which terms/categories to return. The default \
 value is ",
  ButtonBox["GreaterEqualThan.",
   BaseStyle->"Link",
   ButtonData->"paclet:ref/GreaterEqualThan"]
 }], "ExampleText",
- CellID->1922665197],
+ CellID->1922665197,ExpressionUUID->"f9a51414-8704-4de4-a1fa-2a84bd8cf2ed"],
 
 Cell["\<\
 We first consider data filtering results with more than or equal to 11 \
 members:\
 \>", "ExampleText",
- CellID->1047529570],
+ CellID->1047529570,ExpressionUUID->"f04e0dbf-09e6-4cd2-9bec-f2c9bb2aa081"],
 
 Cell[CellGroupData[{
 
@@ -19930,7 +20141,7 @@ Cell[BoxData[
     RowBox[{"ReportFilterFunction", "\[Rule]", " ", "GreaterEqualThan"}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->758544884],
+ CellID->758544884,ExpressionUUID->"28980b84-a421-4123-bd20-0a4ff3d3c54f"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -20116,18 +20327,18 @@ Cell[BoxData[
           RowBox[{"{", "\<\"IRAK4\"\>", "}"}], ",", 
           RowBox[{"{", "\<\"PIAS4\"\>", "}"}]}], "}"}]}], "}"}]}], "}"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{577, 336},
+ ImageSize->{559, 401},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->2136021341]
+ CellID->2136021341,ExpressionUUID->"f1db7820-d3a5-4070-84d8-d43525f14f98"]
 }, Open  ]],
 
 Cell["\<\
 For an example we change this to look at groups strictly having more than 11 \
 members\
 \>", "ExampleText",
- CellID->534024664],
+ CellID->534024664,ExpressionUUID->"47bd6f41-b8e6-4377-894a-553897f080ea"],
 
 Cell[CellGroupData[{
 
@@ -20149,7 +20360,7 @@ Cell[BoxData[
     RowBox[{"ReportFilterFunction", "\[Rule]", " ", "GreaterThan"}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[3]:=",
- CellID->1018367035],
+ CellID->1018367035,ExpressionUUID->"10c6231d-c47e-4f49-8868-8c8efba48d5a"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -20279,11 +20490,11 @@ Cell[BoxData[
           RowBox[{"{", "\<\"IRAK4\"\>", "}"}], ",", 
           RowBox[{"{", "\<\"PIAS4\"\>", "}"}]}], "}"}]}], "}"}]}], "}"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{559, 238},
+ ImageSize->{559, 274},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->1795673253]
+ CellID->1795673253,ExpressionUUID->"34d55579-1928-4d1b-b83c-20e0f9f5545c"]
 }, Open  ]]
 }, Closed]],
 
@@ -20292,22 +20503,26 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "Species",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(2)", "ExampleCount"]
+ Cell["(2)", "ExampleCount",ExpressionUUID->
+  "a5f324c8-c417-4e80-a48c-38990f8a9e77"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"0e56b62c-fd1b-45a6-a13e-2a20fe987e3b"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->635082224],
+ CellID->635082224,ExpressionUUID->"4d6acc68-0cb6-44ae-9178-40e15b7c1e26"],
 
 Cell[TextData[{
  "The ",
- Cell[BoxData["Species"], "InlineFormula"],
+ Cell[BoxData[
+ "Species"], "InlineFormula",ExpressionUUID->
+  "d79509a0-cb94-4d58-b32d-02c344c9ef1c"],
  " option specifies the species considered in the calculation. The default \
 implementation is \"human\":"
 }], "ExampleText",
- CellID->1991714108],
+ CellID->1991714108,ExpressionUUID->"9df4f892-c2ae-440c-81e4-d026bdf47d25"],
 
 Cell[CellGroupData[{
 
@@ -20328,7 +20543,7 @@ Cell[BoxData[
     RowBox[{"Species", "\[Rule]", " ", "\"\<human\>\""}]}], "]"}]}]], "Input",\
 
  CellLabel->"In[2]:=",
- CellID->360266786],
+ CellID->360266786,ExpressionUUID->"b40b53ce-7c3c-4688-8416-95b0ebb4b8d7"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -20577,31 +20792,33 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[18]]], "Output",
- ImageSize->{537, 151},
+ ImageSize->{537, 166},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->662673000]
+ CellID->662673000,ExpressionUUID->"8d3de88b-c479-4a04-88ce-bcf5813bee04"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- InterpretationBox[Cell["\t", "ExampleDelimiter"],
+ InterpretationBox[Cell[
+  "\t", "ExampleDelimiter",ExpressionUUID->
+   "6c91e4d0-edd1-4c0e-840b-9a8b89be7879"],
   $Line = 0; Null]], "ExampleDelimiter",
- CellID->694917658],
+ CellID->694917658,ExpressionUUID->"cd4ee755-778c-4358-8186-1077add9f780"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1449442485],
+ CellID->1449442485,ExpressionUUID->"86d6b7fc-c1b3-4f4a-bd4a-4248b92d8993"],
 
 Cell["\<\
 For an advanced example we consider an Arabidopsis GO analysis. We create a \
 dictionary, and by invoking GOAnalysisAssigner also memberships to GO \
 associations:\
 \>", "ExampleText",
- CellID->1872837474],
+ CellID->1872837474,ExpressionUUID->"4ad5d01b-ae55-4c13-a5dd-6e62d6fd986f"],
 
 Cell[CellGroupData[{
 
@@ -20624,7 +20841,7 @@ Cell[BoxData[
          RowBox[{"{", 
           RowBox[{"3", ",", "5"}], "}"}]}]}], "]"}]}]}], "}"}]}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->1465005620],
+ CellID->1465005620,ExpressionUUID->"9f6f53da-7c67-4dc0-96d5-32f11d3bbc0e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -20845,15 +21062,15 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[34]]], "Output",
- ImageSize->{565, 120},
+ ImageSize->{530, 130},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1489067141]
+ CellID->1489067141,ExpressionUUID->"15dc01ad-de93-428c-a312-8e8dc1856d95"]
 }, Open  ]],
 
 Cell["We can now perform GO analysis:", "ExampleText",
- CellID->1498390441],
+ CellID->1498390441,ExpressionUUID->"4bea5b51-89c9-4133-9132-4657b8bf0476"],
 
 Cell[CellGroupData[{
 
@@ -20875,7 +21092,7 @@ Cell[BoxData[
    RowBox[{"OutputID", "\[Rule]", "\"\<TAIR\>\""}], ",", 
    RowBox[{"ReportFilter", "\[Rule]", " ", "3"}]}], "]"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->135586738],
+ CellID->135586738,ExpressionUUID->"858e20f4-86ad-4053-8ff5-7a949f65ed8a"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -21390,11 +21607,11 @@ Cell[BoxData[
           RowBox[{"{", "\<\"PRPL11\"\>", "}"}], ",", 
           RowBox[{"{", "\<\"MDN1\"\>", "}"}]}], "}"}]}], "}"}]}], "}"}]}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{570, 943},
+ ImageSize->{566, 1132},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->68305141]
+ CellID->68305141,ExpressionUUID->"abf39a16-63f2-45a9-aebb-e119d93d62d7"]
 }, Open  ]],
 
 Cell[TextData[{
@@ -21404,16 +21621,17 @@ Cell[TextData[{
      TextData["ConstantGeneDictionary"]],
     "paclet:MathIOmica/ref/ConstantGeneDictionary"},
    "RefLink",
-   BaseStyle->{"InlineFormula", "CodeFont"}]], "InlineFormula"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
+  "3afea8ff-c44b-42ae-a249-3eec303f8d6e"],
  " function has also been augmented as expected:"
 }], "ExampleText",
- CellID->638325064],
+ CellID->638325064,ExpressionUUID->"787f73a7-9191-4970-993d-d1dfac6bcd07"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData["ConstantGeneDictionary"], "Input",
  CellLabel->"In[4]:=",
- CellID->731453980],
+ CellID->731453980,ExpressionUUID->"1db59e89-b1a8-4bb8-a9e5-c58703a7af00"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -21650,11 +21868,11 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[38]]], "Output",
- ImageSize->{486, 120},
+ ImageSize->{486, 130},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[4]=",
- CellID->356368680]
+ CellID->356368680,ExpressionUUID->"6f13f3dc-01b5-42db-a20f-0c2e353d5000"]
 }, Open  ]]
 }, Open  ]]
 }, Closed]],
@@ -21664,14 +21882,16 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "TestFunction",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "3c1b31f0-ca74-4402-bded-d6205b6bb3c9"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->True],
+ WholeCellGroupOpener->
+  True,ExpressionUUID->"8ef7159a-6a6e-4e67-b01f-9a164d23712f"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->2024915824],
+ CellID->2024915824,ExpressionUUID->"61991a43-426c-4094-b89f-6e4bfbe958fb"],
 
 Cell[TextData[{
  "The TestFunction option provides a function for calculating the raw \
@@ -21687,7 +21907,7 @@ population,\n#3 is total number of members in population,\n#4 is number of \
 successes (or more) in current group being tested for specific category.\nThe \
 output must be a p-value (real positive number \[LessEqual] 1)."
 }], "ExampleText",
- CellID->1586899959],
+ CellID->1586899959,ExpressionUUID->"e7de0010-43dd-4774-bab3-9ea97162110a"],
 
 Cell[CellGroupData[{
 
@@ -21717,7 +21937,7 @@ Cell[BoxData[
            RowBox[{"#4", "-", "1"}]}], "]"}]}], "]"}], "&"}], ")"}]}]}], 
    "]"}]}]], "Input",
  CellLabel->"In[2]:=",
- CellID->1428198820],
+ CellID->1428198820,ExpressionUUID->"ba8504dd-6181-4f14-a633-14fae331a887"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -21966,15 +22186,15 @@ factor activity\"\>", ",", "\<\"biological_process\"\>"}], "}"}], ",",
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[28]]], "Output",
- ImageSize->{537, 151},
+ ImageSize->{537, 166},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->553904776]
+ CellID->553904776,ExpressionUUID->"600f8796-961b-4c2c-ad02-8bdc54e70750"]
 }, Open  ]],
 
 Cell["Specifically:", "ExampleText",
- CellID->1073963473],
+ CellID->1073963473,ExpressionUUID->"cf62b068-87dc-44f0-bdf5-ef756c4b95d1"],
 
 Cell[CellGroupData[{
 
@@ -21990,19 +22210,19 @@ Cell[BoxData[
        RowBox[{"#4", "-", "1"}]}], "]"}]}], "]"}], "&"}], "[", 
   RowBox[{"21", ",", "155", ",", "47250", ",", "7"}], "]"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->135960487],
+ CellID->135960487,ExpressionUUID->"2289b649-8294-4ffb-b6f6-5b3af61068d2"],
 
 Cell[BoxData["3.9887846285108307`*^-13"], "Output",
- ImageSize->{96, 15},
+ ImageSize->{96, 17},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->944073278]
+ CellID->944073278,ExpressionUUID->"a606361f-1c46-42ad-87e1-9d31bfc1d38e"]
 }, Open  ]]
 }, Closed]]
 }, Closed]],
 
-Cell["", "SectionFooterSpacer"]
+Cell["", "SectionFooterSpacer",ExpressionUUID->"eaeef3a4-2e91-4c50-a236-10e4c44704a3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -22015,11 +22235,12 @@ Cell[TextData[{
      BaselinePosition->Baseline,
      ImageSize->{6, 0}],
     CacheGraphics->False],
-   Spacer[6]]]],
+   Spacer[6],
+   Selectable->False]],ExpressionUUID->"c4c18c85-f8c1-401d-9374-179a27a57b31"],
  "See Also"
 }], "SeeAlsoSection",
  WholeCellGroupOpener->True,
- CellID->1255426704],
+ CellID->1255426704,ExpressionUUID->"0323f29d-7181-449e-8f8d-21f1bfd16575"],
 
 Cell[TextData[{
  Cell[BoxData[
@@ -22027,8 +22248,8 @@ Cell[TextData[{
      TextData["BenjaminiHochbergFDR"]],
     "paclet:MathIOmica/ref/BenjaminiHochbergFDR"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
-  "InlineFormula"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"da832629-2fea-443a-a309-300036af7b6e"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -22038,8 +22259,8 @@ Cell[TextData[{
      TextData["EnrichmentReportExport"]],
     "paclet:MathIOmica/ref/EnrichmentReportExport"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
-  "InlineFormula"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"38331b3e-6a22-407a-be72-3252246e0ace"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -22048,8 +22269,8 @@ Cell[TextData[{
   TemplateBox[{Cell[
      TextData["GeneTranslation"]],"paclet:MathIOmica/ref/GeneTranslation"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
-  "InlineFormula"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"ec716d62-7fd6-4dbd-969f-7f3c6dc4cdaf"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -22058,8 +22279,8 @@ Cell[TextData[{
   TemplateBox[{Cell[
      TextData["GetGeneDictionary"]],"paclet:MathIOmica/ref/GetGeneDictionary"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
-  "InlineFormula"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"67efa6a3-6e96-4982-b5e3-a3982874952e"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -22069,8 +22290,8 @@ Cell[TextData[{
      TextData["GOAnalysisAssigner"]],
     "paclet:MathIOmica/ref/GOAnalysisAssigner"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
-  "InlineFormula"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"9aa0875d-ae3b-4b48-ac6b-f946b24e0157"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -22079,8 +22300,8 @@ Cell[TextData[{
   TemplateBox[{Cell[
      TextData["KEGGAnalysis"]],"paclet:MathIOmica/ref/KEGGAnalysis"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
-  "InlineFormula"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"989f6e19-20f3-4603-9919-e633fe1f63bd"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -22090,8 +22311,8 @@ Cell[TextData[{
      TextData["KEGGAnalysisAssigner"]],
     "paclet:MathIOmica/ref/KEGGAnalysisAssigner"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
-  "InlineFormula"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"6131ec8c-d78f-47b7-8003-b4fae76d438a"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -22100,8 +22321,8 @@ Cell[TextData[{
   TemplateBox[{Cell[
      TextData["KEGGPathwayVisual"]],"paclet:MathIOmica/ref/KEGGPathwayVisual"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
-  "InlineFormula"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"bf45568f-8537-4938-9f31-c0a94f57b72d"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -22110,8 +22331,8 @@ Cell[TextData[{
   TemplateBox[{Cell[
      TextData["OBOGODictionary"]],"paclet:MathIOmica/ref/OBOGODictionary"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
-  "InlineFormula"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"90035057-537b-4277-a273-cac7cf4c378f"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -22121,8 +22342,8 @@ Cell[TextData[{
      TextData["TimeSeriesClusters"]],
     "paclet:MathIOmica/ref/TimeSeriesClusters"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
-  "InlineFormula"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"c9586579-9e3b-4c65-8a5f-2a4ab4b8c1aa"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -22131,10 +22352,10 @@ Cell[TextData[{
   TemplateBox[{Cell[
      TextData["UCSCBrowserSQL"]],"paclet:MathIOmica/ref/UCSCBrowserSQL"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana", "CodeFont"}]], 
-  "InlineFormula"]
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
+  ExpressionUUID->"c219d0bc-07c9-4cd8-94be-3c6a55573018"]
 }], "SeeAlso",
- CellID->1648690486]
+ CellID->1648690486,ExpressionUUID->"f0b1b662-ec7b-40ad-933b-44616f173a45"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -22147,31 +22368,32 @@ Cell[TextData[{
      BaselinePosition->Baseline,
      ImageSize->{6, 0}],
     CacheGraphics->False],
-   Spacer[6]]]],
+   Spacer[6],
+   Selectable->False]],ExpressionUUID->"95d88ec2-90a4-490e-a92a-e1612b22abe7"],
  "Tutorials"
 }], "TutorialsSection",
  WholeCellGroupOpener->True,
- CellID->250839057],
+ CellID->250839057,ExpressionUUID->"ad82c737-609a-4ac7-87ec-562cff374ada"],
 
-Cell["", "SectionHeaderSpacer"],
+Cell["", "SectionHeaderSpacer",ExpressionUUID->"12ebd895-ad8a-4e32-a4a7-bb2e83f6d5e7"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MathIOmica Tutorial"]],
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial"},
   "RefLink",
-  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
- CellID->341631938],
+  BaseStyle->"Tutorials"]], "Tutorials",
+ CellID->341631938,ExpressionUUID->"7898d551-0868-45df-9f28-3f10218fcdf6"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MathIOmica Dynamic Transcriptome"]],
    "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"},
   "RefLink",
-  BaseStyle->{"Tutorials", "CodeFont"}]], "Tutorials",
- CellID->1023267351],
+  BaseStyle->"Tutorials"]], "Tutorials",
+ CellID->1023267351,ExpressionUUID->"fb272331-c7c4-4c13-9752-ac4105588046"],
 
-Cell["", "SectionFooterSpacer"]
+Cell["", "SectionFooterSpacer",ExpressionUUID->"687fbf9d-3f8d-433c-a713-150fccdaa1b5"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -22184,22 +22406,23 @@ Cell[TextData[{
      BaselinePosition->Baseline,
      ImageSize->{6, 0}],
     CacheGraphics->False],
-   Spacer[6]]]],
+   Spacer[6],
+   Selectable->False]],ExpressionUUID->"7729a031-33a0-4b83-8be8-dda6db0762c0"],
  "Related Guides"
 }], "MoreAboutSection",
  WholeCellGroupOpener->True,
- CellID->38303248],
+ CellID->38303248,ExpressionUUID->"fe5b9fb2-cd8c-4fbb-bdba-e8a9c482183e"],
 
-Cell["", "SectionHeaderSpacer"],
+Cell["", "SectionHeaderSpacer",ExpressionUUID->"768a28f5-7e68-4c41-95b9-8d7863f23d7a"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MathIOmica Guide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
   "RefLink",
-  BaseStyle->{"MoreAbout", "CodeFont"}]], "MoreAbout",
- CellID->815009645],
+  BaseStyle->"MoreAbout"]], "MoreAbout",
+ CellID->1869692327,ExpressionUUID->"d229a8a2-5b1e-46ab-ac4d-c701ea96f28a"],
 
-Cell["", "SectionFooterSpacer"]
+Cell["", "SectionFooterSpacer",ExpressionUUID->"74c34d18-a545-4429-a4b0-dc42a0b84463"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -22212,31 +22435,32 @@ Cell[TextData[{
      BaselinePosition->Baseline,
      ImageSize->{6, 0}],
     CacheGraphics->False],
-   Spacer[6]]]],
+   Spacer[6],
+   Selectable->False]],ExpressionUUID->"48de12ad-3c27-4ef2-a0a6-dc6915a5787c"],
  "Related Links"
 }], "RelatedLinksSection",
  WholeCellGroupOpener->True,
- CellID->1584193535],
+ CellID->1584193535,ExpressionUUID->"72600a9a-04aa-4bb9-80d6-525145f9410d"],
 
-Cell["", "SectionHeaderSpacer"],
+Cell["", "SectionHeaderSpacer",ExpressionUUID->"b33f64aa-e000-4947-9e71-950c6b9367d4"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MathIOmicaGuide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
   "RefLink",
-  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
- CellID->1038487239],
+  BaseStyle->"RelatedLinks"]], "RelatedLinks",
+ CellID->1038487239,ExpressionUUID->"fa90e6ba-63b7-4854-8a93-3cb7f423d6ac"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MathIOmicaOverview"]],
    "paclet:MathIOmica/tutorial/MathIOmicaOverview"},
   "RefLink",
-  BaseStyle->{"RelatedLinks", "CodeFont"}]], "RelatedLinks",
- CellID->1970164909]
+  BaseStyle->"RelatedLinks"]], "RelatedLinks",
+ CellID->1970164909,ExpressionUUID->"ace1c2b2-5c8c-49a3-bebe-83b1d12be205"]
 }, Open  ]],
 
-Cell[" ", "FooterCell"]
+Cell[" ", "FooterCell",ExpressionUUID->"894557c2-de43-41d6-b188-6ad856383d3d"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -22253,7 +22477,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2016, 12, 14, 16, 43, 58.270152}", 
+   "built" -> "{2017, 6, 16, 15, 45, 9.787088}", 
     "history" -> {"XX", "", "", ""}, "context" -> 
     "MathIOmica`AnnotationsAndEnumerations`", "keywords" -> {}, 
     "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
@@ -22265,8 +22489,8 @@ Gene Ontology (GO) categories.", "synonyms" -> {}, "tabletags" -> {}, "title" ->
     "type" -> "Symbol", "uri" -> "MathIOmica/ref/GOAnalysis"}, 
   "SearchTextTranslated" -> ""},
 CellContext->"Global`",
-FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
-2016)",
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 18, \
+2017)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -22276,7 +22500,7 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
   FrontEndVersion -> 
-  "10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, 2016)", 
+  "11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 18, 2017)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -22285,766 +22509,1066 @@ StyleDefinitions->Notebook[{
 (*CellTagsOutline
 CellTagsIndex->{
  "PrimaryExamplesSection"->{
-  Cell[36513, 989, 387, 15, 70, "PrimaryExamplesSection",
+  Cell[43978, 1081, 578, 17, 
+  70, "PrimaryExamplesSection", "ExpressionUUID" -> "e253cdb5-
+   d660-43bd-9a9d-98857d790d5f",
    CellTags->"PrimaryExamplesSection",
-   CellID->88413752]}
+   CellID->640867336]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"PrimaryExamplesSection", 844159, 22286}
+ {"PrimaryExamplesSection", 871530, 22510}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[582, 21, 5560, 131, 70, "AnchorBarGrid",
+Cell[582, 21, 6199, 136, 70, "AnchorBarGrid", "ExpressionUUID" -> \
+"0de56a04-4a3e-4680-b143-a33326e16fc7",
  CellID->1],
-Cell[6145, 154, 287, 11, 70, "ObjectNameGrid"],
 Cell[CellGroupData[{
-Cell[6457, 169, 583, 16, 70, "Usage"],
-Cell[CellGroupData[{
-Cell[7065, 189, 739, 24, 70, "NotesSection",
- CellGroupingRules->{"SectionGrouping", 50},
- CellID->2001699722],
-Cell[7807, 215, 31, 0, 70, "SectionHeaderSpacer"],
-Cell[7841, 217, 387, 9, 70, "Notes",
- CellID->1471732406],
-Cell[8231, 228, 154, 5, 70, "Notes",
- CellID->1147130674],
-Cell[8388, 235, 282, 9, 70, "Notes",
- CellID->991601687],
-Cell[8673, 246, 751, 23, 70, "Notes",
- CellID->476859959],
-Cell[9427, 271, 702, 19, 70, "Notes",
- CellID->418272887],
-Cell[10132, 292, 5850, 143, 70, "Notes",
- CellID->943673664],
-Cell[15985, 437, 170, 5, 70, "Notes",
- CellID->776755907],
-Cell[16158, 444, 1198, 38, 70, "Notes",
- CellID->806659852],
-Cell[17359, 484, 176, 5, 70, "Notes",
- CellID->1538391077],
-Cell[17538, 491, 542, 15, 70, "Notes",
- CellID->1826775723],
-Cell[18083, 508, 982, 24, 70, "Notes",
- CellID->1798642488],
-Cell[19068, 534, 540, 9, 70, "Notes",
- CellID->262377117],
-Cell[19611, 545, 1114, 31, 70, "Notes",
- CellID->2041857421],
-Cell[20728, 578, 811, 31, 70, "Notes",
- CellID->1261958801],
-Cell[21542, 611, 335, 7, 70, "Notes",
- CellID->2051196820],
-Cell[21880, 620, 886, 26, 70, "Notes",
- CellID->1252937408],
-Cell[22769, 648, 797, 25, 70, "Notes",
- CellID->1919413432],
-Cell[23569, 675, 918, 20, 70, "Notes",
- CellID->1430585844],
-Cell[24490, 697, 468, 12, 70, "Notes",
- CellID->398884720],
-Cell[24961, 711, 53, 0, 70, "Notes"],
-Cell[25017, 713, 11072, 256, 70, "3ColumnTableMod",
- CellID->1130542972],
-Cell[36092, 971, 338, 10, 70, "Notes",
- CellID->1857225344],
-Cell[36433, 983, 31, 0, 70, "SectionFooterSpacer"]
-}, Closed]]
+Cell[6806, 161, 537, 15, 70, "ObjectNameGrid", "ExpressionUUID" -> \
+"93ec8abc-313c-4b68-9d24-f14356ac0f7f"],
+Cell[7346, 178, 745, 18, 70, "Usage", "ExpressionUUID" -> \
+"3e547690-7c7b-4330-98fb-bad26a20725b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[36513, 989, 387, 15, 70, "PrimaryExamplesSection",
- CellTags->"PrimaryExamplesSection",
- CellID->88413752],
+Cell[8128, 201, 993, 28, 70, "NotesSection", "ExpressionUUID" -> \
+"3ef18e47-57d9-43a5-be27-9adb0bfee7bb",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->546012881],
+Cell[9124, 231, 86, 0, 70, "SectionHeaderSpacer", "ExpressionUUID" -> \
+"236cd9f0-c3f7-44e5-b2d1-ecf963fa4867"],
+Cell[9213, 233, 500, 10, 70, "Notes", "ExpressionUUID" -> \
+"008734a4-0a6f-475a-bdd0-a8f28bd9fb4c",
+ CellID->1471732406],
+Cell[9716, 245, 266, 6, 70, "Notes", "ExpressionUUID" -> \
+"3bbf7b03-14e8-4b1f-943e-daeb0a49e80d",
+ CellID->1147130674],
+Cell[9985, 253, 400, 12, 70, "Notes", "ExpressionUUID" -> \
+"3d588f73-5fbe-4556-adf1-9fd27680c0ef",
+ CellID->991601687],
+Cell[10388, 267, 861, 23, 70, "Notes", "ExpressionUUID" -> \
+"4da24907-4dd1-4f7e-a359-361a7330ec4c",
+ CellID->476859959],
+Cell[11252, 292, 815, 20, 70, "Notes", "ExpressionUUID" -> \
+"40c66f9f-aa02-44f8-94b4-c4bf92314183",
+ CellID->418272887],
+Cell[12070, 314, 5964, 145, 70, "Notes", "ExpressionUUID" -> \
+"f2420bd2-c8b5-46bc-9782-d7bd680655a7",
+ CellID->943673664],
+Cell[18037, 461, 282, 6, 70, "Notes", "ExpressionUUID" -> \
+"351ba12b-4170-4512-a31a-1e6404e9faa7",
+ CellID->776755907],
+Cell[18322, 469, 1312, 40, 70, "Notes", "ExpressionUUID" -> \
+"6eb0c1c2-4c33-44cb-9279-b774082031cc",
+ CellID->806659852],
+Cell[19637, 511, 291, 7, 70, "Notes", "ExpressionUUID" -> \
+"595bbdb2-7bb5-4e9c-b943-c2445cfbefc3",
+ CellID->1538391077],
+Cell[19931, 520, 656, 17, 70, "Notes", "ExpressionUUID" -> \
+"7ff39115-f997-414b-92af-6645c3a61c91",
+ CellID->1826775723],
+Cell[20590, 539, 1249, 30, 70, "Notes", "ExpressionUUID" -> \
+"43971177-ab87-4b8a-bb06-af0f5d1a237f",
+ CellID->1798642488],
+Cell[21842, 571, 595, 9, 70, "Notes", "ExpressionUUID" -> \
+"b06ba376-7831-435c-96df-2f05d644daf5",
+ CellID->262377117],
+Cell[22440, 582, 1745, 41, 70, "Notes", "ExpressionUUID" -> \
+"695b9b55-2826-4c9b-80d1-6f263d39591e",
+ CellID->2041857421],
+Cell[24188, 625, 930, 34, 70, "Notes", "ExpressionUUID" -> \
+"eb5cd1b9-d9d1-475f-a769-7498df193dbe",
+ CellID->1261958801],
+Cell[25121, 661, 447, 8, 70, "Notes", "ExpressionUUID" -> \
+"bc8575df-a9ef-483f-9721-c6b6c1ba95f6",
+ CellID->2051196820],
+Cell[25571, 671, 1115, 29, 70, "Notes", "ExpressionUUID" -> \
+"b632cfbf-0aea-4ce9-aceb-d4e63c057f73",
+ CellID->1252937408],
+Cell[26689, 702, 1026, 28, 70, "Notes", "ExpressionUUID" -> \
+"aef683e9-8c53-472c-924a-6d0c2eb41380",
+ CellID->1919413432],
+Cell[27718, 732, 1149, 24, 70, "Notes", "ExpressionUUID" -> \
+"38818a19-a2ca-434b-9350-4214d1adaf03",
+ CellID->1430585844],
+Cell[28870, 758, 569, 13, 70, "Notes", "ExpressionUUID" -> \
+"5f98351c-c07a-460a-a713-fc5153847fd3",
+ CellID->398884720],
+Cell[29442, 773, 108, 0, 70, "Notes", "ExpressionUUID" -> \
+"bf9393fd-9821-42ac-b15a-45beff1a0433"],
+Cell[29553, 775, 13857, 286, 70, "3ColumnTableMod", "ExpressionUUID" -> \
+"026ccb46-8e19-443f-9cf8-599ea928118e",
+ CellID->1130542972],
+Cell[43413, 1063, 439, 11, 70, "Notes", "ExpressionUUID" -> \
+"f8e6962b-9904-4e3d-b144-ee862afb90ce",
+ CellID->1857225344],
+Cell[43855, 1076, 86, 0, 70, "SectionFooterSpacer", "ExpressionUUID" -> \
+"89398ba5-85ad-4fe9-8ac9-7c5fd103a5bf"]
+}, Closed]],
 Cell[CellGroupData[{
-Cell[36925, 1008, 196, 6, 70, "ExampleSection",
- CellID->2058729787],
-Cell[37124, 1016, 81, 1, 70, "ExampleText",
+Cell[43978, 1081, 578, 17, 70, "PrimaryExamplesSection", "ExpressionUUID" -> \
+"e253cdb5-d660-43bd-9a9d-98857d790d5f",
+ CellTags->"PrimaryExamplesSection",
+ CellID->640867336],
+Cell[CellGroupData[{
+Cell[44581, 1102, 309, 7, 70, "ExampleSection", "ExpressionUUID" -> \
+"96048415-ec35-4509-ba2f-9c5d63e96b89",
+ CellID->1426826447],
+Cell[44893, 1111, 136, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"152ee29b-4dbf-48a7-a1e3-12de82707cf0",
  CellID->1955035864],
-Cell[37208, 1019, 120, 3, 70, "Input",
+Cell[45032, 1114, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"2464ff2b-bd86-4373-ab8e-3b2c46114b36",
  CellID->2015788480],
-Cell[37331, 1024, 136, 4, 70, "ExampleText",
+Cell[45210, 1119, 191, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"fe05a4cb-489c-4f14-82db-0b12d39e90ef",
  CellID->1818713907],
 Cell[CellGroupData[{
-Cell[37492, 1032, 682, 14, 70, "Input",
+Cell[45426, 1127, 737, 14, 70, "Input", "ExpressionUUID" -> \
+"7d5a8059-0d72-4a03-a155-bdf5022bb62f",
  CellID->1586527373],
-Cell[38177, 1048, 10255, 256, 70, "Output",
+Cell[46166, 1143, 10310, 256, 70, "Output", "ExpressionUUID" -> \
+"19b76511-d527-4aa3-91a9-ec37ea46abe5",
  CellID->602330676]
 }, Open  ]],
-Cell[48447, 1307, 89, 1, 70, "ExampleText",
+Cell[56491, 1402, 144, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"fe5c5100-7c2c-4557-9dc3-3b3b8c69c037",
  CellID->882375243],
 Cell[CellGroupData[{
-Cell[48561, 1312, 157, 5, 70, "Input",
+Cell[56660, 1407, 212, 5, 70, "Input", "ExpressionUUID" -> \
+"b142c218-0d15-4c5f-9458-af0eb198bcdd",
  CellID->689104897],
-Cell[48721, 1319, 1137, 30, 70, "Output",
+Cell[56875, 1414, 1192, 30, 70, "Output", "ExpressionUUID" -> \
+"e0688901-5262-4694-8cd5-cdf009186ad4",
  CellID->133759574]
 }, Open  ]],
-Cell[49873, 1352, 341, 6, 70, "ExampleText",
+Cell[58082, 1447, 396, 6, 70, "ExampleText", "ExpressionUUID" -> \
+"83316a3f-b5ee-4424-ab02-63410133e072",
  CellID->1096954261],
 Cell[CellGroupData[{
-Cell[50239, 1362, 125, 3, 70, "ExampleDelimiter",
+Cell[58503, 1457, 242, 5, 70, "ExampleDelimiter", "ExpressionUUID" -> \
+"b252ef70-e7ab-4b6f-9bf6-55b0f5aabc07",
  CellID->348287981],
-Cell[50367, 1367, 120, 3, 70, "Input",
+Cell[58748, 1464, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"360539d7-63c3-48de-9f22-102a3766ce44",
  CellID->1783158592],
-Cell[50490, 1372, 147, 4, 70, "ExampleText",
+Cell[58926, 1469, 202, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"3fff6751-5e33-414d-a954-7712c9dcf220",
  CellID->1456943078],
 Cell[CellGroupData[{
-Cell[50662, 1380, 1166, 24, 70, "Input",
+Cell[59153, 1477, 1221, 24, 70, "Input", "ExpressionUUID" -> \
+"7472b269-cee1-4314-beae-c31e9c8e18bd",
  CellID->424064361],
-Cell[51831, 1406, 12480, 303, 70, "Output",
+Cell[60377, 1503, 12535, 303, 70, "Output", "ExpressionUUID" -> \
+"277b953f-cc7e-44cc-b0ed-024a63da79cf",
  CellID->1769189707]
 }, Open  ]],
-Cell[64326, 1712, 167, 4, 70, "ExampleText",
+Cell[72927, 1809, 222, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"4f17a5fc-53e1-45ec-9add-479e79658aaa",
  CellID->1134366297],
 Cell[CellGroupData[{
-Cell[64518, 1720, 225, 8, 70, "Input",
+Cell[73174, 1817, 280, 8, 70, "Input", "ExpressionUUID" -> \
+"38ac83e8-8c76-4992-85e1-2d0dd247dc58",
  CellID->2082019260],
-Cell[64746, 1730, 5103, 124, 70, "Output",
+Cell[73457, 1827, 5158, 124, 70, "Output", "ExpressionUUID" -> \
+"8bd32a6f-3dcd-4be0-88ca-dab7359427a6",
  CellID->1249559385]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[69898, 1860, 126, 3, 70, "ExampleDelimiter",
+Cell[78664, 1957, 243, 5, 70, "ExampleDelimiter", "ExpressionUUID" -> \
+"88d88658-31bd-40f8-ac6b-5192b34c630e",
  CellID->1694376521],
-Cell[70027, 1865, 120, 3, 70, "Input",
+Cell[78910, 1964, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"ddd32486-c452-40c3-8015-ac65b432dac5",
  CellID->1753029227],
-Cell[70150, 1870, 213, 5, 70, "ExampleText",
+Cell[79088, 1969, 268, 5, 70, "ExampleText", "ExpressionUUID" -> \
+"430fd51f-ff2e-466b-b5ae-e275156b9b54",
  CellID->1834064996],
-Cell[70366, 1877, 1110, 28, 70, "Input",
+Cell[79359, 1976, 1165, 28, 70, "Input", "ExpressionUUID" -> \
+"a73d6695-8378-4ba0-aa62-d77ce404e15a",
  CellID->150118734],
-Cell[71479, 1907, 77, 1, 70, "ExampleText",
+Cell[80527, 2006, 132, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"5d77a412-fd0d-4721-becc-5849816fc80f",
  CellID->848132548],
 Cell[CellGroupData[{
-Cell[71581, 1912, 159, 5, 70, "Input",
+Cell[80684, 2011, 214, 5, 70, "Input", "ExpressionUUID" -> \
+"dc3eb949-8cfe-45fb-831b-c653b022fdab",
  CellID->471746822],
-Cell[71743, 1919, 5638, 160, 70, "Output",
+Cell[80901, 2018, 5693, 160, 70, "Output", "ExpressionUUID" -> \
+"fa03155b-6ba5-46c9-b1b0-a405852cfe81",
  CellID->447168338]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[77430, 2085, 126, 3, 70, "ExampleDelimiter",
+Cell[86643, 2184, 243, 5, 70, "ExampleDelimiter", "ExpressionUUID" -> \
+"148f126e-9dbb-47a6-b3a4-e5738dc453d1",
  CellID->1177882774],
-Cell[77559, 2090, 120, 3, 70, "Input",
+Cell[86889, 2191, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"71ea4d93-9710-4205-b21c-86bbafb70a1c",
  CellID->1171524572],
-Cell[77682, 2095, 119, 3, 70, "ExampleText",
+Cell[87067, 2196, 174, 3, 70, "ExampleText", "ExpressionUUID" -> \
+"e0583b8c-eed3-4e81-b180-8ec93142d72b",
  CellID->1683405908],
-Cell[77804, 2100, 1277, 32, 70, "Input",
+Cell[87244, 2201, 1332, 32, 70, "Input", "ExpressionUUID" -> \
+"3856f7cf-cce8-4a32-a0e0-e5260c4c57c3",
  CellID->2053530178],
-Cell[79084, 2134, 240, 5, 70, "ExampleText",
+Cell[88579, 2235, 295, 5, 70, "ExampleText", "ExpressionUUID" -> \
+"bd4e9806-7bd1-4e8e-ab1d-82659c4725a2",
  CellID->1020372319],
 Cell[CellGroupData[{
-Cell[79349, 2143, 160, 5, 70, "Input",
+Cell[88899, 2244, 215, 5, 70, "Input", "ExpressionUUID" -> \
+"37abfabb-939b-4d5c-b6d5-62bb54837e6c",
  CellID->1072372723],
-Cell[79512, 2150, 5794, 160, 70, "Output",
+Cell[89117, 2251, 5849, 160, 70, "Output", "ExpressionUUID" -> \
+"824272f1-dc97-45cc-9c3e-8ececb213fb7",
  CellID->236024602]
 }, Open  ]],
-Cell[85321, 2313, 207, 5, 70, "ExampleText",
+Cell[94981, 2414, 322, 7, 70, "ExampleText", "ExpressionUUID" -> \
+"96cd6283-67df-499d-b82a-6d4556000178",
  CellID->1611246022],
-Cell[85531, 2320, 1465, 36, 70, "Input",
+Cell[95306, 2423, 1520, 36, 70, "Input", "ExpressionUUID" -> \
+"1ee9ec5e-cfb1-49e3-a1e8-aee07da5ec53",
  CellID->750159751],
 Cell[CellGroupData[{
-Cell[87021, 2360, 165, 5, 70, "Input",
+Cell[96851, 2463, 220, 5, 70, "Input", "ExpressionUUID" -> \
+"8216b7ae-c029-42b1-b924-762c48471fe7",
  CellID->1412159339],
-Cell[87189, 2367, 7024, 198, 70, "Output",
+Cell[97074, 2470, 7079, 198, 70, "Output", "ExpressionUUID" -> \
+"d58da6de-d776-4cfb-81c6-3117625410e5",
  CellID->1813506158]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[94262, 2571, 126, 3, 70, "ExampleDelimiter",
+Cell[104202, 2674, 243, 5, 70, "ExampleDelimiter", "ExpressionUUID" -> \
+"2f3d16f7-638f-40ab-8629-165fa9d8498b",
  CellID->2012641746],
-Cell[94391, 2576, 120, 3, 70, "Input",
+Cell[104448, 2681, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"5293d0ce-14a9-4eb1-9e09-477fc530bf44",
  CellID->2017647728],
-Cell[94514, 2581, 232, 5, 70, "ExampleText",
+Cell[104626, 2686, 287, 5, 70, "ExampleText", "ExpressionUUID" -> \
+"05d77897-cc99-4c6a-9439-f5320bce15cb",
  CellID->681914774],
-Cell[94749, 2588, 276, 8, 70, "Input",
+Cell[104916, 2693, 331, 8, 70, "Input", "ExpressionUUID" -> \
+"eb17be2d-2622-41b5-ba8a-0b881bb3be46",
  CellID->1923222966],
-Cell[95028, 2598, 68, 1, 70, "ExampleText",
+Cell[105250, 2703, 123, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"ecdd1dcd-9b3c-4bb3-a0d4-b51258861571",
  CellID->915319762],
 Cell[CellGroupData[{
-Cell[95121, 2603, 168, 4, 70, "Input",
+Cell[105398, 2708, 223, 4, 70, "Input", "ExpressionUUID" -> \
+"73c34194-5e1d-4ea5-aafa-683cd5519136",
  CellID->1353876473],
-Cell[95292, 2609, 16606, 372, 70, "Output",
+Cell[105624, 2714, 16661, 372, 70, "Output", "ExpressionUUID" -> \
+"577b6cdf-adb7-4161-ba92-508a63bbe8be",
  CellID->879367228]
 }, Open  ]],
-Cell[111913, 2984, 112, 3, 70, "ExampleText",
+Cell[122300, 3089, 167, 3, 70, "ExampleText", "ExpressionUUID" -> \
+"3e610726-3a76-43c1-8fa9-b2cdeffa4fc2",
  CellID->916164270],
 Cell[CellGroupData[{
-Cell[112050, 2991, 168, 4, 70, "Input",
+Cell[122492, 3096, 223, 4, 70, "Input", "ExpressionUUID" -> \
+"852d48f1-6840-47e8-b78a-d726a3a26aa2",
  CellID->742674912],
-Cell[112221, 2997, 15191, 357, 70, "Output",
+Cell[122718, 3102, 15246, 357, 70, "Output", "ExpressionUUID" -> \
+"2ebf83df-c929-4705-959a-7d17d3fe1261",
  CellID->722860091]
 }, Open  ]],
-Cell[127427, 3357, 74, 1, 70, "ExampleText",
+Cell[137979, 3462, 129, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"acfed28e-5575-43cc-8086-eab7b21e60e9",
  CellID->107326098],
 Cell[CellGroupData[{
-Cell[127526, 3362, 73, 1, 70, "Input",
+Cell[138133, 3467, 128, 1, 70, "Input", "ExpressionUUID" -> \
+"4becbb09-eea8-4eca-ae76-8b5e41b2c452",
  CellID->1845173164],
-Cell[127602, 3365, 1260, 32, 70, "Output",
+Cell[138264, 3470, 1315, 32, 70, "Output", "ExpressionUUID" -> \
+"6500cd31-b9a4-46cc-8dc7-b801c43080e9",
  CellID->794558358]
 }, Open  ]],
-Cell[128877, 3400, 105, 2, 70, "ExampleText",
+Cell[139594, 3505, 160, 2, 70, "ExampleText", "ExpressionUUID" -> \
+"04b140cb-57ff-4f39-a598-2c990363da12",
  CellID->1885501598],
 Cell[CellGroupData[{
-Cell[129007, 3406, 206, 6, 70, "Input",
+Cell[139779, 3511, 261, 6, 70, "Input", "ExpressionUUID" -> \
+"fe7be49d-4bed-4771-b68c-87ad0860d4a0",
  CellID->1542739591],
-Cell[129216, 3414, 46089, 1160, 70, "Output",
+Cell[140043, 3519, 46144, 1160, 70, "Output", "ExpressionUUID" -> \
+"8be12b62-53df-4a05-8d95-5ac349882221",
  CellID->1089005860]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[175366, 4581, 169, 5, 70, "ExampleSection"],
+Cell[186248, 4686, 285, 7, 70, "ExampleSection", "ExpressionUUID" -> \
+"eeb7425b-57b7-415e-8972-74bd02c7ce3d"],
 Cell[CellGroupData[{
-Cell[175560, 4590, 183, 5, 70, "ExampleSubsection"],
-Cell[175746, 4597, 119, 3, 70, "Input",
+Cell[186558, 4697, 299, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"69e059f2-4be4-45e6-a0d5-d0d78def53f4"],
+Cell[186860, 4706, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"a6672a80-eb89-46a2-9d97-dd810d1670cc",
  CellID->550101298],
-Cell[175868, 4602, 309, 9, 70, "ExampleText",
+Cell[187037, 4711, 364, 9, 70, "ExampleText", "ExpressionUUID" -> \
+"1454c062-0325-43bb-b230-ee39236bc216",
  CellID->1966375077],
-Cell[176180, 4613, 135, 4, 70, "ExampleText",
+Cell[187404, 4722, 190, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"923e7777-b66c-4b90-b9e7-073fc9d5dbeb",
  CellID->635415151],
 Cell[CellGroupData[{
-Cell[176340, 4621, 682, 14, 70, "Input",
+Cell[187619, 4730, 737, 14, 70, "Input", "ExpressionUUID" -> \
+"9721d860-b765-4c4f-82da-50003c7c92e8",
  CellID->2133749973],
-Cell[177025, 4637, 10344, 258, 70, "Output",
+Cell[188359, 4746, 10399, 258, 70, "Output", "ExpressionUUID" -> \
+"486a99ce-7bea-43ed-ab1e-b3e7bdef0e3b",
  CellID->252114323]
 }, Open  ]],
-Cell[187384, 4898, 91, 1, 70, "ExampleText",
+Cell[198773, 5007, 146, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"58971f6c-cd5f-4fa3-92f6-14f4efb8773c",
  CellID->1930503380],
 Cell[CellGroupData[{
-Cell[187500, 4903, 160, 5, 70, "Input",
+Cell[198944, 5012, 215, 5, 70, "Input", "ExpressionUUID" -> \
+"028b466d-d548-4427-9151-5438a12be06b",
  CellID->1787368784],
-Cell[187663, 4910, 10184, 260, 70, "Output",
+Cell[199162, 5019, 10239, 260, 70, "Output", "ExpressionUUID" -> \
+"17ea1b44-25c1-4358-a677-fe3af65da86d",
  CellID->300191130]
 }, Open  ]],
-Cell[197862, 5173, 197, 4, 70, "ExampleText",
+Cell[209416, 5282, 252, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"49c5ba6f-d8b0-4ab8-9888-3cb845e78f61",
  CellID->160852951],
-Cell[198062, 5179, 1086, 26, 70, "Input",
+Cell[209671, 5288, 1141, 26, 70, "Input", "ExpressionUUID" -> \
+"aa2238ad-f76f-4cf6-891c-e93e0da044bf",
  CellID->143336021],
-Cell[199151, 5207, 88, 1, 70, "ExampleText",
+Cell[210815, 5316, 143, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"52868169-d151-46f9-9dae-16f861d65ded",
  CellID->863480997],
 Cell[CellGroupData[{
-Cell[199264, 5212, 169, 5, 70, "Input",
+Cell[210983, 5321, 224, 5, 70, "Input", "ExpressionUUID" -> \
+"2121a2ba-cb29-48d3-bc71-b54bbbc6a4d8",
  CellID->451471213],
-Cell[199436, 5219, 8520, 226, 70, "Output",
+Cell[211210, 5328, 8575, 226, 70, "Output", "ExpressionUUID" -> \
+"7fcd8dcb-e7ef-48d9-9039-6727771b7eb4",
  CellID->761088273]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[207993, 5450, 124, 3, 70, "ExampleDelimiter",
+Cell[219822, 5559, 241, 5, 70, "ExampleDelimiter", "ExpressionUUID" -> \
+"92c370af-c162-417c-8d18-0ae0087977f6",
  CellID->55270547],
-Cell[208120, 5455, 120, 3, 70, "Input",
+Cell[220066, 5566, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"13ad536b-eb69-4310-8103-2187838c017b",
  CellID->1219147925],
-Cell[208243, 5460, 216, 5, 70, "ExampleText",
+Cell[220244, 5571, 271, 5, 70, "ExampleText", "ExpressionUUID" -> \
+"2d6332ed-3031-4968-ac03-60930a9444f5",
  CellID->2034683889],
-Cell[208462, 5467, 1086, 26, 70, "Input",
+Cell[220518, 5578, 1141, 26, 70, "Input", "ExpressionUUID" -> \
+"581f888f-a3dd-435f-9293-bbe8d2a1fb67",
  CellID->402527595],
-Cell[209551, 5495, 88, 1, 70, "ExampleText",
+Cell[221662, 5606, 143, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"0b6205c6-8e5f-418f-a454-ece72dc9f664",
  CellID->707801115],
 Cell[CellGroupData[{
-Cell[209664, 5500, 170, 5, 70, "Input",
+Cell[221830, 5611, 225, 5, 70, "Input", "ExpressionUUID" -> \
+"f0c56b72-013f-46e3-8e1c-8185c0491c60",
  CellID->1101419072],
-Cell[209837, 5507, 9287, 243, 70, "Output",
+Cell[222058, 5618, 9342, 243, 70, "Output", "ExpressionUUID" -> \
+"7efc8327-dd3d-4b1b-a0dc-d6674447251e",
  CellID->1238372798]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[219173, 5756, 124, 3, 70, "ExampleDelimiter",
+Cell[231449, 5867, 241, 5, 70, "ExampleDelimiter", "ExpressionUUID" -> \
+"a6a93eb7-754b-46b0-9db6-aa473abdb4e3",
  CellID->65186435],
-Cell[219300, 5761, 119, 3, 70, "Input",
+Cell[231693, 5874, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"ced12074-0ad0-4193-82f9-a47426169438",
  CellID->371753075],
-Cell[219422, 5766, 252, 5, 70, "ExampleText",
+Cell[231870, 5879, 307, 5, 70, "ExampleText", "ExpressionUUID" -> \
+"ccb8ec7e-1843-4165-bb70-3bbe03de9ab0",
  CellID->1024002402],
 Cell[CellGroupData[{
-Cell[219699, 5775, 1050, 25, 70, "Input",
+Cell[232202, 5888, 1105, 25, 70, "Input", "ExpressionUUID" -> \
+"1590c57c-30d2-4a0a-a602-685c71bb9b7b",
  CellID->474423356],
-Cell[220752, 5802, 18837, 501, 70, "Output",
+Cell[233310, 5915, 18893, 501, 70, "Output", "ExpressionUUID" -> \
+"0a2c5b09-24c0-4225-82ca-3cecbd4c7380",
  CellID->99648262]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[239638, 6309, 125, 3, 70, "ExampleDelimiter",
+Cell[252252, 6422, 242, 5, 70, "ExampleDelimiter", "ExpressionUUID" -> \
+"66d53b22-4eec-46bd-88a6-4a73d6dffe45",
  CellID->631859916],
-Cell[239766, 6314, 119, 3, 70, "Input",
+Cell[252497, 6429, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"f5b64aca-48a2-4a72-987c-ba78c47e07a8",
  CellID->810451908],
-Cell[239888, 6319, 272, 5, 70, "ExampleText",
+Cell[252674, 6434, 327, 5, 70, "ExampleText", "ExpressionUUID" -> \
+"7b00baba-cbdb-450a-bec4-14e1a1cfc719",
  CellID->555476797],
 Cell[CellGroupData[{
-Cell[240185, 6328, 1087, 25, 70, "Input",
+Cell[253026, 6443, 1142, 25, 70, "Input", "ExpressionUUID" -> \
+"57581aa1-cc39-4efd-bd4b-df8ab6b2806f",
  CellID->787113670],
-Cell[241275, 6355, 7768, 215, 70, "Output",
+Cell[254171, 6470, 7823, 215, 70, "Output", "ExpressionUUID" -> \
+"e6df5910-4c47-4dd4-aafe-320b8b2aef7f",
  CellID->628628539]
 }, Open  ]]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[249104, 6577, 184, 5, 70, "ExampleSubsection"],
-Cell[249291, 6584, 120, 3, 70, "Input",
+Cell[262055, 6692, 300, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"42ed8992-6c63-4bc7-8d56-8bb1f060de7c"],
+Cell[262358, 6701, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"cd888f71-2b72-4dd1-ba89-9f6076a6980b",
  CellID->1113597142],
-Cell[249414, 6589, 581, 13, 70, "ExampleText",
+Cell[262536, 6706, 682, 14, 70, "ExampleText", "ExpressionUUID" -> \
+"8b244419-4511-4fff-925a-c83798e41948",
  CellID->525558910],
 Cell[CellGroupData[{
-Cell[250020, 6606, 2020, 38, 70, "Input",
+Cell[263243, 6724, 2075, 38, 70, "Input", "ExpressionUUID" -> \
+"6b72043a-53b5-48c6-9518-98ee52abb12d",
  CellID->2004519476],
-Cell[252043, 6646, 2025, 39, 70, "Output",
+Cell[265321, 6764, 2080, 39, 70, "Output", "ExpressionUUID" -> \
+"c2c9d1d9-e176-4c65-96e6-08396d04d7d3",
  CellID->1533684535]
 }, Open  ]],
-Cell[254083, 6688, 188, 5, 70, "ExampleText",
+Cell[267416, 6806, 303, 7, 70, "ExampleText", "ExpressionUUID" -> \
+"fdcd71e4-ffdf-4896-ae63-f8cf5a8030ca",
  CellID->420607162],
 Cell[CellGroupData[{
-Cell[254296, 6697, 783, 17, 70, "Input",
+Cell[267744, 6817, 838, 17, 70, "Input", "ExpressionUUID" -> \
+"64632355-37f1-4670-8647-219c52cc4246",
  CellID->2021279070],
-Cell[255082, 6716, 10346, 257, 70, "Output",
+Cell[268585, 6836, 10401, 257, 70, "Output", "ExpressionUUID" -> \
+"0bb509c4-79c6-4831-8500-b94ccf153cfc",
  CellID->951937478]
 }, Open  ]],
-Cell[265443, 6976, 298, 10, 70, "ExampleText",
+Cell[279001, 7096, 399, 11, 70, "ExampleText", "ExpressionUUID" -> \
+"3fea67ab-cb60-4bad-8b67-3fd1cb0be2d8",
  CellID->1568520984],
 Cell[CellGroupData[{
-Cell[265766, 6990, 60, 1, 70, "Input",
+Cell[279425, 7111, 115, 1, 70, "Input", "ExpressionUUID" -> \
+"462f0a66-8b4c-4669-a6ec-fb1248ced7f8",
  CellID->1955297330],
-Cell[265829, 6993, 10035, 248, 70, "Output",
+Cell[279543, 7114, 10090, 248, 70, "Output", "ExpressionUUID" -> \
+"fcdad7eb-6cf3-4555-b43e-c0e78b043e87",
  CellID->973792320]
 }, Open  ]],
-Cell[275879, 7244, 335, 10, 70, "ExampleText",
+Cell[289648, 7365, 450, 12, 70, "ExampleText", "ExpressionUUID" -> \
+"be62b1ec-9c3e-4b60-8de3-91dab668e7bc",
  CellID->1020182356],
 Cell[CellGroupData[{
-Cell[276239, 7258, 787, 17, 70, "Input",
+Cell[290123, 7381, 842, 17, 70, "Input", "ExpressionUUID" -> \
+"cf642fc6-bc30-44d9-9d15-d17046deb039",
  CellID->1237024026],
-Cell[277029, 7277, 10251, 255, 70, "Output",
+Cell[290968, 7400, 10306, 255, 70, "Output", "ExpressionUUID" -> \
+"2e0b80ca-60be-467d-8f2a-d9dd3549d7af",
  CellID->1541534855]
 }, Open  ]],
-Cell[287295, 7535, 587, 17, 70, "ExampleText",
+Cell[301289, 7658, 734, 19, 70, "ExampleText", "ExpressionUUID" -> \
+"292f3d7a-8908-42b3-af54-925987862da5",
  CellID->1183840104],
 Cell[CellGroupData[{
-Cell[287907, 7556, 59, 1, 70, "Input",
+Cell[302048, 7681, 114, 1, 70, "Input", "ExpressionUUID" -> \
+"a711b59e-6bd5-48fd-9af8-94c76868802f",
  CellID->364638473],
-Cell[287969, 7559, 10045, 248, 70, "Output",
+Cell[302165, 7684, 10100, 248, 70, "Output", "ExpressionUUID" -> \
+"fb34c8aa-3e61-457f-a3d6-d84f269f0387",
  CellID->1333590577]
 }, Open  ]],
-Cell[298029, 7810, 218, 5, 70, "ExampleText",
+Cell[312280, 7935, 333, 7, 70, "ExampleText", "ExpressionUUID" -> \
+"f7630db8-28c8-43fd-a988-66229859abc6",
  CellID->1269422179]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[298284, 7820, 180, 5, 70, "ExampleSubsection"],
-Cell[298467, 7827, 119, 3, 70, "Input",
+Cell[312650, 7947, 296, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"fadc2ef7-7f13-4cfa-9d3b-50ac93ab3574"],
+Cell[312949, 7956, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"00ecc224-6b3f-4d1e-a68a-18e82014043f",
  CellID->736194619],
-Cell[298589, 7832, 178, 4, 70, "ExampleText",
+Cell[313126, 7961, 233, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"3dd76c93-8865-4250-b4cb-d5fffb83f42a",
  CellID->1046633828],
-Cell[298770, 7838, 197, 7, 70, "ExampleText",
+Cell[313362, 7967, 252, 7, 70, "ExampleText", "ExpressionUUID" -> \
+"ecd6432a-b469-4330-a966-a560b52ca0e6",
  CellID->1888352090],
 Cell[CellGroupData[{
-Cell[298992, 7849, 766, 16, 70, "Input",
+Cell[313639, 7978, 821, 16, 70, "Input", "ExpressionUUID" -> \
+"2ecf9441-8a17-4799-aa31-321ac48182e5",
  CellID->2020241264],
-Cell[299761, 7867, 10251, 255, 70, "Output",
+Cell[314463, 7996, 10306, 255, 70, "Output", "ExpressionUUID" -> \
+"00a53c0d-0b20-4785-9b97-d7772e1bcb3e",
  CellID->1002554889]
 }, Open  ]],
-Cell[310027, 8125, 267, 5, 70, "ExampleText",
+Cell[324784, 8254, 322, 5, 70, "ExampleText", "ExpressionUUID" -> \
+"d7b715be-b2bd-4ef3-9a39-7675cd87680a",
  CellID->99727020],
-Cell[310297, 8132, 2293, 36, 70, "Input",
+Cell[325109, 8261, 2348, 36, 70, "Input", "ExpressionUUID" -> \
+"4286fc27-bca0-45b9-99f5-d0908eebaeb7",
  CellID->1766580999],
-Cell[312593, 8170, 172, 4, 70, "ExampleText",
+Cell[327460, 8299, 227, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"3ae7e7a1-1cbd-4431-99ac-456f9a0c1d36",
  CellID->1110891760],
 Cell[CellGroupData[{
-Cell[312790, 8178, 467, 13, 70, "Input",
+Cell[327712, 8307, 522, 13, 70, "Input", "ExpressionUUID" -> \
+"fefd14ab-7df4-40f4-9aac-be2cb9bbe68b",
  CellID->1807125467],
-Cell[313260, 8193, 5228, 74, 70, "Output",
+Cell[328237, 8322, 5283, 74, 70, "Output", "ExpressionUUID" -> \
+"ad3599db-4b4a-4052-aa05-caef4b6b6731",
  CellID->783325061]
 }, Open  ]],
-Cell[318503, 8270, 187, 4, 70, "ExampleText",
+Cell[333535, 8399, 242, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"cad64450-b283-45df-8373-e162d35f390e",
  CellID->317126387],
 Cell[CellGroupData[{
-Cell[318715, 8278, 800, 17, 70, "Input",
+Cell[333802, 8407, 855, 17, 70, "Input", "ExpressionUUID" -> \
+"863a2756-8798-4bc9-b24d-0a22a37c9690",
  CellID->1948657367],
-Cell[319518, 8297, 1295, 34, 70, "Output",
+Cell[334660, 8426, 1350, 34, 70, "Output", "ExpressionUUID" -> \
+"3591cf80-e381-44e2-a387-a06cdb04f8a8",
  CellID->1977941474]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[320862, 8337, 184, 5, 70, "ExampleSubsection"],
-Cell[321049, 8344, 120, 3, 70, "Input",
+Cell[336059, 8466, 300, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"b0995abb-b069-4504-a800-cb13c0ab7779"],
+Cell[336362, 8475, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"c2606d87-47ee-45e9-a248-44b3f2db9e74",
  CellID->1509635015],
-Cell[321172, 8349, 332, 9, 70, "ExampleText",
+Cell[336540, 8480, 447, 11, 70, "ExampleText", "ExpressionUUID" -> \
+"799ac1ab-86ea-46a1-a13e-071f20e51d0b",
  CellID->2063891447],
 Cell[CellGroupData[{
-Cell[321529, 8362, 791, 17, 70, "Input",
+Cell[337012, 8495, 846, 17, 70, "Input", "ExpressionUUID" -> \
+"ecd76683-b60e-44d5-abb9-ceafb0002b96",
  CellID->1945574698],
-Cell[322323, 8381, 12485, 308, 70, "Output",
+Cell[337861, 8514, 12540, 308, 70, "Output", "ExpressionUUID" -> \
+"f3ac9558-3cb6-4c30-9d86-ac21ffdb1228",
  CellID->1129082782]
 }, Open  ]],
-Cell[334823, 8692, 158, 4, 70, "ExampleText",
+Cell[350416, 8825, 213, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"d7c2b3dd-cbf1-4ad9-ac4f-dfe3d1d8d887",
  CellID->2022108999],
 Cell[CellGroupData[{
-Cell[335006, 8700, 187, 6, 70, "Input",
+Cell[350654, 8833, 242, 6, 70, "Input", "ExpressionUUID" -> \
+"349f0595-e424-4aa8-9e0f-3d4c61064be0",
  CellID->523506295],
-Cell[335196, 8708, 3163, 91, 70, "Output",
+Cell[350899, 8841, 3218, 91, 70, "Output", "ExpressionUUID" -> \
+"fd50f56f-73fb-4f1d-ab46-d946eb0445e8",
  CellID->965957696]
 }, Open  ]],
-Cell[338374, 8802, 244, 8, 70, "ExampleText",
+Cell[354132, 8935, 359, 10, 70, "ExampleText", "ExpressionUUID" -> \
+"53d79ba3-bec8-4839-8af2-386302d8ac3a",
  CellID->1743761933],
 Cell[CellGroupData[{
-Cell[338643, 8814, 794, 17, 70, "Input",
+Cell[354516, 8949, 849, 17, 70, "Input", "ExpressionUUID" -> \
+"dc4ac852-678b-4da1-9253-ec8a8e8ab0a3",
  CellID->495991420],
-Cell[339440, 8833, 12487, 308, 70, "Output",
+Cell[355368, 8968, 12542, 308, 70, "Output", "ExpressionUUID" -> \
+"f0636ed9-7f35-4d7e-8fb1-d9756c9ed8e4",
  CellID->192840682]
 }, Open  ]],
-Cell[351942, 9144, 162, 4, 70, "ExampleText",
+Cell[367925, 9279, 217, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"5cc8bb74-451f-449f-9e52-5820d0547a87",
  CellID->1361136516],
 Cell[CellGroupData[{
-Cell[352129, 9152, 189, 6, 70, "Input",
+Cell[368167, 9287, 244, 6, 70, "Input", "ExpressionUUID" -> \
+"ceaefbb8-23c1-4cd8-a7cc-592b74b1b9d5",
  CellID->1625616568],
-Cell[352321, 9160, 3168, 91, 70, "Output",
+Cell[368414, 9295, 3223, 91, 70, "Output", "ExpressionUUID" -> \
+"346e7ca9-86e8-45fb-a62e-b099c873d9fd",
  CellID->1662795926]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[355538, 9257, 181, 5, 70, "ExampleSubsection"],
-Cell[355722, 9264, 119, 3, 70, "Input",
+Cell[371686, 9392, 297, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"6a7c6066-9a82-448f-bef0-c09ba0ed7dc1"],
+Cell[371986, 9401, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"6c8b1643-6672-4966-8d0a-1023d171c377",
  CellID->544909434],
-Cell[355844, 9269, 553, 16, 70, "ExampleText",
+Cell[372163, 9406, 714, 19, 70, "ExampleText", "ExpressionUUID" -> \
+"1b136bda-05b4-4ab0-9f33-975ba9e10b73",
  CellID->954949886],
 Cell[CellGroupData[{
-Cell[356422, 9289, 768, 16, 70, "Input",
+Cell[372902, 9429, 823, 16, 70, "Input", "ExpressionUUID" -> \
+"b3d9ee06-e4f9-4f73-baed-bd220f2490ef",
  CellID->1697439971],
-Cell[357193, 9307, 9800, 250, 70, "Output",
+Cell[373728, 9447, 9855, 250, 70, "Output", "ExpressionUUID" -> \
+"28b99971-0475-4379-92f0-6525065c8c24",
  CellID->2110597307]
 }, Open  ]],
-Cell[367008, 9560, 165, 4, 70, "ExampleText",
+Cell[383598, 9700, 220, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"86b29630-b140-48f4-8d13-503eb7e7deae",
  CellID->1913273234],
-Cell[367176, 9566, 8679, 131, 70, "Input",
+Cell[383821, 9706, 8734, 131, 70, "Input", "ExpressionUUID" -> \
+"d181b2b2-2638-42a1-87cb-7760a004e1b5",
  CellID->162368068],
 Cell[CellGroupData[{
-Cell[375880, 9701, 800, 17, 70, "Input",
+Cell[392580, 9841, 855, 17, 70, "Input", "ExpressionUUID" -> \
+"5bc2b723-1cb2-49c1-a31e-c3f17693510d",
  CellID->32286649],
-Cell[376683, 9720, 169484, 4713, 70, "Output",
+Cell[393438, 9860, 169540, 4713, 70, "Output", "ExpressionUUID" -> \
+"74372efc-ca56-4019-abf1-bcb714adc9b5",
  CellID->1486520147]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[546216, 14439, 191, 5, 70, "ExampleSubsection"],
-Cell[546410, 14446, 120, 3, 70, "Input",
+Cell[563027, 14579, 307, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"7dd7fdf6-71ca-4171-a21b-03334b40380d"],
+Cell[563337, 14588, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"83dd1149-2e59-4da5-a4e3-4d67ba9273c7",
  CellID->1121559897],
-Cell[546533, 14451, 428, 10, 70, "ExampleText",
+Cell[563515, 14593, 529, 11, 70, "ExampleText", "ExpressionUUID" -> \
+"1fe6e49f-c935-4e48-a3af-ba414affae02",
  CellID->1593219160],
 Cell[CellGroupData[{
-Cell[546986, 14465, 876, 19, 70, "Input",
+Cell[564069, 14608, 931, 19, 70, "Input", "ExpressionUUID" -> \
+"11b58b50-f82d-4346-b399-79af96a193f0",
  CellID->260827677],
-Cell[547865, 14486, 9804, 250, 70, "Output",
+Cell[565003, 14629, 9859, 250, 70, "Output", "ExpressionUUID" -> \
+"1a3f4211-171b-4147-8ce3-55060ca532f8",
  CellID->1275993110]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[557718, 14742, 192, 5, 70, "ExampleSubsection"],
-Cell[557913, 14749, 119, 3, 70, "Input",
+Cell[574911, 14885, 308, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"4c5072df-76d1-406b-9943-4bd3805b79e7"],
+Cell[575222, 14894, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"9ee2b979-0e57-4fbd-8ab1-7e9ca43919af",
  CellID->368641672],
-Cell[558035, 14754, 759, 20, 70, "ExampleText",
+Cell[575399, 14899, 906, 22, 70, "ExampleText", "ExpressionUUID" -> \
+"5f4a5cd7-e831-49eb-b934-7eb18bf62c48",
  CellID->270259709],
 Cell[CellGroupData[{
-Cell[558819, 14778, 878, 19, 70, "Input",
+Cell[576330, 14925, 933, 19, 70, "Input", "ExpressionUUID" -> \
+"ad86cfd8-9f1c-4264-acbc-fc4dfcdbf0b8",
  CellID->327015758],
-Cell[559700, 14799, 9803, 250, 70, "Output",
+Cell[577266, 14946, 9858, 250, 70, "Output", "ExpressionUUID" -> \
+"21b41027-0b82-4413-a6a5-142f23368201",
  CellID->1580991208]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[569552, 15055, 185, 5, 70, "ExampleSubsection"],
-Cell[569740, 15062, 119, 3, 70, "Input",
+Cell[587173, 15202, 301, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"76eb5412-943b-4470-84ae-c95da2b91f0c"],
+Cell[587477, 15211, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"8cacba93-b48f-48ab-8b55-5b6aa72f674a",
  CellID->904068525],
-Cell[569862, 15067, 1013, 26, 70, "ExampleText",
+Cell[587654, 15216, 1174, 29, 70, "ExampleText", "ExpressionUUID" -> \
+"2df2a7ad-416d-4b93-8f04-a17b068d6a24",
  CellID->1232897150],
-Cell[570878, 15095, 120, 3, 70, "ExampleText",
+Cell[588831, 15247, 175, 3, 70, "ExampleText", "ExpressionUUID" -> \
+"fea42393-39cb-4c88-8350-38d6d2df07fe",
  CellID->2084560318],
-Cell[571001, 15100, 445, 14, 70, "Input",
+Cell[589009, 15252, 500, 14, 70, "Input", "ExpressionUUID" -> \
+"4cfd58ce-62d1-45e7-afee-4016195a1f57",
  CellID->2097790341],
-Cell[571449, 15116, 159, 5, 70, "ExampleText",
+Cell[589512, 15268, 274, 7, 70, "ExampleText", "ExpressionUUID" -> \
+"2f18308d-cb9c-4ea4-8174-c40f665dee3a",
  CellID->1665470403],
 Cell[CellGroupData[{
-Cell[571633, 15125, 798, 17, 70, "Input",
+Cell[589811, 15279, 853, 17, 70, "Input", "ExpressionUUID" -> \
+"bb69cb33-d865-4412-a339-2f85aab554f4",
  CellID->232690147],
-Cell[572434, 15144, 22610, 591, 70, "Output",
+Cell[590667, 15298, 22665, 591, 70, "Output", "ExpressionUUID" -> \
+"7c181486-8cd6-4d84-b802-0060bc5ef409",
  CellID->552890740]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[595093, 15741, 174, 5, 70, "ExampleSubsection"],
-Cell[595270, 15748, 119, 3, 70, "Input",
+Cell[613381, 15895, 290, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"0e361cbe-cdea-4aa3-987f-64ab28587b36"],
+Cell[613674, 15904, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"4aed1260-71e0-4a99-9834-ec3bb2cb0f20",
  CellID->272926611],
-Cell[595392, 15753, 205, 4, 70, "ExampleText",
+Cell[613851, 15909, 260, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"ddef54f7-f540-4be7-8a49-279f6a9bbf1e",
  CellID->1862918616],
-Cell[595600, 15759, 164, 4, 70, "ExampleText",
+Cell[614114, 15915, 219, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"7553614b-99cc-4e90-8362-148b3da060f5",
  CellID->301871616],
 Cell[CellGroupData[{
-Cell[595789, 15767, 808, 17, 70, "Input",
+Cell[614358, 15923, 863, 17, 70, "Input", "ExpressionUUID" -> \
+"591d4989-4263-482c-802c-3d4ac90df3ac",
  CellID->1199875898],
-Cell[596600, 15786, 12488, 308, 70, "Output",
+Cell[615224, 15942, 12543, 308, 70, "Output", "ExpressionUUID" -> \
+"5a1856b2-c777-4db3-809d-8afc9192691a",
  CellID->707865255]
 }, Open  ]],
-Cell[609103, 16097, 203, 6, 70, "ExampleText",
+Cell[627782, 16253, 318, 8, 70, "ExampleText", "ExpressionUUID" -> \
+"9d414f49-7d7d-48cb-8810-fd31940328c1",
  CellID->631399817]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[609343, 16108, 179, 5, 70, "ExampleSubsection"],
-Cell[609525, 16115, 119, 3, 70, "Input",
+Cell[628137, 16266, 295, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"45c32cc9-2970-491b-b454-b69525046539"],
+Cell[628435, 16275, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"850704ed-9d86-4564-8659-130ea8f85507",
  CellID->283129420],
-Cell[609647, 16120, 755, 18, 70, "ExampleText",
+Cell[628612, 16280, 870, 20, 70, "ExampleText", "ExpressionUUID" -> \
+"562ed6a5-1d0f-4869-a045-98ae0309d944",
  CellID->1086297901],
-Cell[610405, 16140, 281, 6, 70, "ExampleText",
+Cell[629485, 16302, 336, 6, 70, "ExampleText", "ExpressionUUID" -> \
+"53bd0001-8b6f-47a6-8522-2d0ef243b53d",
  CellID->1879883835],
 Cell[CellGroupData[{
-Cell[610711, 16150, 2508, 60, 70, "Input",
+Cell[629846, 16312, 2563, 60, 70, "Input", "ExpressionUUID" -> \
+"0433c7ae-ca42-4704-906d-283b4e4d2981",
  CellID->1428200181],
-Cell[613222, 16212, 13381, 337, 70, "Output",
+Cell[632412, 16374, 13436, 337, 70, "Output", "ExpressionUUID" -> \
+"01fbc50c-ce16-441d-a47c-cc2659330e03",
  CellID->355612580]
 }, Open  ]],
-Cell[626618, 16552, 307, 6, 70, "ExampleText",
+Cell[645863, 16714, 422, 8, 70, "ExampleText", "ExpressionUUID" -> \
+"2f3220a1-a30f-4bb8-a0ed-c9bb18d3845e",
  CellID->920721051],
 Cell[CellGroupData[{
-Cell[626950, 16562, 2506, 60, 70, "Input",
+Cell[646310, 16726, 2561, 60, 70, "Input", "ExpressionUUID" -> \
+"8d67733a-305a-4d4a-89a8-69a19112ecb7",
  CellID->1939027522],
-Cell[629459, 16624, 14439, 362, 70, "Output",
+Cell[648874, 16788, 14494, 362, 70, "Output", "ExpressionUUID" -> \
+"14677c11-c11d-471e-9610-e61e156a3ff8",
  CellID->333642459]
 }, Open  ]],
-Cell[643913, 16989, 328, 11, 70, "ExampleText",
+Cell[663383, 17153, 503, 15, 70, "ExampleText", "ExpressionUUID" -> \
+"9d894735-2053-413e-870b-6c0b2def946f",
  CellID->79712552]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[644278, 17005, 210, 6, 70, "ExampleSubsection",
+Cell[663923, 17173, 323, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"c583d8c9-e3ed-4eee-b36f-ce509565ee45",
  CellID->1254192192],
-Cell[644491, 17013, 119, 3, 70, "Input",
+Cell[664249, 17182, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"6ab0e39a-a59b-4a83-af12-86f722f4822f",
  CellID->777775488],
-Cell[644613, 17018, 768, 19, 70, "ExampleText",
+Cell[664426, 17187, 881, 20, 70, "ExampleText", "ExpressionUUID" -> \
+"c7d05eca-6f04-4b65-aedb-b1958041412d",
  CellID->382306094],
 Cell[CellGroupData[{
-Cell[645406, 17041, 2568, 61, 70, "Input",
+Cell[665332, 17211, 2623, 61, 70, "Input", "ExpressionUUID" -> \
+"bd49a950-0c99-4bbf-be06-4d0f819ca820",
  CellID->174168754],
-Cell[647977, 17104, 11595, 292, 70, "Output",
+Cell[667958, 17274, 11650, 292, 70, "Output", "ExpressionUUID" -> \
+"9b101657-8c86-4e43-bcb3-bdb4c3f5af01",
  CellID->776271517]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[659621, 17402, 189, 5, 70, "ExampleSubsection"],
-Cell[659813, 17409, 120, 3, 70, "Input",
+Cell[679657, 17572, 305, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"46f37e79-99f9-40c9-ac27-3b99969ca3c4"],
+Cell[679965, 17581, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"10b318aa-1430-490a-b8a3-003f97d6110a",
  CellID->2112677345],
-Cell[659936, 17414, 502, 11, 70, "ExampleText",
+Cell[680143, 17586, 663, 14, 70, "ExampleText", "ExpressionUUID" -> \
+"02859b11-5659-45db-a50c-abfc72a7cd0d",
  CellID->1273517917],
 Cell[CellGroupData[{
-Cell[660463, 17429, 873, 19, 70, "Input",
+Cell[680831, 17604, 928, 19, 70, "Input", "ExpressionUUID" -> \
+"a09e8bcb-9741-4b56-b7e1-04bdc10e9d1b",
  CellID->46121370],
-Cell[661339, 17450, 12344, 305, 70, "Output",
+Cell[681762, 17625, 12399, 305, 70, "Output", "ExpressionUUID" -> \
+"ec7afac9-1cd6-420b-bb72-85b234758fd3",
  CellID->198121015]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[673732, 17761, 188, 5, 70, "ExampleSubsection"],
-Cell[673923, 17768, 120, 3, 70, "Input",
+Cell[694210, 17936, 304, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"bfde1816-db44-47d6-9748-9020ef3a490f"],
+Cell[694517, 17945, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"dd56c8b7-b78b-42ba-90e4-d25e0463aaaf",
  CellID->1431421707],
-Cell[674046, 17773, 552, 15, 70, "ExampleText",
+Cell[694695, 17950, 713, 18, 70, "ExampleText", "ExpressionUUID" -> \
+"a29c2d83-460b-4808-a86b-7f908454b313",
  CellID->1792815855],
-Cell[674601, 17790, 93, 1, 70, "ExampleText",
+Cell[695411, 17970, 148, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"a0c7b49a-ff27-4271-b97b-e5e2140a5448",
  CellID->625119487],
 Cell[CellGroupData[{
-Cell[674719, 17795, 135, 4, 70, "Input",
+Cell[695584, 17975, 190, 4, 70, "Input", "ExpressionUUID" -> \
+"2d3c877c-de28-45b2-b52e-6dfd3bc2fe24",
  CellID->1156196234],
-Cell[674857, 17801, 8677, 224, 70, "Output",
+Cell[695777, 17981, 8732, 224, 70, "Output", "ExpressionUUID" -> \
+"dde3ed66-0c9c-4551-b183-500d1517236e",
  CellID->462015981]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[683571, 18030, 797, 17, 70, "Input",
+Cell[704546, 18210, 852, 17, 70, "Input", "ExpressionUUID" -> \
+"c7f73b47-7486-4277-920a-4b4bd7f37ea1",
  CellID->513023928],
-Cell[684371, 18049, 12441, 307, 70, "Output",
+Cell[705401, 18229, 12496, 307, 70, "Output", "ExpressionUUID" -> \
+"2ef29615-a4fa-4a50-990a-8be7634158c1",
  CellID->1868044754]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[696861, 18362, 187, 5, 70, "ExampleSubsection"],
-Cell[697051, 18369, 120, 3, 70, "Input",
+Cell[717946, 18542, 303, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"5d8a322c-fcba-4802-b4f1-80621e301a58"],
+Cell[718252, 18551, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"bdda2ddf-1293-49bc-9d7b-5da5372217ac",
  CellID->1848999248],
-Cell[697174, 18374, 798, 20, 70, "ExampleText",
+Cell[718430, 18556, 1074, 25, 70, "ExampleText", "ExpressionUUID" -> \
+"5b2e81ee-ec8c-438f-9e08-4392ea0d8d24",
  CellID->201015421],
-Cell[697975, 18396, 154, 5, 70, "ExampleText",
+Cell[719507, 18583, 269, 7, 70, "ExampleText", "ExpressionUUID" -> \
+"f7e095ae-8d8f-4719-99b3-c3ef0be191b7",
  CellID->1669345242],
 Cell[CellGroupData[{
-Cell[698154, 18405, 792, 17, 70, "Input",
+Cell[719801, 18594, 847, 17, 70, "Input", "ExpressionUUID" -> \
+"b2a00d9f-8d78-4980-9e29-9ad4d2db7a1a",
  CellID->1515119565],
-Cell[698949, 18424, 12345, 305, 70, "Output",
+Cell[720651, 18613, 12400, 305, 70, "Output", "ExpressionUUID" -> \
+"c8ee9af7-7ef2-4708-b5e1-a87abf97c245",
  CellID->936637263]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[711343, 18735, 175, 5, 70, "ExampleSubsection"],
-Cell[711521, 18742, 120, 3, 70, "Input",
+Cell[733100, 18924, 291, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"a25f4192-ca9d-45cf-9d2c-b7e80a0a5b60"],
+Cell[733394, 18933, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"fb0df731-9ea1-4344-ad09-93f7013e7c95",
  CellID->1007346731],
-Cell[711644, 18747, 693, 16, 70, "ExampleText",
+Cell[733572, 18938, 854, 19, 70, "ExampleText", "ExpressionUUID" -> \
+"2f4a311a-d22a-4b3f-8b36-0b33dfddedbb",
  CellID->1754883614],
-Cell[712340, 18765, 147, 4, 70, "ExampleText",
+Cell[734429, 18959, 202, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"0a9c74d5-aecf-47d9-a2ba-34ae503521d0",
  CellID->1909089499],
 Cell[CellGroupData[{
-Cell[712512, 18773, 786, 17, 70, "Input",
+Cell[734656, 18967, 841, 17, 70, "Input", "ExpressionUUID" -> \
+"a64a85fa-b56d-4167-8821-ab94cb88fce3",
  CellID->514039866],
-Cell[713301, 18792, 12344, 305, 70, "Output",
+Cell[735500, 18986, 12399, 305, 70, "Output", "ExpressionUUID" -> \
+"963f228a-00d6-48b0-a236-7ad04a5f3e92",
  CellID->374718012]
 }, Open  ]],
-Cell[725660, 19100, 44, 1, 70, "ExampleText",
+Cell[747914, 19294, 99, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"2cfdc8eb-e390-4c7f-9d75-918b17506928",
  CellID->2128262732]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[725741, 19106, 179, 5, 70, "ExampleSubsection"],
-Cell[725923, 19113, 120, 3, 70, "Input",
+Cell[748050, 19300, 295, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"7ff57583-e8b3-4034-8bf0-b3cbf2c7e2a1"],
+Cell[748348, 19309, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"7137fc90-6381-42f7-8a8e-f97026c208f4",
  CellID->1285185936],
-Cell[726046, 19118, 354, 10, 70, "ExampleText",
+Cell[748526, 19314, 527, 13, 70, "ExampleText", "ExpressionUUID" -> \
+"cbc25db2-3b92-459d-842a-e75da9529483",
  CellID->407039048],
 Cell[CellGroupData[{
-Cell[726425, 19132, 818, 18, 70, "Input",
+Cell[749078, 19331, 873, 18, 70, "Input", "ExpressionUUID" -> \
+"7f23485d-754f-4248-8586-9e06fe20fdb8",
  CellID->1369864041],
-Cell[727246, 19152, 8202, 209, 70, "Output",
+Cell[749954, 19351, 8257, 209, 70, "Output", "ExpressionUUID" -> \
+"62f2c47c-578a-480c-8228-e78659f8cdeb",
  CellID->801643363]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[735497, 19367, 179, 5, 70, "ExampleSubsection"],
-Cell[735679, 19374, 119, 3, 70, "Input",
+Cell[758260, 19566, 295, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"0f2503b8-374d-4c9b-a594-ae7473d5700c"],
+Cell[758558, 19575, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"1e2bb393-dd1d-4c7e-bebd-5a1699058698",
  CellID->108520089],
-Cell[735801, 19379, 317, 7, 70, "ExampleText",
+Cell[758735, 19580, 492, 11, 70, "ExampleText", "ExpressionUUID" -> \
+"2851616d-53c8-4556-acfb-519fb5487b1c",
  CellID->242073805],
-Cell[736121, 19388, 69, 1, 70, "ExampleText",
+Cell[759230, 19593, 124, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"99fbc545-6904-4920-a107-de35980367fc",
  CellID->540747877],
 Cell[CellGroupData[{
-Cell[736215, 19393, 775, 16, 70, "Input",
+Cell[759379, 19598, 830, 16, 70, "Input", "ExpressionUUID" -> \
+"cf4471d3-eb93-4fc7-9a8d-b9191e0815ca",
  CellID->1200413217],
-Cell[736993, 19411, 9704, 248, 70, "Output",
+Cell[760212, 19616, 9759, 248, 70, "Output", "ExpressionUUID" -> \
+"0db82d69-c17f-4462-aff1-60645635c4a7",
  CellID->1256546322]
 }, Open  ]],
-Cell[746712, 19662, 165, 4, 70, "ExampleText",
+Cell[769986, 19867, 220, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"dd9ab01f-3a6c-40e9-a7d9-6011f211c064",
  CellID->331319927],
 Cell[CellGroupData[{
-Cell[746902, 19670, 777, 16, 70, "Input",
+Cell[770231, 19875, 832, 16, 70, "Input", "ExpressionUUID" -> \
+"b5ef7442-9677-4e32-80f9-8015a0822766",
  CellID->1826281614],
-Cell[747682, 19688, 7671, 188, 70, "Output",
+Cell[771066, 19893, 7726, 188, 70, "Output", "ExpressionUUID" -> \
+"23fd075e-a60f-49c0-b3e8-f984ac1d46c0",
  CellID->419849256]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[755402, 19882, 187, 5, 70, "ExampleSubsection"],
-Cell[755592, 19889, 119, 3, 70, "Input",
+Cell[778841, 20087, 303, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"6ddc43f7-ef68-44b4-b0f5-aa472d7b54e5"],
+Cell[779147, 20096, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"860d5d29-1605-40a1-be78-a6b4359ce58c",
  CellID->815741696],
-Cell[755714, 19894, 410, 10, 70, "ExampleText",
+Cell[779324, 20101, 585, 14, 70, "ExampleText", "ExpressionUUID" -> \
+"f9a51414-8704-4de4-a1fa-2a84bd8cf2ed",
  CellID->1922665197],
-Cell[756127, 19906, 133, 4, 70, "ExampleText",
+Cell[779912, 20117, 188, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"f04e0dbf-09e6-4cd2-9bec-f2c9bb2aa081",
  CellID->1047529570],
 Cell[CellGroupData[{
-Cell[756285, 19914, 861, 18, 70, "Input",
+Cell[780125, 20125, 916, 18, 70, "Input", "ExpressionUUID" -> \
+"28980b84-a421-4123-bd20-0a4ff3d3c54f",
  CellID->758544884],
-Cell[757149, 19934, 7672, 188, 70, "Output",
+Cell[781044, 20145, 7727, 188, 70, "Output", "ExpressionUUID" -> \
+"f1db7820-d3a5-4070-84d8-d43525f14f98",
  CellID->2136021341]
 }, Open  ]],
-Cell[764836, 20125, 137, 4, 70, "ExampleText",
+Cell[788786, 20336, 192, 4, 70, "ExampleText", "ExpressionUUID" -> \
+"47bd6f41-b8e6-4377-894a-553897f080ea",
  CellID->534024664],
 Cell[CellGroupData[{
-Cell[764998, 20133, 857, 18, 70, "Input",
+Cell[789003, 20344, 912, 18, 70, "Input", "ExpressionUUID" -> \
+"10c6231d-c47e-4f49-8868-8c8efba48d5a",
  CellID->1018367035],
-Cell[765858, 20153, 5412, 132, 70, "Output",
+Cell[789918, 20364, 5467, 132, 70, "Output", "ExpressionUUID" -> \
+"34d55579-1928-4d1b-b83c-20e0f9f5545c",
  CellID->1795673253]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[771319, 20291, 174, 5, 70, "ExampleSubsection"],
-Cell[771496, 20298, 119, 3, 70, "Input",
+Cell[795434, 20502, 290, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"0e56b62c-fd1b-45a6-a13e-2a20fe987e3b"],
+Cell[795727, 20511, 174, 3, 70, "Input", "ExpressionUUID" -> \
+"4d6acc68-0cb6-44ae-9178-40e15b7c1e26",
  CellID->635082224],
-Cell[771618, 20303, 215, 6, 70, "ExampleText",
+Cell[795904, 20516, 330, 8, 70, "ExampleText", "ExpressionUUID" -> \
+"9df4f892-c2ae-440c-81e4-d026bdf47d25",
  CellID->1991714108],
 Cell[CellGroupData[{
-Cell[771858, 20313, 777, 17, 70, "Input",
+Cell[796259, 20528, 832, 17, 70, "Input", "ExpressionUUID" -> \
+"b40b53ce-7c3c-4688-8416-95b0ebb4b8d7",
  CellID->360266786],
-Cell[772638, 20332, 9847, 251, 70, "Output",
+Cell[797094, 20547, 9902, 251, 70, "Output", "ExpressionUUID" -> \
+"8d3de88b-c479-4a04-88ce-bcf5813bee04",
  CellID->662673000]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[782522, 20588, 125, 3, 70, "ExampleDelimiter",
+Cell[807033, 20803, 242, 5, 70, "ExampleDelimiter", "ExpressionUUID" -> \
+"cd4ee755-778c-4358-8186-1077add9f780",
  CellID->694917658],
-Cell[782650, 20593, 120, 3, 70, "Input",
+Cell[807278, 20810, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"86d6b7fc-c1b3-4f4a-bd4a-4248b92d8993",
  CellID->1449442485],
-Cell[782773, 20598, 215, 5, 70, "ExampleText",
+Cell[807456, 20815, 270, 5, 70, "ExampleText", "ExpressionUUID" -> \
+"4ad5d01b-ae55-4c13-a5dd-6e62d6fd986f",
  CellID->1872837474],
 Cell[CellGroupData[{
-Cell[783013, 20607, 739, 19, 70, "Input",
+Cell[807751, 20824, 794, 19, 70, "Input", "ExpressionUUID" -> \
+"9f6f53da-7c67-4dc0-96d5-32f11d3bbc0e",
  CellID->1465005620],
-Cell[783755, 20628, 8841, 223, 70, "Output",
+Cell[808548, 20845, 8896, 223, 70, "Output", "ExpressionUUID" -> \
+"15dc01ad-de93-428c-a312-8e8dc1856d95",
  CellID->1489067141]
 }, Open  ]],
-Cell[792611, 20854, 75, 1, 70, "ExampleText",
+Cell[817459, 21071, 130, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"4bea5b51-89c9-4133-9132-4657b8bf0476",
  CellID->1498390441],
 Cell[CellGroupData[{
-Cell[792711, 20859, 862, 18, 70, "Input",
+Cell[817614, 21076, 917, 18, 70, "Input", "ExpressionUUID" -> \
+"858e20f4-86ad-4053-8ff5-7a949f65ed8a",
  CellID->135586738],
-Cell[793576, 20879, 19452, 517, 70, "Output",
+Cell[818534, 21096, 19508, 517, 70, "Output", "ExpressionUUID" -> \
+"abf39a16-63f2-45a9-aebb-e119d93d62d7",
  CellID->68305141]
 }, Open  ]],
-Cell[813043, 21399, 361, 10, 70, "ExampleText",
+Cell[838057, 21616, 462, 11, 70, "ExampleText", "ExpressionUUID" -> \
+"787f73a7-9191-4970-993d-d1dfac6bcd07",
  CellID->638325064],
 Cell[CellGroupData[{
-Cell[813429, 21413, 91, 2, 70, "Input",
+Cell[838544, 21631, 146, 2, 70, "Input", "ExpressionUUID" -> \
+"1db59e89-b1a8-4bb8-a9e5-c58703a7af00",
  CellID->731453980],
-Cell[813523, 21417, 9562, 239, 70, "Output",
+Cell[838693, 21635, 9617, 239, 70, "Output", "ExpressionUUID" -> \
+"6f13f3dc-01b5-42db-a20f-0c2e353d5000",
  CellID->356368680]
 }, Open  ]]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[823146, 21663, 179, 5, 70, "ExampleSubsection"],
-Cell[823328, 21670, 120, 3, 70, "Input",
+Cell[848371, 21881, 295, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
+"8ef7159a-6a6e-4e67-b01f-9a164d23712f"],
+Cell[848669, 21890, 175, 3, 70, "Input", "ExpressionUUID" -> \
+"61991a43-426c-4094-b89f-6e4bfbe958fb",
  CellID->2024915824],
-Cell[823451, 21675, 781, 14, 70, "ExampleText",
+Cell[848847, 21895, 836, 14, 70, "ExampleText", "ExpressionUUID" -> \
+"e7de0010-43dd-4774-bab3-9ea97162110a",
  CellID->1586899959],
 Cell[CellGroupData[{
-Cell[824257, 21693, 1097, 26, 70, "Input",
+Cell[849708, 21913, 1152, 26, 70, "Input", "ExpressionUUID" -> \
+"ba8504dd-6181-4f14-a633-14fae331a887",
  CellID->1428198820],
-Cell[825357, 21721, 9847, 251, 70, "Output",
+Cell[850863, 21941, 9902, 251, 70, "Output", "ExpressionUUID" -> \
+"600f8796-961b-4c2c-ad02-8bdc54e70750",
  CellID->553904776]
 }, Open  ]],
-Cell[835219, 21975, 57, 1, 70, "ExampleText",
+Cell[860780, 22195, 112, 1, 70, "ExampleText", "ExpressionUUID" -> \
+"cf62b068-87dc-44f0-bdf5-ef756c4b95d1",
  CellID->1073963473],
 Cell[CellGroupData[{
-Cell[835301, 21980, 408, 12, 70, "Input",
+Cell[860917, 22200, 463, 12, 70, "Input", "ExpressionUUID" -> \
+"2289b649-8294-4ffb-b6f6-5b3af61068d2",
  CellID->135960487],
-Cell[835712, 21994, 181, 5, 70, "Output",
+Cell[861383, 22214, 236, 5, 70, "Output", "ExpressionUUID" -> \
+"a606361f-1c46-42ad-87e1-9d31bfc1d38e",
  CellID->944073278]
 }, Open  ]]
 }, Closed]]
 }, Closed]],
-Cell[835932, 22004, 31, 0, 70, "SectionFooterSpacer"]
+Cell[861658, 22224, 86, 0, 70, "SectionFooterSpacer", "ExpressionUUID" -> \
+"eaeef3a4-2e91-4c50-a236-10e4c44704a3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[836000, 22009, 270, 12, 70, "SeeAlsoSection",
+Cell[861781, 22229, 402, 13, 70, "SeeAlsoSection", "ExpressionUUID" -> \
+"0323f29d-7181-449e-8f8d-21f1bfd16575",
  CellID->1255426704],
-Cell[836273, 22023, 3720, 113, 70, "SeeAlso",
+Cell[862186, 22244, 4248, 113, 70, "SeeAlso", "ExpressionUUID" -> \
+"f0b1b662-ec7b-40ad-933b-44616f173a45",
  CellID->1648690486]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[840030, 22141, 272, 12, 70, "TutorialsSection",
+Cell[866471, 22362, 404, 13, 70, "TutorialsSection", "ExpressionUUID" -> \
+"ad82c737-609a-4ac7-87ec-562cff374ada",
  CellID->250839057],
-Cell[840305, 22155, 31, 0, 70, "SectionHeaderSpacer"],
-Cell[840339, 22157, 212, 6, 70, "Tutorials",
+Cell[866878, 22377, 86, 0, 70, "SectionHeaderSpacer", "ExpressionUUID" -> \
+"12ebd895-ad8a-4e32-a4a7-bb2e83f6d5e7"],
+Cell[866967, 22379, 253, 6, 70, "Tutorials", "ExpressionUUID" -> \
+"7898d551-0868-45df-9f28-3f10218fcdf6",
  CellID->341631938],
-Cell[840554, 22165, 238, 6, 70, "Tutorials",
+Cell[867223, 22387, 279, 6, 70, "Tutorials", "ExpressionUUID" -> \
+"fb272331-c7c4-4c13-9752-ac4105588046",
  CellID->1023267351],
-Cell[840795, 22173, 31, 0, 70, "SectionFooterSpacer"]
+Cell[867505, 22395, 86, 0, 70, "SectionFooterSpacer", "ExpressionUUID" -> \
+"687fbf9d-3f8d-433c-a713-150fccdaa1b5"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[840863, 22178, 276, 12, 70, "MoreAboutSection",
+Cell[867628, 22400, 408, 13, 70, "MoreAboutSection", "ExpressionUUID" -> \
+"fe5b9fb2-cd8c-4fbb-bdba-e8a9c482183e",
  CellID->38303248],
-Cell[841142, 22192, 31, 0, 70, "SectionHeaderSpacer"],
-Cell[841176, 22194, 199, 5, 70, "MoreAbout",
- CellID->815009645],
-Cell[841378, 22201, 31, 0, 70, "SectionFooterSpacer"]
+Cell[868039, 22415, 86, 0, 70, "SectionHeaderSpacer", "ExpressionUUID" -> \
+"768a28f5-7e68-4c41-95b9-8d7863f23d7a"],
+Cell[868128, 22417, 241, 5, 70, "MoreAbout", "ExpressionUUID" -> \
+"d229a8a2-5b1e-46ab-ac4d-c701ea96f28a",
+ CellID->1869692327],
+Cell[868372, 22424, 86, 0, 70, "SectionFooterSpacer", "ExpressionUUID" -> \
+"74c34d18-a545-4429-a4b0-dc42a0b84463"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[841446, 22206, 280, 12, 70, "RelatedLinksSection",
+Cell[868495, 22429, 412, 13, 70, "RelatedLinksSection", "ExpressionUUID" -> \
+"72600a9a-04aa-4bb9-80d6-525145f9410d",
  CellID->1584193535],
-Cell[841729, 22220, 31, 0, 70, "SectionHeaderSpacer"],
-Cell[841763, 22222, 205, 5, 70, "RelatedLinks",
+Cell[868910, 22444, 86, 0, 70, "SectionHeaderSpacer", "ExpressionUUID" -> \
+"b33f64aa-e000-4947-9e71-950c6b9367d4"],
+Cell[868999, 22446, 246, 5, 70, "RelatedLinks", "ExpressionUUID" -> \
+"fa90e6ba-63b7-4854-8a93-3cb7f423d6ac",
  CellID->1038487239],
-Cell[841971, 22229, 218, 6, 70, "RelatedLinks",
+Cell[869248, 22453, 259, 6, 70, "RelatedLinks", "ExpressionUUID" -> \
+"ace1c2b2-5c8c-49a3-bebe-83b1d12be205",
  CellID->1970164909]
 }, Open  ]],
-Cell[842204, 22238, 23, 0, 70, "FooterCell"]
+Cell[869522, 22462, 78, 0, 70, "FooterCell", "ExpressionUUID" -> \
+"894557c2-de43-41d6-b188-6ad856383d3d"]
 }
 ]
 *)

@@ -2,11 +2,11 @@
   
   ** Pre-Installation Requirements **
      To install MathIOmica on any platform you need:
-     1. Mathematica version 10.3 or higher
+     1. Mathematica version 11.1.1 or higher
      2. Recommended: 16GB of RAM or higher
   
   ** Installation Instructions **
-     1. Open Mathematica (version 10.4 and higher)
+     1. Open Mathematica (version 11.1.1 and higher)
      2. In the File menu select Install...
      3. In the popup menu choose the following for each item:
         -- "Type of Item to Install:" Application
@@ -14,7 +14,7 @@
  	       - Navigate to and select the "MathIOmica" directory containing this document
         -- Choose "Install for this User Only (username)"
      4. Press OK.
-     5. Quit and restart Mathematica
+     5. Quit and restart Mathematica.
      6. The package should now available with <<MathIOmica`
      7. Documentation should be available in Mathematica's help browser (search for MathIOmica)
 
