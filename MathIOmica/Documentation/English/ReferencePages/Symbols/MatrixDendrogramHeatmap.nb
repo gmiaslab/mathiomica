@@ -3,25 +3,24 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 11.1' *)
+(* CreatedBy='Mathematica 11.2' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    524944,      10685]
-NotebookOptionsPosition[    496898,       9955]
-NotebookOutlinePosition[    501866,      10081]
-CellTagsIndexPosition[    501740,      10075]
+NotebookDataLength[    508530,      10378]
+NotebookOptionsPosition[    481770,       9831]
+NotebookOutlinePosition[    486629,       9940]
+CellTagsIndexPosition[    486505,       9934]
 WindowTitle->MatrixDendrogramHeatmap
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[GridBox[{
-   {Cell["MATH I OMICA PACKAGE SYMBOL", "PacletNameCell",ExpressionUUID->
-     "f9ad6dd0-4db4-4c91-a8c1-f7d5fbffcf7b"], Cell[TextData[{
+   {Cell["MATH I OMICA PACKAGE SYMBOL", "PacletNameCell"], Cell[TextData[{
      Cell[BoxData[
       ActionMenuBox[
        FrameBox[
@@ -29,7 +28,7 @@ Cell[BoxData[GridBox[{
           "Tutorials",
           StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
            StripOnInput->False]
-         }],ExpressionUUID->"60fcb0c8-f850-4075-8b8e-87f8851e2ff7"],
+         }]],
          TextCell[
           Row[{"Tutorials", 
             Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -41,8 +40,7 @@ Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
        Appearance->None,
        MenuAppearance->Automatic,
        MenuStyle->"Tutorials"]],
-      LineSpacing->{1.4, 0},ExpressionUUID->
-      "6c666302-3b79-4f55-8c88-3c2ec547b9fc"],
+      LineSpacing->{1.4, 0}],
      "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
 \[ThickSpace]",
      Cell[BoxData[
@@ -52,7 +50,7 @@ Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
           "See Also",
           StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
            StripOnInput->False]
-         }],ExpressionUUID->"c81150fe-2881-4587-a0f0-e50816bd26a0"],
+         }]],
          TextCell[
           Row[{"See Also", 
             Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -77,8 +75,7 @@ Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
        Appearance->None,
        MenuAppearance->Automatic,
        MenuStyle->"SeeAlso"]],
-      LineSpacing->{1.4, 0},ExpressionUUID->
-      "a7dd97ae-7059-40a1-ac48-01276bf51e8f"],
+      LineSpacing->{1.4, 0}],
      "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
 \[ThickSpace]",
      Cell[BoxData[
@@ -88,7 +85,7 @@ Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
           "Related Guides",
           StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
            StripOnInput->False]
-         }],ExpressionUUID->"3b08e210-d42a-404c-8d03-66d48060d83f"],
+         }]],
          TextCell[
           Row[{"Related Guides", 
             Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -97,8 +94,7 @@ Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
        Appearance->None,
        MenuAppearance->Automatic,
        MenuStyle->"MoreAbout"]],
-      LineSpacing->{1.4, 0},ExpressionUUID->
-      "a6d34fad-5673-4db2-8004-16594e5c9d1d"],
+      LineSpacing->{1.4, 0}],
      "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
 \[ThickSpace]",
      Cell[BoxData[
@@ -108,7 +104,7 @@ Dynamic Transcriptome\"\>":>Documentation`HelpLookup[
           "URL",
           StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
            StripOnInput->False]
-         }],ExpressionUUID->"4c65a4e8-21f5-48ec-a590-5f6722446efa"],
+         }]],
          TextCell[
           Row[{"URL", 
             Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
@@ -142,52 +138,40 @@ MatrixDendrogramHeatmap.html"], StandardForm]], "Input", TextClipboardType ->
            URL[
             StringJoin[
              If[
-              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$42608], 
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$43847], 
               "http://reference.wolfram.com/system-modeler/", 
               "http://reference.wolfram.com/language/"], 
              "MathIOmica/ref/MatrixDendrogramHeatmap", ".html"]], None}]}]},
        Appearance->None,
        MenuAppearance->Automatic,
        MenuStyle->"URLMenu"]],
-      LineSpacing->{1.4, 0},ExpressionUUID->
-      "91cbaf30-1070-47c4-9c5e-4304df6f9bf9"]
-    }], "AnchorBar",ExpressionUUID->"91855c34-797f-4fdc-8c42-dd75013d7c76"]}
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
   }]], "AnchorBarGrid",
- CellID->1,ExpressionUUID->"d3bd79e2-ede6-43f4-9dd9-6b1273bedc2d"],
+ CellID->1],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
- Cell["MatrixDendrogramHeatmap", "ObjectName",ExpressionUUID->
-  "886f31bd-e08a-4349-abf4-b587cc7842cb"],
+ Cell["MatrixDendrogramHeatmap", "ObjectName"],
  Cell[BoxData[
-  InterpretationBox[
-   StyleBox[
-    GraphicsBox[{},
-     BaselinePosition->Baseline,
-     ImageSize->{8, 0}],
-    CacheGraphics->False],
-   Spacer[8],
-   Selectable->False]],ExpressionUUID->"6354a0f0-eda3-42bf-92e9-80c769789597"],
- Cell[BoxData[
- ""], "ObjectNameTranslation",ExpressionUUID->
-  "b9036721-60d9-4ee6-965e-127784f5aa94"]
-}], "ObjectNameGrid",ExpressionUUID->"ad5d5745-dd2e-4427-8dd1-be698cd3a2fe"],
+  TemplateBox[{8},
+   "Spacer1"]]],
+ Cell[BoxData[""], "ObjectNameTranslation"]
+}], "ObjectNameGrid"],
 
 Cell[BoxData[GridBox[{
    {"", Cell[TextData[{
      Cell[BoxData[
       RowBox[{"MatrixDendrogramHeatmap", "[", 
-       StyleBox["data", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
-      "09415ffa-89c3-482d-8767-7656fcda7022"],
+       StyleBox["data", "TI"], "]"}]], "InlineFormula"],
      "\[LineSeparator]generates dendrograms and heatmap plots for a matrix."
-    }],ExpressionUUID->"9a9cf14f-fca9-42c8-b0ea-f46cddaa72ca"]}
+    }]]}
   }]], "Usage",
  GridBoxOptions->{
  GridBoxBackground->{
   "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
-   "RowsIndexed" -> \
-{}}},ExpressionUUID->"6b08deaf-ea35-44ac-bd9d-9a50d5e0ced9"]
+   "RowsIndexed" -> {}}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -195,18 +179,11 @@ Cell[CellGroupData[{
 Cell[TextData[Cell[BoxData[
  ButtonBox[Cell[TextData[{
    Cell[BoxData[
-    InterpretationBox[
-     StyleBox[
-      GraphicsBox[{},
-       BaselinePosition->Baseline,
-       ImageSize->{6, 0}],
-      CacheGraphics->False],
-     Spacer[6],
-     Selectable->False]],ExpressionUUID->
-    "59863ce4-e4f7-465a-8db0-2b7b0662e9e3"],
+    TemplateBox[{6},
+     "Spacer1"]]],
    "Details"
-  }], "NotesFrameText",ExpressionUUID->"9e40caea-5d66-46da-bb97-a15091692c79"],
-  Appearance->{Automatic, None},
+  }], "NotesFrameText"],
+  Appearance->{Automatic, None, "Normal", Automatic},
   BaseStyle->None,
   ButtonFunction:>(FrontEndExecute[{
      FrontEnd`SelectionMove[
@@ -215,31 +192,27 @@ Cell[TextData[Cell[BoxData[
      FrontEnd`SelectionMove[
       FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
   Evaluator->None,
-  Method->
-   "Preemptive"]],ExpressionUUID->"bf83f990-3df4-4703-b47e-43f4010e59e0"]], \
-"NotesSection",
+  Method->"Preemptive"]]]], "NotesSection",
  WholeCellGroupOpener->True,
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->2050509941,ExpressionUUID->"c263ac88-07d1-46b2-a1a5-1c6c02307dd2"],
+ CellID->1928275175],
 
-Cell["", "SectionHeaderSpacer",ExpressionUUID->"bc5f848f-b99e-4b71-aec6-e879a26b9833"],
+Cell["", "SectionHeaderSpacer"],
 
 Cell[TextData[{
  Cell[BoxData[
   RowBox[{"MatrixDendrogramHeatmap", "[", 
-   StyleBox["data", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
-  "fdd3da9a-8a0b-4799-b202-460d454e6b91"],
+   StyleBox["data", "TI"], "]"}]], "InlineFormula"],
  " generates a dendrogram and heatmap plot for matrix data clusters, \
 typically the output of a single class of ",
  Cell[BoxData[
   TemplateBox[{Cell[
      TextData["MatrixClusters"]],"paclet:MathIOmica/ref/MatrixClusters"},
    "RefLink",
-   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
-  "966520a7-df8c-4a0b-a036-4f40d144abf0"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula"],
  ". The input has the form of an association:"
 }], "Notes",
- CellID->1554635759,ExpressionUUID->"50f67199-c1ac-4172-8971-e755333b6957"],
+ CellID->1554635759],
 
 Cell[TextData[Cell[BoxData[
  RowBox[{"data", " ", "=", " ", 
@@ -309,10 +282,8 @@ Cell[TextData[Cell[BoxData[
           "member", " ", "list", " ", "for", " ", "vertical", " ", "group", 
            " ", "n"}], ",", " ", 
           RowBox[{"labeled", " ", "Gm"}]}], "}"}]}]}], "|>"}]}]}], 
-   "\[IndentingNewLine]", 
-   "|>"}]}]],ExpressionUUID->"eb9b844f-e649-42a4-8b12-93cf0412064a"]], "Notes",\
-
- CellID->853640370,ExpressionUUID->"1e17fda6-1406-46fa-b3ef-4b879be3ac71"],
+   "\[IndentingNewLine]", "|>"}]}]]]], "Notes",
+ CellID->853640370],
 
 Cell[TextData[{
  "The keys of the input have values that correspond to the following \
@@ -322,52 +293,41 @@ results from ",
   TemplateBox[{Cell[
      TextData["MatrixClusters"]],"paclet:MathIOmica/ref/MatrixClusters"},
    "RefLink",
-   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
-  "1f0c1abc-a700-468b-bd32-5911cc84a6c4"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula"],
  ":"
 }], "Notes",
- CellID->391788806,ExpressionUUID->"409ee208-c969-4240-8c8a-bc483094f8f9"],
+ CellID->391788806],
 
 Cell[BoxData[GridBox[{
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "4e868a26-6a0b-416b-9ed9-073774519395"], "\"\<RowCluster\>\"", Cell[
-    "Cluster generated  for similarity between the rows. ", "TableText",
-     ExpressionUUID->"c82ede0b-b8bf-40fc-a08a-7060b53f964a"]},
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "b070fdc1-35ba-4aef-9607-1c5bf11daf73"], "\"\<ColumnCluster\>\"", Cell[
-    "Cluster generated  for similarity between the columns. ", "TableText",
-     ExpressionUUID->"dbde764c-e7ab-415c-bdc4-20e92b1d8ac3"]},
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "c2444edd-a93c-4cde-9c12-f8c59ceefa0a"], "\"\<RowSplitClusters\>\"", 
-    Cell["\<\
+   {Cell["      ", "TableRowIcon"], "\"\<RowCluster\>\"", Cell[
+    "Cluster generated  for similarity between the rows. ", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "\"\<ColumnCluster\>\"", Cell[
+    "Cluster generated  for similarity between the columns. ", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "\"\<RowSplitClusters\>\"", Cell["\<\
 Clusters resulting from splitting the initial row cluster (reported by key \
 \"RowCluster\") into groups.\
-\>", "TableText",ExpressionUUID->"244669bb-461a-4b4a-9c7b-147908c06379"]},
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "0183d8fb-ca3e-4a3f-a6a5-b2b4807423fe"], "\"\<ColumnSplitClusters\>\"", 
-    Cell["\<\
+\>", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "\"\<ColumnSplitClusters\>\"", Cell["\<\
 Clusters resulting from splitting the initial column cluster (reported by key \
 \"RowCluster\") into groups.\
-\>", "TableText",ExpressionUUID->"fc91b245-c38c-439f-a17b-e9a00ff9ff94"]},
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "363fbf03-14f9-428a-8e2f-a29f30a5431a"], "\"\<GroupAssociationsRows\>\"",
-     Cell["\<\
+\>", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "\"\<GroupAssociationsRows\>\"", 
+    Cell["\<\
 Association denoting membership of each initial row data label to groups \
 generated by the clustering.\
-\>", "TableText",ExpressionUUID->"b6edaf02-7a1c-433f-9f6e-55aa1344fb90"]},
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "2ed25350-cf99-471a-b8d9-b4e47046e844"], 
-    "\"\<GroupAssociationsColumns\>\"", Cell["\<\
+\>", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "\"\<GroupAssociationsColumns\>\"", 
+    Cell["\<\
 Association denoting membership of each column data original position index \
 (or label if provided) to groups generated by the clustering.\
-\>", "TableText",ExpressionUUID->"cf13ff03-ec83-4e17-8f1a-e21e9f617fc6"]}
+\>", "TableText"]}
   }]], "2ColumnTableMod",
  GridBoxOptions->{
  GridBoxBackground->{
   "Columns" -> {{None}}, "ColumnsIndexed" -> {}, 
    "Rows" -> {None, None, None, None, None, {None}}, "RowsIndexed" -> {}},
  GridBoxDividers->{"Rows" -> {{True, True, True, True, True, True, True}}}},
- CellID->2126089056,ExpressionUUID->"4aabbc85-13e6-4138-9cd7-4004c00fa40e"],
+ CellID->2126089056],
 
 Cell[TextData[{
  "The data can also be provided as a list with the corresponding values from \
@@ -376,11 +336,10 @@ the ",
   TemplateBox[{Cell[
      TextData["MatrixClusters"]],"paclet:MathIOmica/ref/MatrixClusters"},
    "RefLink",
-   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
-  "aabfe5a0-9057-4ad2-a2a5-551bffebf3fa"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula"],
  " clustering for a single classification class:"
 }], "Notes",
- CellID->371734233,ExpressionUUID->"eaa71dd2-027e-42c3-a007-3a4b1ec8c36f"],
+ CellID->371734233],
 
 Cell[TextData[Cell[BoxData[
  RowBox[{"data", " ", "=", " ", 
@@ -452,16 +411,13 @@ Cell[TextData[Cell[BoxData[
          "member", " ", "list", " ", "for", " ", "vertical", " ", "group", 
           " ", "n"}], ",", " ", 
          RowBox[{"labeled", " ", "Gm"}]}], "}"}]}]}], "|>"}]}], 
-   "\[IndentingNewLine]", 
-   "}"}]}]],ExpressionUUID->"664192ed-3106-4af8-97f2-5763d1b6425c"]], "Notes",\
+   "\[IndentingNewLine]", "}"}]}]]]], "Notes",
+ CellID->1951075804],
 
- CellID->1951075804,ExpressionUUID->"788ee73a-3a29-499f-8483-0caf7b175e56"],
-
-Cell["The following options can be given: ", "Notes",ExpressionUUID->"de2f7cf5-e557-450f-8fbd-bcc17d5e2cca"],
+Cell["The following options can be given: ", "Notes"],
 
 Cell[BoxData[GridBox[{
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "883855ba-f53a-4c1c-b333-a093a4abd8b3"], "ColorBlending", 
+   {Cell["      ", "TableRowIcon"], "ColorBlending", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"CMYKColor", "[", 
@@ -483,9 +439,8 @@ Cell[BoxData[GridBox[{
       BaseStyle->"Link",
       ButtonData->"paclet:ref/ArrayPlot"],
      "."
-    }], "TableText",ExpressionUUID->"8a666827-0097-489e-899f-7bc050959603"]},
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "2912113b-9c7a-4637-9b70-a77ec661727c"], "DendrogramColor", 
+    }], "TableText"]},
+   {Cell["      ", "TableRowIcon"], "DendrogramColor", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"RGBColor", "[", 
@@ -495,35 +450,26 @@ Cell[BoxData[GridBox[{
 Color list option for highlighting the dendrograms for the horizontal and \
 vertical clusters respectively.  If a single color is given instead of a list \
 both dendrograms are colored the same.\
-\>", "TableText",ExpressionUUID->"56eb1e54-06c0-4dae-8705-49b17acdf60e"]},
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "598e9b69-1d57-4f5a-9067-e36cafe7fc43"], "FrameName", 
+\>", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "FrameName", 
     "\"\<Dendrogram and Heatmap\>\"", Cell[
-    "Label for plot frame.", "TableText",ExpressionUUID->
-     "4545e4f2-80d5-42a2-a1db-cc362934bf38"]},
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "409bbd8b-9065-46d7-b3ed-0b5663186b1a"], "HorizontalAxisName", 
-    "\"\<Groups\>\"", Cell[
-    "Label for the horizontal heatmap axis.", "TableText",ExpressionUUID->
-     "6d464f07-dc64-4a2c-aed3-22e4a3ef8385"]},
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "0f052869-0c5e-4023-a537-55b4625fae3b"], "HorizontalLabels", 
+    "Label for plot frame.", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "HorizontalAxisName", "\"\<Groups\>\"", 
+    Cell["Label for the horizontal heatmap axis.", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "HorizontalLabels", 
     ButtonBox["None",
      BaseStyle->"Link",
      ButtonData->"paclet:ref/None"], Cell[
-    "Labels for horizontal axis for each column.", "TableText",
-     ExpressionUUID->"4642004c-58a6-4fc6-a164-27d2b9f75796"]},
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "3c59ee14-f2bb-4a90-90e4-70c7550baba6"], "IndexColor", 
+    "Labels for horizontal axis for each column.", "TableText"]},
+   {Cell["      ", "TableRowIcon"], "IndexColor", 
     RowBox[{"{", 
      RowBox[{"\"\<DeepSeaColors\>\"", ",", " ", "\"\<CandyColors\>\""}], 
      "}"}], Cell["\<\
 Color gradient list option for labeling the group horizontal and vertical \
 groups respectively. If a single color gradient is given instead of a list \
 both indexes use the same color scheme.\
-\>", "TableText",ExpressionUUID->"589192ba-f5c2-4cfb-92b1-8513351f4e90"]},
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "4e8ebdb5-0ae6-4483-b054-8cfed64c31cd"], 
+\>", "TableText"]},
+   {Cell["      ", "TableRowIcon"], 
     ButtonBox["ImageSize",
      BaseStyle->"Link",
      ButtonData->"paclet:ref/ImageSize"], "200", Cell[TextData[{
@@ -532,9 +478,8 @@ both indexes use the same color scheme.\
       ButtonData->"paclet:ref/ImageSize"],
      " is an option that specifies the overall size of an image to display \
 for an object. "
-    }], "TableText",ExpressionUUID->"283c372f-c04a-43c4-ac3d-c844b443e20b"]},
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "cc032d97-9f29-4ca2-ba81-45c9f42a78b4"], "ScaleShift", 
+    }], "TableText"]},
+   {Cell["      ", "TableRowIcon"], "ScaleShift", 
     ButtonBox["None",
      BaseStyle->"Link",
      ButtonData->"paclet:ref/None"], Cell[TextData[{
@@ -544,14 +489,12 @@ real positive number, and is used as a multiplier for an internal ",
       BaseStyle->"Link",
       ButtonData->"paclet:ref/Blend"],
      " function's second argument."
-    }], "TableText",ExpressionUUID->"f8d84c45-82ee-41be-b525-42e3bdc0f8c4"]},
-   {Cell["      ", "TableRowIcon",ExpressionUUID->
-     "0a109ac8-6a00-482a-bdbb-59befa4ee21f"], "VerticalLabels", 
+    }], "TableText"]},
+   {Cell["      ", "TableRowIcon"], "VerticalLabels", 
     ButtonBox["None",
      BaseStyle->"Link",
      ButtonData->"paclet:ref/None"], Cell[
-    "Labels for vertical axis for each row.", "TableText",ExpressionUUID->
-     "2dfc8c95-81f2-4cf9-8b22-734e0ff4a61b"]}
+    "Labels for vertical axis for each row.", "TableText"]}
   }]], "3ColumnTableMod",
  GridBoxOptions->{
  GridBoxBackground->{
@@ -560,55 +503,47 @@ real positive number, and is used as a multiplier for an internal ",
    "RowsIndexed" -> {}},
  GridBoxDividers->{
   "Rows" -> {{True, True, True, True, True, True, True, True, True, True}}}},
- CellID->427366061,ExpressionUUID->"9aa514c5-0a4a-42f4-8ee9-37d672dcd00a"],
+ CellID->427366061],
 
-Cell["", "SectionFooterSpacer",ExpressionUUID->"0caca07e-c672-4a87-aa06-36d171fcbe18"]
+Cell["", "SectionFooterSpacer"]
 }, Closed]],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
  Cell[BoxData[
-  InterpretationBox[
-   StyleBox[
-    GraphicsBox[{},
-     BaselinePosition->Baseline,
-     ImageSize->{6, 0}],
-    CacheGraphics->False],
-   Spacer[6],
-   Selectable->False]],ExpressionUUID->"e15d0de8-8f7d-4617-b5f2-dd3de21b0c6e"],
+  TemplateBox[{6},
+   "Spacer1"]]],
  "Examples",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(12)", "ExampleCount",ExpressionUUID->
-  "729752ea-bb7a-46ca-a1eb-9144f9d37eaa"]
+ Cell["(12)", "ExampleCount"]
 }], "PrimaryExamplesSection",
  WholeCellGroupOpener->True,
  CellTags->"PrimaryExamplesSection",
- CellID->103011331,ExpressionUUID->"9b0cb4e1-ad38-4f32-9685-eff4cdf6387f"],
+ CellID->845149348],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
  "Basic Examples",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(2)", "ExampleCount",ExpressionUUID->
-  "6599209d-6b55-4f7b-8e17-f80bab5a544d"]
+ Cell["(2)", "ExampleCount"]
 }], "ExampleSection", "ExampleSection",
  WholeCellGroupOpener->True,
- CellID->439620635,ExpressionUUID->"7be1321f-0daa-47d2-a350-4336202646a3"],
+ CellID->968250578],
 
 Cell["First we need to load the MathIOmica package.", "ExampleText",
- CellID->191603639,ExpressionUUID->"f2120f7c-9539-430e-8563-3c73a6799f41"],
+ CellID->191603639],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->2017647728,ExpressionUUID->"4aad0caa-6006-4d10-9893-b53264d41ba3"],
+ CellID->2017647728],
 
 Cell["\<\
 We consider the following example, with one set of data clustered:\
 \>", "ExampleText",
- CellID->219218036,ExpressionUUID->"f078b39f-c033-48a9-9578-9543f4ef3781"],
+ CellID->219218036],
 
 Cell[CellGroupData[{
 
@@ -644,7 +579,7 @@ Cell[BoxData[{
  RowBox[{"exampleClustering1", "=", 
   RowBox[{"MatrixClusters", "[", "dataClusterExample1", "]"}]}]}], "Input",
  CellLabel->"In[2]:=",
- CellID->1403075803,ExpressionUUID->"df4467c2-a2bb-44e4-b12e-80f138c7e9ca"],
+ CellID->1403075803],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -836,13 +771,13 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1853815096,ExpressionUUID->"8641b039-0515-463e-b25a-1207622cdd41"]
+ CellID->1853815096]
 }, Open  ]],
 
 Cell["\<\
 We can generate the corresponding clustering for the single class \"1\":\
 \>", "ExampleText",
- CellID->1832104199,ExpressionUUID->"743f00c3-7804-4b6b-8971-0ea9208ba3ad"],
+ CellID->1832104199],
 
 Cell[CellGroupData[{
 
@@ -850,7 +785,7 @@ Cell[BoxData[
  RowBox[{"MatrixDendrogramHeatmap", "[", 
   RowBox[{"exampleClustering1", "[", "\"\<1\>\"", "]"}], "]"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->1948909817,ExpressionUUID->"a106b624-1a9c-4c94-bfc2-131b70a09146"],
+ CellID->1948909817],
 
 Cell[BoxData[
  GraphicsBox[
@@ -1174,7 +1109,7 @@ TqNcbrD7EV2wCQAAeAebAACAd7AJAAB4Z36bAAAA3ELQwgIAAAAAAAAAAAgP
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[3]=",
- CellID->2040097040,ExpressionUUID->"39f27148-166b-4f01-8559-7c801cb86b91"]
+ CellID->855691189]
 }, Open  ]],
 
 Cell["\<\
@@ -1187,7 +1122,7 @@ group. For example above, in horizontal group  1, \"H:G1\" there are 2 \
 members, and in vertical group 4 \"V:G4\" there is one member. We can extract \
 the corresponding members from the input data :\
 \>", "ExampleText",
- CellID->818767561,ExpressionUUID->"a80f45e3-ddc3-469f-8650-00e929688b79"],
+ CellID->818767561],
 
 Cell[CellGroupData[{
 
@@ -1197,7 +1132,7 @@ Cell[BoxData[
   "\"\<1\>\"", ",", "\"\<GroupAssociationsRows\>\"", ",", "\"\<H:G1\>\""}], 
   "]"}]], "Input",
  CellLabel->"In[4]:=",
- CellID->1190341538,ExpressionUUID->"3cb47a24-59fe-4b10-881e-c643fa8029b5"],
+ CellID->1190341538],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -1206,7 +1141,7 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[4]=",
- CellID->332052437,ExpressionUUID->"f8bee6e5-62e7-4089-acc9-174d3e3c48e9"]
+ CellID->332052437]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1217,14 +1152,14 @@ Cell[BoxData[
    RowBox[{"\"\<A\>\"", ",", "\"\<B\>\""}], "}"}]}]], "Input",
  NumberMarks->False,
  CellLabel->"In[5]:=",
- CellID->1006131787,ExpressionUUID->"b66dee0a-68a4-4d1f-b3c6-3d8893bbaf95"],
+ CellID->1006131787],
 
 Cell[BoxData["1"], "Output",
  ImageSize->{11, 16},
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[5]=",
- CellID->1385193465,ExpressionUUID->"905d2161-195b-4d3a-a67a-67c1dee4d01b"]
+ CellID->1385193465]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1235,7 +1170,7 @@ Cell[BoxData[
   "\"\<1\>\"", ",", "\"\<GroupAssociationsColumns\>\"", ",", "\"\<V:G4\>\""}],
    "]"}]], "Input",
  CellLabel->"In[6]:=",
- CellID->517560850,ExpressionUUID->"3ff160f8-f753-400c-b92a-6f9519a4c6a5"],
+ CellID->517560850],
 
 Cell[BoxData[
  RowBox[{"{", "4", "}"}]], "Output",
@@ -1243,13 +1178,13 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[6]=",
- CellID->910059507,ExpressionUUID->"270dd302-327f-48a0-bb6a-0429b3115d4b"]
+ CellID->910059507]
 }, Open  ]],
 
 Cell["\<\
 We note that we could have provided the data as a list as well:\
 \>", "ExampleText",
- CellID->920541078,ExpressionUUID->"ade8f7c4-7868-4628-89b2-4e30d40e4717"],
+ CellID->920541078],
 
 Cell[CellGroupData[{
 
@@ -1258,7 +1193,7 @@ Cell[BoxData[
   RowBox[{"Values", "[", 
    RowBox[{"exampleClustering1", "[", "\"\<1\>\"", "]"}], "]"}]}]], "Input",
  CellLabel->"In[7]:=",
- CellID->1555163285,ExpressionUUID->"c2ab0c13-bbcb-4458-8970-4d07be6d03d3"],
+ CellID->1555163285],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -1437,7 +1372,7 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[7]=",
- CellID->912832327,ExpressionUUID->"981f8a7c-1c7d-4021-b110-bad447bf4e31"]
+ CellID->912832327]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1446,7 +1381,7 @@ Cell[BoxData[
  RowBox[{"MatrixDendrogramHeatmap", "[", "exampleClusteringList", 
   "]"}]], "Input",
  CellLabel->"In[8]:=",
- CellID->1919172867,ExpressionUUID->"32453efb-e17e-43e1-be92-46ca6b7cde5b"],
+ CellID->1919172867],
 
 Cell[BoxData[
  GraphicsBox[
@@ -1770,28 +1705,26 @@ TqNcbrD7EV2wCQAAeAebAACAd7AJAAB4Z36bAAAA3ELQwgIAAAAAAAAAAAgP
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[8]=",
- CellID->1187043278,ExpressionUUID->"e7f3cb85-6d87-4e45-9de6-e7b5ae3ce2ad"]
+ CellID->2051313211]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- InterpretationBox[Cell[
-  "\t", "ExampleDelimiter",ExpressionUUID->
-   "49036fbf-012a-4954-91bf-65de3e3828d8"],
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
   $Line = 0; Null]], "ExampleDelimiter",
- CellID->2015756912,ExpressionUUID->"a8e42be4-b486-44a7-b5bc-d7bd8170e3e2"],
+ CellID->2015756912],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->124404912,ExpressionUUID->"14a51bc9-7158-4269-9a81-c09c5c139304"],
+ CellID->124404912],
 
 Cell["\<\
 Data with missing values can be used in the clustering and subsequent \
 plotting as well:\
 \>", "ExampleText",
- CellID->1371767453,ExpressionUUID->"1cb21112-7caa-4ef8-9610-0b280b5e4373"],
+ CellID->1371767453],
 
 Cell[CellGroupData[{
 
@@ -1830,7 +1763,7 @@ Cell[BoxData[{
  RowBox[{"exampleClustering2", "=", 
   RowBox[{"MatrixClusters", "[", "dataClusterExample2", "]"}]}]}], "Input",
  CellLabel->"In[2]:=",
- CellID->125570124,ExpressionUUID->"79c54640-3547-4984-a3ba-b04b03026647"],
+ CellID->125570124],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -1992,11 +1925,11 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->219223354,ExpressionUUID->"77a34706-e96f-4a7a-9fc8-a0e501351fff"]
+ CellID->219223354]
 }, Open  ]],
 
 Cell["Missing data are represented bye the grey squares.", "ExampleText",
- CellID->630967334,ExpressionUUID->"6ee067d7-43b8-4ac7-8d75-0c9baf6b3ccb"],
+ CellID->630967334],
 
 Cell[CellGroupData[{
 
@@ -2004,7 +1937,7 @@ Cell[BoxData[
  RowBox[{"MatrixDendrogramHeatmap", "[", 
   RowBox[{"exampleClustering2", "[", "\"\<1\>\"", "]"}], "]"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->1580705102,ExpressionUUID->"1359f315-f8a0-4ec1-a862-30609702b526"],
+ CellID->1580705102],
 
 Cell[BoxData[
  GraphicsBox[
@@ -2332,7 +2265,7 @@ disMAAAAAAAAAABg2fn/eDdcow==
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[3]=",
- CellID->513292716,ExpressionUUID->"1e10b0fb-f9fc-4ea0-9cc6-377199737ff5"]
+ CellID->718668339]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -2342,38 +2275,34 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "Options",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(9)", "ExampleCount",ExpressionUUID->
-  "37d7fb48-9faa-4d11-9b58-68e50b90d803"]
+ Cell["(9)", "ExampleCount"]
 }], "ExampleSection", "ExampleSection",
- WholeCellGroupOpener->
-  True,ExpressionUUID->"c40e6a36-8512-4280-8586-b041adc65100"],
+ WholeCellGroupOpener->True],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
  "ColorBlending",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount",ExpressionUUID->
-  "26ea5eb9-d623-42f5-a2ec-6670eba36424"]
+ Cell["(1)", "ExampleCount"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->
-  True,ExpressionUUID->"f7713f44-1ca3-49c0-8bb4-b0409635f64d"],
+ WholeCellGroupOpener->True],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->454699151,ExpressionUUID->"c38a3423-bbc9-4239-be47-a335c5cb5958"],
+ CellID->454699151],
 
 Cell["\<\
 ColorBlending provides a list of colors to be used in the plot to create \
 gradient effects. Named colors can be used as well.\
 \>", "ExampleText",
- CellID->1600667338,ExpressionUUID->"eaf2391b-2010-456a-a92e-d7013fac7082"],
+ CellID->1600667338],
 
 Cell["\<\
 We consider the following example, with one set of data clustered:\
 \>", "ExampleText",
- CellID->1179114632,ExpressionUUID->"dc8efa0c-b50e-4291-8014-8dd708398956"],
+ CellID->1179114632],
 
 Cell[CellGroupData[{
 
@@ -2412,7 +2341,7 @@ Cell[BoxData[{
  RowBox[{"exampleClustering2", "=", 
   RowBox[{"MatrixClusters", "[", "dataClusterExample2", "]"}]}]}], "Input",
  CellLabel->"In[2]:=",
- CellID->400525508,ExpressionUUID->"24422e8a-aacc-40cc-8e02-14ee0fac13bb"],
+ CellID->400525508],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -2574,13 +2503,13 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->961315250,ExpressionUUID->"0460cf32-c869-47e7-a07f-a92664237326"]
+ CellID->961315250]
 }, Open  ]],
 
 Cell["\<\
 We can generate the corresponding clustering for the single class \"1\":\
 \>", "ExampleText",
- CellID->178040445,ExpressionUUID->"9462448f-49ed-4e8d-8236-4e0470b94aa7"],
+ CellID->178040445],
 
 Cell[CellGroupData[{
 
@@ -2592,7 +2521,7 @@ Cell[BoxData[
     RowBox[{"{", 
      RowBox[{"Red", ",", "Blue"}], "}"}]}]}], "]"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->881038844,ExpressionUUID->"15e6a0c1-3a33-45fc-b9ec-bd7a25e62bf1"],
+ CellID->881038844],
 
 Cell[BoxData[
  TagBox[GridBox[{
@@ -2908,7 +2837,7 @@ z/UvbuLEk71u4sQOm7cxJ9dYLqp/blfUdr+Wc90XXkfvHGpX3eltzMmpnMtd
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->1305930369,ExpressionUUID->"91d7fd28-8f04-4cac-a744-0a0011c882cc"]
+ CellID->1305930369]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2926,7 +2855,7 @@ Cell[BoxData[
        RowBox[{"1", ",", " ", "0", ",", " ", "1", ",", " ", "0"}], "]"}]}], 
      "}"}]}]}], "]"}]], "Input",
  CellLabel->"In[4]:=",
- CellID->305490849,ExpressionUUID->"23ebc793-d6fb-433c-a815-00c8c2ac9ec0"],
+ CellID->305490849],
 
 Cell[BoxData[
  TagBox[GridBox[{
@@ -3240,7 +3169,7 @@ DPjthflrEQ7/LkLTh8nHJU7IfNLcj9t8XOFDrPtx2QsAeirOEQ==
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[4]=",
- CellID->1488839443,ExpressionUUID->"db33acdd-097f-4aa1-9e10-e79047b2c202"]
+ CellID->1488839443]
 }, Open  ]]
 }, Closed]],
 
@@ -3249,28 +3178,26 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "DendrogramColor",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount",ExpressionUUID->
-  "7434ad96-84b1-4598-a664-e1a6ffd52849"]
+ Cell["(1)", "ExampleCount"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->
-  True,ExpressionUUID->"da309783-376b-4d7f-acf2-6e8d938d52a9"],
+ WholeCellGroupOpener->True],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->719905419,ExpressionUUID->"5530fec5-e505-4a92-b88a-7ec5f375ef92"],
+ CellID->719905419],
 
 Cell["\<\
 DendrogramColor takes a list of color values, for highlighting the \
 dendrograms at the level where the groupings are called by the clustering in \
 horizontal and vertical directions.\
 \>", "ExampleText",
- CellID->598461083,ExpressionUUID->"63a385a0-762f-4397-bf0b-090350170b38"],
+ CellID->598461083],
 
 Cell["\<\
 We consider the following example, with one set of data clustered:\
 \>", "ExampleText",
- CellID->527509935,ExpressionUUID->"bcac69d9-61ef-41bc-81a7-9bbda35af422"],
+ CellID->527509935],
 
 Cell[CellGroupData[{
 
@@ -3309,7 +3236,7 @@ Cell[BoxData[{
  RowBox[{"exampleClustering2", "=", 
   RowBox[{"MatrixClusters", "[", "dataClusterExample2", "]"}]}]}], "Input",
  CellLabel->"In[2]:=",
- CellID->1046982729,ExpressionUUID->"13f678fd-c1be-4bad-a61a-f3363cee20df"],
+ CellID->1046982729],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -3471,14 +3398,14 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->26730265,ExpressionUUID->"16759371-5a9e-4958-be0f-99bbbb4fb6f9"]
+ CellID->26730265]
 }, Open  ]],
 
 Cell["\<\
 We can generate the corresponding clustering for the single class \"1\". If a \
 single color is given both dendrograms are colored the same:\
 \>", "ExampleText",
- CellID->157722785,ExpressionUUID->"8d04b9e0-2e4c-4493-91d5-7bfa81ec9e6c"],
+ CellID->157722785],
 
 Cell[CellGroupData[{
 
@@ -3488,7 +3415,7 @@ Cell[BoxData[
    RowBox[{"exampleClustering2", "[", "\"\<1\>\"", "]"}], ",", 
    RowBox[{"DendrogramColor", "\[Rule]", " ", "Cyan"}]}], "]"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->852027097,ExpressionUUID->"48779727-6d0f-416b-9244-967628e3ad82"],
+ CellID->852027097],
 
 Cell[BoxData[
  GraphicsBox[
@@ -3817,11 +3744,11 @@ kzMbHdLTFtBBLUsGfgEANzC6OgPeAb8AgBvoNcvZbJkhipfALwAAYAf4BQAA
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[3]=",
- CellID->468867813,ExpressionUUID->"932858d1-fdd2-4228-a3c9-f2bfcb07079b"]
+ CellID->1210742845]
 }, Open  ]],
 
 Cell["We can have different colors in each direction:", "ExampleText",
- CellID->1447964765,ExpressionUUID->"8d360bec-eb0e-4f42-9741-9ff98f8877ad"],
+ CellID->1447964765],
 
 Cell[CellGroupData[{
 
@@ -3836,7 +3763,7 @@ Cell[BoxData[
        RowBox[{"1", ",", ".7", ",", ".05", ",", ".35"}], "]"}], ",", 
       "Yellow"}], "}"}]}]}], "]"}]], "Input",
  CellLabel->"In[4]:=",
- CellID->453297582,ExpressionUUID->"95d737c0-04b1-4ead-b30c-731521a14cba"],
+ CellID->453297582],
 
 Cell[BoxData[
  GraphicsBox[
@@ -4167,7 +4094,7 @@ l8AvAABgB/gFAADsAL8AAIAdmPcLAACAJexWGAAAAAAAAAAAwLLz/wGVP/we
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[4]=",
- CellID->1143832248,ExpressionUUID->"8a721bcb-522d-4b2f-b7c4-7af8c001550d"]
+ CellID->1547440590]
 }, Open  ]]
 }, Closed]],
 
@@ -4176,25 +4103,23 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "FrameName",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount",ExpressionUUID->
-  "be80a546-c216-47ff-91c2-e1313fa0c762"]
+ Cell["(1)", "ExampleCount"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->
-  True,ExpressionUUID->"a6a51635-5757-4400-87b9-7753a3c3d112"],
+ WholeCellGroupOpener->True],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->233962798,ExpressionUUID->"dd98bfa5-16bd-48ed-9335-15dad350292f"],
+ CellID->233962798],
 
 Cell["The FrameName option let's us create a label for plot frame.", \
 "ExampleText",
- CellID->1065909990,ExpressionUUID->"81435acc-e7a6-4a1b-826a-0c12bdca37b0"],
+ CellID->1065909990],
 
 Cell["\<\
 We consider the following example, with one set of data clustered:\
 \>", "ExampleText",
- CellID->645976996,ExpressionUUID->"2df3c4ac-b73a-4804-a0f5-362eef6d4c69"],
+ CellID->645976996],
 
 Cell[CellGroupData[{
 
@@ -4233,7 +4158,7 @@ Cell[BoxData[{
  RowBox[{"exampleClustering2", "=", 
   RowBox[{"MatrixClusters", "[", "dataClusterExample2", "]"}]}]}], "Input",
  CellLabel->"In[2]:=",
- CellID->1405536187,ExpressionUUID->"d83ee0ac-7fc0-4cdc-99d6-a4ed88d50903"],
+ CellID->1405536187],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -4395,7 +4320,7 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1677270919,ExpressionUUID->"01973ce2-b691-41a6-a8a7-e02b2ef334d9"]
+ CellID->1677270919]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -4407,7 +4332,7 @@ Cell[BoxData[
    RowBox[{"FrameName", "\[Rule]", "\"\<Matrix Clustering Results\>\""}]}], 
   "]"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->526577909,ExpressionUUID->"a2e76cb8-f9cb-4f36-85a2-184edd644a48"],
+ CellID->526577909],
 
 Cell[BoxData[
  GraphicsBox[
@@ -4743,7 +4668,7 @@ Ld8=
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[3]=",
- CellID->114984192,ExpressionUUID->"754a8e93-ce39-436f-b86d-17394b1dfbc3"]
+ CellID->1807030960]
 }, Open  ]]
 }, Closed]],
 
@@ -4752,26 +4677,24 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "HorizontalAxisName",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount",ExpressionUUID->
-  "32a3bada-c3ee-4f03-b642-1cda0bb5b5da"]
+ Cell["(1)", "ExampleCount"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->
-  True,ExpressionUUID->"246919c0-e4d0-483a-9dfa-de304745574a"],
+ WholeCellGroupOpener->True],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->716906461,ExpressionUUID->"33156c3b-791b-44ac-b051-2ee2c60eedce"],
+ CellID->716906461],
 
 Cell["\<\
 HorizontalAxisName provides a label for the heatmap's horizontal axis.\
 \>", "ExampleText",
- CellID->1140473994,ExpressionUUID->"fd8fc9fd-7984-459e-a046-90a3dada5169"],
+ CellID->1140473994],
 
 Cell["\<\
 We consider the following example, with one set of data clustered:\
 \>", "ExampleText",
- CellID->414807276,ExpressionUUID->"d93700bd-32ff-4708-8c0f-3f7f0beb2d92"],
+ CellID->414807276],
 
 Cell[CellGroupData[{
 
@@ -4810,7 +4733,7 @@ Cell[BoxData[{
  RowBox[{"exampleClustering2", "=", 
   RowBox[{"MatrixClusters", "[", "dataClusterExample2", "]"}]}]}], "Input",
  CellLabel->"In[2]:=",
- CellID->933969570,ExpressionUUID->"5d802cb3-b805-46a7-8f2e-4ca726b12afa"],
+ CellID->933969570],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -4972,11 +4895,11 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1443266734,ExpressionUUID->"af5f61f3-706b-47f9-8efc-36d6b703d427"]
+ CellID->1443266734]
 }, Open  ]],
 
 Cell["We can provide a custom horizontal axis name", "ExampleText",
- CellID->496020293,ExpressionUUID->"a5956b85-519f-42be-ae5c-21d951d867fc"],
+ CellID->496020293],
 
 Cell[CellGroupData[{
 
@@ -4987,7 +4910,7 @@ Cell[BoxData[
    RowBox[{"HorizontalAxisName", "\[Rule]", "\"\<Column Data\>\""}]}], 
   "]"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->2055058724,ExpressionUUID->"ded261ef-1b71-4034-832e-d9ad230b302d"],
+ CellID->2055058724],
 
 Cell[BoxData[
  GraphicsBox[
@@ -5321,11 +5244,11 @@ DAAAAAAAAAAAYNn5/w4ikIg=
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[3]=",
- CellID->1951516291,ExpressionUUID->"faaf4ad0-60d6-4d7f-b97b-453222a58740"]
+ CellID->1055608846]
 }, Open  ]],
 
 Cell["Styles can also be applied to the axis name:", "ExampleText",
- CellID->226038847,ExpressionUUID->"8ace2308-8eca-4e3e-98b4-8c686e66b70a"],
+ CellID->226038847],
 
 Cell[CellGroupData[{
 
@@ -5339,7 +5262,7 @@ Cell[BoxData[
       RowBox[{"{", 
        RowBox[{"Bold", ",", "Blue"}], "}"}]}], "]"}]}]}], "]"}]], "Input",
  CellLabel->"In[4]:=",
- CellID->1268587067,ExpressionUUID->"ac155355-4822-41c1-808a-25c678cadf4d"],
+ CellID->1268587067],
 
 Cell[BoxData[
  GraphicsBox[
@@ -5672,7 +5595,7 @@ AAAAAAAAAKw6/x8fjorH
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[4]=",
- CellID->616562206,ExpressionUUID->"23999493-6c9f-412b-9692-9a5284b7707f"]
+ CellID->1255466855]
 }, Open  ]]
 }, Closed]],
 
@@ -5681,26 +5604,24 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "HorizontalLabels",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount",ExpressionUUID->
-  "ee35433a-db80-4234-819f-8a30870792ed"]
+ Cell["(1)", "ExampleCount"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->
-  True,ExpressionUUID->"9f251032-8f9a-4456-904f-a0a9e82843d9"],
+ WholeCellGroupOpener->True],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1434161611,ExpressionUUID->"363418d4-7ed3-41ba-9a3b-9a01ff8d8203"],
+ CellID->1434161611],
 
 Cell["\<\
 HorizontalLabels provides labels for the horizontal heatmap axis.\
 \>", "ExampleText",
- CellID->909429499,ExpressionUUID->"7a584672-167d-42f3-9476-01f8414aed98"],
+ CellID->909429499],
 
 Cell["\<\
 We consider the following example, with one set of data clustered:\
 \>", "ExampleText",
- CellID->925187653,ExpressionUUID->"a276f916-0004-4dd5-9189-25b6cbd42de1"],
+ CellID->925187653],
 
 Cell[CellGroupData[{
 
@@ -5739,7 +5660,7 @@ Cell[BoxData[{
  RowBox[{"exampleClustering2", "=", 
   RowBox[{"MatrixClusters", "[", "dataClusterExample2", "]"}]}]}], "Input",
  CellLabel->"In[2]:=",
- CellID->1847279691,ExpressionUUID->"3ffa0669-d650-4527-a0c3-7d3c15b48b81"],
+ CellID->1847279691],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -5901,14 +5822,14 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1594234738,ExpressionUUID->"97f6535c-0503-49b5-9c37-cd6feb780b90"]
+ CellID->1594234738]
 }, Open  ]],
 
 Cell["\<\
 We can extract the horizontal labels (i.e. clustering labels for the columns)\
 \
 \>", "ExampleText",
- CellID->2061038925,ExpressionUUID->"bb086b70-8af2-4264-a359-aefd9a67b98e"],
+ CellID->2061038925],
 
 Cell[CellGroupData[{
 
@@ -5920,7 +5841,7 @@ Cell[BoxData[
      RowBox[{"\"\<1\>\"", ",", "\"\<GroupAssociationsColumns\>\""}], 
      "]"}]}]}]}]], "Input",
  CellLabel->"In[3]:=",
- CellID->245537058,ExpressionUUID->"786cab8d-514f-4d49-94a4-39e421a5397c"],
+ CellID->245537058],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -5930,11 +5851,11 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->752574334,ExpressionUUID->"25766564-6ff4-4d3e-b25f-0ee825804d17"]
+ CellID->752574334]
 }, Open  ]],
 
 Cell["We can label each of the columns:", "ExampleText",
- CellID->2139697664,ExpressionUUID->"dbf7d427-41b1-4280-8ce5-74e042d4a80e"],
+ CellID->2139697664],
 
 Cell[CellGroupData[{
 
@@ -5945,7 +5866,7 @@ Cell[BoxData[
    RowBox[{"HorizontalLabels", "\[Rule]", "horizontalLabels"}]}], 
   "]"}]], "Input",
  CellLabel->"In[4]:=",
- CellID->1058681958,ExpressionUUID->"08e036c8-57c2-462e-86b4-f5c7af959676"],
+ CellID->1058681958],
 
 Cell[BoxData[
  GraphicsBox[
@@ -6284,7 +6205,7 @@ D/gFALxAt1HO5coMUfwEfgEAACfALwAA4AT4BQAAnMC6XwAAAGzhtMIAAACm
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[4]=",
- CellID->952399467,ExpressionUUID->"0904c660-15f4-46db-9781-b9c53846e101"]
+ CellID->1604600210]
 }, Open  ]]
 }, Closed]],
 
@@ -6293,29 +6214,27 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "IndexColor",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount",ExpressionUUID->
-  "27a26069-fdb6-4537-96a8-04dd5358d724"]
+ Cell["(1)", "ExampleCount"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->
-  True,ExpressionUUID->"742989c5-5173-465c-8aa5-1715e1fb9704"],
+ WholeCellGroupOpener->True],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->391216212,ExpressionUUID->"f6ff915f-67fa-4c23-ab72-e4574eaa6c1b"],
+ CellID->391216212],
 
 Cell["\<\
 IndexColor allows us to chose the color gradients for labeling the \
 group/subgroup index. Named Mathematica gradients can be used as well:\
 \>", "ExampleText",
- CellID->429358118,ExpressionUUID->"38b6784e-9c96-47a0-9939-acf6618a4046"],
+ CellID->429358118],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"ColorData", "[", "\"\<Gradients\>\"", "]"}]], "Input",
  CellLabel->"In[2]:=",
- CellID->652573937,ExpressionUUID->"73b25103-12d3-41bd-bcd1-b399d9034ba1"],
+ CellID->652573937],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -6349,13 +6268,13 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->323783401,ExpressionUUID->"2fb5f317-166d-41c1-b3fe-a12ecd2f5589"]
+ CellID->323783401]
 }, Open  ]],
 
 Cell["\<\
 We consider the following example, with one set of data clustered:\
 \>", "ExampleText",
- CellID->1365652711,ExpressionUUID->"2135b1de-9192-4b81-b3da-3960e5a99e1a"],
+ CellID->1365652711],
 
 Cell[CellGroupData[{
 
@@ -6394,7 +6313,7 @@ Cell[BoxData[{
  RowBox[{"exampleClustering2", "=", 
   RowBox[{"MatrixClusters", "[", "dataClusterExample2", "]"}]}]}], "Input",
  CellLabel->"In[3]:=",
- CellID->219894641,ExpressionUUID->"b4e1abc0-07ff-4ac3-b547-9b5d25051742"],
+ CellID->219894641],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -6556,7 +6475,7 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->73033006,ExpressionUUID->"6fc983aa-324e-4709-b478-d99c01ed0140"]
+ CellID->73033006]
 }, Open  ]],
 
 Cell["\<\
@@ -6564,7 +6483,7 @@ We can generate the corresponding clustering for the single class \"1\", \
 providing an index color list, corresponding to a color for the horizontal \
 and vertical directions respectively :\
 \>", "ExampleText",
- CellID->1746650480,ExpressionUUID->"ebd7258e-3b4e-4c95-a34e-0eb87fd813bc"],
+ CellID->1746650480],
 
 Cell[CellGroupData[{
 
@@ -6577,7 +6496,7 @@ Cell[BoxData[
      RowBox[{"\"\<SiennaTones\>\"", ",", "\"\<Rainbow\>\""}], "}"}]}]}], 
   "]"}]], "Input",
  CellLabel->"In[4]:=",
- CellID->2097358447,ExpressionUUID->"317ad73f-5878-4476-b6d0-0da135587b30"],
+ CellID->2097358447],
 
 Cell[BoxData[
  GraphicsBox[
@@ -6905,14 +6824,14 @@ hN0KAwAAAAAAAAAAWHb+P1Vxi9Q=
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[4]=",
- CellID->1782220778,ExpressionUUID->"85caa3db-8621-4bbd-8965-30d3cff0920e"]
+ CellID->416090444]
 }, Open  ]],
 
 Cell["\<\
 If a single color scheme is provided then both indexes will be colored the \
 same:\
 \>", "ExampleText",
- CellID->2056495457,ExpressionUUID->"d335f8d4-d4d4-497d-bfa1-88b7c3dd9fa4"],
+ CellID->2056495457],
 
 Cell[CellGroupData[{
 
@@ -6923,7 +6842,7 @@ Cell[BoxData[
    RowBox[{"IndexColor", "\[Rule]", " ", "\"\<SandyTerrain\>\""}]}], 
   "]"}]], "Input",
  CellLabel->"In[5]:=",
- CellID->1917330981,ExpressionUUID->"97527788-fd85-4910-910d-a8f80b88d4a5"],
+ CellID->1917330981],
 
 Cell[BoxData[
  GraphicsBox[
@@ -7251,7 +7170,7 @@ AAAAVp3/D4B4X/w=
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[5]=",
- CellID->682707490,ExpressionUUID->"6a45c485-eace-4aa0-a890-09cc3c49a4f6"]
+ CellID->1025337676]
 }, Open  ]]
 }, Closed]],
 
@@ -7260,16 +7179,14 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "ImageSize",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount",ExpressionUUID->
-  "12b53b30-97be-4f79-aa55-9e40151b3046"]
+ Cell["(1)", "ExampleCount"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->
-  True,ExpressionUUID->"df7c4a2e-6e29-41e8-bc2a-c13ccec2b853"],
+ WholeCellGroupOpener->True],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1332660079,ExpressionUUID->"07da3cb2-22ca-43ab-8a7b-0395cdffbf74"],
+ CellID->1332660079],
 
 Cell[TextData[{
  ButtonBox["ImageSize",
@@ -7277,12 +7194,12 @@ Cell[TextData[{
   ButtonData->"paclet:ref/ImageSize"],
  " is an option that allows us to provide the overall size of the plots. "
 }], "ExampleText",
- CellID->423869031,ExpressionUUID->"b5b1e1b7-ea1d-45f5-87be-154d39a444da"],
+ CellID->423869031],
 
 Cell["\<\
 We consider the following example, with one set of data clustered:\
 \>", "ExampleText",
- CellID->1506836871,ExpressionUUID->"ccea75eb-ed80-4354-9270-45e4588b6853"],
+ CellID->1506836871],
 
 Cell[CellGroupData[{
 
@@ -7321,7 +7238,7 @@ Cell[BoxData[{
  RowBox[{"exampleClustering2", "=", 
   RowBox[{"MatrixClusters", "[", "dataClusterExample2", "]"}]}]}], "Input",
  CellLabel->"In[2]:=",
- CellID->132641826,ExpressionUUID->"ef1dc5a9-ebb9-4946-ad5c-1733e470a905"],
+ CellID->132641826],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -7483,11 +7400,11 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->2019133358,ExpressionUUID->"c44f7228-60fc-489b-ba66-3c41c8403f36"]
+ CellID->2019133358]
 }, Open  ]],
 
 Cell["We can change the image size (default is 200):", "ExampleText",
- CellID->1246345056,ExpressionUUID->"9c7dacd0-1a56-4e77-b435-3bac73407d3a"],
+ CellID->1246345056],
 
 Cell[CellGroupData[{
 
@@ -7497,7 +7414,7 @@ Cell[BoxData[
    RowBox[{"exampleClustering2", "[", "\"\<1\>\"", "]"}], ",", 
    RowBox[{"ImageSize", "\[Rule]", " ", "200"}]}], "]"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->223143996,ExpressionUUID->"66899c8c-a409-41b9-9b9e-244384f2422c"],
+ CellID->223143996],
 
 Cell[BoxData[
  GraphicsBox[
@@ -7825,7 +7742,7 @@ disMAAAAAAAAAABg2fn/eDdcow==
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[3]=",
- CellID->259658509,ExpressionUUID->"7290e59d-d10f-4099-b699-ad8cbe37e608"]
+ CellID->1441537004]
 }, Open  ]]
 }, Closed]],
 
@@ -7834,27 +7751,25 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "ScaleShift",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount",ExpressionUUID->
-  "05086222-d73e-49cf-ac0b-ab01bc8e2abd"]
+ Cell["(1)", "ExampleCount"]
 }], "ExampleSubsection", "ExampleSubsection",
- WholeCellGroupOpener->
-  True,ExpressionUUID->"fc40bdad-0d34-4d09-96e5-0c250402ffec"],
+ WholeCellGroupOpener->True],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->455366533,ExpressionUUID->"1c7b758c-54dc-4931-93ea-801f1e378e59"],
+ CellID->455366533],
 
 Cell["\<\
 ScaleShift provides a shift of overall color in a heatmap, allowing for \
 overall adjustments if necessary.\
 \>", "ExampleText",
- CellID->1742877950,ExpressionUUID->"dab5357b-4955-4446-ba2a-dec9913c248e"],
+ CellID->1742877950],
 
 Cell["\<\
 We consider the following example, with one set of data clustered:\
 \>", "ExampleText",
- CellID->874693110,ExpressionUUID->"b70f42cc-f6eb-461d-9ded-c872f302276e"],
+ CellID->874693110],
 
 Cell[CellGroupData[{
 
@@ -7893,7 +7808,7 @@ Cell[BoxData[{
  RowBox[{"exampleClustering2", "=", 
   RowBox[{"MatrixClusters", "[", "dataClusterExample2", "]"}]}]}], "Input",
  CellLabel->"In[2]:=",
- CellID->1441536055,ExpressionUUID->"1530f446-ae5d-4631-9574-6d7726cfa2ca"],
+ CellID->1441536055],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -8055,7 +7970,7 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1960602361,ExpressionUUID->"266ca6b5-8663-46b6-9e91-092f989545b4"]
+ CellID->1960602361]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -8066,7 +7981,7 @@ Cell[BoxData[
    RowBox[{"exampleClustering2", "[", "\"\<1\>\"", "]"}], ",", 
    RowBox[{"ScaleShift", "\[Rule]", " ", "1"}]}], "]"}]], "Input",
  CellLabel->"In[3]:=",
- CellID->2133454578,ExpressionUUID->"81020851-5843-4e29-b665-0b13efa24495"],
+ CellID->2133454578],
 
 Cell[BoxData[
  GraphicsBox[
@@ -8394,7 +8309,7 @@ disMAAAAAAAAAABg2fn/eDdcow==
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[3]=",
- CellID->393790059,ExpressionUUID->"9a0889f2-69c5-4ce5-8761-4db424a4b365"]
+ CellID->1920774]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -8405,7 +8320,7 @@ Cell[BoxData[
    RowBox[{"exampleClustering2", "[", "\"\<1\>\"", "]"}], ",", 
    RowBox[{"ScaleShift", "\[Rule]", " ", "1.5"}]}], "]"}]], "Input",
  CellLabel->"In[4]:=",
- CellID->1464833060,ExpressionUUID->"1a1bdd95-55da-4ba2-8876-1ee1f91e58a3"],
+ CellID->1464833060],
 
 Cell[BoxData[
  GraphicsBox[
@@ -8731,7 +8646,7 @@ AIBV5/8DBlxcrw==
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[4]=",
- CellID->2032405206,ExpressionUUID->"f2a724f0-6c5c-4c6a-b19f-8b51fad32ead"]
+ CellID->70193913]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -8742,7 +8657,7 @@ Cell[BoxData[
    RowBox[{"exampleClustering2", "[", "\"\<1\>\"", "]"}], ",", 
    RowBox[{"ScaleShift", "\[Rule]", " ", "0.5"}]}], "]"}]], "Input",
  CellLabel->"In[5]:=",
- CellID->713719771,ExpressionUUID->"1898f648-b6f6-46c1-90f5-bb57b8745c16"],
+ CellID->713719771],
 
 Cell[BoxData[
  GraphicsBox[
@@ -9070,7 +8985,7 @@ AAAAS9itMAAAAAAAAAAAgGXn/wMsO0/a
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[5]=",
- CellID->759408060,ExpressionUUID->"9d255ce6-01fc-4bce-8c8f-296411ffabf2"]
+ CellID->780573588]
 }, Open  ]]
 }, Closed]],
 
@@ -9079,26 +8994,25 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "VerticalLabels",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount",ExpressionUUID->
-  "11d7b629-0ef6-4a7e-a597-fdfbd0d0b52d"]
+ Cell["(1)", "ExampleCount"]
 }], "ExampleSubsection", "ExampleSubsection",
  WholeCellGroupOpener->True,
- CellID->1454904833,ExpressionUUID->"739a4850-bd62-4182-aba7-4f45badbb21f"],
+ CellID->1454904833],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<MathIOmica`\>\"", "]"}]], "Input",
  CellLabel->"In[1]:=",
- CellID->1336723489,ExpressionUUID->"084b9f28-48c4-41b6-afed-997ed70d1cc7"],
+ CellID->1336723489],
 
 Cell["\<\
 VerticalLabels provides labels for the vertical heatmap axis.\
 \>", "ExampleText",
- CellID->1485248356,ExpressionUUID->"44f3936a-4962-44b6-9e33-58936e703493"],
+ CellID->1485248356],
 
 Cell["\<\
 We consider the following example, with one set of data clustered:\
 \>", "ExampleText",
- CellID->219206564,ExpressionUUID->"8dc622b5-8790-4d0b-b179-130cd7c350f5"],
+ CellID->219206564],
 
 Cell[CellGroupData[{
 
@@ -9137,7 +9051,7 @@ Cell[BoxData[{
  RowBox[{"exampleClustering2", "=", 
   RowBox[{"MatrixClusters", "[", "dataClusterExample2", "]"}]}]}], "Input",
  CellLabel->"In[2]:=",
- CellID->1270266543,ExpressionUUID->"7effc5de-62d6-49cc-a7cb-140490707edd"],
+ CellID->1270266543],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -9299,14 +9213,14 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1200342537,ExpressionUUID->"44b4a1ff-5cf0-472e-a6a8-ae8514eccd80"]
+ CellID->1200342537]
 }, Open  ]],
 
 Cell["\<\
 We can extract the vertical labels in the clustering (i.e. the horizontal \
 clustering results):\
 \>", "ExampleText",
- CellID->2036625832,ExpressionUUID->"af63137a-6427-483d-846a-c39036e8ebb9"],
+ CellID->2036625832],
 
 Cell[CellGroupData[{
 
@@ -9318,7 +9232,7 @@ Cell[BoxData[
      RowBox[{"\"\<1\>\"", ",", "\"\<GroupAssociationsColumns\>\""}], 
      "]"}]}]}]}]], "Input",
  CellLabel->"In[3]:=",
- CellID->788098853,ExpressionUUID->"6d821c0b-f644-4b1a-9bcf-d4d3976c9473"],
+ CellID->788098853],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -9328,11 +9242,11 @@ Cell[BoxData[
  ImageMargins->{{0, 0}, {0, 0}},
  ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->763238724,ExpressionUUID->"ee295e5d-c069-499d-8034-749c2af7fa44"]
+ CellID->763238724]
 }, Open  ]],
 
 Cell["We can label each of the columns:", "ExampleText",
- CellID->898692210,ExpressionUUID->"9c3ac12f-6254-413f-81a1-f05109e2c02b"],
+ CellID->898692210],
 
 Cell[CellGroupData[{
 
@@ -9343,7 +9257,7 @@ Cell[BoxData[
    RowBox[{"VerticalLabels", "\[Rule]", "verticalLabels"}]}], "]"}]], "Input",\
 
  CellLabel->"In[4]:=",
- CellID->1067484119,ExpressionUUID->"2f3d3a32-1740-4c47-a9f0-b22602c43349"],
+ CellID->1067484119],
 
 Cell[BoxData[
  GraphicsBox[
@@ -9691,7 +9605,7 @@ AAAAAAA86/8DruWaJg==
  ImageRegion->{{0, 1}, {0, 1}},
  CellTags->"RasterizedOutput",
  CellLabel->"Out[4]=",
- CellID->875950299,ExpressionUUID->"8448bbf4-bf76-4671-8b14-e64647330820"]
+ CellID->122693993]
 }, Open  ]]
 }, Closed]]
 }, Closed]],
@@ -9701,11 +9615,10 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "Properties & Relations",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount",ExpressionUUID->
-  "57f40043-d221-4752-8582-adb5d49438a8"]
+ Cell["(1)", "ExampleCount"]
 }], "ExampleSection", "ExampleSection",
  WholeCellGroupOpener->True,
- CellID->2123667759,ExpressionUUID->"6e92a6fe-0817-44ac-bb25-11bf1ba62274"],
+ CellID->2123667759],
 
 Cell[TextData[{
  Cell[BoxData[
@@ -9713,51 +9626,40 @@ Cell[TextData[{
      TextData["MatrixDendrogramsHeatmaps"]],
     "paclet:MathIOmica/ref/MatrixDendrogramsHeatmaps"},
    "RefLink",
-   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
-  "b11ac331-7aa5-4d89-8e9f-6354f8c59835"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula"],
  " uses ",
- Cell[BoxData[
- "MatrixDendrogramHeatmap"], "InlineFormula",ExpressionUUID->
-  "f40ee1e3-ab8c-4a39-9f70-47e714014b0a"],
+ Cell[BoxData["MatrixDendrogramHeatmap"], "InlineFormula"],
  " repeatedly to plot multiple classes generated from clustering (e.g. by ",
  Cell[BoxData[
   TemplateBox[{Cell[
      TextData["MatrixClusters"]],"paclet:MathIOmica/ref/MatrixClusters"},
    "RefLink",
-   BaseStyle->{"InlineFormula"}]], "InlineFormula",ExpressionUUID->
-  "c8683621-5b17-4a5f-90fa-35da879e140c"],
+   BaseStyle->{"InlineFormula"}]], "InlineFormula"],
  ")."
 }], "ExampleText",
- CellID->625110717,ExpressionUUID->"d64a3617-b747-4707-81f2-19a34c2c5d28"]
+ CellID->625110717]
 }, Closed]],
 
-Cell["", "SectionFooterSpacer",ExpressionUUID->"872286a8-48cd-403a-b9ad-59821527ba66"]
+Cell["", "SectionFooterSpacer"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
  Cell[BoxData[
-  InterpretationBox[
-   StyleBox[
-    GraphicsBox[{},
-     BaselinePosition->Baseline,
-     ImageSize->{6, 0}],
-    CacheGraphics->False],
-   Spacer[6],
-   Selectable->False]],ExpressionUUID->"be43d130-c931-46f4-9061-f73e6f08c442"],
+  TemplateBox[{6},
+   "Spacer1"]]],
  "See Also"
 }], "SeeAlsoSection",
  WholeCellGroupOpener->True,
- CellID->1255426704,ExpressionUUID->"0fc5cad8-af75-4dd5-a3f1-ef00ac601beb"],
+ CellID->1255426704],
 
 Cell[TextData[{
  Cell[BoxData[
   TemplateBox[{Cell[
      TextData["Heatmapper"]],"paclet:MathIOmica/ref/Heatmapper"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
-  ExpressionUUID->"49c09c9d-f288-4bc2-97e9-c16d0b49ff0a"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -9766,8 +9668,7 @@ Cell[TextData[{
   TemplateBox[{Cell[
      TextData["MatrixClusters"]],"paclet:MathIOmica/ref/MatrixClusters"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
-  ExpressionUUID->"43da0d75-4607-43f1-8952-ea2d188d1b68"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -9777,8 +9678,7 @@ Cell[TextData[{
      TextData["MatrixDendrogramsHeatmaps"]],
     "paclet:MathIOmica/ref/MatrixDendrogramsHeatmaps"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
-  ExpressionUUID->"0a6bbe8f-3f62-468c-89ca-cd1046630a55"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -9788,8 +9688,7 @@ Cell[TextData[{
      TextData["TimeSeriesDendrogramHeatmap"]],
     "paclet:MathIOmica/ref/TimeSeriesDendrogramHeatmap"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
-  ExpressionUUID->"88ffea42-0556-4820-9a9d-6b413b984610"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -9799,8 +9698,7 @@ Cell[TextData[{
      TextData["TimeSeriesDendrogramsHeatmaps"]],
     "paclet:MathIOmica/ref/TimeSeriesDendrogramsHeatmaps"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
-  ExpressionUUID->"742874cb-6339-449c-ad11-e8932bc0eef3"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -9810,8 +9708,7 @@ Cell[TextData[{
      TextData["TimeSeriesClusters"]],
     "paclet:MathIOmica/ref/TimeSeriesClusters"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
-  ExpressionUUID->"abbf6a0f-88d5-4184-ba01-fd5d439f1ad1"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -9821,8 +9718,7 @@ Cell[TextData[{
      TextData["TimeSeriesSingleClusters"]],
     "paclet:MathIOmica/ref/TimeSeriesSingleClusters"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
-  ExpressionUUID->"d492800e-0b09-414d-b32a-548fbc7ea53e"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -9832,8 +9728,7 @@ Cell[TextData[{
      TextData["TimeSeriesSingleDendrogramHeatmap"]],
     "paclet:MathIOmica/ref/TimeSeriesSingleDendrogramHeatmap"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
-  ExpressionUUID->"d8448bd1-2579-4faa-a736-d44dbee5ec44"],
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula"],
  "\[NonBreakingSpace]",
  StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
   "InlineSeparator"],
@@ -9843,30 +9738,23 @@ Cell[TextData[{
      TextData["TimeSeriesSingleDendrogramsHeatmaps"]],
     "paclet:MathIOmica/ref/TimeSeriesSingleDendrogramsHeatmaps"},
    "RefLink",
-   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula",
-  ExpressionUUID->"cb268c57-7b28-4d3a-8647-a50ab52b169b"]
+   BaseStyle->{"InlineFormula", FontFamily -> "Verdana"}]], "InlineFormula"]
 }], "SeeAlso",
- CellID->929782353,ExpressionUUID->"ecd967c9-c294-413d-9340-24f3d92c50ea"]
+ CellID->929782353]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
  Cell[BoxData[
-  InterpretationBox[
-   StyleBox[
-    GraphicsBox[{},
-     BaselinePosition->Baseline,
-     ImageSize->{6, 0}],
-    CacheGraphics->False],
-   Spacer[6],
-   Selectable->False]],ExpressionUUID->"949817bd-c9a8-45a8-b5e3-bbae1ab7a375"],
+  TemplateBox[{6},
+   "Spacer1"]]],
  "Tutorials"
 }], "TutorialsSection",
  WholeCellGroupOpener->True,
- CellID->250839057,ExpressionUUID->"e24b1d07-d0ae-41e1-8462-92247f68fb9b"],
+ CellID->250839057],
 
-Cell["", "SectionHeaderSpacer",ExpressionUUID->"df7a375e-5ea2-4e8b-8947-97c388974bb4"],
+Cell["", "SectionHeaderSpacer"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
@@ -9874,7 +9762,7 @@ Cell[BoxData[
    "paclet:MathIOmica/tutorial/MathIOmicaTutorial"},
   "RefLink",
   BaseStyle->"Tutorials"]], "Tutorials",
- CellID->341631938,ExpressionUUID->"c06c7ab4-a830-4549-94e7-8d9b3417dff6"],
+ CellID->341631938],
 
 Cell[BoxData[
  TemplateBox[{Cell[
@@ -9882,65 +9770,53 @@ Cell[BoxData[
    "paclet:MathIOmica/tutorial/MathIOmicaDynamicTranscriptome"},
   "RefLink",
   BaseStyle->"Tutorials"]], "Tutorials",
- CellID->446304022,ExpressionUUID->"55bf54a8-57ba-4b6d-a3ed-0a4975059446"],
+ CellID->446304022],
 
-Cell["", "SectionFooterSpacer",ExpressionUUID->"e2b22a98-cb2e-4dfe-b30d-4d6a51a83ae5"]
+Cell["", "SectionFooterSpacer"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
  Cell[BoxData[
-  InterpretationBox[
-   StyleBox[
-    GraphicsBox[{},
-     BaselinePosition->Baseline,
-     ImageSize->{6, 0}],
-    CacheGraphics->False],
-   Spacer[6],
-   Selectable->False]],ExpressionUUID->"7aa10077-37a7-4dba-917f-f7282a63859d"],
+  TemplateBox[{6},
+   "Spacer1"]]],
  "Related Guides"
 }], "MoreAboutSection",
  WholeCellGroupOpener->True,
- CellID->38303248,ExpressionUUID->"d43abbcf-0572-4dcc-bec4-734942035e0a"],
+ CellID->38303248],
 
-Cell["", "SectionHeaderSpacer",ExpressionUUID->"112a6e47-1fb6-4d0e-81cc-a3c05a0cbeea"],
+Cell["", "SectionHeaderSpacer"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MathIOmica Guide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
   "RefLink",
   BaseStyle->"MoreAbout"]], "MoreAbout",
- CellID->1360266765,ExpressionUUID->"155f59ce-973b-4c03-ba75-83c8598c8373"],
+ CellID->1903871127],
 
-Cell["", "SectionFooterSpacer",ExpressionUUID->"57a85cd1-cae7-4793-b86a-ef48b71c25e2"]
+Cell["", "SectionFooterSpacer"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[TextData[{
  Cell[BoxData[
-  InterpretationBox[
-   StyleBox[
-    GraphicsBox[{},
-     BaselinePosition->Baseline,
-     ImageSize->{6, 0}],
-    CacheGraphics->False],
-   Spacer[6],
-   Selectable->False]],ExpressionUUID->"e5faaa54-8a04-425e-913f-e3759106550f"],
+  TemplateBox[{6},
+   "Spacer1"]]],
  "Related Links"
 }], "RelatedLinksSection",
  WholeCellGroupOpener->True,
- CellID->1584193535,ExpressionUUID->"d9239420-87ee-4609-a657-7e48d55fce6d"],
+ CellID->1584193535],
 
-Cell["", "SectionHeaderSpacer",ExpressionUUID->"b724517d-318c-4016-b43d-f042f27149ff"],
+Cell["", "SectionHeaderSpacer"],
 
 Cell[BoxData[
  TemplateBox[{Cell[
     TextData["MathIOmicaGuide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
   "RefLink",
   BaseStyle->"RelatedLinks"]], "RelatedLinks",
- CellID->1038487239,ExpressionUUID->"a2f1a243-edd8-48aa-b508-93c6c6e7f0c3"],
+ CellID->1038487239],
 
 Cell[BoxData[
  TemplateBox[{Cell[
@@ -9948,10 +9824,10 @@ Cell[BoxData[
    "paclet:MathIOmica/tutorial/MathIOmicaOverview"},
   "RefLink",
   BaseStyle->"RelatedLinks"]], "RelatedLinks",
- CellID->1970164909,ExpressionUUID->"63b18bf4-fade-4737-af6d-7760d620d2de"]
+ CellID->1970164909]
 }, Open  ]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"5eca2244-0bf5-4562-9811-0d1b38e4dee2"]
+Cell[" ", "FooterCell"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -9968,7 +9844,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2017, 6, 16, 15, 46, 49.564970}", 
+   "built" -> "{2017, 9, 18, 13, 56, 48.534680}", 
     "history" -> {"XX", "", "", ""}, "context" -> "MathIOmica`Visualization`",
      "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -9978,10 +9854,11 @@ TaggingRules->{
 for a matrix.", "synonyms" -> {}, "tabletags" -> {}, "title" -> 
     "MatrixDendrogramHeatmap", "titlemodifier" -> "", "windowtitle" -> 
     "MatrixDendrogramHeatmap", "type" -> "Symbol", "uri" -> 
-    "MathIOmica/ref/MatrixDendrogramHeatmap"}, "SearchTextTranslated" -> ""},
+    "MathIOmica/ref/MatrixDendrogramHeatmap"}, "SearchTextTranslated" -> "", 
+  "NewStyles" -> False},
 CellContext->"Global`",
-FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 18, \
-2017)",
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -9991,7 +9868,7 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
   FrontEndVersion -> 
-  "11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 18, 2017)", 
+  "11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September 10, 2017)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -10000,693 +9877,509 @@ StyleDefinitions->Notebook[{
 (*CellTagsOutline
 CellTagsIndex->{
  "PrimaryExamplesSection"->{
-  Cell[23444, 569, 578, 17, 
-  70, "PrimaryExamplesSection", "ExpressionUUID" -> "9b0cb4e1-ad38-4f32-9685-
-   eff4cdf6387f",
+  Cell[19202, 512, 268, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"4eef47b6-8f24-4fbb-a987-804dceb83fee",
    CellTags->"PrimaryExamplesSection",
-   CellID->103011331]},
+   CellID->845149348]},
  "RasterizedOutput"->{
-  Cell[33866, 854, 19199, 322, 
-  70, "Output", "ExpressionUUID" -> "39f27148-166b-4f01-8559-7c801cb86b91",
+  Cell[28816, 789, 19143, 322, 70, "Output",ExpressionUUID->"e07a0956-a74b-49d4-85bd-f4a113decd81",
    CellTags->"RasterizedOutput",
-   CellID->2040097040],
-  Cell[62212, 1450, 19199, 322, 
-  70, "Output", "ExpressionUUID" -> "e7f3cb85-6d87-4e45-9de6-e7b5ae3ce2ad",
+   CellID->855691189],
+  Cell[56501, 1385, 19144, 322, 70, "Output",ExpressionUUID->"20279812-9af8-4405-ad72-6f27377745e5",
    CellTags->"RasterizedOutput",
-   CellID->1187043278],
-  Cell[90611, 2008, 19462, 326, 
-  70, "Output", "ExpressionUUID" -> "1e10b0fb-f9fc-4ea0-9cc6-377199737ff5",
+   CellID->2051313211],
+  Cell[84398, 1941, 19407, 326, 70, "Output",ExpressionUUID->"bd900f54-5894-4a47-b95c-7f8f7b25376b",
    CellTags->"RasterizedOutput",
-   CellID->513292716],
-  Cell[159470, 3492, 19487, 327, 
-  70, "Output", "ExpressionUUID" -> "932858d1-fdd2-4228-a3c9-f2bfcb07079b",
+   CellID->718668339],
+  Cell[151919, 3419, 19433, 327, 70, "Output",ExpressionUUID->"190a7757-34f9-4d59-ac5b-b5a5c5f53797",
    CellTags->"RasterizedOutput",
-   CellID->468867813],
-  Cell[179597, 3840, 19618, 329, 
-  70, "Output", "ExpressionUUID" -> "8a721bcb-522d-4b2f-b7c4-7af8c001550d",
+   CellID->1210742845],
+  Cell[171882, 3767, 19563, 329, 70, "Output",ExpressionUUID->"611ca78e-42a6-45a8-8926-b811a2a2ef6a",
    CellTags->"RasterizedOutput",
-   CellID->1143832248],
-  Cell[208563, 4411, 19926, 334, 
-  70, "Output", "ExpressionUUID" -> "754a8e93-ce39-436f-b86d-17394b1dfbc3",
+   CellID->1547440590],
+  Cell[200347, 4336, 19872, 334, 70, "Output",ExpressionUUID->"12a05f45-061d-4766-b1d3-09e99cbbcdec",
    CellTags->"RasterizedOutput",
-   CellID->114984192],
-  Cell[238002, 4991, 19825, 332, 
-  70, "Output", "ExpressionUUID" -> "faaf4ad0-60d6-4d7f-b97b-453222a58740",
+   CellID->1807030960],
+  Cell[229231, 4914, 19770, 332, 70, "Output",ExpressionUUID->"66a1763d-c400-4eae-acae-ac140afba9b5",
    CellTags->"RasterizedOutput",
-   CellID->1951516291],
-  Cell[258450, 5343, 19759, 331, 
-  70, "Output", "ExpressionUUID" -> "23999493-6c9f-412b-9692-9a5284b7707f",
+   CellID->1055608846],
+  Cell[249514, 5266, 19705, 331, 70, "Output",ExpressionUUID->"f5e675fc-6734-402b-9fd9-610a9aa17251",
    CellTags->"RasterizedOutput",
-   CellID->616562206],
-  Cell[288570, 5949, 20117, 337, 
-  70, "Output", "ExpressionUUID" -> "0904c660-15f4-46db-9781-b9c53846e101",
+   CellID->1255466855],
+  Cell[278914, 5870, 20063, 337, 70, "Output",ExpressionUUID->"6057261f-041d-4b0b-a21f-11e6fb9143cb",
    CellTags->"RasterizedOutput",
-   CellID->952399467],
-  Cell[320512, 6581, 19463, 326, 
-  70, "Output", "ExpressionUUID" -> "85caa3db-8621-4bbd-8965-30d3cff0920e",
+   CellID->1604600210],
+  Cell[310191, 6500, 19407, 326, 70, "Output",ExpressionUUID->"5077d2b7-1f88-48c0-9fdf-e69b43fbf7e9",
    CellTags->"RasterizedOutput",
-   CellID->1782220778],
-  Cell[340525, 6927, 19450, 326, 
-  70, "Output", "ExpressionUUID" -> "6a45c485-eace-4aa0-a890-09cc3c49a4f6",
+   CellID->416090444],
+  Cell[330038, 6846, 19396, 326, 70, "Output",ExpressionUUID->"8729e0c4-4b1d-483e-af0a-2d88ba4fe242",
    CellTags->"RasterizedOutput",
-   CellID->682707490],
-  Cell[369551, 7501, 19462, 326, 
-  70, "Output", "ExpressionUUID" -> "7290e59d-d10f-4099-b699-ad8cbe37e608",
+   CellID->1025337676],
+  Cell[358509, 7418, 19408, 326, 70, "Output",ExpressionUUID->"118dae61-0f7e-4dc8-b2ff-d73483833db6",
    CellTags->"RasterizedOutput",
-   CellID->259658509],
-  Cell[398387, 8070, 19462, 326, 
-  70, "Output", "ExpressionUUID" -> "9a0889f2-69c5-4ce5-8761-4db424a4b365",
+   CellID->1441537004],
+  Cell[386845, 7985, 19405, 326, 70, "Output",ExpressionUUID->"33d6e93e-54ca-44e7-bfe9-a11635f87d88",
    CellTags->"RasterizedOutput",
-   CellID->393790059],
-  Cell[418187, 8409, 19329, 324, 
-  70, "Output", "ExpressionUUID" -> "f2a724f0-6c5c-4c6a-b19f-8b51fad32ead",
+   CellID->1920774],
+  Cell[406533, 8324, 19272, 324, 70, "Output",ExpressionUUID->"b1b80a13-0b7b-48de-9db6-645a031b1f5a",
    CellTags->"RasterizedOutput",
-   CellID->2032405206],
-  Cell[437853, 8746, 19466, 326, 
-  70, "Output", "ExpressionUUID" -> "9d255ce6-01fc-4bce-8c8f-296411ffabf2",
+   CellID->70193913],
+  Cell[426087, 8661, 19411, 326, 70, "Output",ExpressionUUID->"e62275f4-d3fb-4456-9c34-86e10ff219fd",
    CellTags->"RasterizedOutput",
-   CellID->759408060],
-  Cell[467702, 9347, 20674, 346, 
-  70, "Output", "ExpressionUUID" -> "8448bbf4-bf76-4671-8b14-e64647330820",
+   CellID->780573588],
+  Cell[455218, 9261, 20619, 346, 70, "Output",ExpressionUUID->"9ec21248-9ba4-4bcb-afb3-391e17e17a25",
    CellTags->"RasterizedOutput",
-   CellID->875950299]}
+   CellID->122693993]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"PrimaryExamplesSection", 498847, 10001},
- {"RasterizedOutput", 499058, 10007}
+ {"PrimaryExamplesSection", 483752, 9878},
+ {"RasterizedOutput", 483951, 9882}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[595, 21, 6151, 134, 70, "AnchorBarGrid", "ExpressionUUID" -> \
-"d3bd79e2-ede6-43f4-9dd9-6b1273bedc2d",
+Cell[595, 21, 5512, 129, 70, "AnchorBarGrid",ExpressionUUID->"5b11334e-92a8-475b-8dfa-e4fe9da2de38",
  CellID->1],
 Cell[CellGroupData[{
-Cell[6771, 159, 550, 15, 70, "ObjectNameGrid", "ExpressionUUID" -> \
-"ad5d5745-dd2e-4427-8dd1-be698cd3a2fe"],
-Cell[7324, 176, 582, 13, 70, "Usage", "ExpressionUUID" -> \
-"6b08deaf-ea35-44ac-bd9d-9a50d5e0ced9"]
+Cell[6132, 154, 180, 6, 70, "ObjectNameGrid",ExpressionUUID->"5ef05bfe-637c-4f14-90d3-7cf9676b5e81"],
+Cell[6315, 162, 408, 11, 70, "Usage",ExpressionUUID->"410381a5-56ba-4b37-a872-5242ce075efa"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7943, 194, 994, 28, 70, "NotesSection", "ExpressionUUID" -> \
-"c263ac88-07d1-46b2-a1a5-1c6c02307dd2",
+Cell[6760, 178, 630, 19, 70, "NotesSection",ExpressionUUID->"fb9b72f3-0d2d-420b-b5f2-005abcc2e121",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->2050509941],
-Cell[8940, 224, 86, 0, 70, "SectionHeaderSpacer", "ExpressionUUID" -> \
-"bc5f848f-b99e-4b71-aec6-e879a26b9833"],
-Cell[9029, 226, 671, 15, 70, "Notes", "ExpressionUUID" -> \
-"50f67199-c1ac-4172-8971-e755333b6957",
+ CellID->1928275175],
+Cell[7393, 199, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"5c2fbdcb-d98e-48e6-9036-1d7c1847bbe0"],
+Cell[7427, 201, 500, 13, 70, "Notes",ExpressionUUID->"1ddeba60-220a-468e-906d-77a2eda29449",
  CellID->1554635759],
-Cell[9703, 243, 2921, 71, 70, "Notes", "ExpressionUUID" -> \
-"1e17fda6-1406-46fa-b3ef-4b879be3ac71",
+Cell[7930, 216, 2805, 69, 70, "Notes",ExpressionUUID->"61caeddc-8b19-433c-a3c6-526d6b77ac59",
  CellID->853640370],
-Cell[12627, 316, 504, 12, 70, "Notes", "ExpressionUUID" -> \
-"409ee208-c969-4240-8c8a-bc483094f8f9",
+Cell[10738, 287, 391, 11, 70, "Notes",ExpressionUUID->"b57ac79c-c120-48df-9c5e-99984d0df074",
  CellID->391788806],
-Cell[13134, 330, 2233, 39, 70, "2ColumnTableMod", "ExpressionUUID" -> \
-"4aabbc85-13e6-4138-9cd7-4004c00fa40e",
+Cell[11132, 300, 1460, 29, 70, "2ColumnTableMod",ExpressionUUID->"ca7e1746-0c54-4f73-a014-db759746d973",
  CellID->2126089056],
-Cell[15370, 371, 474, 11, 70, "Notes", "ExpressionUUID" -> \
-"eaa71dd2-027e-42c3-a007-3a4b1ec8c36f",
+Cell[12595, 331, 361, 10, 70, "Notes",ExpressionUUID->"a66a7d34-47e9-4a33-b556-2bd6efaac0d8",
  CellID->371734233],
-Cell[15847, 384, 2662, 73, 70, "Notes", "ExpressionUUID" -> \
-"788ee73a-3a29-499f-8483-0caf7b175e56",
+Cell[12959, 343, 2546, 71, 70, "Notes",ExpressionUUID->"d6bccd6c-37ce-49ba-a5d6-d3d47c516bd8",
  CellID->1951075804],
-Cell[18512, 459, 108, 0, 70, "Notes", "ExpressionUUID" -> \
-"de2f7cf5-e557-450f-8fbd-bcc17d5e2cca"],
-Cell[18623, 461, 4695, 101, 70, "3ColumnTableMod", "ExpressionUUID" -> \
-"9aa514c5-0a4a-42f4-8ee9-37d672dcd00a",
+Cell[15508, 416, 53, 0, 70, "Notes",ExpressionUUID->"94a98c16-dac7-478f-8e9f-68646a21acf2"],
+Cell[15564, 418, 3567, 87, 70, "3ColumnTableMod",ExpressionUUID->"72623edb-47a5-45d6-951b-b136ac8e3cc2",
  CellID->427366061],
-Cell[23321, 564, 86, 0, 70, "SectionFooterSpacer", "ExpressionUUID" -> \
-"0caca07e-c672-4a87-aa06-36d171fcbe18"]
+Cell[19134, 507, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"e9e0e06a-5f6e-4747-b969-f393dfd61273"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[23444, 569, 578, 17, 70, "PrimaryExamplesSection", "ExpressionUUID" -> \
-"9b0cb4e1-ad38-4f32-9685-eff4cdf6387f",
+Cell[19202, 512, 268, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"4eef47b6-8f24-4fbb-a987-804dceb83fee",
  CellTags->"PrimaryExamplesSection",
- CellID->103011331],
+ CellID->845149348],
 Cell[CellGroupData[{
-Cell[24047, 590, 308, 7, 70, "ExampleSection", "ExpressionUUID" -> \
-"7be1321f-0daa-47d2-a350-4336202646a3",
- CellID->439620635],
-Cell[24358, 599, 143, 1, 70, "ExampleText", "ExpressionUUID" -> \
-"f2120f7c-9539-430e-8563-3c73a6799f41",
+Cell[19495, 526, 195, 6, 70, "ExampleSection",ExpressionUUID->"db5e797d-9fb1-4340-808c-2e25b28dc835",
+ CellID->968250578],
+Cell[19693, 534, 88, 1, 70, "ExampleText",ExpressionUUID->"727f17cd-fa9d-4914-989a-322ec267d552",
  CellID->191603639],
-Cell[24504, 602, 175, 3, 70, "Input", "ExpressionUUID" -> \
-"4aad0caa-6006-4d10-9893-b53264d41ba3",
+Cell[19784, 537, 120, 3, 70, "Input",ExpressionUUID->"46bc57f7-8b7c-4475-9a24-ea0ca8ed4320",
  CellID->2017647728],
-Cell[24682, 607, 172, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"f078b39f-c033-48a9-9578-9543f4ef3781",
+Cell[19907, 542, 117, 3, 70, "ExampleText",ExpressionUUID->"1328155a-dbb6-4513-aa4a-0f9e04982d5c",
  CellID->219218036],
 Cell[CellGroupData[{
-Cell[24879, 614, 1331, 32, 70, "Input", "ExpressionUUID" -> \
-"df4467c2-a2bb-44e4-b12e-80f138c7e9ca",
+Cell[20049, 549, 1276, 32, 70, "Input",ExpressionUUID->"f3cea945-b25d-4ab2-b4c3-3fd0ea952f0b",
  CellID->1403075803],
-Cell[26213, 648, 7203, 190, 70, "Output", "ExpressionUUID" -> \
-"8641b039-0515-463e-b25a-1207622cdd41",
+Cell[21328, 583, 7148, 190, 70, "Output",ExpressionUUID->"01a675a9-5a9f-459c-af52-4be5d4e99d0d",
  CellID->1853815096]
 }, Open  ]],
-Cell[33431, 841, 179, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"743f00c3-7804-4b6b-8971-0ea9208ba3ad",
+Cell[28491, 776, 124, 3, 70, "ExampleText",ExpressionUUID->"d61f2f62-5217-4b3a-a71a-65e1881813e3",
  CellID->1832104199],
 Cell[CellGroupData[{
-Cell[33635, 848, 228, 4, 70, "Input", "ExpressionUUID" -> \
-"a106b624-1a9c-4c94-bfc2-131b70a09146",
+Cell[28640, 783, 173, 4, 70, "Input",ExpressionUUID->"8dd7b011-1009-4fc8-9844-cef30cbee285",
  CellID->1948909817],
-Cell[33866, 854, 19199, 322, 70, "Output", "ExpressionUUID" -> \
-"39f27148-166b-4f01-8559-7c801cb86b91",
+Cell[28816, 789, 19143, 322, 70, "Output",ExpressionUUID->"e07a0956-a74b-49d4-85bd-f4a113decd81",
  CellTags->"RasterizedOutput",
- CellID->2040097040]
+ CellID->855691189]
 }, Open  ]],
-Cell[53080, 1179, 685, 10, 70, "ExampleText", "ExpressionUUID" -> \
-"a80f45e3-ddc3-469f-8650-00e929688b79",
+Cell[47974, 1114, 630, 10, 70, "ExampleText",ExpressionUUID->"51907b96-b19d-4965-8dc7-7e535d80e110",
  CellID->818767561],
 Cell[CellGroupData[{
-Cell[53790, 1193, 256, 6, 70, "Input", "ExpressionUUID" -> \
-"3cb47a24-59fe-4b10-881e-c643fa8029b5",
+Cell[48629, 1128, 201, 6, 70, "Input",ExpressionUUID->"c22b817a-8861-4ec0-91f2-ce11abed2f40",
  CellID->1190341538],
-Cell[54049, 1201, 274, 7, 70, "Output", "ExpressionUUID" -> \
-"f8bee6e5-62e7-4089-acc9-174d3e3c48e9",
+Cell[48833, 1136, 219, 7, 70, "Output",ExpressionUUID->"d9c3ff0d-25e3-412f-8c75-177c997222dc",
  CellID->332052437]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[54360, 1213, 258, 6, 70, "Input", "ExpressionUUID" -> \
-"b66dee0a-68a4-4d1f-b3c6-3d8893bbaf95",
+Cell[49089, 1148, 203, 6, 70, "Input",ExpressionUUID->"e10d9b06-85a9-4d72-ae70-348a436297f3",
  CellID->1006131787],
-Cell[54621, 1221, 214, 5, 70, "Output", "ExpressionUUID" -> \
-"905d2161-195b-4d3a-a67a-67c1dee4d01b",
+Cell[49295, 1156, 159, 5, 70, "Output",ExpressionUUID->"e2dee887-3fa5-4f7e-9862-fc1f0a6b4734",
  CellID->1385193465]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[54872, 1231, 258, 6, 70, "Input", "ExpressionUUID" -> \
-"3ff160f8-f753-400c-b92a-6f9519a4c6a5",
+Cell[49491, 1166, 203, 6, 70, "Input",ExpressionUUID->"b3244abf-390b-4a41-9b7d-72e68dc68b10",
  CellID->517560850],
-Cell[55133, 1239, 235, 6, 70, "Output", "ExpressionUUID" -> \
-"270dd302-327f-48a0-bb6a-0429b3115d4b",
+Cell[49697, 1174, 180, 6, 70, "Output",ExpressionUUID->"7cb284a3-d54c-4b64-b466-30318abe1e1f",
  CellID->910059507]
 }, Open  ]],
-Cell[55383, 1248, 169, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"ade8f7c4-7868-4628-89b2-4e30d40e4717",
+Cell[49892, 1183, 114, 3, 70, "ExampleText",ExpressionUUID->"b9ac6737-74ef-46cd-9669-c5e759c3a2ce",
  CellID->920541078],
 Cell[CellGroupData[{
-Cell[55577, 1255, 255, 5, 70, "Input", "ExpressionUUID" -> \
-"c2ab0c13-bbcb-4458-8970-4d07be6d03d3",
+Cell[50031, 1190, 200, 5, 70, "Input",ExpressionUUID->"ff5af251-4721-4521-af20-0e1e35636afd",
  CellID->1555163285],
-Cell[55835, 1262, 6139, 177, 70, "Output", "ExpressionUUID" -> \
-"981f8a7c-1c7d-4021-b110-bad447bf4e31",
+Cell[50234, 1197, 6084, 177, 70, "Output",ExpressionUUID->"049a2a94-e249-4869-9ab8-e97afa91f486",
  CellID->912832327]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[62011, 1444, 198, 4, 70, "Input", "ExpressionUUID" -> \
-"32453efb-e17e-43e1-be92-46ca6b7cde5b",
+Cell[56355, 1379, 143, 4, 70, "Input",ExpressionUUID->"9c41fe0b-fcc6-4a87-a7d8-e1ecc461b08a",
  CellID->1919172867],
-Cell[62212, 1450, 19199, 322, 70, "Output", "ExpressionUUID" -> \
-"e7f3cb85-6d87-4e45-9de6-e7b5ae3ce2ad",
+Cell[56501, 1385, 19144, 322, 70, "Output",ExpressionUUID->"20279812-9af8-4405-ad72-6f27377745e5",
  CellTags->"RasterizedOutput",
- CellID->1187043278]
+ CellID->2051313211]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[81448, 1777, 243, 5, 70, "ExampleDelimiter", "ExpressionUUID" -> \
-"a8e42be4-b486-44a7-b5bc-d7bd8170e3e2",
+Cell[75682, 1712, 126, 3, 70, "ExampleDelimiter",ExpressionUUID->"ebfce072-ed07-45a9-8c91-6f39605a0ddf",
  CellID->2015756912],
-Cell[81694, 1784, 174, 3, 70, "Input", "ExpressionUUID" -> \
-"14a51bc9-7158-4269-9a81-c09c5c139304",
+Cell[75811, 1717, 119, 3, 70, "Input",ExpressionUUID->"994159c8-352f-4b86-938d-9e22675d80df",
  CellID->124404912],
-Cell[81871, 1789, 196, 4, 70, "ExampleText", "ExpressionUUID" -> \
-"1cb21112-7caa-4ef8-9610-0b280b5e4373",
+Cell[75933, 1722, 141, 4, 70, "ExampleText",ExpressionUUID->"8c103238-65ca-4fa0-bf1d-83338cd3d5fd",
  CellID->1371767453],
 Cell[CellGroupData[{
-Cell[82092, 1797, 1460, 35, 70, "Input", "ExpressionUUID" -> \
-"79c54640-3547-4984-a3ba-b04b03026647",
+Cell[76099, 1730, 1405, 35, 70, "Input",ExpressionUUID->"e342b0be-1419-4379-b62f-1c9a4ac7c775",
  CellID->125570124],
-Cell[83555, 1834, 6637, 160, 70, "Output", "ExpressionUUID" -> \
-"77a34706-e96f-4a7a-9fc8-a0e501351fff",
+Cell[77507, 1767, 6582, 160, 70, "Output",ExpressionUUID->"66a966ba-45ba-4315-af98-d07881992d1e",
  CellID->219223354]
 }, Open  ]],
-Cell[90207, 1997, 148, 1, 70, "ExampleText", "ExpressionUUID" -> \
-"6ee067d7-43b8-4ac7-8d75-0c9baf6b3ccb",
+Cell[84104, 1930, 93, 1, 70, "ExampleText",ExpressionUUID->"fe383709-6fe6-4a43-8891-f336720cd4f9",
  CellID->630967334],
 Cell[CellGroupData[{
-Cell[90380, 2002, 228, 4, 70, "Input", "ExpressionUUID" -> \
-"1359f315-f8a0-4ec1-a862-30609702b526",
+Cell[84222, 1935, 173, 4, 70, "Input",ExpressionUUID->"2a99c1b9-4189-47e7-900d-f424cc61f082",
  CellID->1580705102],
-Cell[90611, 2008, 19462, 326, 70, "Output", "ExpressionUUID" -> \
-"1e10b0fb-f9fc-4ea0-9cc6-377199737ff5",
+Cell[84398, 1941, 19407, 326, 70, "Output",ExpressionUUID->"bd900f54-5894-4a47-b95c-7f8f7b25376b",
  CellTags->"RasterizedOutput",
- CellID->513292716]
+ CellID->718668339]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[110134, 2341, 284, 7, 70, "ExampleSection", "ExpressionUUID" -> \
-"c40e6a36-8512-4280-8586-b041adc65100"],
+Cell[103866, 2274, 168, 5, 70, "ExampleSection",ExpressionUUID->"c5b17b8e-5584-407a-8c2c-c282c6bdfbd4"],
 Cell[CellGroupData[{
-Cell[110443, 2352, 296, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
-"f7713f44-1ca3-49c0-8bb4-b0409635f64d"],
-Cell[110742, 2361, 174, 3, 70, "Input", "ExpressionUUID" -> \
-"c38a3423-bbc9-4239-be47-a335c5cb5958",
+Cell[104059, 2283, 180, 5, 70, "ExampleSubsection",ExpressionUUID->"f7863933-2789-4ad3-9d05-216ebc2b505a"],
+Cell[104242, 2290, 119, 3, 70, "Input",ExpressionUUID->"5a64902c-0649-451a-9552-4529bc992d0b",
  CellID->454699151],
-Cell[110919, 2366, 233, 4, 70, "ExampleText", "ExpressionUUID" -> \
-"eaf2391b-2010-456a-a92e-d7013fac7082",
+Cell[104364, 2295, 178, 4, 70, "ExampleText",ExpressionUUID->"9f5875f7-917f-4abc-a817-c45f377bf54c",
  CellID->1600667338],
-Cell[111155, 2372, 173, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"dc8efa0c-b50e-4291-8014-8dd708398956",
+Cell[104545, 2301, 118, 3, 70, "ExampleText",ExpressionUUID->"a67af7ed-16d5-4e45-bf49-9cd4e9a03314",
  CellID->1179114632],
 Cell[CellGroupData[{
-Cell[111353, 2379, 1460, 35, 70, "Input", "ExpressionUUID" -> \
-"24422e8a-aacc-40cc-8e02-14ee0fac13bb",
+Cell[104688, 2308, 1405, 35, 70, "Input",ExpressionUUID->"c9f865fc-eaf9-430c-9a9c-f83590b81eaa",
  CellID->400525508],
-Cell[112816, 2416, 6637, 160, 70, "Output", "ExpressionUUID" -> \
-"0460cf32-c869-47e7-a07f-a92664237326",
+Cell[106096, 2345, 6582, 160, 70, "Output",ExpressionUUID->"b011fd06-a949-461d-b23b-fa3483c6deda",
  CellID->961315250]
 }, Open  ]],
-Cell[119468, 2579, 178, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"9462448f-49ed-4e8d-8236-4e0470b94aa7",
+Cell[112693, 2508, 123, 3, 70, "ExampleText",ExpressionUUID->"4ae9a4e6-b3d1-4f62-9b07-d24014b17c0e",
  CellID->178040445],
 Cell[CellGroupData[{
-Cell[119671, 2586, 354, 8, 70, "Input", "ExpressionUUID" -> \
-"15e6a0c1-3a33-45fc-b9ec-bd7a25e62bf1",
+Cell[112841, 2515, 299, 8, 70, "Input",ExpressionUUID->"c1fb1ea4-e8de-4edb-9bf7-7461c27ed256",
  CellID->881038844],
-Cell[120028, 2596, 14630, 314, 70, "Output", "ExpressionUUID" -> \
-"91d7fd28-8f04-4cac-a744-0a0011c882cc",
+Cell[113143, 2525, 14575, 314, 70, "Output",ExpressionUUID->"1525a4d3-82c2-4cc5-bc4f-adbf6ae7d915",
  CellID->1305930369]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[134695, 2915, 549, 13, 70, "Input", "ExpressionUUID" -> \
-"23ebc793-d6fb-433c-a815-00c8c2ac9ec0",
+Cell[127755, 2844, 494, 13, 70, "Input",ExpressionUUID->"7b356d16-998c-429a-b9db-7d72ad7ec366",
  CellID->305490849],
-Cell[135247, 2930, 14515, 312, 70, "Output", "ExpressionUUID" -> \
-"db33acdd-097f-4aa1-9e10-e79047b2c202",
+Cell[128252, 2859, 14460, 312, 70, "Output",ExpressionUUID->"f3a8fe90-d6bf-4595-b2ec-ec4b619328b5",
  CellID->1488839443]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[149811, 3248, 298, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
-"da309783-376b-4d7f-acf2-6e8d938d52a9"],
-Cell[150112, 3257, 174, 3, 70, "Input", "ExpressionUUID" -> \
-"5530fec5-e505-4a92-b88a-7ec5f375ef92",
+Cell[142761, 3177, 182, 5, 70, "ExampleSubsection",ExpressionUUID->"cae39e3f-6a11-4372-b530-c92d224f4e30"],
+Cell[142946, 3184, 119, 3, 70, "Input",ExpressionUUID->"d66ad90a-96b0-4821-8f78-b0d494dcdb79",
  CellID->719905419],
-Cell[150289, 3262, 289, 5, 70, "ExampleText", "ExpressionUUID" -> \
-"63a385a0-762f-4397-bf0b-090350170b38",
+Cell[143068, 3189, 234, 5, 70, "ExampleText",ExpressionUUID->"bcf4d2a1-969b-4404-9a77-1c2fe8df65f1",
  CellID->598461083],
-Cell[150581, 3269, 172, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"bcac69d9-61ef-41bc-81a7-9bbda35af422",
+Cell[143305, 3196, 117, 3, 70, "ExampleText",ExpressionUUID->"90c6c38c-7c0d-4d07-a05e-408912a5fbf9",
  CellID->527509935],
 Cell[CellGroupData[{
-Cell[150778, 3276, 1461, 35, 70, "Input", "ExpressionUUID" -> \
-"13f678fd-c1be-4bad-a61a-f3363cee20df",
+Cell[143447, 3203, 1406, 35, 70, "Input",ExpressionUUID->"a168aa1e-b2c8-4b0a-ac2c-fc7fdefe9a64",
  CellID->1046982729],
-Cell[152242, 3313, 6636, 160, 70, "Output", "ExpressionUUID" -> \
-"16759371-5a9e-4958-be0f-99bbbb4fb6f9",
+Cell[144856, 3240, 6581, 160, 70, "Output",ExpressionUUID->"2625114c-eace-4eaa-9803-41a0d6f6500d",
  CellID->26730265]
 }, Open  ]],
-Cell[158893, 3476, 246, 4, 70, "ExampleText", "ExpressionUUID" -> \
-"8d04b9e0-2e4c-4493-91d5-7bfa81ec9e6c",
+Cell[151452, 3403, 191, 4, 70, "ExampleText",ExpressionUUID->"72de01ed-a973-414f-867e-416b7c600ebb",
  CellID->157722785],
 Cell[CellGroupData[{
-Cell[159164, 3484, 303, 6, 70, "Input", "ExpressionUUID" -> \
-"48779727-6d0f-416b-9244-967628e3ad82",
+Cell[151668, 3411, 248, 6, 70, "Input",ExpressionUUID->"6bc2fc31-60e8-47f0-978e-7c65e7b5b5e4",
  CellID->852027097],
-Cell[159470, 3492, 19487, 327, 70, "Output", "ExpressionUUID" -> \
-"932858d1-fdd2-4228-a3c9-f2bfcb07079b",
+Cell[151919, 3419, 19433, 327, 70, "Output",ExpressionUUID->"190a7757-34f9-4d59-ac5b-b5a5c5f53797",
  CellTags->"RasterizedOutput",
- CellID->468867813]
+ CellID->1210742845]
 }, Open  ]],
-Cell[178972, 3822, 146, 1, 70, "ExampleText", "ExpressionUUID" -> \
-"8d360bec-eb0e-4f42-9741-9ff98f8877ad",
+Cell[171367, 3749, 91, 1, 70, "ExampleText",ExpressionUUID->"8975aaea-80c6-4233-a41a-79c1d9e76141",
  CellID->1447964765],
 Cell[CellGroupData[{
-Cell[179143, 3827, 451, 11, 70, "Input", "ExpressionUUID" -> \
-"95d737c0-04b1-4ead-b30c-731521a14cba",
+Cell[171483, 3754, 396, 11, 70, "Input",ExpressionUUID->"fe410839-c1e5-4dee-80b7-03821a779a65",
  CellID->453297582],
-Cell[179597, 3840, 19618, 329, 70, "Output", "ExpressionUUID" -> \
-"8a721bcb-522d-4b2f-b7c4-7af8c001550d",
+Cell[171882, 3767, 19563, 329, 70, "Output",ExpressionUUID->"611ca78e-42a6-45a8-8926-b811a2a2ef6a",
  CellTags->"RasterizedOutput",
- CellID->1143832248]
+ CellID->1547440590]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[199264, 4175, 292, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
-"a6a51635-5757-4400-87b9-7753a3c3d112"],
-Cell[199559, 4184, 174, 3, 70, "Input", "ExpressionUUID" -> \
-"dd98bfa5-16bd-48ed-9335-15dad350292f",
+Cell[191494, 4102, 176, 5, 70, "ExampleSubsection",ExpressionUUID->"61b792dd-104b-4a2d-b94d-93382e7a126b"],
+Cell[191673, 4109, 119, 3, 70, "Input",ExpressionUUID->"ea8c1c76-a555-4c95-abb7-6752d1bbe80b",
  CellID->233962798],
-Cell[199736, 4189, 161, 2, 70, "ExampleText", "ExpressionUUID" -> \
-"81435acc-e7a6-4a1b-826a-0c12bdca37b0",
+Cell[191795, 4114, 106, 2, 70, "ExampleText",ExpressionUUID->"51966c86-9b03-4825-bfe6-21979af0b695",
  CellID->1065909990],
-Cell[199900, 4193, 172, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"2df3c4ac-b73a-4804-a0f5-362eef6d4c69",
+Cell[191904, 4118, 117, 3, 70, "ExampleText",ExpressionUUID->"e8b76fe1-09fb-4180-ad02-ffb983bffd39",
  CellID->645976996],
 Cell[CellGroupData[{
-Cell[200097, 4200, 1461, 35, 70, "Input", "ExpressionUUID" -> \
-"d83ee0ac-7fc0-4cdc-99d6-a4ed88d50903",
+Cell[192046, 4125, 1406, 35, 70, "Input",ExpressionUUID->"a5043b20-cdbb-4e41-9f67-de48a343451f",
  CellID->1405536187],
-Cell[201561, 4237, 6638, 160, 70, "Output", "ExpressionUUID" -> \
-"01973ce2-b691-41a6-a8a7-e02b2ef334d9",
+Cell[193455, 4162, 6583, 160, 70, "Output",ExpressionUUID->"8a5327dc-72a3-4bcf-84fb-18b498c0d8c8",
  CellID->1677270919]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[208236, 4402, 324, 7, 70, "Input", "ExpressionUUID" -> \
-"a2e76cb8-f9cb-4f36-85a2-184edd644a48",
+Cell[200075, 4327, 269, 7, 70, "Input",ExpressionUUID->"f4486ba5-6296-45a3-93a0-91e011d39757",
  CellID->526577909],
-Cell[208563, 4411, 19926, 334, 70, "Output", "ExpressionUUID" -> \
-"754a8e93-ce39-436f-b86d-17394b1dfbc3",
+Cell[200347, 4336, 19872, 334, 70, "Output",ExpressionUUID->"12a05f45-061d-4766-b1d3-09e99cbbcdec",
  CellTags->"RasterizedOutput",
- CellID->114984192]
+ CellID->1807030960]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[228538, 4751, 301, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
-"246919c0-e4d0-483a-9dfa-de304745574a"],
-Cell[228842, 4760, 174, 3, 70, "Input", "ExpressionUUID" -> \
-"33156c3b-791b-44ac-b051-2ee2c60eedce",
+Cell[220268, 4676, 185, 5, 70, "ExampleSubsection",ExpressionUUID->"54481e3e-8365-4fa6-9e0f-a18103bcbce7"],
+Cell[220456, 4683, 119, 3, 70, "Input",ExpressionUUID->"b1c70bc6-1852-4986-9a82-b13c65597b40",
  CellID->716906461],
-Cell[229019, 4765, 177, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"fd8fc9fd-7984-459e-a046-90a3dada5169",
+Cell[220578, 4688, 122, 3, 70, "ExampleText",ExpressionUUID->"db35e09b-2959-47c2-9663-e1238aabc771",
  CellID->1140473994],
-Cell[229199, 4770, 172, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"d93700bd-32ff-4708-8c0f-3f7f0beb2d92",
+Cell[220703, 4693, 117, 3, 70, "ExampleText",ExpressionUUID->"97afd035-3a84-4c0d-aaf8-1f222da2c960",
  CellID->414807276],
 Cell[CellGroupData[{
-Cell[229396, 4777, 1460, 35, 70, "Input", "ExpressionUUID" -> \
-"5d802cb3-b805-46a7-8f2e-4ca726b12afa",
+Cell[220845, 4700, 1405, 35, 70, "Input",ExpressionUUID->"3345280d-2e53-4885-b35b-bc9f45a5a066",
  CellID->933969570],
-Cell[230859, 4814, 6638, 160, 70, "Output", "ExpressionUUID" -> \
-"af5f61f3-706b-47f9-8efc-36d6b703d427",
+Cell[222253, 4737, 6583, 160, 70, "Output",ExpressionUUID->"be943807-726d-4cfe-91eb-b7bb9aaf7755",
  CellID->1443266734]
 }, Open  ]],
-Cell[237512, 4977, 142, 1, 70, "ExampleText", "ExpressionUUID" -> \
-"a5956b85-519f-42be-ae5c-21d951d867fc",
+Cell[228851, 4900, 87, 1, 70, "ExampleText",ExpressionUUID->"3f496964-7c03-430f-8cae-f0a9e929f50d",
  CellID->496020293],
 Cell[CellGroupData[{
-Cell[237679, 4982, 320, 7, 70, "Input", "ExpressionUUID" -> \
-"ded261ef-1b71-4034-832e-d9ad230b302d",
+Cell[228963, 4905, 265, 7, 70, "Input",ExpressionUUID->"07fd7d5c-9a10-400a-b077-448e7303b7f0",
  CellID->2055058724],
-Cell[238002, 4991, 19825, 332, 70, "Output", "ExpressionUUID" -> \
-"faaf4ad0-60d6-4d7f-b97b-453222a58740",
+Cell[229231, 4914, 19770, 332, 70, "Output",ExpressionUUID->"66a1763d-c400-4eae-acae-ac140afba9b5",
  CellTags->"RasterizedOutput",
- CellID->1951516291]
+ CellID->1055608846]
 }, Open  ]],
-Cell[257842, 5326, 142, 1, 70, "ExampleText", "ExpressionUUID" -> \
-"8ace2308-8eca-4e3e-98b4-8c686e66b70a",
+Cell[249016, 5249, 87, 1, 70, "ExampleText",ExpressionUUID->"767e49c3-a526-4040-a5fd-2dc98652ecc2",
  CellID->226038847],
 Cell[CellGroupData[{
-Cell[258009, 5331, 438, 10, 70, "Input", "ExpressionUUID" -> \
-"ac155355-4822-41c1-808a-25c678cadf4d",
+Cell[249128, 5254, 383, 10, 70, "Input",ExpressionUUID->"1bd5ada1-e96b-450e-aa2f-c113a1233560",
  CellID->1268587067],
-Cell[258450, 5343, 19759, 331, 70, "Output", "ExpressionUUID" -> \
-"23999493-6c9f-412b-9692-9a5284b7707f",
+Cell[249514, 5266, 19705, 331, 70, "Output",ExpressionUUID->"f5e675fc-6734-402b-9fd9-610a9aa17251",
  CellTags->"RasterizedOutput",
- CellID->616562206]
+ CellID->1255466855]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[278258, 5680, 299, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
-"9f251032-8f9a-4456-904f-a0a9e82843d9"],
-Cell[278560, 5689, 175, 3, 70, "Input", "ExpressionUUID" -> \
-"363418d4-7ed3-41ba-9a3b-9a01ff8d8203",
+Cell[269268, 5603, 183, 5, 70, "ExampleSubsection",ExpressionUUID->"2269150f-34db-4006-bea0-7d62d3d1e627"],
+Cell[269454, 5610, 120, 3, 70, "Input",ExpressionUUID->"c05f05b2-7494-4d62-ab4a-081ed64add01",
  CellID->1434161611],
-Cell[278738, 5694, 171, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"7a584672-167d-42f3-9476-01f8414aed98",
+Cell[269577, 5615, 116, 3, 70, "ExampleText",ExpressionUUID->"31f8d671-72cd-4f23-a03a-b8eea2e58a65",
  CellID->909429499],
-Cell[278912, 5699, 172, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"a276f916-0004-4dd5-9189-25b6cbd42de1",
+Cell[269696, 5620, 117, 3, 70, "ExampleText",ExpressionUUID->"012536d2-6158-4ed8-8b4a-ccca4bda8689",
  CellID->925187653],
 Cell[CellGroupData[{
-Cell[279109, 5706, 1461, 35, 70, "Input", "ExpressionUUID" -> \
-"3ffa0669-d650-4527-a0c3-7d3c15b48b81",
+Cell[269838, 5627, 1406, 35, 70, "Input",ExpressionUUID->"b1143fe9-e631-4e9a-8a65-2a185b4c861b",
  CellID->1847279691],
-Cell[280573, 5743, 6638, 160, 70, "Output", "ExpressionUUID" -> \
-"97f6535c-0503-49b5-9c37-cd6feb780b90",
+Cell[271247, 5664, 6583, 160, 70, "Output",ExpressionUUID->"438b5e30-e1f3-4f54-9d58-9ad8e3673770",
  CellID->1594234738]
 }, Open  ]],
-Cell[287226, 5906, 186, 4, 70, "ExampleText", "ExpressionUUID" -> \
-"bb086b70-8af2-4264-a359-aefd9a67b98e",
+Cell[277845, 5827, 131, 4, 70, "ExampleText",ExpressionUUID->"b8ae9f4d-a5f5-4505-b0cf-9b39915d9c8a",
  CellID->2061038925],
 Cell[CellGroupData[{
-Cell[287437, 5914, 338, 8, 70, "Input", "ExpressionUUID" -> \
-"786cab8d-514f-4d49-94a4-39e421a5397c",
+Cell[278001, 5835, 283, 8, 70, "Input",ExpressionUUID->"ff4853bb-8197-4fd6-b2f7-e6319339cc96",
  CellID->245537058],
-Cell[287778, 5924, 302, 8, 70, "Output", "ExpressionUUID" -> \
-"25766564-6ff4-4d3e-b25f-0ee825804d17",
+Cell[278287, 5845, 247, 8, 70, "Output",ExpressionUUID->"cbd8f472-a1d0-4f82-a89f-111510cab933",
  CellID->752574334]
 }, Open  ]],
-Cell[288095, 5935, 132, 1, 70, "ExampleText", "ExpressionUUID" -> \
-"dbf7d427-41b1-4280-8ce5-74e042d4a80e",
+Cell[278549, 5856, 77, 1, 70, "ExampleText",ExpressionUUID->"8caa73c8-14f9-498d-87fc-3dd5afb8afe9",
  CellID->2139697664],
 Cell[CellGroupData[{
-Cell[288252, 5940, 315, 7, 70, "Input", "ExpressionUUID" -> \
-"08e036c8-57c2-462e-86b4-f5c7af959676",
+Cell[278651, 5861, 260, 7, 70, "Input",ExpressionUUID->"2f207bf7-ad1c-446f-8482-16f9178b5027",
  CellID->1058681958],
-Cell[288570, 5949, 20117, 337, 70, "Output", "ExpressionUUID" -> \
-"0904c660-15f4-46db-9781-b9c53846e101",
+Cell[278914, 5870, 20063, 337, 70, "Output",ExpressionUUID->"6057261f-041d-4b0b-a21f-11e6fb9143cb",
  CellTags->"RasterizedOutput",
- CellID->952399467]
+ CellID->1604600210]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[308736, 6292, 293, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
-"742989c5-5173-465c-8aa5-1715e1fb9704"],
-Cell[309032, 6301, 174, 3, 70, "Input", "ExpressionUUID" -> \
-"f6ff915f-67fa-4c23-ab72-e4574eaa6c1b",
+Cell[299026, 6213, 177, 5, 70, "ExampleSubsection",ExpressionUUID->"63cfb116-a39f-4a09-bd65-52cfea98d175"],
+Cell[299206, 6220, 119, 3, 70, "Input",ExpressionUUID->"edad404e-60cf-4c63-8261-588ddbe8bd45",
  CellID->391216212],
-Cell[309209, 6306, 245, 4, 70, "ExampleText", "ExpressionUUID" -> \
-"38b6784e-9c96-47a0-9939-acf6618a4046",
+Cell[299328, 6225, 190, 4, 70, "ExampleText",ExpressionUUID->"d84b8fcb-425f-4291-b273-ba53dad95240",
  CellID->429358118],
 Cell[CellGroupData[{
-Cell[309479, 6314, 176, 3, 70, "Input", "ExpressionUUID" -> \
-"73b25103-12d3-41bd-bcd1-b399d9034ba1",
+Cell[299543, 6233, 121, 3, 70, "Input",ExpressionUUID->"1fc7711d-c94c-4df5-8336-3916ecfcdbcb",
  CellID->652573937],
-Cell[309658, 6319, 1820, 32, 70, "Output", "ExpressionUUID" -> \
-"2fb5f317-166d-41c1-b3fe-a12ecd2f5589",
+Cell[299667, 6238, 1765, 32, 70, "Output",ExpressionUUID->"b9c58cab-9030-4f68-ac7a-59a288c7d46e",
  CellID->323783401]
 }, Open  ]],
-Cell[311493, 6354, 173, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"2135b1de-9192-4b81-b3da-3960e5a99e1a",
+Cell[301447, 6273, 118, 3, 70, "ExampleText",ExpressionUUID->"15523f11-9e04-4152-a60d-f1c5a00fcdc3",
  CellID->1365652711],
 Cell[CellGroupData[{
-Cell[311691, 6361, 1460, 35, 70, "Input", "ExpressionUUID" -> \
-"b4e1abc0-07ff-4ac3-b547-9b5d25051742",
+Cell[301590, 6280, 1405, 35, 70, "Input",ExpressionUUID->"f5407a23-a4a7-4af0-8b32-ab015a1bb66b",
  CellID->219894641],
-Cell[313154, 6398, 6636, 160, 70, "Output", "ExpressionUUID" -> \
-"6fc983aa-324e-4709-b478-d99c01ed0140",
+Cell[302998, 6317, 6581, 160, 70, "Output",ExpressionUUID->"5d5be996-3504-4684-a8f0-77c616ef7a31",
  CellID->73033006]
 }, Open  ]],
-Cell[319805, 6561, 297, 5, 70, "ExampleText", "ExpressionUUID" -> \
-"ebd7258e-3b4e-4c95-a34e-0eb87fd813bc",
+Cell[309594, 6480, 242, 5, 70, "ExampleText",ExpressionUUID->"f147e471-5772-4ff1-bab4-019dd4ed8353",
  CellID->1746650480],
 Cell[CellGroupData[{
-Cell[320127, 6570, 382, 9, 70, "Input", "ExpressionUUID" -> \
-"317ad73f-5878-4476-b6d0-0da135587b30",
+Cell[309861, 6489, 327, 9, 70, "Input",ExpressionUUID->"a6cb4d6e-146e-43b6-b0cf-50aaeb5b4a53",
  CellID->2097358447],
-Cell[320512, 6581, 19463, 326, 70, "Output", "ExpressionUUID" -> \
-"85caa3db-8621-4bbd-8965-30d3cff0920e",
+Cell[310191, 6500, 19407, 326, 70, "Output",ExpressionUUID->"5077d2b7-1f88-48c0-9fdf-e69b43fbf7e9",
  CellTags->"RasterizedOutput",
- CellID->1782220778]
+ CellID->416090444]
 }, Open  ]],
-Cell[339990, 6910, 189, 4, 70, "ExampleText", "ExpressionUUID" -> \
-"d335f8d4-d4d4-497d-bfa1-88b7c3dd9fa4",
+Cell[329613, 6829, 134, 4, 70, "ExampleText",ExpressionUUID->"176dbcc0-3d60-4307-b8ae-18f0a2ecb0f8",
  CellID->2056495457],
 Cell[CellGroupData[{
-Cell[340204, 6918, 318, 7, 70, "Input", "ExpressionUUID" -> \
-"97527788-fd85-4910-910d-a8f80b88d4a5",
+Cell[329772, 6837, 263, 7, 70, "Input",ExpressionUUID->"03bd677b-28b7-4724-9539-49d3adbec28f",
  CellID->1917330981],
-Cell[340525, 6927, 19450, 326, 70, "Output", "ExpressionUUID" -> \
-"6a45c485-eace-4aa0-a890-09cc3c49a4f6",
+Cell[330038, 6846, 19396, 326, 70, "Output",ExpressionUUID->"8729e0c4-4b1d-483e-af0a-2d88ba4fe242",
  CellTags->"RasterizedOutput",
- CellID->682707490]
+ CellID->1025337676]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[360024, 7259, 292, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
-"df7c4a2e-6e29-41e8-bc2a-c13ccec2b853"],
-Cell[360319, 7268, 175, 3, 70, "Input", "ExpressionUUID" -> \
-"07da3cb2-22ca-43ab-8a7b-0395cdffbf74",
+Cell[349483, 7178, 176, 5, 70, "ExampleSubsection",ExpressionUUID->"7e1964da-912d-4d1b-be4c-f12f3d88e82f"],
+Cell[349662, 7185, 120, 3, 70, "Input",ExpressionUUID->"5726ff32-ed08-4e48-b860-8f51b33f513a",
  CellID->1332660079],
-Cell[360497, 7273, 268, 6, 70, "ExampleText", "ExpressionUUID" -> \
-"b5b1e1b7-ea1d-45f5-87be-154d39a444da",
+Cell[349785, 7190, 213, 6, 70, "ExampleText",ExpressionUUID->"1bd25eb1-0276-415f-b2a3-d1337ad45f0c",
  CellID->423869031],
-Cell[360768, 7281, 173, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"ccea75eb-ed80-4354-9270-45e4588b6853",
+Cell[350001, 7198, 118, 3, 70, "ExampleText",ExpressionUUID->"a1ccc215-0ea9-4895-b33d-fc73e87db2d4",
  CellID->1506836871],
 Cell[CellGroupData[{
-Cell[360966, 7288, 1460, 35, 70, "Input", "ExpressionUUID" -> \
-"ef1dc5a9-ebb9-4946-ad5c-1733e470a905",
+Cell[350144, 7205, 1405, 35, 70, "Input",ExpressionUUID->"287d7869-b14b-4c7d-9ba7-96a54812ef5f",
  CellID->132641826],
-Cell[362429, 7325, 6638, 160, 70, "Output", "ExpressionUUID" -> \
-"c44f7228-60fc-489b-ba66-3c41c8403f36",
+Cell[351552, 7242, 6583, 160, 70, "Output",ExpressionUUID->"97dac3f4-986d-4036-85e3-78e03ebf505d",
  CellID->2019133358]
 }, Open  ]],
-Cell[369082, 7488, 145, 1, 70, "ExampleText", "ExpressionUUID" -> \
-"9c7dacd0-1a56-4e77-b435-3bac73407d3a",
+Cell[358150, 7405, 90, 1, 70, "ExampleText",ExpressionUUID->"719237ce-2f89-4beb-baf8-721a42aa135b",
  CellID->1246345056],
 Cell[CellGroupData[{
-Cell[369252, 7493, 296, 6, 70, "Input", "ExpressionUUID" -> \
-"66899c8c-a409-41b9-9b9e-244384f2422c",
+Cell[358265, 7410, 241, 6, 70, "Input",ExpressionUUID->"6220b435-0f57-4c65-8f64-9bdfe5f084fb",
  CellID->223143996],
-Cell[369551, 7501, 19462, 326, 70, "Output", "ExpressionUUID" -> \
-"7290e59d-d10f-4099-b699-ad8cbe37e608",
+Cell[358509, 7418, 19408, 326, 70, "Output",ExpressionUUID->"118dae61-0f7e-4dc8-b2ff-d73483833db6",
  CellTags->"RasterizedOutput",
- CellID->259658509]
+ CellID->1441537004]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[389062, 7833, 293, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
-"fc40bdad-0d34-4d09-96e5-0c250402ffec"],
-Cell[389358, 7842, 174, 3, 70, "Input", "ExpressionUUID" -> \
-"1c7b758c-54dc-4931-93ea-801f1e378e59",
+Cell[377966, 7750, 177, 5, 70, "ExampleSubsection",ExpressionUUID->"ba3d1e60-4151-45cd-a24f-d24ae921e4e1"],
+Cell[378146, 7757, 119, 3, 70, "Input",ExpressionUUID->"46b45c54-15f4-41a2-b106-1eb530be204d",
  CellID->455366533],
-Cell[389535, 7847, 214, 4, 70, "ExampleText", "ExpressionUUID" -> \
-"dab5357b-4955-4446-ba2a-dec9913c248e",
+Cell[378268, 7762, 159, 4, 70, "ExampleText",ExpressionUUID->"e1565c63-8afc-4b2b-b970-733bfea73f96",
  CellID->1742877950],
-Cell[389752, 7853, 172, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"b70f42cc-f6eb-461d-9ded-c872f302276e",
+Cell[378430, 7768, 117, 3, 70, "ExampleText",ExpressionUUID->"60f26a3c-b211-4533-a65d-cdd703d3eedf",
  CellID->874693110],
 Cell[CellGroupData[{
-Cell[389949, 7860, 1461, 35, 70, "Input", "ExpressionUUID" -> \
-"1530f446-ae5d-4631-9574-6d7726cfa2ca",
+Cell[378572, 7775, 1406, 35, 70, "Input",ExpressionUUID->"54a5c516-c242-45c0-bae5-d418906723e2",
  CellID->1441536055],
-Cell[391413, 7897, 6638, 160, 70, "Output", "ExpressionUUID" -> \
-"266ca6b5-8663-46b6-9e91-092f989545b4",
+Cell[379981, 7812, 6583, 160, 70, "Output",ExpressionUUID->"26ec3c03-35c2-4bdf-9d6e-943639937f0f",
  CellID->1960602361]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[398088, 8062, 296, 6, 70, "Input", "ExpressionUUID" -> \
-"81020851-5843-4e29-b665-0b13efa24495",
+Cell[386601, 7977, 241, 6, 70, "Input",ExpressionUUID->"dd8a6c40-3a9b-43b8-ad98-bc11aa8e1d1c",
  CellID->2133454578],
-Cell[398387, 8070, 19462, 326, 70, "Output", "ExpressionUUID" -> \
-"9a0889f2-69c5-4ce5-8761-4db424a4b365",
+Cell[386845, 7985, 19405, 326, 70, "Output",ExpressionUUID->"33d6e93e-54ca-44e7-bfe9-a11635f87d88",
  CellTags->"RasterizedOutput",
- CellID->393790059]
+ CellID->1920774]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[417886, 8401, 298, 6, 70, "Input", "ExpressionUUID" -> \
-"1a1bdd95-55da-4ba2-8876-1ee1f91e58a3",
+Cell[406287, 8316, 243, 6, 70, "Input",ExpressionUUID->"f89a5c7f-e162-4e8d-b189-ccc5f1d54b89",
  CellID->1464833060],
-Cell[418187, 8409, 19329, 324, 70, "Output", "ExpressionUUID" -> \
-"f2a724f0-6c5c-4c6a-b19f-8b51fad32ead",
+Cell[406533, 8324, 19272, 324, 70, "Output",ExpressionUUID->"b1b80a13-0b7b-48de-9db6-645a031b1f5a",
  CellTags->"RasterizedOutput",
- CellID->2032405206]
+ CellID->70193913]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[437553, 8738, 297, 6, 70, "Input", "ExpressionUUID" -> \
-"1898f648-b6f6-46c1-90f5-bb57b8745c16",
+Cell[425842, 8653, 242, 6, 70, "Input",ExpressionUUID->"a0b3ca2a-10f9-4e45-a026-2e96c55c743f",
  CellID->713719771],
-Cell[437853, 8746, 19466, 326, 70, "Output", "ExpressionUUID" -> \
-"9d255ce6-01fc-4bce-8c8f-296411ffabf2",
+Cell[426087, 8661, 19411, 326, 70, "Output",ExpressionUUID->"e62275f4-d3fb-4456-9c34-86e10ff219fd",
  CellTags->"RasterizedOutput",
- CellID->759408060]
+ CellID->780573588]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[457368, 9078, 315, 7, 70, "ExampleSubsection", "ExpressionUUID" -> \
-"739a4850-bd62-4182-aba7-4f45badbb21f",
+Cell[445547, 8993, 202, 6, 70, "ExampleSubsection",ExpressionUUID->"3f4ea3eb-0e5c-467b-8578-678fd256b711",
  CellID->1454904833],
-Cell[457686, 9087, 175, 3, 70, "Input", "ExpressionUUID" -> \
-"084b9f28-48c4-41b6-afed-997ed70d1cc7",
+Cell[445752, 9001, 120, 3, 70, "Input",ExpressionUUID->"ab8178e8-8c71-4fa9-96cb-ab7b29223327",
  CellID->1336723489],
-Cell[457864, 9092, 168, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"44f3936a-4962-44b6-9e33-58936e703493",
+Cell[445875, 9006, 113, 3, 70, "ExampleText",ExpressionUUID->"cbd54875-f30c-4fc6-8aa1-d924bcd81429",
  CellID->1485248356],
-Cell[458035, 9097, 172, 3, 70, "ExampleText", "ExpressionUUID" -> \
-"8dc622b5-8790-4d0b-b179-130cd7c350f5",
+Cell[445991, 9011, 117, 3, 70, "ExampleText",ExpressionUUID->"439418d0-9e2f-4f99-b946-42853eb31eda",
  CellID->219206564],
 Cell[CellGroupData[{
-Cell[458232, 9104, 1461, 35, 70, "Input", "ExpressionUUID" -> \
-"7effc5de-62d6-49cc-a7cb-140490707edd",
+Cell[446133, 9018, 1406, 35, 70, "Input",ExpressionUUID->"514b711d-d0e7-4e73-8f0d-be21f842d366",
  CellID->1270266543],
-Cell[459696, 9141, 6638, 160, 70, "Output", "ExpressionUUID" -> \
-"44b4a1ff-5cf0-472e-a6a8-ae8514eccd80",
+Cell[447542, 9055, 6583, 160, 70, "Output",ExpressionUUID->"5c20e5f8-7b15-4f72-934b-351b5f14892d",
  CellID->1200342537]
 }, Open  ]],
-Cell[466349, 9304, 203, 4, 70, "ExampleText", "ExpressionUUID" -> \
-"af63137a-6427-483d-846a-c39036e8ebb9",
+Cell[454140, 9218, 148, 4, 70, "ExampleText",ExpressionUUID->"0aa79419-198d-4da1-a0c8-10d53c7158ff",
  CellID->2036625832],
 Cell[CellGroupData[{
-Cell[466577, 9312, 336, 8, 70, "Input", "ExpressionUUID" -> \
-"6d821c0b-f644-4b1a-9bcf-d4d3976c9473",
+Cell[454313, 9226, 281, 8, 70, "Input",ExpressionUUID->"97eac6c7-b2b2-42af-bac1-72e877ac0cb8",
  CellID->788098853],
-Cell[466916, 9322, 302, 8, 70, "Output", "ExpressionUUID" -> \
-"ee295e5d-c069-499d-8034-749c2af7fa44",
+Cell[454597, 9236, 247, 8, 70, "Output",ExpressionUUID->"97aa9015-e1f9-4bff-98ce-933275938189",
  CellID->763238724]
 }, Open  ]],
-Cell[467233, 9333, 131, 1, 70, "ExampleText", "ExpressionUUID" -> \
-"9c3ac12f-6254-413f-81a1-f05109e2c02b",
+Cell[454859, 9247, 76, 1, 70, "ExampleText",ExpressionUUID->"d5b142cf-12f0-4a49-b80e-78ff02b8c903",
  CellID->898692210],
 Cell[CellGroupData[{
-Cell[467389, 9338, 310, 7, 70, "Input", "ExpressionUUID" -> \
-"2f3d3a32-1740-4c47-a9f0-b22602c43349",
+Cell[454960, 9252, 255, 7, 70, "Input",ExpressionUUID->"e7d3ddcd-9cb5-4910-b111-ccde6f5affc8",
  CellID->1067484119],
-Cell[467702, 9347, 20674, 346, 70, "Output", "ExpressionUUID" -> \
-"8448bbf4-bf76-4671-8b14-e64647330820",
+Cell[455218, 9261, 20619, 346, 70, "Output",ExpressionUUID->"9ec21248-9ba4-4bcb-afb3-391e17e17a25",
  CellTags->"RasterizedOutput",
- CellID->875950299]
+ CellID->122693993]
 }, Open  ]]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[488437, 9700, 317, 7, 70, "ExampleSection", "ExpressionUUID" -> \
-"6e92a6fe-0817-44ac-bb25-11bf1ba62274",
+Cell[475898, 9614, 204, 6, 70, "ExampleSection",ExpressionUUID->"3d0f344d-0904-4ae8-af5d-49a275c63d31",
  CellID->2123667759],
-Cell[488757, 9709, 820, 21, 70, "ExampleText", "ExpressionUUID" -> \
-"d64a3617-b747-4707-81f2-19a34c2c5d28",
+Cell[476105, 9622, 589, 17, 70, "ExampleText",ExpressionUUID->"301e2c01-f723-41f4-82d1-055589ece23b",
  CellID->625110717]
 }, Closed]],
-Cell[489592, 9733, 86, 0, 70, "SectionFooterSpacer", "ExpressionUUID" -> \
-"872286a8-48cd-403a-b9ad-59821527ba66"]
+Cell[476709, 9642, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"7166ce2d-e246-4b28-974b-9351a15ed0ea"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[489715, 9738, 402, 13, 70, "SeeAlsoSection", "ExpressionUUID" -> \
-"0fc5cad8-af75-4dd5-a3f1-ef00ac601beb",
+Cell[476777, 9647, 150, 7, 70, "SeeAlsoSection",ExpressionUUID->"0bc30108-19ec-4beb-b79a-1c99de495ab6",
  CellID->1255426704],
-Cell[490120, 9753, 3609, 95, 70, "SeeAlso", "ExpressionUUID" -> \
-"ecd967c9-c294-413d-9340-24f3d92c50ea",
+Cell[476930, 9656, 3032, 86, 70, "SeeAlso",ExpressionUUID->"0ea5260e-4940-4c35-a63a-6303bb7f7fe8",
  CellID->929782353]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[493766, 9853, 404, 13, 70, "TutorialsSection", "ExpressionUUID" -> \
-"e24b1d07-d0ae-41e1-8462-92247f68fb9b",
+Cell[479999, 9747, 152, 7, 70, "TutorialsSection",ExpressionUUID->"70a16ffb-ea45-4a1d-8695-7ed50d1cb0b0",
  CellID->250839057],
-Cell[494173, 9868, 86, 0, 70, "SectionHeaderSpacer", "ExpressionUUID" -> \
-"df7a375e-5ea2-4e8b-8947-97c388974bb4"],
-Cell[494262, 9870, 253, 6, 70, "Tutorials", "ExpressionUUID" -> \
-"c06c7ab4-a830-4549-94e7-8d9b3417dff6",
+Cell[480154, 9756, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"7d2840fe-2f46-4cbb-a15c-7264a4f0ff24"],
+Cell[480188, 9758, 198, 6, 70, "Tutorials",ExpressionUUID->"34e7b136-7e49-45aa-a8a6-0605bdba254e",
  CellID->341631938],
-Cell[494518, 9878, 278, 6, 70, "Tutorials", "ExpressionUUID" -> \
-"55bf54a8-57ba-4b6d-a3ed-0a4975059446",
+Cell[480389, 9766, 223, 6, 70, "Tutorials",ExpressionUUID->"b59d8eed-43e6-4d94-831b-1c793c787afa",
  CellID->446304022],
-Cell[494799, 9886, 86, 0, 70, "SectionFooterSpacer", "ExpressionUUID" -> \
-"e2b22a98-cb2e-4dfe-b30d-4d6a51a83ae5"]
+Cell[480615, 9774, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"82e4e958-b79c-40f7-a14b-d16bd089319e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[494922, 9891, 408, 13, 70, "MoreAboutSection", "ExpressionUUID" -> \
-"d43abbcf-0572-4dcc-bec4-734942035e0a",
+Cell[480683, 9779, 156, 7, 70, "MoreAboutSection",ExpressionUUID->"482c9894-8c29-4429-8fca-e98feab927bb",
  CellID->38303248],
-Cell[495333, 9906, 86, 0, 70, "SectionHeaderSpacer", "ExpressionUUID" -> \
-"112a6e47-1fb6-4d0e-81cc-a3c05a0cbeea"],
-Cell[495422, 9908, 241, 5, 70, "MoreAbout", "ExpressionUUID" -> \
-"155f59ce-973b-4c03-ba75-83c8598c8373",
- CellID->1360266765],
-Cell[495666, 9915, 86, 0, 70, "SectionFooterSpacer", "ExpressionUUID" -> \
-"57a85cd1-cae7-4793-b86a-ef48b71c25e2"]
+Cell[480842, 9788, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"17f794de-27bf-40f6-9e86-aed2aede5a1d"],
+Cell[480876, 9790, 186, 5, 70, "MoreAbout",ExpressionUUID->"9191aa75-a78c-4ae8-b685-0cb6209e4fe9",
+ CellID->1903871127],
+Cell[481065, 9797, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"de8fec57-2d5d-40c7-8ead-8655e051d701"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[495789, 9920, 412, 13, 70, "RelatedLinksSection", "ExpressionUUID" -> \
-"d9239420-87ee-4609-a657-7e48d55fce6d",
+Cell[481133, 9802, 160, 7, 70, "RelatedLinksSection",ExpressionUUID->"67cd1e9e-1d04-40b5-91db-5a496a70cdad",
  CellID->1584193535],
-Cell[496204, 9935, 86, 0, 70, "SectionHeaderSpacer", "ExpressionUUID" -> \
-"b724517d-318c-4016-b43d-f042f27149ff"],
-Cell[496293, 9937, 246, 5, 70, "RelatedLinks", "ExpressionUUID" -> \
-"a2f1a243-edd8-48aa-b508-93c6c6e7f0c3",
+Cell[481296, 9811, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"11a47e5e-e124-4133-a85e-4bdff9f0acca"],
+Cell[481330, 9813, 191, 5, 70, "RelatedLinks",ExpressionUUID->"c3251141-a04f-45d9-a3e0-f777d9beaa53",
  CellID->1038487239],
-Cell[496542, 9944, 259, 6, 70, "RelatedLinks", "ExpressionUUID" -> \
-"63b18bf4-fade-4737-af6d-7760d620d2de",
+Cell[481524, 9820, 204, 6, 70, "RelatedLinks",ExpressionUUID->"9fa28a86-820e-45e2-97d3-72df73033727",
  CellID->1970164909]
 }, Open  ]],
-Cell[496816, 9953, 78, 0, 70, "FooterCell", "ExpressionUUID" -> \
-"5eca2244-0bf5-4562-9811-0d1b38e4dee2"]
+Cell[481743, 9829, 23, 0, 70, "FooterCell",ExpressionUUID->"e4819cbe-5542-42d5-b8de-08b3d3f3a5e8"]
 }
 ]
 *)

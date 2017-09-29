@@ -2966,7 +2966,7 @@ DataImporterDirectLabeled[sampleRules_, fileList_, headerLines_,
                    #
                ] &@
                 MapIndexed[interA[[#2[[1]]]][#1] &, varName, {5}][[All, 
-                  2]][[#2[[1]]]]}, HeaderLines -> hdrLines],
+                  2]][[#2[[1]]]]}][[(1 + hdrLines) ;;]],
              "TSV", 
              Import[fiNames[[#2[[1]]]], {"Data", All, 
                If[ Length[#] == 1,
@@ -2975,7 +2975,7 @@ DataImporterDirectLabeled[sampleRules_, fileList_, headerLines_,
                ] &@
                 
                 MapIndexed[interA[[#2[[1]]]][#1] &, varName, {5}][[All, 
-                  2]][[#2[[1]]]]}, HeaderLines -> hdrLines],
+                  2]][[#2[[1]]]]}][[(1 + hdrLines) ;;]],
              "XLSX", 
              Import[fiNames[[#2[[1]]]], {"Data", 1, All, 
                 If[ Length[#] == 1,
@@ -2991,7 +2991,7 @@ DataImporterDirectLabeled[sampleRules_, fileList_, headerLines_,
                    #
                ] &@
                 MapIndexed[interA[[#2[[1]]]][#1] &, varName, {5}][[All, 
-                  2]][[#2[[1]]]]}, HeaderLines -> hdrLines],
+                  2]][[#2[[1]]]]}][[(1 + hdrLines) ;;]],
              _,
              Message[FileSelector::argx, ""];
              Print["Invalid File Format ", 
@@ -3057,15 +3057,13 @@ DataImporterDirect[positionsList_, fileList_, headerLines_,
                If[ Length[#] == 1,
                    Flatten[#, 1],
                    #
-               ] &@varName[[#2[[1]]]]}, 
-              HeaderLines -> hdrLines],
+               ] &@varName[[#2[[1]]]]}][[(1 + hdrLines) ;;]],
              "TSV", 
              Import[fiNames[[#2[[1]]]], {"Data", All, 
                If[ Length[#] == 1,
                    Flatten[#, 1],
                    #
-               ] &@varName[[#2[[1]]]]}, 
-              HeaderLines -> hdrLines],
+               ] &@varName[[#2[[1]]]]}][[(1 + hdrLines) ;;]],
              "XLSX", 
              Import[fiNames[[#2[[1]]]], {"Data", 1, All, 
                 If[ Length[#] == 1,
@@ -3078,8 +3076,7 @@ DataImporterDirect[positionsList_, fileList_, headerLines_,
                If[ Length[#] == 1,
                    Flatten[#, 1],
                    #
-               ] &@varName[[#2[[1]]]]}, 
-              HeaderLines -> hdrLines],
+               ] &@varName[[#2[[1]]]]}][[(1 + hdrLines) ;;]],
              _,
              Message[FileSelector::argx, ""];
              Print["Invalid File Format ", 
