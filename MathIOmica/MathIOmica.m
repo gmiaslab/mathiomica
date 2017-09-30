@@ -2957,45 +2957,40 @@ DataImporterDirectLabeled[sampleRules_, fileList_, headerLines_,
       sampleKind = Flatten@{OptionValue[SampleKind]}, returning, dataIn, 
       associationIn},
         DistributeDefinitions[varName,interA,fiNames,hdrLines,sampleKind];
-        dataIn = 
-         Parallelize@MapIndexed[Switch[FileFormat[fiNames[[#2[[1]]]]],
-             "CSV", 
-             Import[fiNames[[#2[[1]]]], {"Data", All, 
-               If[ Length[#] == 1,
-                   Flatten[#, 1],
-                   #
-               ] &@
-                MapIndexed[interA[[#2[[1]]]][#1] &, varName, {5}][[All, 
-                  2]][[#2[[1]]]]}][[(1 + hdrLines) ;;]],
-             "TSV", 
-             Import[fiNames[[#2[[1]]]], {"Data", All, 
-               If[ Length[#] == 1,
-                   Flatten[#, 1],
-                   #
-               ] &@
-                
-                MapIndexed[interA[[#2[[1]]]][#1] &, varName, {5}][[All, 
-                  2]][[#2[[1]]]]}][[(1 + hdrLines) ;;]],
-             "XLSX", 
-             Import[fiNames[[#2[[1]]]], {"Data", 1, All, 
-                If[ Length[#] == 1,
-                    Flatten[#, 1],
-                    #
-                ] &@
-                 MapIndexed[interA[[#2[[1]]]][#1] &, varName, {5}][[All, 
-                   2]][[#2[[1]]]]}][[(1 + hdrLines) ;;]],
-             "Text", 
-             Import[fiNames[[#2[[1]]]], {"Data", All, 
-               If[ Length[#] == 1,
-                   Flatten[#, 1],
-                   #
-               ] &@
-                MapIndexed[interA[[#2[[1]]]][#1] &, varName, {5}][[All, 
-                  2]][[#2[[1]]]]}][[(1 + hdrLines) ;;]],
-             _,
-             Message[FileSelector::argx, ""];
-             Print["Invalid File Format ", 
-              FileFormat[fiNames[[#2[[1]]]]]]] &, interA];
+        dataIn = Parallelize@
+        MapIndexed[
+        Switch[FileFormat[fiNames[[#2[[1]]]]], "CSV", 
+        Query[(1 + hdrLines) ;;, 
+        If[ Length[#] == 1,
+            Flatten[#, 1],
+            #
+        ] &@
+        MapIndexed[interA[[#2[[1]]]][#1] &, varName, {5}][[All, 
+           2]][[#2[[1]]]]]@Import[fiNames[[#2[[1]]]]], "TSV", 
+        Query[(1 + hdrLines) ;;, 
+        If[ Length[#] == 1,
+            Flatten[#, 1],
+            #
+        ] &@
+        MapIndexed[interA[[#2[[1]]]][#1] &, varName, {5}][[All, 
+           2]][[#2[[1]]]]]@Import[fiNames[[#2[[1]]]]], "XLSX", 
+        Query[1, (1 + hdrLines) ;;, 
+        If[ Length[#] == 1,
+            Flatten[#, 1],
+            #
+        ] &@
+        MapIndexed[interA[[#2[[1]]]][#1] &, varName, {5}][[All, 
+           2]][[#2[[1]]]]]@Import[fiNames[[#2[[1]]]], "Data"], "Text",
+        Query[(1 + hdrLines) ;;, 
+        If[ Length[#] == 1,
+            Flatten[#, 1],
+            #
+        ] &@
+        MapIndexed[interA[[#2[[1]]]][#1] &, varName, {5}][[All, 
+           2]][[#2[[1]]]]]@Import[fiNames[[#2[[1]]]], "Data"], _, 
+        Message[FileSelector::argx, ""];
+        Print["Invalid File Format ", FileFormat[fiNames[[#2[[1]]]]]]] &,
+        interA];
         (*dataIn imported correct columns based on input file type*)
         \
       (*create the association using input association names for samples*)
@@ -3049,76 +3044,75 @@ DataImporterDirect[positionsList_, fileList_, headerLines_,
       aLabels = OptionValue[AssociationLabels], 
       sampleKind = Flatten@{OptionValue[SampleKind]}, returning, dataIn, 
       associationIn},
-        DistributeDefinitions[varName,fiNames,hdrLines,sampleKind];
-        dataIn = 
-         Parallelize@MapIndexed[Switch[FileFormat[fiNames[[#2[[1]]]]],
-             "CSV", 
-             Import[fiNames[[#2[[1]]]], {"Data", All, 
-               If[ Length[#] == 1,
-                   Flatten[#, 1],
-                   #
-               ] &@varName[[#2[[1]]]]}][[(1 + hdrLines) ;;]],
-             "TSV", 
-             Import[fiNames[[#2[[1]]]], {"Data", All, 
-               If[ Length[#] == 1,
-                   Flatten[#, 1],
-                   #
-               ] &@varName[[#2[[1]]]]}][[(1 + hdrLines) ;;]],
-             "XLSX", 
-             Import[fiNames[[#2[[1]]]], {"Data", 1, All, 
-                If[ Length[#] == 1,
-                    Flatten[#, 1],
-                    #
-                ] &@
-                 varName[[#2[[1]]]]}][[(1 + hdrLines) ;;]],
-             "Text", 
-             Import[fiNames[[#2[[1]]]], {"Data", All, 
-               If[ Length[#] == 1,
-                   Flatten[#, 1],
-                   #
-               ] &@varName[[#2[[1]]]]}][[(1 + hdrLines) ;;]],
-             _,
-             Message[FileSelector::argx, ""];
-             Print["Invalid File Format ", 
-              FileFormat[fiNames[[#2[[1]]]]]]] &, 
-           Range[(Length[#] &@varName)]];
+    DistributeDefinitions[varName,fiNames,hdrLines,sampleKind];
+    dataIn = 
+     Parallelize@
+    MapIndexed[
+    Switch[FileFormat[fiNames[[#2[[1]]]]], "CSV", 
+    Query[(1 + hdrLines) ;;, 
+    If[ Length[#] == 1,
+        Flatten[#, 1],
+        #
+    ] &@varName[[#2[[1]]]]]@
+    Import[fiNames[[#2[[1]]]]], "TSV", 
+    Query[(1 + hdrLines) ;;, 
+    If[ Length[#] == 1,
+        Flatten[#, 1],
+        #
+    ] &@varName[[#2[[1]]]]]@
+    Import[fiNames[[#2[[1]]]]], "XLSX", 
+    Query[1, (1 + hdrLines) ;;, 
+    If[ Length[#] == 1,
+        Flatten[#, 1],
+        #
+    ] &@varName[[#2[[1]]]]]@
+    Import[fiNames[[#2[[1]]]], "Data"], "Text", 
+    Query[(1 + hdrLines) ;;, 
+    If[ Length[#] == 1,
+        Flatten[#, 1],
+        #
+    ] &@varName[[#2[[1]]]]]@
+    Import[fiNames[[#2[[1]]]], "Data"], _, 
+    Message[FileSelector::argx, ""];
+    Print["Invalid File Format ", FileFormat[fiNames[[#2[[1]]]]]]] &, 
+    Range[(Length[#] &@varName)]];
         (*dataIn imported correct columns based on input file type*)
         \
       (*create the association using indexed association names for files <i>
         f<file number>*)
-        associationIn = 
-         Parallelize[
-          AssociationThread[#[[1]] -> #[[2]]] & /@ 
-           Transpose[{MapIndexed[
-              Table["Other" <> ToString[i] <> "f" <> ToString[#2[[1]]], {i, 
-                 1, Length[#1]}] &, varName], 
-             Map[If[ Depth[#] == 4,
-                     {Association@
-                     Map[Join[#[[1]], sampleKind] -> #[[2 ;;]] &, #]},
-                     Association[#] & /@ 
-                      Map[Join[#[[1]], sampleKind] -> #[[2 ;;]] &, 
-                       Transpose[#], {2}]
-                 ] &, dataIn]}]];
+    associationIn = 
+     Parallelize[
+      AssociationThread[#[[1]] -> #[[2]]] & /@ 
+       Transpose[{MapIndexed[
+          Table["Other" <> ToString[i] <> "f" <> ToString[#2[[1]]], {i, 
+             1, Length[#1]}] &, varName], 
+         Map[If[ Depth[#] == 4,
+                 {Association@
+                 Map[Join[#[[1]], sampleKind] -> #[[2 ;;]] &, #]},
+                 Association[#] & /@ 
+                  Map[Join[#[[1]], sampleKind] -> #[[2 ;;]] &, 
+                   Transpose[#], {2}]
+             ] &, dataIn]}]];
         (*create main result by unionizing keys across the input sample \
       points*)
-        returning = 
-         Query[All, All, 
-           If[ MissingQ[#],
+    returning = 
+     Query[All, All, 
+       If[ MissingQ[#],
+           Missing[],
+           If[ Count[Flatten[{#[[1]]}], ""] != 0,
                Missing[],
-               If[ Count[Flatten[{#[[1]]}], ""] != 0,
-                   Missing[],
-                   #
-               ]
-           ] &]@(AssociationThread[
-              Keys[#] -> KeyUnion[Values[#]]] &@(Join @@ associationIn));
-        If[ MatchQ[aLabels, None],
-            Return[returning],
+               #
+           ]
+       ] &]@(AssociationThread[
+          Keys[#] -> KeyUnion[Values[#]]] &@(Join @@ associationIn));
+    If[ MatchQ[aLabels, None],
+        Return[returning],
             (*if there are labels then rename the output keys*)
-            returning = 
-             KeyMap[AssociationThread[Keys[returning], aLabels]]@returning
-        ];
-        Return[returning]
-    ]  
+        returning = 
+         KeyMap[AssociationThread[Keys[returning], aLabels]]@returning
+    ];
+    Return[returning]
+]  
 
 (* ::Function:: *)
 (* f:PanelImport *)
