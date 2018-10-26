@@ -3,7 +3,7 @@
 (* Created by the Wolfram Workbench Nov 25, 2015 *)
 (*The MIT License (MIT)
 
-Copyright (c) 2016-17 George I. Mias, G. Mias Lab, Department of Biochemistry and Molecular Biology, Michigan State University, East Lansing 48824.
+Copyright (c) 2016-18 George I. Mias, G. Mias Lab, Department of Biochemistry and Molecular Biology, Michigan State University, East Lansing 48824.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -607,7 +607,7 @@ VocabularyVariable::usage="VocabularyVariable is an option for MSViewer that pro
 Begin["`Private`"]
 (* ::Section:: *)
 (*#####Intro#####*)
-Print["MathIOmica (", Hyperlink["http://mathiomica.org"], "),", 
+Print["MathIOmica (", Hyperlink["https://mathiomica.org"], "),", 
  Style[" by ", Italic], 
  Hyperlink[Style["G. Mias Lab", Italic], 
   "http://georgemias.org"], "."];
@@ -10727,7 +10727,7 @@ KEGGPathwayVisual[KEGGPathway_, OptionsPattern[]] :=
   (*If no individul members of pathway provided in either method return the \
 pathway only*)
         If[ MatchQ[members, All] && MatchQ[ora, False] && MatchQ[data, None],
-            urls = {"http://www.kegg.jp/kegg-bin/show_pathway?map=" <> (StringSplit[#, 
+            urls = {"https://www.kegg.jp/kegg-bin/show_pathway?map=" <> (StringSplit[#, 
                     ":"][[-1]] &@pathNm)},
             hexMap = 
              StringJoin[(IntegerString[Round[{#[[1]], #[[2]], #[[3]]}*255], 
@@ -10935,7 +10935,7 @@ provide a GeneDictionary option variable."]
             urls = Query[
                All /* KeyValueMap[
                  StringJoin[StringReplace[#1, ":" -> "%3A"] <> "+", #2] &] /* 
-                StringJoin /* ("http://www.kegg.jp/kegg-bin/show_pathway?map=" <> \
+                StringJoin /* ("https://www.kegg.jp/kegg-bin/show_pathway?map=" <> \
             (StringSplit[#, ":"][[-1]] &@pathNm) <> "&multi_query=" <> # &), 
                If[ MissingQ[#["bg"]],
                    "%23" <> (hexMap@defaultC["bg"]) <> "%2C",
@@ -10954,7 +10954,7 @@ provide a GeneDictionary option variable."]
           (*get Image Location*)
           
           Flatten@((Import[
-                  "http://www.kegg.jp" <> #] &@(DeleteCases[
+                  "https://www.kegg.jp" <> #] &@(DeleteCases[
                     StringCases[
                      Cases[#, 
                       XMLElement["img", {___, "src" -> src_, ___}, _] :> 
@@ -10973,7 +10973,7 @@ provide a GeneDictionary option variable."]
                      movieFile
                  ], 
            Flatten@((Import[
-                   "http://www.kegg.jp" <> #] &@(DeleteCases[
+                   "https://www.kegg.jp" <> #] &@(DeleteCases[
                      StringCases[
                       Cases[#, 
                        XMLElement["img", {___, "src" -> src_, ___}, _] :> 

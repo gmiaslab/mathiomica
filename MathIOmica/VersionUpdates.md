@@ -1,3 +1,24 @@
+**Updates in MathIOmica 1.1.3**
+1. New Functions
+	* None
+2. Source Code
+	* KEGG Pathway modification from http to https URLs.
+3. Documentation
+    * KEGGPathwayVisual Updated
+    * KEGGAnalysisAssigner
+    * KEGGDictionary
+    * MathIOmica Overview
+    * MathIOmica Dynamic Transcriptome
+	
+**Updates in MathIOmica 1.1.2**
+1. New Functions
+	* None
+2. Source Code
+	* Addressed performance issues when importing files, relating to Mathematica 11.2 updates of Import and incompatibility with specifying number of "HeaderLines". Internal code for importers updated to use Query for faster imports.
+3. Documentation
+	* None
+
+
 **Updates in MathIOmica 1.1.1**
 1. New Functions
 	* None
