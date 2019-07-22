@@ -1,4 +1,4 @@
-**Updates in MathIOmica 1.2.0 PENDING**
+**Updates in MathIOmica 1.2.0**
 1. New Functions
 	* ApplyBoxCoxTransformExtended
 	* BoxCoxTransformExtended
