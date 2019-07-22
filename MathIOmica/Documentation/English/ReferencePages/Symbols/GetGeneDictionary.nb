@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 11.3' *)
+(* CreatedBy='Mathematica 12.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    172862,       4486]
-NotebookOptionsPosition[    158452,       4192]
-NotebookOutlinePosition[    160758,       4251]
-CellTagsIndexPosition[    160671,       4246]
+NotebookDataLength[    170373,       4437]
+NotebookOptionsPosition[    156008,       4145]
+NotebookOutlinePosition[    158278,       4202]
+CellTagsIndexPosition[    158191,       4197]
 WindowTitle->GetGeneDictionary
 WindowFrame->Normal*)
 
@@ -140,7 +140,7 @@ GetGeneDictionary.html"], StandardForm]], "Input", TextClipboardType ->
            URL[
             StringJoin[
              If[
-              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$28841], 
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$29974], 
               "http://reference.wolfram.com/system-modeler/", 
               "http://reference.wolfram.com/language/"], 
              "MathIOmica/ref/GetGeneDictionary", ".html"]], None}]}]},
@@ -171,9 +171,7 @@ search - typically of gene annotations."
     }]]}
   }]], "Usage",
  GridBoxOptions->{
- GridBoxBackground->{
-  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
-   "RowsIndexed" -> {}}}]
+ GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {{None}}}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -197,7 +195,7 @@ Cell[TextData[Cell[BoxData[
   Method->"Preemptive"]]]], "NotesSection",
  WholeCellGroupOpener->True,
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->1678265714],
+ CellID->252466204],
 
 Cell["", "SectionHeaderSpacer"],
 
@@ -325,7 +323,7 @@ Cell[TextData[{
  " possible annotations all have the same number of ",
  Cell[BoxData[
   SubscriptBox["n", "i"]], "InlineFormula"],
- " entities sorted in the same order corresponding to the samy entity (e.g. \
+ " entities sorted in the same order corresponding to the same entity (e.g. \
 the same gene). In other words entry ",
  Cell[BoxData["j"], "InlineFormula"],
  " across kinds of IDs corresponds to the same entity."
@@ -469,9 +467,8 @@ UCSCSQLString.\
   }]], "3ColumnTableMod",
  GridBoxOptions->{
  GridBoxBackground->{
-  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, 
-   "Rows" -> {None, None, None, None, None, None, {None}}, 
-   "RowsIndexed" -> {}},
+  "Columns" -> {{None}}, 
+   "Rows" -> {None, None, None, None, None, None, {None}}},
  GridBoxDividers->{
   "Rows" -> {{True, True, True, True, True, True, True, True}}}},
  CellID->1255376363],
@@ -491,7 +488,7 @@ Cell[TextData[{
 }], "PrimaryExamplesSection",
  WholeCellGroupOpener->True,
  CellTags->"PrimaryExamplesSection",
- CellID->1561635500],
+ CellID->1919287803],
 
 Cell[CellGroupData[{
 
@@ -501,7 +498,7 @@ Cell[TextData[{
  Cell["(1)", "ExampleCount"]
 }], "ExampleSection", "ExampleSection",
  WholeCellGroupOpener->True,
- CellID->2010198513],
+ CellID->118243434],
 
 Cell["First we need to load the MathIOmica package:", "ExampleText",
  CellID->158760191],
@@ -545,77 +542,55 @@ Cell[BoxData[
                 ",", "\<\"uc001aaq.2\"\>", ",", "\<\"uc001aar.2\"\>", 
                 ",", "\<\"uc001aau.3\"\>", ",", 
                 TemplateBox[{"121569"},
-                 "OutputSizeLimit`Skeleton",
-                 DisplayFunction->(FrameBox[
-                   
-                   RowBox[{
-                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                   Background -> GrayLevel[0.75], 
-                   BaseStyle -> {
-                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                    ShowStringCharacters -> False}, BaselinePosition -> 
-                   Baseline, ContentPadding -> False, FrameMargins -> 1, 
-                   FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], 
-                ",", "\<\"uc031tkn.1\"\>", ",", "\<\"uc022cgh.1\"\>", 
-                ",", "\<\"uc022cha.1\"\>", ",", "\<\"uc022chb.1\"\>", 
-                ",", "\<\"uc022chc.1\"\>", ",", "\<\"uc022che.1\"\>", 
-                ",", "\<\"uc022cpe.1\"\>"}], "}"}]}], ",", 
+                 "OutputSizeLimit`Skeleton"], ",", "\<\"uc031tkn.1\"\>", 
+                ",", "\<\"uc022cgh.1\"\>", ",", "\<\"uc022cha.1\"\>", 
+                ",", "\<\"uc022chb.1\"\>", ",", "\<\"uc022chc.1\"\>", 
+                ",", "\<\"uc022che.1\"\>", ",", "\<\"uc022cpe.1\"\>"}], 
+               "}"}]}], ",", 
              TemplateBox[{"6"},
-              "OutputSizeLimit`Skeleton",
-              DisplayFunction->(FrameBox[
-                
-                RowBox[{
-                 "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                Background -> GrayLevel[0.75], 
-                BaseStyle -> {
-                 "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                  ShowStringCharacters -> False}, BaselinePosition -> 
-                Baseline, ContentPadding -> False, FrameMargins -> 1, 
-                FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], ",", 
-             
+              "OutputSizeLimit`Skeleton"], ",", 
              RowBox[{
-              RowBox[{"\<\"HGU\"\>", "\[Ellipsis]", "\<\" ID\"\>"}], 
-              "\[Rule]", 
+              RowBox[{"\<\"H\"\>", "\[Ellipsis]", "\<\"ID\"\>"}], "\[Rule]", 
               TemplateBox[{"1"},
-               "OutputSizeLimit`Skeleton",
-               DisplayFunction->(FrameBox[
-                 
-                 RowBox[{
-                  "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                 Background -> GrayLevel[0.75], 
-                 BaseStyle -> {
-                  "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                   ShowStringCharacters -> False}, BaselinePosition -> 
-                 Baseline, ContentPadding -> False, FrameMargins -> 1, 
-                 FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )]}]}], 
-            "\[RightAssociation]"}]}], "\[RightAssociation]"}],
+               "OutputSizeLimit`Skeleton"]}]}], "\[RightAssociation]"}]}], 
+          "\[RightAssociation]"}],
          Short[#, 5]& ],
         BaseStyle->{Deployed -> False},
         StripOnInput->False]},
       {GridBox[{
          {
-          TagBox[
-           TooltipBox[
-            StyleBox[
+          PaneBox[
+           TagBox[
+            TooltipBox[
              StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource[
-                "FEStrings", "sizeBriefExplanation"], StandardForm],
-               ImageSizeCache->{58., {2., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarCategory",
-             StripOnInput->False],
-            StyleBox[
-             DynamicBox[
-              ToBoxes[
-               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
-               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
-             False]],
-           Annotation[#, 
-            Style[
-             Dynamic[
-              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
-             DynamicUpdating -> True], "Tooltip"]& ], 
+              StyleBox[
+               DynamicBox[ToBoxes[
+                 FEPrivate`FrontEndResource[
+                 "FEStrings", "sizeBriefExplanation"], StandardForm],
+                ImageSizeCache->{58., {2., 8.}}],
+               StripOnInput->False,
+               DynamicUpdating->True,
+               LineSpacing->{1, 2},
+               LineIndent->0,
+               LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLText",
+              StripOnInput->False],
+             StyleBox[
+              DynamicBox[
+               ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+                StandardForm]], DynamicUpdating -> True, LineIndent -> 0, 
+              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
+              LineSpacing -> {1, 2}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[
+              Dynamic[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+              DynamicUpdating -> True, LineIndent -> 0, 
+              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
+              LineSpacing -> {1, 2}], "Tooltip"]& ],
+           Alignment->Center,
+           BaselinePosition->Baseline,
+           ImageSize->{Automatic, {25, Full}}], 
           ButtonBox[
            PaneSelectorBox[{False->
             StyleBox[
@@ -625,25 +600,31 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{50., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
               DynamicBox[ToBoxes[
                 FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
-                StandardForm],
-               ImageSizeCache->{49., {0., 8.}}],
+                StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
+           BaselinePosition->Baseline,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            Identity, 13, 32683452556982184137, 5/2],
+            OutputSizeLimit`Defer, 5, 16199963445879288275, 5/2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -656,25 +637,31 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{56., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
               DynamicBox[ToBoxes[
                 FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
-                StandardForm],
-               ImageSizeCache->{54., {0., 8.}}],
+                StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
+           BaselinePosition->Baseline,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            Identity, 13, 32683452556982184137, 5 2],
+            OutputSizeLimit`Defer, 5, 16199963445879288275, 5 2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -687,25 +674,31 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{42., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
               DynamicBox[ToBoxes[
                 FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
-                StandardForm],
-               ImageSizeCache->{40., {0., 8.}}],
+                StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
+           BaselinePosition->Baseline,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            Identity, 13, 32683452556982184137, Infinity],
+            OutputSizeLimit`Defer, 5, 16199963445879288275, Infinity],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -718,26 +711,32 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{74., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
               DynamicBox[ToBoxes[
                 FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
-                StandardForm],
-               ImageSizeCache->{72., {0., 8.}}],
+                StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
+           BaselinePosition->Baseline,
            ButtonFunction:>FrontEndExecute[{
               FrontEnd`SetOptions[
               FrontEnd`$FrontEnd, 
-               FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
               FrontEnd`FrontEndToken["PreferencesDialog"]}],
            Evaluator->None,
            Method->"Preemptive"]}
@@ -749,36 +748,30 @@ Cell[BoxData[
         GridBoxSpacings->{"Columns" -> {{2}}}]}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{
-      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-       "RowsIndexed" -> {}},
-     GridBoxDividers->{
-      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
-       "RowsIndexed" -> {}},
-     GridBoxItemSize->{
-      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
-       "RowsIndexed" -> {}},
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.}}},
      GridBoxSpacings->{"Columns" -> {
          Offset[0.27999999999999997`], {
           Offset[0.5599999999999999]}, 
-         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.27999999999999997`]}, "Rows" -> {
          Offset[0.2], 
          Offset[1.2], {
           Offset[0.4]}, 
-         Offset[0.2]}, "RowsIndexed" -> {}}],
-    Background->RGBColor[0.9657, 0.9753, 0.9802],
+         Offset[0.2]}}],
+    BaseStyle->"OutputSizeLimit",
     FrameMargins->{{12, 12}, {0, 15}},
     FrameStyle->GrayLevel[0.85],
     RoundingRadius->5,
     StripOnInput->False],
    Deploy,
    DefaultBaseStyle->"Deploy"],
-  Out[13]]], "Output",
- ImageSize->{545, 147},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
+  If[16199963445879288275 === $SessionID, 
+   Out[5], Message[
+     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
+   Null]]], "Output",
  CellLabel->"Out[2]=",
- CellID->709821535]
+ CellID->1533319908]
 }, Open  ]],
 
 Cell["The dictionary has multiple accessions, labeled as:", "ExampleText",
@@ -803,11 +796,8 @@ Cell[BoxData[
      ",", "\<\"NCBI Protein Accession\"\>", ",", "\<\"Ensembl ID\"\>", 
      ",", "\<\"KEGG Gene ID\"\>", ",", "\<\"HGU133Plus2 Affymetrix ID\"\>"}], 
     "}"}]}], "\[RightAssociation]"}]], "Output",
- ImageSize->{551, 36},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->758303329]
+ CellID->1078304890]
 }, Open  ]],
 
 Cell["\<\
@@ -843,11 +833,8 @@ Cell[BoxData[
      RowBox[{"\<\"HGU133Plus2 Affymetrix ID\"\>", 
       "\[Rule]", "\<\"204901_at\"\>"}]}], "\[RightAssociation]"}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{504, 70},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[4]=",
- CellID->1243500747]
+ CellID->371607978]
 }, Open  ]]
 }, Open  ]],
 
@@ -1142,9 +1129,6 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[20]]], "Output",
- ImageSize->{545, 147},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
  CellID->494154307]
 }, Open  ]]
@@ -1432,9 +1416,6 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[1]]], "Output",
- ImageSize->{545, 147},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
  CellID->1370843370]
 }, Open  ]]
@@ -1731,9 +1712,6 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[11]]], "Output",
- ImageSize->{545, 147},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
  CellID->178332401]
 }, Open  ]],
@@ -1962,9 +1940,6 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[12]]], "Output",
- ImageSize->{503, 127},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
  CellID->1249406346]
 }, Open  ]],
@@ -2234,9 +2209,6 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[15]]], "Output",
- ImageSize->{545, 147},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[4]=",
  CellID->1586723960]
 }, Open  ]],
@@ -2469,9 +2441,6 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[16]]], "Output",
- ImageSize->{556, 110},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[5]=",
  CellID->1581685347]
 }, Open  ]]
@@ -2756,9 +2725,6 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[2]]], "Output",
- ImageSize->{545, 147},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
  CellID->527985048]
 }, Open  ]]
@@ -2792,7 +2758,7 @@ data file stored in the MathIOmicaDataDirectory as",
    RowBox[{
     RowBox[{"OptionValue", "[", "Species", "]"}], "<>", 
     "\"\<GeneUCSCTable\>\""}]}]], "InlineFormula"],
- ", i.e. the default beign \"humanGeneUCSCTable\". If ImportDirectly is set \
+ ", i.e. the default being \"humanGeneUCSCTable\". If ImportDirectly is set \
 to ",
  ButtonBox["True",
   BaseStyle->"Link",
@@ -3056,9 +3022,6 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[17]]], "Output",
- ImageSize->{545, 147},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
  CellID->1740990707]
 }, Open  ]]
@@ -3355,9 +3318,6 @@ Cell[BoxData[
    Deploy,
    DefaultBaseStyle->"Deploy"],
   Out[18]]], "Output",
- ImageSize->{545, 147},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
  CellID->1405234313]
 }, Open  ]]
@@ -3380,7 +3340,7 @@ Cell[BoxData[
 Cell[TextData[{
  Cell[BoxData["UCSCSQLSelectLabels"], "InlineFormula"],
  " provides an association to be used to assign key labels for the data \
-improted from the UCSC Browser tables. The key of the association must match \
+imported from the UCSC Browser tables. The key of the association must match \
 the ",
  Cell[BoxData["Species"], "InlineFormula"],
  " option value used (default \"human\"). The value is a multi component \
@@ -3428,76 +3388,55 @@ Cell[BoxData[
                 ",", "\<\"uc001aaq.2\"\>", ",", "\<\"uc001aar.2\"\>", 
                 ",", "\<\"uc001aau.3\"\>", ",", 
                 TemplateBox[{"121569"},
-                 "OutputSizeLimit`Skeleton",
-                 DisplayFunction->(FrameBox[
-                   
-                   RowBox[{
-                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                   Background -> GrayLevel[0.75], 
-                   BaseStyle -> {
-                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                    ShowStringCharacters -> False}, BaselinePosition -> 
-                   Baseline, ContentPadding -> False, FrameMargins -> 1, 
-                   FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], 
-                ",", "\<\"uc031tkn.1\"\>", ",", "\<\"uc022cgh.1\"\>", 
-                ",", "\<\"uc022cha.1\"\>", ",", "\<\"uc022chb.1\"\>", 
-                ",", "\<\"uc022chc.1\"\>", ",", "\<\"uc022che.1\"\>", 
-                ",", "\<\"uc022cpe.1\"\>"}], "}"}]}], ",", 
+                 "OutputSizeLimit`Skeleton"], ",", "\<\"uc031tkn.1\"\>", 
+                ",", "\<\"uc022cgh.1\"\>", ",", "\<\"uc022cha.1\"\>", 
+                ",", "\<\"uc022chb.1\"\>", ",", "\<\"uc022chc.1\"\>", 
+                ",", "\<\"uc022che.1\"\>", ",", "\<\"uc022cpe.1\"\>"}], 
+               "}"}]}], ",", 
              TemplateBox[{"6"},
-              "OutputSizeLimit`Skeleton",
-              DisplayFunction->(FrameBox[
-                
-                RowBox[{
-                 "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                Background -> GrayLevel[0.75], 
-                BaseStyle -> {
-                 "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                  ShowStringCharacters -> False}, BaselinePosition -> 
-                Baseline, ContentPadding -> False, FrameMargins -> 1, 
-                FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], ",", 
-             
+              "OutputSizeLimit`Skeleton"], ",", 
              RowBox[{
               RowBox[{"\<\"H\"\>", "\[Ellipsis]", "\<\"ID\"\>"}], "\[Rule]", 
               TemplateBox[{"1"},
-               "OutputSizeLimit`Skeleton",
-               DisplayFunction->(FrameBox[
-                 
-                 RowBox[{
-                  "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                 Background -> GrayLevel[0.75], 
-                 BaseStyle -> {
-                  "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                   ShowStringCharacters -> False}, BaselinePosition -> 
-                 Baseline, ContentPadding -> False, FrameMargins -> 1, 
-                 FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )]}]}], 
-            "\[RightAssociation]"}]}], "\[RightAssociation]"}],
+               "OutputSizeLimit`Skeleton"]}]}], "\[RightAssociation]"}]}], 
+          "\[RightAssociation]"}],
          Short[#, 5]& ],
         BaseStyle->{Deployed -> False},
         StripOnInput->False]},
       {GridBox[{
          {
-          TagBox[
-           TooltipBox[
-            StyleBox[
+          PaneBox[
+           TagBox[
+            TooltipBox[
              StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource[
-                "FEStrings", "sizeBriefExplanation"], StandardForm],
-               ImageSizeCache->{58., {2., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarCategory",
-             StripOnInput->False],
-            StyleBox[
-             DynamicBox[
-              ToBoxes[
-               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
-               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
-             False]],
-           Annotation[#, 
-            Style[
-             Dynamic[
-              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
-             DynamicUpdating -> True], "Tooltip"]& ], 
+              StyleBox[
+               DynamicBox[ToBoxes[
+                 FEPrivate`FrontEndResource[
+                 "FEStrings", "sizeBriefExplanation"], StandardForm],
+                ImageSizeCache->{58., {2., 8.}}],
+               StripOnInput->False,
+               DynamicUpdating->True,
+               LineSpacing->{1, 2},
+               LineIndent->0,
+               LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLText",
+              StripOnInput->False],
+             StyleBox[
+              DynamicBox[
+               ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+                StandardForm]], DynamicUpdating -> True, LineIndent -> 0, 
+              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
+              LineSpacing -> {1, 2}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[
+              Dynamic[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+              DynamicUpdating -> True, LineIndent -> 0, 
+              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
+              LineSpacing -> {1, 2}], "Tooltip"]& ],
+           Alignment->Center,
+           BaselinePosition->Baseline,
+           ImageSize->{Automatic, {25, Full}}], 
           ButtonBox[
            PaneSelectorBox[{False->
             StyleBox[
@@ -3507,7 +3446,10 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{50., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
@@ -3515,16 +3457,20 @@ Cell[BoxData[
                 FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
                 StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
+           BaselinePosition->Baseline,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            Identity, 20, 32683479996914715341, 5/2],
+            OutputSizeLimit`Defer, 8, 16199963445879288275, 5/2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -3537,25 +3483,31 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{56., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
               DynamicBox[ToBoxes[
                 FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
-                StandardForm],
-               ImageSizeCache->{54., {0., 8.}}],
+                StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
+           BaselinePosition->Baseline,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            Identity, 20, 32683479996914715341, 5 2],
+            OutputSizeLimit`Defer, 8, 16199963445879288275, 5 2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -3568,25 +3520,31 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{42., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
               DynamicBox[ToBoxes[
                 FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
-                StandardForm],
-               ImageSizeCache->{40., {0., 8.}}],
+                StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
+           BaselinePosition->Baseline,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            Identity, 20, 32683479996914715341, Infinity],
+            OutputSizeLimit`Defer, 8, 16199963445879288275, Infinity],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -3599,26 +3557,32 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{74., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
               DynamicBox[ToBoxes[
                 FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
-                StandardForm],
-               ImageSizeCache->{72., {0., 8.}}],
+                StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
+           BaselinePosition->Baseline,
            ButtonFunction:>FrontEndExecute[{
               FrontEnd`SetOptions[
               FrontEnd`$FrontEnd, 
-               FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
               FrontEnd`FrontEndToken["PreferencesDialog"]}],
            Evaluator->None,
            Method->"Preemptive"]}
@@ -3630,36 +3594,30 @@ Cell[BoxData[
         GridBoxSpacings->{"Columns" -> {{2}}}]}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{
-      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-       "RowsIndexed" -> {}},
-     GridBoxDividers->{
-      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
-       "RowsIndexed" -> {}},
-     GridBoxItemSize->{
-      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
-       "RowsIndexed" -> {}},
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.}}},
      GridBoxSpacings->{"Columns" -> {
          Offset[0.27999999999999997`], {
           Offset[0.5599999999999999]}, 
-         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.27999999999999997`]}, "Rows" -> {
          Offset[0.2], 
          Offset[1.2], {
           Offset[0.4]}, 
-         Offset[0.2]}, "RowsIndexed" -> {}}],
-    Background->RGBColor[0.9657, 0.9753, 0.9802],
+         Offset[0.2]}}],
+    BaseStyle->"OutputSizeLimit",
     FrameMargins->{{12, 12}, {0, 15}},
     FrameStyle->GrayLevel[0.85],
     RoundingRadius->5,
     StripOnInput->False],
    Deploy,
    DefaultBaseStyle->"Deploy"],
-  Out[20]]], "Output",
- ImageSize->{545, 147},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
+  If[16199963445879288275 === $SessionID, 
+   Out[8], Message[
+     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
+   Null]]], "Output",
  CellLabel->"Out[2]=",
- CellID->1083087287]
+ CellID->2073729549]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3681,11 +3639,8 @@ Cell[BoxData[
      ",", "\<\"NCBI Protein Accession\"\>", ",", "\<\"Ensembl ID\"\>", 
      ",", "\<\"KEGG Gene ID\"\>", ",", "\<\"HGU133Plus2 Affymetrix ID\"\>"}], 
     "}"}]}], "\[RightAssociation]"}]], "Output",
- ImageSize->{551, 36},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
- CellID->1597092153]
+ CellID->2063116756]
 }, Open  ]],
 
 Cell["\<\
@@ -3731,74 +3686,54 @@ Cell[BoxData[
                 ",", "\<\"uc001aaq.2\"\>", ",", "\<\"uc001aar.2\"\>", 
                 ",", "\<\"uc001aau.3\"\>", ",", 
                 TemplateBox[{"121569"},
-                 "OutputSizeLimit`Skeleton",
-                 DisplayFunction->(FrameBox[
-                   
-                   RowBox[{
-                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                   Background -> GrayLevel[0.75], 
-                   BaseStyle -> {
-                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                    ShowStringCharacters -> False}, BaselinePosition -> 
-                   Baseline, ContentPadding -> False, FrameMargins -> 1, 
-                   FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], 
-                ",", "\<\"uc031tkn.1\"\>", ",", "\<\"uc022cgh.1\"\>", 
-                ",", "\<\"uc022cha.1\"\>", ",", "\<\"uc022chb.1\"\>", 
-                ",", "\<\"uc022chc.1\"\>", ",", "\<\"uc022che.1\"\>", 
-                ",", "\<\"uc022cpe.1\"\>"}], "}"}]}], ",", 
+                 "OutputSizeLimit`Skeleton"], ",", "\<\"uc031tkn.1\"\>", 
+                ",", "\<\"uc022cgh.1\"\>", ",", "\<\"uc022cha.1\"\>", 
+                ",", "\<\"uc022chb.1\"\>", ",", "\<\"uc022chc.1\"\>", 
+                ",", "\<\"uc022che.1\"\>", ",", "\<\"uc022cpe.1\"\>"}], 
+               "}"}]}], ",", 
              TemplateBox[{"6"},
-              "OutputSizeLimit`Skeleton",
-              DisplayFunction->(FrameBox[
-                
-                RowBox[{
-                 "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                Background -> GrayLevel[0.75], 
-                BaseStyle -> {
-                 "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                  ShowStringCharacters -> False}, BaselinePosition -> 
-                Baseline, ContentPadding -> False, FrameMargins -> 1, 
-                FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], ",", 
-             
+              "OutputSizeLimit`Skeleton"], ",", 
              RowBox[{"\<\"HGU133Plus2\"\>", "\[Rule]", 
               TemplateBox[{"1"},
-               "OutputSizeLimit`Skeleton",
-               DisplayFunction->(FrameBox[
-                 RowBox[{
-                  "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                 Background -> GrayLevel[0.75], 
-                 BaseStyle -> {
-                  "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                   ShowStringCharacters -> False}, BaselinePosition -> 
-                 Baseline, ContentPadding -> False, FrameMargins -> 1, 
-                 FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )]}]}], 
-            "\[RightAssociation]"}]}], "\[RightAssociation]"}],
+               "OutputSizeLimit`Skeleton"]}]}], "\[RightAssociation]"}]}], 
+          "\[RightAssociation]"}],
          Short[#, 5]& ],
         BaseStyle->{Deployed -> False},
         StripOnInput->False]},
       {GridBox[{
          {
-          TagBox[
-           TooltipBox[
-            StyleBox[
+          PaneBox[
+           TagBox[
+            TooltipBox[
              StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource[
-                "FEStrings", "sizeBriefExplanation"], StandardForm],
-               ImageSizeCache->{58., {2., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarCategory",
-             StripOnInput->False],
-            StyleBox[
-             DynamicBox[
-              ToBoxes[
-               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
-               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
-             False]],
-           Annotation[#, 
-            Style[
-             Dynamic[
-              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
-             DynamicUpdating -> True], "Tooltip"]& ], 
+              StyleBox[
+               DynamicBox[ToBoxes[
+                 FEPrivate`FrontEndResource[
+                 "FEStrings", "sizeBriefExplanation"], StandardForm],
+                ImageSizeCache->{58., {2., 8.}}],
+               StripOnInput->False,
+               DynamicUpdating->True,
+               LineSpacing->{1, 2},
+               LineIndent->0,
+               LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLText",
+              StripOnInput->False],
+             StyleBox[
+              DynamicBox[
+               ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+                StandardForm]], DynamicUpdating -> True, LineIndent -> 0, 
+              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
+              LineSpacing -> {1, 2}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[
+              Dynamic[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+              DynamicUpdating -> True, LineIndent -> 0, 
+              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
+              LineSpacing -> {1, 2}], "Tooltip"]& ],
+           Alignment->Center,
+           BaselinePosition->Baseline,
+           ImageSize->{Automatic, {25, Full}}], 
           ButtonBox[
            PaneSelectorBox[{False->
             StyleBox[
@@ -3808,7 +3743,10 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{50., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
@@ -3816,16 +3754,20 @@ Cell[BoxData[
                 FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
                 StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
+           BaselinePosition->Baseline,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            Identity, 23, 32683479996914715341, 5/2],
+            OutputSizeLimit`Defer, 10, 16199963445879288275, 5/2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -3838,7 +3780,10 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{56., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
@@ -3846,16 +3791,20 @@ Cell[BoxData[
                 FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
                 StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
+           BaselinePosition->Baseline,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            Identity, 23, 32683479996914715341, 5 2],
+            OutputSizeLimit`Defer, 10, 16199963445879288275, 5 2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -3868,7 +3817,10 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{42., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
@@ -3876,16 +3828,20 @@ Cell[BoxData[
                 FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
                 StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
+           BaselinePosition->Baseline,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            Identity, 23, 32683479996914715341, Infinity],
+            OutputSizeLimit`Defer, 10, 16199963445879288275, Infinity],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -3898,26 +3854,32 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{74., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
               DynamicBox[ToBoxes[
                 FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
-                StandardForm],
-               ImageSizeCache->{72., {0., 8.}}],
+                StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "SuggestionsBarControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
+           BaselinePosition->Baseline,
            ButtonFunction:>FrontEndExecute[{
               FrontEnd`SetOptions[
               FrontEnd`$FrontEnd, 
-               FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
               FrontEnd`FrontEndToken["PreferencesDialog"]}],
            Evaluator->None,
            Method->"Preemptive"]}
@@ -3929,36 +3891,30 @@ Cell[BoxData[
         GridBoxSpacings->{"Columns" -> {{2}}}]}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{
-      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-       "RowsIndexed" -> {}},
-     GridBoxDividers->{
-      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
-       "RowsIndexed" -> {}},
-     GridBoxItemSize->{
-      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
-       "RowsIndexed" -> {}},
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.}}},
      GridBoxSpacings->{"Columns" -> {
          Offset[0.27999999999999997`], {
           Offset[0.5599999999999999]}, 
-         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.27999999999999997`]}, "Rows" -> {
          Offset[0.2], 
          Offset[1.2], {
           Offset[0.4]}, 
-         Offset[0.2]}, "RowsIndexed" -> {}}],
-    Background->RGBColor[0.9657, 0.9753, 0.9802],
+         Offset[0.2]}}],
+    BaseStyle->"OutputSizeLimit",
     FrameMargins->{{12, 12}, {0, 15}},
     FrameStyle->GrayLevel[0.85],
     RoundingRadius->5,
     StripOnInput->False],
    Deploy,
    DefaultBaseStyle->"Deploy"],
-  Out[23]]], "Output",
- ImageSize->{538, 147},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
+  If[16199963445879288275 === $SessionID, 
+   Out[10], Message[
+     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
+   Null]]], "Output",
  CellLabel->"Out[4]=",
- CellID->753995820]
+ CellID->471932689]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3979,11 +3935,8 @@ Cell[BoxData[
      ",", "\<\"RefSeq\"\>", ",", "\<\"NCBI\"\>", ",", "\<\"Ensembl\"\>", 
      ",", "\<\"KEGG Gene ID\"\>", ",", "\<\"HGU133Plus2\"\>"}], "}"}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{534, 36},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[5]=",
- CellID->1084067522]
+ CellID->500525692]
 }, Open  ]]
 }, Closed]]
 }, Closed]],
@@ -4154,7 +4107,7 @@ Cell[BoxData[
     TextData["MathIOmica Guide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
   "RefLink",
   BaseStyle->"MoreAbout"]], "MoreAbout",
- CellID->1193673387],
+ CellID->895021763],
 
 Cell["", "SectionFooterSpacer"]
 }, Open  ]],
@@ -4205,7 +4158,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2018, 10, 26, 17, 18, 58.648428}", 
+   "built" -> "{2019, 7, 22, 18, 24, 22.156652}", 
     "history" -> {"XX", "", "", ""}, "context" -> 
     "MathIOmica`AnnotationsAndEnumerations`", "keywords" -> {}, 
     "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
@@ -4218,8 +4171,7 @@ search - typically of gene annotations.", "synonyms" -> {}, "tabletags" -> {},
     "MathIOmica/ref/GetGeneDictionary", "WorkflowDockedCell" -> ""}, 
   "SearchTextTranslated" -> "", "NewStyles" -> False},
 CellContext->"Global`",
-FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
-2018)",
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -4228,8 +4180,7 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], CellContext -> "Global`"], 
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
-  FrontEndVersion -> 
-  "11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, 2018)", 
+  FrontEndVersion -> "12.0 for Mac OS X x86 (64-bit) (April 8, 2019)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -4238,256 +4189,256 @@ StyleDefinitions->Notebook[{
 (*CellTagsOutline
 CellTagsIndex->{
  "PrimaryExamplesSection"->{
-  Cell[18914, 483, 268, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"160af92e-34f0-4e05-8ec4-569db3488156",
+  Cell[18812, 480, 268, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"eb09c872-6cc5-4096-a498-54b0b4fe94ea",
    CellTags->"PrimaryExamplesSection",
-   CellID->1561635500]}
+   CellID->1919287803]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"PrimaryExamplesSection", 160471, 4239}
+ {"PrimaryExamplesSection", 157991, 4190}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[589, 21, 5552, 131, 70, "AnchorBarGrid",ExpressionUUID->"02a32e1e-e6e4-4592-b4f1-7fb34a572a5b",
+Cell[589, 21, 5552, 131, 70, "AnchorBarGrid",ExpressionUUID->"1d228356-d988-4a54-bc29-8ebb59b3f632",
  CellID->1],
 Cell[CellGroupData[{
-Cell[6166, 156, 174, 6, 70, "ObjectNameGrid",ExpressionUUID->"e372e46a-3807-4a87-bf74-c3bfb8c44f78"],
-Cell[6343, 164, 411, 11, 70, "Usage",ExpressionUUID->"b0908297-b812-41b5-9e0a-c4aa81039d30"]
+Cell[6166, 156, 174, 6, 70, "ObjectNameGrid",ExpressionUUID->"6c28db11-c0ec-4ccf-a960-3cb5598f6ddb"],
+Cell[6343, 164, 359, 9, 70, "Usage",ExpressionUUID->"b1766f8f-eef0-4cd7-a2ad-3f6506367154"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6791, 180, 630, 19, 70, "NotesSection",ExpressionUUID->"0fedda93-a08c-41f1-a1fc-be696d2ec22b",
+Cell[6739, 178, 629, 19, 70, "NotesSection",ExpressionUUID->"60bcf552-ed9d-4701-b334-052d952858f5",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->1678265714],
-Cell[7424, 201, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"c28a7883-af2c-4fbf-9f53-83dfb5386e15"],
-Cell[7458, 203, 603, 17, 70, "Notes",ExpressionUUID->"2de02fee-2971-4df9-a52f-431877231187",
+ CellID->252466204],
+Cell[7371, 199, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"f9132222-52fd-4c3b-b0c9-0e6b8604a734"],
+Cell[7405, 201, 603, 17, 70, "Notes",ExpressionUUID->"e53c3614-c211-47dd-990b-349ff7258601",
  CellID->1170499817],
-Cell[8064, 222, 3665, 94, 70, "Notes",ExpressionUUID->"f889ead1-37b1-46df-9276-5a827b12a517",
+Cell[8011, 220, 3665, 94, 70, "Notes",ExpressionUUID->"6b89e9c2-beb5-446c-83f0-95dd4bd2ecc5",
  CellID->971402909],
-Cell[11732, 318, 507, 14, 70, "Notes",ExpressionUUID->"5fb710d2-62a8-40b6-9169-ac9d2a28f3b1",
+Cell[11679, 316, 507, 14, 70, "Notes",ExpressionUUID->"35ef595c-93e4-4579-8462-1c8a4ab65d01",
  CellID->1205715500],
-Cell[12242, 334, 471, 9, 70, "Notes",ExpressionUUID->"e11969b8-a595-49fa-bb38-563522db0f1b",
+Cell[12189, 332, 471, 9, 70, "Notes",ExpressionUUID->"c53f03b8-773e-4a8c-832e-c732b162e21c",
  CellID->2147337097],
-Cell[12716, 345, 53, 0, 70, "Notes",ExpressionUUID->"fe3f18d4-34bf-452e-b310-927dc97d16bb"],
-Cell[12772, 347, 6071, 129, 70, "3ColumnTableMod",ExpressionUUID->"2d9dd65b-ba1c-4336-8180-665ceeeff981",
+Cell[12663, 343, 53, 0, 70, "Notes",ExpressionUUID->"2603f359-76cd-464b-a92f-a81e1a31a442"],
+Cell[12719, 345, 6022, 128, 70, "3ColumnTableMod",ExpressionUUID->"af1263c2-8f82-4ef8-aa6a-29b655439912",
  CellID->1255376363],
-Cell[18846, 478, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"91adcab9-c8e5-4100-aef0-f55f46cab3ae"]
+Cell[18744, 475, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"5c5e39f8-3a3c-4d68-b1bc-f814e80ec084"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[18914, 483, 268, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"160af92e-34f0-4e05-8ec4-569db3488156",
+Cell[18812, 480, 268, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"eb09c872-6cc5-4096-a498-54b0b4fe94ea",
  CellTags->"PrimaryExamplesSection",
- CellID->1561635500],
+ CellID->1919287803],
 Cell[CellGroupData[{
-Cell[19207, 497, 196, 6, 70, "ExampleSection",ExpressionUUID->"74fd98c5-7df8-4c4c-a927-b9c1474be5e6",
- CellID->2010198513],
-Cell[19406, 505, 88, 1, 70, "ExampleText",ExpressionUUID->"452435e9-9fb3-4f5a-a38a-61d06932cec7",
+Cell[19105, 494, 195, 6, 70, "ExampleSection",ExpressionUUID->"fcc06243-d5d9-4a99-bd91-b20bc9e8aa9a",
+ CellID->118243434],
+Cell[19303, 502, 88, 1, 70, "ExampleText",ExpressionUUID->"1677782f-455b-40cb-af05-b834ea2c6d04",
  CellID->158760191],
-Cell[19497, 508, 118, 3, 70, "Input",ExpressionUUID->"730ff2e2-e2cd-4ced-82c8-c73cbb532b58",
+Cell[19394, 505, 118, 3, 70, "Input",ExpressionUUID->"702a6087-f520-45e5-b16c-dc8bc541e986",
  CellID->10541973],
-Cell[19618, 513, 189, 5, 70, "ExampleText",ExpressionUUID->"17f38cfe-aee5-40bd-b942-e1ba6aa5aec9",
+Cell[19515, 510, 189, 5, 70, "ExampleText",ExpressionUUID->"d1c35d96-398e-4eb4-aec9-5b126a3bf085",
  CellID->115116258],
 Cell[CellGroupData[{
-Cell[19832, 522, 151, 4, 70, "Input",ExpressionUUID->"1221dbb7-517f-4d8e-ab26-5714e4e00abf",
+Cell[19729, 519, 151, 4, 70, "Input",ExpressionUUID->"d5efb774-6bee-40ff-aab2-cefc1bd82e06",
  CellID->793122851],
-Cell[19986, 528, 10209, 252, 70, "Output",ExpressionUUID->"a7184fca-d021-46db-9894-206dcd096f37",
- CellID->709821535]
+Cell[19883, 525, 9731, 248, 70, "Output",ExpressionUUID->"fbeac5a4-433c-4ed0-9539-c434f5720434",
+ CellID->1533319908]
 }, Open  ]],
-Cell[30210, 783, 95, 1, 70, "ExampleText",ExpressionUUID->"8345ac85-05d8-46be-aaa0-c9ca2e439e34",
+Cell[29629, 776, 95, 1, 70, "ExampleText",ExpressionUUID->"4bc698e3-72cf-4540-a1ba-4840e9800b74",
  CellID->1482380177],
 Cell[CellGroupData[{
-Cell[30330, 788, 177, 6, 70, "Input",ExpressionUUID->"e32e7b7b-4068-4f5a-99da-6af85f36a35b",
+Cell[29749, 781, 177, 6, 70, "Input",ExpressionUUID->"41153ea9-55ba-4151-9315-8d9a33b12122",
  CellID->1097207406],
-Cell[30510, 796, 551, 13, 70, "Output",ExpressionUUID->"ad1c1bbe-a9fd-467a-a260-56c5add5c848",
- CellID->758303329]
+Cell[29929, 789, 464, 10, 70, "Output",ExpressionUUID->"b6dd1bc6-a65d-4a88-815d-0787a76411e6",
+ CellID->1078304890]
 }, Open  ]],
-Cell[31076, 812, 131, 4, 70, "ExampleText",ExpressionUUID->"ed78cb81-dfe9-4ee7-8623-e661e3fa908b",
+Cell[30408, 802, 131, 4, 70, "ExampleText",ExpressionUUID->"fdb81176-bf9a-4f57-987a-d3e8dc369e9d",
  CellID->19474690],
 Cell[CellGroupData[{
-Cell[31232, 820, 190, 6, 70, "Input",ExpressionUUID->"1ee3ea5a-bd59-48bd-bd20-4bc74df210d0",
+Cell[30564, 810, 190, 6, 70, "Input",ExpressionUUID->"21089af0-9094-49ce-b507-ac28353df817",
  CellID->1911277736],
-Cell[31425, 828, 971, 21, 70, "Output",ExpressionUUID->"64ea25b2-a6ae-420f-acec-e5aeb4e66375",
- CellID->1243500747]
+Cell[30757, 818, 882, 18, 70, "Output",ExpressionUUID->"9f318135-0326-4255-aef2-da14a1acdca4",
+ CellID->371607978]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[32445, 855, 168, 5, 70, "ExampleSection",ExpressionUUID->"00cf32f5-d485-42b2-bf24-f4183231ab79"],
+Cell[31688, 842, 168, 5, 70, "ExampleSection",ExpressionUUID->"dd5fa6b7-2a3f-48bb-a8de-64911d25fb00"],
 Cell[CellGroupData[{
-Cell[32638, 864, 181, 5, 70, "ExampleSubsection",ExpressionUUID->"c85e1d1b-50ac-4b8b-96d3-5e767547964b"],
-Cell[32822, 871, 120, 3, 70, "Input",ExpressionUUID->"f99ebf03-6c98-41c0-9e57-161712c2f1e6",
+Cell[31881, 851, 181, 5, 70, "ExampleSubsection",ExpressionUUID->"a2336ccf-2cfd-4060-b7bb-688963e19c39"],
+Cell[32065, 858, 120, 3, 70, "Input",ExpressionUUID->"21f90fa3-f0f9-4fd8-b648-c25ba1b1e0a9",
  CellID->1951021211],
-Cell[32945, 876, 562, 12, 70, "ExampleText",ExpressionUUID->"4a6f8035-6bb8-4a7d-8521-8cb8956cd137",
+Cell[32188, 863, 562, 12, 70, "ExampleText",ExpressionUUID->"a52f5665-958b-4ff7-86ef-d363eca918a7",
  CellID->1066104128],
 Cell[CellGroupData[{
-Cell[33532, 892, 163, 4, 70, "Input",ExpressionUUID->"35954681-4ae8-4671-8f06-ee335c06f631",
+Cell[32775, 879, 163, 4, 70, "Input",ExpressionUUID->"7c1f1c86-9e93-432d-97c7-5fb6a02317a8",
  CellID->198089045],
-Cell[33698, 898, 10113, 250, 70, "Output",ExpressionUUID->"f5f5998a-8a7d-4766-8387-0d75320135a8",
+Cell[32941, 885, 10024, 247, 70, "Output",ExpressionUUID->"d8a800c1-82ff-48f2-9f09-b12185f182b4",
  CellID->494154307]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[43860, 1154, 174, 5, 70, "ExampleSubsection",ExpressionUUID->"95f46027-05d9-499e-bdfe-e191ea3861cc"],
-Cell[44037, 1161, 119, 3, 70, "Input",ExpressionUUID->"056003aa-f995-41e7-b975-254ddb339eb6",
+Cell[43014, 1138, 174, 5, 70, "ExampleSubsection",ExpressionUUID->"44cbd5fb-3c5d-4178-b594-7e43b337ca56"],
+Cell[43191, 1145, 119, 3, 70, "Input",ExpressionUUID->"17254cdd-b5f8-4805-bce6-0417b2567480",
  CellID->575042748],
-Cell[44159, 1166, 428, 10, 70, "ExampleText",ExpressionUUID->"c6917ea0-a885-4095-a240-1b4af8091788",
+Cell[43313, 1150, 428, 10, 70, "ExampleText",ExpressionUUID->"d5e17ff1-8b15-457f-82fd-cf50852536c2",
  CellID->761923683],
 Cell[CellGroupData[{
-Cell[44612, 1180, 229, 6, 70, "Input",ExpressionUUID->"c0d19054-bbb3-4f21-9e5e-1edc46034a81",
+Cell[43766, 1164, 229, 6, 70, "Input",ExpressionUUID->"d3544f74-41cb-4dbe-be7d-3dc06950f33b",
  CellID->540012223],
-Cell[44844, 1188, 10140, 250, 70, "Output",ExpressionUUID->"246b7ebe-62c2-4f85-8d36-3cfcbbecc750",
+Cell[43998, 1172, 10051, 247, 70, "Output",ExpressionUUID->"f31cadb0-b52f-4f74-ad63-319d32e5328f",
  CellID->1370843370]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[55033, 1444, 201, 6, 70, "ExampleSubsection",ExpressionUUID->"c43e1d00-3a43-4f49-823a-020242c1de64",
+Cell[54098, 1425, 201, 6, 70, "ExampleSubsection",ExpressionUUID->"2cf4f8eb-2f33-461d-ba3b-80db7fe45819",
  CellID->1092414741],
-Cell[55237, 1452, 120, 3, 70, "Input",ExpressionUUID->"a776a01b-60bd-4441-9488-e9268519b060",
+Cell[54302, 1433, 120, 3, 70, "Input",ExpressionUUID->"7348199d-9f83-472d-b64d-d820e2a8c4d2",
  CellID->1067054136],
-Cell[55360, 1457, 405, 10, 70, "ExampleText",ExpressionUUID->"72d18048-f3af-4299-b85e-294650d80cab",
+Cell[54425, 1438, 405, 10, 70, "ExampleText",ExpressionUUID->"d592bb86-144d-4a76-99dd-66e1612b6d79",
  CellID->1676162642],
-Cell[55768, 1469, 182, 7, 70, "ExampleText",ExpressionUUID->"6f2e2295-e323-4674-9eaf-97001805633b",
+Cell[54833, 1450, 182, 7, 70, "ExampleText",ExpressionUUID->"315b8560-c42d-422b-81de-f06c0dcda4a2",
  CellID->560374463],
 Cell[CellGroupData[{
-Cell[55975, 1480, 292, 8, 70, "Input",ExpressionUUID->"c427237d-1272-414b-b4bc-b0bf40cf2434",
+Cell[55040, 1461, 292, 8, 70, "Input",ExpressionUUID->"ce759624-716c-422d-be9e-1d6634b1e414",
  CellID->442272332],
-Cell[56270, 1490, 9999, 247, 70, "Output",ExpressionUUID->"c57dfc27-3bf0-4f7d-ac50-5f39f5359498",
+Cell[55335, 1471, 9910, 244, 70, "Output",ExpressionUUID->"600743a5-4d2b-48e1-abd3-0c2b92dd8e63",
  CellID->178332401]
 }, Open  ]],
-Cell[66284, 1740, 94, 1, 70, "ExampleText",ExpressionUUID->"62f40671-2af1-46b9-a929-2fd37d33c43d",
+Cell[65260, 1718, 94, 1, 70, "ExampleText",ExpressionUUID->"8cf57d59-2f5c-4371-8759-392ae057fad0",
  CellID->819226467],
 Cell[CellGroupData[{
-Cell[66403, 1745, 257, 7, 70, "Input",ExpressionUUID->"40dde3c4-e483-4f86-9992-4b347916eb9b",
+Cell[65379, 1723, 257, 7, 70, "Input",ExpressionUUID->"e5a8e560-089e-4be7-b2ce-45927478a12f",
  CellID->1358833504],
-Cell[66663, 1754, 8391, 214, 70, "Output",ExpressionUUID->"9c8437b5-fc47-4c06-af9b-b3649e5c114d",
+Cell[65639, 1732, 8302, 211, 70, "Output",ExpressionUUID->"f2817b46-54d6-4443-aab1-57630aef78d8",
  CellID->1249406346]
 }, Open  ]],
-Cell[75069, 1971, 174, 7, 70, "ExampleText",ExpressionUUID->"ed2fdda8-2d9b-4927-b8f3-4de6db11eba8",
+Cell[73956, 1946, 174, 7, 70, "ExampleText",ExpressionUUID->"2fea12f5-1595-424a-b4b8-def6f3665e7f",
  CellID->1130513895],
 Cell[CellGroupData[{
-Cell[75268, 1982, 288, 8, 70, "Input",ExpressionUUID->"e510bd17-baf1-453c-8f41-a6b3c5836738",
+Cell[74155, 1957, 288, 8, 70, "Input",ExpressionUUID->"1b31f23f-a018-46cc-b9d4-f00c88b1ce46",
  CellID->458306696],
-Cell[75559, 1992, 10048, 248, 70, "Output",ExpressionUUID->"42121ee8-f860-43dc-b066-40c14097d3fc",
+Cell[74446, 1967, 9959, 245, 70, "Output",ExpressionUUID->"86d1d4dc-2784-47cf-a68b-b650f5ffb0af",
  CellID->1586723960]
 }, Open  ]],
-Cell[85622, 2243, 118, 3, 70, "ExampleText",ExpressionUUID->"45ce7c21-294b-49e2-a027-309521d4b724",
+Cell[84420, 2215, 118, 3, 70, "ExampleText",ExpressionUUID->"6c088bb4-a14c-478f-8f6c-7cdfe84c6dc9",
  CellID->710325193],
 Cell[CellGroupData[{
-Cell[85765, 2250, 255, 7, 70, "Input",ExpressionUUID->"2a088cd3-e495-4a67-9f01-1c7c63c22a88",
+Cell[84563, 2222, 255, 7, 70, "Input",ExpressionUUID->"fcb9481a-b87c-46e5-873f-ad70e5ac5b4a",
  CellID->573925078],
-Cell[86023, 2259, 8575, 216, 70, "Output",ExpressionUUID->"3b663c0a-c492-46e3-9f40-f9de3e73a22e",
+Cell[84821, 2231, 8486, 213, 70, "Output",ExpressionUUID->"cd1b5165-5c34-47ac-8bd3-4d9b9469634d",
  CellID->1581685347]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[94647, 2481, 211, 6, 70, "ExampleSubsection",ExpressionUUID->"39c1513e-555c-49a9-9ae0-8b7cd4b04a52",
+Cell[93356, 2450, 211, 6, 70, "ExampleSubsection",ExpressionUUID->"03e8862c-9382-4ac4-a7a6-4d64d598737d",
  CellID->1376853784],
-Cell[94861, 2489, 119, 3, 70, "Input",ExpressionUUID->"0ed0d4d9-6767-43b9-9145-2b51af654b17",
+Cell[93570, 2458, 119, 3, 70, "Input",ExpressionUUID->"c73d0860-8f2a-4d5b-838e-952aa28577b1",
  CellID->342927655],
-Cell[94983, 2494, 291, 4, 70, "ExampleText",ExpressionUUID->"758c2dd1-ca02-4f2c-861f-d6dbe5bb5579",
+Cell[93692, 2463, 291, 4, 70, "ExampleText",ExpressionUUID->"8858d47e-054f-41cf-bff0-f8ea05adc609",
  CellID->1765440203],
 Cell[CellGroupData[{
-Cell[95299, 2502, 452, 11, 70, "Input",ExpressionUUID->"dd7fdaeb-38b0-4fd1-98b9-68d4075efb17",
+Cell[94008, 2471, 452, 11, 70, "Input",ExpressionUUID->"175e5268-9470-43b8-aa1c-4599c09b0d15",
  CellID->19136420],
-Cell[95754, 2515, 9995, 247, 70, "Output",ExpressionUUID->"6f1a8961-2dda-4c45-9053-5f0e3ed820a5",
+Cell[94463, 2484, 9906, 244, 70, "Output",ExpressionUUID->"8fc247e3-b8f6-4a86-99ff-60080852719e",
  CellID->527985048]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[105798, 2768, 174, 5, 70, "ExampleSubsection",ExpressionUUID->"b4439c92-9355-43d1-9bc0-38892999680f"],
-Cell[105975, 2775, 120, 3, 70, "Input",ExpressionUUID->"802bcf9f-a741-4f27-a29b-ae28090f5bd9",
+Cell[104418, 2734, 174, 5, 70, "ExampleSubsection",ExpressionUUID->"84474002-5824-4c7a-b771-af4e90b1bd0e"],
+Cell[104595, 2741, 120, 3, 70, "Input",ExpressionUUID->"e25fa3ba-7560-49bf-81d3-b6031a16a4fe",
  CellID->1833044463],
-Cell[106098, 2780, 779, 22, 70, "ExampleText",ExpressionUUID->"464859c3-c20e-4050-8702-15804dee9ad0",
+Cell[104718, 2746, 779, 22, 70, "ExampleText",ExpressionUUID->"5220653f-3631-43f7-9aab-9946803f0e10",
  CellID->177889779],
 Cell[CellGroupData[{
-Cell[106902, 2806, 165, 4, 70, "Input",ExpressionUUID->"cbd68065-273f-42f5-898b-d9d3852fb3d5",
+Cell[105522, 2772, 165, 4, 70, "Input",ExpressionUUID->"b6706b30-ff27-49ba-87b5-e4b95aba81bd",
  CellID->496279029],
-Cell[107070, 2812, 10144, 250, 70, "Output",ExpressionUUID->"c6c355ee-ba22-4692-bf97-26a65580e733",
+Cell[105690, 2778, 10055, 247, 70, "Output",ExpressionUUID->"5ed73ea2-0f34-4fa2-8701-c9d9eb08453e",
  CellID->1740990707]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[117263, 3068, 180, 5, 70, "ExampleSubsection",ExpressionUUID->"31245da0-7018-4818-ab4f-2d74ba1b990a"],
-Cell[117446, 3075, 120, 3, 70, "Input",ExpressionUUID->"7100ea53-551d-4686-bbf6-93f22a2c10c4",
+Cell[115794, 3031, 180, 5, 70, "ExampleSubsection",ExpressionUUID->"5c47a870-25ab-4767-9f23-aad764921e91"],
+Cell[115977, 3038, 120, 3, 70, "Input",ExpressionUUID->"a23d0b73-e5d3-47f3-9f77-f7dc116558db",
  CellID->1846926898],
-Cell[117569, 3080, 504, 12, 70, "ExampleText",ExpressionUUID->"e1ab3286-6ffe-4a30-a48d-a8c8a9ecc896",
+Cell[116100, 3043, 504, 12, 70, "ExampleText",ExpressionUUID->"41daf6f4-0333-47cf-919e-37104d6adc55",
  CellID->1382553975],
 Cell[CellGroupData[{
-Cell[118098, 3096, 803, 16, 70, "Input",ExpressionUUID->"bbb03de3-ad19-4704-bbff-e5ece2ff63a0",
+Cell[116629, 3059, 803, 16, 70, "Input",ExpressionUUID->"8c1eb01a-4529-4053-91c0-0962bb249c2e",
  CellID->951441007],
-Cell[118904, 3114, 10000, 247, 70, "Output",ExpressionUUID->"59e91e63-7b53-4e6f-9bb4-0422c2dff555",
+Cell[117435, 3077, 9911, 244, 70, "Output",ExpressionUUID->"540b7f46-946a-4026-8b85-10f773065fe5",
  CellID->1405234313]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[128953, 3367, 186, 5, 70, "ExampleSubsection",ExpressionUUID->"b185c3d5-f193-4b66-91c6-a5f384ca02ee"],
-Cell[129142, 3374, 119, 3, 70, "Input",ExpressionUUID->"39485e67-ff56-491c-b3ed-0b0f376e3247",
+Cell[127395, 3327, 186, 5, 70, "ExampleSubsection",ExpressionUUID->"6f5fba2e-5242-48cc-bf80-f820e7666965"],
+Cell[127584, 3334, 119, 3, 70, "Input",ExpressionUUID->"c4e334ea-13a2-46c3-b8da-30de22f53dba",
  CellID->198902863],
-Cell[129264, 3379, 568, 12, 70, "ExampleText",ExpressionUUID->"e780d2ab-0c0c-422e-b83b-d525be1b5637",
+Cell[127706, 3339, 568, 12, 70, "ExampleText",ExpressionUUID->"c047f670-b1c4-4470-b220-48364d548e85",
  CellID->762145726],
 Cell[CellGroupData[{
-Cell[129857, 3395, 611, 14, 70, "Input",ExpressionUUID->"0690873a-7cdf-4ceb-a1e6-7974685d912b",
+Cell[128299, 3355, 611, 14, 70, "Input",ExpressionUUID->"6b9daa00-9cf2-4ffd-b8af-b5835799c94f",
  CellID->1790746174],
-Cell[130471, 3411, 10144, 250, 70, "Output",ExpressionUUID->"3cc57c21-4aeb-4dfb-b80d-51916224dbfe",
- CellID->1083087287]
+Cell[128913, 3371, 9731, 248, 70, "Output",ExpressionUUID->"b8128d53-392b-4732-aec5-1445d6a161e5",
+ CellID->2073729549]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[140652, 3666, 176, 6, 70, "Input",ExpressionUUID->"d82ea81d-c79c-40d8-b14b-def5ea938ea5",
+Cell[138681, 3624, 176, 6, 70, "Input",ExpressionUUID->"c78347cc-6a6e-48fc-9fc7-99956929ef33",
  CellID->1376640637],
-Cell[140831, 3674, 552, 13, 70, "Output",ExpressionUUID->"ba54c30d-2312-4191-8283-469f37f32e95",
- CellID->1597092153]
+Cell[138860, 3632, 464, 10, 70, "Output",ExpressionUUID->"fa390ba9-f409-4645-be21-aeb995eb7815",
+ CellID->2063116756]
 }, Open  ]],
-Cell[141398, 3690, 219, 5, 70, "ExampleText",ExpressionUUID->"5a4a2d82-1663-4283-a034-fff084252887",
+Cell[139339, 3645, 219, 5, 70, "ExampleText",ExpressionUUID->"b8da5172-fd1f-4606-9ccd-aa2600620b7b",
  CellID->572148154],
 Cell[CellGroupData[{
-Cell[141642, 3699, 557, 13, 70, "Input",ExpressionUUID->"89895d04-d6a9-429f-8736-c0cb9c0baaf3",
+Cell[139583, 3654, 557, 13, 70, "Input",ExpressionUUID->"3fe87fa2-da98-4da5-8d8d-5aec10dfa6e8",
  CellID->929711618],
-Cell[142202, 3714, 9984, 246, 70, "Output",ExpressionUUID->"3e78b822-b0fc-4f8e-8142-114c0465c524",
- CellID->753995820]
+Cell[140143, 3669, 9689, 247, 70, "Output",ExpressionUUID->"947eacdf-e8e6-43ee-ad25-78e15f9bc157",
+ CellID->471932689]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[152223, 3965, 182, 6, 70, "Input",ExpressionUUID->"72f47994-c0e7-42d5-a9d0-e2d413210c65",
+Cell[149869, 3921, 182, 6, 70, "Input",ExpressionUUID->"28bf7c11-423d-450c-8fa8-fb65d3b32c97",
  CellID->106745793],
-Cell[152408, 3973, 495, 12, 70, "Output",ExpressionUUID->"a845d4e9-0e00-4357-9b0d-a5b71804e348",
- CellID->1084067522]
+Cell[150054, 3929, 406, 9, 70, "Output",ExpressionUUID->"c397873f-2b95-45e7-b0db-ba24168825e9",
+ CellID->500525692]
 }, Open  ]]
 }, Closed]]
 }, Closed]],
-Cell[152942, 3990, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"1ba500dd-35ba-4901-bffc-b51f0484196c"]
+Cell[150499, 3943, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"9cbe003d-aabb-4552-87f8-9615b09a1d99"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[153010, 3995, 150, 7, 70, "SeeAlsoSection",ExpressionUUID->"b6aee757-ae9e-4bab-84a8-2f1ad4557cde",
+Cell[150567, 3948, 150, 7, 70, "SeeAlsoSection",ExpressionUUID->"1b55d633-c715-4b17-aff0-fbbea5b5b4e9",
  CellID->1255426704],
-Cell[153163, 4004, 3480, 99, 70, "SeeAlso",ExpressionUUID->"2a4e3178-5840-4d43-8794-35943907432a",
+Cell[150720, 3957, 3480, 99, 70, "SeeAlso",ExpressionUUID->"0dcbf34d-7c73-4dfc-a1df-91b7a9738d8a",
  CellID->1791113879]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[156680, 4108, 152, 7, 70, "TutorialsSection",ExpressionUUID->"8c9b4477-6d00-4f25-8163-1d3e4eb9030c",
+Cell[154237, 4061, 152, 7, 70, "TutorialsSection",ExpressionUUID->"31a239ff-2869-4418-9de2-6d8b2c4a6977",
  CellID->250839057],
-Cell[156835, 4117, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"7c887665-b689-4be6-93d5-6d94c4eecac5"],
-Cell[156869, 4119, 198, 6, 70, "Tutorials",ExpressionUUID->"e89324e1-7960-447f-92dc-20e851088ee2",
+Cell[154392, 4070, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"85310420-3eb7-45f4-95a1-bff43246388a"],
+Cell[154426, 4072, 198, 6, 70, "Tutorials",ExpressionUUID->"85efd967-9a92-40aa-8f34-47b608bb01e4",
  CellID->341631938],
-Cell[157070, 4127, 224, 6, 70, "Tutorials",ExpressionUUID->"c5da8a24-8e9f-4f87-9598-fc50092a743c",
+Cell[154627, 4080, 224, 6, 70, "Tutorials",ExpressionUUID->"4576302b-6d10-4785-9db0-701258c6eba1",
  CellID->1023267351],
-Cell[157297, 4135, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"4be96073-91ed-4812-9f13-c6cf9155e9dd"]
+Cell[154854, 4088, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"f06a9cf9-13ae-441d-9ad1-ac01ed44a76f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[157365, 4140, 156, 7, 70, "MoreAboutSection",ExpressionUUID->"aa89e798-bb39-4c15-aae0-1484443955a0",
+Cell[154922, 4093, 156, 7, 70, "MoreAboutSection",ExpressionUUID->"e0ecef77-676d-4318-97e6-a9fe0d1ecbf4",
  CellID->38303248],
-Cell[157524, 4149, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"a8a8834e-a1e3-4185-90a3-2963e08b6ca4"],
-Cell[157558, 4151, 186, 5, 70, "MoreAbout",ExpressionUUID->"a09d54fa-d4ba-4b5e-82da-5a97fb448580",
- CellID->1193673387],
-Cell[157747, 4158, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"9f841018-46a3-486d-a8bd-f8da4132ea99"]
+Cell[155081, 4102, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"ef7ebbef-0128-4252-80de-59c90f90f5f8"],
+Cell[155115, 4104, 185, 5, 70, "MoreAbout",ExpressionUUID->"7377df8b-a383-4857-9de0-9fc9886a2277",
+ CellID->895021763],
+Cell[155303, 4111, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"90664fed-d71d-4754-abde-194616eb178c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[157815, 4163, 160, 7, 70, "RelatedLinksSection",ExpressionUUID->"6840407c-bbc5-4aab-be36-a5ba33905185",
+Cell[155371, 4116, 160, 7, 70, "RelatedLinksSection",ExpressionUUID->"c135f61b-ab2b-446e-a2d1-e1a2e41154c7",
  CellID->1584193535],
-Cell[157978, 4172, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"a8d46340-d423-4376-adeb-be01e86d6e9e"],
-Cell[158012, 4174, 191, 5, 70, "RelatedLinks",ExpressionUUID->"f06b43fe-8efe-48b9-ba29-e944ad62ea59",
+Cell[155534, 4125, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"8b4016c3-50d2-4897-9237-1759c64514ea"],
+Cell[155568, 4127, 191, 5, 70, "RelatedLinks",ExpressionUUID->"20a921d7-c822-400c-b324-97ccc958419b",
  CellID->1038487239],
-Cell[158206, 4181, 204, 6, 70, "RelatedLinks",ExpressionUUID->"b371a556-2396-4cbe-b570-0119bd604823",
+Cell[155762, 4134, 204, 6, 70, "RelatedLinks",ExpressionUUID->"355b6ce2-b66d-4b3f-a790-72bc85b9b263",
  CellID->1970164909]
 }, Open  ]],
-Cell[158425, 4190, 23, 0, 70, "FooterCell",ExpressionUUID->"f61c8da8-d14d-43cb-ba99-4c2e5cd4ac1d"]
+Cell[155981, 4143, 23, 0, 70, "FooterCell",ExpressionUUID->"befbb5ee-885b-48e2-bf85-e8b98d85d504"]
 }
 ]
 *)

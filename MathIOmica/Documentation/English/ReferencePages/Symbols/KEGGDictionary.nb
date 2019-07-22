@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 11.3' *)
+(* CreatedBy='Mathematica 12.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    518577,      10989]
-NotebookOptionsPosition[    505727,      10727]
-NotebookOutlinePosition[    508060,      10786]
-CellTagsIndexPosition[    507972,      10781]
+NotebookDataLength[    532863,      11275]
+NotebookOptionsPosition[    520053,      11015]
+NotebookOutlinePosition[    522349,      11072]
+CellTagsIndexPosition[    522261,      11067]
 WindowTitle->KEGGDictionary
 WindowFrame->Normal*)
 
@@ -136,7 +136,7 @@ KEGGDictionary.html"], StandardForm]], "Input", TextClipboardType ->
            URL[
             StringJoin[
              If[
-              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$36421], 
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$37542], 
               "http://reference.wolfram.com/system-modeler/", 
               "http://reference.wolfram.com/language/"], 
              "MathIOmica/ref/KEGGDictionary", ".html"]], None}]}]},
@@ -168,9 +168,7 @@ therein."
     }]]}
   }]], "Usage",
  GridBoxOptions->{
- GridBoxBackground->{
-  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
-   "RowsIndexed" -> {}}}]
+ GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {{None}}}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -194,7 +192,7 @@ Cell[TextData[Cell[BoxData[
   Method->"Preemptive"]]]], "NotesSection",
  WholeCellGroupOpener->True,
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->1724936148],
+ CellID->1586055237],
 
 Cell["", "SectionHeaderSpacer"],
 
@@ -297,8 +295,7 @@ the standard directory if it does not exist already. ", "ExampleText"]],
   }]], "3ColumnTableMod",
  GridBoxOptions->{
  GridBoxBackground->{
-  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, 
-   "Rows" -> {None, None, None, {None}}, "RowsIndexed" -> {}},
+  "Columns" -> {{None}}, "Rows" -> {None, None, None, {None}}},
  GridBoxDividers->{"Rows" -> {{True, True, True, True, True}}}}],
 
 Cell["", "SectionFooterSpacer"]
@@ -316,7 +313,7 @@ Cell[TextData[{
 }], "PrimaryExamplesSection",
  WholeCellGroupOpener->True,
  CellTags->"PrimaryExamplesSection",
- CellID->2120088583],
+ CellID->115858048],
 
 Cell[CellGroupData[{
 
@@ -326,7 +323,7 @@ Cell[TextData[{
  Cell["(1)", "ExampleCount"]
 }], "ExampleSection", "ExampleSection",
  WholeCellGroupOpener->True,
- CellID->1280143457],
+ CellID->1606028554],
 
 Cell["First we need to load the MathIOmica package:", "ExampleText",
  CellID->158760191],
@@ -1142,9 +1139,6 @@ Homo sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa05416\"\>", 
     "\[Rule]", "\<\"Viral myocarditis - Homo sapiens (human)\"\>"}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{581, 5476},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
  CellID->1630849854]
 }, Open  ]],
@@ -1162,9 +1156,6 @@ Cell[BoxData[
 
 Cell[BoxData["\<\"NF-kappa B signaling pathway - Homo sapiens (human)\"\>"], \
 "Output",
- ImageSize->{368, 16},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[3]=",
  CellID->823329979]
 }, Open  ]]
@@ -1282,8 +1273,6 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa00290\"\>", 
     "\[Rule]", "\<\"Valine, leucine and isoleucine biosynthesis - Homo \
 sapiens (human)\"\>"}], ",", 
-   RowBox[{"\<\"path:hsa00300\"\>", 
-    "\[Rule]", "\<\"Lysine biosynthesis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00310\"\>", 
     "\[Rule]", "\<\"Lysine degradation - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00330\"\>", 
@@ -1308,6 +1297,9 @@ Homo sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa00430\"\>", 
     "\[Rule]", "\<\"Taurine and hypotaurine metabolism - Homo sapiens (human)\
 \"\>"}], ",", 
+   RowBox[{"\<\"path:hsa00440\"\>", 
+    "\[Rule]", "\<\"Phosphonate and phosphinate metabolism - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00450\"\>", 
     "\[Rule]", "\<\"Selenocompound metabolism - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -1329,11 +1321,14 @@ Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Other glycan degradation - Homo sapiens (human)\"\>"}], 
    ",", 
    RowBox[{"\<\"path:hsa00512\"\>", 
-    "\[Rule]", "\<\"Mucin type O-Glycan biosynthesis - Homo sapiens (human)\"\
+    "\[Rule]", "\<\"Mucin type O-glycan biosynthesis - Homo sapiens (human)\"\
 \>"}], ",", 
    RowBox[{"\<\"path:hsa00514\"\>", 
     "\[Rule]", "\<\"Other types of O-glycan biosynthesis - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa00515\"\>", 
+    "\[Rule]", "\<\"Mannose type O-glycan biosynthesis - Homo sapiens (human)\
+\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00520\"\>", 
     "\[Rule]", "\<\"Amino sugar and nucleotide sugar metabolism - Homo \
 sapiens (human)\"\>"}], ",", 
@@ -1359,7 +1354,7 @@ heparin - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Inositol phosphate metabolism - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00563\"\>", 
-    "\[Rule]", "\<\"Glycosylphosphatidylinositol(GPI)-anchor biosynthesis - \
+    "\[Rule]", "\<\"Glycosylphosphatidylinositol (GPI)-anchor biosynthesis - \
 Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00564\"\>", 
     "\[Rule]", "\<\"Glycerophospholipid metabolism - Homo sapiens \
@@ -1382,8 +1377,8 @@ Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Glycosphingolipid biosynthesis - lacto and neolacto \
 series - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00603\"\>", 
-    "\[Rule]", "\<\"Glycosphingolipid biosynthesis - globo series - Homo \
-sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Glycosphingolipid biosynthesis - globo and isoglobo \
+series - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00604\"\>", 
     "\[Rule]", "\<\"Glycosphingolipid biosynthesis - ganglio series - Homo \
 sapiens (human)\"\>"}], ",", 
@@ -1465,6 +1460,9 @@ sapiens (human)\"\>"}], ",",
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa01522\"\>", 
     "\[Rule]", "\<\"Endocrine resistance - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa01523\"\>", 
+    "\[Rule]", "\<\"Antifolate resistance - Homo sapiens (human)\"\>"}], ",", 
+   
    RowBox[{"\<\"path:hsa01524\"\>", 
     "\[Rule]", "\<\"Platinum drug resistance - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -1532,6 +1530,9 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04060\"\>", 
     "\[Rule]", "\<\"Cytokine-cytokine receptor interaction - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04061\"\>", 
+    "\[Rule]", "\<\"Viral protein interaction with cytokine and cytokine \
+receptor - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04062\"\>", 
     "\[Rule]", "\<\"Chemokine signaling pathway - Homo sapiens (human)\"\>"}],
     ",", 
@@ -1570,9 +1571,12 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04130\"\>", 
     "\[Rule]", "\<\"SNARE interactions in vesicular transport - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04136\"\>", 
+    "\[Rule]", "\<\"Autophagy - other - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04137\"\>", 
+    "\[Rule]", "\<\"Mitophagy - animal - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04140\"\>", 
-    "\[Rule]", "\<\"Regulation of autophagy - Homo sapiens (human)\"\>"}], 
-   ",", 
+    "\[Rule]", "\<\"Autophagy - animal - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04141\"\>", 
     "\[Rule]", "\<\"Protein processing in endoplasmic reticulum - Homo \
 sapiens (human)\"\>"}], ",", 
@@ -1602,6 +1606,12 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04215\"\>", 
     "\[Rule]", "\<\"Apoptosis - multiple species - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04216\"\>", 
+    "\[Rule]", "\<\"Ferroptosis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04217\"\>", 
+    "\[Rule]", "\<\"Necroptosis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04218\"\>", 
+    "\[Rule]", "\<\"Cellular senescence - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04260\"\>", 
     "\[Rule]", "\<\"Cardiac muscle contraction - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -1614,9 +1624,6 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04310\"\>", 
     "\[Rule]", "\<\"Wnt signaling pathway - Homo sapiens (human)\"\>"}], ",", 
    
-   RowBox[{"\<\"path:hsa04320\"\>", 
-    "\[Rule]", "\<\"Dorso-ventral axis formation - Homo sapiens \
-(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04330\"\>", 
     "\[Rule]", "\<\"Notch signaling pathway - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -1630,6 +1637,9 @@ sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Axon guidance - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04370\"\>", 
     "\[Rule]", "\<\"VEGF signaling pathway - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04371\"\>", 
+    "\[Rule]", "\<\"Apelin signaling pathway - Homo sapiens (human)\"\>"}], 
+   ",", 
    RowBox[{"\<\"path:hsa04380\"\>", 
     "\[Rule]", "\<\"Osteoclast differentiation - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -1637,7 +1647,7 @@ sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Hippo signaling pathway - Homo sapiens (human)\"\>"}], 
    ",", 
    RowBox[{"\<\"path:hsa04392\"\>", 
-    "\[Rule]", "\<\"Hippo signaling pathway -multiple species - Homo sapiens \
+    "\[Rule]", "\<\"Hippo signaling pathway - multiple species - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04510\"\>", 
     "\[Rule]", "\<\"Focal adhesion - Homo sapiens (human)\"\>"}], ",", 
@@ -1679,8 +1689,11 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04623\"\>", 
     "\[Rule]", "\<\"Cytosolic DNA-sensing pathway - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04625\"\>", 
+    "\[Rule]", "\<\"C-type lectin receptor signaling pathway - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04630\"\>", 
-    "\[Rule]", "\<\"Jak-STAT signaling pathway - Homo sapiens (human)\"\>"}], 
+    "\[Rule]", "\<\"JAK-STAT signaling pathway - Homo sapiens (human)\"\>"}], 
    ",", 
    RowBox[{"\<\"path:hsa04640\"\>", 
     "\[Rule]", "\<\"Hematopoietic cell lineage - Homo sapiens (human)\"\>"}], 
@@ -1688,6 +1701,15 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04650\"\>", 
     "\[Rule]", "\<\"Natural killer cell mediated cytotoxicity - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04657\"\>", 
+    "\[Rule]", "\<\"IL-17 signaling pathway - Homo sapiens (human)\"\>"}], 
+   ",", 
+   RowBox[{"\<\"path:hsa04658\"\>", 
+    "\[Rule]", "\<\"Th1 and Th2 cell differentiation - Homo sapiens (human)\"\
+\>"}], ",", 
+   RowBox[{"\<\"path:hsa04659\"\>", 
+    "\[Rule]", "\<\"Th17 cell differentiation - Homo sapiens (human)\"\>"}], 
+   ",", 
    RowBox[{"\<\"path:hsa04660\"\>", 
     "\[Rule]", "\<\"T cell receptor signaling pathway - Homo sapiens \
 (human)\"\>"}], ",", 
@@ -1714,6 +1736,8 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04713\"\>", 
     "\[Rule]", "\<\"Circadian entrainment - Homo sapiens (human)\"\>"}], ",", 
    
+   RowBox[{"\<\"path:hsa04714\"\>", 
+    "\[Rule]", "\<\"Thermogenesis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04720\"\>", 
     "\[Rule]", "\<\"Long-term potentiation - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04721\"\>", 
@@ -1793,6 +1817,15 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04925\"\>", 
     "\[Rule]", "\<\"Aldosterone synthesis and secretion - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04926\"\>", 
+    "\[Rule]", "\<\"Relaxin signaling pathway - Homo sapiens (human)\"\>"}], 
+   ",", 
+   RowBox[{"\<\"path:hsa04927\"\>", 
+    "\[Rule]", "\<\"Cortisol synthesis and secretion - Homo sapiens (human)\"\
+\>"}], ",", 
+   RowBox[{"\<\"path:hsa04928\"\>", 
+    "\[Rule]", "\<\"Parathyroid hormone synthesis, secretion and action - \
+Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04930\"\>", 
     "\[Rule]", "\<\"Type II diabetes mellitus - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -1804,6 +1837,8 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04933\"\>", 
     "\[Rule]", "\<\"AGE-RAGE signaling pathway in diabetic complications - \
 Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04934\"\>", 
+    "\[Rule]", "\<\"Cushing syndrome - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04940\"\>", 
     "\[Rule]", "\<\"Type I diabetes mellitus - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -1847,15 +1882,17 @@ Homo sapiens (human)\"\>"}], ",",
 \>"}], ",", 
    RowBox[{"\<\"path:hsa04978\"\>", 
     "\[Rule]", "\<\"Mineral absorption - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04979\"\>", 
+    "\[Rule]", "\<\"Cholesterol metabolism - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05010\"\>", 
-    "\[Rule]", "\<\"Alzheimer's disease - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Alzheimer disease - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05012\"\>", 
-    "\[Rule]", "\<\"Parkinson's disease - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Parkinson disease - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05014\"\>", 
     "\[Rule]", "\<\"Amyotrophic lateral sclerosis (ALS) - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05016\"\>", 
-    "\[Rule]", "\<\"Huntington's disease - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Huntington disease - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05020\"\>", 
     "\[Rule]", "\<\"Prion diseases - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05030\"\>", 
@@ -1889,6 +1926,8 @@ infection - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Pertussis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05134\"\>", 
     "\[Rule]", "\<\"Legionellosis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05135\"\>", 
+    "\[Rule]", "\<\"Yersinia infection - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05140\"\>", 
     "\[Rule]", "\<\"Leishmaniasis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05142\"\>", 
@@ -1914,15 +1953,28 @@ infection - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Hepatitis B - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05162\"\>", 
     "\[Rule]", "\<\"Measles - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05163\"\>", 
+    "\[Rule]", "\<\"Human cytomegalovirus infection - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05164\"\>", 
     "\[Rule]", "\<\"Influenza A - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05165\"\>", 
+    "\[Rule]", "\<\"Human papillomavirus infection - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05166\"\>", 
-    "\[Rule]", "\<\"HTLV-I infection - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Human T-cell leukemia virus 1 infection - Homo sapiens \
+(human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05167\"\>", 
+    "\[Rule]", "\<\"Kaposi sarcoma-associated herpesvirus infection - Homo \
+sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05168\"\>", 
-    "\[Rule]", "\<\"Herpes simplex infection - Homo sapiens (human)\"\>"}], 
-   ",", 
+    "\[Rule]", "\<\"Herpes simplex virus 1 infection - Homo sapiens (human)\"\
+\>"}], ",", 
    RowBox[{"\<\"path:hsa05169\"\>", 
     "\[Rule]", "\<\"Epstein-Barr virus infection - Homo sapiens \
+(human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05170\"\>", 
+    "\[Rule]", "\<\"Human immunodeficiency virus 1 infection - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05200\"\>", 
     "\[Rule]", "\<\"Pathways in cancer - Homo sapiens (human)\"\>"}], ",", 
@@ -1969,12 +2021,22 @@ infection - Homo sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa05223\"\>", 
     "\[Rule]", "\<\"Non-small cell lung cancer - Homo sapiens (human)\"\>"}], 
    ",", 
+   RowBox[{"\<\"path:hsa05224\"\>", 
+    "\[Rule]", "\<\"Breast cancer - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05225\"\>", 
+    "\[Rule]", "\<\"Hepatocellular carcinoma - Homo sapiens (human)\"\>"}], 
+   ",", 
+   RowBox[{"\<\"path:hsa05226\"\>", 
+    "\[Rule]", "\<\"Gastric cancer - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05230\"\>", 
     "\[Rule]", "\<\"Central carbon metabolism in cancer - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05231\"\>", 
     "\[Rule]", "\<\"Choline metabolism in cancer - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05235\"\>", 
+    "\[Rule]", "\<\"PD-L1 expression and PD-1 checkpoint pathway in cancer - \
+Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05310\"\>", 
     "\[Rule]", "\<\"Asthma - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05320\"\>", 
@@ -2003,15 +2065,15 @@ infection - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Arrhythmogenic right ventricular cardiomyopathy (ARVC) - \
 Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05414\"\>", 
-    "\[Rule]", "\<\"Dilated cardiomyopathy - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Dilated cardiomyopathy (DCM) - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05416\"\>", 
-    "\[Rule]", "\<\"Viral myocarditis - Homo sapiens (human)\"\>"}]}], 
-  "\[RightAssociation]"}]], "Output",
- ImageSize->{575, 5527},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
+    "\[Rule]", "\<\"Viral myocarditis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05418\"\>", 
+    "\[Rule]", "\<\"Fluid shear stress and atherosclerosis - Homo sapiens \
+(human)\"\>"}]}], "\[RightAssociation]"}]], "Output",
  CellLabel->"Out[2]=",
- CellID->1430834088]
+ CellID->1780347193]
 }, Open  ]]
 }, Closed]],
 
@@ -2118,8 +2180,6 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa00290\"\>", 
     "\[Rule]", "\<\"Valine, leucine and isoleucine biosynthesis - Homo \
 sapiens (human)\"\>"}], ",", 
-   RowBox[{"\<\"path:hsa00300\"\>", 
-    "\[Rule]", "\<\"Lysine biosynthesis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00310\"\>", 
     "\[Rule]", "\<\"Lysine degradation - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00330\"\>", 
@@ -2144,6 +2204,9 @@ Homo sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa00430\"\>", 
     "\[Rule]", "\<\"Taurine and hypotaurine metabolism - Homo sapiens (human)\
 \"\>"}], ",", 
+   RowBox[{"\<\"path:hsa00440\"\>", 
+    "\[Rule]", "\<\"Phosphonate and phosphinate metabolism - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00450\"\>", 
     "\[Rule]", "\<\"Selenocompound metabolism - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -2165,11 +2228,14 @@ Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Other glycan degradation - Homo sapiens (human)\"\>"}], 
    ",", 
    RowBox[{"\<\"path:hsa00512\"\>", 
-    "\[Rule]", "\<\"Mucin type O-Glycan biosynthesis - Homo sapiens (human)\"\
+    "\[Rule]", "\<\"Mucin type O-glycan biosynthesis - Homo sapiens (human)\"\
 \>"}], ",", 
    RowBox[{"\<\"path:hsa00514\"\>", 
     "\[Rule]", "\<\"Other types of O-glycan biosynthesis - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa00515\"\>", 
+    "\[Rule]", "\<\"Mannose type O-glycan biosynthesis - Homo sapiens (human)\
+\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00520\"\>", 
     "\[Rule]", "\<\"Amino sugar and nucleotide sugar metabolism - Homo \
 sapiens (human)\"\>"}], ",", 
@@ -2195,7 +2261,7 @@ heparin - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Inositol phosphate metabolism - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00563\"\>", 
-    "\[Rule]", "\<\"Glycosylphosphatidylinositol(GPI)-anchor biosynthesis - \
+    "\[Rule]", "\<\"Glycosylphosphatidylinositol (GPI)-anchor biosynthesis - \
 Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00564\"\>", 
     "\[Rule]", "\<\"Glycerophospholipid metabolism - Homo sapiens \
@@ -2218,8 +2284,8 @@ Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Glycosphingolipid biosynthesis - lacto and neolacto \
 series - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00603\"\>", 
-    "\[Rule]", "\<\"Glycosphingolipid biosynthesis - globo series - Homo \
-sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Glycosphingolipid biosynthesis - globo and isoglobo \
+series - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00604\"\>", 
     "\[Rule]", "\<\"Glycosphingolipid biosynthesis - ganglio series - Homo \
 sapiens (human)\"\>"}], ",", 
@@ -2301,6 +2367,9 @@ sapiens (human)\"\>"}], ",",
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa01522\"\>", 
     "\[Rule]", "\<\"Endocrine resistance - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa01523\"\>", 
+    "\[Rule]", "\<\"Antifolate resistance - Homo sapiens (human)\"\>"}], ",", 
+   
    RowBox[{"\<\"path:hsa01524\"\>", 
     "\[Rule]", "\<\"Platinum drug resistance - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -2368,6 +2437,9 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04060\"\>", 
     "\[Rule]", "\<\"Cytokine-cytokine receptor interaction - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04061\"\>", 
+    "\[Rule]", "\<\"Viral protein interaction with cytokine and cytokine \
+receptor - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04062\"\>", 
     "\[Rule]", "\<\"Chemokine signaling pathway - Homo sapiens (human)\"\>"}],
     ",", 
@@ -2406,9 +2478,12 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04130\"\>", 
     "\[Rule]", "\<\"SNARE interactions in vesicular transport - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04136\"\>", 
+    "\[Rule]", "\<\"Autophagy - other - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04137\"\>", 
+    "\[Rule]", "\<\"Mitophagy - animal - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04140\"\>", 
-    "\[Rule]", "\<\"Regulation of autophagy - Homo sapiens (human)\"\>"}], 
-   ",", 
+    "\[Rule]", "\<\"Autophagy - animal - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04141\"\>", 
     "\[Rule]", "\<\"Protein processing in endoplasmic reticulum - Homo \
 sapiens (human)\"\>"}], ",", 
@@ -2438,6 +2513,12 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04215\"\>", 
     "\[Rule]", "\<\"Apoptosis - multiple species - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04216\"\>", 
+    "\[Rule]", "\<\"Ferroptosis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04217\"\>", 
+    "\[Rule]", "\<\"Necroptosis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04218\"\>", 
+    "\[Rule]", "\<\"Cellular senescence - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04260\"\>", 
     "\[Rule]", "\<\"Cardiac muscle contraction - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -2450,9 +2531,6 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04310\"\>", 
     "\[Rule]", "\<\"Wnt signaling pathway - Homo sapiens (human)\"\>"}], ",", 
    
-   RowBox[{"\<\"path:hsa04320\"\>", 
-    "\[Rule]", "\<\"Dorso-ventral axis formation - Homo sapiens \
-(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04330\"\>", 
     "\[Rule]", "\<\"Notch signaling pathway - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -2466,6 +2544,9 @@ sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Axon guidance - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04370\"\>", 
     "\[Rule]", "\<\"VEGF signaling pathway - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04371\"\>", 
+    "\[Rule]", "\<\"Apelin signaling pathway - Homo sapiens (human)\"\>"}], 
+   ",", 
    RowBox[{"\<\"path:hsa04380\"\>", 
     "\[Rule]", "\<\"Osteoclast differentiation - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -2473,7 +2554,7 @@ sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Hippo signaling pathway - Homo sapiens (human)\"\>"}], 
    ",", 
    RowBox[{"\<\"path:hsa04392\"\>", 
-    "\[Rule]", "\<\"Hippo signaling pathway -multiple species - Homo sapiens \
+    "\[Rule]", "\<\"Hippo signaling pathway - multiple species - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04510\"\>", 
     "\[Rule]", "\<\"Focal adhesion - Homo sapiens (human)\"\>"}], ",", 
@@ -2515,8 +2596,11 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04623\"\>", 
     "\[Rule]", "\<\"Cytosolic DNA-sensing pathway - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04625\"\>", 
+    "\[Rule]", "\<\"C-type lectin receptor signaling pathway - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04630\"\>", 
-    "\[Rule]", "\<\"Jak-STAT signaling pathway - Homo sapiens (human)\"\>"}], 
+    "\[Rule]", "\<\"JAK-STAT signaling pathway - Homo sapiens (human)\"\>"}], 
    ",", 
    RowBox[{"\<\"path:hsa04640\"\>", 
     "\[Rule]", "\<\"Hematopoietic cell lineage - Homo sapiens (human)\"\>"}], 
@@ -2524,6 +2608,15 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04650\"\>", 
     "\[Rule]", "\<\"Natural killer cell mediated cytotoxicity - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04657\"\>", 
+    "\[Rule]", "\<\"IL-17 signaling pathway - Homo sapiens (human)\"\>"}], 
+   ",", 
+   RowBox[{"\<\"path:hsa04658\"\>", 
+    "\[Rule]", "\<\"Th1 and Th2 cell differentiation - Homo sapiens (human)\"\
+\>"}], ",", 
+   RowBox[{"\<\"path:hsa04659\"\>", 
+    "\[Rule]", "\<\"Th17 cell differentiation - Homo sapiens (human)\"\>"}], 
+   ",", 
    RowBox[{"\<\"path:hsa04660\"\>", 
     "\[Rule]", "\<\"T cell receptor signaling pathway - Homo sapiens \
 (human)\"\>"}], ",", 
@@ -2550,6 +2643,8 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04713\"\>", 
     "\[Rule]", "\<\"Circadian entrainment - Homo sapiens (human)\"\>"}], ",", 
    
+   RowBox[{"\<\"path:hsa04714\"\>", 
+    "\[Rule]", "\<\"Thermogenesis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04720\"\>", 
     "\[Rule]", "\<\"Long-term potentiation - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04721\"\>", 
@@ -2629,6 +2724,15 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04925\"\>", 
     "\[Rule]", "\<\"Aldosterone synthesis and secretion - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04926\"\>", 
+    "\[Rule]", "\<\"Relaxin signaling pathway - Homo sapiens (human)\"\>"}], 
+   ",", 
+   RowBox[{"\<\"path:hsa04927\"\>", 
+    "\[Rule]", "\<\"Cortisol synthesis and secretion - Homo sapiens (human)\"\
+\>"}], ",", 
+   RowBox[{"\<\"path:hsa04928\"\>", 
+    "\[Rule]", "\<\"Parathyroid hormone synthesis, secretion and action - \
+Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04930\"\>", 
     "\[Rule]", "\<\"Type II diabetes mellitus - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -2640,6 +2744,8 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04933\"\>", 
     "\[Rule]", "\<\"AGE-RAGE signaling pathway in diabetic complications - \
 Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04934\"\>", 
+    "\[Rule]", "\<\"Cushing syndrome - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04940\"\>", 
     "\[Rule]", "\<\"Type I diabetes mellitus - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -2683,15 +2789,17 @@ Homo sapiens (human)\"\>"}], ",",
 \>"}], ",", 
    RowBox[{"\<\"path:hsa04978\"\>", 
     "\[Rule]", "\<\"Mineral absorption - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04979\"\>", 
+    "\[Rule]", "\<\"Cholesterol metabolism - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05010\"\>", 
-    "\[Rule]", "\<\"Alzheimer's disease - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Alzheimer disease - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05012\"\>", 
-    "\[Rule]", "\<\"Parkinson's disease - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Parkinson disease - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05014\"\>", 
     "\[Rule]", "\<\"Amyotrophic lateral sclerosis (ALS) - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05016\"\>", 
-    "\[Rule]", "\<\"Huntington's disease - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Huntington disease - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05020\"\>", 
     "\[Rule]", "\<\"Prion diseases - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05030\"\>", 
@@ -2725,6 +2833,8 @@ infection - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Pertussis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05134\"\>", 
     "\[Rule]", "\<\"Legionellosis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05135\"\>", 
+    "\[Rule]", "\<\"Yersinia infection - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05140\"\>", 
     "\[Rule]", "\<\"Leishmaniasis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05142\"\>", 
@@ -2750,15 +2860,28 @@ infection - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Hepatitis B - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05162\"\>", 
     "\[Rule]", "\<\"Measles - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05163\"\>", 
+    "\[Rule]", "\<\"Human cytomegalovirus infection - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05164\"\>", 
     "\[Rule]", "\<\"Influenza A - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05165\"\>", 
+    "\[Rule]", "\<\"Human papillomavirus infection - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05166\"\>", 
-    "\[Rule]", "\<\"HTLV-I infection - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Human T-cell leukemia virus 1 infection - Homo sapiens \
+(human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05167\"\>", 
+    "\[Rule]", "\<\"Kaposi sarcoma-associated herpesvirus infection - Homo \
+sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05168\"\>", 
-    "\[Rule]", "\<\"Herpes simplex infection - Homo sapiens (human)\"\>"}], 
-   ",", 
+    "\[Rule]", "\<\"Herpes simplex virus 1 infection - Homo sapiens (human)\"\
+\>"}], ",", 
    RowBox[{"\<\"path:hsa05169\"\>", 
     "\[Rule]", "\<\"Epstein-Barr virus infection - Homo sapiens \
+(human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05170\"\>", 
+    "\[Rule]", "\<\"Human immunodeficiency virus 1 infection - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05200\"\>", 
     "\[Rule]", "\<\"Pathways in cancer - Homo sapiens (human)\"\>"}], ",", 
@@ -2805,12 +2928,22 @@ infection - Homo sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa05223\"\>", 
     "\[Rule]", "\<\"Non-small cell lung cancer - Homo sapiens (human)\"\>"}], 
    ",", 
+   RowBox[{"\<\"path:hsa05224\"\>", 
+    "\[Rule]", "\<\"Breast cancer - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05225\"\>", 
+    "\[Rule]", "\<\"Hepatocellular carcinoma - Homo sapiens (human)\"\>"}], 
+   ",", 
+   RowBox[{"\<\"path:hsa05226\"\>", 
+    "\[Rule]", "\<\"Gastric cancer - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05230\"\>", 
     "\[Rule]", "\<\"Central carbon metabolism in cancer - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05231\"\>", 
     "\[Rule]", "\<\"Choline metabolism in cancer - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05235\"\>", 
+    "\[Rule]", "\<\"PD-L1 expression and PD-1 checkpoint pathway in cancer - \
+Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05310\"\>", 
     "\[Rule]", "\<\"Asthma - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05320\"\>", 
@@ -2839,15 +2972,15 @@ infection - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Arrhythmogenic right ventricular cardiomyopathy (ARVC) - \
 Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05414\"\>", 
-    "\[Rule]", "\<\"Dilated cardiomyopathy - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Dilated cardiomyopathy (DCM) - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05416\"\>", 
-    "\[Rule]", "\<\"Viral myocarditis - Homo sapiens (human)\"\>"}]}], 
-  "\[RightAssociation]"}]], "Output",
- ImageSize->{575, 5527},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
+    "\[Rule]", "\<\"Viral myocarditis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05418\"\>", 
+    "\[Rule]", "\<\"Fluid shear stress and atherosclerosis - Homo sapiens \
+(human)\"\>"}]}], "\[RightAssociation]"}]], "Output",
  CellLabel->"Out[1]=",
- CellID->118379909]
+ CellID->1393974705]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3300,11 +3433,8 @@ alpha-D-glucose-1P\"\>"}], ",",
    RowBox[{"\<\"md:hsa_M00741\"\>", 
     "\[Rule]", "\<\"Propanoyl-CoA metabolism, propanoyl-CoA => succinyl-CoA\"\
 \>"}]}], "\[RightAssociation]"}]], "Output",
- ImageSize->{566, 2926},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->604223974]
+ CellID->221730683]
 }, Open  ]]
 }, Open  ]],
 
@@ -7358,11 +7488,8 @@ Hypercholesterolemia; Hypertriglyceridemia; Mixed dyslipidemia\"\>"}], ",",
    RowBox[{"\<\"ds:H01640\"\>", 
     "\[Rule]", "\<\"Uterine leiomyoma; Fibroid\"\>"}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{568, 38745},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->2136324589]
+ CellID->362365911]
 }, Open  ]]
 }, Open  ]]
 }, Closed]],
@@ -7473,8 +7600,6 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa00290\"\>", 
     "\[Rule]", "\<\"Valine, leucine and isoleucine biosynthesis - Homo \
 sapiens (human)\"\>"}], ",", 
-   RowBox[{"\<\"path:hsa00300\"\>", 
-    "\[Rule]", "\<\"Lysine biosynthesis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00310\"\>", 
     "\[Rule]", "\<\"Lysine degradation - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00330\"\>", 
@@ -7499,6 +7624,9 @@ Homo sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa00430\"\>", 
     "\[Rule]", "\<\"Taurine and hypotaurine metabolism - Homo sapiens (human)\
 \"\>"}], ",", 
+   RowBox[{"\<\"path:hsa00440\"\>", 
+    "\[Rule]", "\<\"Phosphonate and phosphinate metabolism - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00450\"\>", 
     "\[Rule]", "\<\"Selenocompound metabolism - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -7520,11 +7648,14 @@ Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Other glycan degradation - Homo sapiens (human)\"\>"}], 
    ",", 
    RowBox[{"\<\"path:hsa00512\"\>", 
-    "\[Rule]", "\<\"Mucin type O-Glycan biosynthesis - Homo sapiens (human)\"\
+    "\[Rule]", "\<\"Mucin type O-glycan biosynthesis - Homo sapiens (human)\"\
 \>"}], ",", 
    RowBox[{"\<\"path:hsa00514\"\>", 
     "\[Rule]", "\<\"Other types of O-glycan biosynthesis - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa00515\"\>", 
+    "\[Rule]", "\<\"Mannose type O-glycan biosynthesis - Homo sapiens (human)\
+\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00520\"\>", 
     "\[Rule]", "\<\"Amino sugar and nucleotide sugar metabolism - Homo \
 sapiens (human)\"\>"}], ",", 
@@ -7550,7 +7681,7 @@ heparin - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Inositol phosphate metabolism - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00563\"\>", 
-    "\[Rule]", "\<\"Glycosylphosphatidylinositol(GPI)-anchor biosynthesis - \
+    "\[Rule]", "\<\"Glycosylphosphatidylinositol (GPI)-anchor biosynthesis - \
 Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00564\"\>", 
     "\[Rule]", "\<\"Glycerophospholipid metabolism - Homo sapiens \
@@ -7573,8 +7704,8 @@ Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Glycosphingolipid biosynthesis - lacto and neolacto \
 series - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00603\"\>", 
-    "\[Rule]", "\<\"Glycosphingolipid biosynthesis - globo series - Homo \
-sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Glycosphingolipid biosynthesis - globo and isoglobo \
+series - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00604\"\>", 
     "\[Rule]", "\<\"Glycosphingolipid biosynthesis - ganglio series - Homo \
 sapiens (human)\"\>"}], ",", 
@@ -7656,6 +7787,9 @@ sapiens (human)\"\>"}], ",",
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa01522\"\>", 
     "\[Rule]", "\<\"Endocrine resistance - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa01523\"\>", 
+    "\[Rule]", "\<\"Antifolate resistance - Homo sapiens (human)\"\>"}], ",", 
+   
    RowBox[{"\<\"path:hsa01524\"\>", 
     "\[Rule]", "\<\"Platinum drug resistance - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -7723,6 +7857,9 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04060\"\>", 
     "\[Rule]", "\<\"Cytokine-cytokine receptor interaction - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04061\"\>", 
+    "\[Rule]", "\<\"Viral protein interaction with cytokine and cytokine \
+receptor - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04062\"\>", 
     "\[Rule]", "\<\"Chemokine signaling pathway - Homo sapiens (human)\"\>"}],
     ",", 
@@ -7761,9 +7898,12 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04130\"\>", 
     "\[Rule]", "\<\"SNARE interactions in vesicular transport - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04136\"\>", 
+    "\[Rule]", "\<\"Autophagy - other - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04137\"\>", 
+    "\[Rule]", "\<\"Mitophagy - animal - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04140\"\>", 
-    "\[Rule]", "\<\"Regulation of autophagy - Homo sapiens (human)\"\>"}], 
-   ",", 
+    "\[Rule]", "\<\"Autophagy - animal - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04141\"\>", 
     "\[Rule]", "\<\"Protein processing in endoplasmic reticulum - Homo \
 sapiens (human)\"\>"}], ",", 
@@ -7793,6 +7933,12 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04215\"\>", 
     "\[Rule]", "\<\"Apoptosis - multiple species - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04216\"\>", 
+    "\[Rule]", "\<\"Ferroptosis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04217\"\>", 
+    "\[Rule]", "\<\"Necroptosis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04218\"\>", 
+    "\[Rule]", "\<\"Cellular senescence - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04260\"\>", 
     "\[Rule]", "\<\"Cardiac muscle contraction - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -7805,9 +7951,6 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04310\"\>", 
     "\[Rule]", "\<\"Wnt signaling pathway - Homo sapiens (human)\"\>"}], ",", 
    
-   RowBox[{"\<\"path:hsa04320\"\>", 
-    "\[Rule]", "\<\"Dorso-ventral axis formation - Homo sapiens \
-(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04330\"\>", 
     "\[Rule]", "\<\"Notch signaling pathway - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -7821,6 +7964,9 @@ sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Axon guidance - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04370\"\>", 
     "\[Rule]", "\<\"VEGF signaling pathway - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04371\"\>", 
+    "\[Rule]", "\<\"Apelin signaling pathway - Homo sapiens (human)\"\>"}], 
+   ",", 
    RowBox[{"\<\"path:hsa04380\"\>", 
     "\[Rule]", "\<\"Osteoclast differentiation - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -7828,7 +7974,7 @@ sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Hippo signaling pathway - Homo sapiens (human)\"\>"}], 
    ",", 
    RowBox[{"\<\"path:hsa04392\"\>", 
-    "\[Rule]", "\<\"Hippo signaling pathway -multiple species - Homo sapiens \
+    "\[Rule]", "\<\"Hippo signaling pathway - multiple species - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04510\"\>", 
     "\[Rule]", "\<\"Focal adhesion - Homo sapiens (human)\"\>"}], ",", 
@@ -7870,8 +8016,11 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04623\"\>", 
     "\[Rule]", "\<\"Cytosolic DNA-sensing pathway - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04625\"\>", 
+    "\[Rule]", "\<\"C-type lectin receptor signaling pathway - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04630\"\>", 
-    "\[Rule]", "\<\"Jak-STAT signaling pathway - Homo sapiens (human)\"\>"}], 
+    "\[Rule]", "\<\"JAK-STAT signaling pathway - Homo sapiens (human)\"\>"}], 
    ",", 
    RowBox[{"\<\"path:hsa04640\"\>", 
     "\[Rule]", "\<\"Hematopoietic cell lineage - Homo sapiens (human)\"\>"}], 
@@ -7879,6 +8028,15 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04650\"\>", 
     "\[Rule]", "\<\"Natural killer cell mediated cytotoxicity - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04657\"\>", 
+    "\[Rule]", "\<\"IL-17 signaling pathway - Homo sapiens (human)\"\>"}], 
+   ",", 
+   RowBox[{"\<\"path:hsa04658\"\>", 
+    "\[Rule]", "\<\"Th1 and Th2 cell differentiation - Homo sapiens (human)\"\
+\>"}], ",", 
+   RowBox[{"\<\"path:hsa04659\"\>", 
+    "\[Rule]", "\<\"Th17 cell differentiation - Homo sapiens (human)\"\>"}], 
+   ",", 
    RowBox[{"\<\"path:hsa04660\"\>", 
     "\[Rule]", "\<\"T cell receptor signaling pathway - Homo sapiens \
 (human)\"\>"}], ",", 
@@ -7905,6 +8063,8 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04713\"\>", 
     "\[Rule]", "\<\"Circadian entrainment - Homo sapiens (human)\"\>"}], ",", 
    
+   RowBox[{"\<\"path:hsa04714\"\>", 
+    "\[Rule]", "\<\"Thermogenesis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04720\"\>", 
     "\[Rule]", "\<\"Long-term potentiation - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04721\"\>", 
@@ -7984,6 +8144,15 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04925\"\>", 
     "\[Rule]", "\<\"Aldosterone synthesis and secretion - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04926\"\>", 
+    "\[Rule]", "\<\"Relaxin signaling pathway - Homo sapiens (human)\"\>"}], 
+   ",", 
+   RowBox[{"\<\"path:hsa04927\"\>", 
+    "\[Rule]", "\<\"Cortisol synthesis and secretion - Homo sapiens (human)\"\
+\>"}], ",", 
+   RowBox[{"\<\"path:hsa04928\"\>", 
+    "\[Rule]", "\<\"Parathyroid hormone synthesis, secretion and action - \
+Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04930\"\>", 
     "\[Rule]", "\<\"Type II diabetes mellitus - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -7995,6 +8164,8 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04933\"\>", 
     "\[Rule]", "\<\"AGE-RAGE signaling pathway in diabetic complications - \
 Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04934\"\>", 
+    "\[Rule]", "\<\"Cushing syndrome - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04940\"\>", 
     "\[Rule]", "\<\"Type I diabetes mellitus - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -8038,15 +8209,17 @@ Homo sapiens (human)\"\>"}], ",",
 \>"}], ",", 
    RowBox[{"\<\"path:hsa04978\"\>", 
     "\[Rule]", "\<\"Mineral absorption - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04979\"\>", 
+    "\[Rule]", "\<\"Cholesterol metabolism - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05010\"\>", 
-    "\[Rule]", "\<\"Alzheimer's disease - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Alzheimer disease - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05012\"\>", 
-    "\[Rule]", "\<\"Parkinson's disease - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Parkinson disease - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05014\"\>", 
     "\[Rule]", "\<\"Amyotrophic lateral sclerosis (ALS) - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05016\"\>", 
-    "\[Rule]", "\<\"Huntington's disease - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Huntington disease - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05020\"\>", 
     "\[Rule]", "\<\"Prion diseases - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05030\"\>", 
@@ -8080,6 +8253,8 @@ infection - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Pertussis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05134\"\>", 
     "\[Rule]", "\<\"Legionellosis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05135\"\>", 
+    "\[Rule]", "\<\"Yersinia infection - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05140\"\>", 
     "\[Rule]", "\<\"Leishmaniasis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05142\"\>", 
@@ -8105,15 +8280,28 @@ infection - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Hepatitis B - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05162\"\>", 
     "\[Rule]", "\<\"Measles - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05163\"\>", 
+    "\[Rule]", "\<\"Human cytomegalovirus infection - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05164\"\>", 
     "\[Rule]", "\<\"Influenza A - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05165\"\>", 
+    "\[Rule]", "\<\"Human papillomavirus infection - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05166\"\>", 
-    "\[Rule]", "\<\"HTLV-I infection - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Human T-cell leukemia virus 1 infection - Homo sapiens \
+(human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05167\"\>", 
+    "\[Rule]", "\<\"Kaposi sarcoma-associated herpesvirus infection - Homo \
+sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05168\"\>", 
-    "\[Rule]", "\<\"Herpes simplex infection - Homo sapiens (human)\"\>"}], 
-   ",", 
+    "\[Rule]", "\<\"Herpes simplex virus 1 infection - Homo sapiens (human)\"\
+\>"}], ",", 
    RowBox[{"\<\"path:hsa05169\"\>", 
     "\[Rule]", "\<\"Epstein-Barr virus infection - Homo sapiens \
+(human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05170\"\>", 
+    "\[Rule]", "\<\"Human immunodeficiency virus 1 infection - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05200\"\>", 
     "\[Rule]", "\<\"Pathways in cancer - Homo sapiens (human)\"\>"}], ",", 
@@ -8160,12 +8348,22 @@ infection - Homo sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa05223\"\>", 
     "\[Rule]", "\<\"Non-small cell lung cancer - Homo sapiens (human)\"\>"}], 
    ",", 
+   RowBox[{"\<\"path:hsa05224\"\>", 
+    "\[Rule]", "\<\"Breast cancer - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05225\"\>", 
+    "\[Rule]", "\<\"Hepatocellular carcinoma - Homo sapiens (human)\"\>"}], 
+   ",", 
+   RowBox[{"\<\"path:hsa05226\"\>", 
+    "\[Rule]", "\<\"Gastric cancer - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05230\"\>", 
     "\[Rule]", "\<\"Central carbon metabolism in cancer - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05231\"\>", 
     "\[Rule]", "\<\"Choline metabolism in cancer - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05235\"\>", 
+    "\[Rule]", "\<\"PD-L1 expression and PD-1 checkpoint pathway in cancer - \
+Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05310\"\>", 
     "\[Rule]", "\<\"Asthma - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05320\"\>", 
@@ -8194,15 +8392,15 @@ infection - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Arrhythmogenic right ventricular cardiomyopathy (ARVC) - \
 Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05414\"\>", 
-    "\[Rule]", "\<\"Dilated cardiomyopathy - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Dilated cardiomyopathy (DCM) - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05416\"\>", 
-    "\[Rule]", "\<\"Viral myocarditis - Homo sapiens (human)\"\>"}]}], 
-  "\[RightAssociation]"}]], "Output",
- ImageSize->{575, 5527},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
+    "\[Rule]", "\<\"Viral myocarditis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05418\"\>", 
+    "\[Rule]", "\<\"Fluid shear stress and atherosclerosis - Homo sapiens \
+(human)\"\>"}]}], "\[RightAssociation]"}]], "Output",
  CellLabel->"Out[2]=",
- CellID->1269453142]
+ CellID->2005001833]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -9016,11 +9214,8 @@ Mus musculus (mouse)\"\>"}], ",",
    RowBox[{"\<\"path:mmu05416\"\>", 
     "\[Rule]", "\<\"Viral myocarditis - Mus musculus (mouse)\"\>"}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{568, 5561},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->790746416]
+ CellID->54969577]
 }, Open  ]]
 }, Open  ]],
 
@@ -9444,11 +9639,8 @@ cress)\"\>"}], ",",
     "\[Rule]", "\<\"AGE-RAGE signaling pathway in diabetic complications - \
 Arabidopsis thaliana (thale cress)\"\>"}]}], 
   "\[RightAssociation]"}]], "Output",
- ImageSize->{568, 3266},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->128176442]
+ CellID->2018655433]
 }, Open  ]]
 }, Open  ]],
 
@@ -9507,28 +9699,38 @@ Cell[BoxData[
         StripOnInput->False]},
       {GridBox[{
          {
-          TagBox[
-           TooltipBox[
-            StyleBox[
+          PaneBox[
+           TagBox[
+            TooltipBox[
              StyleBox[
-              DynamicBox[ToBoxes[
-                FEPrivate`FrontEndResource[
-                "FEStrings", "sizeBriefExplanation"], StandardForm],
-               ImageSizeCache->{58., {2., 8.}}],
-              StripOnInput->False,
-              DynamicUpdating->True], "OSLText",
-             StripOnInput->False],
-            StyleBox[
-             DynamicBox[
-              ToBoxes[
-               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
-               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
-             False]],
-           Annotation[#, 
-            Style[
-             Dynamic[
-              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
-             DynamicUpdating -> True], "Tooltip"]& ], 
+              StyleBox[
+               DynamicBox[ToBoxes[
+                 FEPrivate`FrontEndResource[
+                 "FEStrings", "sizeBriefExplanation"], StandardForm],
+                ImageSizeCache->{58., {2., 8.}}],
+               StripOnInput->False,
+               DynamicUpdating->True,
+               LineSpacing->{1, 2},
+               LineIndent->0,
+               LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLText",
+              StripOnInput->False],
+             StyleBox[
+              DynamicBox[
+               ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+                StandardForm]], DynamicUpdating -> True, LineIndent -> 0, 
+              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
+              LineSpacing -> {1, 2}, StripOnInput -> False]],
+            Annotation[#, 
+             Style[
+              Dynamic[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+              DynamicUpdating -> True, LineIndent -> 0, 
+              LinebreakAdjustments -> {1., 100, 0, 0, 0}, 
+              LineSpacing -> {1, 2}], "Tooltip"]& ],
+           Alignment->Center,
+           BaselinePosition->Baseline,
+           ImageSize->{Automatic, {25, Full}}], 
           ButtonBox[
            PaneSelectorBox[{False->
             StyleBox[
@@ -9538,7 +9740,10 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{50., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "OSLControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
@@ -9546,17 +9751,20 @@ Cell[BoxData[
                 FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
                 StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "OSLControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
            BaselinePosition->Baseline,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 17, 16049343346713587726, 5/2],
+            OutputSizeLimit`Defer, 25, 16199963445879288275, 5/2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -9569,7 +9777,10 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{56., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "OSLControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
@@ -9577,17 +9788,20 @@ Cell[BoxData[
                 FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
                 StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "OSLControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
            BaselinePosition->Baseline,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 17, 16049343346713587726, 5 2],
+            OutputSizeLimit`Defer, 25, 16199963445879288275, 5 2],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -9600,7 +9814,10 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{42., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "OSLControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
@@ -9608,17 +9825,20 @@ Cell[BoxData[
                 FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
                 StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "OSLControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
            BaselinePosition->Baseline,
            
            ButtonFunction:>OutputSizeLimit`ButtonFunction[
-            OutputSizeLimit`Defer, 17, 16049343346713587726, Infinity],
+            OutputSizeLimit`Defer, 25, 16199963445879288275, Infinity],
            Enabled->True,
            Evaluator->Automatic,
            Method->"Queued"], 
@@ -9631,7 +9851,10 @@ Cell[BoxData[
                 StandardForm],
                ImageSizeCache->{74., {0., 8.}}],
               StripOnInput->False,
-              DynamicUpdating->True], "OSLControl",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControl",
              StripOnInput->False], True->
             StyleBox[
              StyleBox[
@@ -9639,12 +9862,15 @@ Cell[BoxData[
                 FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
                 StandardForm]],
               StripOnInput->False,
-              DynamicUpdating->True], "OSLControlActive",
+              DynamicUpdating->True,
+              LineSpacing->{1, 2},
+              LineIndent->0,
+              LinebreakAdjustments->{1., 100, 0, 0, 0}], "OSLControlActive",
              StripOnInput->False]}, Dynamic[
              CurrentValue["MouseOver"]],
             Alignment->Center,
             FrameMargins->0,
-            ImageSize->{Automatic, 25}],
+            ImageSize->{Automatic, {25, Full}}],
            Appearance->None,
            BaselinePosition->Baseline,
            ButtonFunction:>FrontEndExecute[{
@@ -9662,23 +9888,17 @@ Cell[BoxData[
         GridBoxSpacings->{"Columns" -> {{2}}}]}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{
-      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-       "RowsIndexed" -> {}},
-     GridBoxDividers->{
-      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
-       "RowsIndexed" -> {}},
-     GridBoxItemSize->{
-      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
-       "RowsIndexed" -> {}},
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.}}},
      GridBoxSpacings->{"Columns" -> {
          Offset[0.27999999999999997`], {
           Offset[0.5599999999999999]}, 
-         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.27999999999999997`]}, "Rows" -> {
          Offset[0.2], 
          Offset[1.2], {
           Offset[0.4]}, 
-         Offset[0.2]}, "RowsIndexed" -> {}}],
+         Offset[0.2]}}],
     BaseStyle->"OutputSizeLimit",
     FrameMargins->{{12, 12}, {0, 15}},
     FrameStyle->GrayLevel[0.85],
@@ -9686,15 +9906,12 @@ Cell[BoxData[
     StripOnInput->False],
    Deploy,
    DefaultBaseStyle->"Deploy"],
-  If[16049343346713587726 === $SessionID, 
-   Out[17], Message[
+  If[16199963445879288275 === $SessionID, 
+   Out[25], Message[
      MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
    Null]]], "Output",
- ImageSize->{527, 95},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
  CellLabel->"Out[2]=",
- CellID->1977568389]
+ CellID->1831200773]
 }, Open  ]]
 }, Open  ]]
 }, Closed]],
@@ -9807,8 +10024,6 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa00290\"\>", 
     "\[Rule]", "\<\"Valine, leucine and isoleucine biosynthesis - Homo \
 sapiens (human)\"\>"}], ",", 
-   RowBox[{"\<\"path:hsa00300\"\>", 
-    "\[Rule]", "\<\"Lysine biosynthesis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00310\"\>", 
     "\[Rule]", "\<\"Lysine degradation - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00330\"\>", 
@@ -9833,6 +10048,9 @@ Homo sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa00430\"\>", 
     "\[Rule]", "\<\"Taurine and hypotaurine metabolism - Homo sapiens (human)\
 \"\>"}], ",", 
+   RowBox[{"\<\"path:hsa00440\"\>", 
+    "\[Rule]", "\<\"Phosphonate and phosphinate metabolism - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00450\"\>", 
     "\[Rule]", "\<\"Selenocompound metabolism - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -9854,11 +10072,14 @@ Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Other glycan degradation - Homo sapiens (human)\"\>"}], 
    ",", 
    RowBox[{"\<\"path:hsa00512\"\>", 
-    "\[Rule]", "\<\"Mucin type O-Glycan biosynthesis - Homo sapiens (human)\"\
+    "\[Rule]", "\<\"Mucin type O-glycan biosynthesis - Homo sapiens (human)\"\
 \>"}], ",", 
    RowBox[{"\<\"path:hsa00514\"\>", 
     "\[Rule]", "\<\"Other types of O-glycan biosynthesis - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa00515\"\>", 
+    "\[Rule]", "\<\"Mannose type O-glycan biosynthesis - Homo sapiens (human)\
+\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00520\"\>", 
     "\[Rule]", "\<\"Amino sugar and nucleotide sugar metabolism - Homo \
 sapiens (human)\"\>"}], ",", 
@@ -9884,7 +10105,7 @@ heparin - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Inositol phosphate metabolism - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00563\"\>", 
-    "\[Rule]", "\<\"Glycosylphosphatidylinositol(GPI)-anchor biosynthesis - \
+    "\[Rule]", "\<\"Glycosylphosphatidylinositol (GPI)-anchor biosynthesis - \
 Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00564\"\>", 
     "\[Rule]", "\<\"Glycerophospholipid metabolism - Homo sapiens \
@@ -9907,8 +10128,8 @@ Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Glycosphingolipid biosynthesis - lacto and neolacto \
 series - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00603\"\>", 
-    "\[Rule]", "\<\"Glycosphingolipid biosynthesis - globo series - Homo \
-sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Glycosphingolipid biosynthesis - globo and isoglobo \
+series - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa00604\"\>", 
     "\[Rule]", "\<\"Glycosphingolipid biosynthesis - ganglio series - Homo \
 sapiens (human)\"\>"}], ",", 
@@ -9990,6 +10211,9 @@ sapiens (human)\"\>"}], ",",
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa01522\"\>", 
     "\[Rule]", "\<\"Endocrine resistance - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa01523\"\>", 
+    "\[Rule]", "\<\"Antifolate resistance - Homo sapiens (human)\"\>"}], ",", 
+   
    RowBox[{"\<\"path:hsa01524\"\>", 
     "\[Rule]", "\<\"Platinum drug resistance - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -10057,6 +10281,9 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04060\"\>", 
     "\[Rule]", "\<\"Cytokine-cytokine receptor interaction - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04061\"\>", 
+    "\[Rule]", "\<\"Viral protein interaction with cytokine and cytokine \
+receptor - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04062\"\>", 
     "\[Rule]", "\<\"Chemokine signaling pathway - Homo sapiens (human)\"\>"}],
     ",", 
@@ -10095,9 +10322,12 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04130\"\>", 
     "\[Rule]", "\<\"SNARE interactions in vesicular transport - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04136\"\>", 
+    "\[Rule]", "\<\"Autophagy - other - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04137\"\>", 
+    "\[Rule]", "\<\"Mitophagy - animal - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04140\"\>", 
-    "\[Rule]", "\<\"Regulation of autophagy - Homo sapiens (human)\"\>"}], 
-   ",", 
+    "\[Rule]", "\<\"Autophagy - animal - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04141\"\>", 
     "\[Rule]", "\<\"Protein processing in endoplasmic reticulum - Homo \
 sapiens (human)\"\>"}], ",", 
@@ -10127,6 +10357,12 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04215\"\>", 
     "\[Rule]", "\<\"Apoptosis - multiple species - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04216\"\>", 
+    "\[Rule]", "\<\"Ferroptosis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04217\"\>", 
+    "\[Rule]", "\<\"Necroptosis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04218\"\>", 
+    "\[Rule]", "\<\"Cellular senescence - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04260\"\>", 
     "\[Rule]", "\<\"Cardiac muscle contraction - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -10139,9 +10375,6 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04310\"\>", 
     "\[Rule]", "\<\"Wnt signaling pathway - Homo sapiens (human)\"\>"}], ",", 
    
-   RowBox[{"\<\"path:hsa04320\"\>", 
-    "\[Rule]", "\<\"Dorso-ventral axis formation - Homo sapiens \
-(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04330\"\>", 
     "\[Rule]", "\<\"Notch signaling pathway - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -10155,6 +10388,9 @@ sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Axon guidance - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04370\"\>", 
     "\[Rule]", "\<\"VEGF signaling pathway - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04371\"\>", 
+    "\[Rule]", "\<\"Apelin signaling pathway - Homo sapiens (human)\"\>"}], 
+   ",", 
    RowBox[{"\<\"path:hsa04380\"\>", 
     "\[Rule]", "\<\"Osteoclast differentiation - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -10162,7 +10398,7 @@ sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Hippo signaling pathway - Homo sapiens (human)\"\>"}], 
    ",", 
    RowBox[{"\<\"path:hsa04392\"\>", 
-    "\[Rule]", "\<\"Hippo signaling pathway -multiple species - Homo sapiens \
+    "\[Rule]", "\<\"Hippo signaling pathway - multiple species - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04510\"\>", 
     "\[Rule]", "\<\"Focal adhesion - Homo sapiens (human)\"\>"}], ",", 
@@ -10204,8 +10440,11 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04623\"\>", 
     "\[Rule]", "\<\"Cytosolic DNA-sensing pathway - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04625\"\>", 
+    "\[Rule]", "\<\"C-type lectin receptor signaling pathway - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04630\"\>", 
-    "\[Rule]", "\<\"Jak-STAT signaling pathway - Homo sapiens (human)\"\>"}], 
+    "\[Rule]", "\<\"JAK-STAT signaling pathway - Homo sapiens (human)\"\>"}], 
    ",", 
    RowBox[{"\<\"path:hsa04640\"\>", 
     "\[Rule]", "\<\"Hematopoietic cell lineage - Homo sapiens (human)\"\>"}], 
@@ -10213,6 +10452,15 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04650\"\>", 
     "\[Rule]", "\<\"Natural killer cell mediated cytotoxicity - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04657\"\>", 
+    "\[Rule]", "\<\"IL-17 signaling pathway - Homo sapiens (human)\"\>"}], 
+   ",", 
+   RowBox[{"\<\"path:hsa04658\"\>", 
+    "\[Rule]", "\<\"Th1 and Th2 cell differentiation - Homo sapiens (human)\"\
+\>"}], ",", 
+   RowBox[{"\<\"path:hsa04659\"\>", 
+    "\[Rule]", "\<\"Th17 cell differentiation - Homo sapiens (human)\"\>"}], 
+   ",", 
    RowBox[{"\<\"path:hsa04660\"\>", 
     "\[Rule]", "\<\"T cell receptor signaling pathway - Homo sapiens \
 (human)\"\>"}], ",", 
@@ -10239,6 +10487,8 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04713\"\>", 
     "\[Rule]", "\<\"Circadian entrainment - Homo sapiens (human)\"\>"}], ",", 
    
+   RowBox[{"\<\"path:hsa04714\"\>", 
+    "\[Rule]", "\<\"Thermogenesis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04720\"\>", 
     "\[Rule]", "\<\"Long-term potentiation - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04721\"\>", 
@@ -10318,6 +10568,15 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04925\"\>", 
     "\[Rule]", "\<\"Aldosterone synthesis and secretion - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04926\"\>", 
+    "\[Rule]", "\<\"Relaxin signaling pathway - Homo sapiens (human)\"\>"}], 
+   ",", 
+   RowBox[{"\<\"path:hsa04927\"\>", 
+    "\[Rule]", "\<\"Cortisol synthesis and secretion - Homo sapiens (human)\"\
+\>"}], ",", 
+   RowBox[{"\<\"path:hsa04928\"\>", 
+    "\[Rule]", "\<\"Parathyroid hormone synthesis, secretion and action - \
+Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04930\"\>", 
     "\[Rule]", "\<\"Type II diabetes mellitus - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -10329,6 +10588,8 @@ sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa04933\"\>", 
     "\[Rule]", "\<\"AGE-RAGE signaling pathway in diabetic complications - \
 Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04934\"\>", 
+    "\[Rule]", "\<\"Cushing syndrome - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa04940\"\>", 
     "\[Rule]", "\<\"Type I diabetes mellitus - Homo sapiens (human)\"\>"}], 
    ",", 
@@ -10372,15 +10633,17 @@ Homo sapiens (human)\"\>"}], ",",
 \>"}], ",", 
    RowBox[{"\<\"path:hsa04978\"\>", 
     "\[Rule]", "\<\"Mineral absorption - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa04979\"\>", 
+    "\[Rule]", "\<\"Cholesterol metabolism - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05010\"\>", 
-    "\[Rule]", "\<\"Alzheimer's disease - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Alzheimer disease - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05012\"\>", 
-    "\[Rule]", "\<\"Parkinson's disease - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Parkinson disease - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05014\"\>", 
     "\[Rule]", "\<\"Amyotrophic lateral sclerosis (ALS) - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05016\"\>", 
-    "\[Rule]", "\<\"Huntington's disease - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Huntington disease - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05020\"\>", 
     "\[Rule]", "\<\"Prion diseases - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05030\"\>", 
@@ -10414,6 +10677,8 @@ infection - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Pertussis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05134\"\>", 
     "\[Rule]", "\<\"Legionellosis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05135\"\>", 
+    "\[Rule]", "\<\"Yersinia infection - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05140\"\>", 
     "\[Rule]", "\<\"Leishmaniasis - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05142\"\>", 
@@ -10439,15 +10704,28 @@ infection - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Hepatitis B - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05162\"\>", 
     "\[Rule]", "\<\"Measles - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05163\"\>", 
+    "\[Rule]", "\<\"Human cytomegalovirus infection - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05164\"\>", 
     "\[Rule]", "\<\"Influenza A - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05165\"\>", 
+    "\[Rule]", "\<\"Human papillomavirus infection - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05166\"\>", 
-    "\[Rule]", "\<\"HTLV-I infection - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Human T-cell leukemia virus 1 infection - Homo sapiens \
+(human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05167\"\>", 
+    "\[Rule]", "\<\"Kaposi sarcoma-associated herpesvirus infection - Homo \
+sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05168\"\>", 
-    "\[Rule]", "\<\"Herpes simplex infection - Homo sapiens (human)\"\>"}], 
-   ",", 
+    "\[Rule]", "\<\"Herpes simplex virus 1 infection - Homo sapiens (human)\"\
+\>"}], ",", 
    RowBox[{"\<\"path:hsa05169\"\>", 
     "\[Rule]", "\<\"Epstein-Barr virus infection - Homo sapiens \
+(human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05170\"\>", 
+    "\[Rule]", "\<\"Human immunodeficiency virus 1 infection - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05200\"\>", 
     "\[Rule]", "\<\"Pathways in cancer - Homo sapiens (human)\"\>"}], ",", 
@@ -10494,12 +10772,22 @@ infection - Homo sapiens (human)\"\>"}], ",",
    RowBox[{"\<\"path:hsa05223\"\>", 
     "\[Rule]", "\<\"Non-small cell lung cancer - Homo sapiens (human)\"\>"}], 
    ",", 
+   RowBox[{"\<\"path:hsa05224\"\>", 
+    "\[Rule]", "\<\"Breast cancer - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05225\"\>", 
+    "\[Rule]", "\<\"Hepatocellular carcinoma - Homo sapiens (human)\"\>"}], 
+   ",", 
+   RowBox[{"\<\"path:hsa05226\"\>", 
+    "\[Rule]", "\<\"Gastric cancer - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05230\"\>", 
     "\[Rule]", "\<\"Central carbon metabolism in cancer - Homo sapiens \
 (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05231\"\>", 
     "\[Rule]", "\<\"Choline metabolism in cancer - Homo sapiens \
 (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05235\"\>", 
+    "\[Rule]", "\<\"PD-L1 expression and PD-1 checkpoint pathway in cancer - \
+Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05310\"\>", 
     "\[Rule]", "\<\"Asthma - Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05320\"\>", 
@@ -10528,15 +10816,15 @@ infection - Homo sapiens (human)\"\>"}], ",",
     "\[Rule]", "\<\"Arrhythmogenic right ventricular cardiomyopathy (ARVC) - \
 Homo sapiens (human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05414\"\>", 
-    "\[Rule]", "\<\"Dilated cardiomyopathy - Homo sapiens (human)\"\>"}], ",", 
+    "\[Rule]", "\<\"Dilated cardiomyopathy (DCM) - Homo sapiens \
+(human)\"\>"}], ",", 
    RowBox[{"\<\"path:hsa05416\"\>", 
-    "\[Rule]", "\<\"Viral myocarditis - Homo sapiens (human)\"\>"}]}], 
-  "\[RightAssociation]"}]], "Output",
- ImageSize->{575, 5527},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
+    "\[Rule]", "\<\"Viral myocarditis - Homo sapiens (human)\"\>"}], ",", 
+   RowBox[{"\<\"path:hsa05418\"\>", 
+    "\[Rule]", "\<\"Fluid shear stress and atherosclerosis - Homo sapiens \
+(human)\"\>"}]}], "\[RightAssociation]"}]], "Output",
  CellLabel->"Out[2]=",
- CellID->1676635270]
+ CellID->185669079]
 }, Open  ]]
 }, Closed]]
 }, Closed]],
@@ -10689,7 +10977,7 @@ Cell[BoxData[
     TextData["MathIOmica Guide"]],"paclet:MathIOmica/guide/MathIOmicaGuide"},
   "RefLink",
   BaseStyle->"MoreAbout"]], "MoreAbout",
- CellID->1879906153],
+ CellID->799947935],
 
 Cell["", "SectionFooterSpacer"]
 }, Open  ]],
@@ -10740,7 +11028,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
   None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2018, 10, 26, 17, 19, 42.705696}", 
+   "built" -> "{2019, 7, 22, 18, 25, 52.776372}", 
     "history" -> {"XX", "", "", ""}, "context" -> 
     "MathIOmica`AnnotationsAndEnumerations`", "keywords" -> {}, 
     "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
@@ -10753,8 +11041,7 @@ therein.", "synonyms" -> {}, "tabletags" -> {}, "title" -> "KEGGDictionary",
     "Symbol", "uri" -> "MathIOmica/ref/KEGGDictionary", "WorkflowDockedCell" -> 
     ""}, "SearchTextTranslated" -> "", "NewStyles" -> False},
 CellContext->"Global`",
-FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
-2018)",
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -10763,8 +11050,7 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], CellContext -> "Global`"], 
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
-  FrontEndVersion -> 
-  "11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, 2018)", 
+  FrontEndVersion -> "12.0 for Mac OS X x86 (64-bit) (April 8, 2019)", 
   StyleDefinitions -> "Default.nb"]
 ]
 (* End of Notebook Content *)
@@ -10773,224 +11059,224 @@ StyleDefinitions->Notebook[{
 (*CellTagsOutline
 CellTagsIndex->{
  "PrimaryExamplesSection"->{
-  Cell[11766, 308, 269, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"05788719-6fb7-4a36-bfe3-b894da16c524",
+  Cell[11665, 305, 268, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"9ae5ccc5-e042-4271-831a-987287d88ba3",
    CellTags->"PrimaryExamplesSection",
-   CellID->2120088583]}
+   CellID->115858048]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"PrimaryExamplesSection", 507772, 10774}
+ {"PrimaryExamplesSection", 522062, 11060}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[586, 21, 5334, 127, 70, "AnchorBarGrid",ExpressionUUID->"bef5b682-9116-493b-9d69-a656a8ab287e",
+Cell[586, 21, 5334, 127, 70, "AnchorBarGrid",ExpressionUUID->"d56774a2-aed9-4da6-81c5-c52b15eee0df",
  CellID->1],
 Cell[CellGroupData[{
-Cell[5945, 152, 171, 6, 70, "ObjectNameGrid",ExpressionUUID->"a583b37d-f436-4a1a-858c-e847893a732c"],
-Cell[6119, 160, 452, 12, 70, "Usage",ExpressionUUID->"85e7c070-5619-4c23-bdea-92416084605a"]
+Cell[5945, 152, 171, 6, 70, "ObjectNameGrid",ExpressionUUID->"2544ff04-c611-4f84-8680-1dface531d8e"],
+Cell[6119, 160, 400, 10, 70, "Usage",ExpressionUUID->"853f1fb0-aba6-410c-9426-f69059dc11dd"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6608, 177, 630, 19, 70, "NotesSection",ExpressionUUID->"92df6bba-55be-4fa6-943d-68ebbee5a26e",
+Cell[6556, 175, 630, 19, 70, "NotesSection",ExpressionUUID->"e42f80ba-fabb-4209-935d-ac9d992bc229",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->1724936148],
-Cell[7241, 198, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"bfe0c126-82fb-4841-aa95-c761efc7608f"],
-Cell[7275, 200, 401, 9, 70, "Notes",ExpressionUUID->"7af0678e-6b69-47d4-b372-17c8c373222c",
+ CellID->1586055237],
+Cell[7189, 196, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"c573b84d-90e9-4994-8d48-d839854780d1"],
+Cell[7223, 198, 401, 9, 70, "Notes",ExpressionUUID->"2082430f-cf86-4c74-9a24-341814cfb603",
  CellID->824531769],
-Cell[7679, 211, 866, 24, 70, "Notes",ExpressionUUID->"3f8a3115-7a84-43c7-852a-f37f31c115cd",
+Cell[7627, 209, 866, 24, 70, "Notes",ExpressionUUID->"0108faeb-4829-4a86-9e44-7989c4c22d57",
  CellID->1913705653],
-Cell[8548, 237, 53, 0, 70, "Notes",ExpressionUUID->"9e99679c-5480-475a-8f31-d3cda4901119"],
-Cell[8604, 239, 3091, 62, 70, "3ColumnTableMod",ExpressionUUID->"8a37fbe0-405f-4112-a554-ec0465ea1b93"],
-Cell[11698, 303, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"9b9b0582-432b-4cc0-91b9-31b553926487"]
+Cell[8496, 235, 53, 0, 70, "Notes",ExpressionUUID->"2203860f-d8ac-4ec7-a63d-bd5043676399"],
+Cell[8552, 237, 3042, 61, 70, "3ColumnTableMod",ExpressionUUID->"6b5250ef-a485-49c7-9448-b414d9c45a53"],
+Cell[11597, 300, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"435e94e0-b773-467a-ba2a-49f2b746a2b3"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[11766, 308, 269, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"05788719-6fb7-4a36-bfe3-b894da16c524",
+Cell[11665, 305, 268, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"9ae5ccc5-e042-4271-831a-987287d88ba3",
  CellTags->"PrimaryExamplesSection",
- CellID->2120088583],
+ CellID->115858048],
 Cell[CellGroupData[{
-Cell[12060, 322, 196, 6, 70, "ExampleSection",ExpressionUUID->"6b13c3d8-45bb-48d4-afd3-01b79b5092f6",
- CellID->1280143457],
-Cell[12259, 330, 88, 1, 70, "ExampleText",ExpressionUUID->"9441e91a-89ef-4b24-971a-b4a0bb8d245f",
+Cell[11958, 319, 196, 6, 70, "ExampleSection",ExpressionUUID->"af5c1462-d114-437b-8138-8a4bb3ad8208",
+ CellID->1606028554],
+Cell[12157, 327, 88, 1, 70, "ExampleText",ExpressionUUID->"61ae320a-795e-42d8-b1eb-de6a1d1aa7b4",
  CellID->158760191],
-Cell[12350, 333, 118, 3, 70, "Input",ExpressionUUID->"0e32aedb-aa38-4a70-9e20-26fe5460f546",
+Cell[12248, 330, 118, 3, 70, "Input",ExpressionUUID->"8281d7fa-9726-45ec-b0e6-b8ffcd0bac40",
  CellID->10541973],
 Cell[CellGroupData[{
-Cell[12493, 340, 149, 4, 70, "Input",ExpressionUUID->"bbda205c-4faf-4f4e-b9dd-bcf69ca54770",
+Cell[12391, 337, 149, 4, 70, "Input",ExpressionUUID->"c4628ede-f449-4c79-a8f8-e6c4a218f1dd",
  CellID->1876720143],
-Cell[12645, 346, 37656, 802, 70, "Output",ExpressionUUID->"1c42c5a8-742a-473b-8fff-cb2331cf1d22",
+Cell[12543, 343, 37566, 799, 70, "Output",ExpressionUUID->"6b67c4a0-3bae-4c44-bd41-b0f9870c935a",
  CellID->1630849854]
 }, Open  ]],
-Cell[50316, 1151, 83, 1, 70, "ExampleText",ExpressionUUID->"488a1b89-ac36-4391-880a-dedfb4232149",
+Cell[50124, 1145, 83, 1, 70, "ExampleText",ExpressionUUID->"b5db27ef-efd1-46e3-a514-a3e27ae5d46b",
  CellID->297808376],
 Cell[CellGroupData[{
-Cell[50424, 1156, 141, 4, 70, "Input",ExpressionUUID->"b4d73994-1f4d-4f72-9f54-6102661fe9d0",
+Cell[50232, 1150, 141, 4, 70, "Input",ExpressionUUID->"d4198844-f521-4800-973e-e5c13bd5c1b3",
  CellID->1847601342],
-Cell[50568, 1162, 219, 6, 70, "Output",ExpressionUUID->"5f956d00-c6db-4c87-b64b-3338f9c0e699",
+Cell[50376, 1156, 131, 3, 70, "Output",ExpressionUUID->"808ca02d-6e73-4b63-8663-77ec95816e3e",
  CellID->823329979]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[50836, 1174, 168, 5, 70, "ExampleSection",ExpressionUUID->"398cdfd2-1b42-452d-a02a-5153b4f2f553"],
+Cell[50556, 1165, 168, 5, 70, "ExampleSection",ExpressionUUID->"e7f6e390-03f4-4e4d-971c-72232e109e7a"],
 Cell[CellGroupData[{
-Cell[51029, 1183, 181, 5, 70, "ExampleSubsection",ExpressionUUID->"383f60b4-bd07-4909-9964-bcb043b61c6e"],
-Cell[51213, 1190, 120, 3, 70, "Input",ExpressionUUID->"e7a5d884-4525-4b76-9497-e1ffeb9a35bc",
+Cell[50749, 1174, 181, 5, 70, "ExampleSubsection",ExpressionUUID->"09f0b760-1462-4b98-a6e1-fcfe7ebc8a83"],
+Cell[50933, 1181, 120, 3, 70, "Input",ExpressionUUID->"94c3fc48-c1a0-4df8-965f-66a40705085a",
  CellID->1951021211],
-Cell[51336, 1195, 300, 6, 70, "ExampleText",ExpressionUUID->"d265da17-01b8-4318-83c8-b35da8265a2d",
+Cell[51056, 1186, 300, 6, 70, "ExampleText",ExpressionUUID->"80d4f7bf-a7c9-4131-8d94-c3ba5061241f",
  CellID->1066104128],
 Cell[CellGroupData[{
-Cell[51661, 1205, 161, 4, 70, "Input",ExpressionUUID->"13388fc5-812c-43eb-bfd5-1f766dbe5d3b",
+Cell[51381, 1196, 161, 4, 70, "Input",ExpressionUUID->"84f3ea98-1531-4ce5-852a-3cccf60b0793",
  CellID->1556012375],
-Cell[51825, 1211, 37656, 802, 70, "Output",ExpressionUUID->"7c07466c-7d07-4877-a72b-072d1c080ba2",
- CellID->1430834088]
+Cell[51545, 1202, 41105, 873, 70, "Output",ExpressionUUID->"64698e50-c1c6-4fd9-abfa-5d7c9ca61f42",
+ CellID->1780347193]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[89530, 2019, 177, 5, 70, "ExampleSubsection",ExpressionUUID->"0ced5786-abee-43c8-b079-57e9479fcba2"],
-Cell[89710, 2026, 349, 6, 70, "ExampleText",ExpressionUUID->"5acf03ca-a55b-4d0f-a43f-ab74d29d8962",
+Cell[92699, 2081, 177, 5, 70, "ExampleSubsection",ExpressionUUID->"de346fbc-0dab-47dc-9e71-564821abaf4a"],
+Cell[92879, 2088, 349, 6, 70, "ExampleText",ExpressionUUID->"724bb13e-91d5-48b5-8a73-0e8d9a51d39e",
  CellID->556027812],
-Cell[90062, 2034, 77, 1, 70, "ExampleText",ExpressionUUID->"5b28b35e-1ad0-4bd0-9c05-cc606e49016a",
+Cell[93231, 2096, 77, 1, 70, "ExampleText",ExpressionUUID->"d9df00d9-5076-4cc6-8db8-45a61997026b",
  CellID->1768695269],
 Cell[CellGroupData[{
-Cell[90164, 2039, 217, 6, 70, "Input",ExpressionUUID->"934d4a34-92ff-419e-8b64-f06e8cc30ebb",
+Cell[93333, 2101, 217, 6, 70, "Input",ExpressionUUID->"d1ab6835-c7e1-4243-9e8f-9c6136421237",
  CellID->190474345],
-Cell[90384, 2047, 37655, 802, 70, "Output",ExpressionUUID->"6afda973-8eb2-4262-a132-d7b5eccd0053",
- CellID->118379909]
+Cell[93553, 2109, 41105, 873, 70, "Output",ExpressionUUID->"ba0f1027-85a7-4ec7-91ff-ee0b1d0e7327",
+ CellID->1393974705]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[128076, 2854, 125, 3, 70, "ExampleDelimiter",ExpressionUUID->"49fdfa29-4f32-40c7-978b-c7a4bda7042a",
+Cell[134695, 2987, 125, 3, 70, "ExampleDelimiter",ExpressionUUID->"cab87079-4fc8-4119-b2db-ea3860923755",
  CellID->639703915],
-Cell[128204, 2859, 120, 3, 70, "Input",ExpressionUUID->"4ad586a9-ddf5-4eb2-a365-a9d1f82c9880",
+Cell[134823, 2992, 120, 3, 70, "Input",ExpressionUUID->"602904e6-2e2b-4a03-b8d4-6f4dea4bf156",
  CellID->1200562523],
-Cell[128327, 2864, 69, 1, 70, "ExampleText",ExpressionUUID->"0d7a8d2c-a568-47b3-bcce-4935857b8b9a",
+Cell[134946, 2997, 69, 1, 70, "ExampleText",ExpressionUUID->"508e69e6-4c33-4158-a66f-ece44a310a45",
  CellID->2096494523],
 Cell[CellGroupData[{
-Cell[128421, 2869, 214, 6, 70, "Input",ExpressionUUID->"fdd3d886-e38e-435a-9e9a-92e6790f0e14",
+Cell[135040, 3002, 214, 6, 70, "Input",ExpressionUUID->"b87723e0-d1e7-4e40-9730-64764df2363e",
  CellID->1458088187],
-Cell[128638, 2877, 20424, 429, 70, "Output",ExpressionUUID->"f6de6ae9-3dbc-40e1-967b-9f0d42adacb8",
- CellID->604223974]
+Cell[135257, 3010, 20334, 426, 70, "Output",ExpressionUUID->"a7b5151f-8556-4bd7-9ad6-c1552d7fdca8",
+ CellID->221730683]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[149111, 3312, 125, 3, 70, "ExampleDelimiter",ExpressionUUID->"39d1b0e8-4255-4642-85a0-56c596ec73f9",
+Cell[155640, 3442, 125, 3, 70, "ExampleDelimiter",ExpressionUUID->"8470de25-baf3-4a61-9ac5-acb19acb0b40",
  CellID->634695772],
-Cell[149239, 3317, 119, 3, 70, "Input",ExpressionUUID->"7986970c-6551-45d3-ae7b-610fb2010a48",
+Cell[155768, 3447, 119, 3, 70, "Input",ExpressionUUID->"f10700c0-f062-45f8-91a4-fda7cd131a3b",
  CellID->780565355],
-Cell[149361, 3322, 131, 4, 70, "ExampleText",ExpressionUUID->"2b21b2ae-11ab-4e27-bc2e-23e9fb3ea2cb",
+Cell[155890, 3452, 131, 4, 70, "ExampleText",ExpressionUUID->"60634d5d-d54c-4314-b605-fb5d6a4bcfbd",
  CellID->1182702751],
 Cell[CellGroupData[{
-Cell[149517, 3330, 292, 7, 70, "Input",ExpressionUUID->"52c234bd-a96c-415a-a9c6-64b40922caa9",
+Cell[156046, 3460, 292, 7, 70, "Input",ExpressionUUID->"887fabf5-a2c9-4abb-97c1-42cf02b5f696",
  CellID->2030214660],
-Cell[149812, 3339, 207957, 4025, 70, "Output",ExpressionUUID->"32ab18c8-418c-4e82-b829-e378e08f9e40",
- CellID->2136324589]
+Cell[156341, 3469, 207865, 4022, 70, "Output",ExpressionUUID->"bd3d8a37-2059-467d-b80d-d4224d463f33",
+ CellID->362365911]
 }, Open  ]]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[357830, 7371, 177, 5, 70, "ExampleSubsection",ExpressionUUID->"11948657-f49d-4a88-b0e1-ce731cf37562"],
-Cell[358010, 7378, 120, 3, 70, "Input",ExpressionUUID->"a6a6c600-b674-4908-9a5d-bcbcba8d5714",
+Cell[364267, 7498, 177, 5, 70, "ExampleSubsection",ExpressionUUID->"e45cca1d-9fb8-44ee-a908-57eb7842fbd2"],
+Cell[364447, 7505, 120, 3, 70, "Input",ExpressionUUID->"6bca5dbc-cfd7-4231-a206-af91bf3d8702",
  CellID->2131805609],
-Cell[358133, 7383, 494, 8, 70, "ExampleText",ExpressionUUID->"8425a24a-ed06-4712-be46-15de2c403506",
+Cell[364570, 7510, 494, 8, 70, "ExampleText",ExpressionUUID->"8ccb2820-d39a-4cca-88cf-9ab0aff55d0e",
  CellID->152206180],
 Cell[CellGroupData[{
-Cell[358652, 7395, 215, 5, 70, "Input",ExpressionUUID->"d578775a-7a2d-4aa8-a9c6-24d8748b5f66",
+Cell[365089, 7522, 215, 5, 70, "Input",ExpressionUUID->"8672ff95-d4ad-4395-86ae-b4e35dfa8ccc",
  CellID->1962545221],
-Cell[358870, 7402, 37656, 802, 70, "Output",ExpressionUUID->"57f88fcc-b63a-47ae-bb14-a6bfe59ace2d",
- CellID->1269453142]
+Cell[365307, 7529, 41105, 873, 70, "Output",ExpressionUUID->"95e2bc2d-8888-4a69-bb6f-150a9990f138",
+ CellID->2005001833]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[396563, 8209, 125, 3, 70, "ExampleDelimiter",ExpressionUUID->"89c6e29e-4492-4902-ab37-62eb611a8cbc",
+Cell[406449, 8407, 125, 3, 70, "ExampleDelimiter",ExpressionUUID->"17a3f03c-60cb-4905-b242-af26fd4c9bb5",
  CellID->302797611],
-Cell[396691, 8214, 120, 3, 70, "Input",ExpressionUUID->"fc62ec6a-c9bb-4087-9a38-6900f35a19d3",
+Cell[406577, 8412, 120, 3, 70, "Input",ExpressionUUID->"2ffb9ad4-a0e2-4ff0-982c-b54fb40563d2",
  CellID->1730688334],
-Cell[396814, 8219, 84, 1, 70, "ExampleText",ExpressionUUID->"f154e458-ec52-47e9-b06f-5181070639ea",
+Cell[406700, 8417, 84, 1, 70, "ExampleText",ExpressionUUID->"f7cdab02-8f90-41a1-850b-f4e9111e4994",
  CellID->12830923],
 Cell[CellGroupData[{
-Cell[396923, 8224, 212, 5, 70, "Input",ExpressionUUID->"2f5b1131-a050-4dbf-a25a-3fdb177ae1bb",
+Cell[406809, 8422, 212, 5, 70, "Input",ExpressionUUID->"1374a681-eb11-449f-8a1e-31ee5fba2c41",
  CellID->900958161],
-Cell[397138, 8231, 37136, 791, 70, "Output",ExpressionUUID->"2568842f-1558-448a-8dc0-443350286314",
- CellID->790746416]
+Cell[407024, 8429, 37045, 788, 70, "Output",ExpressionUUID->"38f378ad-e6c5-481e-a58a-6e6dc41b7fe2",
+ CellID->54969577]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[434323, 9028, 125, 3, 70, "ExampleDelimiter",ExpressionUUID->"b19e7654-a9c5-4c75-b6dd-a78cdbb78b3c",
+Cell[444118, 9223, 125, 3, 70, "ExampleDelimiter",ExpressionUUID->"0c93715c-3df3-48d0-919f-f5a9786a2af0",
  CellID->855919959],
-Cell[434451, 9033, 120, 3, 70, "Input",ExpressionUUID->"d4684a50-336d-48ef-ba91-ad5a5f6a9735",
+Cell[444246, 9228, 120, 3, 70, "Input",ExpressionUUID->"39d4b97e-df6e-412a-b9dc-cf3397df6228",
  CellID->1601283307],
-Cell[434574, 9038, 92, 1, 70, "ExampleText",ExpressionUUID->"6323a682-9591-476d-94e6-47e039489d74",
+Cell[444369, 9233, 92, 1, 70, "ExampleText",ExpressionUUID->"0a21c7ca-a694-4b62-9c9b-85f76b1c0d0e",
  CellID->1349646582],
 Cell[CellGroupData[{
-Cell[434691, 9043, 212, 5, 70, "Input",ExpressionUUID->"a9b18d15-f816-471e-9f68-faafea863135",
+Cell[444486, 9238, 212, 5, 70, "Input",ExpressionUUID->"fe15b3cd-4425-4717-9ccd-ffa3f1731164",
  CellID->503476545],
-Cell[434906, 9050, 18337, 400, 70, "Output",ExpressionUUID->"67771dca-6a09-4c98-b03d-d44b2ab06101",
- CellID->128176442]
+Cell[444701, 9245, 18248, 397, 70, "Output",ExpressionUUID->"618dcaf9-4a69-4d61-ad97-abd77cd10314",
+ CellID->2018655433]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[453292, 9456, 125, 3, 70, "ExampleDelimiter",ExpressionUUID->"aa8a9747-c97c-476e-899e-baebbc7365c7",
+Cell[462998, 9648, 125, 3, 70, "ExampleDelimiter",ExpressionUUID->"aeb7d3c1-976d-4bfc-9aa9-001d9507dd5d",
  CellID->556433755],
-Cell[453420, 9461, 120, 3, 70, "Input",ExpressionUUID->"042cc8cf-0b77-423d-a054-6e2bf98ab622",
+Cell[463126, 9653, 120, 3, 70, "Input",ExpressionUUID->"e9eccd6a-fe0f-42c3-b482-70b3b93c73bf",
  CellID->1544671824],
-Cell[453543, 9466, 194, 4, 70, "ExampleText",ExpressionUUID->"886a4b57-b864-4bfd-ad3c-8b8b1f89501c",
+Cell[463249, 9658, 194, 4, 70, "ExampleText",ExpressionUUID->"50d454be-cd74-4e80-860b-0cb7d4dbd09c",
  CellID->1561150133],
 Cell[CellGroupData[{
-Cell[453762, 9474, 284, 7, 70, "Input",ExpressionUUID->"533b7888-c56b-4988-bee7-ed14cc4aa282",
+Cell[463468, 9666, 284, 7, 70, "Input",ExpressionUUID->"92643317-26d0-4d03-8f94-b8377a096c76",
  CellID->1168339669],
-Cell[454049, 9483, 7955, 213, 70, "Output",ExpressionUUID->"6014f4b4-a6cd-4152-8cbd-cb4d4a47af49",
- CellID->1977568389]
+Cell[463755, 9675, 9128, 238, 70, "Output",ExpressionUUID->"9eb77e71-5df3-4183-b1f1-cee4a254ab7b",
+ CellID->1831200773]
 }, Open  ]]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[462065, 9703, 190, 5, 70, "ExampleSubsection",ExpressionUUID->"3d8ae179-498a-45c3-b7a7-fbbaa9895be1"],
-Cell[462258, 9710, 119, 3, 70, "Input",ExpressionUUID->"7ea41e17-c787-4b61-a5ae-d2f9bd619644",
+Cell[472944, 9920, 190, 5, 70, "ExampleSubsection",ExpressionUUID->"8040c7e6-1a80-488c-8536-952fcf20f5f4"],
+Cell[473137, 9927, 119, 3, 70, "Input",ExpressionUUID->"2355dc33-9a3b-4428-963e-4da9f909f5b8",
  CellID->630311312],
-Cell[462380, 9715, 291, 4, 70, "ExampleText",ExpressionUUID->"cb3808da-f4f7-4f64-bf07-37ea833e004c",
+Cell[473259, 9932, 291, 4, 70, "ExampleText",ExpressionUUID->"7a8b863a-9eb2-4949-8a63-d250d349c852",
  CellID->1765440203],
 Cell[CellGroupData[{
-Cell[462696, 9723, 449, 11, 70, "Input",ExpressionUUID->"b5a5f9cc-7b6d-4d87-acd7-f11a51ee65f2",
+Cell[473575, 9940, 449, 11, 70, "Input",ExpressionUUID->"2910b387-869d-4033-8a21-63a3e9fb8d92",
  CellID->19136420],
-Cell[463148, 9736, 37656, 802, 70, "Output",ExpressionUUID->"a6497161-99aa-464a-be3a-14232f83db15",
- CellID->1676635270]
+Cell[474027, 9953, 41104, 873, 70, "Output",ExpressionUUID->"97156a66-fc43-42c8-9a50-48c1f695b948",
+ CellID->185669079]
 }, Open  ]]
 }, Closed]]
 }, Closed]],
-Cell[500843, 10543, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"77d17706-3784-4c88-8086-2a00adcc9e64"]
+Cell[515170, 10831, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"f3fe97d0-7c92-4387-ae70-698e1046a93b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[500911, 10548, 150, 7, 70, "SeeAlsoSection",ExpressionUUID->"41b27c74-1036-47b5-af52-97d2dc87fa11",
+Cell[515238, 10836, 150, 7, 70, "SeeAlsoSection",ExpressionUUID->"f84bb81e-d32b-41a7-8ad5-7065aa5c85ce",
  CellID->1255426704],
-Cell[501064, 10557, 2854, 81, 70, "SeeAlso",ExpressionUUID->"bb674f59-586c-41ae-a485-993b893d5fc5",
+Cell[515391, 10845, 2854, 81, 70, "SeeAlso",ExpressionUUID->"b3fb51d8-9546-47dd-b035-81dd19fe72e5",
  CellID->1648690486]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[503955, 10643, 152, 7, 70, "TutorialsSection",ExpressionUUID->"9af53225-82c8-49bd-a9b3-6397c1bddca5",
+Cell[518282, 10931, 152, 7, 70, "TutorialsSection",ExpressionUUID->"9dc8a6c5-b5af-4cf4-878d-e59af06b1dba",
  CellID->250839057],
-Cell[504110, 10652, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"92f16a8e-10eb-43af-b4aa-e7bfc191ab36"],
-Cell[504144, 10654, 198, 6, 70, "Tutorials",ExpressionUUID->"5e7ee906-eace-46db-968e-d8b3db10ff38",
+Cell[518437, 10940, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"68370a3b-d978-4820-9450-d9fed1c2a0cb"],
+Cell[518471, 10942, 198, 6, 70, "Tutorials",ExpressionUUID->"32ce8a87-f8b1-4cb9-9bf7-1f7f9f33076d",
  CellID->341631938],
-Cell[504345, 10662, 224, 6, 70, "Tutorials",ExpressionUUID->"c249aab7-4c99-4f07-8777-e63e1b0b7c14",
+Cell[518672, 10950, 224, 6, 70, "Tutorials",ExpressionUUID->"41f638d3-480f-43a0-b794-a7cdc19eed31",
  CellID->1023267351],
-Cell[504572, 10670, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"ecfa096a-f74c-4f62-832b-75e4a15345d0"]
+Cell[518899, 10958, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"08403ef5-267b-4d35-9e3f-594f62203cc4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[504640, 10675, 156, 7, 70, "MoreAboutSection",ExpressionUUID->"4b2c7188-5d1b-4907-b053-deac8b14528f",
+Cell[518967, 10963, 156, 7, 70, "MoreAboutSection",ExpressionUUID->"e1b0e6d1-b802-4d5f-ad91-e289b0663ce1",
  CellID->38303248],
-Cell[504799, 10684, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"fd74fcb4-793e-424c-8f58-1766d1de6d46"],
-Cell[504833, 10686, 186, 5, 70, "MoreAbout",ExpressionUUID->"c37e4198-71b0-412a-a506-fa1d191cc5aa",
- CellID->1879906153],
-Cell[505022, 10693, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"7a926fd0-34e5-4bd1-9de2-5dfd53c3ca54"]
+Cell[519126, 10972, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"5be779aa-0810-4951-b587-b9874e9d95c2"],
+Cell[519160, 10974, 185, 5, 70, "MoreAbout",ExpressionUUID->"ce890dfd-3c1b-4c19-8967-db3db77cf023",
+ CellID->799947935],
+Cell[519348, 10981, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"5ba04ec1-7fd2-47eb-85eb-71ac1709a7cf"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[505090, 10698, 160, 7, 70, "RelatedLinksSection",ExpressionUUID->"fd5dd588-28d4-459b-b9cf-01365528cd37",
+Cell[519416, 10986, 160, 7, 70, "RelatedLinksSection",ExpressionUUID->"78031288-a721-42eb-a3f0-3375e23d9676",
  CellID->1584193535],
-Cell[505253, 10707, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"7d2fb878-8012-4c73-8082-3dc004df70cc"],
-Cell[505287, 10709, 191, 5, 70, "RelatedLinks",ExpressionUUID->"f49285b8-6ce6-4627-9e74-8a288fe9ab8b",
+Cell[519579, 10995, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"8a9db3e1-0f33-40f8-b761-f1ac7ed9d3f6"],
+Cell[519613, 10997, 191, 5, 70, "RelatedLinks",ExpressionUUID->"82d50fac-7d22-4a43-9ab9-1732342db174",
  CellID->1038487239],
-Cell[505481, 10716, 204, 6, 70, "RelatedLinks",ExpressionUUID->"1fa9dba0-b1fe-4a7b-8eb9-489f37d82804",
+Cell[519807, 11004, 204, 6, 70, "RelatedLinks",ExpressionUUID->"ca029c10-f4d9-43fc-a1b3-8429944f035e",
  CellID->1970164909]
 }, Open  ]],
-Cell[505700, 10725, 23, 0, 70, "FooterCell",ExpressionUUID->"518a256b-235e-42e6-a03a-5c4739c46efa"]
+Cell[520026, 11013, 23, 0, 70, "FooterCell",ExpressionUUID->"7801c36e-b888-423f-add1-378e65367e8f"]
 }
 ]
 *)

@@ -112,6 +112,10 @@ BoxCoxTransform::usage = "BoxCoxTransform[data,lambda] computes the Box-Cox tran
 
 ApplyBoxCoxTransform::usage = "ApplyBoxCoxTransform[data] for a given data set, computes the Box-Cox transformation at the maximum likelihood \[Lambda] parameter."
 
+BoxCoxTransformExtended::usage = "BoxCoxTransform[data,lambda1,lambda2] computes the two parameter Box-Cox transformation for given parameters \[Lambda]1 and \[Lambda]2.";
+
+ApplyBoxCoxTransformExtended::usage = "ApplyBoxCoxTransformExtended[data] for a given data set, computes the two parameter Box-Cox transformation at the maximum likelihood parameters \[Lambda]1 and \[Lambda]2."
+
 StandardizeExtended::usage = "StandardizeExtended[inputList, subtract, divide] allows standardization of data that may include Missing values with specified transformations."
 
 Applier::usage = "Applier[function, inputData] applies function to OmicsObject, association or list inputData components."
@@ -239,7 +243,7 @@ ComparisonIndex::usage="ComparisonIndex is an option used by SeriesInternalCompa
 (*SeriesInternalCompare*)
 
 ComponentIndex::usage="ComponentIndex is an option for MathIOmica functions, such as Applier, that allows selection of which component of a list to use in an association or OmicsObject input or output values."
-(*Applier, ApplyBoxCoxTransform, FilteringFunction, LowValueTag,MeasurementApplier,QuantileNormalization*)
+(*Applier, ApplyBoxCoxTransform, ApplyBoxCoxTransformExtended, FilteringFunction, LowValueTag,MeasurementApplier,QuantileNormalization*)
 
 DataTransforms::usage="DataTransforms is an option for MatrixClusters, that specifies transformations to be applied to the input matrix data for clustering, in the form {transformation for horizontal, transformation for vertical}.";
 (*DataTransforms*)
@@ -310,7 +314,7 @@ HorizontalLabels::usage="HorizontalLabels is an option for various MathIOmica he
 (*MatrixDendrogramHeatmap,TimeSeriesDendrogramHeatmap,TimeSeriesSingleDendrogramHeatmap*)
 
 HorizontalSelection::usage="HorizontalSelection is an option for various MathIOmica functions, such as Applier, that allows for horizontal selection across components for a single level association with multi-list values."
-(*Applier, ApplyBoxCoxTransform*)
+(*Applier, ApplyBoxCoxTransform, ApplyBoxCoxTransformExtended*)
 
 HypothesisFunction::usage="HypothesisFunction is an option for various MathIOmica functions, that allows the choice of function for implementing multiple hypothesis testing considerations."
 (*GOAnalysis, KEGGAnalysis*)
@@ -391,7 +395,7 @@ LinkageMeasure::usage="LinkageMeasure is an option for MathIOmica's clustering f
 (*MatrixClusters,TimeSeriesClusters,TimeSeriesSingleClusters*)
 
 ListIndex::usage="ListIndex is an option for MathIOmica functions, such as Applier that allows selection of which list to use in the association or OmicsObject input or output values."
-(*Applier, ApplyBoxCoxTransform, FilteringFunction, LowValueTag,MeasurementApplier,QuantileNormalization*)
+(*Applier, ApplyBoxCoxTransform, ApplyBoxCoxTransformExtended, FilteringFunction, LowValueTag,MeasurementApplier,QuantileNormalization*)
 
 LombScargleCutoff::usage="LombScargleCutoff is an option for TimeSeriesClassification that provides a cutoff value for the \"LombScargle\" Method, for identifying the highest intensity observed in the power spectrum that is greater than this value."
 (*TimeSeriesClassification*)
@@ -547,6 +551,9 @@ SampleKind::usage="SampleKind is an option for DataImporterDirect and DataImport
 ScaleShift::usage="ScaleShift is an option for various MathIOmica plot generating functions to reset the blend of the colors used overall. The option is a real positive number, and is used as a multiplier for the internal Blend function's second argument.";
 (*Heatmapper, MatrixDendrogramHeatmap,TimeSeriesDendrogramHeatmap,TimeSeriesSingleDendrogramHeatmap*)
 
+SearchMaxFactor::usage="SearchMaxFactor is an option for ApplyBoxCoxTransformExtended to scale the range maximum over which the search will be carried over for the Box-Cox transfromation translation parameter, in terms of the data range maximum."
+(*ApplyBoxCoxTransformExtended*)
+
 SelectionFunction::usage="SelectionFunction is an option for FilteringFunction to select which function will be used in filtering.";
 (*FilteringFunction*)
 
@@ -610,7 +617,7 @@ Begin["`Private`"]
 Print["MathIOmica (", Hyperlink["https://mathiomica.org"], "),", 
  Style[" by ", Italic], 
  Hyperlink[Style["G. Mias Lab", Italic], 
-  "http://georgemias.org"], "."];
+  "http://georgemias.org"]];
 
 (* ::Section:: *)
 (*#####GlobalConstants#####*)
@@ -734,7 +741,7 @@ create gene associations and restrict to required background set*)
 Options[GOAnalysisAssigner] = {BackgroundSet -> All,
    GOFileColumns -> {2, 5},
    GOFileName -> None,
-   GOURL-> "http://geneontology.org/gene-associations/",
+   GOURL-> "http://current.geneontology.org/annotations/",
    ImportDirectly -> False, 
    LengthFilter -> None, 
    LengthFilterFunction -> GreaterEqualThan,
@@ -773,14 +780,14 @@ GOAnalysisAssigner[OptionsPattern[]] :=
      get it from a directory they specify*)
         file = 
          If[ MatchQ[goFileName, None],
-             "gene_association.goa_" <> species <> ".gz",
+             "goa_" <> species <> ".gaf"<>".gz",
              goFileName
          ];
         localFile = 
-         FileNameJoin[Flatten[{dir, "gene_association.goa_" <> species}]];
+         FileNameJoin[Flatten[{dir, "goa_" <> species<>".gaf"}]];
         localZipFile = 
          FileNameJoin[
-          Flatten[{dir, "gene_association.goa_" <> species <> ".gz"}]];
+          Flatten[{dir, "goa_" <> species <>".gaf"<>".gz"}]];
         fileGOAssociations = 
          FileNameJoin[Flatten[{dir, #}]] & /@ {species <> "GeneOntAssoc", 
            species <> "IdentifierAssoc"};
@@ -3575,6 +3582,17 @@ BoxCoxTransform =
 defined*)];
 
 (* ::Function:: *)
+(* f:BoxCoxTransformExtended*)
+(***Function***)
+BoxCoxTransformExtended = 
+  Compile[{{x, _Real}, {lamda1, _Real}, {lambda2, _Real}}, 
+   Piecewise[{{((x + lambda2)^lamda1 - 1)/lamda1, 
+      Chop[Abs[lamda1]] > 0.}, {Log[x + lambda2], (x + lambda2) > 
+       0}}], "RuntimeOptions" -> {"EvaluateSymbolically" -> False}
+   (*this is to avoid errors within modules where local variables are \
+defined*)];
+
+(* ::Function:: *)
 (* f:NormalLogLikelihoodBoxCoxBase *)
 NormalLogLikelihoodBoxCoxBase = 
   Compile[{{data, _Real, 1}, {\[Lambda], _Real}},
@@ -3589,6 +3607,22 @@ NormalLogLikelihoodBoxCoxBase =
       False}(*this is to avoid errors within modules where local \
 variables are defined*)];
 
+(* ::Function::*)
+(*f:NormalLogLikelihoodBoxCoxBaseExtended*)
+NormalLogLikelihoodBoxCoxBaseExtended = 
+  Compile[{{data, _Real, 
+     1}, {\[Lambda]1, _Real}, {\[Lambda]2, _Real}},(*compile as a \
+function of the data as an array,and lambda as the box cox variable,
+   further defining the function for the log likelihood*)
+   N[-(N[Length[data]]/
+         2)*(Log[(Variance[
+          BoxCoxTransformExtended[N[#], \[Lambda]1, \[Lambda]2] & /@ 
+           data])]) + ((\[Lambda]1 - 1)*
+       Plus @@ Log[N[data] + \[Lambda]2])], 
+   "RuntimeOptions" -> {"EvaluateSymbolically" -> 
+      False}(*this is to avoid errors within modules where local \
+variables are defined*)];
+
 (* ::Function:: *)
 (* f:MaximumLikelihoodBoxCoxTransformBase *) 
 MaximumLikelihoodBoxCoxTransformBase[data_] :=
@@ -3598,10 +3632,10 @@ MaximumLikelihoodBoxCoxTransformBase[data_] :=
         tempPrint = 
          PrintTemporary[
           "Computing \!\(\*OverscriptBox[\(\[Lambda]\), \(^\)]\) "];
-        lamdaHat = 
+        Quiet[lamdaHat = 
          x /. (NMaximize[
                NormalLogLikelihoodBoxCoxBase[Cases[N[#], _Real], x], 
-               x][[-1]] &@inputData);
+               x][[-1]] &@inputData)];
         outputData = 
          Map[If[ MatchQ[#1, _Real],
                  BoxCoxTransform,
@@ -3614,6 +3648,36 @@ MaximumLikelihoodBoxCoxTransformBase[data_] :=
         Return[outputData]
     ];
 
+(* ::Function::*)
+(*f:MaximumLikelihoodBoxCoxTransformBaseExtended*)
+MaximumLikelihoodBoxCoxTransformBaseExtended[data_, 
+   searchMaxFactor_] := 
+  Module[{inputData = data, lamdaHat1, lamdaHat2, tempPrint, x, y, 
+    outputData, maximizedLambda, dataMin, dataMax, 
+    sMaxF = searchMaxFactor},(*maximize the log likelihood,
+   extract exponent and map BoxCoxTransform to Real Number data*)
+   tempPrint = 
+    PrintTemporary[
+     "Computing \!\(\*OverscriptBox[\(\[Lambda]\), \(^\)]\) "];
+   dataMin = Min[Cases[N[#], _Real]] &@inputData;
+   dataMax = Max[Cases[N[#], _Real]] &@inputData;
+   Quiet[maximizedLambda = (NMaximize[{NormalLogLikelihoodBoxCoxBaseExtended[Cases[N[#], _Real], 
+           x, y], sMaxF*(Max[ Abs[dataMax], 
+               Abs[dataMin]] + $MachineEpsilon) > 
+           y > (1 + Sign[-dataMin] $MachineEpsilon)*(-dataMin)}, {x, 
+          y}][[-1]] &@inputData);
+   lamdaHat1 = x /. maximizedLambda;
+   lamdaHat2 = y /. maximizedLambda;];
+   outputData = 
+    Map[If[MatchQ[#1, _Real], BoxCoxTransformExtended, #1 &][N[#], 
+       lamdaHat1, lamdaHat2] &, inputData];
+   NotebookDelete[tempPrint];
+   Print["Calculated Box-Cox parameter \
+\!\(\*OverscriptBox[\(\[Lambda]\), \(^\)]\) = ", {lamdaHat1, 
+     lamdaHat2}];
+   Return[outputData]];
+   
+   
 (* ::Function:: *)
 (* f:ApplyBoxCoxTransform *) 
 Options[ApplyBoxCoxTransform] = {ComponentIndex -> Missing[],
@@ -3631,6 +3695,29 @@ ApplyBoxCoxTransform[data_, OptionsPattern[]] :=
           ComponentIndex -> component, HorizontalSelection -> horizontal];
         Return[outputData]
     ];
+
+
+
+(* ::Function::*)
+(*f:ApplyBoxCoxTransformExtended*)
+
+Options[ApplyBoxCoxTransformExtended] = {ComponentIndex -> Missing[], 
+   HorizontalSelection -> False, ListIndex -> Missing[], 
+   SearchMaxFactor -> 1};
+ApplyBoxCoxTransformExtended[data_, OptionsPattern[]] := 
+  Module[{inputData = N[data], list = OptionValue[ListIndex], 
+    component = OptionValue[ComponentIndex], 
+    horizontal = OptionValue[HorizontalSelection], outputData, 
+    searchMaxF = OptionValue[SearchMaxFactor]}(*internal variables*), 
+   outputData = 
+    Returner[inputData, 
+     Applier[MaximumLikelihoodBoxCoxTransformBaseExtended[#, 
+        searchMaxF] &, inputData, ListIndex -> list, 
+      ComponentIndex -> component, HorizontalSelection -> horizontal],
+      ListIndex -> list, ComponentIndex -> component, 
+     HorizontalSelection -> horizontal];
+   Return[outputData]];
+
   
 (* ::Function:: *)
 (* f:StandardizeExtended *) 
@@ -10643,7 +10730,7 @@ Options[KEGGPathwayVisual] = {AnalysisType -> "Genomic"(*options are "Genomic", 
      RGBColor[1, 0, 0]} (*note RGB style*),
     ColorSelection -> Association@{"RNA" -> "bg", "Protein" -> "fg"},
     DefaultColors -> {"fg" -> RGBColor[0, 0, 0], "bg" -> RGBColor[0, 1, 0]},
-	ExportMovieOptions -> {"VideoEncoding" -> "MPEG-4 Video", "FrameRate" -> 1},
+	ExportMovieOptions -> {(*"VideoEncoding" -> "MPEG-4",*) "FrameRate" -> 1},
 	FileExtend -> ".mov",
 	GeneDictionary -> None,
 	GetGeneDictionaryOptions -> {},

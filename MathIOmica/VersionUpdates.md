@@ -1,3 +1,60 @@
+**Updates in MathIOmica 1.2.0 PENDING**
+1. New Functions
+	* ApplyBoxCoxTransformExtended
+	* BoxCoxTransformExtended
+2. Source Code
+	* New private functions:
+		* MaximumLikelihoodBoxCoxTransformBaseExtended
+		* NormalLogLikelihoodBoxCoxBaseExtended
+	* Functions updates:
+		* ApplyBoxCoxTransformation now uses quiet mode, to fix error in Mathematica 12.0.0 from additional messaging.
+		* GOAnalysisAssigner can address new GO Consortium resource GO file  
+	* New File Updates:
+		* MathIOmicaData:
+			* goBasicObo.txt
+			* humanIdentifierAssoc
+			* humanGeneOntAssoc
+			* humanGeneUCSCTable
+3. Documentation
+	* New:
+		* ApplyBoxCoxTransformExtended
+		* BoxCoxTransformExtended
+	* Updated (typographical errors and output updates):
+		* Autocorrelation
+		* ApplyBoxCoxTransform
+		* BoxCoxTransform
+		* DataImporter
+		* DataImporterDirect
+		* FilteringFunction
+		* FilterMissing
+		* GetGeneDictionary
+		* GOAnalysis
+		* GOAnalysisAssigner
+		* InverseAutocovariance
+		* KEGGAnalysis
+		* KEGGDictionary
+		* KEGGPathwayVisuals
+		* LombScargle
+		* LowValueTag
+		* MathIOmicaDynamicTranscriptome
+		* MathIOmicaGuide
+		* MathIOmicaOverview
+		* MathIOmicaTutorial
+		* MatrixClusters
+		* MeasurementApplier
+		* MSViewer
+		* OBOGODictionary
+		* OmicsObject
+		* OmicsObjectCreator
+		* QuantileEstimator
+		* QuantileNormalization
+		* Returner
+		* SeriesApplier
+		* StandardizeExtended
+		* TimeSeriesClassification
+		* TimeSeriesClusters
+		* TimeSeriesSingleDendrogramHeatmap
+
 **Updates in MathIOmica 1.1.3**
 1. New Functions
 	* None
