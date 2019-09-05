@@ -889,8 +889,7 @@ Options[GOAnalysis] = {AdditionalFilter -> None (*Select[MatchQ[#[[3,1,2]],"biol
     ReportFilter -> 1,
     ReportFilterFunction -> GreaterEqualThan,
     Species -> "human",
-    TestFunction -> (N[
-       1 - CDF[HypergeometricDistribution[#1, #2, #3], #4 - 1]] &)};
+    TestFunction -> ((1 - N[CDF[HypergeometricDistribution[#1, #2, #3], #4 - 1]]) &)};
 (*Input can be: clustering object*)
 (***Function***)
 GOAnalysis[dataIn_, OptionsPattern[]] :=
@@ -1496,8 +1495,7 @@ Options[KEGGAnalysis] = {AdditionalFilter -> None (*Select[MatchQ[#[[3,1,2]],"bi
     ReportFilter -> 1,
     ReportFilterFunction -> GreaterEqualThan,
     Species -> "human" (*Used in GeneDictionary*),
-    TestFunction -> (N[
-       1 - CDF[HypergeometricDistribution[#1, #2, #3], #4 - 1]] &)
+    TestFunction -> ((1 - N[CDF[HypergeometricDistribution[#1, #2, #3], #4 - 1]]) &)
     };
 (*Input can be: clustering object*)
 (***Function***)

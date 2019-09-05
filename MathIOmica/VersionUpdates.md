@@ -1,3 +1,12 @@
+**Updates in MathIOmica 1.2.1**
+1. Source Code
+	* Functions updates:
+		* GOAnalysis and KEGGAnalysis default hypergeometric function updated to numeric evaluation to fix error in Mathematica 12.0.0 
+2. Documentation
+	* Updated (typographical errors and output updates):
+		* GOAnalysis
+		* KEGGAnalysis
+		
 **Updates in MathIOmica 1.2.0**
 1. New Functions
 	* ApplyBoxCoxTransformExtended
