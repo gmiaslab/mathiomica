@@ -3,7 +3,7 @@
 (* Created by the Wolfram Workbench Nov 25, 2015 *)
 (*The MIT License (MIT)
 
-Copyright (c) 2016-18 George I. Mias, G. Mias Lab, Department of Biochemistry and Molecular Biology, Michigan State University, East Lansing 48824.
+Copyright (c) 2016-20 George I. Mias, G. Mias Lab, Department of Biochemistry and Molecular Biology, Michigan State University, East Lansing 48824.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -75,7 +75,7 @@ TimeSeriesClassification::usage = "TimeSeriesClassification[data, setTimes] iden
 
 TimeSeriesClusters::usage = "TimeSeriesClusters[data] performs clustering of time series data using two tiers of hierarchical clustering to identify groups and subgroups in the data.";
 
-TimeSeriesSingleClusters::usage = "TimeSeriesSingleClusters[data] performs clustering of a time series data using a single tier of hierachrical clustering to identify groups in the data.";
+TimeSeriesSingleClusters::usage = "TimeSeriesSingleClusters[data] performs clustering of a time series data using a single tier of hierchical clustering to identify groups in the data.";
 
 MatrixClusters::usage = "MatrixClusters[data] performs hierarchical clustering in both dimensions of the provided data matrix.";
 
@@ -998,7 +998,7 @@ GOAnalysis[dataIn_, OptionsPattern[]] :=
                             goAssignment) &@Union@ Flatten[#[[All, 2]]]) & /@ 
                      Gather[#, ((MatchQ[#1[[1, -1]], #2[[1, -1]]]) && 
                          IntersectingQ[#1[[2]], #2[[2]]]) &] &@({#, (Flatten@
-                         Values@GeneTranslation[#[[{1}]], 
+                         DeleteMissing@Values@GeneTranslation[#[[{1}]], 
                            outputID, ConstantGeneDictionary, InputID -> inputID, 
                            Species -> species])} & /@ #) &) /* Association /* 
                 DeleteCases[{Missing[]} | {}]]@data;
@@ -1055,7 +1055,7 @@ GOAnalysis[dataIn_, OptionsPattern[]] :=
                                    goAssignment) &@Union@ Flatten[#[[All, 2]]]) & /@ 
                              Gather[#, ((MatchQ[#1[[1, -1]], #2[[1, -1]]]) && 
                                  IntersectingQ[#1[[2]], #2[[2]]]) &] &@({#, (Flatten@
-                                 Values@GeneTranslation[#[[{1}]], 
+                                 DeleteMissing@Values@GeneTranslation[#[[{1}]], 
                                    outputID, ConstantGeneDictionary, InputID -> inputID, 
                                    Species -> species])} & /@ #) &) /* Association /*
                          DeleteCases[{Missing[]} | {}]]@data,
@@ -1076,7 +1076,7 @@ GOAnalysis[dataIn_, OptionsPattern[]] :=
                                                                                    #,
                                                                                    #
                                                                                ] , (Flatten@
-                                Values@GeneTranslation[If[ ListQ[#],
+                                DeleteMissing@Values@GeneTranslation[If[ ListQ[#],
                                                            #[[{1}]],
                                                            {#}
                                                        ], 
@@ -1750,7 +1750,7 @@ mathiomica.org or provide a GeneDictionary option variable."]
                                keggOrg <> ":" <> #
                            ]
                        ] & /@ (Flatten@
-                          Values@GeneTranslation[#[[{1}]], 
+                          DeleteMissing@Values@GeneTranslation[#[[{1}]], 
                             outputID, ConstantGeneDictionary, InputID -> inputID, 
                             Species -> species])} & /@ #) &) /* Association /*
                  DeleteCases[{Missing[]} | {}]]@data;
@@ -1817,9 +1817,7 @@ mathiomica.org or provide a GeneDictionary option variable."]
                                         #,
                                         keggOrg <> ":" <> #
                                     ]
-                                ] & /@ (Flatten@
-                                  Values@
-                                   GeneTranslation[#[[{1}]], 
+                                ] & /@ (Flatten@DeleteMissing@Values@ GeneTranslation[#[[{1}]], 
                                    outputID, ConstantGeneDictionary, InputID -> inputID, 
                                    Species -> species])} & /@ #) &) /* Association /*
                          DeleteCases[{Missing[]} | {}]]@data,
@@ -1848,7 +1846,7 @@ mathiomica.org or provide a GeneDictionary option variable."]
                                       keggOrg <> ":" <> #
                                   ]
                               ] & /@ (Flatten@
-                                 Values@GeneTranslation[If[ ListQ[#],
+                                 DeleteMissing@Values@GeneTranslation[If[ ListQ[#],
                                                             #[[{1}]],
                                                             {#}
                                                         ], 
@@ -10916,7 +10914,7 @@ provide a GeneDictionary option variable."]
             pathIDs = 
              DeleteMissing@
               Flatten@Values@
-                Values@GeneTranslation[
+                DeleteMissing@Values@GeneTranslation[
                   If[ nonUCSC,
                       #,
                       StringSplit[#, ":"][[-1]]
@@ -10945,7 +10943,7 @@ provide a GeneDictionary option variable."]
                                                                  ]
                                                              ] & /@ (Flatten@
                               
-                              Values@GeneTranslation[If[ ListQ[#],
+                              DeleteMissing@Values@GeneTranslation[If[ ListQ[#],
                                                          #[[{1}]],
                                                          {#}
                                                      ], 
@@ -10980,7 +10978,7 @@ provide a GeneDictionary option variable."]
                                                       keggOrg <> ":" <> #
                                                   ]
                                               ] & /@ (Flatten@
-                             Values@GeneTranslation[If[ ListQ[#],
+                             DeleteMissing@Values@GeneTranslation[If[ ListQ[#],
                                                         #[[{1}]],
                                                         {#}
                                                     ], 

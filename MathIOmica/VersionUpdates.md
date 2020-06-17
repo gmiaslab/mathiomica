@@ -1,3 +1,17 @@
+**Updates in MathIOmica 1.2.2**
+1. Source Code
+	* Functions updates:
+		* GOAnalysis and KEGGAnalysis updated to account for Missing genes in translation (when gene not in database). Code modifications:
+		Values@GeneTranslation -> DeleteMissing@Values@GeneTranslation
+3. Documentation
+	* Updated (typographical errors and output updates for Mathematica 12.1.0):
+		* Applier
+		* KEGGPathwayVisual
+		* MatrixClusters
+		* OmicsObjectPairedMerge
+		* QuantileNormalization
+		* TimeSeriesSingleClusters
+
 **Updates in MathIOmica 1.2.1**
 1. Source Code
 	* Functions updates:
