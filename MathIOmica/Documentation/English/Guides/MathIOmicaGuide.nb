@@ -231,7 +231,7 @@ MathIOmicaGuide.html"], StandardForm]], "Input", TextClipboardType ->
            URL[
             StringJoin[
              If[
-              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$8238], 
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$8239], 
               "http://reference.wolfram.com/system-modeler/", 
               "http://reference.wolfram.com/language/"], 
              "MathIOmica/guide/MathIOmicaGuide", ".html"]], None}]}]},
@@ -1356,7 +1356,7 @@ TaggingRules->{
          BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
     Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
   "", "Metadata" -> {
-   "built" -> "{2020, 6, 17, 0, 45, 15.747856}", 
+   "built" -> "{2020, 7, 13, 11, 25, 20.802847}", 
     "history" -> {"1.0", "", "", ""}, "context" -> "MathIOmica`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -1373,11 +1373,11 @@ on cluster results, representation on biological pathways, and a mass \
 spectrometry spectral viewer. Finally, MathIOmica offers basic enrichment \
 analysis and annotation for Gene Ontology (GO) and biological pathways.", 
     "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$8016, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$8017, "title" -> 
     "MathIOmica Guide", "titlemodifier" -> "", "windowtitle" -> 
     "MathIOmica Guide", "type" -> "Guide", "uri" -> 
     "MathIOmica/guide/MathIOmicaGuide"}},
-FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (March 18, 2020)",
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
   CharacterEncoding -> "UTF-8"]
 ]
@@ -1392,7 +1392,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[588, 21, 11055, 222, 70, "AnchorBarGrid",ExpressionUUID->"4be6a75b-d670-4a69-8f45-9fa9fb9fdbfa",
+Cell[588, 21, 11055, 222, 70, "AnchorBarGrid",ExpressionUUID->"6b2ea756-bd31-49ae-bb07-dd36fdf85e12",
  CellID->1],
 Cell[CellGroupData[{
 Cell[11668, 247, 58, 1, 70, "GuideTitle",ExpressionUUID->"90456e29-5446-408c-9e83-e7242dec90d3",
@@ -1401,8 +1401,8 @@ Cell[11729, 250, 800, 12, 70, "GuideAbstract",ExpressionUUID->"80656047-13c8-43c
  CellID->2001916300]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12566, 267, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"c8caaf1f-321d-4e1c-8c18-4d00a88d4633"],
-Cell[12706, 275, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"79be1a9a-f6b5-4253-96fd-7f11a5edd35c"],
+Cell[12566, 267, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"adff8f3f-6bb6-4601-b0b5-6a4bc665156f"],
+Cell[12706, 275, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"dc87f021-29fc-4b90-ba91-ffb943223d26"],
 Cell[CellGroupData[{
 Cell[12762, 279, 70, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"a7058c34-2558-4ce3-b698-28ba58387a79",
  CellID->504723914],
@@ -1563,12 +1563,12 @@ Cell[38469, 1247, 345, 11, 70, "GuideText",ExpressionUUID->"34f51493-3438-489a-a
 Cell[38817, 1260, 900, 28, 70, "InlineGuideFunctionListing",ExpressionUUID->"ebd9eca1-fdb5-451b-bd7f-4edf3ff0284e",
  CellID->1473716273]
 }, Open  ]],
-Cell[39732, 1291, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"f719bafb-7cf8-4f55-851c-4e768b86be8f"]
+Cell[39732, 1291, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"54e4a564-05f4-4b61-9f1c-f1fb061df1c4"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[39800, 1296, 164, 7, 70, "GuideRelatedLinksSection",ExpressionUUID->"90588795-1cda-4f19-b94d-5ac838da03ee",
  CellID->415694148],
-Cell[39967, 1305, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"ea67c613-7d67-4106-8726-5920697d32a6"],
+Cell[39967, 1305, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"6e161d98-5fd5-4589-b142-dea02f991f11"],
 Cell[40001, 1307, 210, 6, 70, "GuideRelatedLinks",ExpressionUUID->"8e814b46-c70e-4bc3-81df-d793883a4f0c",
  CellID->1413643763],
 Cell[40214, 1315, 232, 7, 70, "GuideRelatedLinks",ExpressionUUID->"c2f24caa-4a6e-4a1b-a60c-bd238a3cf369",
@@ -1578,7 +1578,7 @@ Cell[40449, 1324, 240, 7, 70, "GuideRelatedLinks",ExpressionUUID->"330cbb88-8c36
 Cell[40692, 1333, 208, 6, 70, "GuideRelatedLinks",ExpressionUUID->"23940397-2702-496d-8ab8-59fd19741307",
  CellID->903859790]
 }, Open  ]],
-Cell[40915, 1342, 23, 0, 70, "FooterCell",ExpressionUUID->"1b4a17c6-3e8e-48a8-abb5-d57007ad1636"]
+Cell[40915, 1342, 23, 0, 70, "FooterCell",ExpressionUUID->"8915d6d5-f92e-49d8-8ab1-96e6082bc626"]
 }
 ]
 *)

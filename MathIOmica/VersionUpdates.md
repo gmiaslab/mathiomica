@@ -1,3 +1,8 @@
+**Updates in MathIOmica 1.2.3**
+1. Source Code
+	* Functions updates:
+		* KEGGPathwayVisual updated to account for online access updates.
+		
 **Updates in MathIOmica 1.2.2**
 1. Source Code
 	* Functions updates:

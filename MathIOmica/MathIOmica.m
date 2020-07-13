@@ -614,7 +614,7 @@ VocabularyVariable::usage="VocabularyVariable is an option for MSViewer that pro
 Begin["`Private`"]
 (* ::Section:: *)
 (*#####Intro#####*)
-Print["MathIOmica (", Hyperlink["https://mathiomica.org"], "),", 
+Print["MathIOmica 1.2.3 (", Hyperlink["https://mathiomica.org"], "),", 
  Style[" by ", Italic], 
  Hyperlink[Style["G. Mias Lab", Italic], 
   "http://georgemias.org"]];
@@ -11035,14 +11035,7 @@ provide a GeneDictionary option variable."]
           "URL", urls,
           "Figure",(*return Figure list*)
           (*get Image Location*)
-          
-          Flatten@((Import[
-                  "https://www.kegg.jp" <> #] &@(DeleteCases[
-                    StringCases[
-                     Cases[#, 
-                      XMLElement["img", {___, "src" -> src_, ___}, _] :> 
-                       src, \[Infinity]], ___ ~~ ".png"], {}] &@
-                  Import[#, "XMLObject"])) & /@ urls),
+          Flatten@((Import@@(DeleteCases[#,x_/;!StringContainsQ[x, (StringSplit[#, ":"][[-1]] &@pathNm)]]&@Import[#, "ImageLinks"]))& /@ urls),
           "Movie",(*return Movies *)
           If[FileExistsQ[If[ MatchQ[movieFile, None],
                      StringReplace[pathNm,":"->"_"] <> ext,
@@ -11055,13 +11048,7 @@ provide a GeneDictionary option variable."]
                      StringReplace[pathNm,":"->"_"] <> ext,
                      movieFile
                  ], 
-           Flatten@((Import[
-                   "https://www.kegg.jp" <> #] &@(DeleteCases[
-                     StringCases[
-                      Cases[#, 
-                       XMLElement["img", {___, "src" -> src_, ___}, _] :> 
-                        src, \[Infinity]], "/tmp" ~~ ___ ~~ ".png"], {}] &@
-                   Import[#, "XMLObject"])) & /@ urls), Sequence @@ movieOpts],
+           Flatten@((Import@@(DeleteCases[#,x_/;!StringContainsQ[x, (StringSplit[#, ":"][[-1]] &@pathNm)]]&@Import[#, "ImageLinks"]))& /@ urls), Sequence @@ movieOpts],
           __, Print["Improper Return Selection, Returning URL for online patway."];
               urls];
         Return[<|"Pathway"-> pathNm, "Results"-> returning|>]
