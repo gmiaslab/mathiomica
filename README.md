@@ -16,11 +16,11 @@ To install MathIOmica, download the MathIOmica.zip file, unzip it and follow the
   
   ### Pre-Installation Requirements
      To install MathIOmica on any platform you need:
-     1. Mathematica version 11.2 or higher
+     1. Mathematica version 12.1 or higher (see above and releases for earlier compatibility MathIOmica versions)
      2. Recommended: 16GB of RAM or higher
   
   ### Installation Instructions
-     1. Open Mathematica (version 11.1 and higher)
+     1. Open Mathematica (version 12.1 and higher)
      2. In the File menu select Install...
      3. In the popup menu choose the following for each item:
         -- "Type of Item to Install:" Application
