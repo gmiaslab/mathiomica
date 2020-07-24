@@ -614,7 +614,7 @@ VocabularyVariable::usage="VocabularyVariable is an option for MSViewer that pro
 Begin["`Private`"]
 (* ::Section:: *)
 (*#####Intro#####*)
-Print["MathIOmica 1.2.3 (", Hyperlink["https://mathiomica.org"], "),", 
+Print["MathIOmica 1.2.4 (", Hyperlink["https://mathiomica.org"], "),", 
  Style[" by ", Italic], 
  Hyperlink[Style["G. Mias Lab", Italic], 
   "http://georgemias.org"]];
@@ -2132,7 +2132,7 @@ TimeSeriesClassification[data_, setTimes_, OptionsPattern[]] :=
                                                                       "Lag" <> ToString[First@#]
                                                                   ] &]@
                                                                  KeySort@Query[All, All /* (Association[#] &), 
-                                                                    Association@(# -> {Query[Key[#]]@autocorrelationList, 
+                                                                    (# -> {Query[Key[#]]@autocorrelationList, 
                                                                          Query[Key[#]]@dataIn} &)]@allGroups, 
                                                                 autocorrelationList}],
                                                               KeyMap[If[ MemberQ[{"SpikeMax", "SpikeMin"}, #],
@@ -2141,7 +2141,7 @@ TimeSeriesClassification[data_, setTimes_, OptionsPattern[]] :=
                                                                      ] &]@
                                                                KeySort@
                                                                 Query[All, All /* (Association[#] &), 
-                                                                  Association@(# -> {Query[Key[#]]@autocorrelationList, 
+                                                                  (# -> {Query[Key[#]]@autocorrelationList, 
                                                                        Query[Key[#]]@dataIn} &)]@allGroups
                                                           ],
                                                           KeyMap[If[ MemberQ[{"SpikeMax", "SpikeMin"}, #],
@@ -2316,7 +2316,7 @@ TimeSeriesClassification[data_, setTimes_, OptionsPattern[]] :=
                           "Lag" <> ToString[First@#]
                       ] &]@
                      KeySort@Query[All, All /* (Association[#] &), 
-                        Association@(# -> {Query[Key[#]]@autocorrelationList, 
+                        (# -> {Query[Key[#]]@autocorrelationList, 
                              Query[Key[#]]@dataIn} &)]@allGroups, 
                     autocorrelationList}],
                   KeyMap[If[ MemberQ[{"SpikeMax", "SpikeMin"}, #],
@@ -2324,7 +2324,7 @@ TimeSeriesClassification[data_, setTimes_, OptionsPattern[]] :=
                              "Lag" <> ToString[First@#]
                          ] &]@
                    KeySort@Query[All, All /* (Association[#] &), 
-                      Association@(# -> {Query[Key[#]]@autocorrelationList, 
+                      (# -> {Query[Key[#]]@autocorrelationList, 
                            Query[Key[#]]@dataIn} &)]@allGroups
               ],
               KeyMap[If[ MemberQ[{"SpikeMax", "SpikeMin"}, #],

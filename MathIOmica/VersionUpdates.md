@@ -1,3 +1,8 @@
+**Updates in MathIOmica 1.2.4**
+1. Source Code
+	* Functions updates:
+		* TimeSeriesClassification updated to resolve return of results for compatibility with Mathematica 12.1.1 (Association calls for Methods involving Autocorrelations) 
+
 **Updates in MathIOmica 1.2.3**
 1. Source Code
 	* Functions updates:
