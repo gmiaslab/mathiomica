@@ -172,7 +172,7 @@
 		"Name" -> "NotebookStatus",
 		"Type" -> "Text",
 		"Stored" -> True,
-		"Searchable" -> False,
+		"Searchable" -> True,
 		"Tokenized" -> False,
 		"BulkRetrievalOptimized" -> True,
 		"Weight" -> 1,

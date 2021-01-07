@@ -3,7 +3,7 @@
 (* Created by the Wolfram Workbench Nov 25, 2015 *)
 (*The MIT License (MIT)
 
-Copyright (c) 2016-20 George I. Mias, G. Mias Lab, Department of Biochemistry and Molecular Biology, Michigan State University, East Lansing 48824.
+Copyright (c) 2016-21 George I. Mias, G. Mias Lab, Department of Biochemistry and Molecular Biology, Michigan State University, East Lansing 48824.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -614,7 +614,7 @@ VocabularyVariable::usage="VocabularyVariable is an option for MSViewer that pro
 Begin["`Private`"]
 (* ::Section:: *)
 (*#####Intro#####*)
-Print["MathIOmica 1.2.4 (", Hyperlink["https://mathiomica.org"], "),", 
+Print["MathIOmica 1.2.5 (", Hyperlink["https://mathiomica.org"], "),", 
  Style[" by ", Italic], 
  Hyperlink[Style["G. Mias Lab", Italic], 
   "http://georgemias.org"]];
@@ -3179,7 +3179,7 @@ PanelImport[variableName_, input_, OptionsPattern[]] :=
            Dynamic@If[ Setting@fButtonNotPressed,
                        "Selection Pending",
                        "Selection Made"
-                   ]}}]] ];    
+                   ]}}],ImageSize -> {800,Automatic}] ];    
 
 (* ::Function:: *)
 (* f:DataImporter *)
